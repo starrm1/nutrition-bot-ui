@@ -1,1 +1,6 @@
-{"progress_percentage": 35, "key_learnings": "Understanding the role of genes in nutrition management.", "research_findings": "Identified specific gene-nutrient interactions.", "current_focus_areas": "Research on nutrient metabolomics."}
+{
+  "progress_percentage": 52,
+  "key_learnings": "Identified key gene-nutrient interactions involving MTHFR, APOE, and FTO variants; learned how single nucleotide polymorphisms (SNPs) affect folate metabolism, fat processing, and obesity risk; established that personalized nutrition based on genotype outperforms generalized dietary guidelines.",
+  "research_findings": "APOE4 carriers show heightened sensitivity to saturated fat intake and elevated LDL response; MTHFR C677T variants benefit from increased folate and B12 supplementation; FTO gene variants are associated with reduced satiety signaling, influencing overeating tendencies and weight management strategies.",
+  "current_focus_areas": "Research on nutrient metabolomics to identify biomarkers for diet response; expanding the gene panel to include variants related to vitamin D metabolism and caffeine sensitivity; developing algorithms to generate genotype-based meal plans from sequencing data."
+}
