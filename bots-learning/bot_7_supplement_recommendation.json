@@ -14,5 +14,6 @@
   "reported_to_copilot": true,
   "daily_report_schedule": "every day",
   "last_reported_date": "2026-04-04",
-  "reporting_to": "copilot"
+  "reporting_to": "copilot",
+  "copilot_assigned_topic": "Bioavailability of micronutrients from supplements vs whole foods"
 }
