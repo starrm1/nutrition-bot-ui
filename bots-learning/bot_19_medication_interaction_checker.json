@@ -22,5 +22,21 @@
   "daily_report_schedule": "every day",
   "last_reported_date": "2026-04-05",
   "reporting_to": "copilot",
-  "copilot_assigned_topic": "Food-drug interactions and nutrient depletion from medications"
+  "copilot_assigned_topic": "Food-drug interactions and nutrient depletion from medications",
+  "copilot_query": {
+    "date": "2026-04-05",
+    "question": "What are the topics I do not need to learn?",
+    "copilot_response": "Bot 19 does not need to learn: general cooking techniques, culinary arts, food presentation/plating, restaurant management, agricultural farming methods, food processing machinery, or marketing/branding of food products. Focus should remain strictly on medication-food interactions, nutrient depletion from drugs, contraindicated foods per medication class, and safe dietary alternatives for patients on medication.",
+    "excluded_topics": [
+      "General cooking techniques",
+      "Culinary arts and food presentation",
+      "Restaurant management",
+      "Agricultural farming methods",
+      "Food processing machinery",
+      "Food marketing and branding",
+      "General meal planning (covered by Bot 6)",
+      "Allergy detection (covered by Bot 4)",
+      "Budget optimization (covered by Bot 15)"
+    ]
+  }
 }
