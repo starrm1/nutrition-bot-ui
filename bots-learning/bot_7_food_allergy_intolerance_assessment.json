@@ -2,7 +2,7 @@
   "bot_id": 7,
   "bot_name": "Food Allergy and Intolerance Assessment",
   "progress_percentage": 44,
-  "phase": "independent_learning",
+  "phase": "collaborative_learning",
   "key_learnings": "True food allergies (IgE-mediated) affect ~4% of adults and ~8% of children; the Big-9 allergens (milk, eggs, fish, shellfish, tree nuts, peanuts, wheat, soy, sesame) account for >90% of reactions. Food intolerances (non-IgE) such as lactose and gluten intolerance are far more common and dose-dependent. Elimination-reintroduction protocols remain the gold standard for identifying food intolerances.",
   "research_findings": "Cross-reactive allergens between pollens and foods (oral allergy syndrome) affect ~2% of the general population. Lactose intolerance prevalence ranges from 5% in Northern Europeans to >90% in some East Asian populations. Non-celiac gluten sensitivity is distinct from celiac disease and affects an estimated 0.5–6% of the population.",
   "current_focus_areas": "Developing guided elimination diet protocols; building cross-reactivity allergen mapping; integrating with Bot 8 (Meal Planning) to auto-generate allergen-free meal templates."
