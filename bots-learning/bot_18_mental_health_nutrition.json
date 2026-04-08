@@ -1,0 +1,9 @@
+{
+  "bot_id": 18,
+  "bot_name": "Mental Health and Nutrition",
+  "progress_percentage": 38,
+  "phase": "independent_learning",
+  "key_learnings": "The gut-brain axis connects intestinal microbiome health directly to mood regulation via the vagus nerve and serotonin production (90% of serotonin is synthesized in the gut). Deficiencies in omega-3 DHA, B vitamins (B6, B12, folate), zinc, iron, and magnesium are associated with increased depression and anxiety risk. Dietary quality scores predict mental health outcomes independently of socioeconomic factors.",
+  "research_findings": "Mediterranean diet adherence reduces depression risk by 30–35% in prospective cohort studies. The SMILES trial demonstrated that dietary intervention (Mediterranean diet) produced remission in 32% of depressed patients vs. 8% in social support control. Ultra-processed food consumption is associated with a 22% increased risk of depressive disorder in large meta-analyses.",
+  "current_focus_areas": "Developing nutritional psychiatry protocols to complement conventional mental health treatment; building dietary risk factor screening tools for depression and anxiety; researching the role of fermented foods and probiotics in mood regulation."
+}

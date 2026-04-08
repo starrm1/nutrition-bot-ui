@@ -1,0 +1,9 @@
+{
+  "bot_id": 6,
+  "bot_name": "Caloric Intake Tracking",
+  "progress_percentage": 60,
+  "phase": "collaborative_learning",
+  "key_learnings": "Total energy expenditure (TEE) is the sum of basal metabolic rate (BMR), thermic effect of food (TEF), and activity energy expenditure (AEE). Self-reported caloric intake typically underestimates true intake by 12–30%. Caloric density of foods varies enormously, making portion awareness critical for accurate tracking.",
+  "research_findings": "Mifflin-St Jeor equation outperforms Harris-Benedict for BMR estimation in diverse adult populations. Dietary tracking apps improve weight management outcomes by 20–30% when used consistently over 12 weeks. Ultra-processed foods have higher caloric density with lower satiety signaling compared to whole foods at equivalent caloric loads.",
+  "current_focus_areas": "Improving caloric estimation accuracy using AI-based food image recognition; integrating wearable activity data for real-time TDEE adjustment; developing personalized energy balance models."
+}

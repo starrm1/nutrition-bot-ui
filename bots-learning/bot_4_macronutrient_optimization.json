@@ -1,0 +1,9 @@
+{
+  "bot_id": 4,
+  "bot_name": "Macronutrient Optimization",
+  "progress_percentage": 51,
+  "phase": "collaborative_learning",
+  "key_learnings": "Optimal macronutrient ratios vary substantially by individual goals, activity level, metabolic rate, and health status. Protein targets for muscle preservation range from 1.2–2.2 g/kg body weight depending on training intensity. Fat quality (mono- and polyunsaturated) matters more than total fat quantity for cardiometabolic health.",
+  "research_findings": "High-protein diets (>25% kcal from protein) significantly reduce appetite and improve body composition in clinical trials. Low glycemic-index carbohydrate sources improve insulin sensitivity independent of total carbohydrate intake. Omega-3 to omega-6 ratio below 1:4 is associated with reduced systemic inflammation.",
+  "current_focus_areas": "Developing dynamic macronutrient ratio recommendations based on real-time activity data; refining protein distribution models across meal timing; building integration with Bot 9 (Sports Nutrition) for athletic population profiles."
+}

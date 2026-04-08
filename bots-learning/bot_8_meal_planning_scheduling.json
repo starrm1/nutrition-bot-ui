@@ -1,0 +1,9 @@
+{
+  "bot_id": 8,
+  "bot_name": "Meal Planning and Scheduling",
+  "progress_percentage": 55,
+  "phase": "collaborative_learning",
+  "key_learnings": "Structured meal planning reduces food waste by up to 23% and improves diet quality scores. Meal frequency (3 vs. 6 meals/day) has minimal effect on total daily energy expenditure but significantly impacts hunger regulation and adherence. Batch cooking and weekly prep strategies are the most cited behavioral drivers of dietary adherence.",
+  "research_findings": "Randomized trials show meal planning is associated with healthier food choices, greater dietary variety, and lower BMI. Time-restricted eating windows (8–10 hours) improve metabolic markers independently of caloric restriction. Front-loading calories earlier in the day is associated with better weight management outcomes vs. evening-heavy eating.",
+  "current_focus_areas": "Building constraint-based meal plan generators that account for allergies, budget, and cooking time; developing circadian-aligned meal scheduling recommendations; integrating with Bots 5, 6, 7, and 9 for cross-module meal optimization."
+}

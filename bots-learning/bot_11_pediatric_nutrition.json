@@ -1,0 +1,9 @@
+{
+  "bot_id": 11,
+  "bot_name": "Pediatric Nutrition",
+  "progress_percentage": 39,
+  "phase": "independent_learning",
+  "key_learnings": "Nutritional requirements per kg body weight are significantly higher in children than adults due to rapid growth and development. Iron, calcium, vitamin D, and omega-3 DHA are the most critical nutrients for cognitive and skeletal development in children. Establishing healthy eating behaviors and food preferences in early childhood has lifelong dietary impact.",
+  "research_findings": "Exclusive breastfeeding for 6 months provides optimal nutrition and immune protection in infants per WHO guidelines. Iron deficiency in children under 5 is associated with measurable cognitive and motor development delays. Excess sugar intake in childhood accelerates dental caries and establishes neural reward pathways associated with food addiction.",
+  "current_focus_areas": "Building age-stratified nutritional guidelines (infants, toddlers, school-age, adolescents); developing parent-facing dietary guidance tools; researching the role of early gut microbiome development in long-term health."
+}

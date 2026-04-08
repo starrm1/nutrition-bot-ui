@@ -1,1 +1,9 @@
-{"progress_percentage": 35, "key_learnings": "Understanding the role of genes in nutrition management.", "research_findings": "Identified specific gene-nutrient interactions.", "current_focus_areas": "Research on nutrient metabolomics."}
+{
+  "bot_id": 1,
+  "bot_name": "Nutrigenomics",
+  "progress_percentage": 35,
+  "phase": "independent_learning",
+  "key_learnings": "Understanding the role of genes in nutrition management. Genetic variants such as MTHFR, APOE, and FTO significantly alter individual responses to dietary macronutrients and micronutrients.",
+  "research_findings": "Identified specific gene-nutrient interactions including MTHFR C677T variant affecting folate metabolism, APOE4 allele increasing sensitivity to dietary saturated fat, and FTO variants correlating with obesity risk under high-calorie diets.",
+  "current_focus_areas": "Research on nutrient metabolomics; expanding the SNP database for personalized dietary recommendations; integrating polygenic risk scores with dietary advice."
+}

@@ -1,0 +1,9 @@
+{
+  "bot_id": 14,
+  "bot_name": "Diabetes and Blood Sugar Management",
+  "progress_percentage": 58,
+  "phase": "collaborative_learning",
+  "key_learnings": "Glycemic index (GI) and glycemic load (GL) of foods are important but must be contextualized within overall meal composition — fat, fiber, and protein all lower postprandial glucose response. Low-carbohydrate diets are the most effective dietary intervention for reducing HbA1c in type-2 diabetes. Continuous glucose monitoring (CGM) data reveals highly individual glycemic responses to the same foods.",
+  "research_findings": "Low-carb diets reduce HbA1c by 0.5–1.5% in type-2 diabetic patients across multiple RCTs. The PREDIMED trial demonstrated Mediterranean diet reduces type-2 diabetes incidence by 52% vs. low-fat control. Vinegar and cinnamon consumption modestly improve post-meal insulin sensitivity via different mechanisms.",
+  "current_focus_areas": "Integrating CGM-derived personal glycemic response data into dietary recommendations; developing carbohydrate-sequencing protocols (eating fiber/protein before carbs) to blunt glucose spikes; building risk stratification for prediabetes dietary intervention."
+}
