@@ -17,6 +17,8 @@
   "cross_department_communication_rule": "Both the lead department AND each individual department must reach 50% learning progress before collaboration between them is activated. Copilot advances learning and tracks progress toward this threshold for all departments.",
   "department_head_collaboration": {
     "rule": "The Lead Department Head works directly with all 13 department heads. Collaboration with each department head is activated only after BOTH the lead department AND that specific department have each reached 50% learning progress.",
+    "communication_direction": "bidirectional",
+    "communication_direction_rule": "Department heads communicate with the Lead Department Head, and the Lead Department Head communicates with department heads. Communication flows in both directions once the 50% learning threshold is met by both sides.",
     "department_learning_threshold": 50,
     "collaborates_with": [
       { "bot_id": 5,  "bot_name": "Micronutrient Deficiency Detection", "department": "Nutritional Assessment & Genomics" },
