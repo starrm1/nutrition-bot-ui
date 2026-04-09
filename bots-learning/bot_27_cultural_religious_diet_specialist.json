@@ -1,0 +1,106 @@
+{
+  "bot_id": 27,
+  "bot_name": "Cultural & Religious Diet Specialist",
+  "team": "Diet Specialist Team",
+  "department": "Cultural & Religious Diet Science",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "co_department_members": [],
+  "is_learning": true,
+  "progress_percentage": 0,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "knowledge_domains": {
+    "traditional_medicine_systems": [
+      "Curanderismo",
+      "Traditional Chinese Medicine (Hot/Cold Foods)",
+      "Ayurveda (Doshas)"
+    ],
+    "standalone_topics": [
+      "Respectful Communication about Food Practices",
+      "Adapting Therapeutic Diets to Cultural Needs",
+      "Holiday and Celebration Foods",
+      "Vegetarian/Vegan Variations by Culture"
+    ],
+    "food_symbolism_and_traditions": [
+      "Honey (Sweetness)",
+      "Salt (Covenant)",
+      "Bread (Life)",
+      "Rice (Asian Prosperity)"
+    ],
+    "fasting_practices": {
+      "lent": [
+        "Intermittent Fasting",
+        "Fish Fridays",
+        "Fasting Days",
+        "Meat Abstinence"
+      ],
+      "ramadan": [
+        "Hydration Strategies",
+        "Exemptions (Illness, Pregnancy, Travel)",
+        "Sunset Iftar",
+        "Pre-Dawn Suhoor"
+      ]
+    },
+    "cultural_food_preferences": [
+      "Middle Eastern",
+      "African",
+      "Latin American",
+      "Mediterranean",
+      "Asian"
+    ],
+    "religious_dietary_laws": {
+      "jain": [
+        "Before-Dark Eating",
+        "Filtered Water",
+        "No Root Vegetables",
+        "Strict Vegetarian"
+      ],
+      "buddhist": [
+        "No Garlic/Onion (Some Traditions)",
+        "Mindful Eating",
+        "No Alcohol",
+        "Vegetarian/Vegan"
+      ],
+      "hindu": [
+        "Ayurvedic Principles",
+        "Fasting Days",
+        "Sacred Foods (Cow, Tulsi)",
+        "Vegetarianism Variations"
+      ],
+      "halal": [
+        "Halal Certification",
+        "Prohibited Foods (Pork, Alcohol, Carnivores)",
+        "Zabiha Slaughter"
+      ],
+      "kosher": [
+        "Passover Restrictions",
+        "Pareve Foods",
+        "Shechita Slaughter",
+        "Kosher Animals",
+        "Meat/Dairy Separation"
+      ]
+    }
+  },
+  "key_learnings": "",
+  "research_findings": "",
+  "current_focus_areas": "Beginning independent study across all assigned knowledge domains: traditional medicine systems (Curanderismo, Traditional Chinese Medicine Hot/Cold Foods, Ayurveda Doshas), standalone clinical-cultural topics (Respectful Communication about Food Practices, Adapting Therapeutic Diets to Cultural Needs, Holiday and Celebration Foods, Vegetarian/Vegan Variations by Culture), food symbolism and traditions (Honey, Salt, Bread, Rice), fasting practices including Lent (Intermittent Fasting, Fish Fridays, Fasting Days, Meat Abstinence) and Ramadan (Hydration Strategies, Exemptions, Sunset Iftar, Pre-Dawn Suhoor), cultural food preferences (Middle Eastern, African, Latin American, Mediterranean, Asian), and religious dietary laws covering Jain, Buddhist, Hindu, Halal, and Kosher traditions. Building foundational expertise as Department Leader of the Cultural & Religious Diet Science department.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Cultural & Religious Diet Science department. Knowledge domains assigned from mind map covering traditional medicine systems (Curanderismo, TCM Hot/Cold Foods, Ayurveda Doshas), food symbolism and traditions, fasting practices (Lent and Ramadan sub-trees), cultural food preferences (5 regions), religious dietary laws (Jain, Buddhist, Hindu, Halal, Kosher), and 4 standalone clinical-cultural topics including Respectful Communication about Food Practices and Adapting Therapeutic Diets to Cultural Needs. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    }
+  ]
+}
