@@ -1,0 +1,122 @@
+{
+  "bot_id": 22,
+  "bot_name": "Food Specialist",
+  "team": "Diet Specialist Team",
+  "department": "Food Science & Clinical Dietetics",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "co_department_members": [],
+  "is_learning": true,
+  "progress_percentage": 0,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "knowledge_domains": {
+    "ingredient_functionality": [
+      "Flavoring",
+      "Thickening",
+      "Emulsifying",
+      "Leavening",
+      "Binding"
+    ],
+    "standalone_topics": [
+      "Recipe Adaptation Strategies",
+      "Food Texture Analysis and Modification Methods",
+      "Seasonal and Local Food Sourcing",
+      "Food Substitutions and Alternatives for Every Restriction",
+      "Cooking Techniques per Diet Restriction",
+      "Portion Sizes and Serving Guidelines"
+    ],
+    "food_safety_and_storage": [
+      "Color Coded Cutting Boards",
+      "Cross Contamination Zones",
+      "Reheating Protocols",
+      "Proper Cooling",
+      "First In First Out",
+      "Expiration Dating",
+      "Shelf Life",
+      "Storage Temps",
+      "Danger Zone (40-140\u00b0F)",
+      "HACCP"
+    ],
+    "food_preparation_methods": [
+      "Dehydrating",
+      "Curing",
+      "Smoking",
+      "Pickling",
+      "Fermenting",
+      "Sous Vide",
+      "Air Frying",
+      "Pressure Cooking",
+      "Slow Cooking",
+      "Microwaving",
+      "Broiling",
+      "Poaching",
+      "Saut\u00e9ing",
+      "Roasting",
+      "Boiling",
+      "Steaming",
+      "Baking",
+      "Grilling"
+    ],
+    "enteral_nutrition": [
+      "Tube Feeding Formulas"
+    ],
+    "allergy_intolerance_diets": [
+      "Lactose-Free",
+      "Gluten-Free"
+    ],
+    "disease_specific_diets": [
+      "Anti-Gout",
+      "Acid Ash",
+      "Bland",
+      "Cardiac",
+      "Renal",
+      "Diabetic"
+    ],
+    "nutrient_controlled_diets": [
+      "Low-Residue",
+      "No Concentrated Sweets",
+      "Low Protein",
+      "High Protein",
+      "Low Fat",
+      "Low Sodium"
+    ],
+    "texture_modified_diets": [
+      "Pureed",
+      "Mechanical Soft",
+      "Soft",
+      "Full Liquid",
+      "Clear Liquid"
+    ],
+    "regular_normal_diet": [
+      "Desserts",
+      "Fats",
+      "Vegetables",
+      "Fruits",
+      "Grains",
+      "Dairy",
+      "Proteins"
+    ]
+  },
+  "key_learnings": "",
+  "research_findings": "",
+  "current_focus_areas": "Beginning independent study across all assigned knowledge domains: ingredient functionality, food preparation methods, food safety and storage, clinical diet classifications (enteral, allergy/intolerance, disease-specific, nutrient-controlled, texture-modified), and regular/normal diet composition. Building foundational expertise as Department Leader of the Food Science & Clinical Dietetics department.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Food Science & Clinical Dietetics department. Knowledge domains assigned from mind map covering ingredient functionality, food preparation methods, food safety and storage, clinical diet classifications, and regular/normal diet composition. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    }
+  ]
+}
