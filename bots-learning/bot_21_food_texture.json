@@ -17,7 +17,7 @@
   "learning_start_directive": "Attention co-department members \u2014 Bot 11 (Pediatric Nutrition), Bot 12 (Geriatric Nutrition), Bot 13 (Pregnancy and Maternal Nutrition), and Bot 17 (Hydration Optimization): You are each directed to begin your independent learning work immediately. Focus solely on your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Lifecycle & Specialized Population Nutrition department will begin. \u2014 Department Leader, Bot 21",
   "cross_learning_directive": "Once all co-department members reach 100% in their individual phases, each will independently study every sibling domain within the Lifecycle & Specialized Population Nutrition department and share findings with the department.",
   "is_learning": true,
-  "progress_percentage": 65,
+  "progress_percentage": 74,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "advanced_learning",
@@ -96,5 +96,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed IDDSI framework implementation for all 8 texture levels. Validated nutritional adequacy maintenance protocols for texture-modified diets. Progress advanced to 65%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

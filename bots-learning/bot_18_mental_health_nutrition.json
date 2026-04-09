@@ -14,7 +14,7 @@
     "Anti-Inflammatory Diet (Bot 16 \u2014 Department Leader)"
   ],
   "is_learning": true,
-  "progress_percentage": 43,
+  "progress_percentage": 51,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -37,5 +37,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed neuronutrition protocol frameworks for depression and anxiety management. Validated B-vitamin and omega-3 supplementation guidelines for mental health support. Progress advanced to 43%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

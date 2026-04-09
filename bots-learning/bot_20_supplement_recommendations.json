@@ -9,7 +9,7 @@
   "is_department_leader": false,
   "department_leader": "Bot 5 \u2014 Micronutrient Deficiency Detection",
   "is_learning": true,
-  "progress_percentage": 48,
+  "progress_percentage": 55,
   "phase": "independent_learning",
   "key_learnings": "Supplement recommendations must be evidence-based, population-specific, and consider bioavailability, drug-nutrient interactions, and safety thresholds. Supplementation is indicated only when dietary intake cannot meet requirements.",
   "research_findings": "Documented evidence tiers for 35 commonly used supplements using systematic review and meta-analysis data. Identified high-risk drug-nutrient interactions for 12 common medication classes including warfarin, statins, and thyroid medications.",
@@ -29,5 +29,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed evidence-tier classification for 35 supplements. Validated drug-nutrient interaction screening protocols for clinical application. Progress advanced to 48%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

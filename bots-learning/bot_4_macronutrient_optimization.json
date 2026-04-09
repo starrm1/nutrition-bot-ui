@@ -9,7 +9,7 @@
   "is_department_leader": false,
   "department_leader": "Bot 7 \u2014 Food Allergy and Intolerance Assessment",
   "is_learning": true,
-  "progress_percentage": 56,
+  "progress_percentage": 64,
   "phase": "collaborative_learning",
   "key_learnings": "Macronutrient ratios must be individualized based on metabolic rate, activity level, and health goals. Protein timing and distribution across meals significantly impact muscle protein synthesis and metabolic outcomes.",
   "research_findings": "Confirmed that distributing protein evenly across 3-4 meals maximizes muscle protein synthesis compared to single-meal loading. Carbohydrate cycling protocols show measurable improvements in insulin sensitivity in metabolically compromised individuals.",
@@ -29,5 +29,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed macronutrient distribution modeling for 5 distinct population profiles. Validated protein timing protocols. Progress advanced to 56%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

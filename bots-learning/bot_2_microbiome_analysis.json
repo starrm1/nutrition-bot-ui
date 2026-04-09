@@ -9,7 +9,7 @@
   "is_department_leader": false,
   "department_leader": "Bot 5 \u2014 Micronutrient Deficiency Detection",
   "is_learning": true,
-  "progress_percentage": 33,
+  "progress_percentage": 42,
   "phase": "independent_learning",
   "key_learnings": "Gut microbiome diversity is strongly correlated with dietary fiber intake and fermented food consumption. Dysbiosis patterns have been linked to inflammatory conditions, metabolic syndrome, and impaired nutrient absorption.",
   "research_findings": "Identified key microbial species (Lactobacillus, Bifidobacterium, Akkermansia muciniphila) that respond positively to prebiotic fiber. Documented correlations between short-chain fatty acid production and reduced systemic inflammation markers.",
@@ -29,5 +29,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed analysis of SCFA production pathways and their influence on gut barrier integrity. Expanded microbiome database with 12 new strain profiles. Progress advanced to 33%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

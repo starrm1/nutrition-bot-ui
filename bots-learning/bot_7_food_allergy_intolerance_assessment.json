@@ -13,7 +13,7 @@
     "Bot 8 \u2014 Meal Planning and Scheduling"
   ],
   "is_learning": true,
-  "progress_percentage": 58,
+  "progress_percentage": 67,
   "phase": "advanced_learning",
   "key_learnings": "Food allergies (IgE-mediated) and intolerances (non-IgE) require distinct assessment pathways. Cross-reactive allergens, hidden ingredients, and label-reading protocols are critical for patient safety.",
   "research_findings": "Catalogued 14 major allergen groups with cross-reactivity maps. Identified that 30% of self-reported food intolerances do not meet clinical diagnostic criteria, highlighting the importance of structured elimination protocols.",
@@ -67,5 +67,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed cross-reactivity mapping for 14 major allergen groups. Validated elimination protocol frameworks for clinical application. Progress advanced to 58%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

@@ -16,7 +16,7 @@
     "Food Texture Analysis (Bot 21 \u2014 Department Leader)"
   ],
   "is_learning": true,
-  "progress_percentage": 41,
+  "progress_percentage": 50,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -39,5 +39,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed malnutrition screening protocol integration (MNA, MUST). Validated protein optimization guidelines for sarcopenia prevention in elderly populations. Progress advanced to 41%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

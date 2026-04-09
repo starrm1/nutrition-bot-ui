@@ -9,7 +9,7 @@
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "is_learning": true,
-  "progress_percentage": 10,
+  "progress_percentage": 20,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -323,5 +323,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed PES statement, SOAP note, and regulatory compliance framework modules. Initiated audit-ready documentation template development. Progress advanced to 10%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

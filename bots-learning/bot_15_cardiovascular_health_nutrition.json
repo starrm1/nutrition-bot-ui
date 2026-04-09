@@ -15,7 +15,7 @@
     "Sports Nutrition (Bot 9 \u2014 Department Leader)"
   ],
   "is_learning": true,
-  "progress_percentage": 58,
+  "progress_percentage": 67,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -38,5 +38,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed AHA/ACC-aligned cardiovascular dietary protocol frameworks. Validated Mediterranean and DASH dietary pattern implementation guidelines. Progress advanced to 58%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

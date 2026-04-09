@@ -12,7 +12,7 @@
     "Bot 19 \u2014 Gut-Brain Axis"
   ],
   "is_learning": true,
-  "progress_percentage": 59,
+  "progress_percentage": 68,
   "phase": "advanced_learning",
   "key_learnings": "Chronic low-grade inflammation underlies numerous metabolic diseases. Anti-inflammatory dietary patterns emphasize omega-3 fatty acids, polyphenols, fiber, and antioxidant-rich foods while reducing ultra-processed food consumption.",
   "research_findings": "Documented inverse relationship between dietary inflammatory index (DII) scores and inflammatory biomarkers (CRP, IL-6, TNF-\u03b1). Turmeric (curcumin), ginger, and berries show significant anti-inflammatory effects in clinical studies.",
@@ -61,5 +61,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed Dietary Inflammatory Index (DII) scoring framework for 200+ food items. Validated anti-inflammatory dietary protocols for 3 clinical inflammatory conditions. Progress advanced to 59%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

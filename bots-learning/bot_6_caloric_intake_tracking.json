@@ -9,7 +9,7 @@
   "is_department_leader": false,
   "department_leader": "Bot 7 \u2014 Food Allergy and Intolerance Assessment",
   "is_learning": true,
-  "progress_percentage": 65,
+  "progress_percentage": 73,
   "phase": "collaborative_learning",
   "key_learnings": "Accurate caloric tracking requires accounting for cooking methods, food preparation losses, and individual metabolic variation. Total Daily Energy Expenditure models must be updated regularly as patient conditions change.",
   "research_findings": "Documented 8-12% variance in reported vs. actual caloric intake across self-reported dietary recall methods. Identified that TDEE calculators overestimate needs in sedentary elderly populations by up to 15%.",
@@ -29,5 +29,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed adaptive TDEE modeling incorporating activity variance and metabolic rate adjustments. Validated intake tracking accuracy protocols. Progress advanced to 65%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

@@ -14,7 +14,7 @@
     "Anti-Inflammatory Diet (Bot 16 \u2014 Department Leader)"
   ],
   "is_learning": true,
-  "progress_percentage": 36,
+  "progress_percentage": 44,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -37,5 +37,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed gut-brain axis communication pathway mapping. Validated dietary protocols for gut microbiome optimization targeting neurological health outcomes. Progress advanced to 36%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

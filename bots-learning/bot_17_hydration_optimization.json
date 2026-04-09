@@ -16,7 +16,7 @@
     "Food Texture Analysis (Bot 21 \u2014 Department Leader)"
   ],
   "is_learning": true,
-  "progress_percentage": 38,
+  "progress_percentage": 46,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -39,5 +39,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed hydration needs assessment frameworks for 5 population groups including elderly, pediatric, and athletic populations. Validated electrolyte protocol guidelines. Progress advanced to 38%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

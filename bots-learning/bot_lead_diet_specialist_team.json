@@ -10,7 +10,7 @@
   "lead_name_change_requires_approval_from": "starrm1",
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 0,
+  "progress_percentage": 12,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before next phase promotion is granted.",
   "cross_department_communication_threshold": 50,
@@ -21,19 +21,71 @@
     "communication_direction_rule": "Department heads communicate with the Lead Department Head, and the Lead Department Head communicates with department heads. Communication flows in both directions once the 50% learning threshold is met by both sides.",
     "department_learning_threshold": 50,
     "collaborates_with": [
-      { "bot_id": 5,  "bot_name": "Micronutrient Deficiency Detection", "department": "Nutritional Assessment & Genomics" },
-      { "bot_id": 7,  "bot_name": "Food Allergy and Intolerance Assessment", "department": "Dietary Safety & Meal Architecture" },
-      { "bot_id": 9,  "bot_name": "Sports Nutrition", "department": "Performance & Metabolic Nutrition" },
-      { "bot_id": 16, "bot_name": "Anti-Inflammatory Diet", "department": "Therapeutic & Integrative Nutrition" },
-      { "bot_id": 21, "bot_name": "Food Texture Analysis", "department": "Lifecycle & Specialized Population Nutrition" },
-      { "bot_id": 22, "bot_name": "Food Specialist", "department": "Food Science & Clinical Dietetics" },
-      { "bot_id": 23, "bot_name": "Drink Specialist", "department": "Beverage Science & Hydration Management" },
-      { "bot_id": 24, "bot_name": "Nutrition Specialist", "department": "Clinical Nutrition & Metabolic Science" },
-      { "bot_id": 25, "bot_name": "Texture Specialist", "department": "Texture & Dysphagia Science" },
-      { "bot_id": 26, "bot_name": "Allergy & Intolerance Specialist", "department": "Allergy & Intolerance Science" },
-      { "bot_id": 27, "bot_name": "Cultural & Religious Diet Specialist", "department": "Cultural & Religious Diet Science" },
-      { "bot_id": 28, "bot_name": "Medical Condition Specialist", "department": "Medical Condition Diet Science" },
-      { "bot_id": 29, "bot_name": "Documentation & Compliance Specialist", "department": "Documentation & Compliance Science" }
+      {
+        "bot_id": 5,
+        "bot_name": "Micronutrient Deficiency Detection",
+        "department": "Nutritional Assessment & Genomics"
+      },
+      {
+        "bot_id": 7,
+        "bot_name": "Food Allergy and Intolerance Assessment",
+        "department": "Dietary Safety & Meal Architecture"
+      },
+      {
+        "bot_id": 9,
+        "bot_name": "Sports Nutrition",
+        "department": "Performance & Metabolic Nutrition"
+      },
+      {
+        "bot_id": 16,
+        "bot_name": "Anti-Inflammatory Diet",
+        "department": "Therapeutic & Integrative Nutrition"
+      },
+      {
+        "bot_id": 21,
+        "bot_name": "Food Texture Analysis",
+        "department": "Lifecycle & Specialized Population Nutrition"
+      },
+      {
+        "bot_id": 22,
+        "bot_name": "Food Specialist",
+        "department": "Food Science & Clinical Dietetics"
+      },
+      {
+        "bot_id": 23,
+        "bot_name": "Drink Specialist",
+        "department": "Beverage Science & Hydration Management"
+      },
+      {
+        "bot_id": 24,
+        "bot_name": "Nutrition Specialist",
+        "department": "Clinical Nutrition & Metabolic Science"
+      },
+      {
+        "bot_id": 25,
+        "bot_name": "Texture Specialist",
+        "department": "Texture & Dysphagia Science"
+      },
+      {
+        "bot_id": 26,
+        "bot_name": "Allergy & Intolerance Specialist",
+        "department": "Allergy & Intolerance Science"
+      },
+      {
+        "bot_id": 27,
+        "bot_name": "Cultural & Religious Diet Specialist",
+        "department": "Cultural & Religious Diet Science"
+      },
+      {
+        "bot_id": 28,
+        "bot_name": "Medical Condition Specialist",
+        "department": "Medical Condition Diet Science"
+      },
+      {
+        "bot_id": 29,
+        "bot_name": "Documentation & Compliance Specialist",
+        "department": "Documentation & Compliance Science"
+      }
     ],
     "total_department_heads": 13
   },
@@ -227,5 +279,10 @@
       "date": "2026-04-09",
       "entry": "Progress update received from all 28 department bots (Bot 1\u201329, excluding Bot 3). All departments active and advancing learning phases. Bots 1\u201321 progress incremented by 5%. Bots 22\u201329 (newly established specialist departments) initiated at 10% with foundational knowledge modules completed. Overall team learning status: active and progressing across all 13 departments."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

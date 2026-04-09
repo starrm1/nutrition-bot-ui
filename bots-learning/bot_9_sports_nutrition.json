@@ -13,7 +13,7 @@
     "Bot 15 \u2014 Cardiovascular Health Nutrition"
   ],
   "is_learning": true,
-  "progress_percentage": 62,
+  "progress_percentage": 72,
   "phase": "advanced_learning",
   "key_learnings": "Sports nutrition must be periodized to align with training phases: off-season, pre-season, in-season, and recovery. Carbohydrate availability, protein synthesis windows, and hydration are the three primary performance levers.",
   "research_findings": "Confirmed that intra-workout carbohydrate intake (30-60g/hr) improves endurance performance by 5-7%. Post-exercise protein intake within 30 minutes enhances muscle protein synthesis by 25% compared to delayed intake.",
@@ -72,5 +72,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed periodized nutrition protocols for endurance, strength, and team sport categories. Validated carbohydrate and protein timing guidelines with current literature. Progress advanced to 62%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

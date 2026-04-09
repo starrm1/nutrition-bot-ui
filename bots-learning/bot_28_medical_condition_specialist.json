@@ -170,7 +170,7 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 10,
+  "progress_percentage": 20,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -313,5 +313,10 @@
       "co_specialist_2_progress": 0,
       "summary": "All members initiated independent learning phase. Domains assigned and study begun."
     }
-  }
+  },
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ]
 }

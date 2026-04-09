@@ -10,7 +10,7 @@
   "is_department_leader": true,
   "co_department_members": [],
   "is_learning": true,
-  "progress_percentage": 10,
+  "progress_percentage": 20,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -95,5 +95,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed beverage category nutritional profiling and foundational hydration science modules. Initiated clinical beverage application research. Progress advanced to 10%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }

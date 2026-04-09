@@ -13,7 +13,7 @@
     "Bot 20 \u2014 Supplement Recommendations"
   ],
   "is_learning": true,
-  "progress_percentage": 60,
+  "progress_percentage": 70,
   "phase": "advanced_learning",
   "key_learnings": "Micronutrient deficiencies often present subclinically before measurable symptoms appear. Iron, vitamin D, B12, magnesium, and zinc are the most prevalent deficiencies across diverse dietary patterns.",
   "research_findings": "Established deficiency threshold matrices for 22 essential micronutrients. Identified high-risk dietary patterns (vegan, low-calorie, processed-food-dominant) and their associated deficiency profiles.",
@@ -67,5 +67,10 @@
       "date": "2026-04-09",
       "entry": "Progress update: Completed deficiency screening protocols for 22 micronutrients. Finalized risk stratification model for dietary pattern-based deficiency prediction. Progress advanced to 60%."
     }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
   ]
 }
