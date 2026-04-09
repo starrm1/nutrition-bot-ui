@@ -1,9 +1,38 @@
 {
   "bot_id": 10,
   "bot_name": "Weight Management",
+  "team": "Diet Specialist Team",
+  "department": "Performance & Metabolic Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": false,
+  "department_leader": "Bot 9 — Sports Nutrition",
+  "cross_department_learning": [
+    "Diabetes and Blood Sugar Management (Bot 14)",
+    "Cardiovascular Health Nutrition (Bot 15)",
+    "Sports Nutrition (Bot 9 — Department Leader)"
+  ],
+  "is_learning": true,
   "progress_percentage": 62,
-  "phase": "collaborative_learning",
-  "key_learnings": "Sustainable weight loss requires a moderate caloric deficit (300–500 kcal/day) combined with high protein intake to preserve lean mass. Weight regain is the primary challenge in long-term management, driven by adaptive thermogenesis and hormonal changes. Behavioral strategies (self-monitoring, goal-setting, social support) predict long-term success better than any specific diet.",
-  "research_findings": "Meta-analyses confirm that all dietary approaches (low-fat, low-carb, Mediterranean) produce comparable weight loss when caloric deficits are matched. Adaptive thermogenesis can reduce resting metabolic rate by 10–15% below predicted values after significant weight loss. Set-point theory and leptin-ghrelin hormonal dysregulation explain the biological drive for weight regain.",
-  "current_focus_areas": "Developing personalized caloric deficit recommendations that account for adaptive thermogenesis; building behavioral adherence frameworks for long-term weight maintenance; integrating with Bots 4 and 6 for macronutrient and caloric synergy."
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "key_learnings": "Sustainable weight loss requires a moderate caloric deficit (300–500 kcal/day) combined with high protein intake to preserve lean mass. Weight regain is the primary challenge in long-term management, driven by adaptive thermogenesis and hormonal changes. Behavioral strategies — including self-monitoring, goal-setting, and social support — predict long-term success more reliably than any specific dietary approach.",
+  "research_findings": "Meta-analyses confirm that all major dietary approaches (low-fat, low-carb, Mediterranean) produce comparable weight loss outcomes when caloric deficits are matched. Adaptive thermogenesis can reduce resting metabolic rate by 10–15% below predicted values after significant weight loss. Set-point theory and leptin-ghrelin hormonal dysregulation explain the biological drive for weight regain following caloric restriction.",
+  "current_focus_areas": "Developing personalized caloric deficit recommendations that account for adaptive thermogenesis; building behavioral adherence frameworks for long-term weight maintenance; integrating with Bot 4 (Macronutrient Optimization) and Bot 6 (Caloric Intake Tracking) for macronutrient and caloric synergy.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Assigned to the Performance & Metabolic Nutrition department under Department Leader Bot 9 (Sports Nutrition). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 62%."
+    }
+  ]
 }

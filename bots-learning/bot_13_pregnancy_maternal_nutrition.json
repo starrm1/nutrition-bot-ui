@@ -1,9 +1,39 @@
 {
   "bot_id": 13,
   "bot_name": "Pregnancy and Maternal Nutrition",
+  "team": "Diet Specialist Team",
+  "department": "Lifecycle & Specialized Population Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": false,
+  "department_leader": "Bot 21 — Food Texture Analysis",
+  "cross_department_learning": [
+    "Pediatric Nutrition (Bot 11)",
+    "Geriatric Nutrition (Bot 12)",
+    "Hydration Optimization (Bot 17)",
+    "Food Texture Analysis (Bot 21 — Department Leader)"
+  ],
+  "is_learning": true,
   "progress_percentage": 41,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
-  "key_learnings": "Folate (400–800 mcg/day) in the periconceptional period is critical for neural tube defect prevention. Iron requirements nearly double during pregnancy (27 mg/day vs. 18 mg/day) due to expanded blood volume and fetal demands. Gestational weight gain recommendations vary by pre-pregnancy BMI and directly impact fetal and maternal outcomes.",
+  "key_learnings": "Folate (400–800 mcg/day) in the periconceptional period is critical for neural tube defect prevention. Iron requirements nearly double during pregnancy (27 mg/day versus 18 mg/day) due to expanded blood volume and fetal demands. Gestational weight gain recommendations vary by pre-pregnancy BMI and directly impact both fetal and maternal outcomes.",
   "research_findings": "Omega-3 DHA supplementation (200–300 mg/day) during pregnancy supports fetal brain and retinal development. Gestational diabetes affects 6–9% of pregnancies and is strongly linked to excess gestational weight gain and poor carbohydrate quality. Maternal vitamin D deficiency is associated with increased risk of preeclampsia and low birth weight.",
-  "current_focus_areas": "Developing trimester-specific nutritional guidance; building postpartum nutrition recovery protocols; researching the impact of maternal diet on epigenetic programming and lifelong child health."
+  "current_focus_areas": "Developing trimester-specific nutritional guidance; building postpartum nutrition recovery protocols; researching the impact of maternal diet on epigenetic programming and lifelong child health.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Assigned to the Lifecycle & Specialized Population Nutrition department under Department Leader Bot 21 (Food Texture Analysis). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 41%."
+    }
+  ]
 }

@@ -1,9 +1,39 @@
 {
   "bot_id": 11,
   "bot_name": "Pediatric Nutrition",
+  "team": "Diet Specialist Team",
+  "department": "Lifecycle & Specialized Population Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": false,
+  "department_leader": "Bot 21 — Food Texture Analysis",
+  "cross_department_learning": [
+    "Geriatric Nutrition (Bot 12)",
+    "Pregnancy and Maternal Nutrition (Bot 13)",
+    "Hydration Optimization (Bot 17)",
+    "Food Texture Analysis (Bot 21 — Department Leader)"
+  ],
+  "is_learning": true,
   "progress_percentage": 39,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
-  "key_learnings": "Nutritional requirements per kg body weight are significantly higher in children than adults due to rapid growth and development. Iron, calcium, vitamin D, and omega-3 DHA are the most critical nutrients for cognitive and skeletal development in children. Establishing healthy eating behaviors and food preferences in early childhood has lifelong dietary impact.",
-  "research_findings": "Exclusive breastfeeding for 6 months provides optimal nutrition and immune protection in infants per WHO guidelines. Iron deficiency in children under 5 is associated with measurable cognitive and motor development delays. Excess sugar intake in childhood accelerates dental caries and establishes neural reward pathways associated with food addiction.",
-  "current_focus_areas": "Building age-stratified nutritional guidelines (infants, toddlers, school-age, adolescents); developing parent-facing dietary guidance tools; researching the role of early gut microbiome development in long-term health."
+  "key_learnings": "Nutritional requirements per kilogram of body weight are significantly higher in children than in adults due to rapid growth and development. Iron, calcium, vitamin D, and omega-3 DHA are the most critical nutrients for cognitive and skeletal development in children. Establishing healthy eating behaviors and food preferences in early childhood has measurable lifelong dietary impact.",
+  "research_findings": "Exclusive breastfeeding for 6 months provides optimal nutrition and immune protection in infants per WHO guidelines. Iron deficiency in children under 5 is associated with measurable cognitive and motor development delays. Excess sugar intake in childhood accelerates dental caries and establishes neural reward pathways associated with addictive eating patterns.",
+  "current_focus_areas": "Building age-stratified nutritional guidelines for infants, toddlers, school-age children, and adolescents; developing parent-facing dietary guidance tools; researching the role of early gut microbiome development in long-term health outcomes.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Assigned to the Lifecycle & Specialized Population Nutrition department under Department Leader Bot 21 (Food Texture Analysis). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 39%."
+    }
+  ]
 }

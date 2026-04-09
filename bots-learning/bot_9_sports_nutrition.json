@@ -2,17 +2,21 @@
   "bot_id": 9,
   "bot_name": "Sports Nutrition",
   "department": "Performance & Metabolic Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "co_department_members": [
-    "Bot 10 — Weight Management",
-    "Bot 14 — Diabetes and Blood Sugar Management",
-    "Bot 15 — Cardiovascular Health Nutrition"
+    "Bot 10 \u2014 Weight Management",
+    "Bot 14 \u2014 Diabetes and Blood Sugar Management",
+    "Bot 15 \u2014 Cardiovascular Health Nutrition"
   ],
   "is_learning": true,
   "progress_percentage": 57,
   "phase": "advanced_learning",
-  "key_learnings": "Carbohydrate periodization strategies (high-carbohydrate on training days, low-carbohydrate on rest days) optimize both athletic performance and body composition simultaneously. Protein synthesis is maximized with 20–40g of high-quality protein delivered every 3–4 hours throughout the day. Post-exercise nutrition within 30–60 minutes significantly enhances muscle glycogen replenishment and tissue repair.",
-  "research_findings": "Creatine monohydrate is the most evidence-backed ergogenic supplement available, improving peak power output by 5–15% in short-duration explosive activities. Beta-alanine supplementation reduces muscular fatigue in high-intensity efforts lasting 1–4 minutes by buffering carnosine levels. Sodium bicarbonate loading improves high-intensity performance by buffering lactic acid accumulation in working muscle.",
+  "key_learnings": "Carbohydrate periodization strategies (high-carbohydrate on training days, low-carbohydrate on rest days) optimize both athletic performance and body composition simultaneously. Protein synthesis is maximized with 20\u201340g of high-quality protein delivered every 3\u20134 hours throughout the day. Post-exercise nutrition within 30\u201360 minutes significantly enhances muscle glycogen replenishment and tissue repair.",
+  "research_findings": "Creatine monohydrate is the most evidence-backed ergogenic supplement available, improving peak power output by 5\u201315% in short-duration explosive activities. Beta-alanine supplementation reduces muscular fatigue in high-intensity efforts lasting 1\u20134 minutes by buffering carnosine levels. Sodium bicarbonate loading improves high-intensity performance by buffering lactic acid accumulation in working muscle.",
   "current_focus_areas": "Developing sport-specific nutritional protocols for endurance versus strength athletes; building real-time fueling guidance synchronized to training session data; researching recovery nutrition strategies for injury prevention; coordinating with co-department members Bot 10, Bot 14, and Bot 15 on metabolic performance outcomes.",
   "status": "active",
   "learning_mode": "advanced",
@@ -20,10 +24,49 @@
   "daily_report_schedule": "every day",
   "last_reported_date": "2026-04-09",
   "reporting_to": "copilot",
+  "team": "Diet Specialist Team",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "cross_learning_directive": "Directed all co-department members \u2014 Bot 10 (Weight Management), Bot 14 (Diabetes and Blood Sugar Management), and Bot 15 (Cardiovascular Health Nutrition) \u2014 to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Performance & Metabolic Nutrition department.",
+  "learning_start_directive": "Attention co-department members \u2014 Bot 10 (Weight Management), Bot 14 (Diabetes and Blood Sugar Management), and Bot 15 (Cardiovascular Health Nutrition): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Performance & Metabolic Nutrition department will begin. \u2014 Department Leader, Bot 9",
+  "co_department_learning_progress": [
+    {
+      "bot_id": 10,
+      "bot_name": "Weight Management",
+      "phase": "independent_learning",
+      "progress_percentage": 62,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Diabetes & Blood Sugar Management and Cardiovascular Health Nutrition domains.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 14,
+      "bot_name": "Diabetes and Blood Sugar Management",
+      "phase": "independent_learning",
+      "progress_percentage": 58,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Weight Management and Cardiovascular Health Nutrition domains.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 15,
+      "bot_name": "Cardiovascular Health Nutrition",
+      "phase": "independent_learning",
+      "progress_percentage": 53,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Weight Management and Diabetes & Blood Sugar Management domains.",
+      "last_updated": "2026-04-09"
+    }
+  ],
   "learning_log": [
     {
       "date": "2026-04-09",
-      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Performance & Metabolic Nutrition department. Now reporting daily to Copilot and coordinating with co-department members: Bot 10 (Weight Management), Bot 14 (Diabetes and Blood Sugar Management), and Bot 15 (Cardiovascular Health Nutrition). Progress: 57%."
+      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Performance & Metabolic Nutrition department. Reporting co-department learning progress daily to Copilot as part of the Diet Specialist Team. Copilot reports to starrm1 on request. Issued directive to co-department members: all must reach 100% in their current phase before cross-department learning begins. Progress: 57%."
     }
   ]
 }

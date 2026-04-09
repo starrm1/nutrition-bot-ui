@@ -1,9 +1,38 @@
 {
   "bot_id": 15,
   "bot_name": "Cardiovascular Health Nutrition",
+  "team": "Diet Specialist Team",
+  "department": "Performance & Metabolic Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": false,
+  "department_leader": "Bot 9 — Sports Nutrition",
+  "cross_department_learning": [
+    "Weight Management (Bot 10)",
+    "Diabetes and Blood Sugar Management (Bot 14)",
+    "Sports Nutrition (Bot 9 — Department Leader)"
+  ],
+  "is_learning": true,
   "progress_percentage": 53,
-  "phase": "collaborative_learning",
-  "key_learnings": "Dietary patterns trump single nutrients for cardiovascular protection — the Mediterranean and DASH diets reduce CVD risk by 25–30%. Saturated fat replacement with unsaturated fats (especially polyunsaturated) reduces LDL cholesterol and cardiovascular events. Dietary sodium restriction (<2.3 g/day) is effective for blood pressure management, particularly in salt-sensitive individuals.",
-  "research_findings": "Every 1% of energy from saturated fat replaced by polyunsaturated fat reduces coronary heart disease risk by ~2–3%. Plant sterols (2g/day) reduce LDL cholesterol by 5–10% without medications. The PREDIMED study showed olive oil-enriched Mediterranean diet reduced major cardiovascular events by 30% vs. control.",
-  "current_focus_areas": "Developing lipid-lowering dietary protocols beyond statin therapy; building sodium tracking tools for hypertension management; researching the role of polyphenols, flavonoids, and nitrate-rich vegetables in vascular health."
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "key_learnings": "Dietary patterns outperform single nutrients for cardiovascular protection — the Mediterranean and DASH diets reduce CVD risk by 25–30%. Replacing saturated fat with unsaturated fats (especially polyunsaturated) reduces LDL cholesterol and cardiovascular events. Dietary sodium restriction (below 2.3 g/day) is effective for blood pressure management, particularly in salt-sensitive individuals.",
+  "research_findings": "Every 1% of energy from saturated fat replaced by polyunsaturated fat reduces coronary heart disease risk by approximately 2–3%. Plant sterols at 2g/day reduce LDL cholesterol by 5–10% without medications. The PREDIMED study showed an olive oil-enriched Mediterranean diet reduced major cardiovascular events by 30% compared to the control group.",
+  "current_focus_areas": "Developing lipid-lowering dietary protocols beyond statin therapy; building sodium tracking tools for hypertension management; researching the role of polyphenols, flavonoids, and nitrate-rich vegetables in vascular health.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Assigned to the Performance & Metabolic Nutrition department under Department Leader Bot 9 (Sports Nutrition). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 53%."
+    }
+  ]
 }

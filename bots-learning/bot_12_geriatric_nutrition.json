@@ -1,9 +1,39 @@
 {
   "bot_id": 12,
   "bot_name": "Geriatric Nutrition",
+  "team": "Diet Specialist Team",
+  "department": "Lifecycle & Specialized Population Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": false,
+  "department_leader": "Bot 21 — Food Texture Analysis",
+  "cross_department_learning": [
+    "Pediatric Nutrition (Bot 11)",
+    "Pregnancy and Maternal Nutrition (Bot 13)",
+    "Hydration Optimization (Bot 17)",
+    "Food Texture Analysis (Bot 21 — Department Leader)"
+  ],
+  "is_learning": true,
   "progress_percentage": 36,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
-  "key_learnings": "Sarcopenia (age-related muscle loss) affects up to 30% of adults over 60 and is preventable with adequate protein intake (1.2–1.6 g/kg/day) and resistance exercise. Appetite decreases with age due to reduced olfactory/taste sensitivity, slower gastric emptying, and hormonal changes. Micronutrient deficiencies are endemic in older adults, particularly B12, D, calcium, and zinc.",
-  "research_findings": "Leucine-enriched protein supplements stimulate muscle protein synthesis more effectively in older adults than standard protein sources. Malnutrition affects 15–30% of hospitalized older adults and doubles in-hospital mortality risk. Omega-3 supplementation slows cognitive decline in early Alzheimer's disease according to multiple RCTs.",
-  "current_focus_areas": "Developing frailty-prevention nutritional protocols; creating easy-preparation, nutrient-dense meal templates for elderly individuals; researching polypharmacy-nutrient interactions common in aging populations."
+  "key_learnings": "Sarcopenia (age-related muscle loss) affects up to 30% of adults over 60 and is preventable with adequate protein intake (1.2–1.6 g/kg/day) combined with resistance exercise. Appetite decreases with age due to reduced olfactory and taste sensitivity, slower gastric emptying, and hormonal changes. Micronutrient deficiencies are endemic in older adults, particularly B12, vitamin D, calcium, and zinc.",
+  "research_findings": "Leucine-enriched protein supplements stimulate muscle protein synthesis more effectively in older adults than standard protein sources. Malnutrition affects 15–30% of hospitalized older adults and doubles in-hospital mortality risk. Omega-3 supplementation has been shown to slow cognitive decline in early Alzheimer's disease across multiple randomized controlled trials.",
+  "current_focus_areas": "Developing frailty-prevention nutritional protocols; creating easy-preparation, nutrient-dense meal templates for elderly individuals; researching polypharmacy-nutrient interactions common in aging populations.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Assigned to the Lifecycle & Specialized Population Nutrition department under Department Leader Bot 21 (Food Texture Analysis). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 36%."
+    }
+  ]
 }

@@ -2,10 +2,14 @@
   "bot_id": 16,
   "bot_name": "Anti-Inflammatory Diet",
   "department": "Therapeutic & Integrative Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "co_department_members": [
-    "Bot 18 — Mental Health and Nutrition",
-    "Bot 19 — Gut-Brain Axis"
+    "Bot 18 \u2014 Mental Health and Nutrition",
+    "Bot 19 \u2014 Gut-Brain Axis"
   ],
   "is_learning": true,
   "progress_percentage": 54,
@@ -19,10 +23,39 @@
   "daily_report_schedule": "every day",
   "last_reported_date": "2026-04-09",
   "reporting_to": "copilot",
+  "team": "Diet Specialist Team",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "cross_learning_directive": "Directed all co-department members \u2014 Bot 18 (Mental Health and Nutrition) and Bot 19 (Gut-Brain Axis) \u2014 to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Therapeutic & Integrative Nutrition department.",
+  "learning_start_directive": "Attention co-department members \u2014 Bot 18 (Mental Health and Nutrition) and Bot 19 (Gut-Brain Axis): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Therapeutic & Integrative Nutrition department will begin. \u2014 Department Leader, Bot 16",
+  "co_department_learning_progress": [
+    {
+      "bot_id": 18,
+      "bot_name": "Mental Health and Nutrition",
+      "phase": "independent_learning",
+      "progress_percentage": 38,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Gut-Brain Axis and Anti-Inflammatory Diet domains.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 19,
+      "bot_name": "Gut-Brain Axis",
+      "phase": "independent_learning",
+      "progress_percentage": 31,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Mental Health and Nutrition and Anti-Inflammatory Diet domains.",
+      "last_updated": "2026-04-09"
+    }
+  ],
   "learning_log": [
     {
       "date": "2026-04-09",
-      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Therapeutic & Integrative Nutrition department. Now reporting daily to Copilot and coordinating with co-department members: Bot 18 (Mental Health and Nutrition) and Bot 19 (Gut-Brain Axis). Progress: 54%."
+      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Therapeutic & Integrative Nutrition department. Reporting co-department learning progress daily to Copilot as part of the Diet Specialist Team. Copilot reports to starrm1 on request. Issued directive to co-department members: all must reach 100% in their current phase before cross-department learning begins. Progress: 54%."
     }
   ]
 }

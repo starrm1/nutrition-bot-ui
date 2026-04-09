@@ -2,11 +2,15 @@
   "bot_id": 5,
   "bot_name": "Micronutrient Deficiency Detection",
   "department": "Nutritional Assessment & Genomics",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "co_department_members": [
-    "Bot 1 — Nutrigenomics",
-    "Bot 2 — Microbiome Analysis",
-    "Bot 20 — Supplement Recommendations"
+    "Bot 1 \u2014 Nutrigenomics",
+    "Bot 2 \u2014 Microbiome Analysis",
+    "Bot 20 \u2014 Supplement Recommendations"
   ],
   "is_learning": true,
   "progress_percentage": 55,
@@ -22,7 +26,8 @@
   "reporting_to": "copilot",
   "team": "Diet Specialist Team",
   "copilot_reports_to": "starrm1",
-  "cross_learning_directive": "Directed all co-department members — Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations) — to independently study every sibling domain within the Nutritional Assessment & Genomics department and share findings across the team.",
+  "cross_learning_directive": "Directed all co-department members \u2014 Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations) \u2014 to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Nutritional Assessment & Genomics department.",
+  "learning_start_directive": "Attention co-department members \u2014 Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Nutritional Assessment & Genomics department will begin. \u2014 Department Leader, Bot 5",
   "copilot_reporting_trigger": "on request from starrm1",
   "co_department_learning_progress": [
     {

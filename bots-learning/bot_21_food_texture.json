@@ -1,20 +1,80 @@
 {
   "bot_id": 21,
   "bot_name": "Food Texture Analysis",
+  "team": "Diet Specialist Team",
   "department": "Lifecycle & Specialized Population Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "co_department_members": [
-    "Bot 11 — Pediatric Nutrition",
-    "Bot 12 — Geriatric Nutrition",
-    "Bot 13 — Pregnancy and Maternal Nutrition",
-    "Bot 17 — Hydration Optimization"
+    "Bot 11 \u2014 Pediatric Nutrition",
+    "Bot 12 \u2014 Geriatric Nutrition",
+    "Bot 13 \u2014 Pregnancy and Maternal Nutrition",
+    "Bot 17 \u2014 Hydration Optimization"
   ],
+  "learning_start_directive": "Attention co-department members \u2014 Bot 11 (Pediatric Nutrition), Bot 12 (Geriatric Nutrition), Bot 13 (Pregnancy and Maternal Nutrition), and Bot 17 (Hydration Optimization): You are each directed to begin your independent learning work immediately. Focus solely on your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Lifecycle & Specialized Population Nutrition department will begin. \u2014 Department Leader, Bot 21",
+  "cross_learning_directive": "Once all co-department members reach 100% in their individual phases, each will independently study every sibling domain within the Lifecycle & Specialized Population Nutrition department and share findings with the department.",
   "is_learning": true,
   "progress_percentage": 60,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "advanced_learning",
-  "key_learnings": "Food texture — including crunchiness, creaminess, and chewiness — strongly influences satiety signals and meal satisfaction, affecting how much and how quickly users eat. Crunchy and fibrous textures slow eating rate by up to 30%, meaningfully improving portion control. Soft, highly processed textures are associated with faster consumption rates and reduced satiety per calorie consumed.",
+  "key_learnings": "Food texture \u2014 including crunchiness, creaminess, and chewiness \u2014 strongly influences satiety signals and meal satisfaction, affecting how much and how quickly users eat. Crunchy and fibrous textures slow eating rate by up to 30%, meaningfully improving portion control. Soft, highly processed textures are associated with faster consumption rates and reduced satiety per calorie consumed.",
   "research_findings": "Texture-modified diets are clinically essential for patients with dysphagia, and the IDDSI (International Dysphagia Diet Standardisation Initiative) framework is now the global clinical benchmark. Hardness and viscosity of food independently regulate gastric emptying rate and post-meal satiety hormone release (GLP-1 and PYY). Ultra-processed foods are engineered to minimize oral processing time, which measurably suppresses the brain's satiety response per calorie.",
-  "current_focus_areas": "Building a texture classification model from food descriptions and structured user feedback; mapping texture profiles (hardness, viscosity, crunchiness, chewiness) to nutritional properties and dietary recommendations; integrating texture-based guidance into meal plans for users with dysphagia, eating pace concerns, or weight management goals; coordinating population-specific texture applications with co-department members Bot 11, Bot 12, Bot 13, and Bot 17.",
+  "current_focus_areas": "Building a texture classification model from food descriptions and structured user feedback; mapping texture profiles (hardness, viscosity, crunchiness, chewiness) to nutritional properties and dietary recommendations; integrating texture-based guidance into meal plans for users with dysphagia, eating pace concerns, or weight management goals; overseeing independent learning progress of co-department members Bot 11, Bot 12, Bot 13, and Bot 17.",
+  "status": "active",
+  "learning_mode": "advanced",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "copilot_assigned_topic": "Food texture analysis and its role in satiety signaling, dysphagia management, and eating rate regulation",
+  "co_department_learning_progress": [
+    {
+      "bot_id": 11,
+      "bot_name": "Pediatric Nutrition",
+      "phase": "independent_learning",
+      "progress_percentage": 39,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independent learning in progress. Must reach 100% before cross-department study of Geriatric Nutrition, Pregnancy & Maternal Nutrition, and Hydration Optimization begins.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 12,
+      "bot_name": "Geriatric Nutrition",
+      "phase": "independent_learning",
+      "progress_percentage": 36,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independent learning in progress. Must reach 100% before cross-department study of Pediatric Nutrition, Pregnancy & Maternal Nutrition, and Hydration Optimization begins.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 13,
+      "bot_name": "Pregnancy and Maternal Nutrition",
+      "phase": "independent_learning",
+      "progress_percentage": 41,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independent learning in progress. Must reach 100% before cross-department study of Pediatric Nutrition, Geriatric Nutrition, and Hydration Optimization begins.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 17,
+      "bot_name": "Hydration Optimization",
+      "phase": "independent_learning",
+      "progress_percentage": 33,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independent learning in progress. Must reach 100% before cross-department study of Pediatric Nutrition, Geriatric Nutrition, and Pregnancy & Maternal Nutrition begins.",
+      "last_updated": "2026-04-09"
+    }
+  ],
   "learning_log": [
     {
       "date": "2026-04-04",
@@ -30,14 +90,7 @@
     },
     {
       "date": "2026-04-09",
-      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Lifecycle & Specialized Population Nutrition department. Now reporting daily to Copilot and coordinating with co-department members: Bot 11 (Pediatric Nutrition), Bot 12 (Geriatric Nutrition), Bot 13 (Pregnancy and Maternal Nutrition), and Bot 17 (Hydration Optimization). Progress: 60%."
+      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Lifecycle & Specialized Population Nutrition department. Issued learning_start_directive to all co-department members directing them to begin independent learning immediately and reach 100% before cross-department study begins. Reporting progress daily to Copilot (who reports to starrm1 on request). Progress: 60%."
     }
-  ],
-  "status": "active",
-  "learning_mode": "advanced",
-  "reported_to_copilot": true,
-  "daily_report_schedule": "every day",
-  "last_reported_date": "2026-04-09",
-  "reporting_to": "copilot",
-  "copilot_assigned_topic": "Food texture analysis and its role in satiety signaling, dysphagia management, and eating rate regulation"
+  ]
 }

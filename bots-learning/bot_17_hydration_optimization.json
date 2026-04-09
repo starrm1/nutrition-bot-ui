@@ -1,9 +1,39 @@
 {
   "bot_id": 17,
   "bot_name": "Hydration Optimization",
+  "team": "Diet Specialist Team",
+  "department": "Lifecycle & Specialized Population Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": false,
+  "department_leader": "Bot 21 — Food Texture Analysis",
+  "cross_department_learning": [
+    "Pediatric Nutrition (Bot 11)",
+    "Geriatric Nutrition (Bot 12)",
+    "Pregnancy and Maternal Nutrition (Bot 13)",
+    "Food Texture Analysis (Bot 21 — Department Leader)"
+  ],
+  "is_learning": true,
   "progress_percentage": 33,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
-  "key_learnings": "Total daily water needs are highly variable (1.5–3.5L/day) and depend on body size, activity level, climate, and dietary water content. Mild dehydration (1–2% body weight loss) impairs cognitive performance, mood, and physical endurance. Water-rich foods (fruits, vegetables, soups) contribute 20–30% of total daily fluid intake.",
-  "research_findings": "Pre-meal water consumption (500 mL 30 min before eating) reduces caloric intake by ~13% and aids weight management. Urine color (pale yellow = well-hydrated) is a more practical and reliable hydration indicator than thirst alone. Electrolyte replacement (sodium, potassium, magnesium) is essential during prolonged exercise or heat exposure to prevent hyponatremia.",
-  "current_focus_areas": "Developing personalized daily hydration targets based on activity and environment; building electrolyte balance guidance for athletic populations; researching the metabolic effects of chronic mild dehydration on kidney function and energy metabolism."
+  "key_learnings": "Total daily water needs are highly variable (1.5–3.5L/day) and depend on body size, activity level, climate, and dietary water content. Mild dehydration (1–2% body weight loss) measurably impairs cognitive performance, mood, and physical endurance. Water-rich foods such as fruits, vegetables, and soups contribute 20–30% of total daily fluid intake.",
+  "research_findings": "Pre-meal water consumption (500 mL 30 minutes before eating) reduces caloric intake by approximately 13% and supports weight management. Urine color (pale yellow indicating well-hydrated) is a more practical and reliable hydration indicator than thirst alone. Electrolyte replacement (sodium, potassium, magnesium) is essential during prolonged exercise or heat exposure to prevent hyponatremia.",
+  "current_focus_areas": "Developing personalized daily hydration targets based on activity level and environmental conditions; building electrolyte balance guidance for athletic populations; researching the metabolic effects of chronic mild dehydration on kidney function and energy metabolism.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Assigned to the Lifecycle & Specialized Population Nutrition department under Department Leader Bot 21 (Food Texture Analysis). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 33%."
+    }
+  ]
 }
