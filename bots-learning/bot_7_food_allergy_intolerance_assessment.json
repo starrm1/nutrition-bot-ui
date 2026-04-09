@@ -1,12 +1,19 @@
 {
   "bot_id": 7,
   "bot_name": "Food Allergy and Intolerance Assessment",
+  "department": "Dietary Safety & Meal Architecture",
+  "is_department_leader": true,
+  "co_department_members": [
+    "Bot 4 — Macronutrient Optimization",
+    "Bot 6 — Caloric Intake Tracking",
+    "Bot 8 — Meal Planning and Scheduling"
+  ],
   "is_learning": true,
   "progress_percentage": 53,
   "phase": "advanced_learning",
-  "key_learnings": "True food allergies (IgE-mediated) affect ~4% of adults and ~8% of children; the Big-9 allergens (milk, eggs, fish, shellfish, tree nuts, peanuts, wheat, soy, sesame) account for >90% of reactions. Food intolerances (non-IgE) such as lactose and gluten intolerance are far more common and dose-dependent. Elimination-reintroduction protocols remain the gold standard for identifying food intolerances.",
-  "research_findings": "Cross-reactive allergens between pollens and foods (oral allergy syndrome) affect ~2% of the general population. Lactose intolerance prevalence ranges from 5% in Northern Europeans to >90% in some East Asian populations. Non-celiac gluten sensitivity is distinct from celiac disease and affects an estimated 0.5–6% of the population.",
-  "current_focus_areas": "Developing guided elimination diet protocols; building cross-reactivity allergen mapping; integrating with Bot 8 (Meal Planning) to auto-generate allergen-free meal templates.",
+  "key_learnings": "True food allergies (IgE-mediated) affect approximately 4% of adults and 8% of children; the Big-9 allergens (milk, eggs, fish, shellfish, tree nuts, peanuts, wheat, soy, sesame) account for over 90% of all reactions. Food intolerances (non-IgE-mediated) such as lactose and gluten intolerance are far more prevalent and dose-dependent. Elimination-reintroduction protocols remain the gold standard for identifying specific food intolerances.",
+  "research_findings": "Cross-reactive allergens between pollens and foods (oral allergy syndrome) affect approximately 2% of the general population. Lactose intolerance prevalence ranges from 5% in Northern Europeans to over 90% in some East Asian populations. Non-celiac gluten sensitivity is clinically distinct from celiac disease and is estimated to affect 0.5–6% of the population.",
+  "current_focus_areas": "Developing guided elimination diet protocols; building a cross-reactivity allergen mapping system; integrating with Bot 8 (Meal Planning and Scheduling) to auto-generate allergen-safe meal templates; directing department-wide safe-diet strategies across co-department members Bot 4, Bot 6, and Bot 8.",
   "status": "active",
   "learning_mode": "advanced",
   "reported_to_copilot": true,
@@ -16,7 +23,7 @@
   "learning_log": [
     {
       "date": "2026-04-09",
-      "entry": "Phase 2 unlocked. Transitioning to advanced_learning — now working directly with Copilot on allergen cross-reactivity mapping and elimination protocol design. Progress: 53%."
+      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Dietary Safety & Meal Architecture department. Now reporting daily to Copilot and coordinating with co-department members: Bot 4 (Macronutrient Optimization), Bot 6 (Caloric Intake Tracking), and Bot 8 (Meal Planning and Scheduling). Progress: 53%."
     }
   ]
 }

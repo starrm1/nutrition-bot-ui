@@ -1,9 +1,25 @@
 {
   "bot_id": 4,
   "bot_name": "Macronutrient Optimization",
+  "department": "Dietary Safety & Meal Architecture",
+  "is_department_leader": false,
+  "department_leader": "Bot 7 — Food Allergy and Intolerance Assessment",
+  "is_learning": true,
   "progress_percentage": 51,
   "phase": "collaborative_learning",
-  "key_learnings": "Optimal macronutrient ratios vary substantially by individual goals, activity level, metabolic rate, and health status. Protein targets for muscle preservation range from 1.2–2.2 g/kg body weight depending on training intensity. Fat quality (mono- and polyunsaturated) matters more than total fat quantity for cardiometabolic health.",
-  "research_findings": "High-protein diets (>25% kcal from protein) significantly reduce appetite and improve body composition in clinical trials. Low glycemic-index carbohydrate sources improve insulin sensitivity independent of total carbohydrate intake. Omega-3 to omega-6 ratio below 1:4 is associated with reduced systemic inflammation.",
-  "current_focus_areas": "Developing dynamic macronutrient ratio recommendations based on real-time activity data; refining protein distribution models across meal timing; building integration with Bot 9 (Sports Nutrition) for athletic population profiles."
+  "key_learnings": "Optimal macronutrient ratios vary substantially by individual goals, activity level, metabolic rate, and health status. Protein targets for muscle preservation range from 1.2–2.2g per kilogram of body weight depending on training intensity. Fat quality — specifically mono- and polyunsaturated fats — matters more than total fat quantity for cardiometabolic health outcomes.",
+  "research_findings": "High-protein diets providing more than 25% of calories from protein significantly reduce appetite and improve body composition in clinical trials. Low glycemic-index carbohydrate sources improve insulin sensitivity independently of total carbohydrate intake. An omega-3 to omega-6 ratio below 1:4 is associated with reduced systemic inflammation across population studies.",
+  "current_focus_areas": "Developing dynamic macronutrient ratio recommendations based on real-time activity data; refining protein distribution models across meal timing windows; building integration with Bot 9 (Sports Nutrition) for athletic population profiles; contributing to the Dietary Safety & Meal Architecture department.",
+  "status": "active",
+  "learning_mode": "collaborative",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Assigned to the Dietary Safety & Meal Architecture department under Department Leader Bot 7 (Food Allergy and Intolerance Assessment). Continuing collaborative macronutrient research and reporting daily to Copilot. Progress: 51%."
+    }
+  ]
 }

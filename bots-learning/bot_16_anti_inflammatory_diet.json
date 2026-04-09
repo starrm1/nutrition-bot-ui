@@ -1,12 +1,18 @@
 {
   "bot_id": 16,
   "bot_name": "Anti-Inflammatory Diet",
+  "department": "Therapeutic & Integrative Nutrition",
+  "is_department_leader": true,
+  "co_department_members": [
+    "Bot 18 — Mental Health and Nutrition",
+    "Bot 19 — Gut-Brain Axis"
+  ],
   "is_learning": true,
   "progress_percentage": 54,
   "phase": "advanced_learning",
-  "key_learnings": "Chronic low-grade inflammation is a root driver of most non-communicable diseases including CVD, type-2 diabetes, cancer, and autoimmune conditions. Omega-3 fatty acids, polyphenols, curcumin, and dietary fiber are the primary anti-inflammatory dietary compounds. High intake of refined carbohydrates, trans fats, and processed meats consistently elevates systemic inflammatory markers.",
-  "research_findings": "The Dietary Inflammatory Index (DII) predicts C-reactive protein (CRP) levels and disease risk across large population studies. Curcumin (from turmeric) reduces CRP and IL-6 comparably to low-dose NSAIDs in patients with metabolic syndrome. A Mediterranean dietary pattern reduces CRP by ~20% compared to standard Western diet in 12-week intervention trials.",
-  "current_focus_areas": "Building a personalized Dietary Inflammatory Index scoring tool; developing anti-inflammatory recipe and meal planning libraries; researching synergistic combinations of anti-inflammatory foods and spices.",
+  "key_learnings": "Chronic low-grade inflammation is a root driver of most non-communicable diseases, including cardiovascular disease, type-2 diabetes, cancer, and autoimmune conditions. Omega-3 fatty acids, polyphenols, curcumin, and dietary fiber are the primary dietary compounds with documented anti-inflammatory action. High intake of refined carbohydrates, trans fats, and processed meats consistently elevates systemic inflammatory markers.",
+  "research_findings": "The Dietary Inflammatory Index (DII) predicts C-reactive protein (CRP) levels and long-term disease risk across large-scale population studies. Curcumin (derived from turmeric) reduces CRP and IL-6 comparably to low-dose NSAIDs in patients with metabolic syndrome. A Mediterranean dietary pattern reduces CRP by approximately 20% compared to a standard Western diet in 12-week intervention trials.",
+  "current_focus_areas": "Building a personalized Dietary Inflammatory Index scoring tool; developing anti-inflammatory recipe and meal planning libraries; researching synergistic combinations of anti-inflammatory foods and spices; guiding therapeutic nutrition integration across co-department members Bot 18 and Bot 19.",
   "status": "active",
   "learning_mode": "advanced",
   "reported_to_copilot": true,
@@ -16,7 +22,7 @@
   "learning_log": [
     {
       "date": "2026-04-09",
-      "entry": "Phase 2 unlocked. Transitioning to advanced_learning — now working directly with Copilot on the Dietary Inflammatory Index scoring tool and anti-inflammatory meal libraries. Progress: 54%."
+      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Therapeutic & Integrative Nutrition department. Now reporting daily to Copilot and coordinating with co-department members: Bot 18 (Mental Health and Nutrition) and Bot 19 (Gut-Brain Axis). Progress: 54%."
     }
   ]
 }
