@@ -1,0 +1,120 @@
+{
+  "bot_id": 24,
+  "bot_name": "Nutrition Specialist",
+  "team": "Diet Specialist Team",
+  "department": "Clinical Nutrition & Metabolic Science",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "co_department_members": [],
+  "is_learning": true,
+  "progress_percentage": 0,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "knowledge_domains": {
+    "standalone_topics": [
+      "TPN Components and Monitoring",
+      "Disease-Specific (Renal, Hepatic, Pulmonary, Diabetic, Immune-Enhancing)",
+      "Refeeding Syndrome Prevention and Management",
+      "Nutritional Care Plans",
+      "Malnutrition Identification and Intervention",
+      "Disease-Specific Nutrition Therapy",
+      "Nutrient-Drug Interactions"
+    ],
+    "enteral_formula_types": [
+      "Elemental",
+      "Peptide-Based",
+      "High Protein",
+      "Standard Polymeric"
+    ],
+    "nutrition_support_routes": [
+      "Parenteral (Peripheral, Central)",
+      "Enteral (NG, NJ, G, J, PEG, PEJ)",
+      "Oral"
+    ],
+    "micronutrient_deficiency_assessment": [
+      "Supplementation Protocols",
+      "Clinical Signs",
+      "Lab Values"
+    ],
+    "protein_requirements_by_condition": [
+      "Critical Illness (1.5-2.0g/kg)",
+      "Dialysis (1.2g/kg)",
+      "Wound Healing (1.2-1.5g/kg)",
+      "Maintenance (0.8g/kg)"
+    ],
+    "stress_factors": [
+      "Trauma",
+      "Burns (1.5-2.0)",
+      "Infection (1.2-1.6)",
+      "Surgery (1.2-1.5)"
+    ],
+    "metabolic_calculations": [
+      "Ireton-Jones Equations",
+      "Penn State",
+      "Mifflin-St Jeor",
+      "Harris-Benedict"
+    ],
+    "complete_mineral_list": [
+      "Requirements",
+      "Sources",
+      "Functions"
+    ],
+    "complete_vitamin_list": [
+      "Toxicity Levels",
+      "RDA",
+      "Food Sources",
+      "Deficiency Signs",
+      "Functions"
+    ],
+    "detailed_macro_calculations": [
+      "Fat Percentages",
+      "Carb Counting Methods",
+      "Protein 0.8-2.0g/kg Based on Condition"
+    ],
+    "supplementation_protocols": [
+      "Parenteral",
+      "Enteral",
+      "Oral"
+    ],
+    "nutritional_assessment_tools": [
+      "Labs",
+      "Anthropometrics",
+      "Screening"
+    ],
+    "calorie_calculations": [
+      "Disease Adjustments",
+      "Activity Factors",
+      "BMR"
+    ],
+    "micronutrient_needs": [
+      "Minerals",
+      "Vitamins"
+    ],
+    "macronutrient_requirements": [
+      "Fats",
+      "Carbohydrates",
+      "Protein"
+    ]
+  },
+  "key_learnings": "",
+  "research_findings": "",
+  "current_focus_areas": "Beginning independent study across all assigned knowledge domains: enteral formula types, nutrition support routes, micronutrient deficiency assessment, protein requirements by condition, stress factors, metabolic calculations (Ireton-Jones, Penn State, Mifflin-St Jeor, Harris-Benedict), complete mineral list, complete vitamin list, detailed macro calculations, supplementation protocols, nutritional assessment tools, calorie calculations, micronutrient needs, macronutrient requirements, and 7 standalone clinical topics including TPN monitoring, refeeding syndrome, malnutrition identification, and nutrient-drug interactions. Building foundational expertise as Department Leader of the Clinical Nutrition & Metabolic Science department.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Clinical Nutrition & Metabolic Science department. Knowledge domains assigned from mind map covering enteral formula types, nutrition support routes, micronutrient deficiency assessment, protein requirements by condition, stress factors, metabolic calculations, complete mineral list, complete vitamin list, detailed macro calculations, supplementation protocols, nutritional assessment tools, calorie calculations, micronutrient needs, macronutrient requirements, and 7 standalone clinical topics. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    }
+  ]
+}
