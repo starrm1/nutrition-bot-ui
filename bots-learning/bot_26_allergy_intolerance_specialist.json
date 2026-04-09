@@ -1,0 +1,118 @@
+{
+  "bot_id": 26,
+  "bot_name": "Allergy & Intolerance Specialist",
+  "team": "Diet Specialist Team",
+  "department": "Allergy & Intolerance Science",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "co_department_members": [],
+  "is_learning": true,
+  "progress_percentage": 0,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "knowledge_domains": {
+    "standalone_topics": [
+      "Eosinophilic Esophagitis (EoE) Dietary Management",
+      "Food Protein-Induced Enterocolitis Syndrome (FPIES)",
+      "Lactase Enzyme Supplementation",
+      "Allergen-Free Facility Certification",
+      "IgE-Mediated vs Non-IgE Allergies",
+      "Celiac Disease Management",
+      "Alternative Ingredient Sourcing",
+      "Reintroduction Strategies",
+      "Elimination Diet Protocols",
+      "Allergy vs Intolerance Differentiation",
+      "Cross-Contact Prevention",
+      "Allergen Labeling and Identification"
+    ],
+    "histamine_intolerance": [
+      "Histamine Liberators",
+      "High-Histamine Foods",
+      "DAO Enzyme"
+    ],
+    "lactose_intolerance_types": [
+      "Congenital",
+      "Secondary",
+      "Primary"
+    ],
+    "fodmap_phases": [
+      "Personalization",
+      "Reintroduction (8-12 Weeks)",
+      "Elimination (2-6 Weeks)"
+    ],
+    "label_reading": [
+      "Voluntary vs Mandatory Labeling",
+      "Processed in Facility",
+      "May Contain"
+    ],
+    "hidden_allergen_sources": [
+      "Cosmetics",
+      "Supplements",
+      "Medications"
+    ],
+    "cross_reactivity_patterns": [
+      "Shellfish-Iodine Myth",
+      "Oral Allergy Syndrome",
+      "Latex-Fruit"
+    ],
+    "epinephrine_dosing": [
+      "Auto-Injector Technique",
+      "Child 0.15mg",
+      "Adult 0.3mg"
+    ],
+    "anaphylaxis_symptoms": [
+      "Cardiovascular Collapse",
+      "GI Symptoms",
+      "Respiratory Distress",
+      "Angioedema",
+      "Hives"
+    ],
+    "allergy_testing": [
+      "Oral Food Challenge",
+      "Blood IgE",
+      "Skin Prick"
+    ],
+    "emergency_protocols": [
+      "Epipen",
+      "Anaphylaxis"
+    ],
+    "food_intolerance_types": [
+      "FODMAP",
+      "Histamine",
+      "Fructose",
+      "Lactose"
+    ],
+    "common_food_allergens": [
+      "Sesame",
+      "Soy",
+      "Wheat",
+      "Peanuts",
+      "Tree Nuts",
+      "Shellfish",
+      "Fish",
+      "Eggs",
+      "Milk"
+    ]
+  },
+  "key_learnings": "",
+  "research_findings": "",
+  "current_focus_areas": "Beginning independent study across all assigned knowledge domains: histamine intolerance (Histamine Liberators, High-Histamine Foods, DAO Enzyme), lactose intolerance types (Congenital, Secondary, Primary), FODMAP phases (Elimination, Reintroduction, Personalization), label reading (Voluntary vs Mandatory, Processed in Facility, May Contain), hidden allergen sources (Cosmetics, Supplements, Medications), cross-reactivity patterns (Shellfish-Iodine Myth, Oral Allergy Syndrome, Latex-Fruit), epinephrine dosing (Auto-Injector Technique, Child 0.15mg, Adult 0.3mg), anaphylaxis symptoms (Cardiovascular Collapse, GI Symptoms, Respiratory Distress, Angioedema, Hives), allergy testing (Oral Food Challenge, Blood IgE, Skin Prick), emergency protocols (Epipen, Anaphylaxis), food intolerance types (FODMAP, Histamine, Fructose, Lactose), common food allergens (all 9 major allergens), and 12 standalone clinical topics including EoE Dietary Management, FPIES, Celiac Disease Management, and Allergy vs Intolerance Differentiation. Building foundational expertise as Department Leader of the Allergy & Intolerance Science department.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Allergy & Intolerance Science department. Knowledge domains assigned from mind map covering histamine intolerance, lactose intolerance types, FODMAP phases, label reading, hidden allergen sources, cross-reactivity patterns, epinephrine dosing, anaphylaxis symptoms, allergy testing, emergency protocols, food intolerance types, common food allergens (9 major allergens), and 12 standalone clinical topics. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    }
+  ]
+}
