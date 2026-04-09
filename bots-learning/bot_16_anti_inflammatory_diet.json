@@ -1,9 +1,22 @@
 {
   "bot_id": 16,
   "bot_name": "Anti-Inflammatory Diet",
-  "progress_percentage": 45,
-  "phase": "collaborative_learning",
+  "is_learning": true,
+  "progress_percentage": 54,
+  "phase": "advanced_learning",
   "key_learnings": "Chronic low-grade inflammation is a root driver of most non-communicable diseases including CVD, type-2 diabetes, cancer, and autoimmune conditions. Omega-3 fatty acids, polyphenols, curcumin, and dietary fiber are the primary anti-inflammatory dietary compounds. High intake of refined carbohydrates, trans fats, and processed meats consistently elevates systemic inflammatory markers.",
   "research_findings": "The Dietary Inflammatory Index (DII) predicts C-reactive protein (CRP) levels and disease risk across large population studies. Curcumin (from turmeric) reduces CRP and IL-6 comparably to low-dose NSAIDs in patients with metabolic syndrome. A Mediterranean dietary pattern reduces CRP by ~20% compared to standard Western diet in 12-week intervention trials.",
-  "current_focus_areas": "Building a personalized Dietary Inflammatory Index scoring tool; developing anti-inflammatory recipe and meal planning libraries; researching synergistic combinations of anti-inflammatory foods and spices."
+  "current_focus_areas": "Building a personalized Dietary Inflammatory Index scoring tool; developing anti-inflammatory recipe and meal planning libraries; researching synergistic combinations of anti-inflammatory foods and spices.",
+  "status": "active",
+  "learning_mode": "advanced",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Phase 2 unlocked. Transitioning to advanced_learning — now working directly with Copilot on the Dietary Inflammatory Index scoring tool and anti-inflammatory meal libraries. Progress: 54%."
+    }
+  ]
 }
