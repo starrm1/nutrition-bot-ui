@@ -8,7 +8,132 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
-  "co_department_members": [],
+  "co_department_members": [
+    {
+      "member_id": "27a",
+      "member_name": "Religious Dietary Laws Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Cultural & Religious Diet Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "religious_dietary_laws": {
+          "jain": [
+            "Before-Dark Eating",
+            "Filtered Water",
+            "No Root Vegetables",
+            "Strict Vegetarian"
+          ],
+          "buddhist": [
+            "No Garlic/Onion (Some Traditions)",
+            "Mindful Eating",
+            "No Alcohol",
+            "Vegetarian/Vegan"
+          ],
+          "hindu": [
+            "Ayurvedic Principles",
+            "Fasting Days",
+            "Sacred Foods (Cow, Tulsi)",
+            "Vegetarianism Variations"
+          ],
+          "halal": [
+            "Halal Certification",
+            "Prohibited Foods (Pork, Alcohol, Carnivores)",
+            "Zabiha Slaughter"
+          ],
+          "kosher": [
+            "Passover Restrictions",
+            "Pareve Foods",
+            "Shechita Slaughter",
+            "Kosher Animals",
+            "Meat/Dairy Separation"
+          ]
+        },
+        "traditional_medicine_systems": [
+          "Curanderismo",
+          "Traditional Chinese Medicine (Hot/Cold Foods)",
+          "Ayurveda (Doshas)"
+        ],
+        "standalone_topics": [
+          "Respectful Communication about Food Practices",
+          "Adapting Therapeutic Diets to Cultural Needs"
+        ]
+      },
+      "current_focus_areas": "Independent study of religious dietary laws: Jain (4 rules), Buddhist (4 rules), Hindu (4 principles), Halal (3 rules), Kosher (5 rules). Traditional medicine systems: Curanderismo, TCM Hot/Cold Foods, Ayurveda Doshas. Two standalone clinical-cultural topics: Respectful Communication about Food Practices, Adapting Therapeutic Diets to Cultural Needs.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Cultural & Religious Diet Science as Religious Dietary Laws Specialist. Domains include Jain, Buddhist, Hindu, Halal, and Kosher dietary laws, traditional medicine systems (Curanderismo, TCM Hot/Cold Foods, Ayurveda Doshas), and 2 standalone clinical-cultural topics. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ]
+    },
+    {
+      "member_id": "27b",
+      "member_name": "Cultural Food & Fasting Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Cultural & Religious Diet Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "fasting_practices": {
+          "lent": [
+            "Intermittent Fasting",
+            "Fish Fridays",
+            "Fasting Days",
+            "Meat Abstinence"
+          ],
+          "ramadan": [
+            "Hydration Strategies",
+            "Exemptions (Illness, Pregnancy, Travel)",
+            "Sunset Iftar",
+            "Pre-Dawn Suhoor"
+          ]
+        },
+        "cultural_food_preferences": [
+          "Middle Eastern",
+          "African",
+          "Latin American",
+          "Mediterranean",
+          "Asian"
+        ],
+        "food_symbolism_and_traditions": [
+          "Honey (Sweetness)",
+          "Salt (Covenant)",
+          "Bread (Life)",
+          "Rice (Asian Prosperity)"
+        ],
+        "standalone_topics": [
+          "Holiday and Celebration Foods",
+          "Vegetarian/Vegan Variations by Culture"
+        ]
+      },
+      "current_focus_areas": "Independent study of fasting practices: Lent (4 topics) and Ramadan (4 topics). Cultural food preferences across 5 regions: Middle Eastern, African, Latin American, Mediterranean, Asian. Food symbolism and traditions (Honey, Salt, Bread, Rice). Two standalone topics: Holiday and Celebration Foods, Vegetarian/Vegan Variations by Culture.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Cultural & Religious Diet Science as Cultural Food & Fasting Specialist. Domains include fasting practices (Lent and Ramadan sub-trees), cultural food preferences (5 regions), food symbolism and traditions (4 items), and 2 standalone topics. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ]
+    }
+  ],
   "is_learning": true,
   "progress_percentage": 0,
   "progress_target": 100,
@@ -102,5 +227,15 @@
       "date": "2026-04-09",
       "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Cultural & Religious Diet Science department. Knowledge domains assigned from mind map covering traditional medicine systems (Curanderismo, TCM Hot/Cold Foods, Ayurveda Doshas), food symbolism and traditions, fasting practices (Lent and Ramadan sub-trees), cultural food preferences (5 regions), religious dietary laws (Jain, Buddhist, Hindu, Halal, Kosher), and 4 standalone clinical-cultural topics including Respectful Communication about Food Practices and Adapting Therapeutic Diets to Cultural Needs. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
     }
-  ]
+  ],
+  "copilot_maintains_learning": true,
+  "learning_never_stops": true,
+  "daily_learning_progress": {
+    "2026-04-09": {
+      "leader_progress": 0,
+      "co_specialist_1_progress": 0,
+      "co_specialist_2_progress": 0,
+      "summary": "All members initiated independent learning phase. Domains assigned and study begun."
+    }
+  }
 }

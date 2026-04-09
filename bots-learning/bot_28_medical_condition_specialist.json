@@ -8,7 +8,167 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
-  "co_department_members": [],
+  "co_department_members": [
+    {
+      "member_id": "28a",
+      "member_name": "Chronic Disease Nutrition Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Medical Condition Diet Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "diabetes_management": {
+          "management_tools": [
+            "Sick Day Rules",
+            "Hyperglycemia Management",
+            "Hypoglycemia Treatment (15-15 Rule)",
+            "A1C Targets (<7%)",
+            "Continuous Glucose Monitoring",
+            "Glycemic Index/Load",
+            "Insulin-to-Carb Ratios",
+            "Carb Counting (15g Portions)"
+          ],
+          "types": [
+            "Gestational",
+            "Type 2",
+            "Type 1"
+          ]
+        },
+        "cardiovascular_disease": {
+          "dietary_targets": [
+            "Fiber Goals (25-30g/day)",
+            "Cholesterol Limits (<200mg/day)",
+            "Trans Fat Avoidance",
+            "Saturated Fat Limits (<7% Calories)",
+            "Omega-3 Recommendations",
+            "Mediterranean Diet",
+            "Sodium Limits (1500-2000mg/day)",
+            "DASH Diet Specifics"
+          ],
+          "conditions": [
+            "MI",
+            "CHF",
+            "HTN"
+          ]
+        },
+        "renal_disease": {
+          "dietary_targets": [
+            "Post-Transplant Diet",
+            "Dialysis Types (Hemodialysis, Peritoneal)",
+            "Protein (0.6-0.8g/kg CKD, 1.2g/kg Dialysis)",
+            "Sodium Limits (2000mg/day)",
+            "Fluid Restrictions (500-1000ml/day Dialysis)",
+            "Phosphorus Limits (800-1000mg/day)",
+            "Potassium Limits (2000mg/day Advanced CKD)"
+          ],
+          "stages_and_types": [
+            "Transplant",
+            "Dialysis",
+            "CKD Stages"
+          ]
+        },
+        "gout": [
+          "Avoid High-Fructose Corn Syrup",
+          "Limit Alcohol (Especially Beer)",
+          "Hydration",
+          "Purine Restriction"
+        ]
+      },
+      "current_focus_areas": "Independent study of chronic disease nutrition: Diabetes Management (Type 1, Type 2, Gestational + 8 management tools including Carb Counting, Insulin-to-Carb Ratios, 15-15 Rule, A1C targets, CGM, Sick Day Rules). Cardiovascular Disease (DASH Diet, Mediterranean Diet, 8 dietary targets, MI/CHF/HTN conditions). Renal Disease (CKD Stages, Dialysis types, Transplant + 7 dietary parameters). Gout (Purine Restriction, Hydration, HFCS avoidance, Alcohol limits).",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Medical Condition Diet Science as Chronic Disease Nutrition Specialist. Domains include Diabetes Management (3 types + 8 tools), Cardiovascular Disease (3 conditions + 8 dietary targets), Renal Disease (3 stages/types + 7 dietary targets), and Gout (4 topics). Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ]
+    },
+    {
+      "member_id": "28b",
+      "member_name": "GI & Oncology Nutrition Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Medical Condition Diet Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "gi_disorders": {
+          "celiac": [
+            "Gluten Challenge for Diagnosis",
+            "Dermatitis Herpetiformis",
+            "Oat Controversy",
+            "Cross-Contact Prevention",
+            "<20ppm Gluten"
+          ],
+          "ibd_crohns_uc": [
+            "Anti-Inflammatory Foods",
+            "Specific Carbohydrate Diet",
+            "Exclusive Enteral Nutrition",
+            "Low-Residue During Flares"
+          ],
+          "ibs": [
+            "Stress Management",
+            "Trigger Identification",
+            "Soluble vs Insoluble Fiber",
+            "Low FODMAP Diet"
+          ],
+          "gerd": [
+            "Small Frequent Meals",
+            "Elevation Strategies",
+            "Meal Timing (No Eating 2-3 Hours Before Bed)",
+            "Trigger Foods (Citrus, Tomato, Chocolate, Mint, Spicy, Fatty, Caffeine, Alcohol)"
+          ]
+        },
+        "cancer_nutrition": [
+          "Cachexia Management",
+          "High-Calorie/High-Protein Needs",
+          "Neutropenic Diet Controversy",
+          "Managing Side Effects (Nausea, Mucositis, Taste Changes, Early Satiety)"
+        ],
+        "liver_disease": [
+          "Cirrhosis Nutrition",
+          "Varices (Soft Foods)",
+          "Ascites (Sodium/Fluid Restriction)",
+          "Hepatic Encephalopathy (Protein Distribution, BCAA)"
+        ],
+        "respiratory_conditions": {
+          "standalone": [
+            "Obesity Management",
+            "Eating Disorders",
+            "Neurological Disorders"
+          ],
+          "copd": [
+            "Energy Conservation",
+            "Small Frequent Meals",
+            "High-Fat/Low-Carb Ratios (Reduce CO2 Production)"
+          ]
+        }
+      },
+      "current_focus_areas": "Independent study of GI and oncology nutrition: GI Disorders covering Celiac (5 topics), IBD/Crohn's/UC (4 topics), IBS (4 topics including Low FODMAP), GERD (4 topics). Cancer Nutrition (Cachexia, High-Cal/High-Protein, Neutropenic Diet, Side Effect Management). Liver Disease (Cirrhosis, Varices, Ascites, Hepatic Encephalopathy with BCAA). Respiratory Conditions including COPD sub-tree (Energy Conservation, Small Frequent Meals, High-Fat/Low-Carb) and 3 standalone topics.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Medical Condition Diet Science as GI & Oncology Nutrition Specialist. Domains include GI Disorders (Celiac, IBD/Crohn's/UC, IBS, GERD \u2014 4 sub-trees), Cancer Nutrition (4 topics), Liver Disease (4 topics), and Respiratory Conditions including COPD sub-tree (3 topics) + 3 standalones. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ]
+    }
+  ],
   "is_learning": true,
   "progress_percentage": 0,
   "progress_target": 100,
@@ -139,5 +299,15 @@
       "date": "2026-04-09",
       "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Medical Condition Diet Science department. Knowledge domains assigned from mind map covering: Gout (4 topics), Respiratory Conditions including COPD sub-tree (3 standalone + 3 COPD-specific), Liver Disease (4 topics), Cancer Nutrition (4 topics), GI Disorders with 4 sub-trees (Celiac 5 topics, IBD 4 topics, IBS 4 topics, GERD 4 topics), Cardiovascular Disease dietary targets (8 topics) and conditions (MI, CHF, HTN), Renal Disease dietary parameters (7 targets) with CKD Stages, Dialysis, Transplant, and Diabetes Management tools (8 topics) with Type 1, Type 2, Gestational sub-types. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
     }
-  ]
+  ],
+  "copilot_maintains_learning": true,
+  "learning_never_stops": true,
+  "daily_learning_progress": {
+    "2026-04-09": {
+      "leader_progress": 0,
+      "co_specialist_1_progress": 0,
+      "co_specialist_2_progress": 0,
+      "summary": "All members initiated independent learning phase. Domains assigned and study begun."
+    }
+  }
 }
