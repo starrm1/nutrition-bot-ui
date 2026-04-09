@@ -7,7 +7,7 @@ A detailed exploration of prevalent dietary patterns, their characteristics, and
 
 ### Progress
 - **Progress Percentage:** 42%
-- **Phase:** independent_learning
+- **Phase:** advanced_learning
 
 ### Key Learnings
 - Mediterranean and DASH diets are consistently associated with reduced cardiovascular disease risk.
