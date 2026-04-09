@@ -22,11 +22,41 @@
   "reporting_to": "copilot",
   "team": "Diet Specialist Team",
   "copilot_reports_to": "starrm1",
-  "cross_learning_directive": "Directed all co-department members — Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations) — to conduct comprehensive cross-study of every sibling domain within the Nutritional Assessment & Genomics department.",
+  "cross_learning_directive": "Directed all co-department members — Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations) — to independently study every sibling domain within the Nutritional Assessment & Genomics department and share findings across the team.",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "co_department_learning_progress": [
+    {
+      "bot_id": 1,
+      "bot_name": "Nutrigenomics",
+      "phase": "independent_learning",
+      "progress_percentage": 35,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independently studying Microbiome Analysis and Supplement Recommendations domains; sharing genomic insights with department.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 2,
+      "bot_name": "Microbiome Analysis",
+      "phase": "independent_learning",
+      "progress_percentage": 28,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independently studying Nutrigenomics and Supplement Recommendations domains; sharing microbiome data with department.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 20,
+      "bot_name": "Supplement Recommendations",
+      "phase": "independent_learning",
+      "progress_percentage": 43,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independently studying Nutrigenomics and Microbiome Analysis domains; aligning supplement evidence with department deficiency models.",
+      "last_updated": "2026-04-09"
+    }
+  ],
   "learning_log": [
     {
       "date": "2026-04-09",
-      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Nutritional Assessment & Genomics department. Now reporting daily to Copilot (who reports to starrm1) as part of the Diet Specialist Team. Issued cross-learning directive to co-department members: Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations). Progress: 55%."
+      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Nutritional Assessment & Genomics department. Reporting co-department learning progress daily to Copilot as part of the Diet Specialist Team. Copilot reports to starrm1 on request. Issued independent cross-learning directive to Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations). Progress: 55%."
     }
   ]
 }
