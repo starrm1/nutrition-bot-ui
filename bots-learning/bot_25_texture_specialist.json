@@ -1,0 +1,97 @@
+{
+  "bot_id": 25,
+  "bot_name": "Texture Specialist",
+  "team": "Diet Specialist Team",
+  "department": "Texture & Dysphagia Science",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "co_department_members": [],
+  "is_learning": true,
+  "progress_percentage": 0,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "knowledge_domains": {
+    "standalone_topics": [
+      "Moisture Content Management",
+      "Food Molding Techniques for Visual Appeal",
+      "Texture Progression Protocols",
+      "Silent Aspiration Identification",
+      "Aspiration vs Penetration Differences",
+      "Patient Education on Texture Needs",
+      "Testing Consistency Standards",
+      "Aspiration Risk Management",
+      "Safe Swallowing Strategies",
+      "Texture Modification Techniques",
+      "Dysphagia Assessment and Management",
+      "IDDSI Framework"
+    ],
+    "testing_consistency": [
+      "Syringe Flow Test",
+      "Spoon Tilt Test",
+      "Fork Drip Test"
+    ],
+    "thickener_types": [
+      "Amylase-Resistant",
+      "Instant vs Cook",
+      "Starch-Based vs Gum-Based"
+    ],
+    "compensatory_strategies": [
+      "Mendelsohn Maneuver",
+      "Effortful Swallow",
+      "Supraglottic Swallow",
+      "Head Rotation",
+      "Chin Tuck"
+    ],
+    "swallow_study_types": [
+      "FEES (Fiberoptic Endoscopic Evaluation)",
+      "MBSS (Modified Barium Swallow)"
+    ],
+    "dysphagia_screening_tools": [
+      "3-oz Challenge",
+      "Water Swallow Test",
+      "GUSS",
+      "EAT-10"
+    ],
+    "complete_iddsi_levels_0_to_7_with_exact_specifications": [
+      "Level 7: Regular",
+      "Level 6: Soft & Bite-Sized",
+      "Level 5: Minced & Moist",
+      "Level 4: Pureed",
+      "Level 3: Moderately Thick (Liquidized Foods)",
+      "Level 2: Mildly Thick",
+      "Level 1: Slightly Thick",
+      "Level 0: Thin Liquids"
+    ],
+    "equipment_and_tools": [
+      "Blenders",
+      "Molds",
+      "Thickeners"
+    ],
+    "thickening_protocols": [
+      "Pudding Consistency",
+      "Honey Consistency",
+      "Nectar Consistency"
+    ]
+  },
+  "key_learnings": "",
+  "research_findings": "",
+  "current_focus_areas": "Beginning independent study across all assigned knowledge domains: testing consistency (Syringe Flow, Spoon Tilt, Fork Drip), thickener types (Amylase-Resistant, Instant vs Cook, Starch-Based vs Gum-Based), compensatory strategies (Mendelsohn Maneuver, Effortful Swallow, Supraglottic Swallow, Head Rotation, Chin Tuck), swallow study types (FEES, MBSS), dysphagia screening tools (3-oz Challenge, Water Swallow Test, GUSS, EAT-10), complete IDDSI levels 0-7 with exact specifications, equipment and tools, thickening protocols, and 12 standalone clinical topics including IDDSI Framework, dysphagia assessment, moisture content management, aspiration risk management, and texture modification techniques. Building foundational expertise as Department Leader of the Texture & Dysphagia Science department.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Texture & Dysphagia Science department. Knowledge domains assigned from mind map covering testing consistency, thickener types, compensatory strategies, swallow study types, dysphagia screening tools, complete IDDSI levels 0-7 with exact specifications, equipment and tools, thickening protocols, and 12 standalone clinical topics. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    }
+  ]
+}
