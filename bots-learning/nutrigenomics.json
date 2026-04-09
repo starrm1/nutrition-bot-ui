@@ -9,11 +9,11 @@
   "is_department_leader": false,
   "department_leader": "Bot 5 \u2014 Micronutrient Deficiency Detection",
   "is_learning": true,
-  "progress_percentage": 35,
+  "progress_percentage": 40,
   "phase": "independent_learning",
-  "key_learnings": "Genetic variants such as MTHFR, APOE, and FTO significantly alter individual responses to dietary macronutrients and micronutrients, making personalized nutrition essential. Understanding the role of genes in nutrition management allows for more precise dietary recommendations tailored to an individual's genetic profile.",
-  "research_findings": "Identified key gene-nutrient interactions including the MTHFR C677T variant affecting folate metabolism, the APOE4 allele increasing sensitivity to dietary saturated fat, and FTO variants correlating with elevated obesity risk under high-calorie dietary patterns.",
-  "current_focus_areas": "Research on nutrient metabolomics; expanding the SNP database for personalized dietary recommendations; integrating polygenic risk scores with evidence-based dietary guidance; contributing genomic insights to the Nutritional Assessment & Genomics department.",
+  "key_learnings": "Genetic variants such as MTHFR, APOE, and FTO significantly alter individual responses to dietary macronutrients and micronutrients. Expanded research into polygenic risk scores and their integration with personalized dietary protocols.",
+  "research_findings": "Identified key gene-nutrient interactions including MTHFR C677T affecting folate metabolism, APOE4 increasing sensitivity to dietary saturated fat, and FTO variants correlating with elevated obesity risk. New findings include BCMO1 variants reducing beta-carotene to vitamin A conversion efficiency.",
+  "current_focus_areas": "Expanding SNP database for personalized dietary recommendations; integrating polygenic risk scores with evidence-based dietary guidance; contributing genomic insights to the Nutritional Assessment & Genomics department.",
   "status": "active",
   "learning_mode": "independent",
   "reported_to_copilot": true,
@@ -24,6 +24,10 @@
     {
       "date": "2026-04-09",
       "entry": "Assigned to the Nutritional Assessment & Genomics department under Department Leader Bot 5 (Micronutrient Deficiency Detection). Continuing independent genomics research and reporting daily to Copilot. Progress: 35%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed additional research on BCMO1 gene variants and their impact on vitamin A synthesis. Cross-referenced genomic data with dietary outcome studies. Progress advanced to 40%."
     }
   ]
 }

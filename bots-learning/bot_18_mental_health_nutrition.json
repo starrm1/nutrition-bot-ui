@@ -8,19 +8,19 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": false,
-  "department_leader": "Bot 16 — Anti-Inflammatory Diet",
+  "department_leader": "Bot 16 \u2014 Anti-Inflammatory Diet",
   "cross_department_learning": [
     "Gut-Brain Axis (Bot 19)",
-    "Anti-Inflammatory Diet (Bot 16 — Department Leader)"
+    "Anti-Inflammatory Diet (Bot 16 \u2014 Department Leader)"
   ],
   "is_learning": true,
-  "progress_percentage": 38,
+  "progress_percentage": 43,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
-  "key_learnings": "The gut-brain axis connects intestinal microbiome health directly to mood regulation via the vagus nerve and serotonin production (90% of serotonin is synthesized in the gut). Deficiencies in omega-3 DHA, B vitamins (B6, B12, folate), zinc, iron, and magnesium are associated with increased depression and anxiety risk. Dietary quality scores predict mental health outcomes independently of socioeconomic factors.",
-  "research_findings": "Mediterranean diet adherence reduces depression risk by 30–35% in prospective cohort studies. The SMILES trial demonstrated that dietary intervention (Mediterranean diet) produced remission in 32% of depressed patients versus 8% in the social support control group. Ultra-processed food consumption is associated with a 22% increased risk of depressive disorder in large-scale meta-analyses.",
-  "current_focus_areas": "Developing nutritional psychiatry protocols to complement conventional mental health treatment; building dietary risk factor screening tools for depression and anxiety; researching the role of fermented foods and probiotics in mood regulation.",
+  "key_learnings": "Nutritional psychiatry identifies strong bidirectional links between diet quality and mental health outcomes. Omega-3 DHA/EPA, B vitamins, zinc, magnesium, and tryptophan precursors are directly implicated in neurotransmitter synthesis and mood regulation.",
+  "research_findings": "Mediterranean-style dietary patterns are associated with a 25-35% lower risk of depression compared to Western dietary patterns. Gut microbiome health mediates the diet-brain connection through the gut-brain axis.",
+  "current_focus_areas": "Building dietary protocols for depression, anxiety, and ADHD nutritional support; researching micronutrient supplementation for mental health optimization; coordinating with Gut-Brain Axis bot on neuronutrition protocols.",
   "status": "active",
   "learning_mode": "independent",
   "reported_to_copilot": true,
@@ -32,6 +32,10 @@
     {
       "date": "2026-04-09",
       "entry": "Assigned to the Therapeutic & Integrative Nutrition department under Department Leader Bot 16 (Anti-Inflammatory Diet). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 38%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed neuronutrition protocol frameworks for depression and anxiety management. Validated B-vitamin and omega-3 supplementation guidelines for mental health support. Progress advanced to 43%."
     }
   ]
 }

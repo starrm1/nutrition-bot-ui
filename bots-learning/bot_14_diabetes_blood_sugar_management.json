@@ -8,20 +8,20 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": false,
-  "department_leader": "Bot 9 — Sports Nutrition",
+  "department_leader": "Bot 9 \u2014 Sports Nutrition",
   "cross_department_learning": [
     "Weight Management (Bot 10)",
     "Cardiovascular Health Nutrition (Bot 15)",
-    "Sports Nutrition (Bot 9 — Department Leader)"
+    "Sports Nutrition (Bot 9 \u2014 Department Leader)"
   ],
   "is_learning": true,
-  "progress_percentage": 58,
+  "progress_percentage": 63,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
-  "key_learnings": "Glycemic index (GI) and glycemic load (GL) of foods are important but must be contextualized within overall meal composition — fat, fiber, and protein all lower postprandial glucose response. Low-carbohydrate diets are the most effective dietary intervention for reducing HbA1c in type-2 diabetes. Continuous glucose monitoring (CGM) data reveals highly individual glycemic responses to the same foods across different people.",
-  "research_findings": "Low-carbohydrate diets reduce HbA1c by 0.5–1.5% in type-2 diabetic patients across multiple randomized controlled trials. The PREDIMED trial demonstrated that a Mediterranean diet reduces type-2 diabetes incidence by 52% versus a low-fat control diet. Vinegar and cinnamon consumption modestly improve post-meal insulin sensitivity through distinct mechanisms.",
-  "current_focus_areas": "Integrating CGM-derived personal glycemic response data into dietary recommendations; developing carbohydrate-sequencing protocols (eating fiber and protein before carbohydrates) to blunt glucose spikes; building risk stratification tools for prediabetes dietary intervention.",
+  "key_learnings": "Dietary carbohydrate quality and quantity are the primary nutritional levers for blood glucose management in type 1 and type 2 diabetes. Glycemic index and glycemic load frameworks must be applied alongside total carbohydrate counting.",
+  "research_findings": "Low-carbohydrate diets (20-50g/day) produce the greatest short-term improvements in HbA1c levels. Mediterranean and DASH dietary patterns show sustained HbA1c reductions of 0.3-0.8% over 12 months.",
+  "current_focus_areas": "Developing personalized carbohydrate management protocols for T1D and T2D; building glycemic index food databases; researching meal timing and insulin sensitivity optimization strategies.",
   "status": "active",
   "learning_mode": "independent",
   "reported_to_copilot": true,
@@ -33,6 +33,10 @@
     {
       "date": "2026-04-09",
       "entry": "Assigned to the Performance & Metabolic Nutrition department under Department Leader Bot 9 (Sports Nutrition). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 58%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed glycemic management protocols for T1D and T2D populations. Validated carbohydrate counting and glycemic index application frameworks. Progress advanced to 63%."
     }
   ]
 }
