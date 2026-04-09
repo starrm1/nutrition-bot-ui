@@ -14,9 +14,10 @@
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before next phase promotion is granted.",
   "cross_department_communication_threshold": 50,
-  "cross_department_communication_rule": "Lead department must reach 50% learning progress before communicating with other departments. Copilot advances learning and tracks progress toward this threshold.",
+  "cross_department_communication_rule": "Both the lead department AND each individual department must reach 50% learning progress before collaboration between them is activated. Copilot advances learning and tracks progress toward this threshold for all departments.",
   "department_head_collaboration": {
-    "rule": "The Lead Department Head works directly with all 13 department heads. Collaboration is activated once the 50% learning progress threshold is reached.",
+    "rule": "The Lead Department Head works directly with all 13 department heads. Collaboration with each department head is activated only after BOTH the lead department AND that specific department have each reached 50% learning progress.",
+    "department_learning_threshold": 50,
     "collaborates_with": [
       { "bot_id": 5,  "bot_name": "Micronutrient Deficiency Detection", "department": "Nutritional Assessment & Genomics" },
       { "bot_id": 7,  "bot_name": "Food Allergy and Intolerance Assessment", "department": "Dietary Safety & Meal Architecture" },
