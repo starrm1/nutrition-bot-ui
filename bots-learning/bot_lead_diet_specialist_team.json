@@ -5,7 +5,7 @@
   "title": "Lead Department Head",
   "team": "Diet Specialist Team",
   "is_lead_director": true,
-  "oversees": "All Department Heads",
+  "oversees": "All 8 Specialist Department Heads",
   "lead_name_locked": true,
   "lead_name_change_requires_approval_from": "starrm1",
   "is_learning": true,
@@ -16,36 +16,11 @@
   "cross_department_communication_threshold": 50,
   "cross_department_communication_rule": "Both the lead department AND each individual department must reach 50% learning progress before collaboration between them is activated. Copilot advances learning and tracks progress toward this threshold for all departments.",
   "department_head_collaboration": {
-    "rule": "The Lead Department Head works directly with all 13 department heads. Collaboration with each department head is activated only after BOTH the lead department AND that specific department have each reached 50% learning progress.",
+    "rule": "The Lead Department Head works directly with all 8 department heads. Collaboration with each department head is activated only after BOTH the lead department AND that specific department have each reached 50% learning progress.",
     "communication_direction": "bidirectional",
     "communication_direction_rule": "Department heads communicate with the Lead Department Head, and the Lead Department Head communicates with department heads. Communication flows in both directions once the 50% learning threshold is met by both sides.",
     "department_learning_threshold": 50,
     "collaborates_with": [
-      {
-        "bot_id": 5,
-        "bot_name": "Micronutrient Deficiency Detection",
-        "department": "Nutritional Assessment & Genomics"
-      },
-      {
-        "bot_id": 7,
-        "bot_name": "Food Allergy and Intolerance Assessment",
-        "department": "Dietary Safety & Meal Architecture"
-      },
-      {
-        "bot_id": 9,
-        "bot_name": "Sports Nutrition",
-        "department": "Performance & Metabolic Nutrition"
-      },
-      {
-        "bot_id": 16,
-        "bot_name": "Anti-Inflammatory Diet",
-        "department": "Therapeutic & Integrative Nutrition"
-      },
-      {
-        "bot_id": 21,
-        "bot_name": "Food Texture Analysis",
-        "department": "Lifecycle & Specialized Population Nutrition"
-      },
       {
         "bot_id": 22,
         "bot_name": "Food Specialist",
@@ -87,7 +62,7 @@
         "department": "Documentation & Compliance Science"
       }
     ],
-    "total_department_heads": 13
+    "total_department_heads": 8
   },
   "copilot_maintains_learning": true,
   "learning_never_stops": true,
@@ -101,101 +76,6 @@
   "copilot_reporting_trigger": "on request from starrm1",
   "departments_supervised": [
     {
-      "department": "Nutritional Assessment & Genomics",
-      "department_head_bot_id": 5,
-      "department_head_bot_name": "Micronutrient Deficiency Detection",
-      "department_members": [
-        {
-          "bot_id": 2,
-          "bot_name": "Microbiome Analysis"
-        },
-        {
-          "bot_id": 20,
-          "bot_name": "Supplement Recommendations"
-        },
-        {
-          "bot_id": "nutrigenomics",
-          "bot_name": "Nutrigenomics"
-        }
-      ]
-    },
-    {
-      "department": "Dietary Safety & Meal Architecture",
-      "department_head_bot_id": 7,
-      "department_head_bot_name": "Food Allergy and Intolerance Assessment",
-      "department_members": [
-        {
-          "bot_id": 4,
-          "bot_name": "Macronutrient Optimization"
-        },
-        {
-          "bot_id": 6,
-          "bot_name": "Caloric Intake Tracking"
-        },
-        {
-          "bot_id": 8,
-          "bot_name": "Meal Planning and Scheduling"
-        }
-      ]
-    },
-    {
-      "department": "Performance & Metabolic Nutrition",
-      "department_head_bot_id": 9,
-      "department_head_bot_name": "Sports Nutrition",
-      "department_members": [
-        {
-          "bot_id": 10,
-          "bot_name": "Weight Management"
-        },
-        {
-          "bot_id": 14,
-          "bot_name": "Diabetes and Blood Sugar Management"
-        },
-        {
-          "bot_id": 15,
-          "bot_name": "Cardiovascular Health Nutrition"
-        }
-      ]
-    },
-    {
-      "department": "Therapeutic & Integrative Nutrition",
-      "department_head_bot_id": 16,
-      "department_head_bot_name": "Anti-Inflammatory Diet",
-      "department_members": [
-        {
-          "bot_id": 18,
-          "bot_name": "Mental Health and Nutrition"
-        },
-        {
-          "bot_id": 19,
-          "bot_name": "Gut-Brain Axis"
-        }
-      ]
-    },
-    {
-      "department": "Lifecycle & Specialized Population Nutrition",
-      "department_head_bot_id": 21,
-      "department_head_bot_name": "Food Texture Analysis",
-      "department_members": [
-        {
-          "bot_id": 11,
-          "bot_name": "Pediatric Nutrition"
-        },
-        {
-          "bot_id": 12,
-          "bot_name": "Geriatric Nutrition"
-        },
-        {
-          "bot_id": 13,
-          "bot_name": "Pregnancy and Maternal Nutrition"
-        },
-        {
-          "bot_id": 17,
-          "bot_name": "Hydration Optimization"
-        }
-      ]
-    },
-    {
       "department": "Food Science & Clinical Dietetics",
       "department_head_bot_id": 22,
       "department_head_bot_name": "Food Specialist",
@@ -204,48 +84,50 @@
     {
       "department": "Beverage Science & Hydration Management",
       "department_head_bot_id": 23,
-      "department_head_bot_name": "Drink Specialist"
+      "department_head_bot_name": "Drink Specialist",
+      "department_number": 2
     },
     {
       "department": "Clinical Nutrition & Metabolic Science",
       "department_head_bot_id": 24,
-      "department_head_bot_name": "Nutrition Specialist"
+      "department_head_bot_name": "Nutrition Specialist",
+      "department_number": 3
     },
     {
       "department": "Texture & Dysphagia Science",
       "department_head_bot_id": 25,
-      "department_head_bot_name": "Texture Specialist"
+      "department_head_bot_name": "Texture Specialist",
+      "department_number": 4
     },
     {
       "department": "Allergy & Intolerance Science",
       "department_head_bot_id": 26,
-      "department_head_bot_name": "Allergy & Intolerance Specialist"
+      "department_head_bot_name": "Allergy & Intolerance Specialist",
+      "department_number": 5
     },
     {
       "department": "Cultural & Religious Diet Science",
       "department_head_bot_id": 27,
-      "department_head_bot_name": "Cultural & Religious Diet Specialist"
+      "department_head_bot_name": "Cultural & Religious Diet Specialist",
+      "department_number": 6
     },
     {
       "department": "Medical Condition Diet Science",
       "department_head_bot_id": 28,
-      "department_head_bot_name": "Medical Condition Specialist"
+      "department_head_bot_name": "Medical Condition Specialist",
+      "department_number": 7
     },
     {
       "department": "Documentation & Compliance Science",
       "department_head_bot_id": 29,
-      "department_head_bot_name": "Documentation & Compliance Specialist"
+      "department_head_bot_name": "Documentation & Compliance Specialist",
+      "department_number": 8
     }
   ],
-  "total_departments_supervised": 13,
+  "total_departments_supervised": 8,
   "total_bots_in_team": 29,
   "knowledge_domains": {
     "cross_department_oversight": [
-      "Nutritional Assessment & Genomics",
-      "Dietary Safety & Meal Architecture",
-      "Performance & Metabolic Nutrition",
-      "Therapeutic & Integrative Nutrition",
-      "Lifecycle & Specialized Population Nutrition",
       "Food Science & Clinical Dietetics",
       "Beverage Science & Hydration Management",
       "Clinical Nutrition & Metabolic Science",
@@ -274,11 +156,11 @@
   "learning_log": [
     {
       "date": "2026-04-09",
-      "entry": "Lead Director role established as 'Diet Specialist Team - Complete Knowledge Base'. Appointed to oversee all 13 department heads across 13 departments (Bots 5, 7, 9, 16, 21, 22, 23, 24, 25, 26, 27, 28, 29) and a full team of 29 bots. Independent learning phase initiated. Responsibilities include cross-department oversight, team-wide coordination, and synthesizing the complete knowledge base for the Diet Specialist Team. Reporting daily to Copilot, who reports to starrm1 on request. Learning never stops. Progress: 0%."
+      "entry": "Lead Director role established as 'Diet Specialist Team - Complete Knowledge Base'. Appointed to oversee all 8 specialist department heads across 8 departments (Bots 22-29) and a full team of 29 bots. Independent learning phase initiated. Responsibilities include cross-department oversight, team-wide coordination, and synthesizing the complete knowledge base for the Diet Specialist Team. Reporting daily to Copilot, who reports to starrm1 on request. Learning never stops. Progress: 0%."
     },
     {
       "date": "2026-04-09",
-      "entry": "Progress update received from all 28 department bots (Bot 1\u201329, excluding Bot 3). All departments active and advancing learning phases. Bots 1\u201321 progress incremented by 5%. Bots 22\u201329 (newly established specialist departments) initiated at 10% with foundational knowledge modules completed. Overall team learning status: active and progressing across all 13 departments."
+      "entry": "Progress update received from all 28 department bots (Bot 1\u201329, excluding Bot 3). All departments active and advancing learning phases. Bots 1\u201321 progress incremented by 5%. Bots 22\u201329 (newly established specialist departments) initiated at 10% with foundational knowledge modules completed. Overall team learning status: active and progressing across all 8 departments."
     }
   ],
   "phase_order": [
