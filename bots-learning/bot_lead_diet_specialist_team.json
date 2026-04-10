@@ -198,7 +198,8 @@
     {
       "department": "Food Science & Clinical Dietetics",
       "department_head_bot_id": 22,
-      "department_head_bot_name": "Food Specialist"
+      "department_head_bot_name": "Food Specialist",
+      "department_number": 1
     },
     {
       "department": "Beverage Science & Hydration Management",
