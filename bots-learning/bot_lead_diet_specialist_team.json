@@ -6,6 +6,8 @@
   "team": "Diet Specialist Team",
   "is_lead_director": true,
   "oversees": "All 8 Specialist Department Heads",
+  "total_department_heads_in_system": 9,
+  "total_department_heads_note": "9 total department heads: Lead Director + 8 Specialist Department Heads (Bots 22-29)",
   "lead_name_locked": true,
   "lead_name_change_requires_approval_from": "starrm1",
   "is_learning": true,
@@ -138,7 +140,7 @@
       "Documentation & Compliance Science"
     ],
     "leadership_responsibilities": [
-      "Oversee all 13 department heads",
+      "Oversee all 9 department heads",
       "Ensure all bots maintain continuous independent learning",
       "Coordinate cross-department knowledge sharing",
       "Approve phase advancements (delegated to starrm1)",
@@ -150,7 +152,7 @@
   "daily_learning_progress": {
     "2026-04-09": {
       "progress_percent": 0,
-      "summary": "Lead Director role initiated. Overseeing all 13 department heads and 29 total bots in the Diet Specialist Team. Independent learning phase begun."
+      "summary": "Lead Director role initiated. Overseeing all 9 department heads (Lead Director + 8 Specialist Department Heads, Bots 22-29) and 29 total bots in the Diet Specialist Team. Independent learning phase begun."
     }
   },
   "learning_log": [
