@@ -9,7 +9,137 @@
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "department_number": 1,
-  "co_department_members": [],
+  "co_department_members": [
+    {
+      "name": "Ingredient Functionality",
+      "sub_departments": [
+        "Flavoring",
+        "Thickening",
+        "Emulsifying",
+        "Leavening",
+        "Binding"
+      ]
+    },
+    {
+      "name": "Recipe Adaptation Strategies",
+      "sub_departments": []
+    },
+    {
+      "name": "Food Texture Analysis and Modification Methods",
+      "sub_departments": []
+    },
+    {
+      "name": "Seasonal and Local Food Sourcing",
+      "sub_departments": []
+    },
+    {
+      "name": "Food Substitutions and Alternatives for Every Restriction",
+      "sub_departments": []
+    },
+    {
+      "name": "Cooking Techniques per Diet Restriction",
+      "sub_departments": []
+    },
+    {
+      "name": "Food Safety and Storage",
+      "sub_departments": [
+        "Color Coded Cutting Boards",
+        "Cross Contamination Zones",
+        "Reheating Protocols",
+        "Proper Cooling",
+        "First In First Out",
+        "Expiration Dating",
+        "Shelf Life",
+        "Storage Temps",
+        "Danger Zone (40-140\u00b0F)",
+        "HACCP"
+      ]
+    },
+    {
+      "name": "Portion Sizes and Serving Guidelines",
+      "sub_departments": []
+    },
+    {
+      "name": "Food Preparation Methods",
+      "sub_departments": [
+        "Dehydrating",
+        "Curing",
+        "Smoking",
+        "Pickling",
+        "Fermenting",
+        "Sous Vide",
+        "Air Frying",
+        "Pressure Cooking",
+        "Slow Cooking",
+        "Microwaving",
+        "Broiling",
+        "Poaching",
+        "Saut\u00e9ing",
+        "Roasting",
+        "Boiling",
+        "Steaming",
+        "Baking",
+        "Grilling"
+      ]
+    },
+    {
+      "name": "Enteral Nutrition",
+      "sub_departments": [
+        "Tube Feeding Formulas"
+      ]
+    },
+    {
+      "name": "Allergy/Intolerance Diets",
+      "sub_departments": [
+        "Lactose-Free",
+        "Gluten-Free"
+      ]
+    },
+    {
+      "name": "Disease Specific Diets",
+      "sub_departments": [
+        "Anti-Gout",
+        "Acid Ash",
+        "Bland",
+        "Cardiac",
+        "Renal",
+        "Diabetic"
+      ]
+    },
+    {
+      "name": "Nutrient-Controlled Diets",
+      "sub_departments": [
+        "Low-Residue",
+        "No Concentrated Sweets",
+        "Low Protein",
+        "High Protein",
+        "Low Fat",
+        "Low Sodium"
+      ]
+    },
+    {
+      "name": "Texture Modified Diets",
+      "sub_departments": [
+        "Pureed",
+        "Mechanical Soft",
+        "Soft",
+        "Full Liquid",
+        "Clear Liquid"
+      ]
+    },
+    {
+      "name": "Regular/Normal Diet",
+      "sub_departments": [
+        "Desserts",
+        "Fats",
+        "Vegetables",
+        "Fruits",
+        "Grains",
+        "Dairy",
+        "Proteins"
+      ]
+    }
+  ],
   "is_learning": true,
   "progress_percentage": 20,
   "progress_target": 100,
