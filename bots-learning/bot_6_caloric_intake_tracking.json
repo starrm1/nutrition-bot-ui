@@ -10,7 +10,7 @@
   "department_leader": "Bot 7 \u2014 Food Allergy and Intolerance Assessment",
   "is_learning": true,
   "progress_percentage": 73,
-  "phase": "collaborative_learning",
+  "phase": "advanced_learning",
   "key_learnings": "Accurate caloric tracking requires accounting for cooking methods, food preparation losses, and individual metabolic variation. Total Daily Energy Expenditure models must be updated regularly as patient conditions change.",
   "research_findings": "Documented 8-12% variance in reported vs. actual caloric intake across self-reported dietary recall methods. Identified that TDEE calculators overestimate needs in sedentary elderly populations by up to 15%.",
   "current_focus_areas": "Developing adaptive caloric targets based on real-time metabolic feedback; improving calorie-density databases for culturally diverse food items; coordinating with Meal Planning bot on intake optimization protocols.",

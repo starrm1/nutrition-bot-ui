@@ -18,7 +18,7 @@
   "progress_percentage": 75,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
-  "phase": "collaborative_learning",
+  "phase": "advanced_learning",
   "key_learnings": "Sustainable weight management requires a behavioral, metabolic, and nutritional multi-pronged approach. Caloric restriction must be combined with protein preservation strategies and physical activity to prevent lean mass loss.",
   "research_findings": "Evidence confirms that a 500-750 kcal daily deficit produces safe, sustainable weight loss of 0.5-0.75 kg/week. High-protein dietary patterns (1.2-1.6g/kg) during caloric restriction preserve lean muscle mass.",
   "current_focus_areas": "Building weight management protocols segmented by BMI class, age, and comorbidity profile; researching plateau-breaking dietary strategies; integrating metabolic adaptation management.",
