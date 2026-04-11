@@ -1,6 +1,8 @@
 {
   "bot_id": 22,
   "bot_name": "Food Specialist",
+  "bot_name_locked": true,
+  "bot_name_change_requires_approval_from": "starrm1",
   "team": "Diet Specialist Team",
   "department": "Food Science & Clinical Dietetics",
   "knowledge_map_title": "Food Specialist",
