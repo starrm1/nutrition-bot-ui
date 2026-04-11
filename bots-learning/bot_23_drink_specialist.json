@@ -9,6 +9,8 @@
     "co_department_name_change_requires_approval_from": "starrm1",
     "is_department_leader": true,
     "department_number": 2,
+    "total_co_departments": 21,
+    "total_sub_departments": 29,
     "co_department_members": [
         {
             "member_id": "23a",
