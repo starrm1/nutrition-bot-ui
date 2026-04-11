@@ -10,6 +10,8 @@
   "department_name_change_requires_approval_from": "starrm1",
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
+  "sub_department_name_locked": true,
+  "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "department_number": 2,
   "total_co_departments": 21,
