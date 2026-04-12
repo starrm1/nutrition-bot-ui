@@ -12,6 +12,7 @@
   "sub_department_name_locked": true,
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
+  "department_number": 5,
   "co_department_members": [
     {
       "member_id": "26a",
@@ -155,7 +156,7 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 20,
+  "progress_percentage": 10,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",

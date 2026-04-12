@@ -12,6 +12,7 @@
   "sub_department_name_locked": true,
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
+  "department_number": 3,
   "co_department_members": [
     {
       "member_id": "24a",
