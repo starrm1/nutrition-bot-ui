@@ -5,6 +5,7 @@
   "bot_name_change_requires_approval_from": "starrm1",
   "team": "Diet Specialist Team",
   "department": "Clinical Nutrition & Metabolic Science",
+  "knowledge_map_title": "Nutrition Specialist",
   "department_name_locked": true,
   "department_name_change_requires_approval_from": "starrm1",
   "co_department_name_locked": true,
@@ -13,10 +14,152 @@
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "department_number": 3,
+  "total_co_departments": 18,
+  "total_sub_departments": 50,
   "co_department_members": [
+    {
+      "name": "Enteral Formula Types",
+      "sub_departments": [
+        "TPN Components and Monitoring",
+        "Disease-Specific (Renal, Hepatic, Pulmonary, Diabetic, Immune-Enhancing)",
+        "Elemental",
+        "Peptide-Based",
+        "High Protein",
+        "Standard Polymeric"
+      ]
+    },
+    {
+      "name": "Nutrition Support Routes",
+      "sub_departments": [
+        "Parenteral (Peripheral, Central)",
+        "Enteral (NG, NJ, G, J, PEG, PEJ)",
+        "Oral"
+      ]
+    },
+    {
+      "name": "Micronutrient Deficiency Assessment",
+      "sub_departments": [
+        "Refeeding Syndrome Prevention and Management",
+        "Supplementation Protocols",
+        "Clinical Signs",
+        "Lab Values"
+      ]
+    },
+    {
+      "name": "Protein Requirements by Condition",
+      "sub_departments": [
+        "Critical Illness (1.5-2.0g/kg)",
+        "Dialysis (1.2g/kg)",
+        "Wound Healing (1.2-1.5g/kg)",
+        "Maintenance (0.8g/kg)"
+      ]
+    },
+    {
+      "name": "Stress Factors",
+      "sub_departments": [
+        "Trauma",
+        "Burns (1.5-2.0)",
+        "Infection (1.2-1.6)",
+        "Surgery (1.2-1.5)"
+      ]
+    },
+    {
+      "name": "Metabolic Calculations",
+      "sub_departments": [
+        "Ireton-Jones Equations",
+        "Penn State",
+        "Mifflin-St Jeor",
+        "Harris-Benedict"
+      ]
+    },
+    {
+      "name": "Complete Mineral List",
+      "sub_departments": [
+        "Requirements",
+        "Sources",
+        "Functions"
+      ]
+    },
+    {
+      "name": "Complete Vitamin List",
+      "sub_departments": [
+        "Toxicity Levels",
+        "RDA",
+        "Food Sources",
+        "Deficiency Signs",
+        "Functions"
+      ]
+    },
+    {
+      "name": "Detailed Macro Calculations",
+      "sub_departments": [
+        "Fat Percentages",
+        "Carb Counting Methods",
+        "Protein 0.8-2.0g/kg Based on Condition"
+      ]
+    },
+    {
+      "name": "Nutritional Care Plans",
+      "sub_departments": []
+    },
+    {
+      "name": "Malnutrition Identification and Intervention",
+      "sub_departments": []
+    },
+    {
+      "name": "Disease-Specific Nutrition Therapy",
+      "sub_departments": []
+    },
+    {
+      "name": "Nutrient-Drug Interactions",
+      "sub_departments": []
+    },
+    {
+      "name": "Supplementation Protocols",
+      "sub_departments": [
+        "Parenteral",
+        "Enteral",
+        "Oral"
+      ]
+    },
+    {
+      "name": "Nutritional Assessment Tools",
+      "sub_departments": [
+        "Labs",
+        "Anthropometrics",
+        "Screening"
+      ]
+    },
+    {
+      "name": "Calorie Calculations",
+      "sub_departments": [
+        "Disease Adjustments",
+        "Activity Factors",
+        "BMR"
+      ]
+    },
+    {
+      "name": "Micronutrient Needs",
+      "sub_departments": [
+        "Minerals",
+        "Vitamins"
+      ]
+    },
+    {
+      "name": "Macronutrient Requirements",
+      "sub_departments": [
+        "Fats",
+        "Carbohydrates",
+        "Protein"
+      ]
+    }
+  ],
+  "co_department_bot_supervisors": [
     {
       "member_id": "24a",
       "member_name": "Clinical Nutrition Support Specialist",
+      "member_name_locked": true,
+      "member_name_change_requires_approval_from": "starrm1",
       "role": "Co-Department Specialist",
       "department": "Clinical Nutrition & Metabolic Science",
       "is_learning": true,
@@ -74,6 +217,8 @@
     {
       "member_id": "24b",
       "member_name": "Metabolic Calculation & Assessment Specialist",
+      "member_name_locked": true,
+      "member_name_change_requires_approval_from": "starrm1",
       "role": "Co-Department Specialist",
       "department": "Clinical Nutrition & Metabolic Science",
       "is_learning": true,
