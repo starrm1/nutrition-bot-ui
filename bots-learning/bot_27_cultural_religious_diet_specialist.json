@@ -13,7 +13,10 @@
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "department_number": 6,
-  "co_department_members": [
+  "total_co_departments": 0,
+  "total_sub_departments": 0,
+  "co_department_members": [],
+  "co_department_bot_supervisors": [
     {
       "member_id": "27a",
       "member_name": "Religious Dietary Laws Specialist",
@@ -79,7 +82,8 @@
           "date": "2026-04-09",
           "entry": "Independent Learning Phase initiated. Assigned to Cultural & Religious Diet Science as Religious Dietary Laws Specialist. Domains include Jain, Buddhist, Hindu, Halal, and Kosher dietary laws, traditional medicine systems (Curanderismo, TCM Hot/Cold Foods, Ayurveda Doshas), and 2 standalone clinical-cultural topics. Learning continuously under Copilot supervision. Progress: 0%."
         }
-      ]
+      ],
+      "member_name_locked": true
     },
     {
       "member_id": "27b",
@@ -136,7 +140,8 @@
           "date": "2026-04-09",
           "entry": "Independent Learning Phase initiated. Assigned to Cultural & Religious Diet Science as Cultural Food & Fasting Specialist. Domains include fasting practices (Lent and Ramadan sub-trees), cultural food preferences (5 regions), food symbolism and traditions (4 items), and 2 standalone topics. Learning continuously under Copilot supervision. Progress: 0%."
         }
-      ]
+      ],
+      "member_name_locked": true
     }
   ],
   "is_learning": true,

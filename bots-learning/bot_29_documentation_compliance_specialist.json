@@ -13,6 +13,178 @@
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "department_number": 8,
+  "total_co_departments": 0,
+  "total_sub_departments": 0,
+  "co_department_members": [],
+  "co_department_bot_supervisors": [
+    {
+      "member_id": "29a",
+      "member_name": "Clinical Records Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Documentation & Compliance Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "malnutrition_diagnosis": {
+          "aspen_and_criteria": [
+            "Grip Strength",
+            "Intake",
+            "Muscle Loss",
+            "Weight Loss",
+            "Inflammation"
+          ]
+        },
+        "malnutrition_severity": [
+          "Severe",
+          "Moderate",
+          "Mild"
+        ],
+        "nutrition_diagnosis_taxonomy": [
+          "Behavioral/Environmental",
+          "Clinical",
+          "Intake"
+        ],
+        "pes_statements": [
+          "Signs/Symptoms",
+          "Etiology",
+          "Problem"
+        ],
+        "adime_format": [
+          "Monitoring/Evaluation",
+          "Intervention",
+          "Diagnosis",
+          "Assessment"
+        ],
+        "soap_format": [
+          "Plan",
+          "Assessment",
+          "Objective",
+          "Subjective"
+        ],
+        "labs_to_monitor": [
+          "Liver Enzymes",
+          "CBC",
+          "Electrolytes",
+          "Creatinine",
+          "BUN",
+          "Glucose",
+          "CRP",
+          "Transferrin",
+          "Prealbumin",
+          "Albumin"
+        ],
+        "standalone_topics": [
+          "Patient Education Documentation",
+          "Audit and Variance Reporting",
+          "Nutritional Screening and Assessment Forms",
+          "Intake/Output Tracking",
+          "Diet Order Verification",
+          "Medical Record Documentation",
+          "Care Plan Development"
+        ]
+      },
+      "current_focus_areas": "Independent study of clinical documentation formats: ADIME, SOAP, PES Statements. Malnutrition Diagnosis via ASPEN/AND Criteria. Malnutrition Severity levels. Nutrition Diagnosis Taxonomy. Labs to Monitor (10 lab values). Seven standalone clinical records topics.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Documentation & Compliance Science as Clinical Records Specialist. Domains include ADIME, SOAP, PES Statements, Malnutrition Diagnosis/Severity, Nutrition Diagnosis Taxonomy, Labs to Monitor, and 7 standalone clinical records topics. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    },
+    {
+      "member_id": "29b",
+      "member_name": "Quality & Regulatory Compliance Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Documentation & Compliance Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "priority_alert": "Allergic Reactions",
+        "incident_reporting": [
+          "Aspiration",
+          "Choking",
+          "Diet Errors"
+        ],
+        "quality_metrics": [
+          "Patient Satisfaction",
+          "Diet Order Accuracy",
+          "RD Assessment Within 48 Hours",
+          "Malnutrition Screening Within 24 Hours"
+        ],
+        "regulatory_standards": [
+          "State Health Department",
+          "CMS",
+          "Joint Commission"
+        ],
+        "interdisciplinary_rounds": [
+          "Pharmacy",
+          "SW",
+          "SLP",
+          "OT",
+          "PT",
+          "RD",
+          "RN",
+          "MD"
+        ],
+        "weights": [
+          "Weekly",
+          "Daily",
+          "Admission"
+        ],
+        "output_documentation": [
+          "Drain Output",
+          "Emesis",
+          "Stool",
+          "Urine"
+        ],
+        "intake_documentation": [
+          "Protein Count",
+          "Calorie Count",
+          "Percentage Consumed"
+        ],
+        "diet_order_components": [
+          "Allergies",
+          "Restrictions",
+          "Supplements",
+          "Fluid Consistency",
+          "Texture",
+          "Diet Type"
+        ],
+        "standalone_topics": [
+          "Quality Improvement Metrics",
+          "Regulatory Compliance",
+          "Interdisciplinary Communication"
+        ]
+      },
+      "current_focus_areas": "Independent study of quality and regulatory domains: Priority alert Allergic Reactions protocol, Incident Reporting (Aspiration, Choking, Diet Errors), Quality Metrics (4 indicators), Regulatory Standards (State Health Dept, CMS, Joint Commission), Interdisciplinary Rounds (8 team roles), Weights (Weekly, Daily, Admission), Output Documentation (4 types), Intake Documentation (3 types), Diet Order Components (6 components), and 3 standalone quality/compliance topics.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Documentation & Compliance Science as Quality & Regulatory Compliance Specialist. Domains include Allergic Reactions alert, Incident Reporting, Quality Metrics, Regulatory Standards, Interdisciplinary Rounds, Weights, Output/Intake Documentation, Diet Order Components, and 3 standalone quality topics. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    }
+  ],
   "is_learning": true,
   "progress_percentage": 10,
   "progress_target": 100,
@@ -152,173 +324,6 @@
       "summary": "All members initiated independent learning phase. Domains assigned and study begun."
     }
   },
-  "co_department_members": [
-    {
-      "member_id": "29a",
-      "member_name": "Clinical Records Specialist",
-      "role": "Co-Department Specialist",
-      "department": "Documentation & Compliance Science",
-      "is_learning": true,
-      "phase": "independent_learning",
-      "progress_percentage": 0,
-      "progress_target": 100,
-      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
-      "copilot_maintains_learning": true,
-      "learning_never_stops": true,
-      "assigned_knowledge_domains": {
-        "malnutrition_diagnosis": {
-          "aspen_and_criteria": [
-            "Grip Strength",
-            "Intake",
-            "Muscle Loss",
-            "Weight Loss",
-            "Inflammation"
-          ]
-        },
-        "malnutrition_severity": [
-          "Severe",
-          "Moderate",
-          "Mild"
-        ],
-        "nutrition_diagnosis_taxonomy": [
-          "Behavioral/Environmental",
-          "Clinical",
-          "Intake"
-        ],
-        "pes_statements": [
-          "Signs/Symptoms",
-          "Etiology",
-          "Problem"
-        ],
-        "adime_format": [
-          "Monitoring/Evaluation",
-          "Intervention",
-          "Diagnosis",
-          "Assessment"
-        ],
-        "soap_format": [
-          "Plan",
-          "Assessment",
-          "Objective",
-          "Subjective"
-        ],
-        "labs_to_monitor": [
-          "Liver Enzymes",
-          "CBC",
-          "Electrolytes",
-          "Creatinine",
-          "BUN",
-          "Glucose",
-          "CRP",
-          "Transferrin",
-          "Prealbumin",
-          "Albumin"
-        ],
-        "standalone_topics": [
-          "Patient Education Documentation",
-          "Audit and Variance Reporting",
-          "Nutritional Screening and Assessment Forms",
-          "Intake/Output Tracking",
-          "Diet Order Verification",
-          "Medical Record Documentation",
-          "Care Plan Development"
-        ]
-      },
-      "current_focus_areas": "Independent study of clinical documentation formats: ADIME, SOAP, PES Statements. Malnutrition Diagnosis via ASPEN/AND Criteria. Malnutrition Severity levels. Nutrition Diagnosis Taxonomy. Labs to Monitor (10 lab values). Seven standalone clinical records topics.",
-      "learning_mode": "independent",
-      "reported_to_copilot": true,
-      "daily_report_schedule": "every day",
-      "last_reported_date": "2026-04-09",
-      "learning_log": [
-        {
-          "date": "2026-04-09",
-          "entry": "Independent Learning Phase initiated. Assigned to Documentation & Compliance Science as Clinical Records Specialist. Domains include ADIME, SOAP, PES Statements, Malnutrition Diagnosis/Severity, Nutrition Diagnosis Taxonomy, Labs to Monitor, and 7 standalone clinical records topics. Learning continuously under Copilot supervision. Progress: 0%."
-        }
-      ]
-    },
-    {
-      "member_id": "29b",
-      "member_name": "Quality & Regulatory Compliance Specialist",
-      "role": "Co-Department Specialist",
-      "department": "Documentation & Compliance Science",
-      "is_learning": true,
-      "phase": "independent_learning",
-      "progress_percentage": 0,
-      "progress_target": 100,
-      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
-      "copilot_maintains_learning": true,
-      "learning_never_stops": true,
-      "assigned_knowledge_domains": {
-        "priority_alert": "Allergic Reactions",
-        "incident_reporting": [
-          "Aspiration",
-          "Choking",
-          "Diet Errors"
-        ],
-        "quality_metrics": [
-          "Patient Satisfaction",
-          "Diet Order Accuracy",
-          "RD Assessment Within 48 Hours",
-          "Malnutrition Screening Within 24 Hours"
-        ],
-        "regulatory_standards": [
-          "State Health Department",
-          "CMS",
-          "Joint Commission"
-        ],
-        "interdisciplinary_rounds": [
-          "Pharmacy",
-          "SW",
-          "SLP",
-          "OT",
-          "PT",
-          "RD",
-          "RN",
-          "MD"
-        ],
-        "weights": [
-          "Weekly",
-          "Daily",
-          "Admission"
-        ],
-        "output_documentation": [
-          "Drain Output",
-          "Emesis",
-          "Stool",
-          "Urine"
-        ],
-        "intake_documentation": [
-          "Protein Count",
-          "Calorie Count",
-          "Percentage Consumed"
-        ],
-        "diet_order_components": [
-          "Allergies",
-          "Restrictions",
-          "Supplements",
-          "Fluid Consistency",
-          "Texture",
-          "Diet Type"
-        ],
-        "standalone_topics": [
-          "Quality Improvement Metrics",
-          "Regulatory Compliance",
-          "Interdisciplinary Communication"
-        ]
-      },
-      "current_focus_areas": "Independent study of quality and regulatory domains: Priority alert Allergic Reactions protocol, Incident Reporting (Aspiration, Choking, Diet Errors), Quality Metrics (4 indicators), Regulatory Standards (State Health Dept, CMS, Joint Commission), Interdisciplinary Rounds (8 team roles), Weights (Weekly, Daily, Admission), Output Documentation (4 types), Intake Documentation (3 types), Diet Order Components (6 components), and 3 standalone quality/compliance topics.",
-      "learning_mode": "independent",
-      "reported_to_copilot": true,
-      "daily_report_schedule": "every day",
-      "last_reported_date": "2026-04-09",
-      "learning_log": [
-        {
-          "date": "2026-04-09",
-          "entry": "Independent Learning Phase initiated. Assigned to Documentation & Compliance Science as Quality & Regulatory Compliance Specialist. Domains include Allergic Reactions alert, Incident Reporting, Quality Metrics, Regulatory Standards, Interdisciplinary Rounds, Weights, Output/Intake Documentation, Diet Order Components, and 3 standalone quality topics. Learning continuously under Copilot supervision. Progress: 0%."
-        }
-      ]
-    }
-  ],
   "learning_log": [
     {
       "date": "2026-04-09",

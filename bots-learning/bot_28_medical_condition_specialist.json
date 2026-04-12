@@ -13,7 +13,10 @@
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "department_number": 7,
-  "co_department_members": [
+  "total_co_departments": 0,
+  "total_sub_departments": 0,
+  "co_department_members": [],
+  "co_department_bot_supervisors": [
     {
       "member_id": "28a",
       "member_name": "Chronic Disease Nutrition Specialist",
@@ -94,7 +97,8 @@
           "date": "2026-04-09",
           "entry": "Independent Learning Phase initiated. Assigned to Medical Condition Diet Science as Chronic Disease Nutrition Specialist. Domains include Diabetes Management (3 types + 8 tools), Cardiovascular Disease (3 conditions + 8 dietary targets), Renal Disease (3 stages/types + 7 dietary targets), and Gout (4 topics). Learning continuously under Copilot supervision. Progress: 0%."
         }
-      ]
+      ],
+      "member_name_locked": true
     },
     {
       "member_id": "28b",
@@ -171,7 +175,8 @@
           "date": "2026-04-09",
           "entry": "Independent Learning Phase initiated. Assigned to Medical Condition Diet Science as GI & Oncology Nutrition Specialist. Domains include GI Disorders (Celiac, IBD/Crohn's/UC, IBS, GERD \u2014 4 sub-trees), Cancer Nutrition (4 topics), Liver Disease (4 topics), and Respiratory Conditions including COPD sub-tree (3 topics) + 3 standalones. Learning continuously under Copilot supervision. Progress: 0%."
         }
-      ]
+      ],
+      "member_name_locked": true
     }
   ],
   "is_learning": true,

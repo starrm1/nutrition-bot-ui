@@ -13,7 +13,10 @@
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "department_number": 5,
-  "co_department_members": [
+  "total_co_departments": 0,
+  "total_sub_departments": 0,
+  "co_department_members": [],
+  "co_department_bot_supervisors": [
     {
       "member_id": "26a",
       "member_name": "Food Allergy & Emergency Response Specialist",
@@ -91,7 +94,8 @@
           "date": "2026-04-10",
           "entry": "Independent Learning Phase initiated. Assigned to Allergy & Intolerance Science as Food Allergy & Emergency Response Specialist. Domains include 9 common food allergens, anaphylaxis symptoms (5 types), emergency protocols, epinephrine dosing, allergy testing (3 methods), cross-reactivity patterns (3), hidden allergen sources, label reading, and 4 standalone allergen management topics. Learning continuously under Copilot supervision. Progress: 0%."
         }
-      ]
+      ],
+      "member_name_locked": true
     },
     {
       "member_id": "26b",
@@ -152,7 +156,8 @@
           "date": "2026-04-10",
           "entry": "Independent Learning Phase initiated. Assigned to Allergy & Intolerance Science as Food Intolerance & Elimination Protocol Specialist. Domains include 4 food intolerance types, lactose intolerance subtypes (3), FODMAP phases (3), histamine intolerance (DAO, high-histamine foods, liberators), elimination and reintroduction protocols, and 5 standalone intolerance management topics. Learning continuously under Copilot supervision. Progress: 0%."
         }
-      ]
+      ],
+      "member_name_locked": true
     }
   ],
   "is_learning": true,

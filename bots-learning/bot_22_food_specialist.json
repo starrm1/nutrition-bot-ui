@@ -14,6 +14,8 @@
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "department_number": 1,
+  "total_co_departments": 15,
+  "total_sub_departments": 60,
   "co_department_members": [
     {
       "name": "Ingredient Functionality",
@@ -145,6 +147,7 @@
       ]
     }
   ],
+  "co_department_bot_supervisors": [],
   "is_learning": true,
   "progress_percentage": 30,
   "progress_target": 100,
