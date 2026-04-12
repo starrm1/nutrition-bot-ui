@@ -13,30 +13,261 @@
   "sub_department_name_locked": true,
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
+  "department_structure": {
+    "department_number": 4,
+    "department_name": "Texture & Dysphagia Science",
+    "department_head_bot": "Bot 25 - Texture Specialist",
+    "total_co_departments": 20,
+    "total_sub_departments": 31,
+    "co_department_bot_supervisors": [
+      "25a",
+      "25b"
+    ],
+    "co_departments": [
+      {
+        "name": "Testing Consistency",
+        "sub_departments": [
+          "Syringe Flow Test",
+          "Spoon Tilt Test",
+          "Fork Drip Test"
+        ]
+      },
+      {
+        "name": "Thickener Types",
+        "sub_departments": [
+          "Amylase-Resistant",
+          "Instant vs Cook",
+          "Starch-Based vs Gum-Based"
+        ]
+      },
+      {
+        "name": "Compensatory Strategies",
+        "sub_departments": [
+          "Mendelsohn Maneuver",
+          "Effortful Swallow",
+          "Supraglottic Swallow",
+          "Head Rotation",
+          "Chin Tuck"
+        ]
+      },
+      {
+        "name": "Swallow Study Types",
+        "sub_departments": [
+          "FEES (Fiberoptic Endoscopic Evaluation)",
+          "MBSS (Modified Barium Swallow)"
+        ]
+      },
+      {
+        "name": "Dysphagia Screening Tools",
+        "sub_departments": [
+          "3-oz Challenge",
+          "Water Swallow Test",
+          "GUSS",
+          "EAT-10"
+        ]
+      },
+      {
+        "name": "Complete IDDSI Levels 0-7 with Exact Specifications",
+        "sub_departments": [
+          "Level 7: Regular",
+          "Level 6: Soft & Bite-Sized",
+          "Level 5: Minced & Moist",
+          "Level 4: Pureed",
+          "Level 3: Moderately Thick (Liquidized Foods)",
+          "Level 2: Mildly Thick",
+          "Level 1: Slightly Thick",
+          "Level 0: Thin Liquids"
+        ]
+      },
+      {
+        "name": "Equipment and Tools",
+        "sub_departments": [
+          "Blenders",
+          "Molds",
+          "Thickeners"
+        ]
+      },
+      {
+        "name": "Thickening Protocols",
+        "sub_departments": [
+          "Pudding Consistency",
+          "Honey Consistency",
+          "Nectar Consistency"
+        ]
+      },
+      {
+        "name": "Moisture Content Management",
+        "sub_departments": []
+      },
+      {
+        "name": "Food Molding Techniques for Visual Appeal",
+        "sub_departments": []
+      },
+      {
+        "name": "Texture Progression Protocols",
+        "sub_departments": []
+      },
+      {
+        "name": "Silent Aspiration Identification",
+        "sub_departments": []
+      },
+      {
+        "name": "Aspiration vs Penetration Differences",
+        "sub_departments": []
+      },
+      {
+        "name": "Patient Education on Texture Needs",
+        "sub_departments": []
+      },
+      {
+        "name": "Testing Consistency Standards",
+        "sub_departments": []
+      },
+      {
+        "name": "Aspiration Risk Management",
+        "sub_departments": []
+      },
+      {
+        "name": "Safe Swallowing Strategies",
+        "sub_departments": []
+      },
+      {
+        "name": "Texture Modification Techniques",
+        "sub_departments": []
+      },
+      {
+        "name": "Dysphagia Assessment and Management",
+        "sub_departments": []
+      },
+      {
+        "name": "IDDSI Framework",
+        "sub_departments": []
+      }
+    ]
+  },
   "department_number": 4,
   "total_co_departments": 20,
   "total_sub_departments": 31,
   "co_department_members": [
-    { "name": "Testing Consistency", "sub_departments": ["Syringe Flow Test", "Spoon Tilt Test", "Fork Drip Test"] },
-    { "name": "Thickener Types", "sub_departments": ["Amylase-Resistant", "Instant vs Cook", "Starch-Based vs Gum-Based"] },
-    { "name": "Compensatory Strategies", "sub_departments": ["Mendelsohn Maneuver", "Effortful Swallow", "Supraglottic Swallow", "Head Rotation", "Chin Tuck"] },
-    { "name": "Swallow Study Types", "sub_departments": ["FEES (Fiberoptic Endoscopic Evaluation)", "MBSS (Modified Barium Swallow)"] },
-    { "name": "Dysphagia Screening Tools", "sub_departments": ["3-oz Challenge", "Water Swallow Test", "GUSS", "EAT-10"] },
-    { "name": "Complete IDDSI Levels 0-7 with Exact Specifications", "sub_departments": ["Level 7: Regular", "Level 6: Soft & Bite-Sized", "Level 5: Minced & Moist", "Level 4: Pureed", "Level 3: Moderately Thick (Liquidized Foods)", "Level 2: Mildly Thick", "Level 1: Slightly Thick", "Level 0: Thin Liquids"] },
-    { "name": "Equipment and Tools", "sub_departments": ["Blenders", "Molds", "Thickeners"] },
-    { "name": "Thickening Protocols", "sub_departments": ["Pudding Consistency", "Honey Consistency", "Nectar Consistency"] },
-    { "name": "Moisture Content Management", "sub_departments": [] },
-    { "name": "Food Molding Techniques for Visual Appeal", "sub_departments": [] },
-    { "name": "Texture Progression Protocols", "sub_departments": [] },
-    { "name": "Silent Aspiration Identification", "sub_departments": [] },
-    { "name": "Aspiration vs Penetration Differences", "sub_departments": [] },
-    { "name": "Patient Education on Texture Needs", "sub_departments": [] },
-    { "name": "Testing Consistency Standards", "sub_departments": [] },
-    { "name": "Aspiration Risk Management", "sub_departments": [] },
-    { "name": "Safe Swallowing Strategies", "sub_departments": [] },
-    { "name": "Texture Modification Techniques", "sub_departments": [] },
-    { "name": "Dysphagia Assessment and Management", "sub_departments": [] },
-    { "name": "IDDSI Framework", "sub_departments": [] }
+    {
+      "name": "Testing Consistency",
+      "sub_departments": [
+        "Syringe Flow Test",
+        "Spoon Tilt Test",
+        "Fork Drip Test"
+      ]
+    },
+    {
+      "name": "Thickener Types",
+      "sub_departments": [
+        "Amylase-Resistant",
+        "Instant vs Cook",
+        "Starch-Based vs Gum-Based"
+      ]
+    },
+    {
+      "name": "Compensatory Strategies",
+      "sub_departments": [
+        "Mendelsohn Maneuver",
+        "Effortful Swallow",
+        "Supraglottic Swallow",
+        "Head Rotation",
+        "Chin Tuck"
+      ]
+    },
+    {
+      "name": "Swallow Study Types",
+      "sub_departments": [
+        "FEES (Fiberoptic Endoscopic Evaluation)",
+        "MBSS (Modified Barium Swallow)"
+      ]
+    },
+    {
+      "name": "Dysphagia Screening Tools",
+      "sub_departments": [
+        "3-oz Challenge",
+        "Water Swallow Test",
+        "GUSS",
+        "EAT-10"
+      ]
+    },
+    {
+      "name": "Complete IDDSI Levels 0-7 with Exact Specifications",
+      "sub_departments": [
+        "Level 7: Regular",
+        "Level 6: Soft & Bite-Sized",
+        "Level 5: Minced & Moist",
+        "Level 4: Pureed",
+        "Level 3: Moderately Thick (Liquidized Foods)",
+        "Level 2: Mildly Thick",
+        "Level 1: Slightly Thick",
+        "Level 0: Thin Liquids"
+      ]
+    },
+    {
+      "name": "Equipment and Tools",
+      "sub_departments": [
+        "Blenders",
+        "Molds",
+        "Thickeners"
+      ]
+    },
+    {
+      "name": "Thickening Protocols",
+      "sub_departments": [
+        "Pudding Consistency",
+        "Honey Consistency",
+        "Nectar Consistency"
+      ]
+    },
+    {
+      "name": "Moisture Content Management",
+      "sub_departments": []
+    },
+    {
+      "name": "Food Molding Techniques for Visual Appeal",
+      "sub_departments": []
+    },
+    {
+      "name": "Texture Progression Protocols",
+      "sub_departments": []
+    },
+    {
+      "name": "Silent Aspiration Identification",
+      "sub_departments": []
+    },
+    {
+      "name": "Aspiration vs Penetration Differences",
+      "sub_departments": []
+    },
+    {
+      "name": "Patient Education on Texture Needs",
+      "sub_departments": []
+    },
+    {
+      "name": "Testing Consistency Standards",
+      "sub_departments": []
+    },
+    {
+      "name": "Aspiration Risk Management",
+      "sub_departments": []
+    },
+    {
+      "name": "Safe Swallowing Strategies",
+      "sub_departments": []
+    },
+    {
+      "name": "Texture Modification Techniques",
+      "sub_departments": []
+    },
+    {
+      "name": "Dysphagia Assessment and Management",
+      "sub_departments": []
+    },
+    {
+      "name": "IDDSI Framework",
+      "sub_departments": []
+    }
   ],
   "co_department_bot_supervisors": [
     {
@@ -54,11 +285,34 @@
       "copilot_maintains_learning": true,
       "learning_never_stops": true,
       "assigned_knowledge_domains": {
-        "dysphagia_screening_tools": ["EAT-10", "GUSS", "Water Swallow Test", "3-oz Challenge"],
-        "swallow_study_types": ["MBSS (Modified Barium Swallow)", "FEES (Fiberoptic Endoscopic Evaluation)"],
-        "compensatory_strategies": ["Chin Tuck", "Head Rotation", "Supraglottic Swallow", "Effortful Swallow", "Mendelsohn Maneuver"],
-        "aspiration_and_safety": ["Aspiration Risk Management", "Aspiration vs Penetration Differences", "Silent Aspiration Identification"],
-        "standalone_topics": ["Safe Swallowing Strategies", "Patient Education on Texture Needs", "Dysphagia Assessment and Management", "IDDSI Framework"]
+        "dysphagia_screening_tools": [
+          "EAT-10",
+          "GUSS",
+          "Water Swallow Test",
+          "3-oz Challenge"
+        ],
+        "swallow_study_types": [
+          "MBSS (Modified Barium Swallow)",
+          "FEES (Fiberoptic Endoscopic Evaluation)"
+        ],
+        "compensatory_strategies": [
+          "Chin Tuck",
+          "Head Rotation",
+          "Supraglottic Swallow",
+          "Effortful Swallow",
+          "Mendelsohn Maneuver"
+        ],
+        "aspiration_and_safety": [
+          "Aspiration Risk Management",
+          "Aspiration vs Penetration Differences",
+          "Silent Aspiration Identification"
+        ],
+        "standalone_topics": [
+          "Safe Swallowing Strategies",
+          "Patient Education on Texture Needs",
+          "Dysphagia Assessment and Management",
+          "IDDSI Framework"
+        ]
       },
       "current_focus_areas": "Independent study of dysphagia screening tools (EAT-10, GUSS, Water Swallow Test, 3-oz Challenge). Swallow study types (MBSS and FEES). Compensatory swallowing strategies (Chin Tuck, Head Rotation, Supraglottic Swallow, Effortful Swallow, Mendelsohn Maneuver). Aspiration and safety topics (Risk Management, Aspiration vs Penetration, Silent Aspiration Identification). Standalone clinical topics: Safe Swallowing Strategies, Patient Education, Dysphagia Assessment and Management, IDDSI Framework.",
       "learning_mode": "independent",
@@ -87,12 +341,43 @@
       "copilot_maintains_learning": true,
       "learning_never_stops": true,
       "assigned_knowledge_domains": {
-        "complete_iddsi_levels_0_to_7_with_exact_specifications": ["Level 7: Regular", "Level 6: Soft & Bite-Sized", "Level 5: Minced & Moist", "Level 4: Pureed", "Level 3: Moderately Thick (Liquidized Foods)", "Level 2: Mildly Thick", "Level 1: Slightly Thick", "Level 0: Thin Liquids"],
-        "thickener_types": ["Starch-Based vs Gum-Based", "Instant vs Cook", "Amylase-Resistant"],
-        "thickening_protocols": ["Nectar Consistency", "Honey Consistency", "Pudding Consistency"],
-        "testing_consistency": ["Fork Drip Test", "Spoon Tilt Test", "Syringe Flow Test"],
-        "equipment_and_tools": ["Thickeners", "Molds", "Blenders"],
-        "standalone_topics": ["Texture Modification Techniques", "Texture Progression Protocols", "Food Molding Techniques for Visual Appeal", "Moisture Content Management", "Testing Consistency Standards"]
+        "complete_iddsi_levels_0_to_7_with_exact_specifications": [
+          "Level 7: Regular",
+          "Level 6: Soft & Bite-Sized",
+          "Level 5: Minced & Moist",
+          "Level 4: Pureed",
+          "Level 3: Moderately Thick (Liquidized Foods)",
+          "Level 2: Mildly Thick",
+          "Level 1: Slightly Thick",
+          "Level 0: Thin Liquids"
+        ],
+        "thickener_types": [
+          "Starch-Based vs Gum-Based",
+          "Instant vs Cook",
+          "Amylase-Resistant"
+        ],
+        "thickening_protocols": [
+          "Nectar Consistency",
+          "Honey Consistency",
+          "Pudding Consistency"
+        ],
+        "testing_consistency": [
+          "Fork Drip Test",
+          "Spoon Tilt Test",
+          "Syringe Flow Test"
+        ],
+        "equipment_and_tools": [
+          "Thickeners",
+          "Molds",
+          "Blenders"
+        ],
+        "standalone_topics": [
+          "Texture Modification Techniques",
+          "Texture Progression Protocols",
+          "Food Molding Techniques for Visual Appeal",
+          "Moisture Content Management",
+          "Testing Consistency Standards"
+        ]
       },
       "current_focus_areas": "Independent study of complete IDDSI levels 0-7 with exact specifications (8 levels: Thin Liquids through Regular). Thickener types (Starch-Based vs Gum-Based, Instant vs Cook, Amylase-Resistant) and thickening protocols (Nectar, Honey, Pudding). Testing consistency methods (Fork Drip, Spoon Tilt, Syringe Flow). Equipment and tools (Thickeners, Molds, Blenders). Standalone topics: Texture Modification Techniques, Texture Progression Protocols, Food Molding for Visual Appeal, Moisture Content Management, Testing Consistency Standards.",
       "learning_mode": "independent",
@@ -127,14 +412,53 @@
       "Dysphagia Assessment and Management",
       "IDDSI Framework"
     ],
-    "testing_consistency": ["Syringe Flow Test", "Spoon Tilt Test", "Fork Drip Test"],
-    "thickener_types": ["Amylase-Resistant", "Instant vs Cook", "Starch-Based vs Gum-Based"],
-    "compensatory_strategies": ["Mendelsohn Maneuver", "Effortful Swallow", "Supraglottic Swallow", "Head Rotation", "Chin Tuck"],
-    "swallow_study_types": ["FEES (Fiberoptic Endoscopic Evaluation)", "MBSS (Modified Barium Swallow)"],
-    "dysphagia_screening_tools": ["3-oz Challenge", "Water Swallow Test", "GUSS", "EAT-10"],
-    "complete_iddsi_levels_0_to_7_with_exact_specifications": ["Level 7: Regular", "Level 6: Soft & Bite-Sized", "Level 5: Minced & Moist", "Level 4: Pureed", "Level 3: Moderately Thick (Liquidized Foods)", "Level 2: Mildly Thick", "Level 1: Slightly Thick", "Level 0: Thin Liquids"],
-    "equipment_and_tools": ["Blenders", "Molds", "Thickeners"],
-    "thickening_protocols": ["Pudding Consistency", "Honey Consistency", "Nectar Consistency"]
+    "testing_consistency": [
+      "Syringe Flow Test",
+      "Spoon Tilt Test",
+      "Fork Drip Test"
+    ],
+    "thickener_types": [
+      "Amylase-Resistant",
+      "Instant vs Cook",
+      "Starch-Based vs Gum-Based"
+    ],
+    "compensatory_strategies": [
+      "Mendelsohn Maneuver",
+      "Effortful Swallow",
+      "Supraglottic Swallow",
+      "Head Rotation",
+      "Chin Tuck"
+    ],
+    "swallow_study_types": [
+      "FEES (Fiberoptic Endoscopic Evaluation)",
+      "MBSS (Modified Barium Swallow)"
+    ],
+    "dysphagia_screening_tools": [
+      "3-oz Challenge",
+      "Water Swallow Test",
+      "GUSS",
+      "EAT-10"
+    ],
+    "complete_iddsi_levels_0_to_7_with_exact_specifications": [
+      "Level 7: Regular",
+      "Level 6: Soft & Bite-Sized",
+      "Level 5: Minced & Moist",
+      "Level 4: Pureed",
+      "Level 3: Moderately Thick (Liquidized Foods)",
+      "Level 2: Mildly Thick",
+      "Level 1: Slightly Thick",
+      "Level 0: Thin Liquids"
+    ],
+    "equipment_and_tools": [
+      "Blenders",
+      "Molds",
+      "Thickeners"
+    ],
+    "thickening_protocols": [
+      "Pudding Consistency",
+      "Honey Consistency",
+      "Nectar Consistency"
+    ]
   },
   "key_learnings": "Completed foundational study of the IDDSI framework including all 8 levels (Level 0 Thin to Level 7 Regular). Began study of dysphagia assessment tools and swallowing physiology.",
   "research_findings": "Documented IDDSI testing methods: fork drip test, spoon tilt test, syringe flow test, and finger pressure test for all applicable texture levels. Identified key thickening agents (xanthan gum, starch-based) and their appropriate application levels.",

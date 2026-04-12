@@ -13,6 +13,18 @@
   "sub_department_name_locked": true,
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
+  "department_structure": {
+    "department_number": 7,
+    "department_name": "Medical Condition Diet Science",
+    "department_head_bot": "Bot 28 - Medical Condition Specialist",
+    "total_co_departments": 0,
+    "total_sub_departments": 0,
+    "co_department_bot_supervisors": [
+      "28a",
+      "28b"
+    ],
+    "co_departments": []
+  },
   "department_number": 7,
   "total_co_departments": 0,
   "total_sub_departments": 0,

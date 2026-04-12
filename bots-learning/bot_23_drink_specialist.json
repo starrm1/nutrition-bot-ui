@@ -13,6 +13,139 @@
   "sub_department_name_locked": true,
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
+  "department_structure": {
+    "department_number": 2,
+    "department_name": "Beverage Science & Hydration Management",
+    "department_head_bot": "Bot 23 - Drink Specialist",
+    "total_co_departments": 21,
+    "total_sub_departments": 29,
+    "co_department_bot_supervisors": [
+      "23a",
+      "23b"
+    ],
+    "co_departments": [
+      {
+        "name": "Cup and Container Selection for Safety",
+        "sub_departments": []
+      },
+      {
+        "name": "Straw Usage Protocols per Dysphagia Level",
+        "sub_departments": []
+      },
+      {
+        "name": "Beverage Temperature Safety and Preference Management",
+        "sub_departments": []
+      },
+      {
+        "name": "Potassium and Phosphorus Content for Renal Patients",
+        "sub_departments": []
+      },
+      {
+        "name": "Sodium Content per Beverage",
+        "sub_departments": []
+      },
+      {
+        "name": "Sugar Content and Glycemic Impact",
+        "sub_departments": []
+      },
+      {
+        "name": "Caffeine Content by Beverage Type",
+        "sub_departments": []
+      },
+      {
+        "name": "Electrolyte Replacement Beverages",
+        "sub_departments": []
+      },
+      {
+        "name": "Overhydration Risks",
+        "sub_departments": []
+      },
+      {
+        "name": "Dehydration Stages and Intervention Protocols",
+        "sub_departments": []
+      },
+      {
+        "name": "IV Fluid Considerations and Oral Intake Balance",
+        "sub_departments": []
+      },
+      {
+        "name": "Beverage-Medication Timing Protocols",
+        "sub_departments": []
+      },
+      {
+        "name": "Fluid Consistency Levels",
+        "sub_departments": [
+          "Extremely Thick",
+          "Moderately Thick",
+          "Mildly Thick",
+          "Slightly Thick",
+          "Thin"
+        ]
+      },
+      {
+        "name": "Beverage Specifications",
+        "sub_departments": [
+          "Ice vs No Ice Protocols",
+          "Temperature Ranges",
+          "Serving Sizes (oz/ml)"
+        ]
+      },
+      {
+        "name": "Documentation and Compliance",
+        "sub_departments": []
+      },
+      {
+        "name": "Special Considerations",
+        "sub_departments": [
+          "Medication Interactions",
+          "Sweeteners",
+          "Caffeine"
+        ]
+      },
+      {
+        "name": "Beverage Categories",
+        "sub_departments": [
+          "Supplements",
+          "Carbonated",
+          "Juices",
+          "Non-Dairy",
+          "Dairy",
+          "Hot Drinks",
+          "Water"
+        ]
+      },
+      {
+        "name": "Hydration Management",
+        "sub_departments": [
+          "I&O Monitoring",
+          "Fluid Restrictions",
+          "Intake Targets"
+        ]
+      },
+      {
+        "name": "Preparation Protocols",
+        "sub_departments": [
+          "Temperature",
+          "Straining",
+          "Dilution",
+          "Thickening"
+        ]
+      },
+      {
+        "name": "Allowed Drinks per Restriction",
+        "sub_departments": [
+          "Renal-Appropriate",
+          "Low-Fat",
+          "Low-Sodium",
+          "Sugar-Free"
+        ]
+      },
+      {
+        "name": "Beverage Catalog by Diet",
+        "sub_departments": []
+      }
+    ]
+  },
   "department_number": 2,
   "total_co_departments": 21,
   "total_sub_departments": 29,

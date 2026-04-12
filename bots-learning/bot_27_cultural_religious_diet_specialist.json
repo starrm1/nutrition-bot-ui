@@ -13,6 +13,80 @@
   "sub_department_name_locked": true,
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
+  "department_structure": {
+    "department_number": 6,
+    "department_name": "Cultural & Religious Diet Science",
+    "department_head_bot": "Bot 27 - Cultural & Religious Diet Specialist",
+    "total_co_departments": 9,
+    "total_sub_departments": 20,
+    "co_department_bot_supervisors": [
+      "27a",
+      "27b"
+    ],
+    "co_departments": [
+      {
+        "name": "Traditional Medicine Systems",
+        "sub_departments": [
+          "Curanderismo",
+          "Traditional Chinese Medicine (Hot/Cold Foods)",
+          "Ayurveda (Doshas)"
+        ]
+      },
+      {
+        "name": "Respectful Communication about Food Practices",
+        "sub_departments": []
+      },
+      {
+        "name": "Adapting Therapeutic Diets to Cultural Needs",
+        "sub_departments": []
+      },
+      {
+        "name": "Food Symbolism and Traditions",
+        "sub_departments": [
+          "Honey (Sweetness)",
+          "Salt (Covenant)",
+          "Bread (Life)",
+          "Rice (Asian Prosperity)"
+        ]
+      },
+      {
+        "name": "Holiday and Celebration Foods",
+        "sub_departments": []
+      },
+      {
+        "name": "Vegetarian/Vegan Variations by Culture",
+        "sub_departments": []
+      },
+      {
+        "name": "Fasting Practices",
+        "sub_departments": [
+          "Intermittent Fasting",
+          "Lent",
+          "Ramadan"
+        ]
+      },
+      {
+        "name": "Cultural Food Preferences",
+        "sub_departments": [
+          "Middle Eastern",
+          "African",
+          "Latin American",
+          "Mediterranean",
+          "Asian"
+        ]
+      },
+      {
+        "name": "Religious Dietary Laws",
+        "sub_departments": [
+          "Jain",
+          "Buddhist",
+          "Hindu",
+          "Halal",
+          "Kosher"
+        ]
+      }
+    ]
+  },
   "department_number": 6,
   "total_co_departments": 9,
   "total_sub_departments": 20,

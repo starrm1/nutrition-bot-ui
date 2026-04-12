@@ -13,6 +13,171 @@
   "sub_department_name_locked": true,
   "sub_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
+  "department_structure": {
+    "department_number": 5,
+    "department_name": "Allergy & Intolerance Science",
+    "department_head_bot": "Bot 26 - Allergy & Intolerance Specialist",
+    "total_co_departments": 24,
+    "total_sub_departments": 44,
+    "co_department_bot_supervisors": [
+      "26a",
+      "26b"
+    ],
+    "co_departments": [
+      {
+        "name": "Common Food Allergens",
+        "sub_departments": [
+          "Milk",
+          "Eggs",
+          "Fish",
+          "Shellfish",
+          "Tree Nuts",
+          "Peanuts",
+          "Wheat",
+          "Soy",
+          "Sesame"
+        ]
+      },
+      {
+        "name": "Anaphylaxis Symptoms",
+        "sub_departments": [
+          "Hives",
+          "Angioedema",
+          "Respiratory Distress",
+          "GI Symptoms",
+          "Cardiovascular Collapse"
+        ]
+      },
+      {
+        "name": "Emergency Protocols",
+        "sub_departments": [
+          "Anaphylaxis",
+          "Epipen"
+        ]
+      },
+      {
+        "name": "Epinephrine Dosing",
+        "sub_departments": [
+          "Adult 0.3mg",
+          "Child 0.15mg",
+          "Auto-Injector Technique"
+        ]
+      },
+      {
+        "name": "Allergy Testing",
+        "sub_departments": [
+          "Skin Prick",
+          "Blood IgE",
+          "Oral Food Challenge"
+        ]
+      },
+      {
+        "name": "Cross-Reactivity Patterns",
+        "sub_departments": [
+          "Latex-Fruit",
+          "Oral Allergy Syndrome",
+          "Shellfish-Iodine Myth"
+        ]
+      },
+      {
+        "name": "Hidden Allergen Sources",
+        "sub_departments": [
+          "Medications",
+          "Supplements",
+          "Cosmetics"
+        ]
+      },
+      {
+        "name": "Label Reading",
+        "sub_departments": [
+          "\"May Contain\"",
+          "\"Processed in Facility\"",
+          "Voluntary vs Mandatory Labeling"
+        ]
+      },
+      {
+        "name": "IgE-Mediated vs Non-IgE Allergies",
+        "sub_departments": []
+      },
+      {
+        "name": "Celiac Disease Management",
+        "sub_departments": []
+      },
+      {
+        "name": "Alternative Ingredient Sourcing",
+        "sub_departments": []
+      },
+      {
+        "name": "Reintroduction Strategies",
+        "sub_departments": []
+      },
+      {
+        "name": "Elimination Diet Protocols",
+        "sub_departments": []
+      },
+      {
+        "name": "Food Intolerance Types",
+        "sub_departments": [
+          "FODMAP",
+          "Histamine",
+          "Fructose",
+          "Lactose"
+        ]
+      },
+      {
+        "name": "Allergy vs Intolerance Differentiation",
+        "sub_departments": []
+      },
+      {
+        "name": "Cross-Contact Prevention",
+        "sub_departments": []
+      },
+      {
+        "name": "Allergen Labeling and Identification",
+        "sub_departments": []
+      },
+      {
+        "name": "Histamine Intolerance",
+        "sub_departments": [
+          "DAO Enzyme",
+          "High-Histamine Foods",
+          "Histamine Liberators"
+        ]
+      },
+      {
+        "name": "Lactose Intolerance Types",
+        "sub_departments": [
+          "Primary",
+          "Secondary",
+          "Congenital"
+        ]
+      },
+      {
+        "name": "Lactase Enzyme Supplementation",
+        "sub_departments": []
+      },
+      {
+        "name": "FODMAP Phases",
+        "sub_departments": [
+          "Elimination (2-6 Weeks)",
+          "Reintroduction (8-12 Weeks)",
+          "Personalization"
+        ]
+      },
+      {
+        "name": "Allergen-Free Facility Certification",
+        "sub_departments": []
+      },
+      {
+        "name": "Eosinophilic Esophagitis (EoE) Dietary Management",
+        "sub_departments": []
+      },
+      {
+        "name": "Food Protein-Induced Enterocolitis Syndrome (FPIES)",
+        "sub_departments": []
+      }
+    ]
+  },
   "department_number": 5,
   "total_co_departments": 24,
   "total_sub_departments": 44,
