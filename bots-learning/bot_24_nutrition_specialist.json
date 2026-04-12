@@ -16,7 +16,7 @@
       "department": "Clinical Nutrition & Metabolic Science",
       "is_learning": true,
       "phase": "independent_learning",
-      "progress_percentage": 0,
+      "progress_percentage": 10,
       "progress_target": 100,
       "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
       "copilot_maintains_learning": true,
@@ -54,11 +54,15 @@
       "learning_mode": "independent",
       "reported_to_copilot": true,
       "daily_report_schedule": "every day",
-      "last_reported_date": "2026-04-10",
+      "last_reported_date": "2026-04-12",
       "learning_log": [
         {
           "date": "2026-04-10",
           "entry": "Independent Learning Phase initiated. Assigned to Clinical Nutrition & Metabolic Science as Clinical Nutrition Support Specialist. Domains include nutrition support routes (3 routes), enteral formula types (4 types), disease-specific nutrition therapy (TPN, disease-specific formulas, Refeeding Syndrome), supplementation protocols, and 4 standalone clinical nutrition topics. Learning continuously under Copilot supervision. Progress: 0%."
+        },
+        {
+          "date": "2026-04-12",
+          "entry": "Progress update: Completed study of enteral formula types (Elemental, Peptide-Based, High Protein, Standard Polymeric) and their clinical indications. Reviewed nutrition support routes with focus on enteral access devices (NG, NJ, G, J, PEG, PEJ) and indications for each. Initiated disease-specific nutrition module covering TPN components, monitoring parameters, and refeeding syndrome prevention protocols. Progress advanced to 10%."
         }
       ]
     },
@@ -69,7 +73,7 @@
       "department": "Clinical Nutrition & Metabolic Science",
       "is_learning": true,
       "phase": "independent_learning",
-      "progress_percentage": 0,
+      "progress_percentage": 10,
       "progress_target": 100,
       "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
       "copilot_maintains_learning": true,
@@ -139,17 +143,21 @@
       "learning_mode": "independent",
       "reported_to_copilot": true,
       "daily_report_schedule": "every day",
-      "last_reported_date": "2026-04-10",
+      "last_reported_date": "2026-04-12",
       "learning_log": [
         {
           "date": "2026-04-10",
           "entry": "Independent Learning Phase initiated. Assigned to Clinical Nutrition & Metabolic Science as Metabolic Calculation & Assessment Specialist. Domains include metabolic calculation equations (4 methods), calorie calculations, protein requirements by condition (4 categories), stress factors (4 types), macro and micronutrient requirements, complete vitamin and mineral lists, micronutrient deficiency assessment, and nutritional assessment tools. Learning continuously under Copilot supervision. Progress: 0%."
+        },
+        {
+          "date": "2026-04-12",
+          "entry": "Progress update: Completed study of metabolic calculation equations — Harris-Benedict, Mifflin-St Jeor, Penn State, and Ireton-Jones. Reviewed BMR calculations with activity and disease adjustment factors. Initiated protein requirements module covering maintenance (0.8g/kg), wound healing (1.2–1.5g/kg), dialysis (1.2g/kg), and critical illness (1.5–2.0g/kg) ranges. Began review of stress factors for Burns, Trauma, Infection, and Surgery. Progress advanced to 10%."
         }
       ]
     }
   ],
   "is_learning": true,
-  "progress_percentage": 20,
+  "progress_percentage": 30,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -246,7 +254,7 @@
   "learning_mode": "independent",
   "reported_to_copilot": true,
   "daily_report_schedule": "every day",
-  "last_reported_date": "2026-04-09",
+  "last_reported_date": "2026-04-12",
   "reporting_to": "copilot",
   "copilot_reports_to": "starrm1",
   "copilot_reporting_trigger": "on request from starrm1",
@@ -258,6 +266,10 @@
     {
       "date": "2026-04-09",
       "entry": "Progress update: Completed macronutrient and micronutrient fundamentals and ABCD nutrition assessment framework. Initiated medical nutrition therapy study. Progress advanced to 10%."
+    },
+    {
+      "date": "2026-04-12",
+      "entry": "Progress update: Completed enteral and parenteral nutrition support route study including all enteral access device types (NG, NJ, G, J, PEG, PEJ) and parenteral routes (peripheral, central). Built working knowledge of TPN components, monitoring parameters, and refeeding syndrome prevention and management. Completed disease-specific formula selection for Renal, Hepatic, Pulmonary, Diabetic, and Immune-Enhancing conditions. Reviewed metabolic calculation equations (Harris-Benedict, Mifflin-St Jeor, Penn State, Ireton-Jones) and calorie adjustment factors. Progress advanced to 30%."
     }
   ],
   "phase_order": [
