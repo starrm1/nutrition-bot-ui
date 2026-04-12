@@ -1,6 +1,7 @@
 {
   "bot_id": 29,
   "bot_name": "Documentation & Compliance Specialist",
+  "knowledge_map_title": "Documentation & Compliance Specialist",
   "bot_name_locked": true,
   "bot_name_change_requires_approval_from": "starrm1",
   "team": "Diet Specialist Team",

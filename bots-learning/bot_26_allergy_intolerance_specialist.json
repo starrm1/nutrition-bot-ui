@@ -1,6 +1,7 @@
 {
   "bot_id": 26,
   "bot_name": "Allergy & Intolerance Specialist",
+  "knowledge_map_title": "Allergy & Intolerance Specialist",
   "bot_name_locked": true,
   "bot_name_change_requires_approval_from": "starrm1",
   "team": "Diet Specialist Team",

@@ -1,6 +1,7 @@
 {
   "bot_id": 28,
   "bot_name": "Medical Condition Specialist",
+  "knowledge_map_title": "Medical Condition Specialist",
   "bot_name_locked": true,
   "bot_name_change_requires_approval_from": "starrm1",
   "team": "Diet Specialist Team",
