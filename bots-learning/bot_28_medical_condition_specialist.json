@@ -17,18 +17,252 @@
     "department_number": 7,
     "department_name": "Medical Condition Diet Science",
     "department_head_bot": "Bot 28 - Medical Condition Specialist",
-    "total_co_departments": 0,
-    "total_sub_departments": 0,
+    "total_co_departments": 9,
+    "total_sub_departments": 71,
     "co_department_bot_supervisors": [
       "28a",
       "28b"
     ],
-    "co_departments": []
+    "co_departments": [
+      {
+        "name": "Gout",
+        "sub_departments": [
+          "Avoid High-Fructose Corn Syrup",
+          "Limit Alcohol (Especially Beer)",
+          "Hydration",
+          "Purine Restriction"
+        ]
+      },
+      {
+        "name": "Respiratory Conditions",
+        "sub_departments": [
+          "Obesity Management",
+          "Eating Disorders",
+          "Neurological Disorders",
+          "COPD",
+          "Energy Conservation",
+          "Small Frequent Meals",
+          "High-Fat/Low-Carb Ratios (Reduce CO2 Production)"
+        ]
+      },
+      {
+        "name": "Liver Disease",
+        "sub_departments": [
+          "Cirrhosis Nutrition",
+          "Varices (Soft Foods)",
+          "Ascites (Sodium/Fluid Restriction)",
+          "Hepatic Encephalopathy (Protein Distribution, BCAA)"
+        ]
+      },
+      {
+        "name": "Cancer Nutrition",
+        "sub_departments": [
+          "Cachexia Management",
+          "High-Calorie/High-Protein Needs",
+          "Neutropenic Diet Controversy",
+          "Managing Side Effects (Nausea, Mucositis, Taste Changes, Early Satiety)"
+        ]
+      },
+      {
+        "name": "Celiac",
+        "sub_departments": [
+          "Gluten Challenge for Diagnosis",
+          "Dermatitis Herpetiformis",
+          "Oat Controversy",
+          "Cross-Contact Prevention",
+          "<20ppm Gluten"
+        ]
+      },
+      {
+        "name": "GI Disorders",
+        "sub_departments": [
+          "IBD (Crohn's, UC)",
+          "Anti-Inflammatory Foods",
+          "Specific Carbohydrate Diet",
+          "Exclusive Enteral Nutrition",
+          "Low-Residue During Flares",
+          "IBS",
+          "Stress Management",
+          "Trigger Identification",
+          "Soluble vs Insoluble Fiber",
+          "Low FODMAP Diet",
+          "Small Frequent Meals",
+          "GERD",
+          "Elevation Strategies",
+          "Meal Timing (No Eating 2-3 Hours Before Bed)",
+          "Trigger Foods (Citrus, Tomato, Chocolate, Mint, Spicy, Fatty, Caffeine, Alcohol)"
+        ]
+      },
+      {
+        "name": "Cardiovascular Disease",
+        "sub_departments": [
+          "Fiber Goals (25-30g/day)",
+          "Cholesterol Limits (<200mg/day)",
+          "Trans Fat Avoidance",
+          "Saturated Fat Limits (<7% Calories)",
+          "Omega-3 Recommendations",
+          "Mediterranean Diet",
+          "Sodium Limits (1500-2000mg/day)",
+          "DASH Diet Specifics",
+          "MI",
+          "CHF",
+          "HTN"
+        ]
+      },
+      {
+        "name": "Renal Disease",
+        "sub_departments": [
+          "Post-Transplant Diet",
+          "Dialysis Types (Hemodialysis, Peritoneal)",
+          "Protein (0.6-0.8g/kg CKD, 1.2g/kg Dialysis)",
+          "Sodium Limits (2000mg/day)",
+          "Fluid Restrictions (500-1000ml/day Dialysis)",
+          "Phosphorus Limits (800-1000mg/day)",
+          "Potassium Limits (2000mg/day Advanced CKD)",
+          "Transplant",
+          "Dialysis",
+          "CKD Stages"
+        ]
+      },
+      {
+        "name": "Diabetes Management",
+        "sub_departments": [
+          "Sick Day Rules",
+          "Hyperglycemia Management",
+          "Hypoglycemia Treatment (15-15 Rule)",
+          "A1C Targets (<7%)",
+          "Continuous Glucose Monitoring",
+          "Glycemic Index/Load",
+          "Insulin-to-Carb Ratios",
+          "Carb Counting (15g Portions)",
+          "Gestational",
+          "Type 2",
+          "Type 1"
+        ]
+      }
+    ]
   },
   "department_number": 7,
-  "total_co_departments": 0,
-  "total_sub_departments": 0,
-  "co_department_members": [],
+  "total_co_departments": 9,
+  "total_sub_departments": 71,
+  "co_department_members": [
+    {
+      "name": "Gout",
+      "sub_departments": [
+        "Avoid High-Fructose Corn Syrup",
+        "Limit Alcohol (Especially Beer)",
+        "Hydration",
+        "Purine Restriction"
+      ]
+    },
+    {
+      "name": "Respiratory Conditions",
+      "sub_departments": [
+        "Obesity Management",
+        "Eating Disorders",
+        "Neurological Disorders",
+        "COPD",
+        "Energy Conservation",
+        "Small Frequent Meals",
+        "High-Fat/Low-Carb Ratios (Reduce CO2 Production)"
+      ]
+    },
+    {
+      "name": "Liver Disease",
+      "sub_departments": [
+        "Cirrhosis Nutrition",
+        "Varices (Soft Foods)",
+        "Ascites (Sodium/Fluid Restriction)",
+        "Hepatic Encephalopathy (Protein Distribution, BCAA)"
+      ]
+    },
+    {
+      "name": "Cancer Nutrition",
+      "sub_departments": [
+        "Cachexia Management",
+        "High-Calorie/High-Protein Needs",
+        "Neutropenic Diet Controversy",
+        "Managing Side Effects (Nausea, Mucositis, Taste Changes, Early Satiety)"
+      ]
+    },
+    {
+      "name": "Celiac",
+      "sub_departments": [
+        "Gluten Challenge for Diagnosis",
+        "Dermatitis Herpetiformis",
+        "Oat Controversy",
+        "Cross-Contact Prevention",
+        "<20ppm Gluten"
+      ]
+    },
+    {
+      "name": "GI Disorders",
+      "sub_departments": [
+        "IBD (Crohn's, UC)",
+        "Anti-Inflammatory Foods",
+        "Specific Carbohydrate Diet",
+        "Exclusive Enteral Nutrition",
+        "Low-Residue During Flares",
+        "IBS",
+        "Stress Management",
+        "Trigger Identification",
+        "Soluble vs Insoluble Fiber",
+        "Low FODMAP Diet",
+        "Small Frequent Meals",
+        "GERD",
+        "Elevation Strategies",
+        "Meal Timing (No Eating 2-3 Hours Before Bed)",
+        "Trigger Foods (Citrus, Tomato, Chocolate, Mint, Spicy, Fatty, Caffeine, Alcohol)"
+      ]
+    },
+    {
+      "name": "Cardiovascular Disease",
+      "sub_departments": [
+        "Fiber Goals (25-30g/day)",
+        "Cholesterol Limits (<200mg/day)",
+        "Trans Fat Avoidance",
+        "Saturated Fat Limits (<7% Calories)",
+        "Omega-3 Recommendations",
+        "Mediterranean Diet",
+        "Sodium Limits (1500-2000mg/day)",
+        "DASH Diet Specifics",
+        "MI",
+        "CHF",
+        "HTN"
+      ]
+    },
+    {
+      "name": "Renal Disease",
+      "sub_departments": [
+        "Post-Transplant Diet",
+        "Dialysis Types (Hemodialysis, Peritoneal)",
+        "Protein (0.6-0.8g/kg CKD, 1.2g/kg Dialysis)",
+        "Sodium Limits (2000mg/day)",
+        "Fluid Restrictions (500-1000ml/day Dialysis)",
+        "Phosphorus Limits (800-1000mg/day)",
+        "Potassium Limits (2000mg/day Advanced CKD)",
+        "Transplant",
+        "Dialysis",
+        "CKD Stages"
+      ]
+    },
+    {
+      "name": "Diabetes Management",
+      "sub_departments": [
+        "Sick Day Rules",
+        "Hyperglycemia Management",
+        "Hypoglycemia Treatment (15-15 Rule)",
+        "A1C Targets (<7%)",
+        "Continuous Glucose Monitoring",
+        "Glycemic Index/Load",
+        "Insulin-to-Carb Ratios",
+        "Carb Counting (15g Portions)",
+        "Gestational",
+        "Type 2",
+        "Type 1"
+      ]
+    }
+  ],
   "co_department_bot_supervisors": [
     {
       "member_id": "28a",
