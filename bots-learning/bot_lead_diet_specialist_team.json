@@ -5,9 +5,9 @@
   "title": "Lead Department Head",
   "team": "Diet Specialist Team",
   "is_lead_director": true,
-  "oversees": "All 8 Specialist Department Heads",
-  "total_department_heads_in_system": 9,
-  "total_department_heads_note": "9 total department heads: Lead Director + 8 Specialist Department Heads (Bots 22-29)",
+  "oversees": "All 9 Specialist Department Heads",
+  "total_department_heads_in_system": 10,
+  "total_department_heads_note": "10 total department heads: Lead Director + 9 Specialist Department Heads (Bots 22-30)",
   "lead_name_locked": true,
   "lead_name_change_requires_approval_from": "starrm1",
   "is_learning": true,
@@ -18,7 +18,7 @@
   "cross_department_communication_threshold": 50,
   "cross_department_communication_rule": "Both the lead department AND each individual department must reach 50% learning progress before collaboration between them is activated. Copilot advances learning and tracks progress toward this threshold for all departments.",
   "department_head_collaboration": {
-    "rule": "The Lead Department Head works directly with all 8 department heads. Collaboration with each department head is activated only after BOTH the lead department AND that specific department have each reached 50% learning progress.",
+    "rule": "The Lead Department Head works directly with all 9 department heads. Collaboration with each department head is activated only after BOTH the lead department AND that specific department have each reached 50% learning progress.",
     "communication_direction": "bidirectional",
     "communication_direction_rule": "Department heads communicate with the Lead Department Head, and the Lead Department Head communicates with department heads. Communication flows in both directions once the 50% learning threshold is met by both sides.",
     "department_learning_threshold": 50,
@@ -62,9 +62,14 @@
         "bot_id": 29,
         "bot_name": "Documentation & Compliance Specialist",
         "department": "Documentation & Compliance Science"
+      },
+      {
+        "bot_id": 30,
+        "bot_name": "Life Stage Specialist",
+        "department": "Life Stage Nutrition Science"
       }
     ],
-    "total_department_heads": 8
+    "total_department_heads": 9
   },
   "copilot_maintains_learning": true,
   "learning_never_stops": true,
@@ -123,11 +128,17 @@
       "department": "Documentation & Compliance Science",
       "department_head_bot_id": 29,
       "department_head_bot_name": "Documentation & Compliance Specialist",
+      "department_number": 9
+    },
+    {
+      "department": "Life Stage Nutrition Science",
+      "department_head_bot_id": 30,
+      "department_head_bot_name": "Life Stage Specialist",
       "department_number": 8
     }
   ],
-  "total_departments_supervised": 8,
-  "total_bots_in_team": 29,
+  "total_departments_supervised": 9,
+  "total_bots_in_team": 30,
   "knowledge_domains": {
     "cross_department_oversight": [
       "Food Science & Clinical Dietetics",
@@ -137,10 +148,11 @@
       "Allergy & Intolerance Science",
       "Cultural & Religious Diet Science",
       "Medical Condition Diet Science",
-      "Documentation & Compliance Science"
+      "Documentation & Compliance Science",
+      "Life Stage Nutrition Science"
     ],
     "leadership_responsibilities": [
-      "Oversee all 8 Specialist Department Heads",
+      "Oversee all 9 Specialist Department Heads",
       "Ensure all bots maintain continuous independent learning",
       "Coordinate cross-department knowledge sharing",
       "Approve phase advancements (delegated to starrm1)",
