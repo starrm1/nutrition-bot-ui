@@ -198,6 +198,8 @@
     "directive": "The Diet Special Team Leader is directed by starrm1 to have all 9 department teams (Bots 22–30) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team — including co-departments and sub-departments — is actively engaged in independent learning of all subject matter within their assigned department.",
     "applies_to": "all 9 departments (Bot 22 Food Specialist, Bot 23 Drink Specialist, Bot 24 Nutrition Specialist, Bot 25 Texture Specialist, Bot 26 Allergy & Intolerance Specialist, Bot 27 Cultural & Religious Diet Specialist, Bot 28 Medical Condition Specialist, Bot 29 Documentation & Compliance Specialist, Bot 30 Life Stage Specialist)",
     "action_required": "Diet Special Team Leader must relay this directive to all 9 Department Head Leads immediately. Each department must maximize learning of their department topic without delay.",
+    "department_learning_boundary_rule": "As departments begin learning, each department must stay strictly within their own department topic. No cross-department learning is permitted during this phase. Each team member — department head lead, department heads, co-departments, and sub-departments — must focus only on the subject matter belonging to their own assigned department.",
+    "boundary_rule_issued_date": "2026-04-14",
     "status": "active"
   },
   "library_bots": [
