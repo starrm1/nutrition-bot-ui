@@ -1,0 +1,42 @@
+name: Validate Bot JSON Files
+
+on:
+  push:
+    paths:
+      - 'bots-learning/**.json'
+  pull_request:
+    paths:
+      - 'bots-learning/**.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required fields in bot JSON files
+        run: |
+          set -e
+          FAILED=0
+          for f in bots-learning/bot_*.json; do
+            python3 - "$f" <<'EOF'
+import json, sys
+path = sys.argv[1]
+with open(path) as fh:
+    data = json.load(fh)
+missing = [field for field in ("role", "team") if not data.get(field)]
+if missing:
+    print(f"FAIL {path}: missing required fields: {', '.join(missing)}")
+    sys.exit(1)
+else:
+    print(f"OK   {path}")
+EOF
+            if [ $? -ne 0 ]; then FAILED=1; fi
+          done
+          if [ $FAILED -ne 0 ]; then
+            echo "One or more bot JSON files are missing required fields."
+            exit 1
+          fi
+          echo "All bot JSON files passed validation."
