@@ -300,9 +300,9 @@
         "bot_id": 22,
         "bot_name": "Food Specialist",
         "department": "Food Science & Clinical Dietetics",
-        "access_granted": true,
-        "access_status": "granted",
-        "access_number": "LIB-001",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null
       },
@@ -310,9 +310,9 @@
         "bot_id": 23,
         "bot_name": "Drink Specialist",
         "department": "Beverage Science & Hydration Management",
-        "access_granted": true,
-        "access_status": "granted",
-        "access_number": "LIB-002",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null
       },
@@ -320,9 +320,9 @@
         "bot_id": 24,
         "bot_name": "Nutrition Specialist",
         "department": "Clinical Nutrition & Metabolic Science",
-        "access_granted": true,
-        "access_status": "granted",
-        "access_number": "LIB-003",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null
       },
@@ -330,9 +330,9 @@
         "bot_id": 25,
         "bot_name": "Texture Specialist",
         "department": "Texture & Dysphagia Science",
-        "access_granted": true,
-        "access_status": "granted",
-        "access_number": "LIB-004",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null
       },
@@ -340,9 +340,9 @@
         "bot_id": 26,
         "bot_name": "Allergy & Intolerance Specialist",
         "department": "Allergy & Intolerance Science",
-        "access_granted": true,
-        "access_status": "granted",
-        "access_number": "LIB-005",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null
       },
@@ -350,9 +350,9 @@
         "bot_id": 27,
         "bot_name": "Cultural & Religious Diet Specialist",
         "department": "Cultural & Religious Diet Science",
-        "access_granted": true,
-        "access_status": "granted",
-        "access_number": "LIB-006",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null
       },
@@ -360,9 +360,9 @@
         "bot_id": 28,
         "bot_name": "Medical Condition Specialist",
         "department": "Medical Condition Diet Science",
-        "access_granted": true,
-        "access_status": "granted",
-        "access_number": "LIB-007",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null
       },
@@ -370,9 +370,9 @@
         "bot_id": 29,
         "bot_name": "Documentation & Compliance Specialist",
         "department": "Documentation & Compliance Science",
-        "access_granted": true,
-        "access_status": "granted",
-        "access_number": "LIB-008",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null
       },
@@ -380,9 +380,9 @@
         "bot_id": 30,
         "bot_name": "Life Stage Specialist",
         "department": "Life Stage Nutrition Science",
-        "access_granted": true,
-        "access_status": "granted",
-        "access_number": "LIB-009",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null
       }
@@ -404,7 +404,7 @@
         "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which the department may use the library bots."
       }
     ],
-    "access_number_note": "starrm1 issues a unique access number to each approved department. Numbers LIB-001 through LIB-009 have been assigned to departments 22-30 respectively.",
+    "access_number_note": "starrm1 will personally issue a unique access number to each approved department. Access numbers are null until starrm1 assigns them.",
     "access_timeframe_note": "starrm1 sets a specific timeframe (start and end date) during which the access number is valid. Access expires automatically when the timeframe ends."
   }
 }
