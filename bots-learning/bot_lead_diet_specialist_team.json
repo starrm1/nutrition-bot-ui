@@ -304,7 +304,9 @@
         "access_status": "pending",
         "access_number": null,
         "access_timeframe_start": null,
-        "access_timeframe_end": null
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
       },
       {
         "bot_id": 23,
@@ -314,7 +316,9 @@
         "access_status": "pending",
         "access_number": null,
         "access_timeframe_start": null,
-        "access_timeframe_end": null
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
       },
       {
         "bot_id": 24,
@@ -324,7 +328,9 @@
         "access_status": "pending",
         "access_number": null,
         "access_timeframe_start": null,
-        "access_timeframe_end": null
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
       },
       {
         "bot_id": 25,
@@ -334,7 +340,9 @@
         "access_status": "pending",
         "access_number": null,
         "access_timeframe_start": null,
-        "access_timeframe_end": null
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
       },
       {
         "bot_id": 26,
@@ -344,7 +352,9 @@
         "access_status": "pending",
         "access_number": null,
         "access_timeframe_start": null,
-        "access_timeframe_end": null
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
       },
       {
         "bot_id": 27,
@@ -354,7 +364,9 @@
         "access_status": "pending",
         "access_number": null,
         "access_timeframe_start": null,
-        "access_timeframe_end": null
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
       },
       {
         "bot_id": 28,
@@ -364,7 +376,9 @@
         "access_status": "pending",
         "access_number": null,
         "access_timeframe_start": null,
-        "access_timeframe_end": null
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
       },
       {
         "bot_id": 29,
@@ -374,7 +388,9 @@
         "access_status": "pending",
         "access_number": null,
         "access_timeframe_start": null,
-        "access_timeframe_end": null
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
       },
       {
         "bot_id": 30,
@@ -384,7 +400,9 @@
         "access_status": "pending",
         "access_number": null,
         "access_timeframe_start": null,
-        "access_timeframe_end": null
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
       }
     ],
     "approval_process": [
@@ -405,6 +423,7 @@
       }
     ],
     "access_number_note": "starrm1 will personally issue a unique access number to each approved department. Access numbers are null until starrm1 assigns them.",
-    "access_timeframe_note": "starrm1 sets a specific timeframe (start and end date) during which the access number is valid. Access expires automatically when the timeframe ends."
+    "access_timeframe_note": "starrm1 sets a specific timeframe (start and end date) during which the access number is valid. Access expires automatically when the timeframe ends.",
+    "access_entry_rule": "Once starrm1 assigns an access number to a department, that department enters it in the 'access_number_entry' field. When the entered number matches the assigned 'access_number', access is verified and 'access_number_verified' is set to true, activating library access."
   }
 }

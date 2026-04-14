@@ -640,6 +640,9 @@
     ],
     "access_number": null,
     "access_timeframe_start": null,
-    "access_timeframe_end": null
+    "access_timeframe_end": null,
+    "access_number_entry": null,
+    "access_number_verified": false,
+    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department."
   }
 }
