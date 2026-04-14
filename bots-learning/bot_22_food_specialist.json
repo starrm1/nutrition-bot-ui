@@ -16,9 +16,17 @@
   "department_structure": {
     "department_number": 1,
     "department_name": "Food Science & Clinical Dietetics",
-    "department_head_bot": "Bot 22 - Food Specialist",
+    "department_head_lead_bot": "Bot 22 - Food Specialist",
     "total_co_departments": 15,
     "total_sub_departments": 60,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "department_head_lead",
+      "co_department",
+      "sub_department"
+    ],
+    "note": "Department 1 has no co-department bot supervisors (no Bot 22a or 22b). Bot 22 serves as Department Head Lead with co-departments managed directly without dedicated sub-bots.",
     "co_departments": [
       {
         "name": "Ingredient Functionality",
@@ -408,5 +416,5 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head"
+  "role": "Department Head Lead"
 }
