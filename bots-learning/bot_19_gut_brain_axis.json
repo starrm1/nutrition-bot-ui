@@ -8,10 +8,10 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": false,
-  "department_leader": "Bot 16 — Anti-Inflammatory Diet",
+  "department_leader": "Bot 16 \u2014 Anti-Inflammatory Diet",
   "cross_department_learning": [
     "Mental Health and Nutrition (Bot 18)",
-    "Anti-Inflammatory Diet (Bot 16 — Department Leader)"
+    "Anti-Inflammatory Diet (Bot 16 \u2014 Department Leader)"
   ],
   "is_learning": true,
   "progress_percentage": 44,
@@ -47,5 +47,8 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Specialist"
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)"
 }

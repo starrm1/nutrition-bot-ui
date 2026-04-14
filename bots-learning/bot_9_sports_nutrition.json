@@ -8,9 +8,9 @@
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "co_department_members": [
-    "Bot 10 — Weight Management",
-    "Bot 14 — Diabetes and Blood Sugar Management",
-    "Bot 15 — Cardiovascular Health Nutrition"
+    "Bot 10 \u2014 Weight Management",
+    "Bot 14 \u2014 Diabetes and Blood Sugar Management",
+    "Bot 15 \u2014 Cardiovascular Health Nutrition"
   ],
   "is_learning": true,
   "progress_percentage": 72,
@@ -29,8 +29,8 @@
   "copilot_reporting_trigger": "on request from starrm1",
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
-  "cross_learning_directive": "Directed all co-department members — Bot 10 (Weight Management), Bot 14 (Diabetes and Blood Sugar Management), and Bot 15 (Cardiovascular Health Nutrition) — to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Performance & Metabolic Nutrition department.",
-  "learning_start_directive": "Attention co-department members — Bot 10 (Weight Management), Bot 14 (Diabetes and Blood Sugar Management), and Bot 15 (Cardiovascular Health Nutrition): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Performance & Metabolic Nutrition department will begin. — Department Leader, Bot 9",
+  "cross_learning_directive": "Directed all co-department members \u2014 Bot 10 (Weight Management), Bot 14 (Diabetes and Blood Sugar Management), and Bot 15 (Cardiovascular Health Nutrition) \u2014 to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Performance & Metabolic Nutrition department.",
+  "learning_start_directive": "Attention co-department members \u2014 Bot 10 (Weight Management), Bot 14 (Diabetes and Blood Sugar Management), and Bot 15 (Cardiovascular Health Nutrition): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Performance & Metabolic Nutrition department will begin. \u2014 Department Leader, Bot 9",
   "co_department_learning_progress": [
     {
       "bot_id": 10,
@@ -78,5 +78,8 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head"
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)"
 }

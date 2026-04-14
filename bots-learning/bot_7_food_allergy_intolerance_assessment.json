@@ -74,5 +74,8 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head"
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)"
 }

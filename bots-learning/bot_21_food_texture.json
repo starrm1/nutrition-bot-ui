@@ -9,12 +9,12 @@
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "co_department_members": [
-    "Bot 11 — Pediatric Nutrition",
-    "Bot 12 — Geriatric Nutrition",
-    "Bot 13 — Pregnancy and Maternal Nutrition",
-    "Bot 17 — Hydration Optimization"
+    "Bot 11 \u2014 Pediatric Nutrition",
+    "Bot 12 \u2014 Geriatric Nutrition",
+    "Bot 13 \u2014 Pregnancy and Maternal Nutrition",
+    "Bot 17 \u2014 Hydration Optimization"
   ],
-  "learning_start_directive": "Attention co-department members — Bot 11 (Pediatric Nutrition), Bot 12 (Geriatric Nutrition), Bot 13 (Pregnancy and Maternal Nutrition), and Bot 17 (Hydration Optimization): You are each directed to begin your independent learning work immediately. Focus solely on your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Lifecycle & Specialized Population Nutrition department will begin. — Department Leader, Bot 21",
+  "learning_start_directive": "Attention co-department members \u2014 Bot 11 (Pediatric Nutrition), Bot 12 (Geriatric Nutrition), Bot 13 (Pregnancy and Maternal Nutrition), and Bot 17 (Hydration Optimization): You are each directed to begin your independent learning work immediately. Focus solely on your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Lifecycle & Specialized Population Nutrition department will begin. \u2014 Department Leader, Bot 21",
   "cross_learning_directive": "Once all co-department members reach 100% in their individual phases, each will independently study every sibling domain within the Lifecycle & Specialized Population Nutrition department and share findings with the department.",
   "is_learning": true,
   "progress_percentage": 74,
@@ -22,7 +22,7 @@
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "advanced_learning",
   "key_learnings": "Food texture modification is essential for dysphagia management, pediatric feeding development, and geriatric nutrition. IDDSI (International Dysphagia Diet Standardisation Initiative) framework provides the international standard for texture classification.",
-  "research_findings": "Confirmed that standardized IDDSI-compliant texture modification reduces aspiration events by 40% in dysphagia patients. Texture modification must maintain nutritional adequacy — caloric and protein density often require fortification in modified-texture diets.",
+  "research_findings": "Confirmed that standardized IDDSI-compliant texture modification reduces aspiration events by 40% in dysphagia patients. Texture modification must maintain nutritional adequacy \u2014 caloric and protein density often require fortification in modified-texture diets.",
   "current_focus_areas": "Building IDDSI-compliant texture modification protocols for all 8 IDDSI levels; developing texture modification recipes maintaining full nutritional profiles; coordinating with Texture Specialist and Food Specialist bots.",
   "status": "active",
   "learning_mode": "advanced",
@@ -102,5 +102,8 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head"
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)"
 }

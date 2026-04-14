@@ -8,11 +8,11 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": false,
-  "department_leader": "Bot 9 — Sports Nutrition",
+  "department_leader": "Bot 9 \u2014 Sports Nutrition",
   "cross_department_learning": [
     "Weight Management (Bot 10)",
     "Cardiovascular Health Nutrition (Bot 15)",
-    "Sports Nutrition (Bot 9 — Department Leader)"
+    "Sports Nutrition (Bot 9 \u2014 Department Leader)"
   ],
   "is_learning": true,
   "progress_percentage": 72,
@@ -48,5 +48,8 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Specialist"
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)"
 }

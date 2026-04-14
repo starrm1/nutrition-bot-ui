@@ -7,7 +7,7 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": false,
-  "department_leader": "Bot 5 — Micronutrient Deficiency Detection",
+  "department_leader": "Bot 5 \u2014 Micronutrient Deficiency Detection",
   "is_learning": true,
   "progress_percentage": 48,
   "phase": "collaborative_learning",
@@ -40,5 +40,8 @@
     "advanced_learning"
   ],
   "team": "Diet Specialist Team",
-  "role": "Specialist"
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)"
 }
