@@ -7,7 +7,7 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": false,
-  "department_leader": "Bot 5 \u2014 Micronutrient Deficiency Detection",
+  "department_leader": "Bot 5 — Micronutrient Deficiency Detection",
   "is_learning": true,
   "progress_percentage": 42,
   "phase": "collaborative_learning",
@@ -38,5 +38,7 @@
     "independent_learning",
     "collaborative_learning",
     "advanced_learning"
-  ]
+  ],
+  "team": "Diet Specialist Team",
+  "role": "Specialist"
 }

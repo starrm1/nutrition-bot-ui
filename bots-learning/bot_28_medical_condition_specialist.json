@@ -420,7 +420,7 @@
       "learning_log": [
         {
           "date": "2026-04-09",
-          "entry": "Independent Learning Phase initiated. Assigned to Medical Condition Diet Science as GI & Oncology Nutrition Specialist. Domains include GI Disorders (Celiac, IBD/Crohn's/UC, IBS, GERD \u2014 4 sub-trees), Cancer Nutrition (4 topics), Liver Disease (4 topics), and Respiratory Conditions including COPD sub-tree (3 topics) + 3 standalones. Learning continuously under Copilot supervision. Progress: 0%."
+          "entry": "Independent Learning Phase initiated. Assigned to Medical Condition Diet Science as GI & Oncology Nutrition Specialist. Domains include GI Disorders (Celiac, IBD/Crohn's/UC, IBS, GERD — 4 sub-trees), Cancer Nutrition (4 topics), Liver Disease (4 topics), and Respiratory Conditions including COPD sub-tree (3 topics) + 3 standalones. Learning continuously under Copilot supervision. Progress: 0%."
         }
       ],
       "member_name_locked": true
@@ -575,5 +575,6 @@
     "independent_learning",
     "collaborative_learning",
     "advanced_learning"
-  ]
+  ],
+  "role": "Department Head"
 }

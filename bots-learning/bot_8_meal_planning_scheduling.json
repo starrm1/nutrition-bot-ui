@@ -7,7 +7,7 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": false,
-  "department_leader": "Bot 7 \u2014 Food Allergy and Intolerance Assessment",
+  "department_leader": "Bot 7 — Food Allergy and Intolerance Assessment",
   "is_learning": true,
   "progress_percentage": 68,
   "phase": "collaborative_learning",
@@ -34,5 +34,7 @@
     "independent_learning",
     "collaborative_learning",
     "advanced_learning"
-  ]
+  ],
+  "team": "Diet Specialist Team",
+  "role": "Specialist"
 }

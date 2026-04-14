@@ -8,12 +8,12 @@
   "co_department_name_locked": true,
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": false,
-  "department_leader": "Bot 21 \u2014 Food Texture Analysis",
+  "department_leader": "Bot 21 — Food Texture Analysis",
   "cross_department_learning": [
     "Pediatric Nutrition (Bot 11)",
     "Geriatric Nutrition (Bot 12)",
     "Hydration Optimization (Bot 17)",
-    "Food Texture Analysis (Bot 21 \u2014 Department Leader)"
+    "Food Texture Analysis (Bot 21 — Department Leader)"
   ],
   "is_learning": true,
   "progress_percentage": 55,
@@ -48,5 +48,6 @@
     "independent_learning",
     "collaborative_learning",
     "advanced_learning"
-  ]
+  ],
+  "role": "Specialist"
 }
