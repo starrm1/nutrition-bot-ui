@@ -8,12 +8,13 @@
   "co_department_name_change_requires_approval_from": "starrm1",
   "is_department_leader": true,
   "co_department_members": [
-    "Bot 4 — Macronutrient Optimization",
-    "Bot 6 — Caloric Intake Tracking",
-    "Bot 8 — Meal Planning and Scheduling"
+    "Bot 4 \u2014 Macronutrient Optimization",
+    "Bot 6 \u2014 Caloric Intake Tracking",
+    "Bot 8 \u2014 Meal Planning and Scheduling"
   ],
   "is_learning": true,
   "progress_percentage": 67,
+  "progress_target": 100,
   "phase": "advanced_learning",
   "key_learnings": "Food allergies (IgE-mediated) and intolerances (non-IgE) require distinct assessment pathways. Cross-reactive allergens, hidden ingredients, and label-reading protocols are critical for patient safety.",
   "research_findings": "Catalogued 14 major allergen groups with cross-reactivity maps. Identified that 30% of self-reported food intolerances do not meet clinical diagnostic criteria, highlighting the importance of structured elimination protocols.",
@@ -27,8 +28,8 @@
   "team": "Diet Specialist Team",
   "copilot_reports_to": "starrm1",
   "copilot_reporting_trigger": "on request from starrm1",
-  "cross_learning_directive": "Directed all co-department members — Bot 4 (Macronutrient Optimization), Bot 6 (Caloric Intake Tracking), and Bot 8 (Meal Planning and Scheduling) — to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Dietary Safety & Meal Architecture department.",
-  "learning_start_directive": "Attention co-department members — Bot 4 (Macronutrient Optimization), Bot 6 (Caloric Intake Tracking), and Bot 8 (Meal Planning and Scheduling): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Dietary Safety & Meal Architecture department will begin. — Department Leader, Bot 7",
+  "cross_learning_directive": "Directed all co-department members \u2014 Bot 4 (Macronutrient Optimization), Bot 6 (Caloric Intake Tracking), and Bot 8 (Meal Planning and Scheduling) \u2014 to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Dietary Safety & Meal Architecture department.",
+  "learning_start_directive": "Attention co-department members \u2014 Bot 4 (Macronutrient Optimization), Bot 6 (Caloric Intake Tracking), and Bot 8 (Meal Planning and Scheduling): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Dietary Safety & Meal Architecture department will begin. \u2014 Department Leader, Bot 7",
   "co_department_learning_progress": [
     {
       "bot_id": 4,
