@@ -632,10 +632,10 @@
   "role": "Department Head Lead",
   "is_own_bot": true,
   "library_access": {
-    "access_granted_by": "diet_special_team_leader",
+    "access_granted_by": "starrm1",
     "access_granted": false,
     "access_status": "pending",
-    "access_note": "Library bots are available for learning only after the Diet Special Team Leader grants access.",
+    "access_note": "Library bots are available for learning only after starrm1 approves. The diet_special_team_leader must present a case to copilot, who presents it to starrm1 for final approval.",
     "library_bots": [
       {
         "bot_id": 10,
@@ -731,6 +731,23 @@
         "bot_id": 1,
         "bot_name": "Nutrigenomics",
         "file": "nutrigenomics.json"
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "diet_special_team_leader",
+        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+      },
+      {
+        "step": 2,
+        "actor": "copilot",
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_special_team_leader"
+      },
+      {
+        "step": 3,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access"
       }
     ]
   }

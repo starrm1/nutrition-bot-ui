@@ -292,9 +292,9 @@
   "total_library_bots": 19,
   "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30)",
   "library_access_control": {
-    "controlled_by": "diet_special_team_leader",
-    "access_rule": "The Diet Special Team Leader decides which departments are allowed to use the library bots for learning. Access is off by default and must be explicitly granted.",
-    "grant_access_requires": "starrm1 approval or Diet Special Team Leader decision",
+    "controlled_by": "starrm1",
+    "access_rule": "Library access requires the diet_special_team_leader to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves.",
+    "grant_access_requires": "starrm1 final approval, presented by copilot, following case by diet_special_team_leader",
     "department_access": [
       {
         "bot_id": 22,
@@ -358,6 +358,23 @@
         "department": "Life Stage Nutrition Science",
         "access_granted": false,
         "access_status": "pending"
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "diet_special_team_leader",
+        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+      },
+      {
+        "step": 2,
+        "actor": "copilot",
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_special_team_leader"
+      },
+      {
+        "step": 3,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access"
       }
     ]
   }

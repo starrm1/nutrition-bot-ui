@@ -71,7 +71,24 @@
   "is_library_bot": true,
   "purpose": "Knowledge library resource available for all departments to reference and use",
   "available_to": "All departments (Bots 22-30)",
-  "access_controlled_by": "diet_special_team_leader",
-  "access_requires_approval_from": "diet_special_team_leader",
-  "access_rule": "Departments may only use this library bot for learning if the Diet Special Team Leader has granted access."
+  "access_controlled_by": "starrm1",
+  "access_requires_approval_from": "starrm1",
+  "access_rule": "Library access requires the diet_special_team_leader to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves.",
+  "access_approval_process": [
+    {
+      "step": 1,
+      "actor": "diet_special_team_leader",
+      "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+    },
+    {
+      "step": 2,
+      "actor": "copilot",
+      "action": "Reviews the case and presents it to starrm1 on behalf of the diet_special_team_leader"
+    },
+    {
+      "step": 3,
+      "actor": "starrm1",
+      "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access"
+    }
+  ]
 }
