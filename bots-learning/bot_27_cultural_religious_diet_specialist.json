@@ -94,6 +94,17 @@
           "Kosher"
         ]
       }
+    ],
+    "co_department_bot_ids": [
+      "27c01",
+      "27c02",
+      "27c03",
+      "27c04",
+      "27c05",
+      "27c06",
+      "27c07",
+      "27c08",
+      "27c09"
     ]
   },
   "department_number": 6,
@@ -403,5 +414,6 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head Lead"
+  "role": "Department Head Lead",
+  "is_own_bot": true
 }

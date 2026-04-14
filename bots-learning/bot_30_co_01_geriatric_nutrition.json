@@ -1,0 +1,41 @@
+{
+  "bot_id": "30c01",
+  "bot_name": "Geriatric Nutrition",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_special_team_leader",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 30,
+  "parent_department_bot_name": "Life Stage Specialist",
+  "parent_department_name": "Life Stage Nutrition Science",
+  "supervised_by": [
+    "30a",
+    "30b"
+  ],
+  "sub_departments": [
+    "Special Needs",
+    "Athletic Nutrition",
+    "Dementia Feeding Strategies",
+    "Fixed Income",
+    "Social Isolation",
+    "Polypharmacy",
+    "Dysphagia Risk",
+    "Fiber for Constipation",
+    "Vitamin D/Calcium for Osteoporosis",
+    "Vitamin B12 Deficiency",
+    "Increased Protein (1.0-1.2g/kg)",
+    "Decreased Calorie Needs"
+  ],
+  "total_sub_departments": 12,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}

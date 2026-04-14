@@ -152,6 +152,28 @@
         "name": "IDDSI Framework",
         "sub_departments": []
       }
+    ],
+    "co_department_bot_ids": [
+      "25c01",
+      "25c02",
+      "25c03",
+      "25c04",
+      "25c05",
+      "25c06",
+      "25c07",
+      "25c08",
+      "25c09",
+      "25c10",
+      "25c11",
+      "25c12",
+      "25c13",
+      "25c14",
+      "25c15",
+      "25c16",
+      "25c17",
+      "25c18",
+      "25c19",
+      "25c20"
     ]
   },
   "department_number": 4,
@@ -495,5 +517,6 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head Lead"
+  "role": "Department Head Lead",
+  "is_own_bot": true
 }

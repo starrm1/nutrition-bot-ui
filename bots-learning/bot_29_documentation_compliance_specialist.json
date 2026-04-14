@@ -211,6 +211,33 @@
         "name": "Medical Record Documentation",
         "sub_departments": []
       }
+    ],
+    "co_department_bot_ids": [
+      "29c01",
+      "29c02",
+      "29c03",
+      "29c04",
+      "29c05",
+      "29c06",
+      "29c07",
+      "29c08",
+      "29c09",
+      "29c10",
+      "29c11",
+      "29c12",
+      "29c13",
+      "29c14",
+      "29c15",
+      "29c16",
+      "29c17",
+      "29c18",
+      "29c19",
+      "29c20",
+      "29c21",
+      "29c22",
+      "29c23",
+      "29c24",
+      "29c25"
     ]
   },
   "department_number": 9,
@@ -719,5 +746,6 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head Lead"
+  "role": "Department Head Lead",
+  "is_own_bot": true
 }

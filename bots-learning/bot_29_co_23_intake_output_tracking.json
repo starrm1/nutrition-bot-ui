@@ -1,0 +1,28 @@
+{
+  "bot_id": "29c23",
+  "bot_name": "Intake/Output Tracking",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_special_team_leader",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 29,
+  "parent_department_bot_name": "Documentation & Compliance Specialist",
+  "parent_department_name": "Documentation & Compliance Science",
+  "supervised_by": [
+    "29a",
+    "29b"
+  ],
+  "sub_departments": [],
+  "total_sub_departments": 0,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}

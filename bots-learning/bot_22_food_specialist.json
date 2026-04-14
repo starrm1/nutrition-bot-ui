@@ -71,7 +71,7 @@
           "Expiration Dating",
           "Shelf Life",
           "Storage Temps",
-          "Danger Zone (40-140°F)",
+          "Danger Zone (40-140\u00b0F)",
           "HACCP"
         ]
       },
@@ -94,7 +94,7 @@
           "Microwaving",
           "Broiling",
           "Poaching",
-          "Sautéing",
+          "Saut\u00e9ing",
           "Roasting",
           "Boiling",
           "Steaming",
@@ -159,6 +159,23 @@
           "Proteins"
         ]
       }
+    ],
+    "co_department_bot_ids": [
+      "22c01",
+      "22c02",
+      "22c03",
+      "22c04",
+      "22c05",
+      "22c06",
+      "22c07",
+      "22c08",
+      "22c09",
+      "22c10",
+      "22c11",
+      "22c12",
+      "22c13",
+      "22c14",
+      "22c15"
     ]
   },
   "department_number": 1,
@@ -206,7 +223,7 @@
         "Expiration Dating",
         "Shelf Life",
         "Storage Temps",
-        "Danger Zone (40-140°F)",
+        "Danger Zone (40-140\u00b0F)",
         "HACCP"
       ]
     },
@@ -229,7 +246,7 @@
         "Microwaving",
         "Broiling",
         "Poaching",
-        "Sautéing",
+        "Saut\u00e9ing",
         "Roasting",
         "Boiling",
         "Steaming",
@@ -325,7 +342,7 @@
       "Expiration Dating",
       "Shelf Life",
       "Storage Temps",
-      "Danger Zone (40-140°F)",
+      "Danger Zone (40-140\u00b0F)",
       "HACCP"
     ],
     "food_preparation_methods": [
@@ -341,7 +358,7 @@
       "Microwaving",
       "Broiling",
       "Poaching",
-      "Sautéing",
+      "Saut\u00e9ing",
       "Roasting",
       "Boiling",
       "Steaming",
@@ -418,5 +435,6 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head Lead"
+  "role": "Department Head Lead",
+  "is_own_bot": true
 }

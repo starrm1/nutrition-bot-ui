@@ -185,6 +185,32 @@
         "name": "Food Protein-Induced Enterocolitis Syndrome (FPIES)",
         "sub_departments": []
       }
+    ],
+    "co_department_bot_ids": [
+      "26c01",
+      "26c02",
+      "26c03",
+      "26c04",
+      "26c05",
+      "26c06",
+      "26c07",
+      "26c08",
+      "26c09",
+      "26c10",
+      "26c11",
+      "26c12",
+      "26c13",
+      "26c14",
+      "26c15",
+      "26c16",
+      "26c17",
+      "26c18",
+      "26c19",
+      "26c20",
+      "26c21",
+      "26c22",
+      "26c23",
+      "26c24"
     ]
   },
   "department_number": 5,
@@ -603,5 +629,6 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head Lead"
+  "role": "Department Head Lead",
+  "is_own_bot": true
 }

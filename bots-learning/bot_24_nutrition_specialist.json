@@ -169,6 +169,26 @@
           "Protein"
         ]
       }
+    ],
+    "co_department_bot_ids": [
+      "24c01",
+      "24c02",
+      "24c03",
+      "24c04",
+      "24c05",
+      "24c06",
+      "24c07",
+      "24c08",
+      "24c09",
+      "24c10",
+      "24c11",
+      "24c12",
+      "24c13",
+      "24c14",
+      "24c15",
+      "24c16",
+      "24c17",
+      "24c18"
     ]
   },
   "department_number": 3,
@@ -459,7 +479,7 @@
         },
         {
           "date": "2026-04-12",
-          "entry": "Progress update: Completed study of metabolic calculation equations — Harris-Benedict, Mifflin-St Jeor, Penn State, and Ireton-Jones. Reviewed BMR calculations with activity and disease adjustment factors. Initiated protein requirements module covering maintenance (0.8g/kg), wound healing (1.2–1.5g/kg), dialysis (1.2g/kg), and critical illness (1.5–2.0g/kg) ranges. Began review of stress factors for Burns, Trauma, Infection, and Surgery. Progress advanced to 10%."
+          "entry": "Progress update: Completed study of metabolic calculation equations \u2014 Harris-Benedict, Mifflin-St Jeor, Penn State, and Ireton-Jones. Reviewed BMR calculations with activity and disease adjustment factors. Initiated protein requirements module covering maintenance (0.8g/kg), wound healing (1.2\u20131.5g/kg), dialysis (1.2g/kg), and critical illness (1.5\u20132.0g/kg) ranges. Began review of stress factors for Burns, Trauma, Infection, and Surgery. Progress advanced to 10%."
         }
       ]
     }
@@ -585,5 +605,6 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head Lead"
+  "role": "Department Head Lead",
+  "is_own_bot": true
 }

@@ -153,6 +153,29 @@
         "name": "Beverage Catalog by Diet",
         "sub_departments": []
       }
+    ],
+    "co_department_bot_ids": [
+      "23c01",
+      "23c02",
+      "23c03",
+      "23c04",
+      "23c05",
+      "23c06",
+      "23c07",
+      "23c08",
+      "23c09",
+      "23c10",
+      "23c11",
+      "23c12",
+      "23c13",
+      "23c14",
+      "23c15",
+      "23c16",
+      "23c17",
+      "23c18",
+      "23c19",
+      "23c20",
+      "23c21"
     ]
   },
   "department_number": 2,
@@ -509,5 +532,6 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head Lead"
+  "role": "Department Head Lead",
+  "is_own_bot": true
 }

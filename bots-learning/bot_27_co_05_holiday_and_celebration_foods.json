@@ -1,0 +1,28 @@
+{
+  "bot_id": "27c05",
+  "bot_name": "Holiday and Celebration Foods",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_special_team_leader",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 27,
+  "parent_department_bot_name": "Cultural & Religious Diet Specialist",
+  "parent_department_name": "Cultural & Religious Diet Science",
+  "supervised_by": [
+    "27a",
+    "27b"
+  ],
+  "sub_departments": [],
+  "total_sub_departments": 0,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}

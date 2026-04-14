@@ -1,0 +1,39 @@
+{
+  "bot_id": "28c08",
+  "bot_name": "Renal Disease",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_special_team_leader",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 28,
+  "parent_department_bot_name": "Medical Condition Specialist",
+  "parent_department_name": "Medical Condition Diet Science",
+  "supervised_by": [
+    "28a",
+    "28b"
+  ],
+  "sub_departments": [
+    "Post-Transplant Diet",
+    "Dialysis Types (Hemodialysis, Peritoneal)",
+    "Protein (0.6-0.8g/kg CKD, 1.2g/kg Dialysis)",
+    "Sodium Limits (2000mg/day)",
+    "Fluid Restrictions (500-1000ml/day Dialysis)",
+    "Phosphorus Limits (800-1000mg/day)",
+    "Potassium Limits (2000mg/day Advanced CKD)",
+    "Transplant",
+    "Dialysis",
+    "CKD Stages"
+  ],
+  "total_sub_departments": 10,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}

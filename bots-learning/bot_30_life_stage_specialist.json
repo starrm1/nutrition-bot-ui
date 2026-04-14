@@ -82,6 +82,12 @@
           "Infants"
         ]
       }
+    ],
+    "co_department_bot_ids": [
+      "30c01",
+      "30c02",
+      "30c03",
+      "30c04"
     ]
   },
   "department_number": 8,
@@ -363,5 +369,6 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head Lead"
+  "role": "Department Head Lead",
+  "is_own_bot": true
 }

@@ -1,0 +1,32 @@
+{
+  "bot_id": "24c09",
+  "bot_name": "Detailed Macro Calculations",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_special_team_leader",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 24,
+  "parent_department_bot_name": "Nutrition Specialist",
+  "parent_department_name": "Clinical Nutrition & Metabolic Science",
+  "supervised_by": [
+    "24a",
+    "24b"
+  ],
+  "sub_departments": [
+    "Fat Percentages",
+    "Carb Counting Methods",
+    "Protein 0.8-2.0g/kg Based on Condition"
+  ],
+  "total_sub_departments": 3,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}
