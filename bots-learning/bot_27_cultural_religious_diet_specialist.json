@@ -418,9 +418,9 @@
   "is_own_bot": true,
   "library_access": {
     "access_granted_by": "starrm1",
-    "access_granted": false,
-    "access_status": "pending",
-    "access_note": "Library bots are available for learning only after starrm1 approves. The diet_special_team_leader must present a case to copilot, who presents it to starrm1 for final approval. Upon approval, starrm1 issues an access number and a timeframe specifying how long this department may use the library bots.",
+    "access_granted": true,
+    "access_status": "granted",
+    "access_note": "Library access has been granted by starrm1. Access number LIB-006 is required to use the library bots. starrm1 will set the timeframe for how long this access number is valid.",
     "library_bots": [
       {
         "bot_id": 10,
@@ -535,7 +535,7 @@
         "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which this department may use the library bots."
       }
     ],
-    "access_number": null,
+    "access_number": "LIB-006",
     "access_timeframe_start": null,
     "access_timeframe_end": null
   }
