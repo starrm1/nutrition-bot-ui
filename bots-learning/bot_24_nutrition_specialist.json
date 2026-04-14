@@ -16,9 +16,18 @@
   "department_structure": {
     "department_number": 3,
     "department_name": "Clinical Nutrition & Metabolic Science",
-    "department_head_bot": "Bot 24 - Nutrition Specialist",
+    "department_head_lead_bot": "Bot 24 - Nutrition Specialist",
     "total_co_departments": 18,
     "total_sub_departments": 50,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_special_team_leader",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
     "co_department_bot_supervisors": [
       "24a",
       "24b"
@@ -576,5 +585,5 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head"
+  "role": "Department Head Lead"
 }

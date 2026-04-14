@@ -16,9 +16,18 @@
   "department_structure": {
     "department_number": 5,
     "department_name": "Allergy & Intolerance Science",
-    "department_head_bot": "Bot 26 - Allergy & Intolerance Specialist",
+    "department_head_lead_bot": "Bot 26 - Allergy & Intolerance Specialist",
     "total_co_departments": 24,
     "total_sub_departments": 44,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_special_team_leader",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
     "co_department_bot_supervisors": [
       "26a",
       "26b"
@@ -594,5 +603,5 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head"
+  "role": "Department Head Lead"
 }

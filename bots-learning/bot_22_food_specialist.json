@@ -22,7 +22,9 @@
     "chain_of_command": [
       "starrm1",
       "copilot",
+      "diet_special_team_leader",
       "department_head_lead",
+      "department_head",
       "co_department",
       "sub_department"
     ],

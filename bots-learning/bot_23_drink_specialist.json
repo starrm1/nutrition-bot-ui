@@ -16,9 +16,18 @@
   "department_structure": {
     "department_number": 2,
     "department_name": "Beverage Science & Hydration Management",
-    "department_head_bot": "Bot 23 - Drink Specialist",
+    "department_head_lead_bot": "Bot 23 - Drink Specialist",
     "total_co_departments": 21,
     "total_sub_departments": 29,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_special_team_leader",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
     "co_department_bot_supervisors": [
       "23a",
       "23b"
@@ -500,5 +509,5 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head"
+  "role": "Department Head Lead"
 }

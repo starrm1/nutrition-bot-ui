@@ -16,9 +16,18 @@
   "department_structure": {
     "department_number": 9,
     "department_name": "Documentation & Compliance Science",
-    "department_head_bot": "Bot 29 - Documentation & Compliance Specialist",
+    "department_head_lead_bot": "Bot 29 - Documentation & Compliance Specialist",
     "total_co_departments": 25,
     "total_sub_departments": 63,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_special_team_leader",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
     "co_department_bot_supervisors": [
       "29a",
       "29b"
@@ -710,5 +719,5 @@
     "collaborative_learning",
     "advanced_learning"
   ],
-  "role": "Department Head"
+  "role": "Department Head Lead"
 }
