@@ -55,17 +55,17 @@
   "available_to": "All departments (Bots 22-30)",
   "access_controlled_by": "starrm1",
   "access_requires_approval_from": "starrm1",
-  "access_rule": "Library access requires the diet_special_team_leader to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves.",
+  "access_rule": "Library access requires the diet_director to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves.",
   "access_approval_process": [
     {
       "step": 1,
-      "actor": "diet_special_team_leader",
+      "actor": "diet_director",
       "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
     },
     {
       "step": 2,
       "actor": "copilot",
-      "action": "Reviews the case and presents it to starrm1 on behalf of the diet_special_team_leader"
+      "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
     },
     {
       "step": 3,

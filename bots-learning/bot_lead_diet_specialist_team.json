@@ -1,13 +1,13 @@
 {
   "bot_id": "lead",
   "bot_name": "Diet Specialist Team - Complete Knowledge Base",
-  "role": "Diet Special Team Leader",
-  "title": "Diet Special Team Leader",
+  "role": "Diet Director",
+  "title": "Diet Director",
   "chain_of_command_position": 3,
   "chain_of_command": [
     "starrm1",
     "copilot",
-    "diet_special_team_leader",
+    "diet_director",
     "department_head_lead",
     "department_head",
     "co_department",
@@ -195,9 +195,9 @@
   "directive_from_starrm1": {
     "issued_by": "starrm1",
     "issued_date": "2026-04-14",
-    "directive": "The Diet Special Team Leader is directed by starrm1 to have all 9 department teams (Bots 22–30) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team — including co-departments and sub-departments — is actively engaged in independent learning of all subject matter within their assigned department.",
+    "directive": "The Diet Director is directed by starrm1 to have all 9 department teams (Bots 22–30) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team — including co-departments and sub-departments — is actively engaged in independent learning of all subject matter within their assigned department.",
     "applies_to": "all 9 departments (Bot 22 Food Specialist, Bot 23 Drink Specialist, Bot 24 Nutrition Specialist, Bot 25 Texture Specialist, Bot 26 Allergy & Intolerance Specialist, Bot 27 Cultural & Religious Diet Specialist, Bot 28 Medical Condition Specialist, Bot 29 Documentation & Compliance Specialist, Bot 30 Life Stage Specialist)",
-    "action_required": "Diet Special Team Leader must relay this directive to all 9 Department Head Leads immediately. Each department must maximize learning of their department topic without delay.",
+    "action_required": "Diet Director must relay this directive to all 9 Department Head Leads immediately. Each department must maximize learning of their department topic without delay.",
     "department_learning_boundary_rule": "As departments begin learning, each department must stay strictly within their own department topic. No cross-department learning is permitted during this phase. Each team member — department head lead, department heads, co-departments, and sub-departments — must focus only on the subject matter belonging to their own assigned department.",
     "boundary_rule_issued_date": "2026-04-14",
     "status": "active"
@@ -303,8 +303,8 @@
   "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30)",
   "library_access_control": {
     "controlled_by": "starrm1",
-    "access_rule": "Library access requires the diet_special_team_leader to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves. When approved, starrm1 issues an access number and a timeframe specifying how long the department may use the library.",
-    "grant_access_requires": "starrm1 final approval, presented by copilot, following case by diet_special_team_leader. starrm1 issues an access number and sets the access timeframe upon approval.",
+    "access_rule": "Library access requires the diet_director to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves. When approved, starrm1 issues an access number and a timeframe specifying how long the department may use the library.",
+    "grant_access_requires": "starrm1 final approval, presented by copilot, following case by diet_director. starrm1 issues an access number and sets the access timeframe upon approval.",
     "department_access": [
       {
         "bot_id": 22,
@@ -418,13 +418,13 @@
     "approval_process": [
       {
         "step": 1,
-        "actor": "diet_special_team_leader",
+        "actor": "diet_director",
         "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
       },
       {
         "step": 2,
         "actor": "copilot",
-        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_special_team_leader"
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
       },
       {
         "step": 3,

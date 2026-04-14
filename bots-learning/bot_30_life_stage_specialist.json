@@ -22,7 +22,7 @@
     "chain_of_command": [
       "starrm1",
       "copilot",
-      "diet_special_team_leader",
+      "diet_director",
       "department_head_lead",
       "department_head",
       "co_department",
@@ -270,6 +270,13 @@
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
+  "learning_scope": {
+    "scope": "own_department_only",
+    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+    "cross_department_learning_permitted": false,
+    "scope_unlocks_at_progress_percentage": 50,
+    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress."
+  },
   "knowledge_domains": {
     "geriatric_nutrition": [
       "Special Needs",
@@ -476,13 +483,13 @@
     "approval_process": [
       {
         "step": 1,
-        "actor": "diet_special_team_leader",
+        "actor": "diet_director",
         "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
       },
       {
         "step": 2,
         "actor": "copilot",
-        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_special_team_leader"
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
       },
       {
         "step": 3,
