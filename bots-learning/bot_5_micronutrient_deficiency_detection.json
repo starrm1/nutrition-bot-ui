@@ -77,5 +77,8 @@
   "role": "Library Bot",
   "is_library_bot": true,
   "purpose": "Knowledge library resource available for all departments to reference and use",
-  "available_to": "All departments (Bots 22-30)"
+  "available_to": "All departments (Bots 22-30)",
+  "access_controlled_by": "diet_special_team_leader",
+  "access_requires_approval_from": "diet_special_team_leader",
+  "access_rule": "Departments may only use this library bot for learning if the Diet Special Team Leader has granted access."
 }

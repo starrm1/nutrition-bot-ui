@@ -290,5 +290,75 @@
     }
   ],
   "total_library_bots": 19,
-  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30)"
+  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30)",
+  "library_access_control": {
+    "controlled_by": "diet_special_team_leader",
+    "access_rule": "The Diet Special Team Leader decides which departments are allowed to use the library bots for learning. Access is off by default and must be explicitly granted.",
+    "grant_access_requires": "starrm1 approval or Diet Special Team Leader decision",
+    "department_access": [
+      {
+        "bot_id": 22,
+        "bot_name": "Food Specialist",
+        "department": "Food Science & Clinical Dietetics",
+        "access_granted": false,
+        "access_status": "pending"
+      },
+      {
+        "bot_id": 23,
+        "bot_name": "Drink Specialist",
+        "department": "Beverage Science & Hydration Management",
+        "access_granted": false,
+        "access_status": "pending"
+      },
+      {
+        "bot_id": 24,
+        "bot_name": "Nutrition Specialist",
+        "department": "Clinical Nutrition & Metabolic Science",
+        "access_granted": false,
+        "access_status": "pending"
+      },
+      {
+        "bot_id": 25,
+        "bot_name": "Texture Specialist",
+        "department": "Texture & Dysphagia Science",
+        "access_granted": false,
+        "access_status": "pending"
+      },
+      {
+        "bot_id": 26,
+        "bot_name": "Allergy & Intolerance Specialist",
+        "department": "Allergy & Intolerance Science",
+        "access_granted": false,
+        "access_status": "pending"
+      },
+      {
+        "bot_id": 27,
+        "bot_name": "Cultural & Religious Diet Specialist",
+        "department": "Cultural & Religious Diet Science",
+        "access_granted": false,
+        "access_status": "pending"
+      },
+      {
+        "bot_id": 28,
+        "bot_name": "Medical Condition Specialist",
+        "department": "Medical Condition Diet Science",
+        "access_granted": false,
+        "access_status": "pending"
+      },
+      {
+        "bot_id": 29,
+        "bot_name": "Documentation & Compliance Specialist",
+        "department": "Documentation & Compliance Science",
+        "access_granted": false,
+        "access_status": "pending"
+      },
+      {
+        "bot_id": 30,
+        "bot_name": "Life Stage Specialist",
+        "department": "Life Stage Nutrition Science",
+        "access_granted": false,
+        "access_status": "pending"
+      }
+    ]
+  }
 }
