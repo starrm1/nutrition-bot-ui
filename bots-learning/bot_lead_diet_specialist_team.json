@@ -1,8 +1,18 @@
 {
   "bot_id": "lead",
   "bot_name": "Diet Specialist Team - Complete Knowledge Base",
-  "role": "Lead Director",
-  "title": "Lead Department Head",
+  "role": "Diet Special Team Leader",
+  "title": "Diet Special Team Leader",
+  "chain_of_command_position": 3,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_special_team_leader",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
   "team": "Diet Specialist Team",
   "is_lead_director": true,
   "oversees": "All 9 Specialist Department Heads",
