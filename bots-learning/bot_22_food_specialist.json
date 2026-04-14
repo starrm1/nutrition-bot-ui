@@ -19,7 +19,6 @@
     "department_head_bot": "Bot 22 - Food Specialist",
     "total_co_departments": 15,
     "total_sub_departments": 60,
-    "co_department_bot_supervisors": [],
     "co_departments": [
       {
         "name": "Ingredient Functionality",
@@ -286,7 +285,6 @@
       ]
     }
   ],
-  "co_department_bot_supervisors": [],
   "is_learning": true,
   "progress_percentage": 30,
   "progress_target": 100,
