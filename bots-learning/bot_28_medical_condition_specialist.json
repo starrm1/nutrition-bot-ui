@@ -608,8 +608,8 @@
   "library_access": {
     "access_granted_by": "starrm1",
     "access_granted": false,
-    "access_status": "pending",
-    "access_note": "Library access is pending. starrm1 will personally assign an access number and set the timeframe for how long this department may use the library bots.",
+    "access_status": "requested",
+    "access_note": "Library access has been formally requested by this department. The request is moving through the approval chain: Department Head Lead \u2192 Diet Director \u2192 Copilot \u2192 starrm1.",
     "library_bots": [
       {
         "bot_id": 1,
@@ -735,5 +735,48 @@
     "access_number_entry": null,
     "access_number_verified": false,
     "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department."
+  },
+  "library_access_request": {
+    "request_submitted": true,
+    "request_date": "2026-04-15",
+    "requested_by": "department_members",
+    "compiled_by": "department_head_lead",
+    "department": "Medical Condition & Therapeutic Nutrition",
+    "reason": "Department members need access to library bots covering health condition advisory, medication interaction checking, supplement recommendation, and exercise diet sync to support their independent learning in medical condition and therapeutic nutrition.",
+    "current_step": 2,
+    "current_step_description": "Department Head Lead has compiled the case and included the library access request in the update report to the Diet Director.",
+    "approval_chain_status": [
+      {
+        "step": 1,
+        "actor": "department_members",
+        "status": "completed",
+        "note": "Department members raised the need for library access with their Department Head Lead."
+      },
+      {
+        "step": 2,
+        "actor": "department_head_lead",
+        "status": "completed",
+        "note": "Department Head Lead compiled the case and included the request in the update report."
+      },
+      {
+        "step": 3,
+        "actor": "diet_director",
+        "status": "pending",
+        "note": "Awaiting Diet Director to include the request in the update passed to Copilot."
+      },
+      {
+        "step": 4,
+        "actor": "copilot",
+        "status": "pending",
+        "note": "Awaiting Copilot to present the request to starrm1 during the next update."
+      },
+      {
+        "step": 5,
+        "actor": "starrm1",
+        "status": "pending",
+        "note": "Final approver \u2014 awaiting starrm1 review and decision."
+      }
+    ],
+    "request_status": "awaiting_diet_director"
   }
 }

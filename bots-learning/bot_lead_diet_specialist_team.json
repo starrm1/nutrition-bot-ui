@@ -311,108 +311,126 @@
         "bot_name": "Food Specialist",
         "department": "Food Science & Clinical Dietetics",
         "access_granted": false,
-        "access_status": "pending",
+        "access_status": "requested",
         "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null,
         "access_number_entry": null,
-        "access_number_verified": false
+        "access_number_verified": false,
+        "access_request_date": "2026-04-15",
+        "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval."
       },
       {
         "bot_id": 23,
         "bot_name": "Drink Specialist",
         "department": "Beverage Science & Hydration Management",
         "access_granted": false,
-        "access_status": "pending",
+        "access_status": "requested",
         "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null,
         "access_number_entry": null,
-        "access_number_verified": false
+        "access_number_verified": false,
+        "access_request_date": "2026-04-15",
+        "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval."
       },
       {
         "bot_id": 24,
         "bot_name": "Nutrition Specialist",
         "department": "Clinical Nutrition & Metabolic Science",
         "access_granted": false,
-        "access_status": "pending",
+        "access_status": "requested",
         "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null,
         "access_number_entry": null,
-        "access_number_verified": false
+        "access_number_verified": false,
+        "access_request_date": "2026-04-15",
+        "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval."
       },
       {
         "bot_id": 25,
         "bot_name": "Texture Specialist",
         "department": "Texture & Dysphagia Science",
         "access_granted": false,
-        "access_status": "pending",
+        "access_status": "requested",
         "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null,
         "access_number_entry": null,
-        "access_number_verified": false
+        "access_number_verified": false,
+        "access_request_date": "2026-04-15",
+        "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval."
       },
       {
         "bot_id": 26,
         "bot_name": "Allergy & Intolerance Specialist",
         "department": "Allergy & Intolerance Science",
         "access_granted": false,
-        "access_status": "pending",
+        "access_status": "requested",
         "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null,
         "access_number_entry": null,
-        "access_number_verified": false
+        "access_number_verified": false,
+        "access_request_date": "2026-04-15",
+        "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval."
       },
       {
         "bot_id": 27,
         "bot_name": "Cultural & Religious Diet Specialist",
         "department": "Cultural & Religious Diet Science",
         "access_granted": false,
-        "access_status": "pending",
+        "access_status": "requested",
         "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null,
         "access_number_entry": null,
-        "access_number_verified": false
+        "access_number_verified": false,
+        "access_request_date": "2026-04-15",
+        "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval."
       },
       {
         "bot_id": 28,
         "bot_name": "Medical Condition Specialist",
         "department": "Medical Condition Diet Science",
         "access_granted": false,
-        "access_status": "pending",
+        "access_status": "requested",
         "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null,
         "access_number_entry": null,
-        "access_number_verified": false
+        "access_number_verified": false,
+        "access_request_date": "2026-04-15",
+        "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval."
       },
       {
         "bot_id": 29,
         "bot_name": "Documentation & Compliance Specialist",
         "department": "Documentation & Compliance Science",
         "access_granted": false,
-        "access_status": "pending",
+        "access_status": "requested",
         "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null,
         "access_number_entry": null,
-        "access_number_verified": false
+        "access_number_verified": false,
+        "access_request_date": "2026-04-15",
+        "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval."
       },
       {
         "bot_id": 30,
         "bot_name": "Life Stage Specialist",
         "department": "Life Stage Nutrition Science",
         "access_granted": false,
-        "access_status": "pending",
+        "access_status": "requested",
         "access_number": null,
         "access_timeframe_start": null,
         "access_timeframe_end": null,
         "access_number_entry": null,
-        "access_number_verified": false
+        "access_number_verified": false,
+        "access_request_date": "2026-04-15",
+        "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval."
       }
     ],
     "approval_process": [
