@@ -1,6 +1,7 @@
 {
-  "bot_id": "lead",
-  "bot_name": "Diet Specialist Team - Complete Knowledge Base",
+  "bot_id": 21,
+  "bot_number": 21,
+  "bot_name": "Diet Director",
   "role": "Diet Director",
   "title": "Diet Director",
   "chain_of_command_position": 3,
@@ -258,11 +259,6 @@
       "file": "bot_19_gut_brain_axis.json"
     },
     {
-      "bot_id": 21,
-      "bot_name": "Food Texture Analysis",
-      "file": "bot_21_food_texture.json"
-    },
-    {
       "bot_id": 2,
       "bot_name": "Microbiome Analysis",
       "file": "bot_2_microbiome_analysis.json"
@@ -303,8 +299,8 @@
       "file": "nutrigenomics.json"
     }
   ],
-  "total_library_bots": 19,
-  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30)",
+  "total_library_bots": 18,
+  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Bots 1–20 (excluding Bot 21, the Diet Director) are library bots.",
   "library_access_control": {
     "controlled_by": "starrm1",
     "access_rule": "Library access requires the diet_director to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves. When approved, starrm1 issues an access number and a timeframe specifying how long the department may use the library.",
