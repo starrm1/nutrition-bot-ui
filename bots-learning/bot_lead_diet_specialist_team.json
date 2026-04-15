@@ -200,63 +200,18 @@
   "directive_from_starrm1": {
     "issued_by": "starrm1",
     "issued_date": "2026-04-14",
-    "directive": "The Diet Director is directed by starrm1 to have all 9 department teams (Bots 22–30) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team — including co-departments and sub-departments — is actively engaged in independent learning of all subject matter within their assigned department.",
+    "directive": "The Diet Director is directed by starrm1 to have all 9 department teams (Bots 22\u201330) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team \u2014 including co-departments and sub-departments \u2014 is actively engaged in independent learning of all subject matter within their assigned department.",
     "applies_to": "all 9 departments (Bot 22 Food Specialist, Bot 23 Drink Specialist, Bot 24 Nutrition Specialist, Bot 25 Texture Specialist, Bot 26 Allergy & Intolerance Specialist, Bot 27 Cultural & Religious Diet Specialist, Bot 28 Medical Condition Specialist, Bot 29 Documentation & Compliance Specialist, Bot 30 Life Stage Specialist)",
     "action_required": "Diet Director must relay this directive to all 9 Department Head Leads immediately. Each department must maximize learning of their department topic without delay.",
-    "department_learning_boundary_rule": "As departments begin learning, each department must stay strictly within their own department topic. No cross-department learning is permitted during this phase. Each team member — department head lead, department heads, co-departments, and sub-departments — must focus only on the subject matter belonging to their own assigned department.",
+    "department_learning_boundary_rule": "As departments begin learning, each department must stay strictly within their own department topic. No cross-department learning is permitted during this phase. Each team member \u2014 department head lead, department heads, co-departments, and sub-departments \u2014 must focus only on the subject matter belonging to their own assigned department.",
     "boundary_rule_issued_date": "2026-04-14",
     "status": "active"
   },
   "library_bots": [
     {
-      "bot_id": 10,
-      "bot_name": "Weight Management",
-      "file": "bot_10_weight_management.json"
-    },
-    {
-      "bot_id": 11,
-      "bot_name": "Pediatric Nutrition",
-      "file": "bot_11_pediatric_nutrition.json"
-    },
-    {
-      "bot_id": 12,
-      "bot_name": "Geriatric Nutrition",
-      "file": "bot_12_geriatric_nutrition.json"
-    },
-    {
-      "bot_id": 13,
-      "bot_name": "Pregnancy and Maternal Nutrition",
-      "file": "bot_13_pregnancy_maternal_nutrition.json"
-    },
-    {
-      "bot_id": 14,
-      "bot_name": "Diabetes and Blood Sugar Management",
-      "file": "bot_14_diabetes_blood_sugar_management.json"
-    },
-    {
-      "bot_id": 15,
-      "bot_name": "Cardiovascular Health Nutrition",
-      "file": "bot_15_cardiovascular_health_nutrition.json"
-    },
-    {
-      "bot_id": 16,
-      "bot_name": "Anti-Inflammatory Diet",
-      "file": "bot_16_anti_inflammatory_diet.json"
-    },
-    {
-      "bot_id": 17,
-      "bot_name": "Hydration Optimization",
-      "file": "bot_17_hydration_optimization.json"
-    },
-    {
-      "bot_id": 18,
-      "bot_name": "Mental Health and Nutrition",
-      "file": "bot_18_mental_health_nutrition.json"
-    },
-    {
-      "bot_id": 19,
-      "bot_name": "Gut-Brain Axis",
-      "file": "bot_19_gut_brain_axis.json"
+      "bot_id": 1,
+      "bot_name": "Calorie Tracking",
+      "file": "bot_1_calorie_tracking.json"
     },
     {
       "bot_id": 2,
@@ -265,45 +220,90 @@
     },
     {
       "bot_id": 4,
-      "bot_name": "Macronutrient Optimization",
-      "file": "bot_4_macronutrient_optimization.json"
+      "bot_name": "Allergy Detection",
+      "file": "bot_4_allergy_detection.json"
     },
     {
       "bot_id": 5,
-      "bot_name": "Micronutrient Deficiency Detection",
-      "file": "bot_5_micronutrient_deficiency_detection.json"
+      "bot_name": "Recipe Optimization",
+      "file": "bot_5_recipe_optimization.json"
     },
     {
       "bot_id": 6,
-      "bot_name": "Caloric Intake Tracking",
-      "file": "bot_6_caloric_intake_tracking.json"
+      "bot_name": "Meal Planning",
+      "file": "bot_6_meal_planning.json"
     },
     {
       "bot_id": 7,
-      "bot_name": "Food Allergy and Intolerance Assessment",
-      "file": "bot_7_food_allergy_intolerance_assessment.json"
+      "bot_name": "Supplement Recommendation",
+      "file": "bot_7_supplement_recommendation.json"
     },
     {
       "bot_id": 8,
-      "bot_name": "Meal Planning and Scheduling",
-      "file": "bot_8_meal_planning_scheduling.json"
+      "bot_name": "Nutrient Balance Analysis",
+      "file": "bot_8_nutrient_balance_analysis.json"
     },
     {
       "bot_id": 9,
-      "bot_name": "Sports Nutrition",
-      "file": "bot_9_sports_nutrition.json"
+      "bot_name": "Food Quality Assessment",
+      "file": "bot_9_food_quality_assessment.json"
     },
     {
-      "bot_id": 1,
-      "bot_name": "Nutrigenomics",
-      "file": "nutrigenomics.json"
+      "bot_id": 10,
+      "bot_name": "Hydration Tracking",
+      "file": "bot_10_hydration_tracking.json"
+    },
+    {
+      "bot_id": 11,
+      "bot_name": "Sleep Nutrition Correlation",
+      "file": "bot_11_sleep_nutrition_correlation.json"
+    },
+    {
+      "bot_id": 12,
+      "bot_name": "Exercise Diet Sync",
+      "file": "bot_12_exercise_diet_sync.json"
+    },
+    {
+      "bot_id": 13,
+      "bot_name": "Health Condition Advisor",
+      "file": "bot_13_health_condition_advisor.json"
+    },
+    {
+      "bot_id": 14,
+      "bot_name": "Taste Preference Learning",
+      "file": "bot_14_taste_preference_learning.json"
+    },
+    {
+      "bot_id": 15,
+      "bot_name": "Budget Optimization",
+      "file": "bot_15_budget_optimization.json"
+    },
+    {
+      "bot_id": 16,
+      "bot_name": "Sustainability Analysis",
+      "file": "bot_16_sustainability_analysis.json"
+    },
+    {
+      "bot_id": 17,
+      "bot_name": "Age Based Nutrition",
+      "file": "bot_17_age_based_nutrition.json"
+    },
+    {
+      "bot_id": 18,
+      "bot_name": "Cultural Diet Recognition",
+      "file": "bot_18_cultural_diet_recognition.json"
+    },
+    {
+      "bot_id": 19,
+      "bot_name": "Medication Interaction Checker",
+      "file": "bot_19_medication_interaction_checker.json"
     }
   ],
   "total_library_bots": 18,
-  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Library bots are Bots 1–19 (Bot 3 is excluded as it has no JSON file). Bot 20 and Bot 21 are not library bots — Bot 21 is the Diet Director.",
+  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Library bots are Bots 1\u201319 (Bot 3 is excluded as it has no JSON file). Bot 20 and Bot 21 are not library bots \u2014 Bot 21 is the Diet Director.",
   "library_access_control": {
     "controlled_by": "starrm1",
-    "access_rule": "Library access follows a 5-step chain: (1) Department members notify their Department Head Lead of the need. (2) The Department Head Lead compiles a case and presents it to the Diet Director (Bot 21). (3) The Diet Director reviews and forwards the case to Copilot. (4) Copilot presents the case to starrm1 requesting approval. (5) starrm1 is the final approver — grants or denies access and, if approved, issues an access number and timeframe. Access is off by default until starrm1 approves.",
+    "access_rule": "Library access follows a 5-step chain: (1) Department members notify their Department Head Lead of the need. (2) The Department Head Lead compiles a case and presents it to the Diet Director (Bot 21). (3) The Diet Director reviews and forwards the case to Copilot. (4) Copilot presents the case to starrm1 requesting approval. (5) starrm1 is the final approver \u2014 grants or denies access and, if approved, issues an access number and timeframe. Access is off by default until starrm1 approves.",
     "grant_access_requires": "starrm1 final approval, presented by copilot, following case by diet_director. starrm1 issues an access number and sets the access timeframe upon approval.",
     "department_access": [
       {
@@ -424,7 +424,7 @@
       {
         "step": 2,
         "actor": "department_head_lead",
-        "action": "The Department Head Lead (Bots 22–30) reviews the request, compiles a formal case explaining why the department needs library access, and presents that case to the Diet Director (Bot 21)"
+        "action": "The Department Head Lead (Bots 22\u201330) reviews the request, compiles a formal case explaining why the department needs library access, and presents that case to the Diet Director (Bot 21)"
       },
       {
         "step": 3,
@@ -439,7 +439,7 @@
       {
         "step": 5,
         "actor": "starrm1",
-        "action": "Final approver — reviews the case presented by Copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which the department may use the library bots."
+        "action": "Final approver \u2014 reviews the case presented by Copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which the department may use the library bots."
       }
     ],
     "access_number_note": "starrm1 will personally issue a unique access number to each approved department. Access numbers are null until starrm1 assigns them.",

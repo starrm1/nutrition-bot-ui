@@ -533,59 +533,9 @@
     "access_note": "Library access is pending. starrm1 will personally assign an access number and set the timeframe for how long this department may use the library bots.",
     "library_bots": [
       {
-        "bot_id": 10,
-        "bot_name": "Weight Management",
-        "file": "bot_10_weight_management.json"
-      },
-      {
-        "bot_id": 11,
-        "bot_name": "Pediatric Nutrition",
-        "file": "bot_11_pediatric_nutrition.json"
-      },
-      {
-        "bot_id": 12,
-        "bot_name": "Geriatric Nutrition",
-        "file": "bot_12_geriatric_nutrition.json"
-      },
-      {
-        "bot_id": 13,
-        "bot_name": "Pregnancy and Maternal Nutrition",
-        "file": "bot_13_pregnancy_maternal_nutrition.json"
-      },
-      {
-        "bot_id": 14,
-        "bot_name": "Diabetes and Blood Sugar Management",
-        "file": "bot_14_diabetes_blood_sugar_management.json"
-      },
-      {
-        "bot_id": 15,
-        "bot_name": "Cardiovascular Health Nutrition",
-        "file": "bot_15_cardiovascular_health_nutrition.json"
-      },
-      {
-        "bot_id": 16,
-        "bot_name": "Anti-Inflammatory Diet",
-        "file": "bot_16_anti_inflammatory_diet.json"
-      },
-      {
-        "bot_id": 17,
-        "bot_name": "Hydration Optimization",
-        "file": "bot_17_hydration_optimization.json"
-      },
-      {
-        "bot_id": 18,
-        "bot_name": "Mental Health and Nutrition",
-        "file": "bot_18_mental_health_nutrition.json"
-      },
-      {
-        "bot_id": 19,
-        "bot_name": "Gut-Brain Axis",
-        "file": "bot_19_gut_brain_axis.json"
-      },
-      {
-        "bot_id": 21,
-        "bot_name": "Food Texture Analysis",
-        "file": "bot_21_food_texture.json"
+        "bot_id": 1,
+        "bot_name": "Calorie Tracking",
+        "file": "bot_1_calorie_tracking.json"
       },
       {
         "bot_id": 2,
@@ -594,38 +544,83 @@
       },
       {
         "bot_id": 4,
-        "bot_name": "Macronutrient Optimization",
-        "file": "bot_4_macronutrient_optimization.json"
+        "bot_name": "Allergy Detection",
+        "file": "bot_4_allergy_detection.json"
       },
       {
         "bot_id": 5,
-        "bot_name": "Micronutrient Deficiency Detection",
-        "file": "bot_5_micronutrient_deficiency_detection.json"
+        "bot_name": "Recipe Optimization",
+        "file": "bot_5_recipe_optimization.json"
       },
       {
         "bot_id": 6,
-        "bot_name": "Caloric Intake Tracking",
-        "file": "bot_6_caloric_intake_tracking.json"
+        "bot_name": "Meal Planning",
+        "file": "bot_6_meal_planning.json"
       },
       {
         "bot_id": 7,
-        "bot_name": "Food Allergy and Intolerance Assessment",
-        "file": "bot_7_food_allergy_intolerance_assessment.json"
+        "bot_name": "Supplement Recommendation",
+        "file": "bot_7_supplement_recommendation.json"
       },
       {
         "bot_id": 8,
-        "bot_name": "Meal Planning and Scheduling",
-        "file": "bot_8_meal_planning_scheduling.json"
+        "bot_name": "Nutrient Balance Analysis",
+        "file": "bot_8_nutrient_balance_analysis.json"
       },
       {
         "bot_id": 9,
-        "bot_name": "Sports Nutrition",
-        "file": "bot_9_sports_nutrition.json"
+        "bot_name": "Food Quality Assessment",
+        "file": "bot_9_food_quality_assessment.json"
       },
       {
-        "bot_id": 1,
-        "bot_name": "Nutrigenomics",
-        "file": "nutrigenomics.json"
+        "bot_id": 10,
+        "bot_name": "Hydration Tracking",
+        "file": "bot_10_hydration_tracking.json"
+      },
+      {
+        "bot_id": 11,
+        "bot_name": "Sleep Nutrition Correlation",
+        "file": "bot_11_sleep_nutrition_correlation.json"
+      },
+      {
+        "bot_id": 12,
+        "bot_name": "Exercise Diet Sync",
+        "file": "bot_12_exercise_diet_sync.json"
+      },
+      {
+        "bot_id": 13,
+        "bot_name": "Health Condition Advisor",
+        "file": "bot_13_health_condition_advisor.json"
+      },
+      {
+        "bot_id": 14,
+        "bot_name": "Taste Preference Learning",
+        "file": "bot_14_taste_preference_learning.json"
+      },
+      {
+        "bot_id": 15,
+        "bot_name": "Budget Optimization",
+        "file": "bot_15_budget_optimization.json"
+      },
+      {
+        "bot_id": 16,
+        "bot_name": "Sustainability Analysis",
+        "file": "bot_16_sustainability_analysis.json"
+      },
+      {
+        "bot_id": 17,
+        "bot_name": "Age Based Nutrition",
+        "file": "bot_17_age_based_nutrition.json"
+      },
+      {
+        "bot_id": 18,
+        "bot_name": "Cultural Diet Recognition",
+        "file": "bot_18_cultural_diet_recognition.json"
+      },
+      {
+        "bot_id": 19,
+        "bot_name": "Medication Interaction Checker",
+        "file": "bot_19_medication_interaction_checker.json"
       }
     ],
     "approval_process": [
