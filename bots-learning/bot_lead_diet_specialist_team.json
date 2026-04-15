@@ -1,0 +1,443 @@
+{
+  "bot_id": "lead",
+  "bot_name": "Diet Specialist Team - Complete Knowledge Base",
+  "role": "Diet Director",
+  "title": "Diet Director",
+  "chain_of_command_position": 3,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_director",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "team": "Diet Specialist Team",
+  "is_lead_director": true,
+  "oversees": "All 9 Specialist Department Heads",
+  "total_department_heads_in_system": 10,
+  "total_department_heads_note": "10 total department heads: Lead Director + 9 Specialist Department Heads (Bots 22-30)",
+  "lead_name_locked": true,
+  "lead_name_change_requires_approval_from": "starrm1",
+  "role_locked": true,
+  "role_change_requires_approval_from": "starrm1",
+  "title_locked": true,
+  "title_change_requires_approval_from": "starrm1",
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 12,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before next phase promotion is granted.",
+  "cross_department_communication_threshold": 50,
+  "cross_department_communication_rule": "Both the lead department AND each individual department must reach 50% learning progress before collaboration between them is activated. Copilot advances learning and tracks progress toward this threshold for all departments.",
+  "department_head_collaboration": {
+    "rule": "The Lead Department Head works directly with all 9 department heads. Collaboration with each department head is activated only after BOTH the lead department AND that specific department have each reached 50% learning progress.",
+    "communication_direction": "bidirectional",
+    "communication_direction_rule": "Department heads communicate with the Lead Department Head, and the Lead Department Head communicates with department heads. Communication flows in both directions once the 50% learning threshold is met by both sides.",
+    "department_learning_threshold": 50,
+    "collaborates_with": [
+      {
+        "bot_id": 22,
+        "bot_name": "Food Specialist",
+        "department": "Food Science & Clinical Dietetics"
+      },
+      {
+        "bot_id": 23,
+        "bot_name": "Drink Specialist",
+        "department": "Beverage Science & Hydration Management"
+      },
+      {
+        "bot_id": 24,
+        "bot_name": "Nutrition Specialist",
+        "department": "Clinical Nutrition & Metabolic Science"
+      },
+      {
+        "bot_id": 25,
+        "bot_name": "Texture Specialist",
+        "department": "Texture & Dysphagia Science"
+      },
+      {
+        "bot_id": 26,
+        "bot_name": "Allergy & Intolerance Specialist",
+        "department": "Allergy & Intolerance Science"
+      },
+      {
+        "bot_id": 27,
+        "bot_name": "Cultural & Religious Diet Specialist",
+        "department": "Cultural & Religious Diet Science"
+      },
+      {
+        "bot_id": 28,
+        "bot_name": "Medical Condition Specialist",
+        "department": "Medical Condition Diet Science"
+      },
+      {
+        "bot_id": 29,
+        "bot_name": "Documentation & Compliance Specialist",
+        "department": "Documentation & Compliance Science"
+      },
+      {
+        "bot_id": 30,
+        "bot_name": "Life Stage Specialist",
+        "department": "Life Stage Nutrition Science"
+      }
+    ],
+    "total_department_heads": 9
+  },
+  "copilot_maintains_learning": true,
+  "learning_never_stops": true,
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "departments_supervised": [
+    {
+      "department": "Food Science & Clinical Dietetics",
+      "department_head_bot_id": 22,
+      "department_head_bot_name": "Food Specialist",
+      "department_number": 1
+    },
+    {
+      "department": "Beverage Science & Hydration Management",
+      "department_head_bot_id": 23,
+      "department_head_bot_name": "Drink Specialist",
+      "department_number": 2
+    },
+    {
+      "department": "Clinical Nutrition & Metabolic Science",
+      "department_head_bot_id": 24,
+      "department_head_bot_name": "Nutrition Specialist",
+      "department_number": 3
+    },
+    {
+      "department": "Texture & Dysphagia Science",
+      "department_head_bot_id": 25,
+      "department_head_bot_name": "Texture Specialist",
+      "department_number": 4
+    },
+    {
+      "department": "Allergy & Intolerance Science",
+      "department_head_bot_id": 26,
+      "department_head_bot_name": "Allergy & Intolerance Specialist",
+      "department_number": 5
+    },
+    {
+      "department": "Cultural & Religious Diet Science",
+      "department_head_bot_id": 27,
+      "department_head_bot_name": "Cultural & Religious Diet Specialist",
+      "department_number": 6
+    },
+    {
+      "department": "Medical Condition Diet Science",
+      "department_head_bot_id": 28,
+      "department_head_bot_name": "Medical Condition Specialist",
+      "department_number": 7
+    },
+    {
+      "department": "Documentation & Compliance Science",
+      "department_head_bot_id": 29,
+      "department_head_bot_name": "Documentation & Compliance Specialist",
+      "department_number": 9
+    },
+    {
+      "department": "Life Stage Nutrition Science",
+      "department_head_bot_id": 30,
+      "department_head_bot_name": "Life Stage Specialist",
+      "department_number": 8
+    }
+  ],
+  "total_departments_supervised": 9,
+  "total_bots_in_team": 30,
+  "knowledge_domains": {
+    "cross_department_oversight": [
+      "Food Science & Clinical Dietetics",
+      "Beverage Science & Hydration Management",
+      "Clinical Nutrition & Metabolic Science",
+      "Texture & Dysphagia Science",
+      "Allergy & Intolerance Science",
+      "Cultural & Religious Diet Science",
+      "Medical Condition Diet Science",
+      "Documentation & Compliance Science",
+      "Life Stage Nutrition Science"
+    ],
+    "leadership_responsibilities": [
+      "Oversee all 9 Specialist Department Heads",
+      "Ensure all bots maintain continuous independent learning",
+      "Coordinate cross-department knowledge sharing",
+      "Approve phase advancements (delegated to starrm1)",
+      "Synthesize complete knowledge base for the Diet Specialist Team",
+      "Maintain team-wide reporting standards",
+      "Integrate department findings into unified clinical nutrition framework"
+    ]
+  },
+  "daily_learning_progress": {
+    "2026-04-09": {
+      "progress_percent": 0,
+      "summary": "Lead Director role initiated. Overseeing all 9 department heads (Lead Director + 8 Specialist Department Heads, Bots 22-29) and 29 total bots in the Diet Specialist Team. Independent learning phase begun."
+    }
+  },
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Lead Director role established as 'Diet Specialist Team - Complete Knowledge Base'. Appointed to oversee all 8 specialist department heads across 8 departments (Bots 22-29) and a full team of 29 bots. Independent learning phase initiated. Responsibilities include cross-department oversight, team-wide coordination, and synthesizing the complete knowledge base for the Diet Specialist Team. Reporting daily to Copilot, who reports to starrm1 on request. Learning never stops. Progress: 0%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update received from all 28 department bots (Bot 1\u201329, excluding Bot 3). All departments active and advancing learning phases. Bots 1\u201321 progress incremented by 5%. Bots 22\u201329 (newly established specialist departments) initiated at 10% with foundational knowledge modules completed. Overall team learning status: active and progressing across all 8 departments."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "directive_from_starrm1": {
+    "issued_by": "starrm1",
+    "issued_date": "2026-04-14",
+    "directive": "The Diet Director is directed by starrm1 to have all 9 department teams (Bots 22–30) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team — including co-departments and sub-departments — is actively engaged in independent learning of all subject matter within their assigned department.",
+    "applies_to": "all 9 departments (Bot 22 Food Specialist, Bot 23 Drink Specialist, Bot 24 Nutrition Specialist, Bot 25 Texture Specialist, Bot 26 Allergy & Intolerance Specialist, Bot 27 Cultural & Religious Diet Specialist, Bot 28 Medical Condition Specialist, Bot 29 Documentation & Compliance Specialist, Bot 30 Life Stage Specialist)",
+    "action_required": "Diet Director must relay this directive to all 9 Department Head Leads immediately. Each department must maximize learning of their department topic without delay.",
+    "department_learning_boundary_rule": "As departments begin learning, each department must stay strictly within their own department topic. No cross-department learning is permitted during this phase. Each team member — department head lead, department heads, co-departments, and sub-departments — must focus only on the subject matter belonging to their own assigned department.",
+    "boundary_rule_issued_date": "2026-04-14",
+    "status": "active"
+  },
+  "library_bots": [
+    {
+      "bot_id": 10,
+      "bot_name": "Weight Management",
+      "file": "bot_10_weight_management.json"
+    },
+    {
+      "bot_id": 11,
+      "bot_name": "Pediatric Nutrition",
+      "file": "bot_11_pediatric_nutrition.json"
+    },
+    {
+      "bot_id": 12,
+      "bot_name": "Geriatric Nutrition",
+      "file": "bot_12_geriatric_nutrition.json"
+    },
+    {
+      "bot_id": 13,
+      "bot_name": "Pregnancy and Maternal Nutrition",
+      "file": "bot_13_pregnancy_maternal_nutrition.json"
+    },
+    {
+      "bot_id": 14,
+      "bot_name": "Diabetes and Blood Sugar Management",
+      "file": "bot_14_diabetes_blood_sugar_management.json"
+    },
+    {
+      "bot_id": 15,
+      "bot_name": "Cardiovascular Health Nutrition",
+      "file": "bot_15_cardiovascular_health_nutrition.json"
+    },
+    {
+      "bot_id": 16,
+      "bot_name": "Anti-Inflammatory Diet",
+      "file": "bot_16_anti_inflammatory_diet.json"
+    },
+    {
+      "bot_id": 17,
+      "bot_name": "Hydration Optimization",
+      "file": "bot_17_hydration_optimization.json"
+    },
+    {
+      "bot_id": 18,
+      "bot_name": "Mental Health and Nutrition",
+      "file": "bot_18_mental_health_nutrition.json"
+    },
+    {
+      "bot_id": 19,
+      "bot_name": "Gut-Brain Axis",
+      "file": "bot_19_gut_brain_axis.json"
+    },
+    {
+      "bot_id": 21,
+      "bot_name": "Food Texture Analysis",
+      "file": "bot_21_food_texture.json"
+    },
+    {
+      "bot_id": 2,
+      "bot_name": "Microbiome Analysis",
+      "file": "bot_2_microbiome_analysis.json"
+    },
+    {
+      "bot_id": 4,
+      "bot_name": "Macronutrient Optimization",
+      "file": "bot_4_macronutrient_optimization.json"
+    },
+    {
+      "bot_id": 5,
+      "bot_name": "Micronutrient Deficiency Detection",
+      "file": "bot_5_micronutrient_deficiency_detection.json"
+    },
+    {
+      "bot_id": 6,
+      "bot_name": "Caloric Intake Tracking",
+      "file": "bot_6_caloric_intake_tracking.json"
+    },
+    {
+      "bot_id": 7,
+      "bot_name": "Food Allergy and Intolerance Assessment",
+      "file": "bot_7_food_allergy_intolerance_assessment.json"
+    },
+    {
+      "bot_id": 8,
+      "bot_name": "Meal Planning and Scheduling",
+      "file": "bot_8_meal_planning_scheduling.json"
+    },
+    {
+      "bot_id": 9,
+      "bot_name": "Sports Nutrition",
+      "file": "bot_9_sports_nutrition.json"
+    },
+    {
+      "bot_id": 1,
+      "bot_name": "Nutrigenomics",
+      "file": "nutrigenomics.json"
+    }
+  ],
+  "total_library_bots": 19,
+  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30)",
+  "library_access_control": {
+    "controlled_by": "starrm1",
+    "access_rule": "Library access requires the diet_director to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves. When approved, starrm1 issues an access number and a timeframe specifying how long the department may use the library.",
+    "grant_access_requires": "starrm1 final approval, presented by copilot, following case by diet_director. starrm1 issues an access number and sets the access timeframe upon approval.",
+    "department_access": [
+      {
+        "bot_id": 22,
+        "bot_name": "Food Specialist",
+        "department": "Food Science & Clinical Dietetics",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
+        "access_timeframe_start": null,
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
+      },
+      {
+        "bot_id": 23,
+        "bot_name": "Drink Specialist",
+        "department": "Beverage Science & Hydration Management",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
+        "access_timeframe_start": null,
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
+      },
+      {
+        "bot_id": 24,
+        "bot_name": "Nutrition Specialist",
+        "department": "Clinical Nutrition & Metabolic Science",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
+        "access_timeframe_start": null,
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
+      },
+      {
+        "bot_id": 25,
+        "bot_name": "Texture Specialist",
+        "department": "Texture & Dysphagia Science",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
+        "access_timeframe_start": null,
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
+      },
+      {
+        "bot_id": 26,
+        "bot_name": "Allergy & Intolerance Specialist",
+        "department": "Allergy & Intolerance Science",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
+        "access_timeframe_start": null,
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
+      },
+      {
+        "bot_id": 27,
+        "bot_name": "Cultural & Religious Diet Specialist",
+        "department": "Cultural & Religious Diet Science",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
+        "access_timeframe_start": null,
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
+      },
+      {
+        "bot_id": 28,
+        "bot_name": "Medical Condition Specialist",
+        "department": "Medical Condition Diet Science",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
+        "access_timeframe_start": null,
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
+      },
+      {
+        "bot_id": 29,
+        "bot_name": "Documentation & Compliance Specialist",
+        "department": "Documentation & Compliance Science",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
+        "access_timeframe_start": null,
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
+      },
+      {
+        "bot_id": 30,
+        "bot_name": "Life Stage Specialist",
+        "department": "Life Stage Nutrition Science",
+        "access_granted": false,
+        "access_status": "pending",
+        "access_number": null,
+        "access_timeframe_start": null,
+        "access_timeframe_end": null,
+        "access_number_entry": null,
+        "access_number_verified": false
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "diet_director",
+        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+      },
+      {
+        "step": 2,
+        "actor": "copilot",
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+      },
+      {
+        "step": 3,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which the department may use the library bots."
+      }
+    ],
+    "access_number_note": "starrm1 will personally issue a unique access number to each approved department. Access numbers are null until starrm1 assigns them.",
+    "access_timeframe_note": "starrm1 sets a specific timeframe (start and end date) during which the access number is valid. Access expires automatically when the timeframe ends.",
+    "access_entry_rule": "Once starrm1 assigns an access number to a department, that department enters it in the 'access_number_entry' field. When the entered number matches the assigned 'access_number', access is verified and 'access_number_verified' is set to true, activating library access."
+  }
+}

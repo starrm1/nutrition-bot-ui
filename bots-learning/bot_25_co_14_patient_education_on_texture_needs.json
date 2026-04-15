@@ -1,0 +1,28 @@
+{
+  "bot_id": "25c14",
+  "bot_name": "Patient Education on Texture Needs",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_director",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 25,
+  "parent_department_bot_name": "Texture Specialist",
+  "parent_department_name": "Texture & Dysphagia Science",
+  "supervised_by": [
+    "25a",
+    "25b"
+  ],
+  "sub_departments": [],
+  "total_sub_departments": 0,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}

@@ -1,0 +1,28 @@
+{
+  "bot_id": "26c11",
+  "bot_name": "Alternative Ingredient Sourcing",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_director",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 26,
+  "parent_department_bot_name": "Allergy & Intolerance Specialist",
+  "parent_department_name": "Allergy & Intolerance Science",
+  "supervised_by": [
+    "26a",
+    "26b"
+  ],
+  "sub_departments": [],
+  "total_sub_departments": 0,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}

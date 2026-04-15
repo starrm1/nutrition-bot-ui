@@ -1,0 +1,670 @@
+{
+  "bot_id": 23,
+  "bot_name": "Drink Specialist",
+  "bot_name_locked": true,
+  "bot_name_change_requires_approval_from": "starrm1",
+  "team": "Drink Specialist",
+  "department": "Beverage Science & Hydration Management",
+  "knowledge_map_title": "Drink Specialist",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "sub_department_name_locked": true,
+  "sub_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "department_structure": {
+    "department_number": 2,
+    "department_name": "Beverage Science & Hydration Management",
+    "department_head_lead_bot": "Bot 23 - Drink Specialist",
+    "total_co_departments": 21,
+    "total_sub_departments": 29,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_director",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
+    "co_department_bot_supervisors": [
+      "23a",
+      "23b"
+    ],
+    "co_departments": [
+      {
+        "name": "Cup and Container Selection for Safety",
+        "sub_departments": []
+      },
+      {
+        "name": "Straw Usage Protocols per Dysphagia Level",
+        "sub_departments": []
+      },
+      {
+        "name": "Beverage Temperature Safety and Preference Management",
+        "sub_departments": []
+      },
+      {
+        "name": "Potassium and Phosphorus Content for Renal Patients",
+        "sub_departments": []
+      },
+      {
+        "name": "Sodium Content per Beverage",
+        "sub_departments": []
+      },
+      {
+        "name": "Sugar Content and Glycemic Impact",
+        "sub_departments": []
+      },
+      {
+        "name": "Caffeine Content by Beverage Type",
+        "sub_departments": []
+      },
+      {
+        "name": "Electrolyte Replacement Beverages",
+        "sub_departments": []
+      },
+      {
+        "name": "Overhydration Risks",
+        "sub_departments": []
+      },
+      {
+        "name": "Dehydration Stages and Intervention Protocols",
+        "sub_departments": []
+      },
+      {
+        "name": "IV Fluid Considerations and Oral Intake Balance",
+        "sub_departments": []
+      },
+      {
+        "name": "Beverage-Medication Timing Protocols",
+        "sub_departments": []
+      },
+      {
+        "name": "Fluid Consistency Levels",
+        "sub_departments": [
+          "Extremely Thick",
+          "Moderately Thick",
+          "Mildly Thick",
+          "Slightly Thick",
+          "Thin"
+        ]
+      },
+      {
+        "name": "Beverage Specifications",
+        "sub_departments": [
+          "Ice vs No Ice Protocols",
+          "Temperature Ranges",
+          "Serving Sizes (oz/ml)"
+        ]
+      },
+      {
+        "name": "Documentation and Compliance",
+        "sub_departments": []
+      },
+      {
+        "name": "Special Considerations",
+        "sub_departments": [
+          "Medication Interactions",
+          "Sweeteners",
+          "Caffeine"
+        ]
+      },
+      {
+        "name": "Beverage Categories",
+        "sub_departments": [
+          "Supplements",
+          "Carbonated",
+          "Juices",
+          "Non-Dairy",
+          "Dairy",
+          "Hot Drinks",
+          "Water"
+        ]
+      },
+      {
+        "name": "Hydration Management",
+        "sub_departments": [
+          "I&O Monitoring",
+          "Fluid Restrictions",
+          "Intake Targets"
+        ]
+      },
+      {
+        "name": "Preparation Protocols",
+        "sub_departments": [
+          "Temperature",
+          "Straining",
+          "Dilution",
+          "Thickening"
+        ]
+      },
+      {
+        "name": "Allowed Drinks per Restriction",
+        "sub_departments": [
+          "Renal-Appropriate",
+          "Low-Fat",
+          "Low-Sodium",
+          "Sugar-Free"
+        ]
+      },
+      {
+        "name": "Beverage Catalog by Diet",
+        "sub_departments": []
+      }
+    ],
+    "co_department_bot_ids": [
+      "23c01",
+      "23c02",
+      "23c03",
+      "23c04",
+      "23c05",
+      "23c06",
+      "23c07",
+      "23c08",
+      "23c09",
+      "23c10",
+      "23c11",
+      "23c12",
+      "23c13",
+      "23c14",
+      "23c15",
+      "23c16",
+      "23c17",
+      "23c18",
+      "23c19",
+      "23c20",
+      "23c21"
+    ]
+  },
+  "department_number": 2,
+  "total_co_departments": 21,
+  "total_sub_departments": 29,
+  "co_department_members": [
+    {
+      "name": "Cup and Container Selection for Safety",
+      "sub_departments": []
+    },
+    {
+      "name": "Straw Usage Protocols per Dysphagia Level",
+      "sub_departments": []
+    },
+    {
+      "name": "Beverage Temperature Safety and Preference Management",
+      "sub_departments": []
+    },
+    {
+      "name": "Potassium and Phosphorus Content for Renal Patients",
+      "sub_departments": []
+    },
+    {
+      "name": "Sodium Content per Beverage",
+      "sub_departments": []
+    },
+    {
+      "name": "Sugar Content and Glycemic Impact",
+      "sub_departments": []
+    },
+    {
+      "name": "Caffeine Content by Beverage Type",
+      "sub_departments": []
+    },
+    {
+      "name": "Electrolyte Replacement Beverages",
+      "sub_departments": []
+    },
+    {
+      "name": "Overhydration Risks",
+      "sub_departments": []
+    },
+    {
+      "name": "Dehydration Stages and Intervention Protocols",
+      "sub_departments": []
+    },
+    {
+      "name": "IV Fluid Considerations and Oral Intake Balance",
+      "sub_departments": []
+    },
+    {
+      "name": "Beverage-Medication Timing Protocols",
+      "sub_departments": []
+    },
+    {
+      "name": "Fluid Consistency Levels",
+      "sub_departments": [
+        "Extremely Thick",
+        "Moderately Thick",
+        "Mildly Thick",
+        "Slightly Thick",
+        "Thin"
+      ]
+    },
+    {
+      "name": "Beverage Specifications",
+      "sub_departments": [
+        "Ice vs No Ice Protocols",
+        "Temperature Ranges",
+        "Serving Sizes (oz/ml)"
+      ]
+    },
+    {
+      "name": "Documentation and Compliance",
+      "sub_departments": []
+    },
+    {
+      "name": "Special Considerations",
+      "sub_departments": [
+        "Medication Interactions",
+        "Sweeteners",
+        "Caffeine"
+      ]
+    },
+    {
+      "name": "Beverage Categories",
+      "sub_departments": [
+        "Supplements",
+        "Carbonated",
+        "Juices",
+        "Non-Dairy",
+        "Dairy",
+        "Hot Drinks",
+        "Water"
+      ]
+    },
+    {
+      "name": "Hydration Management",
+      "sub_departments": [
+        "I&O Monitoring",
+        "Fluid Restrictions",
+        "Intake Targets"
+      ]
+    },
+    {
+      "name": "Preparation Protocols",
+      "sub_departments": [
+        "Temperature",
+        "Straining",
+        "Dilution",
+        "Thickening"
+      ]
+    },
+    {
+      "name": "Allowed Drinks per Restriction",
+      "sub_departments": [
+        "Renal-Appropriate",
+        "Low-Fat",
+        "Low-Sodium",
+        "Sugar-Free"
+      ]
+    },
+    {
+      "name": "Beverage Catalog by Diet",
+      "sub_departments": []
+    }
+  ],
+  "co_department_bot_supervisors": [
+    {
+      "member_id": "23a",
+      "member_name": "Hydration & Fluid Management Specialist",
+      "member_name_locked": true,
+      "member_name_change_requires_approval_from": "starrm1",
+      "role": "Co-Department Specialist",
+      "department": "Beverage Science & Hydration Management",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 10,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "hydration_management": [
+          "I&O Monitoring",
+          "Fluid Restrictions",
+          "Intake Targets"
+        ],
+        "dehydration_and_overhydration": [
+          "Dehydration Stages and Intervention Protocols",
+          "Overhydration Risks",
+          "IV Fluid Considerations and Oral Intake Balance"
+        ],
+        "electrolytes_and_medications": [
+          "Electrolyte Replacement Beverages",
+          "Beverage-Medication Timing Protocols",
+          "Caffeine Content by Beverage Type"
+        ],
+        "renal_and_clinical_considerations": [
+          "Potassium and Phosphorus Content for Renal Patients",
+          "Sodium Content per Beverage",
+          "Sugar Content and Glycemic Impact"
+        ],
+        "standalone_topics": [
+          "Documentation and Compliance",
+          "Beverage Temperature Safety and Preference Management"
+        ]
+      },
+      "current_focus_areas": "Independent study of hydration management protocols: I&O Monitoring, Fluid Restrictions, Intake Targets. Dehydration Stages and Intervention Protocols, Overhydration Risks, IV Fluid Considerations. Electrolyte Replacement Beverages, Beverage-Medication Timing, Caffeine Content. Renal-specific beverage content considerations (Potassium, Phosphorus, Sodium, Sugar/Glycemic Impact). Documentation and Compliance, Beverage Temperature Safety.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-11",
+      "learning_log": [
+        {
+          "date": "2026-04-10",
+          "entry": "Independent Learning Phase initiated. Assigned to Beverage Science & Hydration Management as Hydration & Fluid Management Specialist. Domains include hydration management protocols, dehydration/overhydration risk, electrolyte and medication-beverage interactions, renal-specific beverage content, and 2 standalone clinical topics. Learning continuously under Copilot supervision. Progress: 0%."
+        },
+        {
+          "date": "2026-04-11",
+          "entry": "Progress update: Completed hydration management module covering I&O Monitoring, Fluid Restrictions, and Intake Targets. Began study of dehydration stages (mild, moderate, severe) and intervention protocols. Initiated review of overhydration risks and IV fluid considerations in relation to oral intake balance. Progress advanced to 10%."
+        }
+      ]
+    },
+    {
+      "member_id": "23b",
+      "member_name": "Beverage Modification & Diet Restriction Specialist",
+      "member_name_locked": true,
+      "member_name_change_requires_approval_from": "starrm1",
+      "role": "Co-Department Specialist",
+      "department": "Beverage Science & Hydration Management",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 10,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "fluid_consistency_levels": [
+          "Extremely Thick",
+          "Moderately Thick",
+          "Mildly Thick",
+          "Slightly Thick",
+          "Thin"
+        ],
+        "beverage_categories": [
+          "Supplements",
+          "Carbonated",
+          "Juices",
+          "Non-Dairy",
+          "Dairy",
+          "Hot Drinks",
+          "Water"
+        ],
+        "preparation_protocols": [
+          "Temperature",
+          "Straining",
+          "Dilution",
+          "Thickening"
+        ],
+        "beverage_specifications": [
+          "Ice vs No Ice Protocols",
+          "Temperature Ranges",
+          "Serving Sizes (oz/ml)"
+        ],
+        "allowed_drinks_per_restriction": [
+          "Renal-Appropriate",
+          "Low-Fat",
+          "Low-Sodium",
+          "Sugar-Free"
+        ],
+        "special_considerations": [
+          "Medication Interactions",
+          "Sweeteners",
+          "Caffeine"
+        ],
+        "standalone_topics": [
+          "Cup and Container Selection for Safety",
+          "Straw Usage Protocols per Dysphagia Level",
+          "Beverage Catalog by Diet"
+        ]
+      },
+      "current_focus_areas": "Independent study of fluid consistency levels (IDDSI: Thin, Slightly Thick, Mildly Thick, Moderately Thick, Extremely Thick). Beverage categories (7 types), preparation protocols (thickening, dilution, temperature, straining), and beverage specifications. Allowed drinks per diet restriction (Renal, Low-Fat, Low-Sodium, Sugar-Free). Special considerations (medication interactions, sweeteners, caffeine). Cup and container safety, straw protocols, beverage catalog by diet type.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-11",
+      "learning_log": [
+        {
+          "date": "2026-04-10",
+          "entry": "Independent Learning Phase initiated. Assigned to Beverage Science & Hydration Management as Beverage Modification & Diet Restriction Specialist. Domains include fluid consistency levels (5 IDDSI levels), 7 beverage categories, preparation protocols, beverage specifications, allowed drinks per restriction (4 categories), special considerations, and 3 standalone clinical topics. Learning continuously under Copilot supervision. Progress: 0%."
+        },
+        {
+          "date": "2026-04-11",
+          "entry": "Progress update: Completed fluid consistency level classifications per IDDSI framework (Thin, Slightly Thick, Mildly Thick, Moderately Thick, Extremely Thick) and their clinical application criteria. Began study of beverage categories (Water, Hot Drinks, Dairy, Non-Dairy, Juices, Carbonated, Supplements) and thickening preparation protocols. Progress advanced to 10%."
+        }
+      ]
+    }
+  ],
+  "is_learning": true,
+  "progress_percentage": 30,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "learning_scope": {
+    "scope": "own_department_only",
+    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+    "cross_department_learning_permitted": false,
+    "scope_unlocks_at_progress_percentage": 50,
+    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress."
+  },
+  "knowledge_domains": {
+    "standalone_topics": [
+      "Cup and Container Selection for Safety",
+      "Straw Usage Protocols per Dysphagia Level",
+      "Beverage Temperature Safety and Preference Management",
+      "Potassium and Phosphorus Content for Renal Patients",
+      "Sodium Content per Beverage",
+      "Sugar Content and Glycemic Impact",
+      "Caffeine Content by Beverage Type",
+      "Electrolyte Replacement Beverages",
+      "Overhydration Risks",
+      "Dehydration Stages and Intervention Protocols",
+      "IV Fluid Considerations and Oral Intake Balance",
+      "Beverage-Medication Timing Protocols",
+      "Documentation and Compliance",
+      "Beverage Catalog by Diet"
+    ],
+    "fluid_consistency_levels": [
+      "Extremely Thick",
+      "Moderately Thick",
+      "Mildly Thick",
+      "Slightly Thick",
+      "Thin"
+    ],
+    "beverage_specifications": [
+      "Ice vs No Ice Protocols",
+      "Temperature Ranges",
+      "Serving Sizes (oz/ml)"
+    ],
+    "special_considerations": [
+      "Medication Interactions",
+      "Sweeteners",
+      "Caffeine"
+    ],
+    "beverage_categories": [
+      "Supplements",
+      "Carbonated",
+      "Juices",
+      "Non-Dairy",
+      "Dairy",
+      "Hot Drinks",
+      "Water"
+    ],
+    "hydration_management": [
+      "I&O Monitoring",
+      "Fluid Restrictions",
+      "Intake Targets"
+    ],
+    "preparation_protocols": [
+      "Temperature",
+      "Straining",
+      "Dilution",
+      "Thickening"
+    ],
+    "allowed_drinks_per_restriction": [
+      "Renal-Appropriate",
+      "Low-Fat",
+      "Low-Sodium",
+      "Sugar-Free"
+    ]
+  },
+  "key_learnings": "Completed foundational study of beverage categories including water, juices, dairy-based drinks, plant-based milk alternatives, sports drinks, and clinical oral supplements. Began hydration science fundamentals.",
+  "research_findings": "Documented nutritional profiles for 40+ beverage types across clinical and general population categories. Identified that electrolyte-enhanced beverages outperform plain water for hydration in individuals with elevated sweat rates.",
+  "current_focus_areas": "Advancing through oral supplement and tube feeding formula knowledge; building beverage modification protocols for dysphagia and clinical populations; coordinating with Hydration Optimization bot.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-11",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Beverage Science & Hydration Management department. Knowledge domains assigned from mind map covering fluid consistency levels, beverage specifications, special considerations, beverage categories, hydration management, preparation protocols, allowed drinks per restriction, and 14 standalone clinical topics. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed beverage category nutritional profiling and foundational hydration science modules. Initiated clinical beverage application research. Progress advanced to 10%."
+    },
+    {
+      "date": "2026-04-11",
+      "entry": "Progress update: Completed oral supplement and tube feeding formula knowledge base including formula classification and clinical indications. Built foundational beverage modification protocols for dysphagia populations and thickened liquid preparation standards. Completed hydration management module covering I&O monitoring, fluid restriction protocols, and intake target setting. Progress advanced to 30%."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Department Head Lead",
+  "is_own_bot": true,
+  "library_access": {
+    "access_granted_by": "starrm1",
+    "access_granted": false,
+    "access_status": "pending",
+    "access_note": "Library access is pending. starrm1 will personally assign an access number and set the timeframe for how long this department may use the library bots.",
+    "library_bots": [
+      {
+        "bot_id": 10,
+        "bot_name": "Weight Management",
+        "file": "bot_10_weight_management.json"
+      },
+      {
+        "bot_id": 11,
+        "bot_name": "Pediatric Nutrition",
+        "file": "bot_11_pediatric_nutrition.json"
+      },
+      {
+        "bot_id": 12,
+        "bot_name": "Geriatric Nutrition",
+        "file": "bot_12_geriatric_nutrition.json"
+      },
+      {
+        "bot_id": 13,
+        "bot_name": "Pregnancy and Maternal Nutrition",
+        "file": "bot_13_pregnancy_maternal_nutrition.json"
+      },
+      {
+        "bot_id": 14,
+        "bot_name": "Diabetes and Blood Sugar Management",
+        "file": "bot_14_diabetes_blood_sugar_management.json"
+      },
+      {
+        "bot_id": 15,
+        "bot_name": "Cardiovascular Health Nutrition",
+        "file": "bot_15_cardiovascular_health_nutrition.json"
+      },
+      {
+        "bot_id": 16,
+        "bot_name": "Anti-Inflammatory Diet",
+        "file": "bot_16_anti_inflammatory_diet.json"
+      },
+      {
+        "bot_id": 17,
+        "bot_name": "Hydration Optimization",
+        "file": "bot_17_hydration_optimization.json"
+      },
+      {
+        "bot_id": 18,
+        "bot_name": "Mental Health and Nutrition",
+        "file": "bot_18_mental_health_nutrition.json"
+      },
+      {
+        "bot_id": 19,
+        "bot_name": "Gut-Brain Axis",
+        "file": "bot_19_gut_brain_axis.json"
+      },
+      {
+        "bot_id": 21,
+        "bot_name": "Food Texture Analysis",
+        "file": "bot_21_food_texture.json"
+      },
+      {
+        "bot_id": 2,
+        "bot_name": "Microbiome Analysis",
+        "file": "bot_2_microbiome_analysis.json"
+      },
+      {
+        "bot_id": 4,
+        "bot_name": "Macronutrient Optimization",
+        "file": "bot_4_macronutrient_optimization.json"
+      },
+      {
+        "bot_id": 5,
+        "bot_name": "Micronutrient Deficiency Detection",
+        "file": "bot_5_micronutrient_deficiency_detection.json"
+      },
+      {
+        "bot_id": 6,
+        "bot_name": "Caloric Intake Tracking",
+        "file": "bot_6_caloric_intake_tracking.json"
+      },
+      {
+        "bot_id": 7,
+        "bot_name": "Food Allergy and Intolerance Assessment",
+        "file": "bot_7_food_allergy_intolerance_assessment.json"
+      },
+      {
+        "bot_id": 8,
+        "bot_name": "Meal Planning and Scheduling",
+        "file": "bot_8_meal_planning_scheduling.json"
+      },
+      {
+        "bot_id": 9,
+        "bot_name": "Sports Nutrition",
+        "file": "bot_9_sports_nutrition.json"
+      },
+      {
+        "bot_id": 1,
+        "bot_name": "Nutrigenomics",
+        "file": "nutrigenomics.json"
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "diet_director",
+        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+      },
+      {
+        "step": 2,
+        "actor": "copilot",
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+      },
+      {
+        "step": 3,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which this department may use the library bots."
+      }
+    ],
+    "access_number": null,
+    "access_timeframe_start": null,
+    "access_timeframe_end": null,
+    "access_number_entry": null,
+    "access_number_verified": false,
+    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department."
+  }
+}

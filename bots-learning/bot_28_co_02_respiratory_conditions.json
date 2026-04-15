@@ -1,0 +1,36 @@
+{
+  "bot_id": "28c02",
+  "bot_name": "Respiratory Conditions",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_director",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 28,
+  "parent_department_bot_name": "Medical Condition Specialist",
+  "parent_department_name": "Medical Condition Diet Science",
+  "supervised_by": [
+    "28a",
+    "28b"
+  ],
+  "sub_departments": [
+    "Obesity Management",
+    "Eating Disorders",
+    "Neurological Disorders",
+    "COPD",
+    "Energy Conservation",
+    "Small Frequent Meals",
+    "High-Fat/Low-Carb Ratios (Reduce CO2 Production)"
+  ],
+  "total_sub_departments": 7,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}

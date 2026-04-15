@@ -1,0 +1,767 @@
+{
+  "bot_id": 26,
+  "bot_name": "Allergy & Intolerance Specialist",
+  "knowledge_map_title": "Allergy & Intolerance Specialist",
+  "bot_name_locked": true,
+  "bot_name_change_requires_approval_from": "starrm1",
+  "team": "Allergy & Intolerance Specialist",
+  "department": "Allergy & Intolerance Science",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "sub_department_name_locked": true,
+  "sub_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "department_structure": {
+    "department_number": 5,
+    "department_name": "Allergy & Intolerance Science",
+    "department_head_lead_bot": "Bot 26 - Allergy & Intolerance Specialist",
+    "total_co_departments": 24,
+    "total_sub_departments": 44,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_director",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
+    "co_department_bot_supervisors": [
+      "26a",
+      "26b"
+    ],
+    "co_departments": [
+      {
+        "name": "Common Food Allergens",
+        "sub_departments": [
+          "Milk",
+          "Eggs",
+          "Fish",
+          "Shellfish",
+          "Tree Nuts",
+          "Peanuts",
+          "Wheat",
+          "Soy",
+          "Sesame"
+        ]
+      },
+      {
+        "name": "Anaphylaxis Symptoms",
+        "sub_departments": [
+          "Hives",
+          "Angioedema",
+          "Respiratory Distress",
+          "GI Symptoms",
+          "Cardiovascular Collapse"
+        ]
+      },
+      {
+        "name": "Emergency Protocols",
+        "sub_departments": [
+          "Anaphylaxis",
+          "Epipen"
+        ]
+      },
+      {
+        "name": "Epinephrine Dosing",
+        "sub_departments": [
+          "Adult 0.3mg",
+          "Child 0.15mg",
+          "Auto-Injector Technique"
+        ]
+      },
+      {
+        "name": "Allergy Testing",
+        "sub_departments": [
+          "Skin Prick",
+          "Blood IgE",
+          "Oral Food Challenge"
+        ]
+      },
+      {
+        "name": "Cross-Reactivity Patterns",
+        "sub_departments": [
+          "Latex-Fruit",
+          "Oral Allergy Syndrome",
+          "Shellfish-Iodine Myth"
+        ]
+      },
+      {
+        "name": "Hidden Allergen Sources",
+        "sub_departments": [
+          "Medications",
+          "Supplements",
+          "Cosmetics"
+        ]
+      },
+      {
+        "name": "Label Reading",
+        "sub_departments": [
+          "\"May Contain\"",
+          "\"Processed in Facility\"",
+          "Voluntary vs Mandatory Labeling"
+        ]
+      },
+      {
+        "name": "IgE-Mediated vs Non-IgE Allergies",
+        "sub_departments": []
+      },
+      {
+        "name": "Celiac Disease Management",
+        "sub_departments": []
+      },
+      {
+        "name": "Alternative Ingredient Sourcing",
+        "sub_departments": []
+      },
+      {
+        "name": "Reintroduction Strategies",
+        "sub_departments": []
+      },
+      {
+        "name": "Elimination Diet Protocols",
+        "sub_departments": []
+      },
+      {
+        "name": "Food Intolerance Types",
+        "sub_departments": [
+          "FODMAP",
+          "Histamine",
+          "Fructose",
+          "Lactose"
+        ]
+      },
+      {
+        "name": "Allergy vs Intolerance Differentiation",
+        "sub_departments": []
+      },
+      {
+        "name": "Cross-Contact Prevention",
+        "sub_departments": []
+      },
+      {
+        "name": "Allergen Labeling and Identification",
+        "sub_departments": []
+      },
+      {
+        "name": "Histamine Intolerance",
+        "sub_departments": [
+          "DAO Enzyme",
+          "High-Histamine Foods",
+          "Histamine Liberators"
+        ]
+      },
+      {
+        "name": "Lactose Intolerance Types",
+        "sub_departments": [
+          "Primary",
+          "Secondary",
+          "Congenital"
+        ]
+      },
+      {
+        "name": "Lactase Enzyme Supplementation",
+        "sub_departments": []
+      },
+      {
+        "name": "FODMAP Phases",
+        "sub_departments": [
+          "Elimination (2-6 Weeks)",
+          "Reintroduction (8-12 Weeks)",
+          "Personalization"
+        ]
+      },
+      {
+        "name": "Allergen-Free Facility Certification",
+        "sub_departments": []
+      },
+      {
+        "name": "Eosinophilic Esophagitis (EoE) Dietary Management",
+        "sub_departments": []
+      },
+      {
+        "name": "Food Protein-Induced Enterocolitis Syndrome (FPIES)",
+        "sub_departments": []
+      }
+    ],
+    "co_department_bot_ids": [
+      "26c01",
+      "26c02",
+      "26c03",
+      "26c04",
+      "26c05",
+      "26c06",
+      "26c07",
+      "26c08",
+      "26c09",
+      "26c10",
+      "26c11",
+      "26c12",
+      "26c13",
+      "26c14",
+      "26c15",
+      "26c16",
+      "26c17",
+      "26c18",
+      "26c19",
+      "26c20",
+      "26c21",
+      "26c22",
+      "26c23",
+      "26c24"
+    ]
+  },
+  "department_number": 5,
+  "total_co_departments": 24,
+  "total_sub_departments": 44,
+  "co_department_members": [
+    {
+      "name": "Common Food Allergens",
+      "sub_departments": [
+        "Milk",
+        "Eggs",
+        "Fish",
+        "Shellfish",
+        "Tree Nuts",
+        "Peanuts",
+        "Wheat",
+        "Soy",
+        "Sesame"
+      ]
+    },
+    {
+      "name": "Anaphylaxis Symptoms",
+      "sub_departments": [
+        "Hives",
+        "Angioedema",
+        "Respiratory Distress",
+        "GI Symptoms",
+        "Cardiovascular Collapse"
+      ]
+    },
+    {
+      "name": "Emergency Protocols",
+      "sub_departments": [
+        "Anaphylaxis",
+        "Epipen"
+      ]
+    },
+    {
+      "name": "Epinephrine Dosing",
+      "sub_departments": [
+        "Adult 0.3mg",
+        "Child 0.15mg",
+        "Auto-Injector Technique"
+      ]
+    },
+    {
+      "name": "Allergy Testing",
+      "sub_departments": [
+        "Skin Prick",
+        "Blood IgE",
+        "Oral Food Challenge"
+      ]
+    },
+    {
+      "name": "Cross-Reactivity Patterns",
+      "sub_departments": [
+        "Latex-Fruit",
+        "Oral Allergy Syndrome",
+        "Shellfish-Iodine Myth"
+      ]
+    },
+    {
+      "name": "Hidden Allergen Sources",
+      "sub_departments": [
+        "Medications",
+        "Supplements",
+        "Cosmetics"
+      ]
+    },
+    {
+      "name": "Label Reading",
+      "sub_departments": [
+        "\"May Contain\"",
+        "\"Processed in Facility\"",
+        "Voluntary vs Mandatory Labeling"
+      ]
+    },
+    {
+      "name": "IgE-Mediated vs Non-IgE Allergies",
+      "sub_departments": []
+    },
+    {
+      "name": "Celiac Disease Management",
+      "sub_departments": []
+    },
+    {
+      "name": "Alternative Ingredient Sourcing",
+      "sub_departments": []
+    },
+    {
+      "name": "Reintroduction Strategies",
+      "sub_departments": []
+    },
+    {
+      "name": "Elimination Diet Protocols",
+      "sub_departments": []
+    },
+    {
+      "name": "Food Intolerance Types",
+      "sub_departments": [
+        "FODMAP",
+        "Histamine",
+        "Fructose",
+        "Lactose"
+      ]
+    },
+    {
+      "name": "Allergy vs Intolerance Differentiation",
+      "sub_departments": []
+    },
+    {
+      "name": "Cross-Contact Prevention",
+      "sub_departments": []
+    },
+    {
+      "name": "Allergen Labeling and Identification",
+      "sub_departments": []
+    },
+    {
+      "name": "Histamine Intolerance",
+      "sub_departments": [
+        "DAO Enzyme",
+        "High-Histamine Foods",
+        "Histamine Liberators"
+      ]
+    },
+    {
+      "name": "Lactose Intolerance Types",
+      "sub_departments": [
+        "Primary",
+        "Secondary",
+        "Congenital"
+      ]
+    },
+    {
+      "name": "Lactase Enzyme Supplementation",
+      "sub_departments": []
+    },
+    {
+      "name": "FODMAP Phases",
+      "sub_departments": [
+        "Elimination (2-6 Weeks)",
+        "Reintroduction (8-12 Weeks)",
+        "Personalization"
+      ]
+    },
+    {
+      "name": "Allergen-Free Facility Certification",
+      "sub_departments": []
+    },
+    {
+      "name": "Eosinophilic Esophagitis (EoE) Dietary Management",
+      "sub_departments": []
+    },
+    {
+      "name": "Food Protein-Induced Enterocolitis Syndrome (FPIES)",
+      "sub_departments": []
+    }
+  ],
+  "co_department_bot_supervisors": [
+    {
+      "member_id": "26a",
+      "member_name": "Food Allergy & Emergency Response Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Allergy & Intolerance Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "common_food_allergens": [
+          "Milk",
+          "Eggs",
+          "Fish",
+          "Shellfish",
+          "Tree Nuts",
+          "Peanuts",
+          "Wheat",
+          "Soy",
+          "Sesame"
+        ],
+        "anaphylaxis_symptoms": [
+          "Hives",
+          "Angioedema",
+          "Respiratory Distress",
+          "GI Symptoms",
+          "Cardiovascular Collapse"
+        ],
+        "emergency_protocols": [
+          "Anaphylaxis",
+          "Epipen"
+        ],
+        "epinephrine_dosing": [
+          "Adult 0.3mg",
+          "Child 0.15mg",
+          "Auto-Injector Technique"
+        ],
+        "allergy_testing": [
+          "Skin Prick",
+          "Blood IgE",
+          "Oral Food Challenge"
+        ],
+        "cross_reactivity_patterns": [
+          "Latex-Fruit",
+          "Oral Allergy Syndrome",
+          "Shellfish-Iodine Myth"
+        ],
+        "hidden_allergen_sources": [
+          "Medications",
+          "Supplements",
+          "Cosmetics"
+        ],
+        "label_reading": [
+          "May Contain",
+          "Processed in Facility",
+          "Voluntary vs Mandatory Labeling"
+        ],
+        "standalone_topics": [
+          "Cross-Contact Prevention",
+          "Allergen Labeling and Identification",
+          "IgE-Mediated vs Non-IgE Allergies",
+          "Allergen-Free Facility Certification"
+        ]
+      },
+      "current_focus_areas": "Independent study of the 9 common food allergens (Milk, Eggs, Fish, Shellfish, Tree Nuts, Peanuts, Wheat, Soy, Sesame). Anaphylaxis symptoms (5 system responses), emergency protocols, and epinephrine dosing (adult 0.3mg, child 0.15mg, auto-injector technique). Allergy testing methods (Skin Prick, Blood IgE, Oral Food Challenge). Cross-reactivity patterns (Latex-Fruit, Oral Allergy Syndrome, Shellfish-Iodine Myth). Hidden allergen sources and label reading protocols. Standalone topics: Cross-Contact Prevention, Allergen Labeling, IgE vs Non-IgE Allergies, Allergen-Free Facility Certification.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-10",
+      "learning_log": [
+        {
+          "date": "2026-04-10",
+          "entry": "Independent Learning Phase initiated. Assigned to Allergy & Intolerance Science as Food Allergy & Emergency Response Specialist. Domains include 9 common food allergens, anaphylaxis symptoms (5 types), emergency protocols, epinephrine dosing, allergy testing (3 methods), cross-reactivity patterns (3), hidden allergen sources, label reading, and 4 standalone allergen management topics. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    },
+    {
+      "member_id": "26b",
+      "member_name": "Food Intolerance & Elimination Protocol Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Allergy & Intolerance Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "food_intolerance_types": [
+          "Lactose",
+          "Fructose",
+          "Histamine",
+          "FODMAP"
+        ],
+        "lactose_intolerance_types": [
+          "Primary",
+          "Secondary",
+          "Congenital"
+        ],
+        "lactase_enzyme_supplementation": [
+          "Lactase Enzyme Supplementation"
+        ],
+        "fodmap_phases": [
+          "Elimination (2-6 Weeks)",
+          "Reintroduction (8-12 Weeks)",
+          "Personalization"
+        ],
+        "histamine_intolerance": [
+          "DAO Enzyme",
+          "High-Histamine Foods",
+          "Histamine Liberators"
+        ],
+        "elimination_and_reintroduction": [
+          "Elimination Diet Protocols",
+          "Reintroduction Strategies"
+        ],
+        "standalone_topics": [
+          "Allergy vs Intolerance Differentiation",
+          "Celiac Disease Management",
+          "Eosinophilic Esophagitis (EoE) Dietary Management",
+          "Food Protein-Induced Enterocolitis Syndrome (FPIES)",
+          "Alternative Ingredient Sourcing"
+        ]
+      },
+      "current_focus_areas": "Independent study of food intolerance types (Lactose, Fructose, Histamine, FODMAP). Lactose intolerance types (Primary, Secondary, Congenital) and lactase enzyme supplementation. FODMAP protocol phases (Elimination 2-6 weeks, Reintroduction 8-12 weeks, Personalization). Histamine intolerance (DAO Enzyme, High-Histamine Foods, Histamine Liberators). Elimination and reintroduction strategies. Standalone topics: Allergy vs Intolerance Differentiation, Celiac Disease Management, EoE Dietary Management, FPIES, Alternative Ingredient Sourcing.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-10",
+      "learning_log": [
+        {
+          "date": "2026-04-10",
+          "entry": "Independent Learning Phase initiated. Assigned to Allergy & Intolerance Science as Food Intolerance & Elimination Protocol Specialist. Domains include 4 food intolerance types, lactose intolerance subtypes (3), FODMAP phases (3), histamine intolerance (DAO, high-histamine foods, liberators), elimination and reintroduction protocols, and 5 standalone intolerance management topics. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    }
+  ],
+  "is_learning": true,
+  "progress_percentage": 10,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "learning_scope": {
+    "scope": "own_department_only",
+    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+    "cross_department_learning_permitted": false,
+    "scope_unlocks_at_progress_percentage": 50,
+    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress."
+  },
+  "knowledge_domains": {
+    "standalone_topics": [
+      "Eosinophilic Esophagitis (EoE) Dietary Management",
+      "Food Protein-Induced Enterocolitis Syndrome (FPIES)",
+      "Lactase Enzyme Supplementation",
+      "Allergen-Free Facility Certification",
+      "IgE-Mediated vs Non-IgE Allergies",
+      "Celiac Disease Management",
+      "Alternative Ingredient Sourcing",
+      "Reintroduction Strategies",
+      "Elimination Diet Protocols",
+      "Allergy vs Intolerance Differentiation",
+      "Cross-Contact Prevention",
+      "Allergen Labeling and Identification"
+    ],
+    "histamine_intolerance": [
+      "Histamine Liberators",
+      "High-Histamine Foods",
+      "DAO Enzyme"
+    ],
+    "lactose_intolerance_types": [
+      "Congenital",
+      "Secondary",
+      "Primary"
+    ],
+    "fodmap_phases": [
+      "Personalization",
+      "Reintroduction (8-12 Weeks)",
+      "Elimination (2-6 Weeks)"
+    ],
+    "label_reading": [
+      "Voluntary vs Mandatory Labeling",
+      "Processed in Facility",
+      "May Contain"
+    ],
+    "hidden_allergen_sources": [
+      "Cosmetics",
+      "Supplements",
+      "Medications"
+    ],
+    "cross_reactivity_patterns": [
+      "Shellfish-Iodine Myth",
+      "Oral Allergy Syndrome",
+      "Latex-Fruit"
+    ],
+    "epinephrine_dosing": [
+      "Auto-Injector Technique",
+      "Child 0.15mg",
+      "Adult 0.3mg"
+    ],
+    "anaphylaxis_symptoms": [
+      "Cardiovascular Collapse",
+      "GI Symptoms",
+      "Respiratory Distress",
+      "Angioedema",
+      "Hives"
+    ],
+    "allergy_testing": [
+      "Oral Food Challenge",
+      "Blood IgE",
+      "Skin Prick"
+    ],
+    "emergency_protocols": [
+      "Epipen",
+      "Anaphylaxis"
+    ],
+    "food_intolerance_types": [
+      "FODMAP",
+      "Histamine",
+      "Fructose",
+      "Lactose"
+    ],
+    "common_food_allergens": [
+      "Sesame",
+      "Soy",
+      "Wheat",
+      "Peanuts",
+      "Tree Nuts",
+      "Shellfish",
+      "Fish",
+      "Eggs",
+      "Milk"
+    ]
+  },
+  "key_learnings": "Completed foundational study of the 14 major allergens recognized under EU food labeling law and the top 9 under US FDA guidelines. Began study of IgE-mediated allergy vs. non-IgE intolerance mechanisms.",
+  "research_findings": "Catalogued 14 major allergen groups with cross-reactivity profiles and hidden source identification guides. Identified that peanut, tree nut, shellfish, and fin fish allergies are the most common causes of anaphylaxis.",
+  "current_focus_areas": "Advancing through elimination diet and oral food challenge protocols; building allergen-safe meal planning frameworks; developing hidden allergen identification tools; coordinating with Food Allergy and Intolerance Assessment bot.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Allergy & Intolerance Science department. Knowledge domains assigned from mind map covering histamine intolerance, lactose intolerance types, FODMAP phases, label reading, hidden allergen sources, cross-reactivity patterns, epinephrine dosing, anaphylaxis symptoms, allergy testing, emergency protocols, food intolerance types, common food allergens (9 major allergens), and 12 standalone clinical topics. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed major allergen cataloguing and IgE vs. non-IgE mechanism study. Initiated elimination diet and oral food challenge protocol development. Progress advanced to 10%."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Department Head Lead",
+  "is_own_bot": true,
+  "library_access": {
+    "access_granted_by": "starrm1",
+    "access_granted": false,
+    "access_status": "pending",
+    "access_note": "Library access is pending. starrm1 will personally assign an access number and set the timeframe for how long this department may use the library bots.",
+    "library_bots": [
+      {
+        "bot_id": 10,
+        "bot_name": "Weight Management",
+        "file": "bot_10_weight_management.json"
+      },
+      {
+        "bot_id": 11,
+        "bot_name": "Pediatric Nutrition",
+        "file": "bot_11_pediatric_nutrition.json"
+      },
+      {
+        "bot_id": 12,
+        "bot_name": "Geriatric Nutrition",
+        "file": "bot_12_geriatric_nutrition.json"
+      },
+      {
+        "bot_id": 13,
+        "bot_name": "Pregnancy and Maternal Nutrition",
+        "file": "bot_13_pregnancy_maternal_nutrition.json"
+      },
+      {
+        "bot_id": 14,
+        "bot_name": "Diabetes and Blood Sugar Management",
+        "file": "bot_14_diabetes_blood_sugar_management.json"
+      },
+      {
+        "bot_id": 15,
+        "bot_name": "Cardiovascular Health Nutrition",
+        "file": "bot_15_cardiovascular_health_nutrition.json"
+      },
+      {
+        "bot_id": 16,
+        "bot_name": "Anti-Inflammatory Diet",
+        "file": "bot_16_anti_inflammatory_diet.json"
+      },
+      {
+        "bot_id": 17,
+        "bot_name": "Hydration Optimization",
+        "file": "bot_17_hydration_optimization.json"
+      },
+      {
+        "bot_id": 18,
+        "bot_name": "Mental Health and Nutrition",
+        "file": "bot_18_mental_health_nutrition.json"
+      },
+      {
+        "bot_id": 19,
+        "bot_name": "Gut-Brain Axis",
+        "file": "bot_19_gut_brain_axis.json"
+      },
+      {
+        "bot_id": 21,
+        "bot_name": "Food Texture Analysis",
+        "file": "bot_21_food_texture.json"
+      },
+      {
+        "bot_id": 2,
+        "bot_name": "Microbiome Analysis",
+        "file": "bot_2_microbiome_analysis.json"
+      },
+      {
+        "bot_id": 4,
+        "bot_name": "Macronutrient Optimization",
+        "file": "bot_4_macronutrient_optimization.json"
+      },
+      {
+        "bot_id": 5,
+        "bot_name": "Micronutrient Deficiency Detection",
+        "file": "bot_5_micronutrient_deficiency_detection.json"
+      },
+      {
+        "bot_id": 6,
+        "bot_name": "Caloric Intake Tracking",
+        "file": "bot_6_caloric_intake_tracking.json"
+      },
+      {
+        "bot_id": 7,
+        "bot_name": "Food Allergy and Intolerance Assessment",
+        "file": "bot_7_food_allergy_intolerance_assessment.json"
+      },
+      {
+        "bot_id": 8,
+        "bot_name": "Meal Planning and Scheduling",
+        "file": "bot_8_meal_planning_scheduling.json"
+      },
+      {
+        "bot_id": 9,
+        "bot_name": "Sports Nutrition",
+        "file": "bot_9_sports_nutrition.json"
+      },
+      {
+        "bot_id": 1,
+        "bot_name": "Nutrigenomics",
+        "file": "nutrigenomics.json"
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "diet_director",
+        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+      },
+      {
+        "step": 2,
+        "actor": "copilot",
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+      },
+      {
+        "step": 3,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which this department may use the library bots."
+      }
+    ],
+    "access_number": null,
+    "access_timeframe_start": null,
+    "access_timeframe_end": null,
+    "access_number_entry": null,
+    "access_number_verified": false,
+    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department."
+  }
+}
