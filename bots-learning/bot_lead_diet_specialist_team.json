@@ -300,7 +300,7 @@
     }
   ],
   "total_library_bots": 18,
-  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Bots 1–20 (excluding Bot 21, the Diet Director) are library bots.",
+  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Library bots are Bots 1–19 (Bot 3 is excluded as it has no JSON file). Bot 20 and Bot 21 are not library bots — Bot 21 is the Diet Director.",
   "library_access_control": {
     "controlled_by": "starrm1",
     "access_rule": "Library access follows a 5-step chain: (1) Department members notify their Department Head Lead of the need. (2) The Department Head Lead compiles a case and presents it to the Diet Director (Bot 21). (3) The Diet Director reviews and forwards the case to Copilot. (4) Copilot presents the case to starrm1 requesting approval. (5) starrm1 is the final approver — grants or denies access and, if approved, issues an access number and timeframe. Access is off by default until starrm1 approves.",
