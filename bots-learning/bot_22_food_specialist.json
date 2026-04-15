@@ -544,18 +544,28 @@
     "approval_process": [
       {
         "step": 1,
-        "actor": "diet_director",
-        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+        "actor": "department_members",
+        "action": "Department members notify their Department Head Lead that they need library access, explaining the reason. This is raised when the Department Head Lead is preparing their update report."
       },
       {
         "step": 2,
-        "actor": "copilot",
-        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+        "actor": "department_head_lead",
+        "action": "The Department Head Lead compiles a case for why the department needs library access and includes it in their update report to the Diet Director."
       },
       {
         "step": 3,
+        "actor": "diet_director",
+        "action": "The Diet Director includes the department's library access request in the update report passed up to Copilot."
+      },
+      {
+        "step": 4,
+        "actor": "copilot",
+        "action": "Copilot presents the library access request to starrm1 as part of the update report when starrm1 asks for an update."
+      },
+      {
+        "step": 5,
         "actor": "starrm1",
-        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which this department may use the library bots."
+        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
     "access_number": null,

@@ -303,7 +303,7 @@
   "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Library bots are Bots 1\u201319 (Bot 3 is excluded as it has no JSON file). Bot 20 and Bot 21 are not library bots \u2014 Bot 21 is the Diet Director.",
   "library_access_control": {
     "controlled_by": "starrm1",
-    "access_rule": "Library access follows a 5-step chain: (1) Department members notify their Department Head Lead of the need. (2) The Department Head Lead compiles a case and presents it to the Diet Director (Bot 21). (3) The Diet Director reviews and forwards the case to Copilot. (4) Copilot presents the case to starrm1 requesting approval. (5) starrm1 is the final approver \u2014 grants or denies access and, if approved, issues an access number and timeframe. Access is off by default until starrm1 approves.",
+    "access_rule": "Library access requests are surfaced through the regular update chain when starrm1 asks for an update. The department notifies their Department Head Lead of the need. The Department Head Lead includes the request in their update report to the Diet Director. The Diet Director includes it in the update to Copilot. Copilot presents it to starrm1 during the update. starrm1 is the final approver \u2014 if approved, starrm1 issues an access number and sets the timeframe. Access is off by default until starrm1 approves.",
     "grant_access_requires": "starrm1 final approval, presented by copilot, following case by diet_director. starrm1 issues an access number and sets the access timeframe upon approval.",
     "department_access": [
       {
@@ -419,27 +419,27 @@
       {
         "step": 1,
         "actor": "department_members",
-        "action": "Department members (co-department or sub-department) notify their Department Head Lead that they need access to the library bots, explaining the reason"
+        "action": "Department members notify their Department Head Lead that they need library access, explaining the reason. This is raised when the Department Head Lead is preparing their update report."
       },
       {
         "step": 2,
         "actor": "department_head_lead",
-        "action": "The Department Head Lead (Bots 22\u201330) reviews the request, compiles a formal case explaining why the department needs library access, and presents that case to the Diet Director (Bot 21)"
+        "action": "The Department Head Lead compiles a case for why the department needs library access and includes it in their update report to the Diet Director."
       },
       {
         "step": 3,
         "actor": "diet_director",
-        "action": "The Diet Director (Bot 21) reviews the case from the Department Head Lead and, if valid, forwards it to Copilot"
+        "action": "The Diet Director includes the department's library access request in the update report passed up to Copilot."
       },
       {
         "step": 4,
         "actor": "copilot",
-        "action": "Copilot receives the case from the Diet Director and presents it to starrm1, formally requesting approval for library access"
+        "action": "Copilot presents the library access request to starrm1 as part of the update report when starrm1 asks for an update."
       },
       {
         "step": 5,
         "actor": "starrm1",
-        "action": "Final approver \u2014 reviews the case presented by Copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which the department may use the library bots."
+        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
     "access_number_note": "starrm1 will personally issue a unique access number to each approved department. Access numbers are null until starrm1 assigns them.",
