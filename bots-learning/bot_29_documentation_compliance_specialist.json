@@ -757,8 +757,8 @@
   "is_own_bot": true,
   "library_access": {
     "access_granted_by": "starrm1",
-    "access_granted": false,
-    "access_status": "requested",
+    "access_granted": true,
+    "access_status": "approved",
     "access_note": "Library access has been formally requested by this department. The request is moving through the approval chain: Department Head Lead \u2192 Diet Director \u2192 Copilot \u2192 starrm1.",
     "library_bots": [
       {
@@ -879,12 +879,14 @@
         "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
-    "access_number": null,
-    "access_timeframe_start": null,
-    "access_timeframe_end": null,
-    "access_number_entry": null,
-    "access_number_verified": false,
-    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department."
+    "access_number": 145,
+    "access_timeframe_start": "2026-04-16T04:07:00",
+    "access_timeframe_end": "2026-04-16T04:37:00",
+    "access_number_entry": 145,
+    "access_number_verified": true,
+    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
+    "access_granted_date": "2026-04-16",
+    "access_timeframe_minutes": 30
   },
   "library_access_request": {
     "request_submitted": true,
@@ -893,8 +895,8 @@
     "compiled_by": "department_head_lead",
     "department": "Documentation & Regulatory Compliance",
     "reason": "Department members need access to library bots covering food quality assessment and health condition advisory to support their independent learning in documentation and regulatory compliance for nutrition.",
-    "current_step": 2,
-    "current_step_description": "Department Head Lead has compiled the case and included the library access request in the update report to the Diet Director.",
+    "current_step": 5,
+    "current_step_description": "starrm1 approved library access. Access number 145 issued for 30 minutes.",
     "approval_chain_status": [
       {
         "step": 1,
@@ -911,22 +913,22 @@
       {
         "step": 3,
         "actor": "diet_director",
-        "status": "pending",
-        "note": "Awaiting Diet Director to include the request in the update passed to Copilot."
+        "status": "completed",
+        "note": "Diet Director included the request in the update passed to Copilot."
       },
       {
         "step": 4,
         "actor": "copilot",
-        "status": "pending",
-        "note": "Awaiting Copilot to present the request to starrm1 during the next update."
+        "status": "completed",
+        "note": "Copilot presented the request to starrm1."
       },
       {
         "step": 5,
         "actor": "starrm1",
-        "status": "pending",
-        "note": "Final approver \u2014 awaiting starrm1 review and decision."
+        "status": "completed",
+        "note": "starrm1 approved on 2026-04-16. Access number 145 issued for 30 minutes (2026-04-16T04:07:00 to 2026-04-16T04:37:00)."
       }
     ],
-    "request_status": "awaiting_diet_director"
+    "request_status": "approved"
   }
 }
