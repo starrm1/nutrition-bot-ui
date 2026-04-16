@@ -1,1 +1,27 @@
-{"progress_percentage": 35, "key_learnings": "Understanding the role of genes in nutrition management.", "research_findings": "Identified specific gene-nutrient interactions.", "current_focus_areas": "Research on nutrient metabolomics."}
+{
+  "bot_id": "nutrigenomics",
+  "name": "Nutrigenomics",
+  "role": "Library Bot",
+  "library_bot": true,
+  "library_bot_note": "The Nutrigenomics bot is a designated library bot. It is available to departments 22-30 for learning purposes only when access is granted by the Diet Director with final approval from starrm1.",
+  "access_controlled_by": "starrm1",
+  "access_status": "pending",
+  "access_granted": false,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_director",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "learning": {
+    "learning_active": true,
+    "learning_start_date": "2026-04-16",
+    "progress_percentage": 35,
+    "key_learnings": "Understanding the role of genes in nutrition management.",
+    "research_findings": "Identified specific gene-nutrient interactions.",
+    "current_focus_areas": "Research on nutrient metabolomics."
+  }
+}
