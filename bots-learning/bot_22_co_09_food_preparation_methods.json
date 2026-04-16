@@ -40,5 +40,10 @@
   "total_sub_departments": 18,
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 0
+  "progress_percentage": 0,
+  "sub_department_learning_active": true,
+  "sub_department_learning_status": "active",
+  "sub_department_learning_start_date": "2026-04-16",
+  "sub_department_learning_authorized_by": "starrm1",
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
 }
