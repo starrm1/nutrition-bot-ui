@@ -451,9 +451,9 @@
   "is_own_bot": true,
   "library_access": {
     "access_granted_by": "starrm1",
-    "access_granted": true,
-    "access_status": "approved",
-    "access_note": "Library access has been formally requested by this department. The request is moving through the approval chain: Department Head Lead \u2192 Diet Director \u2192 Copilot \u2192 starrm1.",
+    "access_granted": false,
+    "access_status": "closed",
+    "access_note": "Library access was granted for 30 minutes (04:07\u201304:37 on 2026-04-16) and has now closed. A new request must go through the approval chain to regain access.",
     "library_bots": [
       {
         "bot_id": 1,
@@ -580,7 +580,10 @@
     "access_number_verified": true,
     "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
     "access_granted_date": "2026-04-16",
-    "access_timeframe_minutes": 30
+    "access_timeframe_minutes": 30,
+    "access_closed_date": "2026-04-16",
+    "access_closed_by": "starrm1",
+    "access_closed_reason": "30-minute access window expired"
   },
   "library_access_request": {
     "request_submitted": true,
