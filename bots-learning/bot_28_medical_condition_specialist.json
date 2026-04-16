@@ -456,7 +456,12 @@
     "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
     "cross_department_learning_permitted": false,
     "scope_unlocks_at_progress_percentage": 50,
-    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress."
+    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress.",
+    "learning_active": true,
+    "learning_status": "active",
+    "learning_start_date": "2026-04-16",
+    "learning_start_authorized_by": "starrm1",
+    "learning_start_directive": "starrm1 directed Diet Director: departments do need to start learning (2026-04-16)"
   },
   "knowledge_domains": {
     "gout": [

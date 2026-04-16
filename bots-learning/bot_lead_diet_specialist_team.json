@@ -490,5 +490,12 @@
     "access_number_note": "starrm1 will personally issue a unique access number to each approved department. Access numbers are null until starrm1 assigns them.",
     "access_timeframe_note": "starrm1 sets a specific timeframe (start and end date) during which the access number is valid. Access expires automatically when the timeframe ends.",
     "access_entry_rule": "Once starrm1 assigns an access number to a department, that department enters it in the 'access_number_entry' field. When the entered number matches the assigned 'access_number', access is verified and 'access_number_verified' is set to true, activating library access."
+  },
+  "learning_directive": {
+    "directive": "starrm1 directed Diet Director: departments do need to start learning",
+    "issued_by": "starrm1",
+    "issued_date": "2026-04-16",
+    "directive_status": "active",
+    "all_departments_learning_active": true
   }
 }
