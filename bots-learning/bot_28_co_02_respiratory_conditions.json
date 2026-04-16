@@ -37,5 +37,43 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "28c02s01",
+      "bot_name": "Obesity Management",
+      "file": "bot_28_co_02_sub_01_obesity_management.json"
+    },
+    {
+      "bot_id": "28c02s02",
+      "bot_name": "Eating Disorders",
+      "file": "bot_28_co_02_sub_02_eating_disorders.json"
+    },
+    {
+      "bot_id": "28c02s03",
+      "bot_name": "Neurological Disorders",
+      "file": "bot_28_co_02_sub_03_neurological_disorders.json"
+    },
+    {
+      "bot_id": "28c02s04",
+      "bot_name": "COPD",
+      "file": "bot_28_co_02_sub_04_copd.json"
+    },
+    {
+      "bot_id": "28c02s05",
+      "bot_name": "Energy Conservation",
+      "file": "bot_28_co_02_sub_05_energy_conservation.json"
+    },
+    {
+      "bot_id": "28c02s06",
+      "bot_name": "Small Frequent Meals",
+      "file": "bot_28_co_02_sub_06_small_frequent_meals.json"
+    },
+    {
+      "bot_id": "28c02s07",
+      "bot_name": "High-Fat/Low-Carb Ratios (Reduce CO2 Production)",
+      "file": "bot_28_co_02_sub_07_high_fat_low_carb_ratios_reduce_co2_production.json"
+    }
+  ],
+  "total_sub_department_bots": 7
 }

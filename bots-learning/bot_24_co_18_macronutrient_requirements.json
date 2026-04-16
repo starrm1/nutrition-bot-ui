@@ -33,5 +33,23 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "24c18s01",
+      "bot_name": "Fats",
+      "file": "bot_24_co_18_sub_01_fats.json"
+    },
+    {
+      "bot_id": "24c18s02",
+      "bot_name": "Carbohydrates",
+      "file": "bot_24_co_18_sub_02_carbohydrates.json"
+    },
+    {
+      "bot_id": "24c18s03",
+      "bot_name": "Protein",
+      "file": "bot_24_co_18_sub_03_protein.json"
+    }
+  ],
+  "total_sub_department_bots": 3
 }

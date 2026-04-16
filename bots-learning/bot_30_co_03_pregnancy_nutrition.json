@@ -38,5 +38,48 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "30c03s01",
+      "bot_name": "Preeclampsia Diet",
+      "file": "bot_30_co_03_sub_01_preeclampsia_diet.json"
+    },
+    {
+      "bot_id": "30c03s02",
+      "bot_name": "Hyperemesis",
+      "file": "bot_30_co_03_sub_02_hyperemesis.json"
+    },
+    {
+      "bot_id": "30c03s03",
+      "bot_name": "Gestational Diabetes",
+      "file": "bot_30_co_03_sub_03_gestational_diabetes.json"
+    },
+    {
+      "bot_id": "30c03s04",
+      "bot_name": "Weight Gain Guidelines (25-35 lbs Normal BMI)",
+      "file": "bot_30_co_03_sub_04_weight_gain_guidelines_25_35_lbs_normal_bmi.json"
+    },
+    {
+      "bot_id": "30c03s05",
+      "bot_name": "Avoid Alcohol/Raw Foods/High-Mercury Fish",
+      "file": "bot_30_co_03_sub_05_avoid_alcohol_raw_foods_high_mercury_fish.json"
+    },
+    {
+      "bot_id": "30c03s06",
+      "bot_name": "Calcium (1000mg)",
+      "file": "bot_30_co_03_sub_06_calcium_1000mg.json"
+    },
+    {
+      "bot_id": "30c03s07",
+      "bot_name": "Iron (27mg)",
+      "file": "bot_30_co_03_sub_07_iron_27mg.json"
+    },
+    {
+      "bot_id": "30c03s08",
+      "bot_name": "Folate (400-800mcg)",
+      "file": "bot_30_co_03_sub_08_folate_400_800mcg.json"
+    }
+  ],
+  "total_sub_department_bots": 8
 }

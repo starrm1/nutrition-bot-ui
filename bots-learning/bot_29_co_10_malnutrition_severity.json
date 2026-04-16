@@ -33,5 +33,23 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "29c10s01",
+      "bot_name": "Severe",
+      "file": "bot_29_co_10_sub_01_severe.json"
+    },
+    {
+      "bot_id": "29c10s02",
+      "bot_name": "Moderate",
+      "file": "bot_29_co_10_sub_02_moderate.json"
+    },
+    {
+      "bot_id": "29c10s03",
+      "bot_name": "Mild",
+      "file": "bot_29_co_10_sub_03_mild.json"
+    }
+  ],
+  "total_sub_department_bots": 3
 }

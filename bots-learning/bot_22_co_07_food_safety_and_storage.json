@@ -37,5 +37,58 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "22c07s01",
+      "bot_name": "Color Coded Cutting Boards",
+      "file": "bot_22_co_07_sub_01_color_coded_cutting_boards.json"
+    },
+    {
+      "bot_id": "22c07s02",
+      "bot_name": "Cross Contamination Zones",
+      "file": "bot_22_co_07_sub_02_cross_contamination_zones.json"
+    },
+    {
+      "bot_id": "22c07s03",
+      "bot_name": "Reheating Protocols",
+      "file": "bot_22_co_07_sub_03_reheating_protocols.json"
+    },
+    {
+      "bot_id": "22c07s04",
+      "bot_name": "Proper Cooling",
+      "file": "bot_22_co_07_sub_04_proper_cooling.json"
+    },
+    {
+      "bot_id": "22c07s05",
+      "bot_name": "First In First Out",
+      "file": "bot_22_co_07_sub_05_first_in_first_out.json"
+    },
+    {
+      "bot_id": "22c07s06",
+      "bot_name": "Expiration Dating",
+      "file": "bot_22_co_07_sub_06_expiration_dating.json"
+    },
+    {
+      "bot_id": "22c07s07",
+      "bot_name": "Shelf Life",
+      "file": "bot_22_co_07_sub_07_shelf_life.json"
+    },
+    {
+      "bot_id": "22c07s08",
+      "bot_name": "Storage Temps",
+      "file": "bot_22_co_07_sub_08_storage_temps.json"
+    },
+    {
+      "bot_id": "22c07s09",
+      "bot_name": "Danger Zone (40-140\u00b0F)",
+      "file": "bot_22_co_07_sub_09_danger_zone_40_140_f.json"
+    },
+    {
+      "bot_id": "22c07s10",
+      "bot_name": "HACCP",
+      "file": "bot_22_co_07_sub_10_haccp.json"
+    }
+  ],
+  "total_sub_department_bots": 10
 }

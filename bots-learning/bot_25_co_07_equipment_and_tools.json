@@ -33,5 +33,23 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "25c07s01",
+      "bot_name": "Blenders",
+      "file": "bot_25_co_07_sub_01_blenders.json"
+    },
+    {
+      "bot_id": "25c07s02",
+      "bot_name": "Molds",
+      "file": "bot_25_co_07_sub_02_molds.json"
+    },
+    {
+      "bot_id": "25c07s03",
+      "bot_name": "Thickeners",
+      "file": "bot_25_co_07_sub_03_thickeners.json"
+    }
+  ],
+  "total_sub_department_bots": 3
 }

@@ -35,5 +35,33 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "23c13s01",
+      "bot_name": "Extremely Thick",
+      "file": "bot_23_co_13_sub_01_extremely_thick.json"
+    },
+    {
+      "bot_id": "23c13s02",
+      "bot_name": "Moderately Thick",
+      "file": "bot_23_co_13_sub_02_moderately_thick.json"
+    },
+    {
+      "bot_id": "23c13s03",
+      "bot_name": "Mildly Thick",
+      "file": "bot_23_co_13_sub_03_mildly_thick.json"
+    },
+    {
+      "bot_id": "23c13s04",
+      "bot_name": "Slightly Thick",
+      "file": "bot_23_co_13_sub_04_slightly_thick.json"
+    },
+    {
+      "bot_id": "23c13s05",
+      "bot_name": "Thin",
+      "file": "bot_23_co_13_sub_05_thin.json"
+    }
+  ],
+  "total_sub_department_bots": 5
 }

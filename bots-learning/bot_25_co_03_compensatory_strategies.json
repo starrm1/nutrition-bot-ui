@@ -35,5 +35,33 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "25c03s01",
+      "bot_name": "Mendelsohn Maneuver",
+      "file": "bot_25_co_03_sub_01_mendelsohn_maneuver.json"
+    },
+    {
+      "bot_id": "25c03s02",
+      "bot_name": "Effortful Swallow",
+      "file": "bot_25_co_03_sub_02_effortful_swallow.json"
+    },
+    {
+      "bot_id": "25c03s03",
+      "bot_name": "Supraglottic Swallow",
+      "file": "bot_25_co_03_sub_03_supraglottic_swallow.json"
+    },
+    {
+      "bot_id": "25c03s04",
+      "bot_name": "Head Rotation",
+      "file": "bot_25_co_03_sub_04_head_rotation.json"
+    },
+    {
+      "bot_id": "25c03s05",
+      "bot_name": "Chin Tuck",
+      "file": "bot_25_co_03_sub_05_chin_tuck.json"
+    }
+  ],
+  "total_sub_department_bots": 5
 }

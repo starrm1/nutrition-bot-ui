@@ -39,5 +39,53 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "26c01s01",
+      "bot_name": "Milk",
+      "file": "bot_26_co_01_sub_01_milk.json"
+    },
+    {
+      "bot_id": "26c01s02",
+      "bot_name": "Eggs",
+      "file": "bot_26_co_01_sub_02_eggs.json"
+    },
+    {
+      "bot_id": "26c01s03",
+      "bot_name": "Fish",
+      "file": "bot_26_co_01_sub_03_fish.json"
+    },
+    {
+      "bot_id": "26c01s04",
+      "bot_name": "Shellfish",
+      "file": "bot_26_co_01_sub_04_shellfish.json"
+    },
+    {
+      "bot_id": "26c01s05",
+      "bot_name": "Tree Nuts",
+      "file": "bot_26_co_01_sub_05_tree_nuts.json"
+    },
+    {
+      "bot_id": "26c01s06",
+      "bot_name": "Peanuts",
+      "file": "bot_26_co_01_sub_06_peanuts.json"
+    },
+    {
+      "bot_id": "26c01s07",
+      "bot_name": "Wheat",
+      "file": "bot_26_co_01_sub_07_wheat.json"
+    },
+    {
+      "bot_id": "26c01s08",
+      "bot_name": "Soy",
+      "file": "bot_26_co_01_sub_08_soy.json"
+    },
+    {
+      "bot_id": "26c01s09",
+      "bot_name": "Sesame",
+      "file": "bot_26_co_01_sub_09_sesame.json"
+    }
+  ],
+  "total_sub_department_bots": 9
 }

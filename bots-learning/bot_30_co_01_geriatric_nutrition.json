@@ -42,5 +42,68 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "30c01s01",
+      "bot_name": "Special Needs",
+      "file": "bot_30_co_01_sub_01_special_needs.json"
+    },
+    {
+      "bot_id": "30c01s02",
+      "bot_name": "Athletic Nutrition",
+      "file": "bot_30_co_01_sub_02_athletic_nutrition.json"
+    },
+    {
+      "bot_id": "30c01s03",
+      "bot_name": "Dementia Feeding Strategies",
+      "file": "bot_30_co_01_sub_03_dementia_feeding_strategies.json"
+    },
+    {
+      "bot_id": "30c01s04",
+      "bot_name": "Fixed Income",
+      "file": "bot_30_co_01_sub_04_fixed_income.json"
+    },
+    {
+      "bot_id": "30c01s05",
+      "bot_name": "Social Isolation",
+      "file": "bot_30_co_01_sub_05_social_isolation.json"
+    },
+    {
+      "bot_id": "30c01s06",
+      "bot_name": "Polypharmacy",
+      "file": "bot_30_co_01_sub_06_polypharmacy.json"
+    },
+    {
+      "bot_id": "30c01s07",
+      "bot_name": "Dysphagia Risk",
+      "file": "bot_30_co_01_sub_07_dysphagia_risk.json"
+    },
+    {
+      "bot_id": "30c01s08",
+      "bot_name": "Fiber for Constipation",
+      "file": "bot_30_co_01_sub_08_fiber_for_constipation.json"
+    },
+    {
+      "bot_id": "30c01s09",
+      "bot_name": "Vitamin D/Calcium for Osteoporosis",
+      "file": "bot_30_co_01_sub_09_vitamin_d_calcium_for_osteoporosis.json"
+    },
+    {
+      "bot_id": "30c01s10",
+      "bot_name": "Vitamin B12 Deficiency",
+      "file": "bot_30_co_01_sub_10_vitamin_b12_deficiency.json"
+    },
+    {
+      "bot_id": "30c01s11",
+      "bot_name": "Increased Protein (1.0-1.2g/kg)",
+      "file": "bot_30_co_01_sub_11_increased_protein_1_0_1_2g_kg.json"
+    },
+    {
+      "bot_id": "30c01s12",
+      "bot_name": "Decreased Calorie Needs",
+      "file": "bot_30_co_01_sub_12_decreased_calorie_needs.json"
+    }
+  ],
+  "total_sub_department_bots": 12
 }

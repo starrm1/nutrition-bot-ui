@@ -36,5 +36,38 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "29c09s01",
+      "bot_name": "Allergies",
+      "file": "bot_29_co_09_sub_01_allergies.json"
+    },
+    {
+      "bot_id": "29c09s02",
+      "bot_name": "Restrictions",
+      "file": "bot_29_co_09_sub_02_restrictions.json"
+    },
+    {
+      "bot_id": "29c09s03",
+      "bot_name": "Supplements",
+      "file": "bot_29_co_09_sub_03_supplements.json"
+    },
+    {
+      "bot_id": "29c09s04",
+      "bot_name": "Fluid Consistency",
+      "file": "bot_29_co_09_sub_04_fluid_consistency.json"
+    },
+    {
+      "bot_id": "29c09s05",
+      "bot_name": "Texture",
+      "file": "bot_29_co_09_sub_05_texture.json"
+    },
+    {
+      "bot_id": "29c09s06",
+      "bot_name": "Diet Type",
+      "file": "bot_29_co_09_sub_06_diet_type.json"
+    }
+  ],
+  "total_sub_department_bots": 6
 }

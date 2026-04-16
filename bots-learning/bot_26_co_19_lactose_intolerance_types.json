@@ -33,5 +33,23 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "26c19s01",
+      "bot_name": "Primary",
+      "file": "bot_26_co_19_sub_01_primary.json"
+    },
+    {
+      "bot_id": "26c19s02",
+      "bot_name": "Secondary",
+      "file": "bot_26_co_19_sub_02_secondary.json"
+    },
+    {
+      "bot_id": "26c19s03",
+      "bot_name": "Congenital",
+      "file": "bot_26_co_19_sub_03_congenital.json"
+    }
+  ],
+  "total_sub_department_bots": 3
 }

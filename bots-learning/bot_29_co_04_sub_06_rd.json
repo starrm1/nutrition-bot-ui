@@ -1,0 +1,35 @@
+{
+  "bot_id": "29c04s06",
+  "bot_name": "RD",
+  "role": "Sub-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 7,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_director",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_co_department_bot_id": "29c04",
+  "parent_co_department_bot_name": "Interdisciplinary Rounds",
+  "parent_department_bot_id": 29,
+  "parent_department_bot_name": "Documentation & Compliance Specialist",
+  "parent_department_name": "Documentation & Compliance Science",
+  "supervised_by": [
+    "29c04"
+  ],
+  "is_learning": true,
+  "learning_active": true,
+  "learning_status": "active",
+  "learning_start_date": "2026-04-16",
+  "learning_authorized_by": "starrm1",
+  "phase": "independent_learning",
+  "progress_percentage": 0,
+  "learning_scope": {
+    "scope": "own_sub_department_only",
+    "cross_department_learning_permitted": false
+  }
+}

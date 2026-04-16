@@ -34,5 +34,28 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "24c03s01",
+      "bot_name": "Refeeding Syndrome Prevention and Management",
+      "file": "bot_24_co_03_sub_01_refeeding_syndrome_prevention_and_management.json"
+    },
+    {
+      "bot_id": "24c03s02",
+      "bot_name": "Supplementation Protocols",
+      "file": "bot_24_co_03_sub_02_supplementation_protocols.json"
+    },
+    {
+      "bot_id": "24c03s03",
+      "bot_name": "Clinical Signs",
+      "file": "bot_24_co_03_sub_03_clinical_signs.json"
+    },
+    {
+      "bot_id": "24c03s04",
+      "bot_name": "Lab Values",
+      "file": "bot_24_co_03_sub_04_lab_values.json"
+    }
+  ],
+  "total_sub_department_bots": 4
 }

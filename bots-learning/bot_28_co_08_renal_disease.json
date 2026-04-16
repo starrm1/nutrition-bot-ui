@@ -40,5 +40,58 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "28c08s01",
+      "bot_name": "Post-Transplant Diet",
+      "file": "bot_28_co_08_sub_01_post_transplant_diet.json"
+    },
+    {
+      "bot_id": "28c08s02",
+      "bot_name": "Dialysis Types (Hemodialysis, Peritoneal)",
+      "file": "bot_28_co_08_sub_02_dialysis_types_hemodialysis_peritoneal.json"
+    },
+    {
+      "bot_id": "28c08s03",
+      "bot_name": "Protein (0.6-0.8g/kg CKD, 1.2g/kg Dialysis)",
+      "file": "bot_28_co_08_sub_03_protein_0_6_0_8g_kg_ckd_1_2g_kg_dialysis.json"
+    },
+    {
+      "bot_id": "28c08s04",
+      "bot_name": "Sodium Limits (2000mg/day)",
+      "file": "bot_28_co_08_sub_04_sodium_limits_2000mg_day.json"
+    },
+    {
+      "bot_id": "28c08s05",
+      "bot_name": "Fluid Restrictions (500-1000ml/day Dialysis)",
+      "file": "bot_28_co_08_sub_05_fluid_restrictions_500_1000ml_day_dialysis.json"
+    },
+    {
+      "bot_id": "28c08s06",
+      "bot_name": "Phosphorus Limits (800-1000mg/day)",
+      "file": "bot_28_co_08_sub_06_phosphorus_limits_800_1000mg_day.json"
+    },
+    {
+      "bot_id": "28c08s07",
+      "bot_name": "Potassium Limits (2000mg/day Advanced CKD)",
+      "file": "bot_28_co_08_sub_07_potassium_limits_2000mg_day_advanced_ckd.json"
+    },
+    {
+      "bot_id": "28c08s08",
+      "bot_name": "Transplant",
+      "file": "bot_28_co_08_sub_08_transplant.json"
+    },
+    {
+      "bot_id": "28c08s09",
+      "bot_name": "Dialysis",
+      "file": "bot_28_co_08_sub_09_dialysis.json"
+    },
+    {
+      "bot_id": "28c08s10",
+      "bot_name": "CKD Stages",
+      "file": "bot_28_co_08_sub_10_ckd_stages.json"
+    }
+  ],
+  "total_sub_department_bots": 10
 }

@@ -33,5 +33,23 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "26c04s01",
+      "bot_name": "Adult 0.3mg",
+      "file": "bot_26_co_04_sub_01_adult_0_3mg.json"
+    },
+    {
+      "bot_id": "26c04s02",
+      "bot_name": "Child 0.15mg",
+      "file": "bot_26_co_04_sub_02_child_0_15mg.json"
+    },
+    {
+      "bot_id": "26c04s03",
+      "bot_name": "Auto-Injector Technique",
+      "file": "bot_26_co_04_sub_03_auto_injector_technique.json"
+    }
+  ],
+  "total_sub_department_bots": 3
 }

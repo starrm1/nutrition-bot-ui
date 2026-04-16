@@ -41,5 +41,63 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "28c09s01",
+      "bot_name": "Sick Day Rules",
+      "file": "bot_28_co_09_sub_01_sick_day_rules.json"
+    },
+    {
+      "bot_id": "28c09s02",
+      "bot_name": "Hyperglycemia Management",
+      "file": "bot_28_co_09_sub_02_hyperglycemia_management.json"
+    },
+    {
+      "bot_id": "28c09s03",
+      "bot_name": "Hypoglycemia Treatment (15-15 Rule)",
+      "file": "bot_28_co_09_sub_03_hypoglycemia_treatment_15_15_rule.json"
+    },
+    {
+      "bot_id": "28c09s04",
+      "bot_name": "A1C Targets (<7%)",
+      "file": "bot_28_co_09_sub_04_a1c_targets_7.json"
+    },
+    {
+      "bot_id": "28c09s05",
+      "bot_name": "Continuous Glucose Monitoring",
+      "file": "bot_28_co_09_sub_05_continuous_glucose_monitoring.json"
+    },
+    {
+      "bot_id": "28c09s06",
+      "bot_name": "Glycemic Index/Load",
+      "file": "bot_28_co_09_sub_06_glycemic_index_load.json"
+    },
+    {
+      "bot_id": "28c09s07",
+      "bot_name": "Insulin-to-Carb Ratios",
+      "file": "bot_28_co_09_sub_07_insulin_to_carb_ratios.json"
+    },
+    {
+      "bot_id": "28c09s08",
+      "bot_name": "Carb Counting (15g Portions)",
+      "file": "bot_28_co_09_sub_08_carb_counting_15g_portions.json"
+    },
+    {
+      "bot_id": "28c09s09",
+      "bot_name": "Gestational",
+      "file": "bot_28_co_09_sub_09_gestational.json"
+    },
+    {
+      "bot_id": "28c09s10",
+      "bot_name": "Type 2",
+      "file": "bot_28_co_09_sub_10_type_2.json"
+    },
+    {
+      "bot_id": "28c09s11",
+      "bot_name": "Type 1",
+      "file": "bot_28_co_09_sub_11_type_1.json"
+    }
+  ],
+  "total_sub_department_bots": 11
 }

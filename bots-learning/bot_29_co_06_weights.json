@@ -33,5 +33,23 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "29c06s01",
+      "bot_name": "Weekly",
+      "file": "bot_29_co_06_sub_01_weekly.json"
+    },
+    {
+      "bot_id": "29c06s02",
+      "bot_name": "Daily",
+      "file": "bot_29_co_06_sub_02_daily.json"
+    },
+    {
+      "bot_id": "29c06s03",
+      "bot_name": "Admission",
+      "file": "bot_29_co_06_sub_03_admission.json"
+    }
+  ],
+  "total_sub_department_bots": 3
 }

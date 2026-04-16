@@ -45,5 +45,83 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "28c06s01",
+      "bot_name": "IBD (Crohn's, UC)",
+      "file": "bot_28_co_06_sub_01_ibd_crohn_s_uc.json"
+    },
+    {
+      "bot_id": "28c06s02",
+      "bot_name": "Anti-Inflammatory Foods",
+      "file": "bot_28_co_06_sub_02_anti_inflammatory_foods.json"
+    },
+    {
+      "bot_id": "28c06s03",
+      "bot_name": "Specific Carbohydrate Diet",
+      "file": "bot_28_co_06_sub_03_specific_carbohydrate_diet.json"
+    },
+    {
+      "bot_id": "28c06s04",
+      "bot_name": "Exclusive Enteral Nutrition",
+      "file": "bot_28_co_06_sub_04_exclusive_enteral_nutrition.json"
+    },
+    {
+      "bot_id": "28c06s05",
+      "bot_name": "Low-Residue During Flares",
+      "file": "bot_28_co_06_sub_05_low_residue_during_flares.json"
+    },
+    {
+      "bot_id": "28c06s06",
+      "bot_name": "IBS",
+      "file": "bot_28_co_06_sub_06_ibs.json"
+    },
+    {
+      "bot_id": "28c06s07",
+      "bot_name": "Stress Management",
+      "file": "bot_28_co_06_sub_07_stress_management.json"
+    },
+    {
+      "bot_id": "28c06s08",
+      "bot_name": "Trigger Identification",
+      "file": "bot_28_co_06_sub_08_trigger_identification.json"
+    },
+    {
+      "bot_id": "28c06s09",
+      "bot_name": "Soluble vs Insoluble Fiber",
+      "file": "bot_28_co_06_sub_09_soluble_vs_insoluble_fiber.json"
+    },
+    {
+      "bot_id": "28c06s10",
+      "bot_name": "Low FODMAP Diet",
+      "file": "bot_28_co_06_sub_10_low_fodmap_diet.json"
+    },
+    {
+      "bot_id": "28c06s11",
+      "bot_name": "Small Frequent Meals",
+      "file": "bot_28_co_06_sub_11_small_frequent_meals.json"
+    },
+    {
+      "bot_id": "28c06s12",
+      "bot_name": "GERD",
+      "file": "bot_28_co_06_sub_12_gerd.json"
+    },
+    {
+      "bot_id": "28c06s13",
+      "bot_name": "Elevation Strategies",
+      "file": "bot_28_co_06_sub_13_elevation_strategies.json"
+    },
+    {
+      "bot_id": "28c06s14",
+      "bot_name": "Meal Timing (No Eating 2-3 Hours Before Bed)",
+      "file": "bot_28_co_06_sub_14_meal_timing_no_eating_2_3_hours_before_bed.json"
+    },
+    {
+      "bot_id": "28c06s15",
+      "bot_name": "Trigger Foods (Citrus, Tomato, Chocolate, Mint, Spicy, Fatty, Caffeine, Alcohol)",
+      "file": "bot_28_co_06_sub_15_trigger_foods_citrus_tomato_chocolate_mint_spicy_f.json"
+    }
+  ],
+  "total_sub_department_bots": 15
 }

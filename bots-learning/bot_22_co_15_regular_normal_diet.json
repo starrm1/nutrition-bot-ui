@@ -34,5 +34,43 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "22c15s01",
+      "bot_name": "Desserts",
+      "file": "bot_22_co_15_sub_01_desserts.json"
+    },
+    {
+      "bot_id": "22c15s02",
+      "bot_name": "Fats",
+      "file": "bot_22_co_15_sub_02_fats.json"
+    },
+    {
+      "bot_id": "22c15s03",
+      "bot_name": "Vegetables",
+      "file": "bot_22_co_15_sub_03_vegetables.json"
+    },
+    {
+      "bot_id": "22c15s04",
+      "bot_name": "Fruits",
+      "file": "bot_22_co_15_sub_04_fruits.json"
+    },
+    {
+      "bot_id": "22c15s05",
+      "bot_name": "Grains",
+      "file": "bot_22_co_15_sub_05_grains.json"
+    },
+    {
+      "bot_id": "22c15s06",
+      "bot_name": "Dairy",
+      "file": "bot_22_co_15_sub_06_dairy.json"
+    },
+    {
+      "bot_id": "22c15s07",
+      "bot_name": "Proteins",
+      "file": "bot_22_co_15_sub_07_proteins.json"
+    }
+  ],
+  "total_sub_department_bots": 7
 }

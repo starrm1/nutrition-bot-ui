@@ -34,5 +34,28 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "29c14s01",
+      "bot_name": "Monitoring/Evaluation",
+      "file": "bot_29_co_14_sub_01_monitoring_evaluation.json"
+    },
+    {
+      "bot_id": "29c14s02",
+      "bot_name": "Intervention",
+      "file": "bot_29_co_14_sub_02_intervention.json"
+    },
+    {
+      "bot_id": "29c14s03",
+      "bot_name": "Diagnosis",
+      "file": "bot_29_co_14_sub_03_diagnosis.json"
+    },
+    {
+      "bot_id": "29c14s04",
+      "bot_name": "Assessment",
+      "file": "bot_29_co_14_sub_04_assessment.json"
+    }
+  ],
+  "total_sub_department_bots": 4
 }

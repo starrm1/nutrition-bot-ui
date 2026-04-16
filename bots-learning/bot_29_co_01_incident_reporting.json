@@ -34,5 +34,28 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "29c01s01",
+      "bot_name": "Allergic Reactions",
+      "file": "bot_29_co_01_sub_01_allergic_reactions.json"
+    },
+    {
+      "bot_id": "29c01s02",
+      "bot_name": "Aspiration",
+      "file": "bot_29_co_01_sub_02_aspiration.json"
+    },
+    {
+      "bot_id": "29c01s03",
+      "bot_name": "Choking",
+      "file": "bot_29_co_01_sub_03_choking.json"
+    },
+    {
+      "bot_id": "29c01s04",
+      "bot_name": "Diet Errors",
+      "file": "bot_29_co_01_sub_04_diet_errors.json"
+    }
+  ],
+  "total_sub_department_bots": 4
 }

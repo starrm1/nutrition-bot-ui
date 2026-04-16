@@ -34,5 +34,28 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "29c02s01",
+      "bot_name": "Patient Satisfaction",
+      "file": "bot_29_co_02_sub_01_patient_satisfaction.json"
+    },
+    {
+      "bot_id": "29c02s02",
+      "bot_name": "Diet Order Accuracy",
+      "file": "bot_29_co_02_sub_02_diet_order_accuracy.json"
+    },
+    {
+      "bot_id": "29c02s03",
+      "bot_name": "RD Assessment Within 48 Hours",
+      "file": "bot_29_co_02_sub_03_rd_assessment_within_48_hours.json"
+    },
+    {
+      "bot_id": "29c02s04",
+      "bot_name": "Malnutrition Screening Within 24 Hours",
+      "file": "bot_29_co_02_sub_04_malnutrition_screening_within_24_hours.json"
+    }
+  ],
+  "total_sub_department_bots": 4
 }

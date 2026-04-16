@@ -36,5 +36,38 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "24c01s01",
+      "bot_name": "TPN Components and Monitoring",
+      "file": "bot_24_co_01_sub_01_tpn_components_and_monitoring.json"
+    },
+    {
+      "bot_id": "24c01s02",
+      "bot_name": "Disease-Specific (Renal, Hepatic, Pulmonary, Diabetic, Immune-Enhancing)",
+      "file": "bot_24_co_01_sub_02_disease_specific_renal_hepatic_pulmonary_diabetic_.json"
+    },
+    {
+      "bot_id": "24c01s03",
+      "bot_name": "Elemental",
+      "file": "bot_24_co_01_sub_03_elemental.json"
+    },
+    {
+      "bot_id": "24c01s04",
+      "bot_name": "Peptide-Based",
+      "file": "bot_24_co_01_sub_04_peptide_based.json"
+    },
+    {
+      "bot_id": "24c01s05",
+      "bot_name": "High Protein",
+      "file": "bot_24_co_01_sub_05_high_protein.json"
+    },
+    {
+      "bot_id": "24c01s06",
+      "bot_name": "Standard Polymeric",
+      "file": "bot_24_co_01_sub_06_standard_polymeric.json"
+    }
+  ],
+  "total_sub_department_bots": 6
 }

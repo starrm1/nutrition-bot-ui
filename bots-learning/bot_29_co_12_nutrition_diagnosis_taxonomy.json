@@ -33,5 +33,23 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "29c12s01",
+      "bot_name": "Behavioral/Environmental",
+      "file": "bot_29_co_12_sub_01_behavioral_environmental.json"
+    },
+    {
+      "bot_id": "29c12s02",
+      "bot_name": "Clinical",
+      "file": "bot_29_co_12_sub_02_clinical.json"
+    },
+    {
+      "bot_id": "29c12s03",
+      "bot_name": "Intake",
+      "file": "bot_29_co_12_sub_03_intake.json"
+    }
+  ],
+  "total_sub_department_bots": 3
 }

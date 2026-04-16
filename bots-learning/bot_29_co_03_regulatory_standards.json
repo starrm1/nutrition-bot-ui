@@ -33,5 +33,23 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "29c03s01",
+      "bot_name": "State Health Department",
+      "file": "bot_29_co_03_sub_01_state_health_department.json"
+    },
+    {
+      "bot_id": "29c03s02",
+      "bot_name": "CMS",
+      "file": "bot_29_co_03_sub_02_cms.json"
+    },
+    {
+      "bot_id": "29c03s03",
+      "bot_name": "Joint Commission",
+      "file": "bot_29_co_03_sub_03_joint_commission.json"
+    }
+  ],
+  "total_sub_department_bots": 3
 }

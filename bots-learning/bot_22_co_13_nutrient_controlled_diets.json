@@ -33,5 +33,38 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "22c13s01",
+      "bot_name": "Low-Residue",
+      "file": "bot_22_co_13_sub_01_low_residue.json"
+    },
+    {
+      "bot_id": "22c13s02",
+      "bot_name": "No Concentrated Sweets",
+      "file": "bot_22_co_13_sub_02_no_concentrated_sweets.json"
+    },
+    {
+      "bot_id": "22c13s03",
+      "bot_name": "Low Protein",
+      "file": "bot_22_co_13_sub_03_low_protein.json"
+    },
+    {
+      "bot_id": "22c13s04",
+      "bot_name": "High Protein",
+      "file": "bot_22_co_13_sub_04_high_protein.json"
+    },
+    {
+      "bot_id": "22c13s05",
+      "bot_name": "Low Fat",
+      "file": "bot_22_co_13_sub_05_low_fat.json"
+    },
+    {
+      "bot_id": "22c13s06",
+      "bot_name": "Low Sodium",
+      "file": "bot_22_co_13_sub_06_low_sodium.json"
+    }
+  ],
+  "total_sub_department_bots": 6
 }

@@ -33,5 +33,38 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "22c12s01",
+      "bot_name": "Anti-Gout",
+      "file": "bot_22_co_12_sub_01_anti_gout.json"
+    },
+    {
+      "bot_id": "22c12s02",
+      "bot_name": "Acid Ash",
+      "file": "bot_22_co_12_sub_02_acid_ash.json"
+    },
+    {
+      "bot_id": "22c12s03",
+      "bot_name": "Bland",
+      "file": "bot_22_co_12_sub_03_bland.json"
+    },
+    {
+      "bot_id": "22c12s04",
+      "bot_name": "Cardiac",
+      "file": "bot_22_co_12_sub_04_cardiac.json"
+    },
+    {
+      "bot_id": "22c12s05",
+      "bot_name": "Renal",
+      "file": "bot_22_co_12_sub_05_renal.json"
+    },
+    {
+      "bot_id": "22c12s06",
+      "bot_name": "Diabetic",
+      "file": "bot_22_co_12_sub_06_diabetic.json"
+    }
+  ],
+  "total_sub_department_bots": 6
 }

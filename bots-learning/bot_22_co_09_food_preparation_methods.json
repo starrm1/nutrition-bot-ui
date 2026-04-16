@@ -45,5 +45,98 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "22c09s01",
+      "bot_name": "Dehydrating",
+      "file": "bot_22_co_09_sub_01_dehydrating.json"
+    },
+    {
+      "bot_id": "22c09s02",
+      "bot_name": "Curing",
+      "file": "bot_22_co_09_sub_02_curing.json"
+    },
+    {
+      "bot_id": "22c09s03",
+      "bot_name": "Smoking",
+      "file": "bot_22_co_09_sub_03_smoking.json"
+    },
+    {
+      "bot_id": "22c09s04",
+      "bot_name": "Pickling",
+      "file": "bot_22_co_09_sub_04_pickling.json"
+    },
+    {
+      "bot_id": "22c09s05",
+      "bot_name": "Fermenting",
+      "file": "bot_22_co_09_sub_05_fermenting.json"
+    },
+    {
+      "bot_id": "22c09s06",
+      "bot_name": "Sous Vide",
+      "file": "bot_22_co_09_sub_06_sous_vide.json"
+    },
+    {
+      "bot_id": "22c09s07",
+      "bot_name": "Air Frying",
+      "file": "bot_22_co_09_sub_07_air_frying.json"
+    },
+    {
+      "bot_id": "22c09s08",
+      "bot_name": "Pressure Cooking",
+      "file": "bot_22_co_09_sub_08_pressure_cooking.json"
+    },
+    {
+      "bot_id": "22c09s09",
+      "bot_name": "Slow Cooking",
+      "file": "bot_22_co_09_sub_09_slow_cooking.json"
+    },
+    {
+      "bot_id": "22c09s10",
+      "bot_name": "Microwaving",
+      "file": "bot_22_co_09_sub_10_microwaving.json"
+    },
+    {
+      "bot_id": "22c09s11",
+      "bot_name": "Broiling",
+      "file": "bot_22_co_09_sub_11_broiling.json"
+    },
+    {
+      "bot_id": "22c09s12",
+      "bot_name": "Poaching",
+      "file": "bot_22_co_09_sub_12_poaching.json"
+    },
+    {
+      "bot_id": "22c09s13",
+      "bot_name": "Saut\u00e9ing",
+      "file": "bot_22_co_09_sub_13_saut_ing.json"
+    },
+    {
+      "bot_id": "22c09s14",
+      "bot_name": "Roasting",
+      "file": "bot_22_co_09_sub_14_roasting.json"
+    },
+    {
+      "bot_id": "22c09s15",
+      "bot_name": "Boiling",
+      "file": "bot_22_co_09_sub_15_boiling.json"
+    },
+    {
+      "bot_id": "22c09s16",
+      "bot_name": "Steaming",
+      "file": "bot_22_co_09_sub_16_steaming.json"
+    },
+    {
+      "bot_id": "22c09s17",
+      "bot_name": "Baking",
+      "file": "bot_22_co_09_sub_17_baking.json"
+    },
+    {
+      "bot_id": "22c09s18",
+      "bot_name": "Grilling",
+      "file": "bot_22_co_09_sub_18_grilling.json"
+    }
+  ],
+  "total_sub_department_bots": 18
 }

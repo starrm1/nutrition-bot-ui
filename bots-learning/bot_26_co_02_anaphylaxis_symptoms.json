@@ -35,5 +35,33 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "26c02s01",
+      "bot_name": "Hives",
+      "file": "bot_26_co_02_sub_01_hives.json"
+    },
+    {
+      "bot_id": "26c02s02",
+      "bot_name": "Angioedema",
+      "file": "bot_26_co_02_sub_02_angioedema.json"
+    },
+    {
+      "bot_id": "26c02s03",
+      "bot_name": "Respiratory Distress",
+      "file": "bot_26_co_02_sub_03_respiratory_distress.json"
+    },
+    {
+      "bot_id": "26c02s04",
+      "bot_name": "GI Symptoms",
+      "file": "bot_26_co_02_sub_04_gi_symptoms.json"
+    },
+    {
+      "bot_id": "26c02s05",
+      "bot_name": "Cardiovascular Collapse",
+      "file": "bot_26_co_02_sub_05_cardiovascular_collapse.json"
+    }
+  ],
+  "total_sub_department_bots": 5
 }

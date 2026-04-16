@@ -524,5 +524,22 @@
     "issued_date": "2026-04-16",
     "directive_status": "active",
     "all_departments_learning_active": true
+  },
+  "library_access_daily_policy": {
+    "policy_set_by": "starrm1",
+    "policy_set_date": "2026-04-16",
+    "standard_daily_allowance_minutes": 30,
+    "standard_daily_sessions": 1,
+    "copilot_approval_authority": {
+      "can_approve": true,
+      "max_approvable_per_day_minutes": 30,
+      "max_sessions_per_day": 1,
+      "approval_note": "Copilot may approve library access requests of up to 30 minutes once per day for sub-departments. This authority is granted by starrm1 on 2026-04-16."
+    },
+    "extended_access_policy": {
+      "requires": "starrm1_approval",
+      "note": "Any library access request exceeding 30 minutes per day or more than 1 session per day must be escalated to starrm1 for final approval. Copilot cannot approve extended access."
+    },
+    "policy_effective_date": "2026-04-16"
   }
 }

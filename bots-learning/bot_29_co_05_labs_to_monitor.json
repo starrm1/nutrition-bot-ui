@@ -40,5 +40,58 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "29c05s01",
+      "bot_name": "Liver Enzymes",
+      "file": "bot_29_co_05_sub_01_liver_enzymes.json"
+    },
+    {
+      "bot_id": "29c05s02",
+      "bot_name": "CBC",
+      "file": "bot_29_co_05_sub_02_cbc.json"
+    },
+    {
+      "bot_id": "29c05s03",
+      "bot_name": "Electrolytes",
+      "file": "bot_29_co_05_sub_03_electrolytes.json"
+    },
+    {
+      "bot_id": "29c05s04",
+      "bot_name": "Creatinine",
+      "file": "bot_29_co_05_sub_04_creatinine.json"
+    },
+    {
+      "bot_id": "29c05s05",
+      "bot_name": "BUN",
+      "file": "bot_29_co_05_sub_05_bun.json"
+    },
+    {
+      "bot_id": "29c05s06",
+      "bot_name": "Glucose",
+      "file": "bot_29_co_05_sub_06_glucose.json"
+    },
+    {
+      "bot_id": "29c05s07",
+      "bot_name": "CRP",
+      "file": "bot_29_co_05_sub_07_crp.json"
+    },
+    {
+      "bot_id": "29c05s08",
+      "bot_name": "Transferrin",
+      "file": "bot_29_co_05_sub_08_transferrin.json"
+    },
+    {
+      "bot_id": "29c05s09",
+      "bot_name": "Prealbumin",
+      "file": "bot_29_co_05_sub_09_prealbumin.json"
+    },
+    {
+      "bot_id": "29c05s10",
+      "bot_name": "Albumin",
+      "file": "bot_29_co_05_sub_10_albumin.json"
+    }
+  ],
+  "total_sub_department_bots": 10
 }

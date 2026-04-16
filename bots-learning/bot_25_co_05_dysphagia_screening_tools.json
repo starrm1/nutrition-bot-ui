@@ -34,5 +34,28 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "25c05s01",
+      "bot_name": "3-oz Challenge",
+      "file": "bot_25_co_05_sub_01_3_oz_challenge.json"
+    },
+    {
+      "bot_id": "25c05s02",
+      "bot_name": "Water Swallow Test",
+      "file": "bot_25_co_05_sub_02_water_swallow_test.json"
+    },
+    {
+      "bot_id": "25c05s03",
+      "bot_name": "GUSS",
+      "file": "bot_25_co_05_sub_03_guss.json"
+    },
+    {
+      "bot_id": "25c05s04",
+      "bot_name": "EAT-10",
+      "file": "bot_25_co_05_sub_04_eat_10.json"
+    }
+  ],
+  "total_sub_department_bots": 4
 }

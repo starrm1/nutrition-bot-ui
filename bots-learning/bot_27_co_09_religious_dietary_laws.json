@@ -35,5 +35,33 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "27c09s01",
+      "bot_name": "Jain",
+      "file": "bot_27_co_09_sub_01_jain.json"
+    },
+    {
+      "bot_id": "27c09s02",
+      "bot_name": "Buddhist",
+      "file": "bot_27_co_09_sub_02_buddhist.json"
+    },
+    {
+      "bot_id": "27c09s03",
+      "bot_name": "Hindu",
+      "file": "bot_27_co_09_sub_03_hindu.json"
+    },
+    {
+      "bot_id": "27c09s04",
+      "bot_name": "Halal",
+      "file": "bot_27_co_09_sub_04_halal.json"
+    },
+    {
+      "bot_id": "27c09s05",
+      "bot_name": "Kosher",
+      "file": "bot_27_co_09_sub_05_kosher.json"
+    }
+  ],
+  "total_sub_department_bots": 5
 }

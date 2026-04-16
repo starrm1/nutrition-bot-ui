@@ -41,5 +41,63 @@
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
   "sub_department_learning_authorized_by": "starrm1",
-  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16."
+  "sub_department_learning_note": "Sub-departments under this co-department bot have started learning as directed by starrm1 on 2026-04-16.",
+  "sub_department_bots": [
+    {
+      "bot_id": "28c07s01",
+      "bot_name": "Fiber Goals (25-30g/day)",
+      "file": "bot_28_co_07_sub_01_fiber_goals_25_30g_day.json"
+    },
+    {
+      "bot_id": "28c07s02",
+      "bot_name": "Cholesterol Limits (<200mg/day)",
+      "file": "bot_28_co_07_sub_02_cholesterol_limits_200mg_day.json"
+    },
+    {
+      "bot_id": "28c07s03",
+      "bot_name": "Trans Fat Avoidance",
+      "file": "bot_28_co_07_sub_03_trans_fat_avoidance.json"
+    },
+    {
+      "bot_id": "28c07s04",
+      "bot_name": "Saturated Fat Limits (<7% Calories)",
+      "file": "bot_28_co_07_sub_04_saturated_fat_limits_7_calories.json"
+    },
+    {
+      "bot_id": "28c07s05",
+      "bot_name": "Omega-3 Recommendations",
+      "file": "bot_28_co_07_sub_05_omega_3_recommendations.json"
+    },
+    {
+      "bot_id": "28c07s06",
+      "bot_name": "Mediterranean Diet",
+      "file": "bot_28_co_07_sub_06_mediterranean_diet.json"
+    },
+    {
+      "bot_id": "28c07s07",
+      "bot_name": "Sodium Limits (1500-2000mg/day)",
+      "file": "bot_28_co_07_sub_07_sodium_limits_1500_2000mg_day.json"
+    },
+    {
+      "bot_id": "28c07s08",
+      "bot_name": "DASH Diet Specifics",
+      "file": "bot_28_co_07_sub_08_dash_diet_specifics.json"
+    },
+    {
+      "bot_id": "28c07s09",
+      "bot_name": "MI",
+      "file": "bot_28_co_07_sub_09_mi.json"
+    },
+    {
+      "bot_id": "28c07s10",
+      "bot_name": "CHF",
+      "file": "bot_28_co_07_sub_10_chf.json"
+    },
+    {
+      "bot_id": "28c07s11",
+      "bot_name": "HTN",
+      "file": "bot_28_co_07_sub_11_htn.json"
+    }
+  ],
+  "total_sub_department_bots": 11
 }
