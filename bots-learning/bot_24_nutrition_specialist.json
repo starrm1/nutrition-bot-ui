@@ -485,7 +485,7 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 30,
+  "progress_percentage": 40,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -610,6 +610,10 @@
     {
       "date": "2026-04-12",
       "entry": "Progress update: Completed enteral and parenteral nutrition support route study including all enteral access device types (NG, NJ, G, J, PEG, PEJ) and parenteral routes (peripheral, central). Built working knowledge of TPN components, monitoring parameters, and refeeding syndrome prevention and management. Completed disease-specific formula selection for Renal, Hepatic, Pulmonary, Diabetic, and Immune-Enhancing conditions. Reviewed metabolic calculation equations (Harris-Benedict, Mifflin-St Jeor, Penn State, Ireton-Jones) and calorie adjustment factors. Progress advanced to 30%."
+    },
+    {
+      "date": "2026-04-17",
+      "entry": "Progress update (2026-04-17): Advanced through macronutrient metabolism modules and clinical nutrition assessment frameworks. Completed study of enteral and parenteral nutrition fundamentals. Co-department bots reporting 5% initial progress. Sub-department bots at 3% initial engagement. Department progress advanced to 40%."
     }
   ],
   "phase_order": [

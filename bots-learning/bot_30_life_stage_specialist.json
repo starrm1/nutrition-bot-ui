@@ -266,7 +266,7 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 0,
+  "progress_percentage": 10,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -364,6 +364,10 @@
     {
       "date": "2026-04-12",
       "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Life Stage Nutrition Science department (Department 8). Knowledge domains assigned from mind map covering: Geriatric Nutrition (12 topics: Special Needs, Athletic Nutrition, Dementia Feeding Strategies, Fixed Income, Social Isolation, Polypharmacy, Dysphagia Risk, Fiber for Constipation, Vitamin D/Calcium for Osteoporosis, Vitamin B12 Deficiency, Increased Protein, Decreased Calorie Needs), Lactation Nutrition (5 topics), Pregnancy Nutrition (8 topics including Gestational Diabetes and Preeclampsia Diet), and Pediatric Nutrition (4 sub-stages: Infants 7 topics, Toddlers 6 topics, Children 4 topics, Adolescents 7 topics). Two co-department specialists activated: Pediatric & Adolescent Nutrition Specialist (30a) and Maternal & Geriatric Nutrition Specialist (30b). Both in independent learning phase. Reporting daily progress to Copilot (who reports to starrm1 on request). Learning never stops. Progress: 0%."
+    },
+    {
+      "date": "2026-04-17",
+      "entry": "Progress update (2026-04-17): Active learning resumed. Completed foundational study of pediatric nutrition from infancy through adolescence. Began review of maternal nutrition including pregnancy weight gain guidelines and lactation caloric requirements. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 10%."
     }
   ],
   "copilot_maintains_learning": true,
@@ -374,6 +378,10 @@
       "co_specialist_1_progress": 0,
       "co_specialist_2_progress": 0,
       "summary": "All members initiated independent learning phase. Domains assigned and study begun."
+    },
+    "2026-04-17": {
+      "leader_progress": 10,
+      "summary": "Progress update (2026-04-17): Active learning resumed. Completed foundational study of pediatric nutrition from infancy through adolescence. Began review of maternal nutrition including pregnancy weight gain guidelines and lactation caloric requirements. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 10%."
     }
   },
   "phase_order": [

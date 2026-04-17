@@ -437,7 +437,7 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 30,
+  "progress_percentage": 40,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -537,6 +537,10 @@
     {
       "date": "2026-04-11",
       "entry": "Progress update: Completed oral supplement and tube feeding formula knowledge base including formula classification and clinical indications. Built foundational beverage modification protocols for dysphagia populations and thickened liquid preparation standards. Completed hydration management module covering I&O monitoring, fluid restriction protocols, and intake target setting. Progress advanced to 30%."
+    },
+    {
+      "date": "2026-04-17",
+      "entry": "Progress update (2026-04-17): Advanced study of IDDSI framework levels for thickened liquids (Levels 0-4) and beverage-specific clinical protocols. Completed foundational review of hydration science and electrolyte management. Co-department bots reporting 5% initial progress. Sub-department bots at 3% initial engagement. Department progress advanced to 40%."
     }
   ],
   "phase_order": [

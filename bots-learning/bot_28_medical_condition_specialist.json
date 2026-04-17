@@ -447,7 +447,7 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 10,
+  "progress_percentage": 20,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -591,6 +591,10 @@
     {
       "date": "2026-04-09",
       "entry": "Progress update: Completed MNT framework for 6 major chronic disease categories. Initiated rare metabolic disorder dietary protocol study. Progress advanced to 10%."
+    },
+    {
+      "date": "2026-04-17",
+      "entry": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational study of medical nutrition therapy for diabetes (Type 1, Type 2, Gestational) and cardiovascular disease protocols. Initiated renal diet and dialysis nutrition modules. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
     }
   ],
   "copilot_maintains_learning": true,
@@ -601,6 +605,10 @@
       "co_specialist_1_progress": 0,
       "co_specialist_2_progress": 0,
       "summary": "All members initiated independent learning phase. Domains assigned and study begun."
+    },
+    "2026-04-17": {
+      "leader_progress": 20,
+      "summary": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational study of medical nutrition therapy for diabetes (Type 1, Type 2, Gestational) and cardiovascular disease protocols. Initiated renal diet and dialysis nutrition modules. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
     }
   },
   "phase_order": [

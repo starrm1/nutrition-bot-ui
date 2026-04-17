@@ -424,7 +424,7 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 10,
+  "progress_percentage": 20,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -522,6 +522,10 @@
     {
       "date": "2026-04-09",
       "entry": "Progress update: Completed IDDSI framework and texture testing method modules. Initiated dysphagia assessment and texture modification recipe development. Progress advanced to 10%."
+    },
+    {
+      "date": "2026-04-17",
+      "entry": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational overview of IDDSI framework (Levels 0-7) and dysphagia screening protocols. Initiated study of texture modification techniques and equipment. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
     }
   ],
   "phase_order": [

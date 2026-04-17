@@ -515,7 +515,7 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 10,
+  "progress_percentage": 20,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase": "independent_learning",
@@ -634,6 +634,10 @@
     {
       "date": "2026-04-09",
       "entry": "Progress update: Completed major allergen cataloguing and IgE vs. non-IgE mechanism study. Initiated elimination diet and oral food challenge protocol development. Progress advanced to 10%."
+    },
+    {
+      "date": "2026-04-17",
+      "entry": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational study of the Big 9 allergens and immune response mechanisms. Initiated cross-reactivity and food label reading modules. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
     }
   ],
   "phase_order": [
