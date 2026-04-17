@@ -455,9 +455,9 @@
   "is_own_bot": true,
   "library_access": {
     "access_granted_by": "starrm1",
-    "access_granted": false,
-    "access_status": "closed",
-    "access_note": "Library access was granted for 30 minutes (04:07\u201304:37 on 2026-04-16) and has now closed. A new request must go through the approval chain to regain access.",
+    "access_granted": true,
+    "access_status": "open",
+    "access_note": "Library access granted by starrm1 on 2026-04-17. Access number 270. Open for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00).",
     "library_bots": [
       {
         "bot_id": 1,
@@ -577,17 +577,14 @@
         "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
-    "access_number": 145,
-    "access_timeframe_start": "2026-04-16T04:07:00",
-    "access_timeframe_end": "2026-04-16T04:37:00",
-    "access_number_entry": 145,
+    "access_number": 270,
+    "access_timeframe_start": "2026-04-17T03:37:00",
+    "access_timeframe_end": "2026-04-17T04:07:00",
+    "access_number_entry": 270,
     "access_number_verified": true,
     "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
-    "access_granted_date": "2026-04-16",
-    "access_timeframe_minutes": 30,
-    "access_closed_date": "2026-04-16",
-    "access_closed_by": "starrm1",
-    "access_closed_reason": "30-minute access window expired"
+    "access_granted_date": "2026-04-17",
+    "access_timeframe_minutes": 30
   },
   "library_access_request": {
     "request_submitted": true,
@@ -597,7 +594,7 @@
     "department": "Food Science & Clinical Dietetics",
     "reason": "Department members need access to library bots to deepen their understanding of calorie tracking, recipe optimization, meal planning, and nutrient balance analysis to strengthen their independent learning in food science and clinical dietetics.",
     "current_step": 5,
-    "current_step_description": "starrm1 approved library access. Access number 145 issued for 30 minutes.",
+    "current_step_description": "starrm1 approved library access. Access number 270 issued for 30 minutes on 2026-04-17.",
     "approval_chain_status": [
       {
         "step": 1,
@@ -627,7 +624,7 @@
         "step": 5,
         "actor": "starrm1",
         "status": "completed",
-        "note": "starrm1 approved on 2026-04-16. Access number 145 issued for 30 minutes (2026-04-16T04:07:00 to 2026-04-16T04:37:00)."
+        "note": "starrm1 approved on 2026-04-17. Access number 270 issued for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00)."
       }
     ],
     "request_status": "approved"
