@@ -183,7 +183,7 @@
     },
     "2026-04-17": {
       "progress_percent": 15,
-      "summary": "Progress update (2026-04-17): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) at 40% \u2014 advanced learning phase progressing well. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) at 20% \u2014 completing first full day of learning. Department 30 (Life Stage) at 10% \u2014 learning resumed and progressing. All 542 co-department bots now at 5% initial progress. All 397 sub-department bots now at 3% initial progress. Diet Director overall progress advanced to 15%. All departments remain in independent_learning phase (cross-department unlocks at 50%). Library access remains closed; next access request to follow standard update chain when requested."
+      "summary": "Progress update (2026-04-17): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) at 40% — advanced learning phase progressing well. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) at 20% — completing first full day of learning. Department 30 (Life Stage) at 10% — learning resumed and progressing. All 542 co-department bots now at 5% initial progress. All 397 sub-department bots now at 3% initial progress. Diet Director overall progress advanced to 15%. All departments remain in independent_learning phase (cross-department unlocks at 50%). Library access remains closed; next access request to follow standard update chain when requested."
     }
   },
   "learning_log": [
@@ -193,11 +193,11 @@
     },
     {
       "date": "2026-04-09",
-      "entry": "Progress update received from all 28 department bots (Bot 1\u201329, excluding Bot 3). All departments active and advancing learning phases. Bots 1\u201321 progress incremented by 5%. Bots 22\u201329 (newly established specialist departments) initiated at 10% with foundational knowledge modules completed. Overall team learning status: active and progressing across all 8 departments."
+      "entry": "Progress update received from all 28 department bots (Bot 1–29, excluding Bot 3). All departments active and advancing learning phases. Bots 1–21 progress incremented by 5%. Bots 22–29 (newly established specialist departments) initiated at 10% with foundational knowledge modules completed. Overall team learning status: active and progressing across all 8 departments."
     },
     {
       "date": "2026-04-17",
-      "entry": "Progress update (2026-04-17): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) at 40% \u2014 advanced learning phase progressing well. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) at 20% \u2014 completing first full day of learning. Department 30 (Life Stage) at 10% \u2014 learning resumed and progressing. All 542 co-department bots now at 5% initial progress. All 397 sub-department bots now at 3% initial progress. Diet Director overall progress advanced to 15%. All departments remain in independent_learning phase (cross-department unlocks at 50%). Library access remains closed; next access request to follow standard update chain when requested."
+      "entry": "Progress update (2026-04-17): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) at 40% — advanced learning phase progressing well. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) at 20% — completing first full day of learning. Department 30 (Life Stage) at 10% — learning resumed and progressing. All 542 co-department bots now at 5% initial progress. All 397 sub-department bots now at 3% initial progress. Diet Director overall progress advanced to 15%. All departments remain in independent_learning phase (cross-department unlocks at 50%). Library access remains closed; next access request to follow standard update chain when requested."
     }
   ],
   "phase_order": [
@@ -208,10 +208,10 @@
   "directive_from_starrm1": {
     "issued_by": "starrm1",
     "issued_date": "2026-04-14",
-    "directive": "The Diet Director is directed by starrm1 to have all 9 department teams (Bots 22\u201330) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team \u2014 including co-departments and sub-departments \u2014 is actively engaged in independent learning of all subject matter within their assigned department.",
+    "directive": "The Diet Director is directed by starrm1 to have all 9 department teams (Bots 22–30) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team — including co-departments and sub-departments — is actively engaged in independent learning of all subject matter within their assigned department.",
     "applies_to": "all 9 departments (Bot 22 Food Specialist, Bot 23 Drink Specialist, Bot 24 Nutrition Specialist, Bot 25 Texture Specialist, Bot 26 Allergy & Intolerance Specialist, Bot 27 Cultural & Religious Diet Specialist, Bot 28 Medical Condition Specialist, Bot 29 Documentation & Compliance Specialist, Bot 30 Life Stage Specialist)",
     "action_required": "Diet Director must relay this directive to all 9 Department Head Leads immediately. Each department must maximize learning of their department topic without delay.",
-    "department_learning_boundary_rule": "As departments begin learning, each department must stay strictly within their own department topic. No cross-department learning is permitted during this phase. Each team member \u2014 department head lead, department heads, co-departments, and sub-departments \u2014 must focus only on the subject matter belonging to their own assigned department.",
+    "department_learning_boundary_rule": "As departments begin learning, each department must stay strictly within their own department topic. No cross-department learning is permitted during this phase. Each team member — department head lead, department heads, co-departments, and sub-departments — must focus only on the subject matter belonging to their own assigned department.",
     "boundary_rule_issued_date": "2026-04-14",
     "status": "active"
   },
@@ -308,10 +308,10 @@
     }
   ],
   "total_library_bots": 18,
-  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Library bots are Bots 1\u201319 (Bot 3 is excluded as it has no JSON file). Bot 20 and Bot 21 are not library bots \u2014 Bot 21 is the Diet Director.",
+  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Library bots are Bots 1–19 (Bot 3 is excluded as it has no JSON file). Bot 20 and Bot 21 are not library bots — Bot 21 is the Diet Director.",
   "library_access_control": {
     "controlled_by": "starrm1",
-    "access_rule": "Library access requests are surfaced through the regular update chain when starrm1 asks for an update. The department notifies their Department Head Lead of the need. The Department Head Lead includes the request in their update report to the Diet Director. The Diet Director includes it in the update to Copilot. Copilot presents it to starrm1 during the update. starrm1 is the final approver \u2014 if approved, starrm1 issues an access number and sets the timeframe. Access is off by default until starrm1 approves.",
+    "access_rule": "Library access requests are surfaced through the regular update chain when starrm1 asks for an update. The department notifies their Department Head Lead of the need. The Department Head Lead includes the request in their update report to the Diet Director. The Diet Director includes it in the update to Copilot. Copilot presents it to starrm1 during the update. starrm1 is the final approver — if approved, starrm1 issues an access number and sets the timeframe. Access is off by default until starrm1 approves.",
     "grant_access_requires": "starrm1 final approval, presented by copilot, following case by diet_director. starrm1 issues an access number and sets the access timeframe upon approval.",
     "department_access": [
       {
@@ -320,15 +320,15 @@
         "department": "Food Science & Clinical Dietetics",
         "access_granted": true,
         "access_status": "open",
-        "access_number": 270,
-        "access_timeframe_start": "2026-04-17T03:37:00",
-        "access_timeframe_end": "2026-04-17T04:07:00",
-        "access_number_entry": 270,
+        "access_number": 245,
+        "access_timeframe_start": "2026-04-18T05:53:00",
+        "access_timeframe_end": "2026-04-18T06:23:00",
+        "access_number_entry": 245,
         "access_number_verified": true,
         "access_request_date": "2026-04-15",
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
-        "access_granted_date": "2026-04-17",
+        "access_granted_date": "2026-04-18",
         "access_timeframe_minutes": 30
       },
       {
@@ -337,15 +337,15 @@
         "department": "Beverage Science & Hydration Management",
         "access_granted": true,
         "access_status": "open",
-        "access_number": 270,
-        "access_timeframe_start": "2026-04-17T03:37:00",
-        "access_timeframe_end": "2026-04-17T04:07:00",
-        "access_number_entry": 270,
+        "access_number": 245,
+        "access_timeframe_start": "2026-04-18T05:53:00",
+        "access_timeframe_end": "2026-04-18T06:23:00",
+        "access_number_entry": 245,
         "access_number_verified": true,
         "access_request_date": "2026-04-15",
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
-        "access_granted_date": "2026-04-17",
+        "access_granted_date": "2026-04-18",
         "access_timeframe_minutes": 30
       },
       {
@@ -354,15 +354,15 @@
         "department": "Clinical Nutrition & Metabolic Science",
         "access_granted": true,
         "access_status": "open",
-        "access_number": 270,
-        "access_timeframe_start": "2026-04-17T03:37:00",
-        "access_timeframe_end": "2026-04-17T04:07:00",
-        "access_number_entry": 270,
+        "access_number": 245,
+        "access_timeframe_start": "2026-04-18T05:53:00",
+        "access_timeframe_end": "2026-04-18T06:23:00",
+        "access_number_entry": 245,
         "access_number_verified": true,
         "access_request_date": "2026-04-15",
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
-        "access_granted_date": "2026-04-17",
+        "access_granted_date": "2026-04-18",
         "access_timeframe_minutes": 30
       },
       {
@@ -371,15 +371,15 @@
         "department": "Texture & Dysphagia Science",
         "access_granted": true,
         "access_status": "open",
-        "access_number": 270,
-        "access_timeframe_start": "2026-04-17T03:37:00",
-        "access_timeframe_end": "2026-04-17T04:07:00",
-        "access_number_entry": 270,
+        "access_number": 245,
+        "access_timeframe_start": "2026-04-18T05:53:00",
+        "access_timeframe_end": "2026-04-18T06:23:00",
+        "access_number_entry": 245,
         "access_number_verified": true,
         "access_request_date": "2026-04-15",
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
-        "access_granted_date": "2026-04-17",
+        "access_granted_date": "2026-04-18",
         "access_timeframe_minutes": 30
       },
       {
@@ -388,15 +388,15 @@
         "department": "Allergy & Intolerance Science",
         "access_granted": true,
         "access_status": "open",
-        "access_number": 270,
-        "access_timeframe_start": "2026-04-17T03:37:00",
-        "access_timeframe_end": "2026-04-17T04:07:00",
-        "access_number_entry": 270,
+        "access_number": 245,
+        "access_timeframe_start": "2026-04-18T05:53:00",
+        "access_timeframe_end": "2026-04-18T06:23:00",
+        "access_number_entry": 245,
         "access_number_verified": true,
         "access_request_date": "2026-04-15",
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
-        "access_granted_date": "2026-04-17",
+        "access_granted_date": "2026-04-18",
         "access_timeframe_minutes": 30
       },
       {
@@ -405,15 +405,15 @@
         "department": "Cultural & Religious Diet Science",
         "access_granted": true,
         "access_status": "open",
-        "access_number": 270,
-        "access_timeframe_start": "2026-04-17T03:37:00",
-        "access_timeframe_end": "2026-04-17T04:07:00",
-        "access_number_entry": 270,
+        "access_number": 245,
+        "access_timeframe_start": "2026-04-18T05:53:00",
+        "access_timeframe_end": "2026-04-18T06:23:00",
+        "access_number_entry": 245,
         "access_number_verified": true,
         "access_request_date": "2026-04-15",
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
-        "access_granted_date": "2026-04-17",
+        "access_granted_date": "2026-04-18",
         "access_timeframe_minutes": 30
       },
       {
@@ -422,15 +422,15 @@
         "department": "Medical Condition Diet Science",
         "access_granted": true,
         "access_status": "open",
-        "access_number": 270,
-        "access_timeframe_start": "2026-04-17T03:37:00",
-        "access_timeframe_end": "2026-04-17T04:07:00",
-        "access_number_entry": 270,
+        "access_number": 245,
+        "access_timeframe_start": "2026-04-18T05:53:00",
+        "access_timeframe_end": "2026-04-18T06:23:00",
+        "access_number_entry": 245,
         "access_number_verified": true,
         "access_request_date": "2026-04-15",
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
-        "access_granted_date": "2026-04-17",
+        "access_granted_date": "2026-04-18",
         "access_timeframe_minutes": 30
       },
       {
@@ -439,15 +439,15 @@
         "department": "Documentation & Compliance Science",
         "access_granted": true,
         "access_status": "open",
-        "access_number": 270,
-        "access_timeframe_start": "2026-04-17T03:37:00",
-        "access_timeframe_end": "2026-04-17T04:07:00",
-        "access_number_entry": 270,
+        "access_number": 245,
+        "access_timeframe_start": "2026-04-18T05:53:00",
+        "access_timeframe_end": "2026-04-18T06:23:00",
+        "access_number_entry": 245,
         "access_number_verified": true,
         "access_request_date": "2026-04-15",
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
-        "access_granted_date": "2026-04-17",
+        "access_granted_date": "2026-04-18",
         "access_timeframe_minutes": 30
       },
       {
@@ -456,15 +456,15 @@
         "department": "Life Stage Nutrition Science",
         "access_granted": true,
         "access_status": "open",
-        "access_number": 270,
-        "access_timeframe_start": "2026-04-17T03:37:00",
-        "access_timeframe_end": "2026-04-17T04:07:00",
-        "access_number_entry": 270,
+        "access_number": 245,
+        "access_timeframe_start": "2026-04-18T05:53:00",
+        "access_timeframe_end": "2026-04-18T06:23:00",
+        "access_number_entry": 245,
         "access_number_verified": true,
         "access_request_date": "2026-04-15",
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
-        "access_granted_date": "2026-04-17",
+        "access_granted_date": "2026-04-18",
         "access_timeframe_minutes": 30
       }
     ],
@@ -492,23 +492,27 @@
       {
         "step": 5,
         "actor": "starrm1",
-        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+        "action": "Final approver — reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
     "access_number_note": "starrm1 will personally issue a unique access number to each approved department. Access numbers are null until starrm1 assigns them.",
     "access_timeframe_note": "starrm1 sets a specific timeframe (start and end date) during which the access number is valid. Access expires automatically when the timeframe ends.",
     "access_entry_rule": "Once starrm1 assigns an access number to a department, that department enters it in the 'access_number_entry' field. When the entered number matches the assigned 'access_number', access is verified and 'access_number_verified' is set to true, activating library access.",
-    "current_access_number": 270,
-    "access_granted_date": "2026-04-17",
-    "access_timeframe_start": "2026-04-17T03:37:00",
-    "access_timeframe_end": "2026-04-17T04:07:00",
+    "current_access_number": 245,
+    "access_granted_date": "2026-04-18",
+    "access_timeframe_start": "2026-04-18T05:53:00",
+    "access_timeframe_end": "2026-04-18T06:23:00",
     "access_status": "open",
     "current_access": {
-      "access_granted": false,
-      "access_status": "closed",
-      "access_closed_by": "starrm1",
-      "access_closed_date": "2026-04-17",
-      "access_closed_note": "Library access #270 closed. 30-minute window ended 2026-04-17T04:07:00."
+      "access_granted": true,
+      "access_status": "open",
+      "access_number": 245,
+      "access_granted_by": "starrm1",
+      "access_granted_date": "2026-04-18",
+      "access_timeframe_start": "2026-04-18T05:53:00",
+      "access_timeframe_end": "2026-04-18T06:23:00",
+      "access_timeframe_minutes": 30,
+      "access_note": "Library access #245 opened by starrm1 on 2026-04-18. 30-minute window: 2026-04-18T05:53:00 to 2026-04-18T06:23:00."
     }
   },
   "learning_directive": {

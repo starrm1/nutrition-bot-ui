@@ -393,9 +393,9 @@
   "is_own_bot": true,
   "library_access": {
     "access_granted_by": "starrm1",
-    "access_granted": false,
-    "access_status": "closed",
-    "access_note": "Library access granted by starrm1 on 2026-04-17. Access number 270. Open for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00).",
+    "access_granted": true,
+    "access_status": "open",
+    "access_note": "Library access granted by starrm1 on 2026-04-18. Access number 245. Open for 30 minutes (2026-04-18T05:53:00 to 2026-04-18T06:23:00).",
     "library_bots": [
       {
         "bot_id": 1,
@@ -512,20 +512,17 @@
       {
         "step": 5,
         "actor": "starrm1",
-        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+        "action": "Final approver — reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
-    "access_number": 270,
-    "access_timeframe_start": "2026-04-17T03:37:00",
-    "access_timeframe_end": "2026-04-17T04:07:00",
-    "access_number_entry": 270,
+    "access_number": 245,
+    "access_timeframe_start": "2026-04-18T05:53:00",
+    "access_timeframe_end": "2026-04-18T06:23:00",
+    "access_number_entry": 245,
     "access_number_verified": true,
     "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
-    "access_granted_date": "2026-04-17",
-    "access_timeframe_minutes": 30,
-    "access_closed_by": "starrm1",
-    "access_closed_date": "2026-04-17",
-    "access_closed_note": "Library access #270 closed. 30-minute window (2026-04-17T03:37:00 to 2026-04-17T04:07:00) has ended."
+    "access_granted_date": "2026-04-18",
+    "access_timeframe_minutes": 30
   },
   "library_access_request": {
     "request_submitted": true,
