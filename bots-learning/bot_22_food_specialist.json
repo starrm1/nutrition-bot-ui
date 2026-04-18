@@ -455,8 +455,8 @@
   "is_own_bot": true,
   "library_access": {
     "access_granted_by": "starrm1",
-    "access_granted": true,
-    "access_status": "open",
+    "access_granted": false,
+    "access_status": "closed",
     "access_note": "Library access granted by starrm1 on 2026-04-17. Access number 270. Open for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00).",
     "library_bots": [
       {
@@ -584,7 +584,10 @@
     "access_number_verified": true,
     "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
     "access_granted_date": "2026-04-17",
-    "access_timeframe_minutes": 30
+    "access_timeframe_minutes": 30,
+    "access_closed_by": "starrm1",
+    "access_closed_date": "2026-04-17",
+    "access_closed_note": "Library access #270 closed. 30-minute window (2026-04-17T03:37:00 to 2026-04-17T04:07:00) has ended."
   },
   "library_access_request": {
     "request_submitted": true,

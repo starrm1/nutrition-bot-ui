@@ -502,7 +502,14 @@
     "access_granted_date": "2026-04-17",
     "access_timeframe_start": "2026-04-17T03:37:00",
     "access_timeframe_end": "2026-04-17T04:07:00",
-    "access_status": "open"
+    "access_status": "open",
+    "current_access": {
+      "access_granted": false,
+      "access_status": "closed",
+      "access_closed_by": "starrm1",
+      "access_closed_date": "2026-04-17",
+      "access_closed_note": "Library access #270 closed. 30-minute window ended 2026-04-17T04:07:00."
+    }
   },
   "learning_directive": {
     "directive": "starrm1 directed Diet Director: departments do need to start learning",
