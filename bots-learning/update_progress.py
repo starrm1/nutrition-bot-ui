@@ -100,7 +100,8 @@ def update_bot(filepath: str) -> bool:
             ),
         }
         _append_log(data, log_entry)
-        _write_bot(filepath, data)
+        if not _write_bot(filepath, data):
+            return False
         print(
             f"Fixed {os.path.basename(filepath)}: status corrected to "
             f"{STATUS_COMPLETE} (progress was {progress}%)"

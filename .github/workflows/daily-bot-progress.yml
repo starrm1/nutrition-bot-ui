@@ -33,5 +33,5 @@ jobs:
             echo "No changes to commit — all bots are up to date."
           else
             git commit -m "chore: daily bot learning progress update $(date -u +%Y-%m-%d)"
-            git push
+            git push origin HEAD
           fi
