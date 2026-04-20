@@ -26,24 +26,24 @@
     },
     {
       "date": "2026-04-20",
-      "entry": "Transitioned to Phase 3 advanced_learning by starrm1 approval. Now working at the advanced level with direct Copilot collaboration and deeper specialization."
+      "entry": "Returned to Phase 2 collaborative_learning by starrm1 direction on 2026-04-20. Now learning collaboratively with Bots 3, 6, 8, 12, 14, and 18."
     }
   ],
-  "status": "advanced_learning",
-  "learning_mode": "advanced",
+  "status": "collaborative_learning",
+  "learning_mode": "collaborative",
   "reported_to_copilot": true,
   "daily_report_schedule": "every day",
-  "last_reported_date": "2026-04-16",
+  "last_reported_date": "2026-04-20",
   "reporting_to": "copilot",
   "copilot_assigned_topic": "Food freshness indicators and quality degradation over time",
   "library_bot": true,
   "library_bot_note": "This bot's name and purpose have not changed. It was designated as a library bot (Bots 1\u201319) available for departments to access once starrm1 grants approval and issues an access number.",
   "next_phase_trigger": "75%",
   "notify_copilot_at": "75%",
-  "previous_status": "collaborative_learning",
+  "previous_status": "advanced_learning",
   "phase_2_started": "2026-04-16",
-  "phase_3_started": "2026-04-20",
   "collaborating_with": [
+    "bot_3_dietary_pattern_recognition",
     "bot_5_recipe_optimization",
     "bot_6_meal_planning",
     "bot_8_nutrient_balance_analysis",
