@@ -39,5 +39,7 @@
       "file": "bot_29_co_11_sub_01_aspen_and_criteria.json"
     }
   ],
-  "total_sub_department_bots": 1
+  "total_sub_department_bots": 1,
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }

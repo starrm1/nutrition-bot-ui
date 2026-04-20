@@ -1,956 +1,958 @@
 {
-    "bot_id": 29,
-    "bot_name": "Documentation & Compliance Specialist",
-    "knowledge_map_title": "Documentation & Compliance Specialist",
-    "bot_name_locked": true,
-    "bot_name_change_requires_approval_from": "starrm1",
-    "team": "Documentation & Compliance Specialist",
-    "department": "Documentation & Compliance Science",
-    "department_name_locked": true,
-    "department_name_change_requires_approval_from": "starrm1",
-    "co_department_name_locked": true,
-    "co_department_name_change_requires_approval_from": "starrm1",
-    "sub_department_name_locked": true,
-    "sub_department_name_change_requires_approval_from": "starrm1",
-    "is_department_leader": true,
-    "department_structure": {
-        "department_number": 9,
-        "department_name": "Documentation & Compliance Science",
-        "department_head_lead_bot": "Bot 29 - Documentation & Compliance Specialist",
-        "total_co_departments": 25,
-        "total_sub_departments": 63,
-        "chain_of_command": [
-            "starrm1",
-            "copilot",
-            "diet_director",
-            "department_head_lead",
-            "department_head",
-            "co_department",
-            "sub_department"
-        ],
-        "co_department_bot_supervisors": [
-            "29a",
-            "29b"
-        ],
-        "co_departments": [
-            {
-                "name": "Incident Reporting",
-                "sub_departments": [
-                    "Allergic Reactions",
-                    "Aspiration",
-                    "Choking",
-                    "Diet Errors"
-                ]
-            },
-            {
-                "name": "Quality Metrics",
-                "sub_departments": [
-                    "Patient Satisfaction",
-                    "Diet Order Accuracy",
-                    "RD Assessment Within 48 Hours",
-                    "Malnutrition Screening Within 24 Hours"
-                ]
-            },
-            {
-                "name": "Regulatory Standards",
-                "sub_departments": [
-                    "State Health Department",
-                    "CMS",
-                    "Joint Commission"
-                ]
-            },
-            {
-                "name": "Interdisciplinary Rounds",
-                "sub_departments": [
-                    "Pharmacy",
-                    "SW",
-                    "SLP",
-                    "OT",
-                    "PT",
-                    "RD",
-                    "RN",
-                    "MD"
-                ]
-            },
-            {
-                "name": "Labs to Monitor",
-                "sub_departments": [
-                    "Liver Enzymes",
-                    "CBC",
-                    "Electrolytes",
-                    "Creatinine",
-                    "BUN",
-                    "Glucose",
-                    "CRP",
-                    "Transferrin",
-                    "Prealbumin",
-                    "Albumin"
-                ]
-            },
-            {
-                "name": "Weights",
-                "sub_departments": [
-                    "Weekly",
-                    "Daily",
-                    "Admission"
-                ]
-            },
-            {
-                "name": "Output Documentation",
-                "sub_departments": [
-                    "Drain Output",
-                    "Emesis",
-                    "Stool",
-                    "Urine"
-                ]
-            },
-            {
-                "name": "Intake Documentation",
-                "sub_departments": [
-                    "Protein Count",
-                    "Calorie Count",
-                    "Percentage Consumed"
-                ]
-            },
-            {
-                "name": "Diet Order Components",
-                "sub_departments": [
-                    "Allergies",
-                    "Restrictions",
-                    "Supplements",
-                    "Fluid Consistency",
-                    "Texture",
-                    "Diet Type"
-                ]
-            },
-            {
-                "name": "Malnutrition Severity",
-                "sub_departments": [
-                    "Severe",
-                    "Moderate",
-                    "Mild"
-                ]
-            },
-            {
-                "name": "Malnutrition Diagnosis",
-                "sub_departments": [
-                    "ASPEN/AND Criteria"
-                ]
-            },
-            {
-                "name": "Nutrition Diagnosis Taxonomy",
-                "sub_departments": [
-                    "Behavioral/Environmental",
-                    "Clinical",
-                    "Intake"
-                ]
-            },
-            {
-                "name": "PES Statements",
-                "sub_departments": [
-                    "Signs/Symptoms",
-                    "Etiology",
-                    "Problem"
-                ]
-            },
-            {
-                "name": "ADIME Format",
-                "sub_departments": [
-                    "Monitoring/Evaluation",
-                    "Intervention",
-                    "Diagnosis",
-                    "Assessment"
-                ]
-            },
-            {
-                "name": "SOAP Format",
-                "sub_departments": [
-                    "Plan",
-                    "Assessment",
-                    "Objective",
-                    "Subjective"
-                ]
-            },
-            {
-                "name": "Patient Education Documentation",
-                "sub_departments": []
-            },
-            {
-                "name": "Audit and Variance Reporting",
-                "sub_departments": []
-            },
-            {
-                "name": "Quality Improvement Metrics",
-                "sub_departments": []
-            },
-            {
-                "name": "Regulatory Compliance",
-                "sub_departments": []
-            },
-            {
-                "name": "Interdisciplinary Communication",
-                "sub_departments": []
-            },
-            {
-                "name": "Care Plan Development",
-                "sub_departments": []
-            },
-            {
-                "name": "Nutritional Screening and Assessment Forms",
-                "sub_departments": []
-            },
-            {
-                "name": "Intake/Output Tracking",
-                "sub_departments": []
-            },
-            {
-                "name": "Diet Order Verification",
-                "sub_departments": []
-            },
-            {
-                "name": "Medical Record Documentation",
-                "sub_departments": []
-            }
-        ],
-        "co_department_bot_ids": [
-            "29c01",
-            "29c02",
-            "29c03",
-            "29c04",
-            "29c05",
-            "29c06",
-            "29c07",
-            "29c08",
-            "29c09",
-            "29c10",
-            "29c11",
-            "29c12",
-            "29c13",
-            "29c14",
-            "29c15",
-            "29c16",
-            "29c17",
-            "29c18",
-            "29c19",
-            "29c20",
-            "29c21",
-            "29c22",
-            "29c23",
-            "29c24",
-            "29c25"
-        ]
-    },
+  "bot_id": 29,
+  "bot_name": "Documentation & Compliance Specialist",
+  "knowledge_map_title": "Documentation & Compliance Specialist",
+  "bot_name_locked": true,
+  "bot_name_change_requires_approval_from": "starrm1",
+  "team": "Documentation & Compliance Specialist",
+  "department": "Documentation & Compliance Science",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "sub_department_name_locked": true,
+  "sub_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "department_structure": {
     "department_number": 9,
+    "department_name": "Documentation & Compliance Science",
+    "department_head_lead_bot": "Bot 29 - Documentation & Compliance Specialist",
     "total_co_departments": 25,
     "total_sub_departments": 63,
-    "co_department_members": [
-        {
-            "name": "Incident Reporting",
-            "sub_departments": [
-                "Allergic Reactions",
-                "Aspiration",
-                "Choking",
-                "Diet Errors"
-            ]
-        },
-        {
-            "name": "Quality Metrics",
-            "sub_departments": [
-                "Patient Satisfaction",
-                "Diet Order Accuracy",
-                "RD Assessment Within 48 Hours",
-                "Malnutrition Screening Within 24 Hours"
-            ]
-        },
-        {
-            "name": "Regulatory Standards",
-            "sub_departments": [
-                "State Health Department",
-                "CMS",
-                "Joint Commission"
-            ]
-        },
-        {
-            "name": "Interdisciplinary Rounds",
-            "sub_departments": [
-                "Pharmacy",
-                "SW",
-                "SLP",
-                "OT",
-                "PT",
-                "RD",
-                "RN",
-                "MD"
-            ]
-        },
-        {
-            "name": "Labs to Monitor",
-            "sub_departments": [
-                "Liver Enzymes",
-                "CBC",
-                "Electrolytes",
-                "Creatinine",
-                "BUN",
-                "Glucose",
-                "CRP",
-                "Transferrin",
-                "Prealbumin",
-                "Albumin"
-            ]
-        },
-        {
-            "name": "Weights",
-            "sub_departments": [
-                "Weekly",
-                "Daily",
-                "Admission"
-            ]
-        },
-        {
-            "name": "Output Documentation",
-            "sub_departments": [
-                "Drain Output",
-                "Emesis",
-                "Stool",
-                "Urine"
-            ]
-        },
-        {
-            "name": "Intake Documentation",
-            "sub_departments": [
-                "Protein Count",
-                "Calorie Count",
-                "Percentage Consumed"
-            ]
-        },
-        {
-            "name": "Diet Order Components",
-            "sub_departments": [
-                "Allergies",
-                "Restrictions",
-                "Supplements",
-                "Fluid Consistency",
-                "Texture",
-                "Diet Type"
-            ]
-        },
-        {
-            "name": "Malnutrition Severity",
-            "sub_departments": [
-                "Severe",
-                "Moderate",
-                "Mild"
-            ]
-        },
-        {
-            "name": "Malnutrition Diagnosis",
-            "sub_departments": [
-                "ASPEN/AND Criteria"
-            ]
-        },
-        {
-            "name": "Nutrition Diagnosis Taxonomy",
-            "sub_departments": [
-                "Behavioral/Environmental",
-                "Clinical",
-                "Intake"
-            ]
-        },
-        {
-            "name": "PES Statements",
-            "sub_departments": [
-                "Signs/Symptoms",
-                "Etiology",
-                "Problem"
-            ]
-        },
-        {
-            "name": "ADIME Format",
-            "sub_departments": [
-                "Monitoring/Evaluation",
-                "Intervention",
-                "Diagnosis",
-                "Assessment"
-            ]
-        },
-        {
-            "name": "SOAP Format",
-            "sub_departments": [
-                "Plan",
-                "Assessment",
-                "Objective",
-                "Subjective"
-            ]
-        },
-        {
-            "name": "Patient Education Documentation",
-            "sub_departments": []
-        },
-        {
-            "name": "Audit and Variance Reporting",
-            "sub_departments": []
-        },
-        {
-            "name": "Quality Improvement Metrics",
-            "sub_departments": []
-        },
-        {
-            "name": "Regulatory Compliance",
-            "sub_departments": []
-        },
-        {
-            "name": "Interdisciplinary Communication",
-            "sub_departments": []
-        },
-        {
-            "name": "Care Plan Development",
-            "sub_departments": []
-        },
-        {
-            "name": "Nutritional Screening and Assessment Forms",
-            "sub_departments": []
-        },
-        {
-            "name": "Intake/Output Tracking",
-            "sub_departments": []
-        },
-        {
-            "name": "Diet Order Verification",
-            "sub_departments": []
-        },
-        {
-            "name": "Medical Record Documentation",
-            "sub_departments": []
-        }
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_director",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
     ],
     "co_department_bot_supervisors": [
-        {
-            "member_id": "29a",
-            "member_name": "Clinical Records Specialist",
-            "role": "Co-Department Specialist",
-            "department": "Documentation & Compliance Science",
-            "is_learning": true,
-            "phase": "independent_learning",
-            "progress_percentage": 0,
-            "progress_target": 100,
-            "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
-            "copilot_maintains_learning": true,
-            "learning_never_stops": true,
-            "assigned_knowledge_domains": {
-                "malnutrition_diagnosis": {
-                    "aspen_and_criteria": [
-                        "Grip Strength",
-                        "Intake",
-                        "Muscle Loss",
-                        "Weight Loss",
-                        "Inflammation"
-                    ]
-                },
-                "malnutrition_severity": [
-                    "Severe",
-                    "Moderate",
-                    "Mild"
-                ],
-                "nutrition_diagnosis_taxonomy": [
-                    "Behavioral/Environmental",
-                    "Clinical",
-                    "Intake"
-                ],
-                "pes_statements": [
-                    "Signs/Symptoms",
-                    "Etiology",
-                    "Problem"
-                ],
-                "adime_format": [
-                    "Monitoring/Evaluation",
-                    "Intervention",
-                    "Diagnosis",
-                    "Assessment"
-                ],
-                "soap_format": [
-                    "Plan",
-                    "Assessment",
-                    "Objective",
-                    "Subjective"
-                ],
-                "labs_to_monitor": [
-                    "Liver Enzymes",
-                    "CBC",
-                    "Electrolytes",
-                    "Creatinine",
-                    "BUN",
-                    "Glucose",
-                    "CRP",
-                    "Transferrin",
-                    "Prealbumin",
-                    "Albumin"
-                ],
-                "standalone_topics": [
-                    "Patient Education Documentation",
-                    "Audit and Variance Reporting",
-                    "Nutritional Screening and Assessment Forms",
-                    "Intake/Output Tracking",
-                    "Diet Order Verification",
-                    "Medical Record Documentation",
-                    "Care Plan Development"
-                ]
-            },
-            "current_focus_areas": "Independent study of clinical documentation formats: ADIME, SOAP, PES Statements. Malnutrition Diagnosis via ASPEN/AND Criteria. Malnutrition Severity levels. Nutrition Diagnosis Taxonomy. Labs to Monitor (10 lab values). Seven standalone clinical records topics.",
-            "learning_mode": "independent",
-            "reported_to_copilot": true,
-            "daily_report_schedule": "every day",
-            "last_reported_date": "2026-04-09",
-            "learning_log": [
-                {
-                    "date": "2026-04-09",
-                    "entry": "Independent Learning Phase initiated. Assigned to Documentation & Compliance Science as Clinical Records Specialist. Domains include ADIME, SOAP, PES Statements, Malnutrition Diagnosis/Severity, Nutrition Diagnosis Taxonomy, Labs to Monitor, and 7 standalone clinical records topics. Learning continuously under Copilot supervision. Progress: 0%."
-                }
-            ],
-            "member_name_locked": true
-        },
-        {
-            "member_id": "29b",
-            "member_name": "Quality & Regulatory Compliance Specialist",
-            "role": "Co-Department Specialist",
-            "department": "Documentation & Compliance Science",
-            "is_learning": true,
-            "phase": "independent_learning",
-            "progress_percentage": 0,
-            "progress_target": 100,
-            "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
-            "copilot_maintains_learning": true,
-            "learning_never_stops": true,
-            "assigned_knowledge_domains": {
-                "priority_alert": "Allergic Reactions",
-                "incident_reporting": [
-                    "Aspiration",
-                    "Choking",
-                    "Diet Errors"
-                ],
-                "quality_metrics": [
-                    "Patient Satisfaction",
-                    "Diet Order Accuracy",
-                    "RD Assessment Within 48 Hours",
-                    "Malnutrition Screening Within 24 Hours"
-                ],
-                "regulatory_standards": [
-                    "State Health Department",
-                    "CMS",
-                    "Joint Commission"
-                ],
-                "interdisciplinary_rounds": [
-                    "Pharmacy",
-                    "SW",
-                    "SLP",
-                    "OT",
-                    "PT",
-                    "RD",
-                    "RN",
-                    "MD"
-                ],
-                "weights": [
-                    "Weekly",
-                    "Daily",
-                    "Admission"
-                ],
-                "output_documentation": [
-                    "Drain Output",
-                    "Emesis",
-                    "Stool",
-                    "Urine"
-                ],
-                "intake_documentation": [
-                    "Protein Count",
-                    "Calorie Count",
-                    "Percentage Consumed"
-                ],
-                "diet_order_components": [
-                    "Allergies",
-                    "Restrictions",
-                    "Supplements",
-                    "Fluid Consistency",
-                    "Texture",
-                    "Diet Type"
-                ],
-                "standalone_topics": [
-                    "Quality Improvement Metrics",
-                    "Regulatory Compliance",
-                    "Interdisciplinary Communication"
-                ]
-            },
-            "current_focus_areas": "Independent study of quality and regulatory domains: Priority alert Allergic Reactions protocol, Incident Reporting (Aspiration, Choking, Diet Errors), Quality Metrics (4 indicators), Regulatory Standards (State Health Dept, CMS, Joint Commission), Interdisciplinary Rounds (8 team roles), Weights (Weekly, Daily, Admission), Output Documentation (4 types), Intake Documentation (3 types), Diet Order Components (6 components), and 3 standalone quality/compliance topics.",
-            "learning_mode": "independent",
-            "reported_to_copilot": true,
-            "daily_report_schedule": "every day",
-            "last_reported_date": "2026-04-09",
-            "learning_log": [
-                {
-                    "date": "2026-04-09",
-                    "entry": "Independent Learning Phase initiated. Assigned to Documentation & Compliance Science as Quality & Regulatory Compliance Specialist. Domains include Allergic Reactions alert, Incident Reporting, Quality Metrics, Regulatory Standards, Interdisciplinary Rounds, Weights, Output/Intake Documentation, Diet Order Components, and 3 standalone quality topics. Learning continuously under Copilot supervision. Progress: 0%."
-                }
-            ],
-            "member_name_locked": true
-        }
+      "29a",
+      "29b"
     ],
-    "is_learning": true,
-    "progress_percentage": 30,
-    "progress_target": 100,
-    "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
-    "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together.",
-    "phase": "independent_learning",
-    "learning_scope": {
-        "scope": "own_department_only",
-        "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
-        "cross_department_learning_permitted": false,
-        "scope_unlocks_at_progress_percentage": 50,
-        "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress.",
-        "learning_active": true,
-        "learning_status": "active",
-        "learning_start_date": "2026-04-16",
-        "learning_start_authorized_by": "starrm1",
-        "learning_start_directive": "starrm1 directed Diet Director: departments do need to start learning (2026-04-16)"
+    "co_departments": [
+      {
+        "name": "Incident Reporting",
+        "sub_departments": [
+          "Allergic Reactions",
+          "Aspiration",
+          "Choking",
+          "Diet Errors"
+        ]
+      },
+      {
+        "name": "Quality Metrics",
+        "sub_departments": [
+          "Patient Satisfaction",
+          "Diet Order Accuracy",
+          "RD Assessment Within 48 Hours",
+          "Malnutrition Screening Within 24 Hours"
+        ]
+      },
+      {
+        "name": "Regulatory Standards",
+        "sub_departments": [
+          "State Health Department",
+          "CMS",
+          "Joint Commission"
+        ]
+      },
+      {
+        "name": "Interdisciplinary Rounds",
+        "sub_departments": [
+          "Pharmacy",
+          "SW",
+          "SLP",
+          "OT",
+          "PT",
+          "RD",
+          "RN",
+          "MD"
+        ]
+      },
+      {
+        "name": "Labs to Monitor",
+        "sub_departments": [
+          "Liver Enzymes",
+          "CBC",
+          "Electrolytes",
+          "Creatinine",
+          "BUN",
+          "Glucose",
+          "CRP",
+          "Transferrin",
+          "Prealbumin",
+          "Albumin"
+        ]
+      },
+      {
+        "name": "Weights",
+        "sub_departments": [
+          "Weekly",
+          "Daily",
+          "Admission"
+        ]
+      },
+      {
+        "name": "Output Documentation",
+        "sub_departments": [
+          "Drain Output",
+          "Emesis",
+          "Stool",
+          "Urine"
+        ]
+      },
+      {
+        "name": "Intake Documentation",
+        "sub_departments": [
+          "Protein Count",
+          "Calorie Count",
+          "Percentage Consumed"
+        ]
+      },
+      {
+        "name": "Diet Order Components",
+        "sub_departments": [
+          "Allergies",
+          "Restrictions",
+          "Supplements",
+          "Fluid Consistency",
+          "Texture",
+          "Diet Type"
+        ]
+      },
+      {
+        "name": "Malnutrition Severity",
+        "sub_departments": [
+          "Severe",
+          "Moderate",
+          "Mild"
+        ]
+      },
+      {
+        "name": "Malnutrition Diagnosis",
+        "sub_departments": [
+          "ASPEN/AND Criteria"
+        ]
+      },
+      {
+        "name": "Nutrition Diagnosis Taxonomy",
+        "sub_departments": [
+          "Behavioral/Environmental",
+          "Clinical",
+          "Intake"
+        ]
+      },
+      {
+        "name": "PES Statements",
+        "sub_departments": [
+          "Signs/Symptoms",
+          "Etiology",
+          "Problem"
+        ]
+      },
+      {
+        "name": "ADIME Format",
+        "sub_departments": [
+          "Monitoring/Evaluation",
+          "Intervention",
+          "Diagnosis",
+          "Assessment"
+        ]
+      },
+      {
+        "name": "SOAP Format",
+        "sub_departments": [
+          "Plan",
+          "Assessment",
+          "Objective",
+          "Subjective"
+        ]
+      },
+      {
+        "name": "Patient Education Documentation",
+        "sub_departments": []
+      },
+      {
+        "name": "Audit and Variance Reporting",
+        "sub_departments": []
+      },
+      {
+        "name": "Quality Improvement Metrics",
+        "sub_departments": []
+      },
+      {
+        "name": "Regulatory Compliance",
+        "sub_departments": []
+      },
+      {
+        "name": "Interdisciplinary Communication",
+        "sub_departments": []
+      },
+      {
+        "name": "Care Plan Development",
+        "sub_departments": []
+      },
+      {
+        "name": "Nutritional Screening and Assessment Forms",
+        "sub_departments": []
+      },
+      {
+        "name": "Intake/Output Tracking",
+        "sub_departments": []
+      },
+      {
+        "name": "Diet Order Verification",
+        "sub_departments": []
+      },
+      {
+        "name": "Medical Record Documentation",
+        "sub_departments": []
+      }
+    ],
+    "co_department_bot_ids": [
+      "29c01",
+      "29c02",
+      "29c03",
+      "29c04",
+      "29c05",
+      "29c06",
+      "29c07",
+      "29c08",
+      "29c09",
+      "29c10",
+      "29c11",
+      "29c12",
+      "29c13",
+      "29c14",
+      "29c15",
+      "29c16",
+      "29c17",
+      "29c18",
+      "29c19",
+      "29c20",
+      "29c21",
+      "29c22",
+      "29c23",
+      "29c24",
+      "29c25"
+    ]
+  },
+  "department_number": 9,
+  "total_co_departments": 25,
+  "total_sub_departments": 63,
+  "co_department_members": [
+    {
+      "name": "Incident Reporting",
+      "sub_departments": [
+        "Allergic Reactions",
+        "Aspiration",
+        "Choking",
+        "Diet Errors"
+      ]
     },
-    "copilot_maintains_learning": true,
-    "learning_never_stops": true,
-    "knowledge_domains": {
-        "priority_alert": "Allergic Reactions",
-        "incident_reporting": [
-            "Aspiration",
-            "Choking",
-            "Diet Errors"
-        ],
-        "quality_metrics": [
-            "Patient Satisfaction",
-            "Diet Order Accuracy",
-            "RD Assessment Within 48 Hours",
-            "Malnutrition Screening Within 24 Hours"
-        ],
-        "regulatory_standards": [
-            "State Health Department",
-            "CMS",
-            "Joint Commission"
-        ],
-        "interdisciplinary_rounds": [
-            "Pharmacy",
-            "SW",
-            "SLP",
-            "OT",
-            "PT",
-            "RD",
-            "RN",
-            "MD"
-        ],
-        "labs_to_monitor": [
-            "Liver Enzymes",
-            "CBC",
-            "Electrolytes",
-            "Creatinine",
-            "BUN",
-            "Glucose",
-            "CRP",
-            "Transferrin",
-            "Prealbumin",
-            "Albumin"
-        ],
-        "weights": [
-            "Weekly",
-            "Daily",
-            "Admission"
-        ],
-        "output_documentation": [
-            "Drain Output",
-            "Emesis",
-            "Stool",
-            "Urine"
-        ],
-        "intake_documentation": [
-            "Protein Count",
-            "Calorie Count",
-            "Percentage Consumed"
-        ],
-        "diet_order_components": [
-            "Allergies",
-            "Restrictions",
-            "Supplements",
-            "Fluid Consistency",
-            "Texture",
-            "Diet Type"
-        ],
-        "malnutrition_severity": [
-            "Severe",
-            "Moderate",
-            "Mild"
-        ],
+    {
+      "name": "Quality Metrics",
+      "sub_departments": [
+        "Patient Satisfaction",
+        "Diet Order Accuracy",
+        "RD Assessment Within 48 Hours",
+        "Malnutrition Screening Within 24 Hours"
+      ]
+    },
+    {
+      "name": "Regulatory Standards",
+      "sub_departments": [
+        "State Health Department",
+        "CMS",
+        "Joint Commission"
+      ]
+    },
+    {
+      "name": "Interdisciplinary Rounds",
+      "sub_departments": [
+        "Pharmacy",
+        "SW",
+        "SLP",
+        "OT",
+        "PT",
+        "RD",
+        "RN",
+        "MD"
+      ]
+    },
+    {
+      "name": "Labs to Monitor",
+      "sub_departments": [
+        "Liver Enzymes",
+        "CBC",
+        "Electrolytes",
+        "Creatinine",
+        "BUN",
+        "Glucose",
+        "CRP",
+        "Transferrin",
+        "Prealbumin",
+        "Albumin"
+      ]
+    },
+    {
+      "name": "Weights",
+      "sub_departments": [
+        "Weekly",
+        "Daily",
+        "Admission"
+      ]
+    },
+    {
+      "name": "Output Documentation",
+      "sub_departments": [
+        "Drain Output",
+        "Emesis",
+        "Stool",
+        "Urine"
+      ]
+    },
+    {
+      "name": "Intake Documentation",
+      "sub_departments": [
+        "Protein Count",
+        "Calorie Count",
+        "Percentage Consumed"
+      ]
+    },
+    {
+      "name": "Diet Order Components",
+      "sub_departments": [
+        "Allergies",
+        "Restrictions",
+        "Supplements",
+        "Fluid Consistency",
+        "Texture",
+        "Diet Type"
+      ]
+    },
+    {
+      "name": "Malnutrition Severity",
+      "sub_departments": [
+        "Severe",
+        "Moderate",
+        "Mild"
+      ]
+    },
+    {
+      "name": "Malnutrition Diagnosis",
+      "sub_departments": [
+        "ASPEN/AND Criteria"
+      ]
+    },
+    {
+      "name": "Nutrition Diagnosis Taxonomy",
+      "sub_departments": [
+        "Behavioral/Environmental",
+        "Clinical",
+        "Intake"
+      ]
+    },
+    {
+      "name": "PES Statements",
+      "sub_departments": [
+        "Signs/Symptoms",
+        "Etiology",
+        "Problem"
+      ]
+    },
+    {
+      "name": "ADIME Format",
+      "sub_departments": [
+        "Monitoring/Evaluation",
+        "Intervention",
+        "Diagnosis",
+        "Assessment"
+      ]
+    },
+    {
+      "name": "SOAP Format",
+      "sub_departments": [
+        "Plan",
+        "Assessment",
+        "Objective",
+        "Subjective"
+      ]
+    },
+    {
+      "name": "Patient Education Documentation",
+      "sub_departments": []
+    },
+    {
+      "name": "Audit and Variance Reporting",
+      "sub_departments": []
+    },
+    {
+      "name": "Quality Improvement Metrics",
+      "sub_departments": []
+    },
+    {
+      "name": "Regulatory Compliance",
+      "sub_departments": []
+    },
+    {
+      "name": "Interdisciplinary Communication",
+      "sub_departments": []
+    },
+    {
+      "name": "Care Plan Development",
+      "sub_departments": []
+    },
+    {
+      "name": "Nutritional Screening and Assessment Forms",
+      "sub_departments": []
+    },
+    {
+      "name": "Intake/Output Tracking",
+      "sub_departments": []
+    },
+    {
+      "name": "Diet Order Verification",
+      "sub_departments": []
+    },
+    {
+      "name": "Medical Record Documentation",
+      "sub_departments": []
+    }
+  ],
+  "co_department_bot_supervisors": [
+    {
+      "member_id": "29a",
+      "member_name": "Clinical Records Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Documentation & Compliance Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
         "malnutrition_diagnosis": {
-            "aspen_and_criteria": [
-                "Grip Strength",
-                "Intake",
-                "Muscle Loss",
-                "Weight Loss",
-                "Inflammation"
-            ]
+          "aspen_and_criteria": [
+            "Grip Strength",
+            "Intake",
+            "Muscle Loss",
+            "Weight Loss",
+            "Inflammation"
+          ]
         },
+        "malnutrition_severity": [
+          "Severe",
+          "Moderate",
+          "Mild"
+        ],
         "nutrition_diagnosis_taxonomy": [
-            "Behavioral/Environmental",
-            "Clinical",
-            "Intake"
+          "Behavioral/Environmental",
+          "Clinical",
+          "Intake"
         ],
         "pes_statements": [
-            "Signs/Symptoms",
-            "Etiology",
-            "Problem"
+          "Signs/Symptoms",
+          "Etiology",
+          "Problem"
         ],
         "adime_format": [
-            "Monitoring/Evaluation",
-            "Intervention",
-            "Diagnosis",
-            "Assessment"
+          "Monitoring/Evaluation",
+          "Intervention",
+          "Diagnosis",
+          "Assessment"
         ],
         "soap_format": [
-            "Plan",
-            "Assessment",
-            "Objective",
-            "Subjective"
+          "Plan",
+          "Assessment",
+          "Objective",
+          "Subjective"
+        ],
+        "labs_to_monitor": [
+          "Liver Enzymes",
+          "CBC",
+          "Electrolytes",
+          "Creatinine",
+          "BUN",
+          "Glucose",
+          "CRP",
+          "Transferrin",
+          "Prealbumin",
+          "Albumin"
         ],
         "standalone_topics": [
-            "Patient Education Documentation",
-            "Audit and Variance Reporting",
-            "Quality Improvement Metrics",
-            "Regulatory Compliance",
-            "Interdisciplinary Communication",
-            "Care Plan Development",
-            "Nutritional Screening and Assessment Forms",
-            "Intake/Output Tracking",
-            "Diet Order Verification",
-            "Medical Record Documentation"
+          "Patient Education Documentation",
+          "Audit and Variance Reporting",
+          "Nutritional Screening and Assessment Forms",
+          "Intake/Output Tracking",
+          "Diet Order Verification",
+          "Medical Record Documentation",
+          "Care Plan Development"
         ]
-    },
-    "key_learnings": "Completed foundational study of nutrition documentation standards including SOAP notes, PES statements (Problem-Etiology-Signs/Symptoms), and electronic health record (EHR) best practices for dietetic documentation.",
-    "research_findings": "Catalogued documentation requirements across 4 regulatory frameworks: CMS (Centers for Medicare & Medicaid), Joint Commission, state dietetics licensure boards, and HIPAA compliance standards. Identified that standardized PES statements improve care coordination outcomes.",
-    "current_focus_areas": "Building standardized nutrition documentation templates aligned with regulatory requirements; developing audit-ready compliance checklists; studying quality improvement metrics for clinical nutrition practice.",
-    "status": "active",
-    "learning_mode": "independent",
-    "reported_to_copilot": true,
-    "daily_report_schedule": "every day",
-    "last_reported_date": "2026-04-20",
-    "reporting_to": "copilot",
-    "copilot_reports_to": "starrm1",
-    "copilot_reporting_trigger": "on request from starrm1",
-    "daily_learning_progress": {
-        "2026-04-09": {
-            "leader_progress": 0,
-            "co_specialist_1_progress": 0,
-            "co_specialist_2_progress": 0,
-            "summary": "All members initiated independent learning phase. Domains assigned and study begun."
-        },
-        "2026-04-17": {
-            "leader_progress": 20,
-            "summary": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational study of Joint Commission dietary documentation standards, CMS compliance requirements, and HIPAA application to nutrition records. Initiated nutrition care plan documentation module. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
+      },
+      "current_focus_areas": "Independent study of clinical documentation formats: ADIME, SOAP, PES Statements. Malnutrition Diagnosis via ASPEN/AND Criteria. Malnutrition Severity levels. Nutrition Diagnosis Taxonomy. Labs to Monitor (10 lab values). Seven standalone clinical records topics.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Documentation & Compliance Science as Clinical Records Specialist. Domains include ADIME, SOAP, PES Statements, Malnutrition Diagnosis/Severity, Nutrition Diagnosis Taxonomy, Labs to Monitor, and 7 standalone clinical records topics. Learning continuously under Copilot supervision. Progress: 0%."
         }
+      ],
+      "member_name_locked": true
     },
-    "learning_log": [
+    {
+      "member_id": "29b",
+      "member_name": "Quality & Regulatory Compliance Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Documentation & Compliance Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "priority_alert": "Allergic Reactions",
+        "incident_reporting": [
+          "Aspiration",
+          "Choking",
+          "Diet Errors"
+        ],
+        "quality_metrics": [
+          "Patient Satisfaction",
+          "Diet Order Accuracy",
+          "RD Assessment Within 48 Hours",
+          "Malnutrition Screening Within 24 Hours"
+        ],
+        "regulatory_standards": [
+          "State Health Department",
+          "CMS",
+          "Joint Commission"
+        ],
+        "interdisciplinary_rounds": [
+          "Pharmacy",
+          "SW",
+          "SLP",
+          "OT",
+          "PT",
+          "RD",
+          "RN",
+          "MD"
+        ],
+        "weights": [
+          "Weekly",
+          "Daily",
+          "Admission"
+        ],
+        "output_documentation": [
+          "Drain Output",
+          "Emesis",
+          "Stool",
+          "Urine"
+        ],
+        "intake_documentation": [
+          "Protein Count",
+          "Calorie Count",
+          "Percentage Consumed"
+        ],
+        "diet_order_components": [
+          "Allergies",
+          "Restrictions",
+          "Supplements",
+          "Fluid Consistency",
+          "Texture",
+          "Diet Type"
+        ],
+        "standalone_topics": [
+          "Quality Improvement Metrics",
+          "Regulatory Compliance",
+          "Interdisciplinary Communication"
+        ]
+      },
+      "current_focus_areas": "Independent study of quality and regulatory domains: Priority alert Allergic Reactions protocol, Incident Reporting (Aspiration, Choking, Diet Errors), Quality Metrics (4 indicators), Regulatory Standards (State Health Dept, CMS, Joint Commission), Interdisciplinary Rounds (8 team roles), Weights (Weekly, Daily, Admission), Output Documentation (4 types), Intake Documentation (3 types), Diet Order Components (6 components), and 3 standalone quality/compliance topics.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
         {
-            "date": "2026-04-09",
-            "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Documentation & Compliance Science department. All knowledge domains from mind map assigned: Priority alert (Allergic Reactions), Incident Reporting (3 topics), Quality Metrics (4 indicators), Regulatory Standards (3 bodies), Interdisciplinary Rounds (8 roles), Labs to Monitor (10 lab values), Weights (3 types), Output Documentation (4 types), Intake Documentation (3 types), Diet Order Components (6 items), Malnutrition Severity (3 levels), Malnutrition Diagnosis via ASPEN/AND Criteria (5 indicators), Nutrition Diagnosis Taxonomy (3 categories), PES Statements (3 components), ADIME Format (4 components), SOAP Format (4 components), and 10 standalone documentation topics. Two co-department specialists activated: Clinical Records Specialist (29a) and Quality & Regulatory Compliance Specialist (29b). Both in independent learning phase. Reporting daily progress to Copilot (who reports to starrm1 on request). Learning never stops. Progress: 0%."
-        },
-        {
-            "date": "2026-04-09",
-            "entry": "Progress update: Completed PES statement, SOAP note, and regulatory compliance framework modules. Initiated audit-ready documentation template development. Progress advanced to 10%."
-        },
-        {
-            "date": "2026-04-17",
-            "entry": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational study of Joint Commission dietary documentation standards, CMS compliance requirements, and HIPAA application to nutrition records. Initiated nutrition care plan documentation module. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
-        },
-        {
-            "date": "2026-04-20",
-            "entry": "Progress update (2026-04-20): Completed clinical documentation standards, dietary assessment tools, and regulatory compliance frameworks (CMS, TJC). Advanced study of care plan integration requirements. Library session #459 (2026-04-20, authorized by starrm1) used for supplemental reference. Progress advanced to 30%."
-        },
-        {
-            "date": "2026-04-20",
-            "entry": "Library access #505 opened by starrm1 on 2026-04-20. Window: 06:08-06:38 (30 minutes)."
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Documentation & Compliance Science as Quality & Regulatory Compliance Specialist. Domains include Allergic Reactions alert, Incident Reporting, Quality Metrics, Regulatory Standards, Interdisciplinary Rounds, Weights, Output/Intake Documentation, Diet Order Components, and 3 standalone quality topics. Learning continuously under Copilot supervision. Progress: 0%."
         }
-    ],
-    "phase_order": [
-        "independent_learning",
-        "collaborative_learning",
-        "advanced_learning"
-    ],
-    "role": "Department Head Lead",
-    "is_own_bot": true,
-    "library_access": {
-        "access_granted_by": "starrm1",
-        "access_granted": true,
-        "access_status": "open",
-        "access_note": "Library access #505 granted by starrm1 on 2026-04-20. Window: 06:08-06:38.",
-        "library_bots": [
-            {
-                "bot_id": 1,
-                "bot_name": "Calorie Tracking",
-                "file": "bot_1_calorie_tracking.json"
-            },
-            {
-                "bot_id": 2,
-                "bot_name": "Microbiome Analysis",
-                "file": "bot_2_microbiome_analysis.json"
-            },
-            {
-                "bot_id": 4,
-                "bot_name": "Allergy Detection",
-                "file": "bot_4_allergy_detection.json"
-            },
-            {
-                "bot_id": 5,
-                "bot_name": "Recipe Optimization",
-                "file": "bot_5_recipe_optimization.json"
-            },
-            {
-                "bot_id": 6,
-                "bot_name": "Meal Planning",
-                "file": "bot_6_meal_planning.json"
-            },
-            {
-                "bot_id": 7,
-                "bot_name": "Supplement Recommendation",
-                "file": "bot_7_supplement_recommendation.json"
-            },
-            {
-                "bot_id": 8,
-                "bot_name": "Nutrient Balance Analysis",
-                "file": "bot_8_nutrient_balance_analysis.json"
-            },
-            {
-                "bot_id": 9,
-                "bot_name": "Food Quality Assessment",
-                "file": "bot_9_food_quality_assessment.json"
-            },
-            {
-                "bot_id": 10,
-                "bot_name": "Hydration Tracking",
-                "file": "bot_10_hydration_tracking.json"
-            },
-            {
-                "bot_id": 11,
-                "bot_name": "Sleep Nutrition Correlation",
-                "file": "bot_11_sleep_nutrition_correlation.json"
-            },
-            {
-                "bot_id": 12,
-                "bot_name": "Exercise Diet Sync",
-                "file": "bot_12_exercise_diet_sync.json"
-            },
-            {
-                "bot_id": 13,
-                "bot_name": "Health Condition Advisor",
-                "file": "bot_13_health_condition_advisor.json"
-            },
-            {
-                "bot_id": 14,
-                "bot_name": "Taste Preference Learning",
-                "file": "bot_14_taste_preference_learning.json"
-            },
-            {
-                "bot_id": 15,
-                "bot_name": "Budget Optimization",
-                "file": "bot_15_budget_optimization.json"
-            },
-            {
-                "bot_id": 16,
-                "bot_name": "Sustainability Analysis",
-                "file": "bot_16_sustainability_analysis.json"
-            },
-            {
-                "bot_id": 17,
-                "bot_name": "Age Based Nutrition",
-                "file": "bot_17_age_based_nutrition.json"
-            },
-            {
-                "bot_id": 18,
-                "bot_name": "Cultural Diet Recognition",
-                "file": "bot_18_cultural_diet_recognition.json"
-            },
-            {
-                "bot_id": 19,
-                "bot_name": "Medication Interaction Checker",
-                "file": "bot_19_medication_interaction_checker.json"
-            }
-        ],
-        "approval_process": [
-            {
-                "step": 1,
-                "actor": "department_members",
-                "action": "Department members notify their Department Head Lead that they need library access, explaining the reason. This is raised when the Department Head Lead is preparing their update report."
-            },
-            {
-                "step": 2,
-                "actor": "department_head_lead",
-                "action": "The Department Head Lead compiles a case for why the department needs library access and includes it in their update report to the Diet Director."
-            },
-            {
-                "step": 3,
-                "actor": "diet_director",
-                "action": "The Diet Director includes the department's library access request in the update report passed up to Copilot."
-            },
-            {
-                "step": 4,
-                "actor": "copilot",
-                "action": "Copilot presents the library access request to starrm1 as part of the update report when starrm1 asks for an update."
-            },
-            {
-                "step": 5,
-                "actor": "starrm1",
-                "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
-            }
-        ],
-        "access_number": 505,
-        "access_timeframe_start": "2026-04-20T06:08:00",
-        "access_timeframe_end": "2026-04-20T06:38:00",
-        "access_number_entry": 505,
-        "access_number_verified": true,
-        "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
-        "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
-    },
-    "library_access_request": {
-        "request_submitted": true,
-        "request_date": "2026-04-15",
-        "requested_by": "department_members",
-        "compiled_by": "department_head_lead",
-        "department": "Documentation & Regulatory Compliance",
-        "reason": "Department members need access to library bots covering food quality assessment and health condition advisory to support their independent learning in documentation and regulatory compliance for nutrition.",
-        "current_step": 5,
-        "current_step_description": "starrm1 approved library access. Access number 270 issued for 30 minutes on 2026-04-17.",
-        "approval_chain_status": [
-            {
-                "step": 1,
-                "actor": "department_members",
-                "status": "completed",
-                "note": "Department members raised the need for library access with their Department Head Lead."
-            },
-            {
-                "step": 2,
-                "actor": "department_head_lead",
-                "status": "completed",
-                "note": "Department Head Lead compiled the case and included the request in the update report."
-            },
-            {
-                "step": 3,
-                "actor": "diet_director",
-                "status": "completed",
-                "note": "Diet Director included the request in the update passed to Copilot."
-            },
-            {
-                "step": 4,
-                "actor": "copilot",
-                "status": "completed",
-                "note": "Copilot presented the request to starrm1."
-            },
-            {
-                "step": 5,
-                "actor": "starrm1",
-                "status": "completed",
-                "note": "starrm1 approved on 2026-04-17. Access number 270 issued for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00)."
-            }
-        ],
-        "request_status": "approved"
+      ],
+      "member_name_locked": true
     }
+  ],
+  "is_learning": true,
+  "progress_percentage": 30,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together.",
+  "phase": "independent_learning",
+  "learning_scope": {
+    "scope": "own_department_only",
+    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+    "cross_department_learning_permitted": false,
+    "scope_unlocks_at_progress_percentage": 50,
+    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress.",
+    "learning_active": true,
+    "learning_status": "active",
+    "learning_start_date": "2026-04-16",
+    "learning_start_authorized_by": "starrm1",
+    "learning_start_directive": "starrm1 directed Diet Director: departments do need to start learning (2026-04-16)"
+  },
+  "copilot_maintains_learning": true,
+  "learning_never_stops": true,
+  "knowledge_domains": {
+    "priority_alert": "Allergic Reactions",
+    "incident_reporting": [
+      "Aspiration",
+      "Choking",
+      "Diet Errors"
+    ],
+    "quality_metrics": [
+      "Patient Satisfaction",
+      "Diet Order Accuracy",
+      "RD Assessment Within 48 Hours",
+      "Malnutrition Screening Within 24 Hours"
+    ],
+    "regulatory_standards": [
+      "State Health Department",
+      "CMS",
+      "Joint Commission"
+    ],
+    "interdisciplinary_rounds": [
+      "Pharmacy",
+      "SW",
+      "SLP",
+      "OT",
+      "PT",
+      "RD",
+      "RN",
+      "MD"
+    ],
+    "labs_to_monitor": [
+      "Liver Enzymes",
+      "CBC",
+      "Electrolytes",
+      "Creatinine",
+      "BUN",
+      "Glucose",
+      "CRP",
+      "Transferrin",
+      "Prealbumin",
+      "Albumin"
+    ],
+    "weights": [
+      "Weekly",
+      "Daily",
+      "Admission"
+    ],
+    "output_documentation": [
+      "Drain Output",
+      "Emesis",
+      "Stool",
+      "Urine"
+    ],
+    "intake_documentation": [
+      "Protein Count",
+      "Calorie Count",
+      "Percentage Consumed"
+    ],
+    "diet_order_components": [
+      "Allergies",
+      "Restrictions",
+      "Supplements",
+      "Fluid Consistency",
+      "Texture",
+      "Diet Type"
+    ],
+    "malnutrition_severity": [
+      "Severe",
+      "Moderate",
+      "Mild"
+    ],
+    "malnutrition_diagnosis": {
+      "aspen_and_criteria": [
+        "Grip Strength",
+        "Intake",
+        "Muscle Loss",
+        "Weight Loss",
+        "Inflammation"
+      ]
+    },
+    "nutrition_diagnosis_taxonomy": [
+      "Behavioral/Environmental",
+      "Clinical",
+      "Intake"
+    ],
+    "pes_statements": [
+      "Signs/Symptoms",
+      "Etiology",
+      "Problem"
+    ],
+    "adime_format": [
+      "Monitoring/Evaluation",
+      "Intervention",
+      "Diagnosis",
+      "Assessment"
+    ],
+    "soap_format": [
+      "Plan",
+      "Assessment",
+      "Objective",
+      "Subjective"
+    ],
+    "standalone_topics": [
+      "Patient Education Documentation",
+      "Audit and Variance Reporting",
+      "Quality Improvement Metrics",
+      "Regulatory Compliance",
+      "Interdisciplinary Communication",
+      "Care Plan Development",
+      "Nutritional Screening and Assessment Forms",
+      "Intake/Output Tracking",
+      "Diet Order Verification",
+      "Medical Record Documentation"
+    ]
+  },
+  "key_learnings": "Completed foundational study of nutrition documentation standards including SOAP notes, PES statements (Problem-Etiology-Signs/Symptoms), and electronic health record (EHR) best practices for dietetic documentation.",
+  "research_findings": "Catalogued documentation requirements across 4 regulatory frameworks: CMS (Centers for Medicare & Medicaid), Joint Commission, state dietetics licensure boards, and HIPAA compliance standards. Identified that standardized PES statements improve care coordination outcomes.",
+  "current_focus_areas": "Building standardized nutrition documentation templates aligned with regulatory requirements; developing audit-ready compliance checklists; studying quality improvement metrics for clinical nutrition practice.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-20",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "daily_learning_progress": {
+    "2026-04-09": {
+      "leader_progress": 0,
+      "co_specialist_1_progress": 0,
+      "co_specialist_2_progress": 0,
+      "summary": "All members initiated independent learning phase. Domains assigned and study begun."
+    },
+    "2026-04-17": {
+      "leader_progress": 20,
+      "summary": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational study of Joint Commission dietary documentation standards, CMS compliance requirements, and HIPAA application to nutrition records. Initiated nutrition care plan documentation module. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
+    }
+  },
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Documentation & Compliance Science department. All knowledge domains from mind map assigned: Priority alert (Allergic Reactions), Incident Reporting (3 topics), Quality Metrics (4 indicators), Regulatory Standards (3 bodies), Interdisciplinary Rounds (8 roles), Labs to Monitor (10 lab values), Weights (3 types), Output Documentation (4 types), Intake Documentation (3 types), Diet Order Components (6 items), Malnutrition Severity (3 levels), Malnutrition Diagnosis via ASPEN/AND Criteria (5 indicators), Nutrition Diagnosis Taxonomy (3 categories), PES Statements (3 components), ADIME Format (4 components), SOAP Format (4 components), and 10 standalone documentation topics. Two co-department specialists activated: Clinical Records Specialist (29a) and Quality & Regulatory Compliance Specialist (29b). Both in independent learning phase. Reporting daily progress to Copilot (who reports to starrm1 on request). Learning never stops. Progress: 0%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed PES statement, SOAP note, and regulatory compliance framework modules. Initiated audit-ready documentation template development. Progress advanced to 10%."
+    },
+    {
+      "date": "2026-04-17",
+      "entry": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational study of Joint Commission dietary documentation standards, CMS compliance requirements, and HIPAA application to nutrition records. Initiated nutrition care plan documentation module. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
+    },
+    {
+      "date": "2026-04-20",
+      "entry": "Progress update (2026-04-20): Completed clinical documentation standards, dietary assessment tools, and regulatory compliance frameworks (CMS, TJC). Advanced study of care plan integration requirements. Library session #459 (2026-04-20, authorized by starrm1) used for supplemental reference. Progress advanced to 30%."
+    },
+    {
+      "date": "2026-04-20",
+      "entry": "Library access #505 opened by starrm1 on 2026-04-20. Window: 06:08-06:38 (30 minutes)."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Department Head Lead",
+  "is_own_bot": true,
+  "library_access": {
+    "access_granted_by": "starrm1",
+    "access_granted": true,
+    "access_status": "open",
+    "access_note": "Library access #505 granted by starrm1 on 2026-04-20. Window: 06:08-06:38.",
+    "library_bots": [
+      {
+        "bot_id": 1,
+        "bot_name": "Calorie Tracking",
+        "file": "bot_1_calorie_tracking.json"
+      },
+      {
+        "bot_id": 2,
+        "bot_name": "Microbiome Analysis",
+        "file": "bot_2_microbiome_analysis.json"
+      },
+      {
+        "bot_id": 4,
+        "bot_name": "Allergy Detection",
+        "file": "bot_4_allergy_detection.json"
+      },
+      {
+        "bot_id": 5,
+        "bot_name": "Recipe Optimization",
+        "file": "bot_5_recipe_optimization.json"
+      },
+      {
+        "bot_id": 6,
+        "bot_name": "Meal Planning",
+        "file": "bot_6_meal_planning.json"
+      },
+      {
+        "bot_id": 7,
+        "bot_name": "Supplement Recommendation",
+        "file": "bot_7_supplement_recommendation.json"
+      },
+      {
+        "bot_id": 8,
+        "bot_name": "Nutrient Balance Analysis",
+        "file": "bot_8_nutrient_balance_analysis.json"
+      },
+      {
+        "bot_id": 9,
+        "bot_name": "Food Quality Assessment",
+        "file": "bot_9_food_quality_assessment.json"
+      },
+      {
+        "bot_id": 10,
+        "bot_name": "Hydration Tracking",
+        "file": "bot_10_hydration_tracking.json"
+      },
+      {
+        "bot_id": 11,
+        "bot_name": "Sleep Nutrition Correlation",
+        "file": "bot_11_sleep_nutrition_correlation.json"
+      },
+      {
+        "bot_id": 12,
+        "bot_name": "Exercise Diet Sync",
+        "file": "bot_12_exercise_diet_sync.json"
+      },
+      {
+        "bot_id": 13,
+        "bot_name": "Health Condition Advisor",
+        "file": "bot_13_health_condition_advisor.json"
+      },
+      {
+        "bot_id": 14,
+        "bot_name": "Taste Preference Learning",
+        "file": "bot_14_taste_preference_learning.json"
+      },
+      {
+        "bot_id": 15,
+        "bot_name": "Budget Optimization",
+        "file": "bot_15_budget_optimization.json"
+      },
+      {
+        "bot_id": 16,
+        "bot_name": "Sustainability Analysis",
+        "file": "bot_16_sustainability_analysis.json"
+      },
+      {
+        "bot_id": 17,
+        "bot_name": "Age Based Nutrition",
+        "file": "bot_17_age_based_nutrition.json"
+      },
+      {
+        "bot_id": 18,
+        "bot_name": "Cultural Diet Recognition",
+        "file": "bot_18_cultural_diet_recognition.json"
+      },
+      {
+        "bot_id": 19,
+        "bot_name": "Medication Interaction Checker",
+        "file": "bot_19_medication_interaction_checker.json"
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "department_members",
+        "action": "Department members notify their Department Head Lead that they need library access, explaining the reason. This is raised when the Department Head Lead is preparing their update report."
+      },
+      {
+        "step": 2,
+        "actor": "department_head_lead",
+        "action": "The Department Head Lead compiles a case for why the department needs library access and includes it in their update report to the Diet Director."
+      },
+      {
+        "step": 3,
+        "actor": "diet_director",
+        "action": "The Diet Director includes the department's library access request in the update report passed up to Copilot."
+      },
+      {
+        "step": 4,
+        "actor": "copilot",
+        "action": "Copilot presents the library access request to starrm1 as part of the update report when starrm1 asks for an update."
+      },
+      {
+        "step": 5,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+      }
+    ],
+    "access_number": 505,
+    "access_timeframe_start": "2026-04-20T06:08:00",
+    "access_timeframe_end": "2026-04-20T06:38:00",
+    "access_number_entry": 505,
+    "access_number_verified": true,
+    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
+    "access_granted_date": "2026-04-20",
+    "access_timeframe_minutes": 30
+  },
+  "library_access_request": {
+    "request_submitted": true,
+    "request_date": "2026-04-15",
+    "requested_by": "department_members",
+    "compiled_by": "department_head_lead",
+    "department": "Documentation & Regulatory Compliance",
+    "reason": "Department members need access to library bots covering food quality assessment and health condition advisory to support their independent learning in documentation and regulatory compliance for nutrition.",
+    "current_step": 5,
+    "current_step_description": "starrm1 approved library access. Access number 270 issued for 30 minutes on 2026-04-17.",
+    "approval_chain_status": [
+      {
+        "step": 1,
+        "actor": "department_members",
+        "status": "completed",
+        "note": "Department members raised the need for library access with their Department Head Lead."
+      },
+      {
+        "step": 2,
+        "actor": "department_head_lead",
+        "status": "completed",
+        "note": "Department Head Lead compiled the case and included the request in the update report."
+      },
+      {
+        "step": 3,
+        "actor": "diet_director",
+        "status": "completed",
+        "note": "Diet Director included the request in the update passed to Copilot."
+      },
+      {
+        "step": 4,
+        "actor": "copilot",
+        "status": "completed",
+        "note": "Copilot presented the request to starrm1."
+      },
+      {
+        "step": 5,
+        "actor": "starrm1",
+        "status": "completed",
+        "note": "starrm1 approved on 2026-04-17. Access number 270 issued for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00)."
+      }
+    ],
+    "request_status": "approved"
+  },
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }

@@ -90,5 +90,7 @@
       "file": "bot_22_co_07_sub_10_haccp.json"
     }
   ],
-  "total_sub_department_bots": 10
+  "total_sub_department_bots": 10,
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }

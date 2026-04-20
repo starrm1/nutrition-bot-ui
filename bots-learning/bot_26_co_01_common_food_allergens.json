@@ -87,5 +87,7 @@
       "file": "bot_26_co_01_sub_09_sesame.json"
     }
   ],
-  "total_sub_department_bots": 9
+  "total_sub_department_bots": 9,
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }

@@ -60,5 +60,7 @@
       "file": "bot_22_co_01_sub_05_binding.json"
     }
   ],
-  "total_sub_department_bots": 5
+  "total_sub_department_bots": 5,
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }

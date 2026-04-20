@@ -57,5 +57,7 @@
       "file": "bot_24_co_06_sub_04_harris_benedict.json"
     }
   ],
-  "total_sub_department_bots": 4
+  "total_sub_department_bots": 4,
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }

@@ -123,5 +123,7 @@
       "file": "bot_28_co_06_sub_15_trigger_foods_citrus_tomato_chocolate_mint_spicy_f.json"
     }
   ],
-  "total_sub_department_bots": 15
+  "total_sub_department_bots": 15,
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }

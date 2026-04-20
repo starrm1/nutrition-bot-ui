@@ -31,5 +31,7 @@
   "learning_scope": {
     "scope": "own_sub_department_only",
     "cross_department_learning_permitted": false
-  }
+  },
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }

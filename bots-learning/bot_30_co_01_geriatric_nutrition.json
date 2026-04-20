@@ -105,5 +105,7 @@
       "file": "bot_30_co_01_sub_12_decreased_calorie_needs.json"
     }
   ],
-  "total_sub_department_bots": 12
+  "total_sub_department_bots": 12,
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }

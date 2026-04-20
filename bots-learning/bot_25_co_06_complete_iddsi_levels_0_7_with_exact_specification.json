@@ -81,5 +81,7 @@
       "file": "bot_25_co_06_sub_08_level_0_thin_liquids.json"
     }
   ],
-  "total_sub_department_bots": 8
+  "total_sub_department_bots": 8,
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
 }
