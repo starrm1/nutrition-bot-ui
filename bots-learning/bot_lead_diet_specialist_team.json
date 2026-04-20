@@ -600,5 +600,14 @@
       "exclusive_to_diet_director": true,
       "departments_must_use_full_chain": true
     }
+  },
+  "library_bot_learning_policy": {
+    "policy_set_by": "starrm1",
+    "policy_set_date": "2026-04-20",
+    "learning_never_stops": true,
+    "progress_target": 100,
+    "knowledge_standard": "fact_verified",
+    "knowledge_accuracy_requirement": "All knowledge retained and shared by library bots (Bots 1-19) must be backed by true, accurate, and factual information. Unverified or speculative content is not permitted.",
+    "note": "Library bots (Bots 1-19) must never stop learning. Their goal is to reach 100% mastery of their assigned topic. Learning is continuous and never completes until 100% is achieved."
   }
 }

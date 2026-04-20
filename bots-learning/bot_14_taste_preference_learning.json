@@ -45,5 +45,9 @@
     "bot_9_food_quality_assessment",
     "bot_12_exercise_diet_sync",
     "bot_18_cultural_diet_recognition"
-  ]
+  ],
+  "learning_never_stops": true,
+  "progress_target": 100,
+  "knowledge_standard": "fact_verified",
+  "knowledge_accuracy_requirement": "All knowledge retained and shared by this bot must be backed by true, accurate, and factual information. Unverified or speculative content is not permitted."
 }

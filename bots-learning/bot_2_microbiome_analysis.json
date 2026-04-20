@@ -29,5 +29,9 @@
   "reporting_to": "copilot",
   "copilot_assigned_topic": "Probiotic and prebiotic food interactions with gut microbiome",
   "library_bot": true,
-  "library_bot_note": "This bot's name and purpose have not changed. It was designated as a library bot (Bots 1\u201319) available for departments to access once starrm1 grants approval and issues an access number."
+  "library_bot_note": "This bot's name and purpose have not changed. It was designated as a library bot (Bots 1\u201319) available for departments to access once starrm1 grants approval and issues an access number.",
+  "learning_never_stops": true,
+  "progress_target": 100,
+  "knowledge_standard": "fact_verified",
+  "knowledge_accuracy_requirement": "All knowledge retained and shared by this bot must be backed by true, accurate, and factual information. Unverified or speculative content is not permitted."
 }
