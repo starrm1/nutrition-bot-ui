@@ -1,6 +1,6 @@
 {
   "bot_id": "22c09s13",
-  "bot_name": "Saut\u00e9ing",
+  "bot_name": "Sautéing",
   "role": "Sub-Department Bot",
   "is_own_bot": true,
   "chain_of_command_position": 7,
@@ -27,7 +27,7 @@
   "learning_start_date": "2026-04-16",
   "learning_authorized_by": "starrm1",
   "phase": "independent_learning",
-  "progress_percentage": 3,
+  "progress_percentage": 7,
   "learning_scope": {
     "scope": "own_sub_department_only",
     "cross_department_learning_permitted": false
@@ -35,5 +35,13 @@
   "knowledge_access_allowed": true,
   "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20.",
   "knowledge_access_expires": "on_starrm1_command",
-  "knowledge_access_controlled_by": "starrm1"
+  "knowledge_access_controlled_by": "starrm1",
+  "last_reported_date": "2026-04-20",
+  "reported_to_copilot": true,
+  "learning_log": [
+    {
+      "date": "2026-04-20",
+      "entry": "Daily learning update. Progress advanced from 3% to 7%."
+    }
+  ]
 }
