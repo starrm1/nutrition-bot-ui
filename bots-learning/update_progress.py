@@ -10,7 +10,7 @@ import os
 import random
 from datetime import date
 
-BOTS_DIR = os.path.join(os.path.dirname(__file__))
+BOTS_DIR = os.path.dirname(os.path.abspath(__file__))
 TODAY = date.today().isoformat()
 
 STATUS_INDEPENDENT = "independent_learning"
@@ -37,7 +37,7 @@ COMPLETE_LOG_ENTRY = (
 def update_bot(filepath: str) -> bool:
     """Update a single bot JSON file. Returns True if the file was modified."""
     try:
-        with open(filepath, "r") as f:
+        with open(filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
     except json.JSONDecodeError as e:
         print(f"WARNING: Skipping {os.path.basename(filepath)} — invalid JSON: {e}")
@@ -92,14 +92,14 @@ def update_bot(filepath: str) -> bool:
     data["learning_log"].append(log_entry)
 
     try:
-        with open(filepath, "w") as f:
-            json.dump(data, f, indent=2)
+        with open(filepath, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
             f.write("\n")
     except OSError as e:
         print(f"WARNING: Could not write {os.path.basename(filepath)}: {e}")
         return False
 
-    print(f"Updated {os.path.basename(filepath)}: {progress}% -> {new_progress}% ({data['status']})")
+    print(f"Updated {os.path.basename(filepath)}: {progress}% -> {new_progress}% ({data.get('status', 'unknown')})")
     return True
 
 
