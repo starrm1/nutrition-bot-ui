@@ -63,5 +63,7 @@
   "starrm1_can_advance_at_will": true,
   "starrm1_advance_note": "starrm1 can advance this library bot to the next phase at any time, regardless of current progress percentage. No threshold required.",
   "use_now": true,
-  "use_now_note": "Library is now in use. Set by starrm1 on 2026-04-20."
+  "use_now_note": "Library is now in use. Set by starrm1 on 2026-04-20.",
+  "library_closed": true,
+  "library_closed_note": "Library is now closed. Set by starrm1 on 2026-04-20."
 }
