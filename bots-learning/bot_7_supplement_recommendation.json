@@ -40,5 +40,7 @@
     "knowledge_accuracy_requirement": "All knowledge retained and shared by this bot must be backed by true, accurate, and factual information. Unverified or speculative content is not permitted.",
     "phase_advancement_rule": "independent",
     "advancement_type": "individual",
-    "advancement_note": "This bot advances based solely on its own learning progress. It is NOT subject to any collective or group advancement rule. Each library bot (1-20) progresses independently."
+    "advancement_note": "This bot advances based solely on its own learning progress. It is NOT subject to any collective or group advancement rule. Each library bot (1-20) progresses independently. Library bots do NOT need to wait for any 50% threshold before advancing phases \u2014 the 50% waiting rule applies ONLY to departments (Bots 22-30), not to library bots.",
+    "phase_wait_for_50_percent": false,
+    "phase_wait_note": "Library bots (1-20) do NOT wait for 50% before advancing phases. The 50% collective threshold rule applies ONLY to departments (Bots 22-30)."
 }

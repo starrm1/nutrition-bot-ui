@@ -31,7 +31,7 @@
     "progress_target": 100,
     "learning_goal": "100%",
     "advancement_condition": "Must reach 100% in current phase before next phase promotion is granted.",
-    "department_phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together. NOTE: This rule applies ONLY to departments (Bots 22-30). Library bots (Bots 1-20) and the Diet Director (Bot 21) are NOT departments and are NOT subject to this rule.",
+    "department_phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together. NOTE: This rule applies ONLY to departments (Bots 22-30). Library bots (Bots 1-20) and the Diet Director (Bot 21) are NOT departments and are NOT subject to this rule. The 50% collective threshold rule applies ONLY to departments (Bots 22-30), NOT to library bots (1-20).",
     "cross_department_communication_threshold": 50,
     "cross_department_communication_rule": "Both the lead department AND each individual department must reach 50% learning progress before collaboration between them is activated. Copilot advances learning and tracks progress toward this threshold for all departments.",
     "department_head_collaboration": {
@@ -597,5 +597,7 @@
         "note": "Library bots (Bots 1-19) must never stop learning. Their goal is to reach 100% mastery of their assigned topic. Learning is continuous and never completes until 100% is achieved."
     },
     "library_bots_are_not_departments": true,
-    "library_bots_note": "Bots 1-20 are library bots, NOT departments. They each have their own independent learning phases and are not subject to the collective department phase advancement rule."
+    "library_bots_note": "Bots 1-20 are library bots, NOT departments. They each have their own independent learning phases and are not subject to the collective department phase advancement rule.",
+    "library_bots_50_percent_rule": false,
+    "library_bots_50_percent_note": "Library bots (Bots 1-20) do NOT need to wait for 50% before advancing phases. The 50% collective waiting threshold applies ONLY to departments (Bots 22-30). Rule confirmed by starrm1 on 2026-04-20."
 }
