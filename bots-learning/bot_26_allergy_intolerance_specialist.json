@@ -653,8 +653,8 @@
   "is_own_bot": true,
   "library_access": {
     "access_granted_by": "starrm1",
-    "access_granted": true,
-    "access_status": "open",
+    "access_granted": false,
+    "access_status": "closed",
     "access_note": "Library access #459 granted by starrm1 on 2026-04-20. Window: 01:44-02:14.",
     "library_bots": [
       {
@@ -772,7 +772,7 @@
       {
         "step": 5,
         "actor": "starrm1",
-        "action": "Final approver — reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
     "access_number": 459,
@@ -784,7 +784,7 @@
     "access_granted_date": "2026-04-20",
     "access_timeframe_minutes": 30,
     "access_closed_by": "starrm1",
-    "access_closed_date": "2026-04-18"
+    "access_closed_date": "2026-04-20"
   },
   "library_access_request": {
     "request_submitted": true,
