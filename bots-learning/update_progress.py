@@ -36,10 +36,21 @@ COMPLETE_LOG_ENTRY = (
 
 def update_bot(filepath: str) -> bool:
     """Update a single bot JSON file. Returns True if the file was modified."""
-    with open(filepath, "r") as f:
-        data = json.load(f)
+    try:
+        with open(filepath, "r") as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        print(f"WARNING: Skipping {os.path.basename(filepath)} — invalid JSON: {e}")
+        return False
+    except OSError as e:
+        print(f"WARNING: Skipping {os.path.basename(filepath)} — could not read file: {e}")
+        return False
 
-    progress = data.get("progress_percentage", 0)
+    # Ensure progress_percentage is a number; default to 0 if missing or wrong type
+    try:
+        progress = int(data.get("progress_percentage", 0) or 0)
+    except (TypeError, ValueError):
+        progress = 0
 
     # Already complete — nothing to do
     if progress >= THRESHOLD_COMPLETE or data.get("status") == STATUS_COMPLETE:
@@ -80,9 +91,13 @@ def update_bot(filepath: str) -> bool:
         data["learning_log"] = []
     data["learning_log"].append(log_entry)
 
-    with open(filepath, "w") as f:
-        json.dump(data, f, indent=2)
-        f.write("\n")
+    try:
+        with open(filepath, "w") as f:
+            json.dump(data, f, indent=2)
+            f.write("\n")
+    except OSError as e:
+        print(f"WARNING: Could not write {os.path.basename(filepath)}: {e}")
+        return False
 
     print(f"Updated {os.path.basename(filepath)}: {progress}% -> {new_progress}% ({data['status']})")
     return True
@@ -91,7 +106,12 @@ def update_bot(filepath: str) -> bool:
 def main():
     updated = 0
     skipped = 0
-    for filename in sorted(os.listdir(BOTS_DIR)):
+    try:
+        filenames = sorted(os.listdir(BOTS_DIR))
+    except OSError as e:
+        print(f"ERROR: Cannot read bots directory '{BOTS_DIR}': {e}")
+        return
+    for filename in filenames:
         if not filename.startswith("bot_") or not filename.endswith(".json"):
             continue
         filepath = os.path.join(BOTS_DIR, filename)
