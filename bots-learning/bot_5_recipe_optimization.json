@@ -60,5 +60,7 @@
   "phase_wait_for_50_percent": false,
   "phase_wait_note": "Library bots (1-20) do NOT wait for 50% before advancing phases. The 50% collective threshold rule applies ONLY to departments (Bots 22-30).",
   "starrm1_can_advance_at_will": true,
-  "starrm1_advance_note": "starrm1 can advance this library bot to the next phase at any time, regardless of current progress percentage. No threshold required."
+  "starrm1_advance_note": "starrm1 can advance this library bot to the next phase at any time, regardless of current progress percentage. No threshold required.",
+  "use_now": true,
+  "use_now_note": "Library is now in use. Set by starrm1 on 2026-04-20."
 }
