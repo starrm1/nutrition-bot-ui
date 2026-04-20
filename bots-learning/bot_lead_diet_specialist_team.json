@@ -326,8 +326,8 @@
         "bot_id": 22,
         "bot_name": "Food Specialist",
         "department": "Food Science & Clinical Dietetics",
-        "access_granted": true,
-        "access_status": "open",
+        "access_granted": false,
+        "access_status": "closed",
         "access_number": 459,
         "access_timeframe_start": "2026-04-20T01:44:00",
         "access_timeframe_end": "2026-04-20T02:14:00",
@@ -337,14 +337,16 @@
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
         "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
+        "access_timeframe_minutes": 30,
+        "access_closed_by": "starrm1",
+        "access_closed_date": "2026-04-20"
       },
       {
         "bot_id": 23,
         "bot_name": "Drink Specialist",
         "department": "Beverage Science & Hydration Management",
-        "access_granted": true,
-        "access_status": "open",
+        "access_granted": false,
+        "access_status": "closed",
         "access_number": 459,
         "access_timeframe_start": "2026-04-20T01:44:00",
         "access_timeframe_end": "2026-04-20T02:14:00",
@@ -354,14 +356,16 @@
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
         "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
+        "access_timeframe_minutes": 30,
+        "access_closed_by": "starrm1",
+        "access_closed_date": "2026-04-20"
       },
       {
         "bot_id": 24,
         "bot_name": "Nutrition Specialist",
         "department": "Clinical Nutrition & Metabolic Science",
-        "access_granted": true,
-        "access_status": "open",
+        "access_granted": false,
+        "access_status": "closed",
         "access_number": 459,
         "access_timeframe_start": "2026-04-20T01:44:00",
         "access_timeframe_end": "2026-04-20T02:14:00",
@@ -371,14 +375,16 @@
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
         "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
+        "access_timeframe_minutes": 30,
+        "access_closed_by": "starrm1",
+        "access_closed_date": "2026-04-20"
       },
       {
         "bot_id": 25,
         "bot_name": "Texture Specialist",
         "department": "Texture & Dysphagia Science",
-        "access_granted": true,
-        "access_status": "open",
+        "access_granted": false,
+        "access_status": "closed",
         "access_number": 459,
         "access_timeframe_start": "2026-04-20T01:44:00",
         "access_timeframe_end": "2026-04-20T02:14:00",
@@ -388,14 +394,16 @@
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
         "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
+        "access_timeframe_minutes": 30,
+        "access_closed_by": "starrm1",
+        "access_closed_date": "2026-04-20"
       },
       {
         "bot_id": 26,
         "bot_name": "Allergy & Intolerance Specialist",
         "department": "Allergy & Intolerance Science",
-        "access_granted": true,
-        "access_status": "open",
+        "access_granted": false,
+        "access_status": "closed",
         "access_number": 459,
         "access_timeframe_start": "2026-04-20T01:44:00",
         "access_timeframe_end": "2026-04-20T02:14:00",
@@ -405,14 +413,16 @@
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
         "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
+        "access_timeframe_minutes": 30,
+        "access_closed_by": "starrm1",
+        "access_closed_date": "2026-04-20"
       },
       {
         "bot_id": 27,
         "bot_name": "Cultural & Religious Diet Specialist",
         "department": "Cultural & Religious Diet Science",
-        "access_granted": true,
-        "access_status": "open",
+        "access_granted": false,
+        "access_status": "closed",
         "access_number": 459,
         "access_timeframe_start": "2026-04-20T01:44:00",
         "access_timeframe_end": "2026-04-20T02:14:00",
@@ -422,14 +432,16 @@
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
         "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
+        "access_timeframe_minutes": 30,
+        "access_closed_by": "starrm1",
+        "access_closed_date": "2026-04-20"
       },
       {
         "bot_id": 28,
         "bot_name": "Medical Condition Specialist",
         "department": "Medical Condition Diet Science",
-        "access_granted": true,
-        "access_status": "open",
+        "access_granted": false,
+        "access_status": "closed",
         "access_number": 459,
         "access_timeframe_start": "2026-04-20T01:44:00",
         "access_timeframe_end": "2026-04-20T02:14:00",
@@ -439,14 +451,16 @@
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
         "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
+        "access_timeframe_minutes": 30,
+        "access_closed_by": "starrm1",
+        "access_closed_date": "2026-04-20"
       },
       {
         "bot_id": 29,
         "bot_name": "Documentation & Compliance Specialist",
         "department": "Documentation & Compliance Science",
-        "access_granted": true,
-        "access_status": "open",
+        "access_granted": false,
+        "access_status": "closed",
         "access_number": 459,
         "access_timeframe_start": "2026-04-20T01:44:00",
         "access_timeframe_end": "2026-04-20T02:14:00",
@@ -456,14 +470,16 @@
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
         "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
+        "access_timeframe_minutes": 30,
+        "access_closed_by": "starrm1",
+        "access_closed_date": "2026-04-20"
       },
       {
         "bot_id": 30,
         "bot_name": "Life Stage Specialist",
         "department": "Life Stage Nutrition Science",
-        "access_granted": true,
-        "access_status": "open",
+        "access_granted": false,
+        "access_status": "closed",
         "access_number": 459,
         "access_timeframe_start": "2026-04-20T01:44:00",
         "access_timeframe_end": "2026-04-20T02:14:00",
@@ -473,7 +489,9 @@
         "access_request_note": "Department has formally requested library access. Case compiled by Department Head Lead and included in update report. Awaiting Diet Director to pass to Copilot for starrm1 final approval.",
         "access_granted_by": "starrm1",
         "access_granted_date": "2026-04-20",
-        "access_timeframe_minutes": 30
+        "access_timeframe_minutes": 30,
+        "access_closed_by": "starrm1",
+        "access_closed_date": "2026-04-20"
       }
     ],
     "approval_process": [
@@ -510,10 +528,10 @@
     "access_granted_date": "2026-04-20",
     "access_timeframe_start": "2026-04-20T01:44:00",
     "access_timeframe_end": "2026-04-20T02:14:00",
-    "access_status": "open",
+    "access_status": "closed",
     "current_access": {
-      "access_granted": true,
-      "access_status": "open",
+      "access_granted": false,
+      "access_status": "closed",
       "access_number": 459,
       "access_number_entry": 459,
       "access_number_verified": true,
@@ -522,7 +540,25 @@
       "access_timeframe_start": "2026-04-20T01:44:00",
       "access_timeframe_end": "2026-04-20T02:14:00",
       "access_timeframe_minutes": 30,
-      "access_note": "Library access #459 granted by starrm1 on 2026-04-20. Window: 01:44-02:14."
+      "access_note": "Library access #459 granted by starrm1 on 2026-04-20. Window: 01:44-02:14.",
+      "access_closed_by": "starrm1",
+      "access_closed_date": "2026-04-20"
+    },
+    "diet_director_approval_process": {
+      "description": "Shortened approval path for the Diet Director only.",
+      "steps": [
+        {
+          "step": 1,
+          "actor": "diet_director",
+          "action": "Diet Director requests library access directly from Copilot, stating the reason and desired timeframe."
+        },
+        {
+          "step": 2,
+          "actor": "copilot",
+          "action": "Copilot reviews and approves the request (up to 30 min / 1 session per day). Issues access number and sets timeframe. No starrm1 escalation required."
+        }
+      ],
+      "escalation_to_starrm1": "Only if the Diet Director requests more than 30 minutes or more than 1 session per day."
     }
   },
   "learning_directive": {
@@ -547,6 +583,16 @@
       "requires": "starrm1_approval",
       "note": "Any library access request exceeding 30 minutes per day or more than 1 session per day must be escalated to starrm1 for final approval. Copilot cannot approve extended access."
     },
-    "policy_effective_date": "2026-04-16"
+    "policy_effective_date": "2026-04-16",
+    "diet_director_library_access": {
+      "policy_set_by": "starrm1",
+      "policy_set_date": "2026-04-20",
+      "approval_path": "diet_director \u2192 copilot",
+      "requires_starrm1": false,
+      "copilot_can_approve": true,
+      "note": "The Diet Director may request library access directly to Copilot. Copilot is authorised to approve the Diet Director's library access requests without escalating to starrm1. Standard 30-min / 1-session daily limit applies unless starrm1 grants an exception.",
+      "standard_daily_allowance_minutes": 30,
+      "standard_daily_sessions": 1
+    }
   }
 }
