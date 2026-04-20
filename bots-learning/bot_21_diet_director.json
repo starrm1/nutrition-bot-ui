@@ -43,6 +43,6 @@
     "policy_set_date": "2026-04-20",
     "standard_daily_allowance_minutes": 30,
     "standard_daily_sessions": 1,
-    "note": "The Diet Director may request library access directly from Copilot. Copilot is authorised to approve without escalating to starrm1. Extended access (>30 min or >1 session/day) still requires starrm1 approval."
+    "note": "The Diet Director may request library access directly from Copilot. Copilot is authorised to approve without escalating to starrm1. Extended access (>30 min or >1 session/day) still requires starrm1 approval. This privilege is exclusive to the Diet Director \u2014 departments (Bots 22\u201330) must still go through the full chain up to starrm1."
   }
 }

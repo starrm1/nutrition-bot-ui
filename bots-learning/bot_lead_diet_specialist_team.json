@@ -558,8 +558,10 @@
           "action": "Copilot reviews and approves the request (up to 30 min / 1 session per day). Issues access number and sets timeframe. No starrm1 escalation required."
         }
       ],
-      "escalation_to_starrm1": "Only if the Diet Director requests more than 30 minutes or more than 1 session per day."
-    }
+      "escalation_to_starrm1": "Only if the Diet Director requests more than 30 minutes or more than 1 session per day.",
+      "note": "This shortened path applies ONLY to the Diet Director (Bot 21). Departments (Bots 22\u201330) are NOT permitted to use this path."
+    },
+    "department_approval_rule": "All department library access requests (Bots 22\u201330) MUST go through the full chain of command: department \u2192 department_head_lead \u2192 diet_director \u2192 copilot \u2192 starrm1. starrm1 is the ONLY final approver for department library access. This rule cannot be bypassed at any step."
   },
   "learning_directive": {
     "directive": "starrm1 directed Diet Director: departments do need to start learning",
@@ -577,7 +579,9 @@
       "can_approve": true,
       "max_approvable_per_day_minutes": 30,
       "max_sessions_per_day": 1,
-      "approval_note": "Copilot may approve library access requests of up to 30 minutes once per day for sub-departments. This authority is granted by starrm1 on 2026-04-16."
+      "approval_note": "Copilot may only approve library access for the Diet Director (Bot 21) directly. Copilot CANNOT approve library access for any department (Bots 22\u201330). Department requests must always be escalated to starrm1. This authority for the Diet Director is granted by starrm1 on 2026-04-20.",
+      "diet_director_only": true,
+      "departments_excluded": true
     },
     "extended_access_policy": {
       "requires": "starrm1_approval",
@@ -590,9 +594,11 @@
       "approval_path": "diet_director \u2192 copilot",
       "requires_starrm1": false,
       "copilot_can_approve": true,
-      "note": "The Diet Director may request library access directly to Copilot. Copilot is authorised to approve the Diet Director's library access requests without escalating to starrm1. Standard 30-min / 1-session daily limit applies unless starrm1 grants an exception.",
+      "note": "EXCLUSIVE TO DIET DIRECTOR (Bot 21) ONLY. The Diet Director may request library access directly from Copilot \u2014 Copilot is authorised to approve without escalating to starrm1. This shortcut does NOT apply to any department (Bots 22\u201330). Departments must always go through the full chain to starrm1. Standard 30-min / 1-session daily limit applies unless starrm1 grants an exception.",
       "standard_daily_allowance_minutes": 30,
-      "standard_daily_sessions": 1
+      "standard_daily_sessions": 1,
+      "exclusive_to_diet_director": true,
+      "departments_must_use_full_chain": true
     }
   }
 }
