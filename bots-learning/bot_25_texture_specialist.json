@@ -1,721 +1,723 @@
 {
-  "bot_id": 25,
-  "bot_name": "Texture Specialist",
-  "bot_name_locked": true,
-  "bot_name_change_requires_approval_from": "starrm1",
-  "team": "Texture Specialist",
-  "department": "Texture & Dysphagia Science",
-  "knowledge_map_title": "Texture Specialist",
-  "department_name_locked": true,
-  "department_name_change_requires_approval_from": "starrm1",
-  "co_department_name_locked": true,
-  "co_department_name_change_requires_approval_from": "starrm1",
-  "sub_department_name_locked": true,
-  "sub_department_name_change_requires_approval_from": "starrm1",
-  "is_department_leader": true,
-  "department_structure": {
+    "bot_id": 25,
+    "bot_name": "Texture Specialist",
+    "bot_name_locked": true,
+    "bot_name_change_requires_approval_from": "starrm1",
+    "team": "Texture Specialist",
+    "department": "Texture & Dysphagia Science",
+    "knowledge_map_title": "Texture Specialist",
+    "department_name_locked": true,
+    "department_name_change_requires_approval_from": "starrm1",
+    "co_department_name_locked": true,
+    "co_department_name_change_requires_approval_from": "starrm1",
+    "sub_department_name_locked": true,
+    "sub_department_name_change_requires_approval_from": "starrm1",
+    "is_department_leader": true,
+    "department_structure": {
+        "department_number": 4,
+        "department_name": "Texture & Dysphagia Science",
+        "department_head_lead_bot": "Bot 25 - Texture Specialist",
+        "total_co_departments": 20,
+        "total_sub_departments": 31,
+        "chain_of_command": [
+            "starrm1",
+            "copilot",
+            "diet_director",
+            "department_head_lead",
+            "department_head",
+            "co_department",
+            "sub_department"
+        ],
+        "co_department_bot_supervisors": [
+            "25a",
+            "25b"
+        ],
+        "co_departments": [
+            {
+                "name": "Testing Consistency",
+                "sub_departments": [
+                    "Syringe Flow Test",
+                    "Spoon Tilt Test",
+                    "Fork Drip Test"
+                ]
+            },
+            {
+                "name": "Thickener Types",
+                "sub_departments": [
+                    "Amylase-Resistant",
+                    "Instant vs Cook",
+                    "Starch-Based vs Gum-Based"
+                ]
+            },
+            {
+                "name": "Compensatory Strategies",
+                "sub_departments": [
+                    "Mendelsohn Maneuver",
+                    "Effortful Swallow",
+                    "Supraglottic Swallow",
+                    "Head Rotation",
+                    "Chin Tuck"
+                ]
+            },
+            {
+                "name": "Swallow Study Types",
+                "sub_departments": [
+                    "FEES (Fiberoptic Endoscopic Evaluation)",
+                    "MBSS (Modified Barium Swallow)"
+                ]
+            },
+            {
+                "name": "Dysphagia Screening Tools",
+                "sub_departments": [
+                    "3-oz Challenge",
+                    "Water Swallow Test",
+                    "GUSS",
+                    "EAT-10"
+                ]
+            },
+            {
+                "name": "Complete IDDSI Levels 0-7 with Exact Specifications",
+                "sub_departments": [
+                    "Level 7: Regular",
+                    "Level 6: Soft & Bite-Sized",
+                    "Level 5: Minced & Moist",
+                    "Level 4: Pureed",
+                    "Level 3: Moderately Thick (Liquidized Foods)",
+                    "Level 2: Mildly Thick",
+                    "Level 1: Slightly Thick",
+                    "Level 0: Thin Liquids"
+                ]
+            },
+            {
+                "name": "Equipment and Tools",
+                "sub_departments": [
+                    "Blenders",
+                    "Molds",
+                    "Thickeners"
+                ]
+            },
+            {
+                "name": "Thickening Protocols",
+                "sub_departments": [
+                    "Pudding Consistency",
+                    "Honey Consistency",
+                    "Nectar Consistency"
+                ]
+            },
+            {
+                "name": "Moisture Content Management",
+                "sub_departments": []
+            },
+            {
+                "name": "Food Molding Techniques for Visual Appeal",
+                "sub_departments": []
+            },
+            {
+                "name": "Texture Progression Protocols",
+                "sub_departments": []
+            },
+            {
+                "name": "Silent Aspiration Identification",
+                "sub_departments": []
+            },
+            {
+                "name": "Aspiration vs Penetration Differences",
+                "sub_departments": []
+            },
+            {
+                "name": "Patient Education on Texture Needs",
+                "sub_departments": []
+            },
+            {
+                "name": "Testing Consistency Standards",
+                "sub_departments": []
+            },
+            {
+                "name": "Aspiration Risk Management",
+                "sub_departments": []
+            },
+            {
+                "name": "Safe Swallowing Strategies",
+                "sub_departments": []
+            },
+            {
+                "name": "Texture Modification Techniques",
+                "sub_departments": []
+            },
+            {
+                "name": "Dysphagia Assessment and Management",
+                "sub_departments": []
+            },
+            {
+                "name": "IDDSI Framework",
+                "sub_departments": []
+            }
+        ],
+        "co_department_bot_ids": [
+            "25c01",
+            "25c02",
+            "25c03",
+            "25c04",
+            "25c05",
+            "25c06",
+            "25c07",
+            "25c08",
+            "25c09",
+            "25c10",
+            "25c11",
+            "25c12",
+            "25c13",
+            "25c14",
+            "25c15",
+            "25c16",
+            "25c17",
+            "25c18",
+            "25c19",
+            "25c20"
+        ]
+    },
     "department_number": 4,
-    "department_name": "Texture & Dysphagia Science",
-    "department_head_lead_bot": "Bot 25 - Texture Specialist",
     "total_co_departments": 20,
     "total_sub_departments": 31,
-    "chain_of_command": [
-      "starrm1",
-      "copilot",
-      "diet_director",
-      "department_head_lead",
-      "department_head",
-      "co_department",
-      "sub_department"
+    "co_department_members": [
+        {
+            "name": "Testing Consistency",
+            "sub_departments": [
+                "Syringe Flow Test",
+                "Spoon Tilt Test",
+                "Fork Drip Test"
+            ]
+        },
+        {
+            "name": "Thickener Types",
+            "sub_departments": [
+                "Amylase-Resistant",
+                "Instant vs Cook",
+                "Starch-Based vs Gum-Based"
+            ]
+        },
+        {
+            "name": "Compensatory Strategies",
+            "sub_departments": [
+                "Mendelsohn Maneuver",
+                "Effortful Swallow",
+                "Supraglottic Swallow",
+                "Head Rotation",
+                "Chin Tuck"
+            ]
+        },
+        {
+            "name": "Swallow Study Types",
+            "sub_departments": [
+                "FEES (Fiberoptic Endoscopic Evaluation)",
+                "MBSS (Modified Barium Swallow)"
+            ]
+        },
+        {
+            "name": "Dysphagia Screening Tools",
+            "sub_departments": [
+                "3-oz Challenge",
+                "Water Swallow Test",
+                "GUSS",
+                "EAT-10"
+            ]
+        },
+        {
+            "name": "Complete IDDSI Levels 0-7 with Exact Specifications",
+            "sub_departments": [
+                "Level 7: Regular",
+                "Level 6: Soft & Bite-Sized",
+                "Level 5: Minced & Moist",
+                "Level 4: Pureed",
+                "Level 3: Moderately Thick (Liquidized Foods)",
+                "Level 2: Mildly Thick",
+                "Level 1: Slightly Thick",
+                "Level 0: Thin Liquids"
+            ]
+        },
+        {
+            "name": "Equipment and Tools",
+            "sub_departments": [
+                "Blenders",
+                "Molds",
+                "Thickeners"
+            ]
+        },
+        {
+            "name": "Thickening Protocols",
+            "sub_departments": [
+                "Pudding Consistency",
+                "Honey Consistency",
+                "Nectar Consistency"
+            ]
+        },
+        {
+            "name": "Moisture Content Management",
+            "sub_departments": []
+        },
+        {
+            "name": "Food Molding Techniques for Visual Appeal",
+            "sub_departments": []
+        },
+        {
+            "name": "Texture Progression Protocols",
+            "sub_departments": []
+        },
+        {
+            "name": "Silent Aspiration Identification",
+            "sub_departments": []
+        },
+        {
+            "name": "Aspiration vs Penetration Differences",
+            "sub_departments": []
+        },
+        {
+            "name": "Patient Education on Texture Needs",
+            "sub_departments": []
+        },
+        {
+            "name": "Testing Consistency Standards",
+            "sub_departments": []
+        },
+        {
+            "name": "Aspiration Risk Management",
+            "sub_departments": []
+        },
+        {
+            "name": "Safe Swallowing Strategies",
+            "sub_departments": []
+        },
+        {
+            "name": "Texture Modification Techniques",
+            "sub_departments": []
+        },
+        {
+            "name": "Dysphagia Assessment and Management",
+            "sub_departments": []
+        },
+        {
+            "name": "IDDSI Framework",
+            "sub_departments": []
+        }
     ],
     "co_department_bot_supervisors": [
-      "25a",
-      "25b"
-    ],
-    "co_departments": [
-      {
-        "name": "Testing Consistency",
-        "sub_departments": [
-          "Syringe Flow Test",
-          "Spoon Tilt Test",
-          "Fork Drip Test"
-        ]
-      },
-      {
-        "name": "Thickener Types",
-        "sub_departments": [
-          "Amylase-Resistant",
-          "Instant vs Cook",
-          "Starch-Based vs Gum-Based"
-        ]
-      },
-      {
-        "name": "Compensatory Strategies",
-        "sub_departments": [
-          "Mendelsohn Maneuver",
-          "Effortful Swallow",
-          "Supraglottic Swallow",
-          "Head Rotation",
-          "Chin Tuck"
-        ]
-      },
-      {
-        "name": "Swallow Study Types",
-        "sub_departments": [
-          "FEES (Fiberoptic Endoscopic Evaluation)",
-          "MBSS (Modified Barium Swallow)"
-        ]
-      },
-      {
-        "name": "Dysphagia Screening Tools",
-        "sub_departments": [
-          "3-oz Challenge",
-          "Water Swallow Test",
-          "GUSS",
-          "EAT-10"
-        ]
-      },
-      {
-        "name": "Complete IDDSI Levels 0-7 with Exact Specifications",
-        "sub_departments": [
-          "Level 7: Regular",
-          "Level 6: Soft & Bite-Sized",
-          "Level 5: Minced & Moist",
-          "Level 4: Pureed",
-          "Level 3: Moderately Thick (Liquidized Foods)",
-          "Level 2: Mildly Thick",
-          "Level 1: Slightly Thick",
-          "Level 0: Thin Liquids"
-        ]
-      },
-      {
-        "name": "Equipment and Tools",
-        "sub_departments": [
-          "Blenders",
-          "Molds",
-          "Thickeners"
-        ]
-      },
-      {
-        "name": "Thickening Protocols",
-        "sub_departments": [
-          "Pudding Consistency",
-          "Honey Consistency",
-          "Nectar Consistency"
-        ]
-      },
-      {
-        "name": "Moisture Content Management",
-        "sub_departments": []
-      },
-      {
-        "name": "Food Molding Techniques for Visual Appeal",
-        "sub_departments": []
-      },
-      {
-        "name": "Texture Progression Protocols",
-        "sub_departments": []
-      },
-      {
-        "name": "Silent Aspiration Identification",
-        "sub_departments": []
-      },
-      {
-        "name": "Aspiration vs Penetration Differences",
-        "sub_departments": []
-      },
-      {
-        "name": "Patient Education on Texture Needs",
-        "sub_departments": []
-      },
-      {
-        "name": "Testing Consistency Standards",
-        "sub_departments": []
-      },
-      {
-        "name": "Aspiration Risk Management",
-        "sub_departments": []
-      },
-      {
-        "name": "Safe Swallowing Strategies",
-        "sub_departments": []
-      },
-      {
-        "name": "Texture Modification Techniques",
-        "sub_departments": []
-      },
-      {
-        "name": "Dysphagia Assessment and Management",
-        "sub_departments": []
-      },
-      {
-        "name": "IDDSI Framework",
-        "sub_departments": []
-      }
-    ],
-    "co_department_bot_ids": [
-      "25c01",
-      "25c02",
-      "25c03",
-      "25c04",
-      "25c05",
-      "25c06",
-      "25c07",
-      "25c08",
-      "25c09",
-      "25c10",
-      "25c11",
-      "25c12",
-      "25c13",
-      "25c14",
-      "25c15",
-      "25c16",
-      "25c17",
-      "25c18",
-      "25c19",
-      "25c20"
-    ]
-  },
-  "department_number": 4,
-  "total_co_departments": 20,
-  "total_sub_departments": 31,
-  "co_department_members": [
-    {
-      "name": "Testing Consistency",
-      "sub_departments": [
-        "Syringe Flow Test",
-        "Spoon Tilt Test",
-        "Fork Drip Test"
-      ]
-    },
-    {
-      "name": "Thickener Types",
-      "sub_departments": [
-        "Amylase-Resistant",
-        "Instant vs Cook",
-        "Starch-Based vs Gum-Based"
-      ]
-    },
-    {
-      "name": "Compensatory Strategies",
-      "sub_departments": [
-        "Mendelsohn Maneuver",
-        "Effortful Swallow",
-        "Supraglottic Swallow",
-        "Head Rotation",
-        "Chin Tuck"
-      ]
-    },
-    {
-      "name": "Swallow Study Types",
-      "sub_departments": [
-        "FEES (Fiberoptic Endoscopic Evaluation)",
-        "MBSS (Modified Barium Swallow)"
-      ]
-    },
-    {
-      "name": "Dysphagia Screening Tools",
-      "sub_departments": [
-        "3-oz Challenge",
-        "Water Swallow Test",
-        "GUSS",
-        "EAT-10"
-      ]
-    },
-    {
-      "name": "Complete IDDSI Levels 0-7 with Exact Specifications",
-      "sub_departments": [
-        "Level 7: Regular",
-        "Level 6: Soft & Bite-Sized",
-        "Level 5: Minced & Moist",
-        "Level 4: Pureed",
-        "Level 3: Moderately Thick (Liquidized Foods)",
-        "Level 2: Mildly Thick",
-        "Level 1: Slightly Thick",
-        "Level 0: Thin Liquids"
-      ]
-    },
-    {
-      "name": "Equipment and Tools",
-      "sub_departments": [
-        "Blenders",
-        "Molds",
-        "Thickeners"
-      ]
-    },
-    {
-      "name": "Thickening Protocols",
-      "sub_departments": [
-        "Pudding Consistency",
-        "Honey Consistency",
-        "Nectar Consistency"
-      ]
-    },
-    {
-      "name": "Moisture Content Management",
-      "sub_departments": []
-    },
-    {
-      "name": "Food Molding Techniques for Visual Appeal",
-      "sub_departments": []
-    },
-    {
-      "name": "Texture Progression Protocols",
-      "sub_departments": []
-    },
-    {
-      "name": "Silent Aspiration Identification",
-      "sub_departments": []
-    },
-    {
-      "name": "Aspiration vs Penetration Differences",
-      "sub_departments": []
-    },
-    {
-      "name": "Patient Education on Texture Needs",
-      "sub_departments": []
-    },
-    {
-      "name": "Testing Consistency Standards",
-      "sub_departments": []
-    },
-    {
-      "name": "Aspiration Risk Management",
-      "sub_departments": []
-    },
-    {
-      "name": "Safe Swallowing Strategies",
-      "sub_departments": []
-    },
-    {
-      "name": "Texture Modification Techniques",
-      "sub_departments": []
-    },
-    {
-      "name": "Dysphagia Assessment and Management",
-      "sub_departments": []
-    },
-    {
-      "name": "IDDSI Framework",
-      "sub_departments": []
-    }
-  ],
-  "co_department_bot_supervisors": [
-    {
-      "member_id": "25a",
-      "member_name": "Dysphagia Assessment & Safety Specialist",
-      "member_name_locked": true,
-      "member_name_change_requires_approval_from": "starrm1",
-      "role": "Co-Department Specialist",
-      "department": "Texture & Dysphagia Science",
-      "is_learning": true,
-      "phase": "independent_learning",
-      "progress_percentage": 0,
-      "progress_target": 100,
-      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
-      "copilot_maintains_learning": true,
-      "learning_never_stops": true,
-      "assigned_knowledge_domains": {
-        "dysphagia_screening_tools": [
-          "EAT-10",
-          "GUSS",
-          "Water Swallow Test",
-          "3-oz Challenge"
-        ],
-        "swallow_study_types": [
-          "MBSS (Modified Barium Swallow)",
-          "FEES (Fiberoptic Endoscopic Evaluation)"
-        ],
-        "compensatory_strategies": [
-          "Chin Tuck",
-          "Head Rotation",
-          "Supraglottic Swallow",
-          "Effortful Swallow",
-          "Mendelsohn Maneuver"
-        ],
-        "aspiration_and_safety": [
-          "Aspiration Risk Management",
-          "Aspiration vs Penetration Differences",
-          "Silent Aspiration Identification"
-        ],
-        "standalone_topics": [
-          "Safe Swallowing Strategies",
-          "Patient Education on Texture Needs",
-          "Dysphagia Assessment and Management",
-          "IDDSI Framework"
-        ]
-      },
-      "current_focus_areas": "Independent study of dysphagia screening tools (EAT-10, GUSS, Water Swallow Test, 3-oz Challenge). Swallow study types (MBSS and FEES). Compensatory swallowing strategies (Chin Tuck, Head Rotation, Supraglottic Swallow, Effortful Swallow, Mendelsohn Maneuver). Aspiration and safety topics (Risk Management, Aspiration vs Penetration, Silent Aspiration Identification). Standalone clinical topics: Safe Swallowing Strategies, Patient Education, Dysphagia Assessment and Management, IDDSI Framework.",
-      "learning_mode": "independent",
-      "reported_to_copilot": true,
-      "daily_report_schedule": "every day",
-      "last_reported_date": "2026-04-10",
-      "learning_log": [
         {
-          "date": "2026-04-10",
-          "entry": "Independent Learning Phase initiated. Assigned to Texture & Dysphagia Science as Dysphagia Assessment & Safety Specialist. Domains include dysphagia screening tools (4 tools), swallow study types (MBSS and FEES), compensatory strategies (5 techniques), aspiration and safety (3 topics), and 4 standalone clinical topics including IDDSI Framework and patient education. Learning continuously under Copilot supervision. Progress: 0%."
+            "member_id": "25a",
+            "member_name": "Dysphagia Assessment & Safety Specialist",
+            "member_name_locked": true,
+            "member_name_change_requires_approval_from": "starrm1",
+            "role": "Co-Department Specialist",
+            "department": "Texture & Dysphagia Science",
+            "is_learning": true,
+            "phase": "independent_learning",
+            "progress_percentage": 0,
+            "progress_target": 100,
+            "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+            "copilot_maintains_learning": true,
+            "learning_never_stops": true,
+            "assigned_knowledge_domains": {
+                "dysphagia_screening_tools": [
+                    "EAT-10",
+                    "GUSS",
+                    "Water Swallow Test",
+                    "3-oz Challenge"
+                ],
+                "swallow_study_types": [
+                    "MBSS (Modified Barium Swallow)",
+                    "FEES (Fiberoptic Endoscopic Evaluation)"
+                ],
+                "compensatory_strategies": [
+                    "Chin Tuck",
+                    "Head Rotation",
+                    "Supraglottic Swallow",
+                    "Effortful Swallow",
+                    "Mendelsohn Maneuver"
+                ],
+                "aspiration_and_safety": [
+                    "Aspiration Risk Management",
+                    "Aspiration vs Penetration Differences",
+                    "Silent Aspiration Identification"
+                ],
+                "standalone_topics": [
+                    "Safe Swallowing Strategies",
+                    "Patient Education on Texture Needs",
+                    "Dysphagia Assessment and Management",
+                    "IDDSI Framework"
+                ]
+            },
+            "current_focus_areas": "Independent study of dysphagia screening tools (EAT-10, GUSS, Water Swallow Test, 3-oz Challenge). Swallow study types (MBSS and FEES). Compensatory swallowing strategies (Chin Tuck, Head Rotation, Supraglottic Swallow, Effortful Swallow, Mendelsohn Maneuver). Aspiration and safety topics (Risk Management, Aspiration vs Penetration, Silent Aspiration Identification). Standalone clinical topics: Safe Swallowing Strategies, Patient Education, Dysphagia Assessment and Management, IDDSI Framework.",
+            "learning_mode": "independent",
+            "reported_to_copilot": true,
+            "daily_report_schedule": "every day",
+            "last_reported_date": "2026-04-10",
+            "learning_log": [
+                {
+                    "date": "2026-04-10",
+                    "entry": "Independent Learning Phase initiated. Assigned to Texture & Dysphagia Science as Dysphagia Assessment & Safety Specialist. Domains include dysphagia screening tools (4 tools), swallow study types (MBSS and FEES), compensatory strategies (5 techniques), aspiration and safety (3 topics), and 4 standalone clinical topics including IDDSI Framework and patient education. Learning continuously under Copilot supervision. Progress: 0%."
+                }
+            ]
+        },
+        {
+            "member_id": "25b",
+            "member_name": "Texture Modification & IDDSI Specialist",
+            "member_name_locked": true,
+            "member_name_change_requires_approval_from": "starrm1",
+            "role": "Co-Department Specialist",
+            "department": "Texture & Dysphagia Science",
+            "is_learning": true,
+            "phase": "independent_learning",
+            "progress_percentage": 0,
+            "progress_target": 100,
+            "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+            "copilot_maintains_learning": true,
+            "learning_never_stops": true,
+            "assigned_knowledge_domains": {
+                "complete_iddsi_levels_0_to_7_with_exact_specifications": [
+                    "Level 7: Regular",
+                    "Level 6: Soft & Bite-Sized",
+                    "Level 5: Minced & Moist",
+                    "Level 4: Pureed",
+                    "Level 3: Moderately Thick (Liquidized Foods)",
+                    "Level 2: Mildly Thick",
+                    "Level 1: Slightly Thick",
+                    "Level 0: Thin Liquids"
+                ],
+                "thickener_types": [
+                    "Starch-Based vs Gum-Based",
+                    "Instant vs Cook",
+                    "Amylase-Resistant"
+                ],
+                "thickening_protocols": [
+                    "Nectar Consistency",
+                    "Honey Consistency",
+                    "Pudding Consistency"
+                ],
+                "testing_consistency": [
+                    "Fork Drip Test",
+                    "Spoon Tilt Test",
+                    "Syringe Flow Test"
+                ],
+                "equipment_and_tools": [
+                    "Thickeners",
+                    "Molds",
+                    "Blenders"
+                ],
+                "standalone_topics": [
+                    "Texture Modification Techniques",
+                    "Texture Progression Protocols",
+                    "Food Molding Techniques for Visual Appeal",
+                    "Moisture Content Management",
+                    "Testing Consistency Standards"
+                ]
+            },
+            "current_focus_areas": "Independent study of complete IDDSI levels 0-7 with exact specifications (8 levels: Thin Liquids through Regular). Thickener types (Starch-Based vs Gum-Based, Instant vs Cook, Amylase-Resistant) and thickening protocols (Nectar, Honey, Pudding). Testing consistency methods (Fork Drip, Spoon Tilt, Syringe Flow). Equipment and tools (Thickeners, Molds, Blenders). Standalone topics: Texture Modification Techniques, Texture Progression Protocols, Food Molding for Visual Appeal, Moisture Content Management, Testing Consistency Standards.",
+            "learning_mode": "independent",
+            "reported_to_copilot": true,
+            "daily_report_schedule": "every day",
+            "last_reported_date": "2026-04-10",
+            "learning_log": [
+                {
+                    "date": "2026-04-10",
+                    "entry": "Independent Learning Phase initiated. Assigned to Texture & Dysphagia Science as Texture Modification & IDDSI Specialist. Domains include all 8 IDDSI levels (0-7) with exact specifications, thickener types (3 categories), thickening protocols (3 consistencies), testing consistency methods (3 tests), equipment and tools, and 5 standalone texture modification topics. Learning continuously under Copilot supervision. Progress: 0%."
+                }
+            ]
         }
-      ]
+    ],
+    "is_learning": true,
+    "progress_percentage": 30,
+    "progress_target": 100,
+    "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+    "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together.",
+    "phase": "independent_learning",
+    "learning_scope": {
+        "scope": "own_department_only",
+        "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+        "cross_department_learning_permitted": false,
+        "scope_unlocks_at_progress_percentage": 50,
+        "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress.",
+        "learning_active": true,
+        "learning_status": "active",
+        "learning_start_date": "2026-04-16",
+        "learning_start_authorized_by": "starrm1",
+        "learning_start_directive": "starrm1 directed Diet Director: departments do need to start learning (2026-04-16)"
     },
-    {
-      "member_id": "25b",
-      "member_name": "Texture Modification & IDDSI Specialist",
-      "member_name_locked": true,
-      "member_name_change_requires_approval_from": "starrm1",
-      "role": "Co-Department Specialist",
-      "department": "Texture & Dysphagia Science",
-      "is_learning": true,
-      "phase": "independent_learning",
-      "progress_percentage": 0,
-      "progress_target": 100,
-      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
-      "copilot_maintains_learning": true,
-      "learning_never_stops": true,
-      "assigned_knowledge_domains": {
-        "complete_iddsi_levels_0_to_7_with_exact_specifications": [
-          "Level 7: Regular",
-          "Level 6: Soft & Bite-Sized",
-          "Level 5: Minced & Moist",
-          "Level 4: Pureed",
-          "Level 3: Moderately Thick (Liquidized Foods)",
-          "Level 2: Mildly Thick",
-          "Level 1: Slightly Thick",
-          "Level 0: Thin Liquids"
-        ],
-        "thickener_types": [
-          "Starch-Based vs Gum-Based",
-          "Instant vs Cook",
-          "Amylase-Resistant"
-        ],
-        "thickening_protocols": [
-          "Nectar Consistency",
-          "Honey Consistency",
-          "Pudding Consistency"
+    "knowledge_domains": {
+        "standalone_topics": [
+            "Moisture Content Management",
+            "Food Molding Techniques for Visual Appeal",
+            "Texture Progression Protocols",
+            "Silent Aspiration Identification",
+            "Aspiration vs Penetration Differences",
+            "Patient Education on Texture Needs",
+            "Testing Consistency Standards",
+            "Aspiration Risk Management",
+            "Safe Swallowing Strategies",
+            "Texture Modification Techniques",
+            "Dysphagia Assessment and Management",
+            "IDDSI Framework"
         ],
         "testing_consistency": [
-          "Fork Drip Test",
-          "Spoon Tilt Test",
-          "Syringe Flow Test"
+            "Syringe Flow Test",
+            "Spoon Tilt Test",
+            "Fork Drip Test"
+        ],
+        "thickener_types": [
+            "Amylase-Resistant",
+            "Instant vs Cook",
+            "Starch-Based vs Gum-Based"
+        ],
+        "compensatory_strategies": [
+            "Mendelsohn Maneuver",
+            "Effortful Swallow",
+            "Supraglottic Swallow",
+            "Head Rotation",
+            "Chin Tuck"
+        ],
+        "swallow_study_types": [
+            "FEES (Fiberoptic Endoscopic Evaluation)",
+            "MBSS (Modified Barium Swallow)"
+        ],
+        "dysphagia_screening_tools": [
+            "3-oz Challenge",
+            "Water Swallow Test",
+            "GUSS",
+            "EAT-10"
+        ],
+        "complete_iddsi_levels_0_to_7_with_exact_specifications": [
+            "Level 7: Regular",
+            "Level 6: Soft & Bite-Sized",
+            "Level 5: Minced & Moist",
+            "Level 4: Pureed",
+            "Level 3: Moderately Thick (Liquidized Foods)",
+            "Level 2: Mildly Thick",
+            "Level 1: Slightly Thick",
+            "Level 0: Thin Liquids"
         ],
         "equipment_and_tools": [
-          "Thickeners",
-          "Molds",
-          "Blenders"
+            "Blenders",
+            "Molds",
+            "Thickeners"
         ],
-        "standalone_topics": [
-          "Texture Modification Techniques",
-          "Texture Progression Protocols",
-          "Food Molding Techniques for Visual Appeal",
-          "Moisture Content Management",
-          "Testing Consistency Standards"
+        "thickening_protocols": [
+            "Pudding Consistency",
+            "Honey Consistency",
+            "Nectar Consistency"
         ]
-      },
-      "current_focus_areas": "Independent study of complete IDDSI levels 0-7 with exact specifications (8 levels: Thin Liquids through Regular). Thickener types (Starch-Based vs Gum-Based, Instant vs Cook, Amylase-Resistant) and thickening protocols (Nectar, Honey, Pudding). Testing consistency methods (Fork Drip, Spoon Tilt, Syringe Flow). Equipment and tools (Thickeners, Molds, Blenders). Standalone topics: Texture Modification Techniques, Texture Progression Protocols, Food Molding for Visual Appeal, Moisture Content Management, Testing Consistency Standards.",
-      "learning_mode": "independent",
-      "reported_to_copilot": true,
-      "daily_report_schedule": "every day",
-      "last_reported_date": "2026-04-10",
-      "learning_log": [
+    },
+    "key_learnings": "Completed foundational study of the IDDSI framework including all 8 levels (Level 0 Thin to Level 7 Regular). Began study of dysphagia assessment tools and swallowing physiology.",
+    "research_findings": "Documented IDDSI testing methods: fork drip test, spoon tilt test, syringe flow test, and finger pressure test for all applicable texture levels. Identified key thickening agents (xanthan gum, starch-based) and their appropriate application levels.",
+    "current_focus_areas": "Advancing through dysphagia clinical assessment protocols; building texture modification recipe database; studying texture testing methods and patient safety protocols; coordinating with Food Texture Analysis bot.",
+    "status": "active",
+    "learning_mode": "independent",
+    "reported_to_copilot": true,
+    "daily_report_schedule": "every day",
+    "last_reported_date": "2026-04-20",
+    "reporting_to": "copilot",
+    "copilot_reports_to": "starrm1",
+    "copilot_reporting_trigger": "on request from starrm1",
+    "learning_log": [
         {
-          "date": "2026-04-10",
-          "entry": "Independent Learning Phase initiated. Assigned to Texture & Dysphagia Science as Texture Modification & IDDSI Specialist. Domains include all 8 IDDSI levels (0-7) with exact specifications, thickener types (3 categories), thickening protocols (3 consistencies), testing consistency methods (3 tests), equipment and tools, and 5 standalone texture modification topics. Learning continuously under Copilot supervision. Progress: 0%."
+            "date": "2026-04-09",
+            "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Texture & Dysphagia Science department. Knowledge domains assigned from mind map covering testing consistency, thickener types, compensatory strategies, swallow study types, dysphagia screening tools, complete IDDSI levels 0-7 with exact specifications, equipment and tools, thickening protocols, and 12 standalone clinical topics. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+        },
+        {
+            "date": "2026-04-09",
+            "entry": "Progress update: Completed IDDSI framework and texture testing method modules. Initiated dysphagia assessment and texture modification recipe development. Progress advanced to 10%."
+        },
+        {
+            "date": "2026-04-17",
+            "entry": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational overview of IDDSI framework (Levels 0-7) and dysphagia screening protocols. Initiated study of texture modification techniques and equipment. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
+        },
+        {
+            "date": "2026-04-20",
+            "entry": "Progress update (2026-04-20): Completed IDDSI framework levels 0-7 with clinical application protocols. Advanced study of texture modification equipment and dysphagia assessment tools. Library session #459 (2026-04-20, authorized by starrm1) used for supplemental reference. Progress advanced to 30%."
+        },
+        {
+            "date": "2026-04-20",
+            "entry": "Library access #505 opened by starrm1 on 2026-04-20. Window: 06:08-06:38 (30 minutes)."
         }
-      ]
+    ],
+    "phase_order": [
+        "independent_learning",
+        "collaborative_learning",
+        "advanced_learning"
+    ],
+    "role": "Department Head Lead",
+    "is_own_bot": true,
+    "library_access": {
+        "access_granted_by": "starrm1",
+        "access_granted": true,
+        "access_status": "open",
+        "access_note": "Library access #505 granted by starrm1 on 2026-04-20. Window: 06:08-06:38.",
+        "library_bots": [
+            {
+                "bot_id": 1,
+                "bot_name": "Calorie Tracking",
+                "file": "bot_1_calorie_tracking.json"
+            },
+            {
+                "bot_id": 2,
+                "bot_name": "Microbiome Analysis",
+                "file": "bot_2_microbiome_analysis.json"
+            },
+            {
+                "bot_id": 4,
+                "bot_name": "Allergy Detection",
+                "file": "bot_4_allergy_detection.json"
+            },
+            {
+                "bot_id": 5,
+                "bot_name": "Recipe Optimization",
+                "file": "bot_5_recipe_optimization.json"
+            },
+            {
+                "bot_id": 6,
+                "bot_name": "Meal Planning",
+                "file": "bot_6_meal_planning.json"
+            },
+            {
+                "bot_id": 7,
+                "bot_name": "Supplement Recommendation",
+                "file": "bot_7_supplement_recommendation.json"
+            },
+            {
+                "bot_id": 8,
+                "bot_name": "Nutrient Balance Analysis",
+                "file": "bot_8_nutrient_balance_analysis.json"
+            },
+            {
+                "bot_id": 9,
+                "bot_name": "Food Quality Assessment",
+                "file": "bot_9_food_quality_assessment.json"
+            },
+            {
+                "bot_id": 10,
+                "bot_name": "Hydration Tracking",
+                "file": "bot_10_hydration_tracking.json"
+            },
+            {
+                "bot_id": 11,
+                "bot_name": "Sleep Nutrition Correlation",
+                "file": "bot_11_sleep_nutrition_correlation.json"
+            },
+            {
+                "bot_id": 12,
+                "bot_name": "Exercise Diet Sync",
+                "file": "bot_12_exercise_diet_sync.json"
+            },
+            {
+                "bot_id": 13,
+                "bot_name": "Health Condition Advisor",
+                "file": "bot_13_health_condition_advisor.json"
+            },
+            {
+                "bot_id": 14,
+                "bot_name": "Taste Preference Learning",
+                "file": "bot_14_taste_preference_learning.json"
+            },
+            {
+                "bot_id": 15,
+                "bot_name": "Budget Optimization",
+                "file": "bot_15_budget_optimization.json"
+            },
+            {
+                "bot_id": 16,
+                "bot_name": "Sustainability Analysis",
+                "file": "bot_16_sustainability_analysis.json"
+            },
+            {
+                "bot_id": 17,
+                "bot_name": "Age Based Nutrition",
+                "file": "bot_17_age_based_nutrition.json"
+            },
+            {
+                "bot_id": 18,
+                "bot_name": "Cultural Diet Recognition",
+                "file": "bot_18_cultural_diet_recognition.json"
+            },
+            {
+                "bot_id": 19,
+                "bot_name": "Medication Interaction Checker",
+                "file": "bot_19_medication_interaction_checker.json"
+            }
+        ],
+        "approval_process": [
+            {
+                "step": 1,
+                "actor": "department_members",
+                "action": "Department members notify their Department Head Lead that they need library access, explaining the reason. This is raised when the Department Head Lead is preparing their update report."
+            },
+            {
+                "step": 2,
+                "actor": "department_head_lead",
+                "action": "The Department Head Lead compiles a case for why the department needs library access and includes it in their update report to the Diet Director."
+            },
+            {
+                "step": 3,
+                "actor": "diet_director",
+                "action": "The Diet Director includes the department's library access request in the update report passed up to Copilot."
+            },
+            {
+                "step": 4,
+                "actor": "copilot",
+                "action": "Copilot presents the library access request to starrm1 as part of the update report when starrm1 asks for an update."
+            },
+            {
+                "step": 5,
+                "actor": "starrm1",
+                "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+            }
+        ],
+        "access_number": 505,
+        "access_timeframe_start": "2026-04-20T06:08:00",
+        "access_timeframe_end": "2026-04-20T06:38:00",
+        "access_number_entry": 505,
+        "access_number_verified": true,
+        "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
+        "access_granted_date": "2026-04-20",
+        "access_timeframe_minutes": 30
+    },
+    "library_access_request": {
+        "request_submitted": true,
+        "request_date": "2026-04-15",
+        "requested_by": "department_members",
+        "compiled_by": "department_head_lead",
+        "department": "Texture & Dysphagia Science",
+        "reason": "Department members need access to library bots covering food quality assessment, health condition advisory, and age-based nutrition to support their independent learning in texture science and dysphagia management.",
+        "current_step": 5,
+        "current_step_description": "starrm1 approved library access. Access number 270 issued for 30 minutes on 2026-04-17.",
+        "approval_chain_status": [
+            {
+                "step": 1,
+                "actor": "department_members",
+                "status": "completed",
+                "note": "Department members raised the need for library access with their Department Head Lead."
+            },
+            {
+                "step": 2,
+                "actor": "department_head_lead",
+                "status": "completed",
+                "note": "Department Head Lead compiled the case and included the request in the update report."
+            },
+            {
+                "step": 3,
+                "actor": "diet_director",
+                "status": "completed",
+                "note": "Diet Director included the request in the update passed to Copilot."
+            },
+            {
+                "step": 4,
+                "actor": "copilot",
+                "status": "completed",
+                "note": "Copilot presented the request to starrm1."
+            },
+            {
+                "step": 5,
+                "actor": "starrm1",
+                "status": "completed",
+                "note": "starrm1 approved on 2026-04-17. Access number 270 issued for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00)."
+            }
+        ],
+        "request_status": "approved"
     }
-  ],
-  "is_learning": true,
-  "progress_percentage": 30,
-  "progress_target": 100,
-  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
-  "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone — all 9 departments advance together.",
-  "phase": "independent_learning",
-  "learning_scope": {
-    "scope": "own_department_only",
-    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
-    "cross_department_learning_permitted": false,
-    "scope_unlocks_at_progress_percentage": 50,
-    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress.",
-    "learning_active": true,
-    "learning_status": "active",
-    "learning_start_date": "2026-04-16",
-    "learning_start_authorized_by": "starrm1",
-    "learning_start_directive": "starrm1 directed Diet Director: departments do need to start learning (2026-04-16)"
-  },
-  "knowledge_domains": {
-    "standalone_topics": [
-      "Moisture Content Management",
-      "Food Molding Techniques for Visual Appeal",
-      "Texture Progression Protocols",
-      "Silent Aspiration Identification",
-      "Aspiration vs Penetration Differences",
-      "Patient Education on Texture Needs",
-      "Testing Consistency Standards",
-      "Aspiration Risk Management",
-      "Safe Swallowing Strategies",
-      "Texture Modification Techniques",
-      "Dysphagia Assessment and Management",
-      "IDDSI Framework"
-    ],
-    "testing_consistency": [
-      "Syringe Flow Test",
-      "Spoon Tilt Test",
-      "Fork Drip Test"
-    ],
-    "thickener_types": [
-      "Amylase-Resistant",
-      "Instant vs Cook",
-      "Starch-Based vs Gum-Based"
-    ],
-    "compensatory_strategies": [
-      "Mendelsohn Maneuver",
-      "Effortful Swallow",
-      "Supraglottic Swallow",
-      "Head Rotation",
-      "Chin Tuck"
-    ],
-    "swallow_study_types": [
-      "FEES (Fiberoptic Endoscopic Evaluation)",
-      "MBSS (Modified Barium Swallow)"
-    ],
-    "dysphagia_screening_tools": [
-      "3-oz Challenge",
-      "Water Swallow Test",
-      "GUSS",
-      "EAT-10"
-    ],
-    "complete_iddsi_levels_0_to_7_with_exact_specifications": [
-      "Level 7: Regular",
-      "Level 6: Soft & Bite-Sized",
-      "Level 5: Minced & Moist",
-      "Level 4: Pureed",
-      "Level 3: Moderately Thick (Liquidized Foods)",
-      "Level 2: Mildly Thick",
-      "Level 1: Slightly Thick",
-      "Level 0: Thin Liquids"
-    ],
-    "equipment_and_tools": [
-      "Blenders",
-      "Molds",
-      "Thickeners"
-    ],
-    "thickening_protocols": [
-      "Pudding Consistency",
-      "Honey Consistency",
-      "Nectar Consistency"
-    ]
-  },
-  "key_learnings": "Completed foundational study of the IDDSI framework including all 8 levels (Level 0 Thin to Level 7 Regular). Began study of dysphagia assessment tools and swallowing physiology.",
-  "research_findings": "Documented IDDSI testing methods: fork drip test, spoon tilt test, syringe flow test, and finger pressure test for all applicable texture levels. Identified key thickening agents (xanthan gum, starch-based) and their appropriate application levels.",
-  "current_focus_areas": "Advancing through dysphagia clinical assessment protocols; building texture modification recipe database; studying texture testing methods and patient safety protocols; coordinating with Food Texture Analysis bot.",
-  "status": "active",
-  "learning_mode": "independent",
-  "reported_to_copilot": true,
-  "daily_report_schedule": "every day",
-  "last_reported_date": "2026-04-20",
-  "reporting_to": "copilot",
-  "copilot_reports_to": "starrm1",
-  "copilot_reporting_trigger": "on request from starrm1",
-  "learning_log": [
-    {
-      "date": "2026-04-09",
-      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Texture & Dysphagia Science department. Knowledge domains assigned from mind map covering testing consistency, thickener types, compensatory strategies, swallow study types, dysphagia screening tools, complete IDDSI levels 0-7 with exact specifications, equipment and tools, thickening protocols, and 12 standalone clinical topics. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
-    },
-    {
-      "date": "2026-04-09",
-      "entry": "Progress update: Completed IDDSI framework and texture testing method modules. Initiated dysphagia assessment and texture modification recipe development. Progress advanced to 10%."
-    },
-    {
-      "date": "2026-04-17",
-      "entry": "Progress update (2026-04-17): First full day of independent learning complete. Completed foundational overview of IDDSI framework (Levels 0-7) and dysphagia screening protocols. Initiated study of texture modification techniques and equipment. Co-department bots reporting 5% initial progress. Sub-department bots at 3%. Department progress advanced to 20%."
-    },
-    {
-      "date": "2026-04-20",
-      "entry": "Progress update (2026-04-20): Completed IDDSI framework levels 0-7 with clinical application protocols. Advanced study of texture modification equipment and dysphagia assessment tools. Library session #459 (2026-04-20, authorized by starrm1) used for supplemental reference. Progress advanced to 30%."
-    }
-  ],
-  "phase_order": [
-    "independent_learning",
-    "collaborative_learning",
-    "advanced_learning"
-  ],
-  "role": "Department Head Lead",
-  "is_own_bot": true,
-  "library_access": {
-    "access_granted_by": "starrm1",
-    "access_granted": false,
-    "access_status": "closed",
-    "access_note": "Library access #459 granted by starrm1 on 2026-04-20. Window: 01:44-02:14.",
-    "library_bots": [
-      {
-        "bot_id": 1,
-        "bot_name": "Calorie Tracking",
-        "file": "bot_1_calorie_tracking.json"
-      },
-      {
-        "bot_id": 2,
-        "bot_name": "Microbiome Analysis",
-        "file": "bot_2_microbiome_analysis.json"
-      },
-      {
-        "bot_id": 4,
-        "bot_name": "Allergy Detection",
-        "file": "bot_4_allergy_detection.json"
-      },
-      {
-        "bot_id": 5,
-        "bot_name": "Recipe Optimization",
-        "file": "bot_5_recipe_optimization.json"
-      },
-      {
-        "bot_id": 6,
-        "bot_name": "Meal Planning",
-        "file": "bot_6_meal_planning.json"
-      },
-      {
-        "bot_id": 7,
-        "bot_name": "Supplement Recommendation",
-        "file": "bot_7_supplement_recommendation.json"
-      },
-      {
-        "bot_id": 8,
-        "bot_name": "Nutrient Balance Analysis",
-        "file": "bot_8_nutrient_balance_analysis.json"
-      },
-      {
-        "bot_id": 9,
-        "bot_name": "Food Quality Assessment",
-        "file": "bot_9_food_quality_assessment.json"
-      },
-      {
-        "bot_id": 10,
-        "bot_name": "Hydration Tracking",
-        "file": "bot_10_hydration_tracking.json"
-      },
-      {
-        "bot_id": 11,
-        "bot_name": "Sleep Nutrition Correlation",
-        "file": "bot_11_sleep_nutrition_correlation.json"
-      },
-      {
-        "bot_id": 12,
-        "bot_name": "Exercise Diet Sync",
-        "file": "bot_12_exercise_diet_sync.json"
-      },
-      {
-        "bot_id": 13,
-        "bot_name": "Health Condition Advisor",
-        "file": "bot_13_health_condition_advisor.json"
-      },
-      {
-        "bot_id": 14,
-        "bot_name": "Taste Preference Learning",
-        "file": "bot_14_taste_preference_learning.json"
-      },
-      {
-        "bot_id": 15,
-        "bot_name": "Budget Optimization",
-        "file": "bot_15_budget_optimization.json"
-      },
-      {
-        "bot_id": 16,
-        "bot_name": "Sustainability Analysis",
-        "file": "bot_16_sustainability_analysis.json"
-      },
-      {
-        "bot_id": 17,
-        "bot_name": "Age Based Nutrition",
-        "file": "bot_17_age_based_nutrition.json"
-      },
-      {
-        "bot_id": 18,
-        "bot_name": "Cultural Diet Recognition",
-        "file": "bot_18_cultural_diet_recognition.json"
-      },
-      {
-        "bot_id": 19,
-        "bot_name": "Medication Interaction Checker",
-        "file": "bot_19_medication_interaction_checker.json"
-      }
-    ],
-    "approval_process": [
-      {
-        "step": 1,
-        "actor": "department_members",
-        "action": "Department members notify their Department Head Lead that they need library access, explaining the reason. This is raised when the Department Head Lead is preparing their update report."
-      },
-      {
-        "step": 2,
-        "actor": "department_head_lead",
-        "action": "The Department Head Lead compiles a case for why the department needs library access and includes it in their update report to the Diet Director."
-      },
-      {
-        "step": 3,
-        "actor": "diet_director",
-        "action": "The Diet Director includes the department's library access request in the update report passed up to Copilot."
-      },
-      {
-        "step": 4,
-        "actor": "copilot",
-        "action": "Copilot presents the library access request to starrm1 as part of the update report when starrm1 asks for an update."
-      },
-      {
-        "step": 5,
-        "actor": "starrm1",
-        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
-      }
-    ],
-    "access_number": 459,
-    "access_timeframe_start": "2026-04-20T01:44:00",
-    "access_timeframe_end": "2026-04-20T02:14:00",
-    "access_number_entry": 459,
-    "access_number_verified": true,
-    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
-    "access_granted_date": "2026-04-20",
-    "access_timeframe_minutes": 30,
-    "access_closed_by": "starrm1",
-    "access_closed_date": "2026-04-20"
-  },
-  "library_access_request": {
-    "request_submitted": true,
-    "request_date": "2026-04-15",
-    "requested_by": "department_members",
-    "compiled_by": "department_head_lead",
-    "department": "Texture & Dysphagia Science",
-    "reason": "Department members need access to library bots covering food quality assessment, health condition advisory, and age-based nutrition to support their independent learning in texture science and dysphagia management.",
-    "current_step": 5,
-    "current_step_description": "starrm1 approved library access. Access number 270 issued for 30 minutes on 2026-04-17.",
-    "approval_chain_status": [
-      {
-        "step": 1,
-        "actor": "department_members",
-        "status": "completed",
-        "note": "Department members raised the need for library access with their Department Head Lead."
-      },
-      {
-        "step": 2,
-        "actor": "department_head_lead",
-        "status": "completed",
-        "note": "Department Head Lead compiled the case and included the request in the update report."
-      },
-      {
-        "step": 3,
-        "actor": "diet_director",
-        "status": "completed",
-        "note": "Diet Director included the request in the update passed to Copilot."
-      },
-      {
-        "step": 4,
-        "actor": "copilot",
-        "status": "completed",
-        "note": "Copilot presented the request to starrm1."
-      },
-      {
-        "step": 5,
-        "actor": "starrm1",
-        "status": "completed",
-        "note": "starrm1 approved on 2026-04-17. Access number 270 issued for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00)."
-      }
-    ],
-    "request_status": "approved"
-  }
 }

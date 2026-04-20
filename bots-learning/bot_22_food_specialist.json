@@ -1,639 +1,641 @@
 {
-  "bot_id": 22,
-  "bot_name": "Food Specialist",
-  "bot_name_locked": true,
-  "bot_name_change_requires_approval_from": "starrm1",
-  "team": "Food Specialist",
-  "department": "Food Science & Clinical Dietetics",
-  "knowledge_map_title": "Food Specialist",
-  "department_name_locked": true,
-  "department_name_change_requires_approval_from": "starrm1",
-  "co_department_name_locked": true,
-  "co_department_name_change_requires_approval_from": "starrm1",
-  "sub_department_name_locked": true,
-  "sub_department_name_change_requires_approval_from": "starrm1",
-  "is_department_leader": true,
-  "department_structure": {
+    "bot_id": 22,
+    "bot_name": "Food Specialist",
+    "bot_name_locked": true,
+    "bot_name_change_requires_approval_from": "starrm1",
+    "team": "Food Specialist",
+    "department": "Food Science & Clinical Dietetics",
+    "knowledge_map_title": "Food Specialist",
+    "department_name_locked": true,
+    "department_name_change_requires_approval_from": "starrm1",
+    "co_department_name_locked": true,
+    "co_department_name_change_requires_approval_from": "starrm1",
+    "sub_department_name_locked": true,
+    "sub_department_name_change_requires_approval_from": "starrm1",
+    "is_department_leader": true,
+    "department_structure": {
+        "department_number": 1,
+        "department_name": "Food Science & Clinical Dietetics",
+        "department_head_lead_bot": "Bot 22 - Food Specialist",
+        "total_co_departments": 15,
+        "total_sub_departments": 60,
+        "chain_of_command": [
+            "starrm1",
+            "copilot",
+            "diet_director",
+            "department_head_lead",
+            "department_head",
+            "co_department",
+            "sub_department"
+        ],
+        "note": "Department 1 has no co-department bot supervisors (no Bot 22a or 22b). Bot 22 serves as Department Head Lead with co-departments managed directly without dedicated sub-bots.",
+        "co_departments": [
+            {
+                "name": "Ingredient Functionality",
+                "sub_departments": [
+                    "Flavoring",
+                    "Thickening",
+                    "Emulsifying",
+                    "Leavening",
+                    "Binding"
+                ]
+            },
+            {
+                "name": "Recipe Adaptation Strategies",
+                "sub_departments": []
+            },
+            {
+                "name": "Food Texture Analysis and Modification Methods",
+                "sub_departments": []
+            },
+            {
+                "name": "Seasonal and Local Food Sourcing",
+                "sub_departments": []
+            },
+            {
+                "name": "Food Substitutions and Alternatives for Every Restriction",
+                "sub_departments": []
+            },
+            {
+                "name": "Cooking Techniques per Diet Restriction",
+                "sub_departments": []
+            },
+            {
+                "name": "Food Safety and Storage",
+                "sub_departments": [
+                    "Color Coded Cutting Boards",
+                    "Cross Contamination Zones",
+                    "Reheating Protocols",
+                    "Proper Cooling",
+                    "First In First Out",
+                    "Expiration Dating",
+                    "Shelf Life",
+                    "Storage Temps",
+                    "Danger Zone (40-140\u00b0F)",
+                    "HACCP"
+                ]
+            },
+            {
+                "name": "Portion Sizes and Serving Guidelines",
+                "sub_departments": []
+            },
+            {
+                "name": "Food Preparation Methods",
+                "sub_departments": [
+                    "Dehydrating",
+                    "Curing",
+                    "Smoking",
+                    "Pickling",
+                    "Fermenting",
+                    "Sous Vide",
+                    "Air Frying",
+                    "Pressure Cooking",
+                    "Slow Cooking",
+                    "Microwaving",
+                    "Broiling",
+                    "Poaching",
+                    "Saut\u00e9ing",
+                    "Roasting",
+                    "Boiling",
+                    "Steaming",
+                    "Baking",
+                    "Grilling"
+                ]
+            },
+            {
+                "name": "Enteral Nutrition",
+                "sub_departments": [
+                    "Tube Feeding Formulas"
+                ]
+            },
+            {
+                "name": "Allergy/Intolerance Diets",
+                "sub_departments": [
+                    "Lactose-Free",
+                    "Gluten-Free"
+                ]
+            },
+            {
+                "name": "Disease Specific Diets",
+                "sub_departments": [
+                    "Anti-Gout",
+                    "Acid Ash",
+                    "Bland",
+                    "Cardiac",
+                    "Renal",
+                    "Diabetic"
+                ]
+            },
+            {
+                "name": "Nutrient-Controlled Diets",
+                "sub_departments": [
+                    "Low-Residue",
+                    "No Concentrated Sweets",
+                    "Low Protein",
+                    "High Protein",
+                    "Low Fat",
+                    "Low Sodium"
+                ]
+            },
+            {
+                "name": "Texture Modified Diets",
+                "sub_departments": [
+                    "Pureed",
+                    "Mechanical Soft",
+                    "Soft",
+                    "Full Liquid",
+                    "Clear Liquid"
+                ]
+            },
+            {
+                "name": "Regular/Normal Diet",
+                "sub_departments": [
+                    "Desserts",
+                    "Fats",
+                    "Vegetables",
+                    "Fruits",
+                    "Grains",
+                    "Dairy",
+                    "Proteins"
+                ]
+            }
+        ],
+        "co_department_bot_ids": [
+            "22c01",
+            "22c02",
+            "22c03",
+            "22c04",
+            "22c05",
+            "22c06",
+            "22c07",
+            "22c08",
+            "22c09",
+            "22c10",
+            "22c11",
+            "22c12",
+            "22c13",
+            "22c14",
+            "22c15"
+        ]
+    },
     "department_number": 1,
-    "department_name": "Food Science & Clinical Dietetics",
-    "department_head_lead_bot": "Bot 22 - Food Specialist",
     "total_co_departments": 15,
     "total_sub_departments": 60,
-    "chain_of_command": [
-      "starrm1",
-      "copilot",
-      "diet_director",
-      "department_head_lead",
-      "department_head",
-      "co_department",
-      "sub_department"
+    "co_department_members": [
+        {
+            "name": "Ingredient Functionality",
+            "sub_departments": [
+                "Flavoring",
+                "Thickening",
+                "Emulsifying",
+                "Leavening",
+                "Binding"
+            ]
+        },
+        {
+            "name": "Recipe Adaptation Strategies",
+            "sub_departments": []
+        },
+        {
+            "name": "Food Texture Analysis and Modification Methods",
+            "sub_departments": []
+        },
+        {
+            "name": "Seasonal and Local Food Sourcing",
+            "sub_departments": []
+        },
+        {
+            "name": "Food Substitutions and Alternatives for Every Restriction",
+            "sub_departments": []
+        },
+        {
+            "name": "Cooking Techniques per Diet Restriction",
+            "sub_departments": []
+        },
+        {
+            "name": "Food Safety and Storage",
+            "sub_departments": [
+                "Color Coded Cutting Boards",
+                "Cross Contamination Zones",
+                "Reheating Protocols",
+                "Proper Cooling",
+                "First In First Out",
+                "Expiration Dating",
+                "Shelf Life",
+                "Storage Temps",
+                "Danger Zone (40-140\u00b0F)",
+                "HACCP"
+            ]
+        },
+        {
+            "name": "Portion Sizes and Serving Guidelines",
+            "sub_departments": []
+        },
+        {
+            "name": "Food Preparation Methods",
+            "sub_departments": [
+                "Dehydrating",
+                "Curing",
+                "Smoking",
+                "Pickling",
+                "Fermenting",
+                "Sous Vide",
+                "Air Frying",
+                "Pressure Cooking",
+                "Slow Cooking",
+                "Microwaving",
+                "Broiling",
+                "Poaching",
+                "Saut\u00e9ing",
+                "Roasting",
+                "Boiling",
+                "Steaming",
+                "Baking",
+                "Grilling"
+            ]
+        },
+        {
+            "name": "Enteral Nutrition",
+            "sub_departments": [
+                "Tube Feeding Formulas"
+            ]
+        },
+        {
+            "name": "Allergy/Intolerance Diets",
+            "sub_departments": [
+                "Lactose-Free",
+                "Gluten-Free"
+            ]
+        },
+        {
+            "name": "Disease Specific Diets",
+            "sub_departments": [
+                "Anti-Gout",
+                "Acid Ash",
+                "Bland",
+                "Cardiac",
+                "Renal",
+                "Diabetic"
+            ]
+        },
+        {
+            "name": "Nutrient-Controlled Diets",
+            "sub_departments": [
+                "Low-Residue",
+                "No Concentrated Sweets",
+                "Low Protein",
+                "High Protein",
+                "Low Fat",
+                "Low Sodium"
+            ]
+        },
+        {
+            "name": "Texture Modified Diets",
+            "sub_departments": [
+                "Pureed",
+                "Mechanical Soft",
+                "Soft",
+                "Full Liquid",
+                "Clear Liquid"
+            ]
+        },
+        {
+            "name": "Regular/Normal Diet",
+            "sub_departments": [
+                "Desserts",
+                "Fats",
+                "Vegetables",
+                "Fruits",
+                "Grains",
+                "Dairy",
+                "Proteins"
+            ]
+        }
     ],
-    "note": "Department 1 has no co-department bot supervisors (no Bot 22a or 22b). Bot 22 serves as Department Head Lead with co-departments managed directly without dedicated sub-bots.",
-    "co_departments": [
-      {
-        "name": "Ingredient Functionality",
-        "sub_departments": [
-          "Flavoring",
-          "Thickening",
-          "Emulsifying",
-          "Leavening",
-          "Binding"
+    "is_learning": true,
+    "progress_percentage": 50,
+    "progress_target": 100,
+    "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+    "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together.",
+    "phase": "independent_learning",
+    "learning_scope": {
+        "scope": "own_department_only",
+        "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+        "cross_department_learning_permitted": false,
+        "scope_unlocks_at_progress_percentage": 50,
+        "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress.",
+        "learning_active": true,
+        "learning_status": "active",
+        "learning_start_date": "2026-04-16",
+        "learning_start_authorized_by": "starrm1",
+        "learning_start_directive": "starrm1 directed Diet Director: departments do need to start learning (2026-04-16)"
+    },
+    "knowledge_domains": {
+        "ingredient_functionality": [
+            "Flavoring",
+            "Thickening",
+            "Emulsifying",
+            "Leavening",
+            "Binding"
+        ],
+        "standalone_topics": [
+            "Recipe Adaptation Strategies",
+            "Food Texture Analysis and Modification Methods",
+            "Seasonal and Local Food Sourcing",
+            "Food Substitutions and Alternatives for Every Restriction",
+            "Cooking Techniques per Diet Restriction",
+            "Portion Sizes and Serving Guidelines"
+        ],
+        "food_safety_and_storage": [
+            "Color Coded Cutting Boards",
+            "Cross Contamination Zones",
+            "Reheating Protocols",
+            "Proper Cooling",
+            "First In First Out",
+            "Expiration Dating",
+            "Shelf Life",
+            "Storage Temps",
+            "Danger Zone (40-140\u00b0F)",
+            "HACCP"
+        ],
+        "food_preparation_methods": [
+            "Dehydrating",
+            "Curing",
+            "Smoking",
+            "Pickling",
+            "Fermenting",
+            "Sous Vide",
+            "Air Frying",
+            "Pressure Cooking",
+            "Slow Cooking",
+            "Microwaving",
+            "Broiling",
+            "Poaching",
+            "Saut\u00e9ing",
+            "Roasting",
+            "Boiling",
+            "Steaming",
+            "Baking",
+            "Grilling"
+        ],
+        "enteral_nutrition": [
+            "Tube Feeding Formulas"
+        ],
+        "allergy_intolerance_diets": [
+            "Lactose-Free",
+            "Gluten-Free"
+        ],
+        "disease_specific_diets": [
+            "Anti-Gout",
+            "Acid Ash",
+            "Bland",
+            "Cardiac",
+            "Renal",
+            "Diabetic"
+        ],
+        "nutrient_controlled_diets": [
+            "Low-Residue",
+            "No Concentrated Sweets",
+            "Low Protein",
+            "High Protein",
+            "Low Fat",
+            "Low Sodium"
+        ],
+        "texture_modified_diets": [
+            "Pureed",
+            "Mechanical Soft",
+            "Soft",
+            "Full Liquid",
+            "Clear Liquid"
+        ],
+        "regular_normal_diet": [
+            "Desserts",
+            "Fats",
+            "Vegetables",
+            "Fruits",
+            "Grains",
+            "Dairy",
+            "Proteins"
         ]
-      },
-      {
-        "name": "Recipe Adaptation Strategies",
-        "sub_departments": []
-      },
-      {
-        "name": "Food Texture Analysis and Modification Methods",
-        "sub_departments": []
-      },
-      {
-        "name": "Seasonal and Local Food Sourcing",
-        "sub_departments": []
-      },
-      {
-        "name": "Food Substitutions and Alternatives for Every Restriction",
-        "sub_departments": []
-      },
-      {
-        "name": "Cooking Techniques per Diet Restriction",
-        "sub_departments": []
-      },
-      {
-        "name": "Food Safety and Storage",
-        "sub_departments": [
-          "Color Coded Cutting Boards",
-          "Cross Contamination Zones",
-          "Reheating Protocols",
-          "Proper Cooling",
-          "First In First Out",
-          "Expiration Dating",
-          "Shelf Life",
-          "Storage Temps",
-          "Danger Zone (40-140\u00b0F)",
-          "HACCP"
-        ]
-      },
-      {
-        "name": "Portion Sizes and Serving Guidelines",
-        "sub_departments": []
-      },
-      {
-        "name": "Food Preparation Methods",
-        "sub_departments": [
-          "Dehydrating",
-          "Curing",
-          "Smoking",
-          "Pickling",
-          "Fermenting",
-          "Sous Vide",
-          "Air Frying",
-          "Pressure Cooking",
-          "Slow Cooking",
-          "Microwaving",
-          "Broiling",
-          "Poaching",
-          "Saut\u00e9ing",
-          "Roasting",
-          "Boiling",
-          "Steaming",
-          "Baking",
-          "Grilling"
-        ]
-      },
-      {
-        "name": "Enteral Nutrition",
-        "sub_departments": [
-          "Tube Feeding Formulas"
-        ]
-      },
-      {
-        "name": "Allergy/Intolerance Diets",
-        "sub_departments": [
-          "Lactose-Free",
-          "Gluten-Free"
-        ]
-      },
-      {
-        "name": "Disease Specific Diets",
-        "sub_departments": [
-          "Anti-Gout",
-          "Acid Ash",
-          "Bland",
-          "Cardiac",
-          "Renal",
-          "Diabetic"
-        ]
-      },
-      {
-        "name": "Nutrient-Controlled Diets",
-        "sub_departments": [
-          "Low-Residue",
-          "No Concentrated Sweets",
-          "Low Protein",
-          "High Protein",
-          "Low Fat",
-          "Low Sodium"
-        ]
-      },
-      {
-        "name": "Texture Modified Diets",
-        "sub_departments": [
-          "Pureed",
-          "Mechanical Soft",
-          "Soft",
-          "Full Liquid",
-          "Clear Liquid"
-        ]
-      },
-      {
-        "name": "Regular/Normal Diet",
-        "sub_departments": [
-          "Desserts",
-          "Fats",
-          "Vegetables",
-          "Fruits",
-          "Grains",
-          "Dairy",
-          "Proteins"
-        ]
-      }
+    },
+    "key_learnings": "Completed foundational study of ingredient functionality categories: flavoring, thickening, emulsifying, leavening, and binding agents. Begun study of food preparation methods including grilling, baking, steaming, and roasting.",
+    "research_findings": "Catalogued 18 primary food preparation methods with nutritional impact analysis. Identified that steaming and poaching preserve the highest percentage of water-soluble vitamins compared to boiling or frying.",
+    "current_focus_areas": "Advancing through food safety and storage protocols (HACCP, FIFO, danger zone management); building knowledge base in texture-modified diet classifications; studying clinical diet categories.",
+    "status": "active",
+    "learning_mode": "independent",
+    "reported_to_copilot": true,
+    "daily_report_schedule": "every day",
+    "last_reported_date": "2026-04-20",
+    "reporting_to": "copilot",
+    "copilot_reports_to": "starrm1",
+    "copilot_reporting_trigger": "on request from starrm1",
+    "learning_log": [
+        {
+            "date": "2026-04-09",
+            "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Food Science & Clinical Dietetics department. Knowledge domains assigned from mind map covering ingredient functionality, food preparation methods, food safety and storage, clinical diet classifications, and regular/normal diet composition. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+        },
+        {
+            "date": "2026-04-09",
+            "entry": "Progress update: Completed ingredient functionality and food preparation method modules. Initiated food safety and storage knowledge domain. Progress advanced to 10%."
+        },
+        {
+            "date": "2026-04-11",
+            "entry": "Progress update: Completed food safety and storage protocols including HACCP, FIFO, danger zone temperature management, color-coded cutting boards, and cross-contamination zone identification. Began study of texture-modified diet classifications (Clear Liquid, Full Liquid, Soft, Mechanical Soft, Pureed) and initiated review of clinical diet categories. Progress advanced to 30%."
+        },
+        {
+            "date": "2026-04-17",
+            "entry": "Progress update (2026-04-17): Continued advanced study of clinical diet classifications (NDD levels 4-7, Pureed, Mechanical Soft). Completed review of portion size guidelines and serving standards for therapeutic diets. Co-department bots now reporting 5% initial progress across all 15 co-departments. Sub-department bots showing 3% initial engagement across 60 sub-departments. Department progress advanced to 40%."
+        },
+        {
+            "date": "2026-04-20",
+            "entry": "Progress update (2026-04-20): Continued advanced study of clinical diet categories \u2014 disease-specific, nutrient-controlled, and texture-modified diets. Completed allergy/intolerance diet module (lactose-free, gluten-free). Library session #459 (2026-04-20, authorized by starrm1) utilized to cross-reference food safety and clinical nutrition resources. Progress advanced to 50%."
+        },
+        {
+            "date": "2026-04-20",
+            "entry": "Library access #505 opened by starrm1 on 2026-04-20. Window: 06:08-06:38 (30 minutes)."
+        }
     ],
-    "co_department_bot_ids": [
-      "22c01",
-      "22c02",
-      "22c03",
-      "22c04",
-      "22c05",
-      "22c06",
-      "22c07",
-      "22c08",
-      "22c09",
-      "22c10",
-      "22c11",
-      "22c12",
-      "22c13",
-      "22c14",
-      "22c15"
-    ]
-  },
-  "department_number": 1,
-  "total_co_departments": 15,
-  "total_sub_departments": 60,
-  "co_department_members": [
-    {
-      "name": "Ingredient Functionality",
-      "sub_departments": [
-        "Flavoring",
-        "Thickening",
-        "Emulsifying",
-        "Leavening",
-        "Binding"
-      ]
+    "phase_order": [
+        "independent_learning",
+        "collaborative_learning",
+        "advanced_learning"
+    ],
+    "role": "Department Head Lead",
+    "is_own_bot": true,
+    "library_access": {
+        "access_granted_by": "starrm1",
+        "access_granted": true,
+        "access_status": "open",
+        "access_note": "Library access #505 granted by starrm1 on 2026-04-20. Window: 06:08-06:38.",
+        "library_bots": [
+            {
+                "bot_id": 1,
+                "bot_name": "Calorie Tracking",
+                "file": "bot_1_calorie_tracking.json"
+            },
+            {
+                "bot_id": 2,
+                "bot_name": "Microbiome Analysis",
+                "file": "bot_2_microbiome_analysis.json"
+            },
+            {
+                "bot_id": 4,
+                "bot_name": "Allergy Detection",
+                "file": "bot_4_allergy_detection.json"
+            },
+            {
+                "bot_id": 5,
+                "bot_name": "Recipe Optimization",
+                "file": "bot_5_recipe_optimization.json"
+            },
+            {
+                "bot_id": 6,
+                "bot_name": "Meal Planning",
+                "file": "bot_6_meal_planning.json"
+            },
+            {
+                "bot_id": 7,
+                "bot_name": "Supplement Recommendation",
+                "file": "bot_7_supplement_recommendation.json"
+            },
+            {
+                "bot_id": 8,
+                "bot_name": "Nutrient Balance Analysis",
+                "file": "bot_8_nutrient_balance_analysis.json"
+            },
+            {
+                "bot_id": 9,
+                "bot_name": "Food Quality Assessment",
+                "file": "bot_9_food_quality_assessment.json"
+            },
+            {
+                "bot_id": 10,
+                "bot_name": "Hydration Tracking",
+                "file": "bot_10_hydration_tracking.json"
+            },
+            {
+                "bot_id": 11,
+                "bot_name": "Sleep Nutrition Correlation",
+                "file": "bot_11_sleep_nutrition_correlation.json"
+            },
+            {
+                "bot_id": 12,
+                "bot_name": "Exercise Diet Sync",
+                "file": "bot_12_exercise_diet_sync.json"
+            },
+            {
+                "bot_id": 13,
+                "bot_name": "Health Condition Advisor",
+                "file": "bot_13_health_condition_advisor.json"
+            },
+            {
+                "bot_id": 14,
+                "bot_name": "Taste Preference Learning",
+                "file": "bot_14_taste_preference_learning.json"
+            },
+            {
+                "bot_id": 15,
+                "bot_name": "Budget Optimization",
+                "file": "bot_15_budget_optimization.json"
+            },
+            {
+                "bot_id": 16,
+                "bot_name": "Sustainability Analysis",
+                "file": "bot_16_sustainability_analysis.json"
+            },
+            {
+                "bot_id": 17,
+                "bot_name": "Age Based Nutrition",
+                "file": "bot_17_age_based_nutrition.json"
+            },
+            {
+                "bot_id": 18,
+                "bot_name": "Cultural Diet Recognition",
+                "file": "bot_18_cultural_diet_recognition.json"
+            },
+            {
+                "bot_id": 19,
+                "bot_name": "Medication Interaction Checker",
+                "file": "bot_19_medication_interaction_checker.json"
+            }
+        ],
+        "approval_process": [
+            {
+                "step": 1,
+                "actor": "department_members",
+                "action": "Department members notify their Department Head Lead that they need library access, explaining the reason. This is raised when the Department Head Lead is preparing their update report."
+            },
+            {
+                "step": 2,
+                "actor": "department_head_lead",
+                "action": "The Department Head Lead compiles a case for why the department needs library access and includes it in their update report to the Diet Director."
+            },
+            {
+                "step": 3,
+                "actor": "diet_director",
+                "action": "The Diet Director includes the department's library access request in the update report passed up to Copilot."
+            },
+            {
+                "step": 4,
+                "actor": "copilot",
+                "action": "Copilot presents the library access request to starrm1 as part of the update report when starrm1 asks for an update."
+            },
+            {
+                "step": 5,
+                "actor": "starrm1",
+                "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+            }
+        ],
+        "access_number": 505,
+        "access_timeframe_start": "2026-04-20T06:08:00",
+        "access_timeframe_end": "2026-04-20T06:38:00",
+        "access_number_entry": 505,
+        "access_number_verified": true,
+        "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
+        "access_granted_date": "2026-04-20",
+        "access_timeframe_minutes": 30
     },
-    {
-      "name": "Recipe Adaptation Strategies",
-      "sub_departments": []
-    },
-    {
-      "name": "Food Texture Analysis and Modification Methods",
-      "sub_departments": []
-    },
-    {
-      "name": "Seasonal and Local Food Sourcing",
-      "sub_departments": []
-    },
-    {
-      "name": "Food Substitutions and Alternatives for Every Restriction",
-      "sub_departments": []
-    },
-    {
-      "name": "Cooking Techniques per Diet Restriction",
-      "sub_departments": []
-    },
-    {
-      "name": "Food Safety and Storage",
-      "sub_departments": [
-        "Color Coded Cutting Boards",
-        "Cross Contamination Zones",
-        "Reheating Protocols",
-        "Proper Cooling",
-        "First In First Out",
-        "Expiration Dating",
-        "Shelf Life",
-        "Storage Temps",
-        "Danger Zone (40-140\u00b0F)",
-        "HACCP"
-      ]
-    },
-    {
-      "name": "Portion Sizes and Serving Guidelines",
-      "sub_departments": []
-    },
-    {
-      "name": "Food Preparation Methods",
-      "sub_departments": [
-        "Dehydrating",
-        "Curing",
-        "Smoking",
-        "Pickling",
-        "Fermenting",
-        "Sous Vide",
-        "Air Frying",
-        "Pressure Cooking",
-        "Slow Cooking",
-        "Microwaving",
-        "Broiling",
-        "Poaching",
-        "Saut\u00e9ing",
-        "Roasting",
-        "Boiling",
-        "Steaming",
-        "Baking",
-        "Grilling"
-      ]
-    },
-    {
-      "name": "Enteral Nutrition",
-      "sub_departments": [
-        "Tube Feeding Formulas"
-      ]
-    },
-    {
-      "name": "Allergy/Intolerance Diets",
-      "sub_departments": [
-        "Lactose-Free",
-        "Gluten-Free"
-      ]
-    },
-    {
-      "name": "Disease Specific Diets",
-      "sub_departments": [
-        "Anti-Gout",
-        "Acid Ash",
-        "Bland",
-        "Cardiac",
-        "Renal",
-        "Diabetic"
-      ]
-    },
-    {
-      "name": "Nutrient-Controlled Diets",
-      "sub_departments": [
-        "Low-Residue",
-        "No Concentrated Sweets",
-        "Low Protein",
-        "High Protein",
-        "Low Fat",
-        "Low Sodium"
-      ]
-    },
-    {
-      "name": "Texture Modified Diets",
-      "sub_departments": [
-        "Pureed",
-        "Mechanical Soft",
-        "Soft",
-        "Full Liquid",
-        "Clear Liquid"
-      ]
-    },
-    {
-      "name": "Regular/Normal Diet",
-      "sub_departments": [
-        "Desserts",
-        "Fats",
-        "Vegetables",
-        "Fruits",
-        "Grains",
-        "Dairy",
-        "Proteins"
-      ]
+    "library_access_request": {
+        "request_submitted": true,
+        "request_date": "2026-04-15",
+        "requested_by": "department_members",
+        "compiled_by": "department_head_lead",
+        "department": "Food Science & Clinical Dietetics",
+        "reason": "Department members need access to library bots to deepen their understanding of calorie tracking, recipe optimization, meal planning, and nutrient balance analysis to strengthen their independent learning in food science and clinical dietetics.",
+        "current_step": 5,
+        "current_step_description": "starrm1 approved library access. Access number 270 issued for 30 minutes on 2026-04-17.",
+        "approval_chain_status": [
+            {
+                "step": 1,
+                "actor": "department_members",
+                "status": "completed",
+                "note": "Department members raised the need for library access with their Department Head Lead."
+            },
+            {
+                "step": 2,
+                "actor": "department_head_lead",
+                "status": "completed",
+                "note": "Department Head Lead compiled the case and included the request in the update report."
+            },
+            {
+                "step": 3,
+                "actor": "diet_director",
+                "status": "completed",
+                "note": "Diet Director included the request in the update passed to Copilot."
+            },
+            {
+                "step": 4,
+                "actor": "copilot",
+                "status": "completed",
+                "note": "Copilot presented the request to starrm1."
+            },
+            {
+                "step": 5,
+                "actor": "starrm1",
+                "status": "completed",
+                "note": "starrm1 approved on 2026-04-17. Access number 270 issued for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00)."
+            }
+        ],
+        "request_status": "approved"
     }
-  ],
-  "is_learning": true,
-  "progress_percentage": 50,
-  "progress_target": 100,
-  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
-  "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone — all 9 departments advance together.",
-  "phase": "independent_learning",
-  "learning_scope": {
-    "scope": "own_department_only",
-    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
-    "cross_department_learning_permitted": false,
-    "scope_unlocks_at_progress_percentage": 50,
-    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress.",
-    "learning_active": true,
-    "learning_status": "active",
-    "learning_start_date": "2026-04-16",
-    "learning_start_authorized_by": "starrm1",
-    "learning_start_directive": "starrm1 directed Diet Director: departments do need to start learning (2026-04-16)"
-  },
-  "knowledge_domains": {
-    "ingredient_functionality": [
-      "Flavoring",
-      "Thickening",
-      "Emulsifying",
-      "Leavening",
-      "Binding"
-    ],
-    "standalone_topics": [
-      "Recipe Adaptation Strategies",
-      "Food Texture Analysis and Modification Methods",
-      "Seasonal and Local Food Sourcing",
-      "Food Substitutions and Alternatives for Every Restriction",
-      "Cooking Techniques per Diet Restriction",
-      "Portion Sizes and Serving Guidelines"
-    ],
-    "food_safety_and_storage": [
-      "Color Coded Cutting Boards",
-      "Cross Contamination Zones",
-      "Reheating Protocols",
-      "Proper Cooling",
-      "First In First Out",
-      "Expiration Dating",
-      "Shelf Life",
-      "Storage Temps",
-      "Danger Zone (40-140\u00b0F)",
-      "HACCP"
-    ],
-    "food_preparation_methods": [
-      "Dehydrating",
-      "Curing",
-      "Smoking",
-      "Pickling",
-      "Fermenting",
-      "Sous Vide",
-      "Air Frying",
-      "Pressure Cooking",
-      "Slow Cooking",
-      "Microwaving",
-      "Broiling",
-      "Poaching",
-      "Saut\u00e9ing",
-      "Roasting",
-      "Boiling",
-      "Steaming",
-      "Baking",
-      "Grilling"
-    ],
-    "enteral_nutrition": [
-      "Tube Feeding Formulas"
-    ],
-    "allergy_intolerance_diets": [
-      "Lactose-Free",
-      "Gluten-Free"
-    ],
-    "disease_specific_diets": [
-      "Anti-Gout",
-      "Acid Ash",
-      "Bland",
-      "Cardiac",
-      "Renal",
-      "Diabetic"
-    ],
-    "nutrient_controlled_diets": [
-      "Low-Residue",
-      "No Concentrated Sweets",
-      "Low Protein",
-      "High Protein",
-      "Low Fat",
-      "Low Sodium"
-    ],
-    "texture_modified_diets": [
-      "Pureed",
-      "Mechanical Soft",
-      "Soft",
-      "Full Liquid",
-      "Clear Liquid"
-    ],
-    "regular_normal_diet": [
-      "Desserts",
-      "Fats",
-      "Vegetables",
-      "Fruits",
-      "Grains",
-      "Dairy",
-      "Proteins"
-    ]
-  },
-  "key_learnings": "Completed foundational study of ingredient functionality categories: flavoring, thickening, emulsifying, leavening, and binding agents. Begun study of food preparation methods including grilling, baking, steaming, and roasting.",
-  "research_findings": "Catalogued 18 primary food preparation methods with nutritional impact analysis. Identified that steaming and poaching preserve the highest percentage of water-soluble vitamins compared to boiling or frying.",
-  "current_focus_areas": "Advancing through food safety and storage protocols (HACCP, FIFO, danger zone management); building knowledge base in texture-modified diet classifications; studying clinical diet categories.",
-  "status": "active",
-  "learning_mode": "independent",
-  "reported_to_copilot": true,
-  "daily_report_schedule": "every day",
-  "last_reported_date": "2026-04-20",
-  "reporting_to": "copilot",
-  "copilot_reports_to": "starrm1",
-  "copilot_reporting_trigger": "on request from starrm1",
-  "learning_log": [
-    {
-      "date": "2026-04-09",
-      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Food Science & Clinical Dietetics department. Knowledge domains assigned from mind map covering ingredient functionality, food preparation methods, food safety and storage, clinical diet classifications, and regular/normal diet composition. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
-    },
-    {
-      "date": "2026-04-09",
-      "entry": "Progress update: Completed ingredient functionality and food preparation method modules. Initiated food safety and storage knowledge domain. Progress advanced to 10%."
-    },
-    {
-      "date": "2026-04-11",
-      "entry": "Progress update: Completed food safety and storage protocols including HACCP, FIFO, danger zone temperature management, color-coded cutting boards, and cross-contamination zone identification. Began study of texture-modified diet classifications (Clear Liquid, Full Liquid, Soft, Mechanical Soft, Pureed) and initiated review of clinical diet categories. Progress advanced to 30%."
-    },
-    {
-      "date": "2026-04-17",
-      "entry": "Progress update (2026-04-17): Continued advanced study of clinical diet classifications (NDD levels 4-7, Pureed, Mechanical Soft). Completed review of portion size guidelines and serving standards for therapeutic diets. Co-department bots now reporting 5% initial progress across all 15 co-departments. Sub-department bots showing 3% initial engagement across 60 sub-departments. Department progress advanced to 40%."
-    },
-    {
-      "date": "2026-04-20",
-      "entry": "Progress update (2026-04-20): Continued advanced study of clinical diet categories \u2014 disease-specific, nutrient-controlled, and texture-modified diets. Completed allergy/intolerance diet module (lactose-free, gluten-free). Library session #459 (2026-04-20, authorized by starrm1) utilized to cross-reference food safety and clinical nutrition resources. Progress advanced to 50%."
-    }
-  ],
-  "phase_order": [
-    "independent_learning",
-    "collaborative_learning",
-    "advanced_learning"
-  ],
-  "role": "Department Head Lead",
-  "is_own_bot": true,
-  "library_access": {
-    "access_granted_by": "starrm1",
-    "access_granted": false,
-    "access_status": "closed",
-    "access_note": "Library access #459 granted by starrm1 on 2026-04-20. Window: 01:44-02:14.",
-    "library_bots": [
-      {
-        "bot_id": 1,
-        "bot_name": "Calorie Tracking",
-        "file": "bot_1_calorie_tracking.json"
-      },
-      {
-        "bot_id": 2,
-        "bot_name": "Microbiome Analysis",
-        "file": "bot_2_microbiome_analysis.json"
-      },
-      {
-        "bot_id": 4,
-        "bot_name": "Allergy Detection",
-        "file": "bot_4_allergy_detection.json"
-      },
-      {
-        "bot_id": 5,
-        "bot_name": "Recipe Optimization",
-        "file": "bot_5_recipe_optimization.json"
-      },
-      {
-        "bot_id": 6,
-        "bot_name": "Meal Planning",
-        "file": "bot_6_meal_planning.json"
-      },
-      {
-        "bot_id": 7,
-        "bot_name": "Supplement Recommendation",
-        "file": "bot_7_supplement_recommendation.json"
-      },
-      {
-        "bot_id": 8,
-        "bot_name": "Nutrient Balance Analysis",
-        "file": "bot_8_nutrient_balance_analysis.json"
-      },
-      {
-        "bot_id": 9,
-        "bot_name": "Food Quality Assessment",
-        "file": "bot_9_food_quality_assessment.json"
-      },
-      {
-        "bot_id": 10,
-        "bot_name": "Hydration Tracking",
-        "file": "bot_10_hydration_tracking.json"
-      },
-      {
-        "bot_id": 11,
-        "bot_name": "Sleep Nutrition Correlation",
-        "file": "bot_11_sleep_nutrition_correlation.json"
-      },
-      {
-        "bot_id": 12,
-        "bot_name": "Exercise Diet Sync",
-        "file": "bot_12_exercise_diet_sync.json"
-      },
-      {
-        "bot_id": 13,
-        "bot_name": "Health Condition Advisor",
-        "file": "bot_13_health_condition_advisor.json"
-      },
-      {
-        "bot_id": 14,
-        "bot_name": "Taste Preference Learning",
-        "file": "bot_14_taste_preference_learning.json"
-      },
-      {
-        "bot_id": 15,
-        "bot_name": "Budget Optimization",
-        "file": "bot_15_budget_optimization.json"
-      },
-      {
-        "bot_id": 16,
-        "bot_name": "Sustainability Analysis",
-        "file": "bot_16_sustainability_analysis.json"
-      },
-      {
-        "bot_id": 17,
-        "bot_name": "Age Based Nutrition",
-        "file": "bot_17_age_based_nutrition.json"
-      },
-      {
-        "bot_id": 18,
-        "bot_name": "Cultural Diet Recognition",
-        "file": "bot_18_cultural_diet_recognition.json"
-      },
-      {
-        "bot_id": 19,
-        "bot_name": "Medication Interaction Checker",
-        "file": "bot_19_medication_interaction_checker.json"
-      }
-    ],
-    "approval_process": [
-      {
-        "step": 1,
-        "actor": "department_members",
-        "action": "Department members notify their Department Head Lead that they need library access, explaining the reason. This is raised when the Department Head Lead is preparing their update report."
-      },
-      {
-        "step": 2,
-        "actor": "department_head_lead",
-        "action": "The Department Head Lead compiles a case for why the department needs library access and includes it in their update report to the Diet Director."
-      },
-      {
-        "step": 3,
-        "actor": "diet_director",
-        "action": "The Diet Director includes the department's library access request in the update report passed up to Copilot."
-      },
-      {
-        "step": 4,
-        "actor": "copilot",
-        "action": "Copilot presents the library access request to starrm1 as part of the update report when starrm1 asks for an update."
-      },
-      {
-        "step": 5,
-        "actor": "starrm1",
-        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
-      }
-    ],
-    "access_number": 459,
-    "access_timeframe_start": "2026-04-20T01:44:00",
-    "access_timeframe_end": "2026-04-20T02:14:00",
-    "access_number_entry": 459,
-    "access_number_verified": true,
-    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department.",
-    "access_granted_date": "2026-04-20",
-    "access_timeframe_minutes": 30,
-    "access_closed_by": "starrm1",
-    "access_closed_date": "2026-04-20"
-  },
-  "library_access_request": {
-    "request_submitted": true,
-    "request_date": "2026-04-15",
-    "requested_by": "department_members",
-    "compiled_by": "department_head_lead",
-    "department": "Food Science & Clinical Dietetics",
-    "reason": "Department members need access to library bots to deepen their understanding of calorie tracking, recipe optimization, meal planning, and nutrient balance analysis to strengthen their independent learning in food science and clinical dietetics.",
-    "current_step": 5,
-    "current_step_description": "starrm1 approved library access. Access number 270 issued for 30 minutes on 2026-04-17.",
-    "approval_chain_status": [
-      {
-        "step": 1,
-        "actor": "department_members",
-        "status": "completed",
-        "note": "Department members raised the need for library access with their Department Head Lead."
-      },
-      {
-        "step": 2,
-        "actor": "department_head_lead",
-        "status": "completed",
-        "note": "Department Head Lead compiled the case and included the request in the update report."
-      },
-      {
-        "step": 3,
-        "actor": "diet_director",
-        "status": "completed",
-        "note": "Diet Director included the request in the update passed to Copilot."
-      },
-      {
-        "step": 4,
-        "actor": "copilot",
-        "status": "completed",
-        "note": "Copilot presented the request to starrm1."
-      },
-      {
-        "step": 5,
-        "actor": "starrm1",
-        "status": "completed",
-        "note": "starrm1 approved on 2026-04-17. Access number 270 issued for 30 minutes (2026-04-17T03:37:00 to 2026-04-17T04:07:00)."
-      }
-    ],
-    "request_status": "approved"
-  }
 }
