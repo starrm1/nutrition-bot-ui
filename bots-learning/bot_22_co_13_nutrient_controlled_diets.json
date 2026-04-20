@@ -28,7 +28,7 @@
   "total_sub_departments": 6,
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 9,
+  "progress_percentage": 13,
   "sub_department_learning_active": true,
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
@@ -77,6 +77,10 @@
     {
       "date": "2026-04-20",
       "entry": "Daily learning update. Progress advanced from 5% to 9%."
+    },
+    {
+      "date": "2026-04-20",
+      "entry": "Daily learning update. Progress advanced from 9% to 13%."
     }
   ]
 }

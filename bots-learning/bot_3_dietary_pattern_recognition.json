@@ -1,5 +1,5 @@
 {
-  "progress_percentage": 45,
+  "progress_percentage": 48,
   "learning_goal": "100%",
   "key_learnings": "Identified major dietary patterns including Mediterranean, DASH, Western, plant-based, and ketogenic diets. Each pattern has distinct macronutrient profiles and documented health outcomes backed by peer-reviewed research.",
   "research_findings": "The Mediterranean diet is associated with a 25% reduction in cardiovascular disease risk (New England Journal of Medicine, PREDIMED study). DASH diet reduces systolic blood pressure by 8-14 mmHg in hypertensive individuals (NIH/NHLBI). Plant-based diets reduce type 2 diabetes risk by approximately 23% (PLOS Medicine, 2019).",
@@ -40,6 +40,10 @@
     {
       "date": "2026-04-20",
       "entry": "Daily learning update. Progress advanced from 42% to 45%."
+    },
+    {
+      "date": "2026-04-20",
+      "entry": "Daily learning update. Progress advanced from 45% to 48%."
     }
   ],
   "reported_to_copilot": true,

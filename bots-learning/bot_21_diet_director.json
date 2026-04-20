@@ -25,7 +25,7 @@
   "title_change_requires_approval_from": "starrm1",
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 15,
+  "progress_percentage": 20,
   "progress_target": 100,
   "learning_goal": "100%",
   "learning_goal_note": "The Diet Director's learning goal is 100%. This is an independent learning goal for the Diet Director only and is not tied to the collective department phase advancement rule (which applies only to departments Bots 22-30).",
@@ -53,6 +53,10 @@
     {
       "date": "2026-04-20",
       "entry": "Daily learning update. Progress advanced from 12% to 15%."
+    },
+    {
+      "date": "2026-04-20",
+      "entry": "Daily learning update. Progress advanced from 15% to 20%."
     }
   ]
 }
