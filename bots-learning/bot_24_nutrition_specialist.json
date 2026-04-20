@@ -809,5 +809,7 @@
     "request_status": "approved"
   },
   "knowledge_access_allowed": true,
-  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20."
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20.",
+  "knowledge_access_expires": "on_starrm1_command",
+  "knowledge_access_controlled_by": "starrm1"
 }
