@@ -64,5 +64,7 @@
   "library_access_timeframe_end": "2026-04-21T06:14:00",
   "library_open_for_departments": true,
   "notify_starrm1_on_use": true,
-  "notify_starrm1_on_use_note": "starrm1 must be notified when this department uses the library. Set by starrm1 on 2026-04-21."
+  "notify_starrm1_on_use_note": "starrm1 must be notified when this department uses the library. Set by starrm1 on 2026-04-21.",
+  "library_close_controlled_by": "starrm1",
+  "library_close_rule": "Library remains open to departments until starrm1 explicitly commands it to close."
 }

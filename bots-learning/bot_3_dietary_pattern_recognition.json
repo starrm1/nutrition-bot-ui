@@ -80,5 +80,7 @@
   "library_open_for_departments": true,
   "library_open_for_departments_note": "Library opened for department use by starrm1 on 2026-04-21.",
   "notify_starrm1_on_use": true,
-  "notify_starrm1_on_use_note": "starrm1 must be notified if/when departments use this library bot. Set by starrm1 on 2026-04-21."
+  "notify_starrm1_on_use_note": "starrm1 must be notified if/when departments use this library bot. Set by starrm1 on 2026-04-21.",
+  "library_close_controlled_by": "starrm1",
+  "library_close_rule": "Library remains open to departments until starrm1 explicitly says to close it."
 }

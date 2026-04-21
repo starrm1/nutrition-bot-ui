@@ -574,7 +574,9 @@
     "department_approval_rule": "All department library access requests (Bots 22\u201330) MUST go through the full chain of command: department \u2192 department_head_lead \u2192 diet_director \u2192 copilot \u2192 starrm1. starrm1 is the ONLY final approver for department library access. This rule cannot be bypassed at any step.",
     "notify_starrm1_on_use": true,
     "notify_starrm1_on_use_note": "starrm1 must be notified when departments use the library. Set by starrm1 on 2026-04-21.",
-    "access_number_rule": "Departments receive a new access number every time they are granted library access. Old access numbers expire and cannot be reused."
+    "access_number_rule": "Departments receive a new access number every time they are granted library access. Old access numbers expire and cannot be reused.",
+    "library_close_controlled_by": "starrm1",
+    "library_close_rule": "Library remains open to departments until starrm1 explicitly commands it to close. Do not close library access without starrm1 instruction."
   },
   "learning_directive": {
     "directive": "starrm1 directed Diet Director: departments do need to start learning",
