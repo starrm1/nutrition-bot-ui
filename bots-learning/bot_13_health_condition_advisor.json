@@ -64,6 +64,10 @@
   "starrm1_advance_note": "starrm1 can advance this library bot to the next phase at any time, regardless of current progress percentage. No threshold required.",
   "use_now": true,
   "use_now_note": "Library is now in use. Set by starrm1 on 2026-04-20.",
-  "library_closed": true,
-  "library_closed_note": "Library is now closed. Set by starrm1 on 2026-04-20."
+  "library_closed": false,
+  "library_closed_note": "Library is now open for departments to use. Set by starrm1 on 2026-04-21.",
+  "library_open_for_departments": true,
+  "library_open_for_departments_note": "Library opened for department use by starrm1 on 2026-04-21.",
+  "notify_starrm1_on_use": true,
+  "notify_starrm1_on_use_note": "starrm1 must be notified if/when departments use this library bot. Set by starrm1 on 2026-04-21."
 }

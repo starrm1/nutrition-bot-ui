@@ -518,7 +518,7 @@
   "progress_percentage": 35,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
-  "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone — all 9 departments advance together.",
+  "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together.",
   "phase": "independent_learning",
   "learning_scope": {
     "scope": "own_department_only",
@@ -781,7 +781,7 @@
       {
         "step": 5,
         "actor": "starrm1",
-        "action": "Final approver — reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
     "access_number": 505,
@@ -839,5 +839,14 @@
   "knowledge_access_allowed": true,
   "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20.",
   "knowledge_access_expires": "on_starrm1_command",
-  "knowledge_access_controlled_by": "starrm1"
+  "knowledge_access_controlled_by": "starrm1",
+  "library_access_number": 506,
+  "library_access_number_note": "New access number #506 issued by starrm1 on 2026-04-21. A new number is required for each library access session.",
+  "library_access_status": "open",
+  "library_access_granted_date": "2026-04-21",
+  "library_access_timeframe_start": "2026-04-21T05:44:00",
+  "library_access_timeframe_end": "2026-04-21T06:14:00",
+  "library_open_for_departments": true,
+  "notify_starrm1_on_use": true,
+  "notify_starrm1_on_use_note": "starrm1 must be notified when this department uses the library. Set by starrm1 on 2026-04-21."
 }
