@@ -245,6 +245,11 @@
       "file": "bot_2_microbiome_analysis.json"
     },
     {
+      "bot_id": 3,
+      "bot_name": "Dietary Pattern Recognition",
+      "file": "bot_3_dietary_pattern_recognition.json"
+    },
+    {
       "bot_id": 4,
       "bot_name": "Allergy Detection",
       "file": "bot_4_allergy_detection.json"
@@ -323,10 +328,15 @@
       "bot_id": 19,
       "bot_name": "Medication Interaction Checker",
       "file": "bot_19_medication_interaction_checker.json"
+    },
+    {
+      "bot_id": 20,
+      "bot_name": "Food Texture",
+      "file": "bot_20_food_trextcure.json"
     }
   ],
-  "total_library_bots": 18,
-  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Library bots are Bots 1\u201319 (Bot 3 is excluded as it has no JSON file). Bot 20 and Bot 21 are not library bots \u2014 Bot 21 is the Diet Director.",
+  "total_library_bots": 20,
+  "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Bots 1-20 ARE the library. Bot 21 is the Diet Director and is NOT a library bot. All 20 library bots (Bots 1-20) are confirmed by starrm1 on 2026-04-21.",
   "library_access_control": {
     "controlled_by": "starrm1",
     "access_rule": "Library access requests are surfaced through the regular update chain when starrm1 asks for an update. The department notifies their Department Head Lead of the need. The Department Head Lead includes the request in their update report to the Diet Director. The Diet Director includes it in the update to Copilot. Copilot presents it to starrm1 during the update. starrm1 is the final approver \u2014 if approved, starrm1 issues an access number and sets the timeframe. Access is off by default until starrm1 approves.",
@@ -614,7 +624,7 @@
     "note": "Library bots (Bots 1-19) must never stop learning. Their goal is to reach 100% mastery of their assigned topic. Learning is continuous and never completes until 100% is achieved."
   },
   "library_bots_are_not_departments": true,
-  "library_bots_note": "Bots 1-20 are library bots, NOT departments. They each have their own independent learning phases and are not subject to the collective department phase advancement rule.",
+  "library_bots_note": "Bots 1-20 are the library. They are NOT departments. Each library bot has its own independent learning phases and is not subject to the collective department phase advancement rule.",
   "library_bots_50_percent_rule": false,
   "library_bots_50_percent_note": "Library bots (Bots 1-20) do NOT need to wait for 50% before advancing phases. The 50% collective waiting threshold applies ONLY to departments (Bots 22-30). Rule confirmed by starrm1 on 2026-04-20."
 }
