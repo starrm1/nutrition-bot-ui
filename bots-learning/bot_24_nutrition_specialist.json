@@ -479,7 +479,7 @@
         },
         {
           "date": "2026-04-12",
-          "entry": "Progress update: Completed study of metabolic calculation equations — Harris-Benedict, Mifflin-St Jeor, Penn State, and Ireton-Jones. Reviewed BMR calculations with activity and disease adjustment factors. Initiated protein requirements module covering maintenance (0.8g/kg), wound healing (1.2–1.5g/kg), dialysis (1.2g/kg), and critical illness (1.5–2.0g/kg) ranges. Began review of stress factors for Burns, Trauma, Infection, and Surgery. Progress advanced to 10%."
+          "entry": "Progress update: Completed study of metabolic calculation equations \u2014 Harris-Benedict, Mifflin-St Jeor, Penn State, and Ireton-Jones. Reviewed BMR calculations with activity and disease adjustment factors. Initiated protein requirements module covering maintenance (0.8g/kg), wound healing (1.2\u20131.5g/kg), dialysis (1.2g/kg), and critical illness (1.5\u20132.0g/kg) ranges. Began review of stress factors for Burns, Trauma, Infection, and Surgery. Progress advanced to 10%."
         }
       ]
     }
@@ -488,7 +488,7 @@
   "progress_percentage": 54,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
-  "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone — all 9 departments advance together.",
+  "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together.",
   "phase": "independent_learning",
   "learning_scope": {
     "scope": "own_department_only",
@@ -500,7 +500,9 @@
     "learning_status": "active",
     "learning_start_date": "2026-04-16",
     "learning_start_authorized_by": "starrm1",
-    "learning_start_directive": "starrm1 directed Diet Director: departments do need to start learning (2026-04-16)"
+    "learning_start_directive": "starrm1 directed Diet Director: departments do need to start learning (2026-04-16)",
+    "continue_learning": true,
+    "continue_learning_note": "Departments continue learning even while library is closed. Set by starrm1 on 2026-04-21."
   },
   "knowledge_domains": {
     "standalone_topics": [
@@ -761,7 +763,7 @@
       {
         "step": 5,
         "actor": "starrm1",
-        "action": "Final approver — reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
     "access_number": 505,
@@ -822,13 +824,18 @@
   "knowledge_access_controlled_by": "starrm1",
   "library_access_number": 505,
   "library_access_number_note": "Access number #505 issued by starrm1 on 2026-04-21 for this library session.",
-  "library_access_status": "open",
+  "library_access_status": "closed",
   "library_access_granted_date": "2026-04-21",
   "library_access_timeframe_start": "2026-04-21T05:44:00",
   "library_access_timeframe_end": "2026-04-21T06:14:00",
-  "library_open_for_departments": true,
+  "library_open_for_departments": false,
   "notify_starrm1_on_use": true,
   "notify_starrm1_on_use_note": "starrm1 must be notified when this department uses the library. Set by starrm1 on 2026-04-21.",
   "library_close_controlled_by": "starrm1",
-  "library_close_rule": "Library remains open to departments until starrm1 explicitly commands it to close."
+  "library_close_rule": "Library remains open to departments until starrm1 explicitly commands it to close.",
+  "library_closed": true,
+  "require_new_access_number_next_time": true,
+  "require_new_access_number_note": "A new access number must be issued by starrm1 before departments can access the library again.",
+  "continue_learning": true,
+  "continue_learning_note": "Departments continue learning even while library is closed. Set by starrm1 on 2026-04-21."
 }

@@ -16,7 +16,7 @@
   ],
   "team": "Diet Specialist Team",
   "is_lead_director": true,
-  "oversees": "All 9 Specialist Department Heads (Bots 22–30)",
+  "oversees": "All 9 Specialist Department Heads (Bots 22\u201330)",
   "bot_name_locked": true,
   "bot_name_change_requires_approval_from": "starrm1",
   "role_locked": true,
@@ -36,16 +36,16 @@
   "last_reported_date": "2026-04-21",
   "reporting_to": "copilot",
   "copilot_reports_to": "starrm1",
-  "note": "Bot 21 is the Diet Director. Full configuration is maintained in bot_lead_diet_specialist_team.json. Bots 1–20 are the library bots; departments (22–30) must request access through the Diet Director to use them.",
+  "note": "Bot 21 is the Diet Director. Full configuration is maintained in bot_lead_diet_specialist_team.json. Bots 1\u201320 are the library bots; departments (22\u201330) must request access through the Diet Director to use them.",
   "library_access_policy": {
-    "approval_path": "diet_director → copilot",
+    "approval_path": "diet_director \u2192 copilot",
     "requires_starrm1": false,
     "copilot_can_approve": true,
     "policy_set_by": "starrm1",
     "policy_set_date": "2026-04-20",
     "standard_daily_allowance_minutes": 30,
     "standard_daily_sessions": 1,
-    "note": "The Diet Director may request library access directly from Copilot. Copilot is authorised to approve without escalating to starrm1. Extended access (>30 min or >1 session/day) still requires starrm1 approval. This privilege is exclusive to the Diet Director — departments (Bots 22–30) must still go through the full chain up to starrm1."
+    "note": "The Diet Director may request library access directly from Copilot. Copilot is authorised to approve without escalating to starrm1. Extended access (>30 min or >1 session/day) still requires starrm1 approval. This privilege is exclusive to the Diet Director \u2014 departments (Bots 22\u201330) must still go through the full chain up to starrm1."
   },
   "learning_log": [
     {
@@ -60,5 +60,7 @@
       "date": "2026-04-21",
       "entry": "Daily learning update. Progress advanced from 20% to 25%."
     }
-  ]
+  ],
+  "library_access_maintained": true,
+  "library_access_maintained_note": "Diet Director retains library access even when library is closed to departments. Set by starrm1 on 2026-04-21."
 }

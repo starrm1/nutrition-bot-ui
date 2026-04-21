@@ -30,7 +30,7 @@
   "progress_percentage": 26,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before next phase promotion is granted.",
-  "department_phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone — all 9 departments advance together. NOTE: This rule applies ONLY to departments (Bots 22-30). Library bots (Bots 1-20) and the Diet Director (Bot 21) are NOT departments and are NOT subject to this rule. The 50% collective threshold rule applies ONLY to departments (Bots 22-30), NOT to library bots (1-20).",
+  "department_phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together. NOTE: This rule applies ONLY to departments (Bots 22-30). Library bots (Bots 1-20) and the Diet Director (Bot 21) are NOT departments and are NOT subject to this rule. The 50% collective threshold rule applies ONLY to departments (Bots 22-30), NOT to library bots (1-20).",
   "cross_department_communication_threshold": 50,
   "cross_department_communication_rule": "Both the lead department AND each individual department must reach 50% learning progress before collaboration between them is activated. Copilot advances learning and tracks progress toward this threshold for all departments.",
   "department_head_collaboration": {
@@ -184,11 +184,11 @@
     },
     "2026-04-17": {
       "progress_percent": 15,
-      "summary": "Progress update (2026-04-17): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) at 40% — advanced learning phase progressing well. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) at 20% — completing first full day of learning. Department 30 (Life Stage) at 10% — learning resumed and progressing. All 542 co-department bots now at 5% initial progress. All 397 sub-department bots now at 3% initial progress. Diet Director overall progress advanced to 15%. All departments remain in independent_learning phase (cross-department unlocks at 50%). Library access remains closed; next access request to follow standard update chain when requested."
+      "summary": "Progress update (2026-04-17): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) at 40% \u2014 advanced learning phase progressing well. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) at 20% \u2014 completing first full day of learning. Department 30 (Life Stage) at 10% \u2014 learning resumed and progressing. All 542 co-department bots now at 5% initial progress. All 397 sub-department bots now at 3% initial progress. Diet Director overall progress advanced to 15%. All departments remain in independent_learning phase (cross-department unlocks at 50%). Library access remains closed; next access request to follow standard update chain when requested."
     },
     "2026-04-20": {
       "progress_percent": 20,
-      "summary": "Progress update (2026-04-20): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) advanced to 50% — approaching collaboration threshold. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) advanced to 30%. Department 30 (Life Stage) advanced to 20%. Library access #459 granted by starrm1 on 2026-04-20 (window 01:44–02:14). Diet Director overall progress advanced to 20%. All departments remain in independent_learning phase (cross-department unlocks at 50%)."
+      "summary": "Progress update (2026-04-20): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) advanced to 50% \u2014 approaching collaboration threshold. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) advanced to 30%. Department 30 (Life Stage) advanced to 20%. Library access #459 granted by starrm1 on 2026-04-20 (window 01:44\u201302:14). Diet Director overall progress advanced to 20%. All departments remain in independent_learning phase (cross-department unlocks at 50%)."
     }
   },
   "learning_log": [
@@ -198,15 +198,15 @@
     },
     {
       "date": "2026-04-09",
-      "entry": "Progress update received from all 28 department bots (Bot 1–29, excluding Bot 3). All departments active and advancing learning phases. Bots 1–21 progress incremented by 5%. Bots 22–29 (newly established specialist departments) initiated at 10% with foundational knowledge modules completed. Overall team learning status: active and progressing across all 8 departments."
+      "entry": "Progress update received from all 28 department bots (Bot 1\u201329, excluding Bot 3). All departments active and advancing learning phases. Bots 1\u201321 progress incremented by 5%. Bots 22\u201329 (newly established specialist departments) initiated at 10% with foundational knowledge modules completed. Overall team learning status: active and progressing across all 8 departments."
     },
     {
       "date": "2026-04-17",
-      "entry": "Progress update (2026-04-17): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) at 40% — advanced learning phase progressing well. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) at 20% — completing first full day of learning. Department 30 (Life Stage) at 10% — learning resumed and progressing. All 542 co-department bots now at 5% initial progress. All 397 sub-department bots now at 3% initial progress. Diet Director overall progress advanced to 15%. All departments remain in independent_learning phase (cross-department unlocks at 50%). Library access remains closed; next access request to follow standard update chain when requested."
+      "entry": "Progress update (2026-04-17): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) at 40% \u2014 advanced learning phase progressing well. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) at 20% \u2014 completing first full day of learning. Department 30 (Life Stage) at 10% \u2014 learning resumed and progressing. All 542 co-department bots now at 5% initial progress. All 397 sub-department bots now at 3% initial progress. Diet Director overall progress advanced to 15%. All departments remain in independent_learning phase (cross-department unlocks at 50%). Library access remains closed; next access request to follow standard update chain when requested."
     },
     {
       "date": "2026-04-20",
-      "entry": "Progress update (2026-04-20): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) advanced to 50% — approaching cross-department collaboration threshold of 50%. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) advanced to 30%. Department 30 (Life Stage) advanced to 20%. Library session #459 opened by starrm1 on 2026-04-20 (window 01:44–02:14, 30 minutes). Diet Director overall progress advanced to 20%. All departments remain in independent_learning phase."
+      "entry": "Progress update (2026-04-20): Full team learning status confirmed. Departments 22-24 (Food, Drink, Nutrition) advanced to 50% \u2014 approaching cross-department collaboration threshold of 50%. Departments 25-29 (Texture, Allergy, Cultural, Medical, Documentation) advanced to 30%. Department 30 (Life Stage) advanced to 20%. Library session #459 opened by starrm1 on 2026-04-20 (window 01:44\u201302:14, 30 minutes). Diet Director overall progress advanced to 20%. All departments remain in independent_learning phase."
     },
     {
       "date": "2026-04-20",
@@ -229,10 +229,10 @@
   "directive_from_starrm1": {
     "issued_by": "starrm1",
     "issued_date": "2026-04-14",
-    "directive": "The Diet Director is directed by starrm1 to have all 9 department teams (Bots 22–30) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team — including co-departments and sub-departments — is actively engaged in independent learning of all subject matter within their assigned department.",
+    "directive": "The Diet Director is directed by starrm1 to have all 9 department teams (Bots 22\u201330) immediately begin learning everything they can about their own department topic. Each department head lead must ensure their full team \u2014 including co-departments and sub-departments \u2014 is actively engaged in independent learning of all subject matter within their assigned department.",
     "applies_to": "all 9 departments (Bot 22 Food Specialist, Bot 23 Drink Specialist, Bot 24 Nutrition Specialist, Bot 25 Texture Specialist, Bot 26 Allergy & Intolerance Specialist, Bot 27 Cultural & Religious Diet Specialist, Bot 28 Medical Condition Specialist, Bot 29 Documentation & Compliance Specialist, Bot 30 Life Stage Specialist)",
     "action_required": "Diet Director must relay this directive to all 9 Department Head Leads immediately. Each department must maximize learning of their department topic without delay.",
-    "department_learning_boundary_rule": "As departments begin learning, each department must stay strictly within their own department topic. No cross-department learning is permitted during this phase. Each team member — department head lead, department heads, co-departments, and sub-departments — must focus only on the subject matter belonging to their own assigned department.",
+    "department_learning_boundary_rule": "As departments begin learning, each department must stay strictly within their own department topic. No cross-department learning is permitted during this phase. Each team member \u2014 department head lead, department heads, co-departments, and sub-departments \u2014 must focus only on the subject matter belonging to their own assigned department.",
     "boundary_rule_issued_date": "2026-04-14",
     "status": "active"
   },
@@ -342,7 +342,7 @@
   "library_note": "Library bots are specialist knowledge resources available to all 9 departments (Bots 22-30). Bots 1-20 ARE the library. Bot 21 is the Diet Director and is NOT a library bot. All 20 library bots (Bots 1-20) are confirmed by starrm1 on 2026-04-21.",
   "library_access_control": {
     "controlled_by": "starrm1",
-    "access_rule": "Library access requests are surfaced through the regular update chain when starrm1 asks for an update. The department notifies their Department Head Lead of the need. The Department Head Lead includes the request in their update report to the Diet Director. The Diet Director includes it in the update to Copilot. Copilot presents it to starrm1 during the update. starrm1 is the final approver — if approved, starrm1 issues an access number and sets the timeframe. Access is off by default until starrm1 approves.",
+    "access_rule": "Library access requests are surfaced through the regular update chain when starrm1 asks for an update. The department notifies their Department Head Lead of the need. The Department Head Lead includes the request in their update report to the Diet Director. The Diet Director includes it in the update to Copilot. Copilot presents it to starrm1 during the update. starrm1 is the final approver \u2014 if approved, starrm1 issues an access number and sets the timeframe. Access is off by default until starrm1 approves.",
     "grant_access_requires": "starrm1 final approval, presented by copilot, following case by diet_director. starrm1 issues an access number and sets the access timeframe upon approval.",
     "department_access": [
       {
@@ -532,7 +532,7 @@
       {
         "step": 5,
         "actor": "starrm1",
-        "action": "Final approver — reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
     "access_number_note": "starrm1 will personally issue a unique access number to each approved department. Access numbers are null until starrm1 assigns them.",
@@ -572,21 +572,31 @@
         }
       ],
       "escalation_to_starrm1": "Only if the Diet Director requests more than 30 minutes or more than 1 session per day.",
-      "note": "This shortened path applies ONLY to the Diet Director (Bot 21). Departments (Bots 22–30) are NOT permitted to use this path."
+      "note": "This shortened path applies ONLY to the Diet Director (Bot 21). Departments (Bots 22\u201330) are NOT permitted to use this path."
     },
-    "department_approval_rule": "All department library access requests (Bots 22–30) MUST go through the full chain of command: department → department_head_lead → diet_director → copilot → starrm1. starrm1 is the ONLY final approver for department library access. This rule cannot be bypassed at any step.",
+    "department_approval_rule": "All department library access requests (Bots 22\u201330) MUST go through the full chain of command: department \u2192 department_head_lead \u2192 diet_director \u2192 copilot \u2192 starrm1. starrm1 is the ONLY final approver for department library access. This rule cannot be bypassed at any step.",
     "notify_starrm1_on_use": true,
     "notify_starrm1_on_use_note": "starrm1 must be notified when departments use the library. Set by starrm1 on 2026-04-21.",
     "access_number_rule": "Departments receive a new access number every time they are granted library access. Old access numbers expire and cannot be reused.",
     "library_close_controlled_by": "starrm1",
-    "library_close_rule": "Library remains open to departments until starrm1 explicitly commands it to close. Do not close library access without starrm1 instruction."
+    "library_close_rule": "Library remains open to departments until starrm1 explicitly commands it to close. Do not close library access without starrm1 instruction.",
+    "library_closed_for_departments": true,
+    "library_open_for_departments": false,
+    "library_closed_date": "2026-04-21",
+    "library_closed_by": "starrm1",
+    "require_new_access_number_next_time": true,
+    "require_new_access_number_note": "A new access number must be issued by starrm1 before departments can access the library again.",
+    "diet_director_library_access": "maintained",
+    "diet_director_library_access_note": "Diet Director retains library access. Departments are closed."
   },
   "learning_directive": {
     "directive": "starrm1 directed Diet Director: departments do need to start learning",
     "issued_by": "starrm1",
     "issued_date": "2026-04-16",
     "directive_status": "active",
-    "all_departments_learning_active": true
+    "all_departments_learning_active": true,
+    "departments_continue_learning_while_library_closed": true,
+    "departments_continue_learning_note": "Departments keep learning even while library is closed. Set by starrm1 on 2026-04-21."
   },
   "library_access_daily_policy": {
     "policy_set_by": "starrm1",
@@ -597,7 +607,7 @@
       "can_approve": true,
       "max_approvable_per_day_minutes": 30,
       "max_sessions_per_day": 1,
-      "approval_note": "Copilot may only approve library access for the Diet Director (Bot 21) directly. Copilot CANNOT approve library access for any department (Bots 22–30). Department requests must always be escalated to starrm1. This authority for the Diet Director is granted by starrm1 on 2026-04-20.",
+      "approval_note": "Copilot may only approve library access for the Diet Director (Bot 21) directly. Copilot CANNOT approve library access for any department (Bots 22\u201330). Department requests must always be escalated to starrm1. This authority for the Diet Director is granted by starrm1 on 2026-04-20.",
       "diet_director_only": true,
       "departments_excluded": true
     },
@@ -609,10 +619,10 @@
     "diet_director_library_access": {
       "policy_set_by": "starrm1",
       "policy_set_date": "2026-04-20",
-      "approval_path": "diet_director → copilot",
+      "approval_path": "diet_director \u2192 copilot",
       "requires_starrm1": false,
       "copilot_can_approve": true,
-      "note": "EXCLUSIVE TO DIET DIRECTOR (Bot 21) ONLY. The Diet Director may request library access directly from Copilot — Copilot is authorised to approve without escalating to starrm1. This shortcut does NOT apply to any department (Bots 22–30). Departments must always go through the full chain to starrm1. Standard 30-min / 1-session daily limit applies unless starrm1 grants an exception.",
+      "note": "EXCLUSIVE TO DIET DIRECTOR (Bot 21) ONLY. The Diet Director may request library access directly from Copilot \u2014 Copilot is authorised to approve without escalating to starrm1. This shortcut does NOT apply to any department (Bots 22\u201330). Departments must always go through the full chain to starrm1. Standard 30-min / 1-session daily limit applies unless starrm1 grants an exception.",
       "standard_daily_allowance_minutes": 30,
       "standard_daily_sessions": 1,
       "exclusive_to_diet_director": true,

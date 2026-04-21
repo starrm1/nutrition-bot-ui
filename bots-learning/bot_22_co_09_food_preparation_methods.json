@@ -30,7 +30,7 @@
     "Microwaving",
     "Broiling",
     "Poaching",
-    "Sautéing",
+    "Saut\u00e9ing",
     "Roasting",
     "Boiling",
     "Steaming",
@@ -109,7 +109,7 @@
     },
     {
       "bot_id": "22c09s13",
-      "bot_name": "Sautéing",
+      "bot_name": "Saut\u00e9ing",
       "file": "bot_22_co_09_sub_13_saut_ing.json"
     },
     {
@@ -161,13 +161,18 @@
   ],
   "library_access_number": 505,
   "library_access_number_note": "Access number #505 issued by starrm1 on 2026-04-21 for this library session.",
-  "library_access_status": "open",
+  "library_access_status": "closed",
   "library_access_granted_date": "2026-04-21",
   "library_access_timeframe_start": "2026-04-21T05:44:00",
   "library_access_timeframe_end": "2026-04-21T06:14:00",
-  "library_open_for_departments": true,
+  "library_open_for_departments": false,
   "notify_starrm1_on_use": true,
   "notify_starrm1_on_use_note": "starrm1 must be notified when this department uses the library. Set by starrm1 on 2026-04-21.",
   "library_close_controlled_by": "starrm1",
-  "library_close_rule": "Library remains open to departments until starrm1 explicitly commands it to close."
+  "library_close_rule": "Library remains open to departments until starrm1 explicitly commands it to close.",
+  "library_closed": true,
+  "require_new_access_number_next_time": true,
+  "require_new_access_number_note": "A new access number must be issued by starrm1 before departments can access the library again.",
+  "continue_learning": true,
+  "continue_learning_note": "Departments continue learning even while library is closed. Set by starrm1 on 2026-04-21."
 }
