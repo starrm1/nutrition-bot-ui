@@ -1,6 +1,5 @@
 {
   "progress_percentage": 87,
-  "learning_goal": "100%",
   "next_phase_trigger": "75%",
   "notify_copilot_at": "75%",
   "key_learnings": "Over 150 common medications have documented interactions with specific foods or nutrients. Now actively querying Copilot for additional learning topics to expand medication interaction knowledge toward 100% goal.",

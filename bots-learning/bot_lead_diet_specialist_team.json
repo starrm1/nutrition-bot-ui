@@ -29,7 +29,6 @@
   "phase": "independent_learning",
   "progress_percentage": 23,
   "progress_target": 100,
-  "learning_goal": "100%",
   "advancement_condition": "Must reach 100% in current phase before next phase promotion is granted.",
   "department_phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together. NOTE: This rule applies ONLY to departments (Bots 22-30). Library bots (Bots 1-20) and the Diet Director (Bot 21) are NOT departments and are NOT subject to this rule. The 50% collective threshold rule applies ONLY to departments (Bots 22-30), NOT to library bots (1-20).",
   "cross_department_communication_threshold": 50,
