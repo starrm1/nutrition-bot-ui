@@ -85,5 +85,11 @@
   "notify_starrm1_on_use": true,
   "notify_starrm1_on_use_note": "starrm1 must be notified if/when departments use this library bot. Set by starrm1 on 2026-04-21.",
   "library_close_controlled_by": "starrm1",
-  "library_close_rule": "Library remains open to departments until starrm1 explicitly says to close it."
+  "library_close_rule": "Library remains open to departments until starrm1 explicitly says to close it.",
+  "library_access_number_required": 178,
+  "library_access_number_required_note": "Departments must present access number 178 to use this library bot. New access number issued per session by starrm1. Set 2026-04-21.",
+  "track_who_accessed": true,
+  "track_who_accessed_note": "Track and notify starrm1 which departments access this library bot. Set by starrm1 on 2026-04-21.",
+  "who_accessed_log": [],
+  "who_accessed_log_note": "Log of departments that have accessed this library bot. Each entry records: department_id, access_number_used, access_date. starrm1 is notified on each access."
 }
