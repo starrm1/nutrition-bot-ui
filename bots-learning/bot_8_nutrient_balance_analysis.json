@@ -30,7 +30,7 @@
     },
     {
       "date": "2026-04-20",
-      "entry": "Phase advancement rule confirmed as independent. This bot advances individually based on its own progress \u2014 not collectively with other bots. Rule set by starrm1 on 2026-04-20."
+      "entry": "Phase advancement rule confirmed as independent. This bot advances individually based on its own progress — not collectively with other bots. Rule set by starrm1 on 2026-04-20."
     },
     {
       "date": "2026-04-20",
@@ -43,37 +43,22 @@
   ],
   "status": "collaborative_learning",
   "learning_mode": "collaborative",
+  "phase_2_started": "2026-04-16",
+  "previous_status": "advanced_learning",
   "reported_to_copilot": true,
   "daily_report_schedule": "every day",
   "last_reported_date": "2026-04-21",
   "reporting_to": "copilot",
   "copilot_assigned_topic": "Macronutrient ratios and their effect on metabolic health",
   "library_bot": true,
-  "library_bot_note": "This bot's name and purpose have not changed. It was designated as a library bot (Bots 1\u201319) available for departments to access once starrm1 grants approval and issues an access number.",
-  "next_phase_trigger": "75%",
-  "notify_copilot_at": "75%",
-  "previous_status": "advanced_learning",
-  "phase_2_started": "2026-04-16",
-  "collaborating_with": [
-    "bot_3_dietary_pattern_recognition",
-    "bot_5_recipe_optimization",
-    "bot_6_meal_planning",
-    "bot_9_food_quality_assessment",
-    "bot_12_exercise_diet_sync",
-    "bot_14_taste_preference_learning",
-    "bot_18_cultural_diet_recognition",
-    "bot_2_microbiome_analysis",
-    "bot_7_supplement_recommendation",
-    "bot_15_budget_optimization",
-    "bot_16_sustainability_analysis"
-  ],
+  "library_bot_note": "This bot's name and purpose have not changed. It was designated as a library bot (Bots 1–19) available for departments to access once starrm1 grants approval and issues an access number.",
   "learning_never_stops": true,
   "progress_target": 100,
   "knowledge_standard": "fact_verified",
   "knowledge_accuracy_requirement": "All knowledge retained and shared by this bot must be backed by true, accurate, and factual information. Unverified or speculative content is not permitted.",
   "phase_advancement_rule": "independent",
   "advancement_type": "individual",
-  "advancement_note": "This bot advances based solely on its own learning progress. It is NOT subject to any collective or group advancement rule. Each library bot (1-20) progresses independently. Library bots do NOT need to wait for any 50% threshold before advancing phases \u2014 the 50% waiting rule applies ONLY to departments (Bots 22-30), not to library bots.",
+  "advancement_note": "This bot advances based solely on its own learning progress. It is NOT subject to any collective or group advancement rule. Each library bot (1-20) progresses independently. Library bots do NOT need to wait for any 50% threshold before advancing phases — the 50% waiting rule applies ONLY to departments (Bots 22-30), not to library bots.",
   "phase_wait_for_50_percent": false,
   "phase_wait_note": "Library bots (1-20) do NOT wait for 50% before advancing phases. The 50% collective threshold rule applies ONLY to departments (Bots 22-30).",
   "starrm1_can_advance_at_will": true,
@@ -93,5 +78,20 @@
   "track_who_accessed": true,
   "track_who_accessed_note": "Track and notify starrm1 which departments access this library bot. Set by starrm1 on 2026-04-21.",
   "who_accessed_log": [],
-  "who_accessed_log_note": "Log of departments that have accessed this library bot. Each entry records: department_id, access_number_used, access_date. starrm1 is notified on each access."
+  "who_accessed_log_note": "Log of departments that have accessed this library bot. Each entry records: department_id, access_number_used, access_date. starrm1 is notified on each access.",
+  "next_phase_trigger": "75%",
+  "notify_copilot_at": "75%",
+  "collaborating_with": [
+    "bot_3_dietary_pattern_recognition",
+    "bot_5_recipe_optimization",
+    "bot_6_meal_planning",
+    "bot_9_food_quality_assessment",
+    "bot_12_exercise_diet_sync",
+    "bot_14_taste_preference_learning",
+    "bot_18_cultural_diet_recognition",
+    "bot_2_microbiome_analysis",
+    "bot_7_supplement_recommendation",
+    "bot_15_budget_optimization",
+    "bot_16_sustainability_analysis"
+  ]
 }
