@@ -25,7 +25,7 @@
   "title_change_requires_approval_from": "starrm1",
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 20,
+  "progress_percentage": 25,
   "progress_target": 100,
   "is_department": false,
   "is_department_note": "The Diet Director (Bot 21) is NOT a department. The collective phase advancement rule (all departments must reach the same % before advancing) applies only to Bots 22-30.",
@@ -33,7 +33,7 @@
   "learning_mode": "independent",
   "reported_to_copilot": true,
   "daily_report_schedule": "every day",
-  "last_reported_date": "2026-04-20",
+  "last_reported_date": "2026-04-21",
   "reporting_to": "copilot",
   "copilot_reports_to": "starrm1",
   "note": "Bot 21 is the Diet Director. Full configuration is maintained in bot_lead_diet_specialist_team.json. Bots 1–20 are the library bots; departments (22–30) must request access through the Diet Director to use them.",
@@ -55,6 +55,10 @@
     {
       "date": "2026-04-20",
       "entry": "Daily learning update. Progress advanced from 15% to 20%."
+    },
+    {
+      "date": "2026-04-21",
+      "entry": "Daily learning update. Progress advanced from 20% to 25%."
     }
   ]
 }

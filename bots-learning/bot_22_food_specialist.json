@@ -71,7 +71,7 @@
           "Expiration Dating",
           "Shelf Life",
           "Storage Temps",
-          "Danger Zone (40-140\u00b0F)",
+          "Danger Zone (40-140°F)",
           "HACCP"
         ]
       },
@@ -94,7 +94,7 @@
           "Microwaving",
           "Broiling",
           "Poaching",
-          "Saut\u00e9ing",
+          "Sautéing",
           "Roasting",
           "Boiling",
           "Steaming",
@@ -223,7 +223,7 @@
         "Expiration Dating",
         "Shelf Life",
         "Storage Temps",
-        "Danger Zone (40-140\u00b0F)",
+        "Danger Zone (40-140°F)",
         "HACCP"
       ]
     },
@@ -246,7 +246,7 @@
         "Microwaving",
         "Broiling",
         "Poaching",
-        "Saut\u00e9ing",
+        "Sautéing",
         "Roasting",
         "Boiling",
         "Steaming",
@@ -313,10 +313,10 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 53,
+  "progress_percentage": 57,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
-  "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together.",
+  "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone — all 9 departments advance together.",
   "phase": "independent_learning",
   "learning_scope": {
     "scope": "own_department_only",
@@ -355,7 +355,7 @@
       "Expiration Dating",
       "Shelf Life",
       "Storage Temps",
-      "Danger Zone (40-140\u00b0F)",
+      "Danger Zone (40-140°F)",
       "HACCP"
     ],
     "food_preparation_methods": [
@@ -371,7 +371,7 @@
       "Microwaving",
       "Broiling",
       "Poaching",
-      "Saut\u00e9ing",
+      "Sautéing",
       "Roasting",
       "Boiling",
       "Steaming",
@@ -425,7 +425,7 @@
   "learning_mode": "independent",
   "reported_to_copilot": true,
   "daily_report_schedule": "every day",
-  "last_reported_date": "2026-04-20",
+  "last_reported_date": "2026-04-21",
   "reporting_to": "copilot",
   "copilot_reports_to": "starrm1",
   "copilot_reporting_trigger": "on request from starrm1",
@@ -448,7 +448,7 @@
     },
     {
       "date": "2026-04-20",
-      "entry": "Progress update (2026-04-20): Continued advanced study of clinical diet categories \u2014 disease-specific, nutrient-controlled, and texture-modified diets. Completed allergy/intolerance diet module (lactose-free, gluten-free). Library session #459 (2026-04-20, authorized by starrm1) utilized to cross-reference food safety and clinical nutrition resources. Progress advanced to 50%."
+      "entry": "Progress update (2026-04-20): Continued advanced study of clinical diet categories — disease-specific, nutrient-controlled, and texture-modified diets. Completed allergy/intolerance diet module (lactose-free, gluten-free). Library session #459 (2026-04-20, authorized by starrm1) utilized to cross-reference food safety and clinical nutrition resources. Progress advanced to 50%."
     },
     {
       "date": "2026-04-20",
@@ -457,6 +457,10 @@
     {
       "date": "2026-04-20",
       "entry": "Daily learning update. Progress advanced from 50% to 53%."
+    },
+    {
+      "date": "2026-04-21",
+      "entry": "Daily learning update. Progress advanced from 53% to 57%."
     }
   ],
   "phase_order": [
@@ -587,7 +591,7 @@
       {
         "step": 5,
         "actor": "starrm1",
-        "action": "Final approver \u2014 reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
+        "action": "Final approver — reviews the request in the update report and grants or denies library access. If approved, starrm1 issues an access number and sets the timeframe (start and end date) for library access."
       }
     ],
     "access_number": 505,

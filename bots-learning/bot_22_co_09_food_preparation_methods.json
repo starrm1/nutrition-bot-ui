@@ -30,7 +30,7 @@
     "Microwaving",
     "Broiling",
     "Poaching",
-    "Saut\u00e9ing",
+    "Sautéing",
     "Roasting",
     "Boiling",
     "Steaming",
@@ -40,7 +40,7 @@
   "total_sub_departments": 18,
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 10,
+  "progress_percentage": 14,
   "sub_department_learning_active": true,
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
@@ -109,7 +109,7 @@
     },
     {
       "bot_id": "22c09s13",
-      "bot_name": "Saut\u00e9ing",
+      "bot_name": "Sautéing",
       "file": "bot_22_co_09_sub_13_saut_ing.json"
     },
     {
@@ -143,7 +143,7 @@
   "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20.",
   "knowledge_access_expires": "on_starrm1_command",
   "knowledge_access_controlled_by": "starrm1",
-  "last_reported_date": "2026-04-20",
+  "last_reported_date": "2026-04-21",
   "reported_to_copilot": true,
   "learning_log": [
     {
@@ -153,6 +153,10 @@
     {
       "date": "2026-04-20",
       "entry": "Daily learning update. Progress advanced from 8% to 10%."
+    },
+    {
+      "date": "2026-04-21",
+      "entry": "Daily learning update. Progress advanced from 10% to 14%."
     }
   ],
   "library_access_number": 505,
