@@ -567,7 +567,7 @@
     "access_granted_by": "starrm1",
     "access_granted": true,
     "access_status": "open",
-    "access_note": "Library access #505 granted by starrm1 on 2026-04-20. Window: 06:08-06:38.",
+    "access_note": "Library access #505 granted by starrm1 on 2026-04-21. New access number issued for this session.",
     "library_bots": [
       {
         "bot_id": 1,
@@ -743,8 +743,8 @@
   "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20.",
   "knowledge_access_expires": "on_starrm1_command",
   "knowledge_access_controlled_by": "starrm1",
-  "library_access_number": 178,
-  "library_access_number_note": "Access number #178 issued by starrm1 on 2026-04-21 for this library session.",
+  "library_access_number": 505,
+  "library_access_number_note": "Access number #505 issued by starrm1 on 2026-04-21 for this library session.",
   "library_access_status": "open",
   "library_access_granted_date": "2026-04-21",
   "library_access_timeframe_start": "2026-04-21T05:44:00",
