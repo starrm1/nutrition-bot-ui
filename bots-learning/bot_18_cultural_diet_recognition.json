@@ -57,7 +57,11 @@
     "bot_8_nutrient_balance_analysis",
     "bot_9_food_quality_assessment",
     "bot_12_exercise_diet_sync",
-    "bot_14_taste_preference_learning"
+    "bot_14_taste_preference_learning",
+    "bot_2_microbiome_analysis",
+    "bot_7_supplement_recommendation",
+    "bot_15_budget_optimization",
+    "bot_16_sustainability_analysis"
   ],
   "learning_never_stops": true,
   "progress_target": 100,
