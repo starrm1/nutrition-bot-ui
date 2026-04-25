@@ -447,7 +447,7 @@
     }
   ],
   "is_learning": true,
-  "progress_percentage": 40,
+  "progress_percentage": 45,
   "progress_target": 100,
   "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
   "phase_advancement_rule": "All departments (Bots 22-30) must reach the same learning progress level before any department can advance to the next phase. No individual department may move ahead of the group. Phase advancement is a collective milestone \u2014 all 9 departments advance together.",
@@ -618,6 +618,10 @@
     {
       "date": "2026-04-25",
       "entry": "Daily learning update. Progress advanced from 37% to 40%."
+    },
+    {
+      "date": "2026-04-25",
+      "entry": "Learning progress updated from 40% to 45%. Departments continue learning."
     }
   ],
   "copilot_maintains_learning": true,
