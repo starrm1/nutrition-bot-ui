@@ -28,7 +28,7 @@
   "total_sub_departments": 3,
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 21,
+  "progress_percentage": 23,
   "sub_department_learning_active": true,
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
@@ -56,7 +56,7 @@
   "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20.",
   "knowledge_access_expires": "on_starrm1_command",
   "knowledge_access_controlled_by": "starrm1",
-  "last_reported_date": "2026-04-25",
+  "last_reported_date": "2026-04-26",
   "reported_to_copilot": true,
   "learning_log": [
     {
@@ -74,6 +74,10 @@
     {
       "date": "2026-04-25",
       "entry": "Daily learning update. Progress advanced from 14% to 16%."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "Daily learning update. Progress advanced from 21% to 23%."
     }
   ],
   "library_access_number": 505,
@@ -91,5 +95,7 @@
   "require_new_access_number_next_time": true,
   "require_new_access_number_note": "A new access number must be issued by starrm1 before departments can access the library again.",
   "continue_learning": true,
-  "continue_learning_note": "Departments continue learning even while library is closed. Set by starrm1 on 2026-04-21."
+  "continue_learning_note": "Departments continue learning even while library is closed. Set by starrm1 on 2026-04-21.",
+  "diet_director_access_number": 789,
+  "diet_director_access_number_note": "If the Diet Director grants library access, use number 789. Set by starrm1 on 2026-04-26."
 }

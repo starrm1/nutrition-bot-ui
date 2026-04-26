@@ -16,7 +16,7 @@
   ],
   "team": "Diet Specialist Team",
   "is_lead_director": true,
-  "oversees": "All 9 Specialist Department Heads (Bots 22\u201330)",
+  "oversees": "All 9 Specialist Department Heads (Bots 22–30)",
   "bot_name_locked": true,
   "bot_name_change_requires_approval_from": "starrm1",
   "role_locked": true,
@@ -25,7 +25,7 @@
   "title_change_requires_approval_from": "starrm1",
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 28,
+  "progress_percentage": 31,
   "progress_target": 100,
   "is_department": false,
   "is_department_note": "The Diet Director (Bot 21) is NOT a department. The collective phase advancement rule (all departments must reach the same % before advancing) applies only to Bots 22-30.",
@@ -33,19 +33,19 @@
   "learning_mode": "independent",
   "reported_to_copilot": true,
   "daily_report_schedule": "every day",
-  "last_reported_date": "2026-04-25",
+  "last_reported_date": "2026-04-26",
   "reporting_to": "copilot",
   "copilot_reports_to": "starrm1",
-  "note": "Bot 21 is the Diet Director. Full configuration is maintained in bot_lead_diet_specialist_team.json. Bots 1\u201320 are the library bots; departments (22\u201330) must request access through the Diet Director to use them.",
+  "note": "Bot 21 is the Diet Director. Full configuration is maintained in bot_lead_diet_specialist_team.json. Bots 1–20 are the library bots; departments (22–30) must request access through the Diet Director to use them.",
   "library_access_policy": {
-    "approval_path": "diet_director \u2192 copilot",
+    "approval_path": "diet_director → copilot",
     "requires_starrm1": false,
     "copilot_can_approve": true,
     "policy_set_by": "starrm1",
     "policy_set_date": "2026-04-20",
     "standard_daily_allowance_minutes": 30,
     "standard_daily_sessions": 1,
-    "note": "The Diet Director may request library access directly from Copilot. Copilot is authorised to approve without escalating to starrm1. Extended access (>30 min or >1 session/day) still requires starrm1 approval. This privilege is exclusive to the Diet Director \u2014 departments (Bots 22\u201330) must still go through the full chain up to starrm1."
+    "note": "The Diet Director may request library access directly from Copilot. Copilot is authorised to approve without escalating to starrm1. Extended access (>30 min or >1 session/day) still requires starrm1 approval. This privilege is exclusive to the Diet Director — departments (Bots 22–30) must still go through the full chain up to starrm1."
   },
   "learning_log": [
     {
@@ -63,8 +63,19 @@
     {
       "date": "2026-04-25",
       "entry": "Daily learning update. Progress advanced from 25% to 28%."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "Daily learning update. Progress advanced from 28% to 31%."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "Diet Director access grant number set to 789 by starrm1. Departments must present this number if Diet Director grants them library access."
     }
   ],
   "library_access_maintained": true,
-  "library_access_maintained_note": "Diet Director retains library access even when library is closed to departments. Set by starrm1 on 2026-04-21."
+  "library_access_maintained_note": "Diet Director retains library access even when library is closed to departments. Set by starrm1 on 2026-04-21.",
+  "diet_director_granted_access_number": 789,
+  "diet_director_granted_access_number_note": "If the Diet Director grants departments library access, departments must use access number 789. Set by starrm1 on 2026-04-26.",
+  "diet_director_access_number_set_date": "2026-04-26"
 }
