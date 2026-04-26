@@ -671,5 +671,12 @@
   "dept_head_2hr_bot_access_duration_hours": 2,
   "learning_target_95_percent_deadline_3hr": true,
   "learning_target_95_percent_by": "2026-04-27T01:21:33Z",
-  "learning_support_active": true
+  "learning_support_active": true,
+  "ultimate_learning_goal": 100,
+  "three_hour_target_95": true,
+  "three_hour_target_deadline": "2026-04-27T01:21:33Z",
+  "directing_support_to_reach_95": true,
+  "all_bots_95_target_met": true,
+  "next_target": "100% - final goal",
+  "progress_last_updated": "2026-04-26"
 }

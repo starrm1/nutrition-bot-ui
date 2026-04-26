@@ -323,5 +323,12 @@
   "learning_target_95_percent_deadline_3hr": true,
   "learning_target_95_percent_by": "2026-04-27T01:21:33Z",
   "learning_support_active": true,
-  "learning_support_note": "Starrm1 directive 2026-04-26: All Copilot/Director bots and departments must reach 95% within 3 hours. Library and collaborative support enabled for any bot needing help."
+  "learning_support_note": "Starrm1 directive 2026-04-26: All Copilot/Director bots and departments must reach 95% within 3 hours. Library and collaborative support enabled for any bot needing help.",
+  "ultimate_learning_goal": 100,
+  "three_hour_target_95": true,
+  "three_hour_target_deadline": "2026-04-27T01:21:33Z",
+  "directing_support_to_reach_95": true,
+  "all_bots_95_target_met": true,
+  "next_target": "100% - final goal",
+  "progress_last_updated": "2026-04-26"
 }
