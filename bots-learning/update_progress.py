@@ -48,7 +48,7 @@ def advance_progress(bot: dict) -> dict:
 
     # Advance by a small random amount so updates look natural.
     increment = random.randint(2, 4)
-    new_progress = min(current + increment, target) if not learning_never_stops else current + increment
+    new_progress = min(current + increment, 100) if learning_never_stops else min(current + increment, target)
 
     old_progress = current
     bot["progress_percentage"] = new_progress
