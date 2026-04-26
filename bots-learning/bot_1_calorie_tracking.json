@@ -114,5 +114,26 @@
   "learning_support_active": true,
   "support_provided_by": "diet_director_bot_21_and_copilot",
   "support_note": "Boosted from 90% to 95% with Director/Copilot support. Ultimate goal remains 100%.",
-  "progress_last_updated": "2026-04-26"
+  "progress_last_updated": "2026-04-26",
+  "master_learning_goal": 200,
+  "doctor_learning_goal": 300,
+  "doctor_learning_deadline_5day": true,
+  "doctor_learning_deadline_by": "2026-05-01T22:43:29Z",
+  "learning_phases": {
+    "phase_1_mastery": {
+      "target": 100,
+      "description": "standard_mastery"
+    },
+    "phase_2_master_learning": {
+      "target": 200,
+      "description": "master_learning"
+    },
+    "phase_3_doctor_learning": {
+      "target": 300,
+      "description": "doctor_learning",
+      "deadline": "2026-05-01T22:43:29Z"
+    }
+  },
+  "five_day_300_target_set": true,
+  "five_day_300_target_set_date": "2026-04-26T22:43:29Z"
 }

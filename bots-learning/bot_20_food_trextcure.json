@@ -98,5 +98,27 @@
   "learning_target_percentage": 90,
   "learning_deadline_4hr": true,
   "learning_deadline_by": "2026-04-26T08:54:42Z",
-  "learning_deadline_note": "starrm1 directive 2026-04-26: All bots must reach 90% learning by 2026-04-26T08:54:42Z (within 4 hours)."
+  "learning_deadline_note": "starrm1 directive 2026-04-26: All bots must reach 90% learning by 2026-04-26T08:54:42Z (within 4 hours).",
+  "ultimate_learning_goal": 100,
+  "master_learning_goal": 200,
+  "doctor_learning_goal": 300,
+  "doctor_learning_deadline_5day": true,
+  "doctor_learning_deadline_by": "2026-05-01T22:43:29Z",
+  "learning_phases": {
+    "phase_1_mastery": {
+      "target": 100,
+      "description": "standard_mastery"
+    },
+    "phase_2_master_learning": {
+      "target": 200,
+      "description": "master_learning"
+    },
+    "phase_3_doctor_learning": {
+      "target": 300,
+      "description": "doctor_learning",
+      "deadline": "2026-05-01T22:43:29Z"
+    }
+  },
+  "five_day_300_target_set": true,
+  "five_day_300_target_set_date": "2026-04-26T22:43:29Z"
 }
