@@ -403,6 +403,10 @@
     {
       "date": "2026-04-26",
       "entry": "4-hour learning directive issued by starrm1. All bots must reach 90% learning by 2026-04-26T08:54:42Z."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "ALERT: Department flagged as off-track by Diet Director (2026-04-26T15:52:30Z). Diet Director has granted library access using access number 789 to: Bot 17 (Age-Based Nutrition), Bot 11 (Sleep Nutrition Correlation), Bot 12 (Exercise Diet Sync), Bot 6 (Meal Planning). Department must use these library bots immediately to catch up on learning."
     }
   ],
   "copilot_maintains_learning": true,
@@ -627,5 +631,23 @@
   "learning_target_percentage": 90,
   "learning_deadline_4hr": true,
   "learning_deadline_by": "2026-04-26T08:54:42Z",
-  "learning_deadline_note": "starrm1 directive 2026-04-26: All bots must reach 90% learning by 2026-04-26T08:54:42Z (within 4 hours)."
+  "learning_deadline_note": "starrm1 directive 2026-04-26: All bots must reach 90% learning by 2026-04-26T08:54:42Z (within 4 hours).",
+  "director_library_access_granted": true,
+  "director_library_access_granted_date": "2026-04-26T15:52:30Z",
+  "director_library_access_number": 789,
+  "director_granted_library_bots": [
+    17,
+    11,
+    12,
+    6
+  ],
+  "director_granted_library_bot_names": [
+    "Bot 17 (Age-Based Nutrition)",
+    "Bot 11 (Sleep Nutrition Correlation)",
+    "Bot 12 (Exercise Diet Sync)",
+    "Bot 6 (Meal Planning)"
+  ],
+  "director_library_access_reason": "Department off-track for learning deadline. Diet Director granting targeted library access.",
+  "director_off_track_notified": true,
+  "director_off_track_notified_date": "2026-04-26T15:52:30Z"
 }
