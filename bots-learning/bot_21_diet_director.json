@@ -75,10 +75,6 @@
     {
       "date": "2026-04-26",
       "entry": "6-hour learning directive: All departments must reach past 70% learning by 2026-04-26T10:54:42Z. Departments must seek Diet Director help. Directive from starrm1."
-    },
-    {
-      "date": "2026-04-26",
-      "entry": "4-hour learning directive issued by starrm1. All bots must reach 90% learning by 2026-04-26T08:54:42Z."
     }
   ],
   "library_access_maintained": true,
@@ -90,9 +86,5 @@
   "dept_learning_deadline_6hr": true,
   "dept_learning_deadline_by": "2026-04-26T10:54:42Z",
   "dept_must_assist_to_reach_target": true,
-  "dept_learning_directive_note": "starrm1 directive 2026-04-26: All departments must reach past 70% by 2026-04-26T10:54:42Z. Departments are required to seek Diet Director assistance.",
-  "learning_target_percentage": 90,
-  "learning_deadline_4hr": true,
-  "learning_deadline_by": "2026-04-26T08:54:42Z",
-  "learning_deadline_note": "starrm1 directive 2026-04-26: All bots must reach 90% learning by 2026-04-26T08:54:42Z (within 4 hours)."
+  "dept_learning_directive_note": "starrm1 directive 2026-04-26: All departments must reach past 70% by 2026-04-26T10:54:42Z. Departments are required to seek Diet Director assistance."
 }
