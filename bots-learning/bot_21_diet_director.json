@@ -75,8 +75,17 @@
     {
       "date": "2026-04-26",
       "entry": "6-hour learning directive: All departments must reach past 70% learning by 2026-04-26T10:54:42Z. Departments must seek Diet Director help. Directive from starrm1."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "Question from starrm1 to Diet Director (2026-04-26T14:51:34Z): Are your departments going to make their deadline? The 90% learning target deadline was set for 2026-04-26T08:54:42Z. Please confirm if departments are on track or if intervention is needed."
     }
   ],
+  "starrm1_question": "Are your departments going to make their deadline?",
+  "starrm1_question_date": "2026-04-26T14:51:34Z",
+  "starrm1_question_re": "department_90pct_learning_deadline",
+  "starrm1_question_deadline_reference": "2026-04-26T08:54:42Z",
+  "director_deadline_response_pending": true,
   "library_access_maintained": true,
   "library_access_maintained_note": "Diet Director retains library access even when library is closed to departments. Set by starrm1 on 2026-04-21.",
   "diet_director_granted_access_number": 789,
