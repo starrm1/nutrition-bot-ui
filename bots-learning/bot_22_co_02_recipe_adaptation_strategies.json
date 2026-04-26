@@ -53,6 +53,10 @@
     {
       "date": "2026-04-26",
       "entry": "Daily learning update. Progress advanced from 23% to 25%."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "6-hour learning directive issued by starrm1. All departments must reach past 70% learning by 2026-04-26T10:54:42Z. Departments must ask the Diet Director for help to achieve this target."
     }
   ],
   "library_access_number": 505,
@@ -72,5 +76,10 @@
   "continue_learning": true,
   "continue_learning_note": "Departments continue learning even while library is closed. Set by starrm1 on 2026-04-21.",
   "diet_director_access_number": 789,
-  "diet_director_access_number_note": "If the Diet Director grants library access, use number 789. Set by starrm1 on 2026-04-26."
+  "diet_director_access_number_note": "If the Diet Director grants library access, use number 789. Set by starrm1 on 2026-04-26.",
+  "learning_target_percentage": 71,
+  "learning_deadline_6hr": true,
+  "learning_deadline_by": "2026-04-26T10:54:42Z",
+  "must_ask_diet_director_for_help": true,
+  "must_ask_diet_director_help_note": "Departments must seek Diet Director assistance to reach 70%+ learning by the 6-hour deadline (2026-04-26T10:54:42Z). Directive from starrm1."
 }
