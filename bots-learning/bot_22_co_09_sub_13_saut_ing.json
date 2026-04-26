@@ -1,6 +1,6 @@
 {
   "bot_id": "22c09s13",
-  "bot_name": "Sautéing",
+  "bot_name": "Saut\u00e9ing",
   "role": "Sub-Department Bot",
   "is_own_bot": true,
   "chain_of_command_position": 7,
@@ -93,5 +93,9 @@
   "learning_deadline_6hr": true,
   "learning_deadline_by": "2026-04-26T10:54:42Z",
   "must_ask_diet_director_for_help": true,
-  "must_ask_diet_director_help_note": "Departments must seek Diet Director assistance to reach 70%+ learning by the 6-hour deadline (2026-04-26T10:54:42Z). Directive from starrm1."
+  "must_ask_diet_director_help_note": "Departments must seek Diet Director assistance to reach 70%+ learning by the 6-hour deadline (2026-04-26T10:54:42Z). Directive from starrm1.",
+  "co_sub_minimum_threshold": 30,
+  "co_sub_threshold_status": "on_track",
+  "co_sub_threshold_checked_date": "2026-04-26",
+  "dept_head_2hr_access_authorized": false
 }

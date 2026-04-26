@@ -163,5 +163,9 @@
   "learning_target_percentage": 90,
   "learning_deadline_4hr": true,
   "learning_deadline_by": "2026-04-26T08:54:42Z",
-  "learning_deadline_note": "starrm1 directive 2026-04-26: All bots must reach 90% learning by 2026-04-26T08:54:42Z (within 4 hours)."
+  "learning_deadline_note": "starrm1 directive 2026-04-26: All bots must reach 90% learning by 2026-04-26T08:54:42Z (within 4 hours).",
+  "co_sub_minimum_threshold": 30,
+  "co_sub_threshold_status": "on_track",
+  "co_sub_threshold_checked_date": "2026-04-26",
+  "dept_head_2hr_access_authorized": false
 }
