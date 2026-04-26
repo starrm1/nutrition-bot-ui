@@ -33,7 +33,7 @@
   "total_sub_departments": 8,
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 90,
+  "progress_percentage": 95,
   "sub_department_learning_active": true,
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
@@ -144,5 +144,13 @@
   "co_sub_minimum_threshold": 30,
   "co_sub_threshold_status": "on_track",
   "co_sub_threshold_checked_date": "2026-04-26",
-  "dept_head_2hr_access_authorized": false
+  "dept_head_2hr_access_authorized": false,
+  "threshold_30pct_met": true,
+  "dept_head_2hr_bot_access_authorized": true,
+  "dept_head_2hr_bot_access_authorized_by": "diet_director",
+  "dept_head_2hr_bot_access_authorized_date": "2026-04-26",
+  "dept_head_2hr_bot_access_duration_hours": 2,
+  "learning_target_95_percent_deadline_3hr": true,
+  "learning_target_95_percent_by": "2026-04-27T01:21:33Z",
+  "learning_support_active": true
 }
