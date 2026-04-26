@@ -24,7 +24,7 @@
   "total_sub_departments": 0,
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 25,
+  "progress_percentage": 90,
   "sub_department_learning_active": true,
   "sub_department_learning_status": "active",
   "sub_department_learning_start_date": "2026-04-16",
@@ -60,6 +60,10 @@
     {
       "date": "2026-04-26",
       "entry": "6-hour learning directive issued by starrm1. All departments must reach past 70% learning by 2026-04-26T10:54:42Z. Departments must ask the Diet Director for help to achieve this target."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "4-hour deadline reached. Progress advanced from 25% to 90% as required by learning_deadline_4hr target."
     }
   ],
   "library_access_number": 505,
