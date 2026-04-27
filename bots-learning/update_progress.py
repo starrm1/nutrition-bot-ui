@@ -3,10 +3,15 @@ Daily bot learning progress update script.
 
 Runs once per day (triggered by the GitHub Actions workflow).
 For every bot JSON file in this directory:
-  - If the bot is still learning and has not yet reached 100%, advance its
-    progress_percentage by 2 percentage points (capped at 100).
-  - If learning_never_stops is True the progress entry is always written, even
-    when already at 100%.
+  - If the bot is still learning (is_learning=True) and has not been updated
+    today, advance its progress_percentage by a small random amount.
+  - The effective learning cap is determined in this priority order:
+      1. doctor_learning_goal  (e.g. 300 for library bots earning a doctorate)
+      2. master_learning_goal  (e.g. 200 for master-level learning)
+      3. progress_target       (explicit target field)
+      4. 100                   (default)
+  - When a bot has already reached its effective cap, a "maintaining peak
+    learning" log entry is still written so progress is always visible.
   - Appends a dated entry to learning_log and updates last_reported_date.
 """
 
@@ -27,8 +32,17 @@ def save_json(path: pathlib.Path, data: dict) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def effective_cap(bot: dict) -> int:
+    """Return the highest learning cap this bot can reach."""
+    for field in ("doctor_learning_goal", "master_learning_goal", "progress_target"):
+        val = bot.get(field)
+        if isinstance(val, (int, float)) and val > 0:
+            return int(val)
+    return 100
+
+
 def should_update(bot: dict) -> bool:
-    """Return True if this bot should have its progress updated today."""
+    """Return True if this bot should receive a progress entry today."""
     if not bot.get("is_learning", True):
         return False
     if bot.get("last_reported_date") == TODAY:
@@ -37,29 +51,29 @@ def should_update(bot: dict) -> bool:
 
 
 def advance_progress(bot: dict) -> dict:
-    """Increment progress and add a log entry. Returns the modified dict."""
+    """Advance progress toward the effective cap and add a log entry."""
     current = bot.get("progress_percentage", 0)
-    target = bot.get("progress_target", 100)
-    learning_never_stops = bot.get("learning_never_stops", False)
+    if not isinstance(current, (int, float)):
+        current = 0
 
-    if current >= target and not learning_never_stops:
-        # Already complete and no ongoing learning — skip silently.
-        return bot
+    cap = effective_cap(bot)
 
-    # Advance by a small random amount so updates look natural.
-    increment = random.randint(2, 4)
-    new_progress = min(current + increment, 100) if learning_never_stops else min(current + increment, target)
-
-    old_progress = current
-    bot["progress_percentage"] = new_progress
-    bot["last_reported_date"] = TODAY
-
-    log_entry = {
-        "date": TODAY,
-        "entry": (
-            f"Daily learning update. Progress advanced from {old_progress}% to {new_progress}%."
-        ),
-    }
+    if current >= cap:
+        # Bot is already at or beyond its cap — log maintaining peak learning.
+        bot["last_reported_date"] = TODAY
+        log_entry = {
+            "date": TODAY,
+            "entry": f"Maintaining peak learning at {current}% (cap: {cap}%). Daily activity logged.",
+        }
+    else:
+        increment = random.randint(2, 4)
+        new_progress = min(current + increment, cap)
+        bot["progress_percentage"] = new_progress
+        bot["last_reported_date"] = TODAY
+        log_entry = {
+            "date": TODAY,
+            "entry": f"Daily learning update. Progress advanced from {current}% to {new_progress}% (cap: {cap}%).",
+        }
 
     if "learning_log" not in bot or not isinstance(bot["learning_log"], list):
         bot["learning_log"] = []
@@ -77,8 +91,8 @@ def main() -> None:
     for path in bot_files:
         try:
             bot = load_json(path)
-        except json.JSONDecodeError as exc:
-            print(f"ERROR: Could not parse {path.name}: {exc}")
+        except (json.JSONDecodeError, OSError) as exc:
+            print(f"ERROR: Could not read/parse {path.name}: {exc}")
             errors += 1
             continue
 
@@ -86,10 +100,18 @@ def main() -> None:
             skipped += 1
             continue
 
-        bot = advance_progress(bot)
-        save_json(path, bot)
+        try:
+            bot = advance_progress(bot)
+            save_json(path, bot)
+        except (OSError, TypeError, ValueError) as exc:
+            print(f"ERROR: Could not update {path.name}: {exc}")
+            errors += 1
+            continue
+
         updated += 1
-        print(f"Updated {path.name} → {bot['progress_percentage']}%")
+        pct = bot.get("progress_percentage", "?")
+        cap = effective_cap(bot)
+        print(f"Updated {path.name} → {pct}% (cap: {cap}%)")
 
     print(
         f"\nDone. Updated: {updated}  |  Skipped (up-to-date): {skipped}  |  Errors: {errors}"

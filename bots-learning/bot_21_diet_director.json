@@ -338,5 +338,6 @@
   "directing_support_to_reach_95": true,
   "all_bots_95_target_met": true,
   "next_target": "100% - final goal",
-  "progress_last_updated": "2026-04-26"
+  "progress_last_updated": "2026-04-26",
+  "learning_never_stops": true
 }
