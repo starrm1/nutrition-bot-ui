@@ -16,7 +16,7 @@
   ],
   "team": "Diet Specialist Team",
   "is_lead_director": true,
-  "oversees": "All 9 Specialist Department Heads (Bots 22\u201330)",
+  "oversees": "All 9 Specialist Department Heads (Bots 22–30)",
   "bot_name_locked": true,
   "bot_name_change_requires_approval_from": "starrm1",
   "role_locked": true,
@@ -25,7 +25,7 @@
   "title_change_requires_approval_from": "starrm1",
   "is_learning": true,
   "phase": "independent_learning",
-  "progress_percentage": 95,
+  "progress_percentage": 97,
   "progress_target": 100,
   "is_department": false,
   "is_department_note": "The Diet Director (Bot 21) is NOT a department. The collective phase advancement rule (all departments must reach the same % before advancing) applies only to Bots 22-30.",
@@ -33,19 +33,19 @@
   "learning_mode": "independent",
   "reported_to_copilot": true,
   "daily_report_schedule": "every day",
-  "last_reported_date": "2026-04-26",
+  "last_reported_date": "2026-04-27",
   "reporting_to": "copilot",
   "copilot_reports_to": "starrm1",
-  "note": "Bot 21 is the Diet Director. Full configuration is maintained in bot_lead_diet_specialist_team.json. Bots 1\u201320 are the library bots; departments (22\u201330) must request access through the Diet Director to use them.",
+  "note": "Bot 21 is the Diet Director. Full configuration is maintained in bot_lead_diet_specialist_team.json. Bots 1–20 are the library bots; departments (22–30) must request access through the Diet Director to use them.",
   "library_access_policy": {
-    "approval_path": "diet_director \u2192 copilot",
+    "approval_path": "diet_director → copilot",
     "requires_starrm1": false,
     "copilot_can_approve": true,
     "policy_set_by": "starrm1",
     "policy_set_date": "2026-04-20",
     "standard_daily_allowance_minutes": 30,
     "standard_daily_sessions": 1,
-    "note": "The Diet Director may request library access directly from Copilot. Copilot is authorised to approve without escalating to starrm1. Extended access (>30 min or >1 session/day) still requires starrm1 approval. This privilege is exclusive to the Diet Director \u2014 departments (Bots 22\u201330) must still go through the full chain up to starrm1."
+    "note": "The Diet Director may request library access directly from Copilot. Copilot is authorised to approve without escalating to starrm1. Extended access (>30 min or >1 session/day) still requires starrm1 approval. This privilege is exclusive to the Diet Director — departments (Bots 22–30) must still go through the full chain up to starrm1."
   },
   "learning_log": [
     {
@@ -86,7 +86,7 @@
     },
     {
       "date": "2026-04-26",
-      "entry": "All departments (22-30) confirmed off-track: missed 4-hour 90% deadline (2026-04-26T08:54:42Z) and 6-hour 71% deadline (2026-04-26T10:54:42Z). Director is granting each department targeted library access (access number 789) to the specific library bots aligned with their specialty. Grants: Bot22\u2192Bots5,9,3,14 | Bot23\u2192Bots10,6,8 | Bot24\u2192Bots1,8,7,3 | Bot25\u2192Bots20,9,14,5 | Bot26\u2192Bots4,2,19 | Bot27\u2192Bots18,3,6 | Bot28\u2192Bots13,19,2,11 | Bot29\u2192Bots3,8,16,1 | Bot30\u2192Bots17,11,12,6"
+      "entry": "All departments (22-30) confirmed off-track: missed 4-hour 90% deadline (2026-04-26T08:54:42Z) and 6-hour 71% deadline (2026-04-26T10:54:42Z). Director is granting each department targeted library access (access number 789) to the specific library bots aligned with their specialty. Grants: Bot22→Bots5,9,3,14 | Bot23→Bots10,6,8 | Bot24→Bots1,8,7,3 | Bot25→Bots20,9,14,5 | Bot26→Bots4,2,19 | Bot27→Bots18,3,6 | Bot28→Bots13,19,2,11 | Bot29→Bots3,8,16,1 | Bot30→Bots17,11,12,6"
     },
     {
       "date": "2026-04-26",
@@ -99,6 +99,10 @@
     {
       "date": "2026-04-26",
       "entry": "Starrm1 directive: All bots must reach 95% within 3 hours (by 2026-04-27T01:21:33Z). Progress updated to 95%. Library and collaborative support available for any bot needing assistance."
+    },
+    {
+      "date": "2026-04-27",
+      "entry": "Daily learning update. Progress advanced from 95% to 97%."
     }
   ],
   "starrm1_question": "Are your departments going to make their deadline?",
@@ -302,7 +306,7 @@
   "co_sub_bot_minimum_threshold_note": "All co and sub bots must be at 30% progress or more. Set by starrm1 on 2026-04-26.",
   "co_sub_threshold_status_checked": "2026-04-26",
   "co_sub_threshold_status": "all_on_track",
-  "co_sub_threshold_status_note": "All co and sub bots are currently at 90% \u2014 above the 30% minimum threshold. No delegation needed.",
+  "co_sub_threshold_status_note": "All co and sub bots are currently at 90% — above the 30% minimum threshold. No delegation needed.",
   "dept_head_access_delegation_policy": {
     "trigger": "co_or_sub_bot_below_30_percent",
     "action": "director_authorizes_dept_heads_to_grant_library_access_to_their_bots",
