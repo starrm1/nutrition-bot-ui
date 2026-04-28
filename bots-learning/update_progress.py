@@ -160,7 +160,7 @@ def save_json(path: pathlib.Path, data: dict) -> None:
             encoding="utf-8",
         )
         tmp.replace(path)          # atomic rename on POSIX; best-effort on Windows
-    except Exception:
+    except OSError:
         tmp.unlink(missing_ok=True)  # clean up orphaned temp file
         raise
 
