@@ -171,7 +171,12 @@ def save_json(path: pathlib.Path, data: dict) -> None:
 
 def main() -> None:
     today: str = today_iso()
-    bot_files = sorted(BOTS_DIR.glob("bot_*.json"))
+    # Collect all bot_*.json files plus any named standalone bot JSON files
+    # (e.g. nutrigenomics.json which does not follow the bot_* naming convention).
+    _standalone = [BOTS_DIR / "nutrigenomics.json"]
+    bot_files = sorted(
+        set(BOTS_DIR.glob("bot_*.json")) | {p for p in _standalone if p.exists()}
+    )
 
     if not bot_files:
         print(
