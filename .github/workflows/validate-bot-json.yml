@@ -1,0 +1,81 @@
+name: Validate Bot JSON Files
+
+on:
+  pull_request:
+    paths:
+      - "bots-learning/**"
+  push:
+    branches:
+      - main
+    paths:
+      - "bots-learning/**"
+
+jobs:
+  validate:
+    name: Validate bot JSON
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate all bot JSON files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PYEOF'
+          import json
+          import pathlib
+          import sys
+
+          bots_dir = pathlib.Path("bots-learning")
+          standalone = [bots_dir / "nutrigenomics.json"]
+          files = sorted(
+              set(bots_dir.glob("bot_*.json"))
+              | {p for p in standalone if p.exists()}
+          )
+
+          errors = []
+          for f in files:
+              try:
+                  data = json.loads(f.read_text(encoding="utf-8"))
+              except json.JSONDecodeError as e:
+                  errors.append(f"{f.name}: invalid JSON — {e}")
+                  continue
+
+              if not isinstance(data, dict):
+                  errors.append(
+                      f"{f.name}: root value is {type(data).__name__}, expected object"
+                  )
+                  continue
+
+              # progress_percentage must be a number when present
+              pct = data.get("progress_percentage")
+              if pct is not None and not isinstance(pct, (int, float)):
+                  errors.append(
+                      f"{f.name}: progress_percentage is {type(pct).__name__!r}, "
+                      "expected number"
+                  )
+                  continue
+
+              # learning_log must be a list when present
+              log = data.get("learning_log")
+              if log is not None and not isinstance(log, list):
+                  errors.append(
+                      f"{f.name}: learning_log is {type(log).__name__!r}, expected list"
+                  )
+
+          if errors:
+              print(f"\n{len(errors)} validation error(s) found:\n", file=sys.stderr)
+              for err in errors:
+                  print(f"  ERROR: {err}", file=sys.stderr)
+              sys.exit(1)
+
+          print(f"Validation passed: {len(files)} bot file(s) OK.")
+          PYEOF
