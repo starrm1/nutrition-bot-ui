@@ -6,20 +6,53 @@ on:
     - cron: "0 6 * * *"
   workflow_dispatch:  # Allow manual trigger
 
+# Prevent two runs from updating bot files at the same time.
+# If a new run starts while one is in progress, the in-progress run is kept
+# and the incoming run is cancelled.
+concurrency:
+  group: daily-bot-progress
+  cancel-in-progress: false
+
 jobs:
   update-progress:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Fetch full history so rebase has something to work with
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      - name: Validate bot JSON files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PYEOF'
+          import json, pathlib, sys
+          bots_dir = pathlib.Path("bots-learning")
+          errors = []
+          for f in sorted(bots_dir.glob("bot_*.json")):
+              try:
+                  data = json.loads(f.read_text(encoding="utf-8"))
+                  if not isinstance(data, dict):
+                      errors.append(f"{f.name}: root is {type(data).__name__}, expected object")
+              except json.JSONDecodeError as e:
+                  errors.append(f"{f.name}: {e}")
+          if errors:
+              for err in errors:
+                  print(f"ERROR: {err}", file=sys.stderr)
+              sys.exit(1)
+          print(f"Validation passed: {len(list(bots_dir.glob('bot_*.json')))} bot files OK")
+          PYEOF
 
       - name: Run daily progress update
         shell: bash
@@ -28,6 +61,7 @@ jobs:
           python bots-learning/update_progress.py
 
       - name: Commit and push updated bot files
+        shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -37,5 +71,11 @@ jobs:
             echo "No changes to commit — all bots are up to date."
           else
             git commit -m "chore: daily bot learning progress update $(date -u +%Y-%m-%d)"
+            # Pull-rebase to handle any diverged commits before pushing
+            git pull --rebase origin HEAD || {
+              echo "Rebase failed — aborting and retrying with merge"
+              git rebase --abort 2>/dev/null || true
+              git pull --no-rebase origin HEAD
+            }
             git push origin HEAD
           fi
