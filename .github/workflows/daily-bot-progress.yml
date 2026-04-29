@@ -66,16 +66,19 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add bots-learning/
+          # Remove any orphaned .tmp files left by a previously interrupted atomic write
+          find bots-learning/ -name "*.tmp" -delete 2>/dev/null || true
+          # Stage only JSON files — never commit stray temp artefacts
+          git add bots-learning/*.json
           if git diff --cached --quiet; then
             echo "No changes to commit — all bots are up to date."
           else
             git commit -m "chore: daily bot learning progress update $(date -u +%Y-%m-%d)"
-            # Pull-rebase to handle any diverged commits before pushing
-            git pull --rebase origin HEAD || {
+            # Pull-rebase against the tracking branch to handle any diverged commits
+            git pull --rebase || {
               echo "Rebase failed — aborting and retrying with merge"
               git rebase --abort 2>/dev/null || true
-              git pull --no-rebase origin HEAD
+              git pull --no-rebase
             }
-            git push origin HEAD
+            git push
           fi
