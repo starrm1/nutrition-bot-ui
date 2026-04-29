@@ -104,11 +104,23 @@ jobs:
             echo "No changes to commit — all bots are up to date."
           else
             git commit -m "chore: daily bot learning progress update $(date -u +%Y-%m-%d)"
-            # Pull-rebase against the tracking branch to handle any diverged commits
+            # Pull-rebase against the tracking branch to handle any diverged commits.
             git pull --rebase || {
               echo "Rebase failed — aborting and retrying with merge"
               git rebase --abort 2>/dev/null || true
-              git pull --no-rebase
+              git pull --no-rebase || {
+                # Both strategies failed; abort any in-progress merge so the
+                # working tree is left clean, then surface a clear error.
+                git merge --abort 2>/dev/null || true
+                echo "ERROR: Could not sync with remote after rebase and merge attempts." >&2
+                exit 1
+              }
             }
-            git push
+            # Push with one retry to handle the TOCTOU window where another
+            # commit may have landed between the pull and push.
+            git push || {
+              echo "Push failed — pulling latest and retrying once"
+              git pull --rebase
+              git push
+            }
           fi
