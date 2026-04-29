@@ -43,10 +43,21 @@ jobs:
           for f in sorted(bots_dir.glob("bot_*.json")):
               try:
                   data = json.loads(f.read_text(encoding="utf-8"))
-                  if not isinstance(data, dict):
-                      errors.append(f"{f.name}: root is {type(data).__name__}, expected object")
               except json.JSONDecodeError as e:
                   errors.append(f"{f.name}: {e}")
+                  continue
+              if not isinstance(data, dict):
+                  errors.append(f"{f.name}: root is {type(data).__name__}, expected object")
+                  continue
+              # 4th line of defence: is_learning must be boolean when present
+              is_learning = data.get("is_learning")
+              if is_learning is not None and not isinstance(is_learning, bool):
+                  errors.append(f"{f.name}: is_learning is {type(is_learning).__name__!r}, expected boolean")
+              # 5th line of defence: progress_percentage must be within valid range 0–300
+              pct = data.get("progress_percentage")
+              if pct is not None and isinstance(pct, (int, float)):
+                  if pct < 0 or pct > 300:
+                      errors.append(f"{f.name}: progress_percentage is {pct}, expected 0–300")
           if errors:
               for err in errors:
                   print(f"ERROR: {err}", file=sys.stderr)
