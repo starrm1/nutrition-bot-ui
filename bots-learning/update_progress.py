@@ -15,7 +15,22 @@ For every bot_*.json file in this directory:
     learning" log entry is written so daily activity is always visible.
   - All file writes are atomic: data is written to a temp file first, then
     renamed into place, so a partial write never corrupts a bot file.
+  - After each write, the saved file is re-read and re-parsed to verify it
+    round-trips correctly (post-write verification).
   - Exits with code 1 if any file could not be read or written.
+
+Multiple layers of defence against errors
+-----------------------------------------
+  1. Load errors caught per-file (json.JSONDecodeError / OSError).
+  2. Root value must be a JSON object (dict); non-objects are skipped.
+  3. should_update() guards: is_learning=False skips the bot; already-updated
+     today (last_reported_date == today) skips the bot.
+  4. advance_progress() normalises bad progress values: non-numeric or
+     negative values are coerced to 0.0; progress is clamped to [0, cap].
+  5. learning_log is guaranteed to be a list before appending to it.
+  6. Atomic writes via tmp → rename prevent partial-write corruption.
+  7. Post-write verification: the saved file is immediately re-read and
+     parsed to confirm it is valid JSON and a dict.
 """
 
 from __future__ import annotations
@@ -150,8 +165,13 @@ def save_json(path: pathlib.Path, data: dict) -> None:
     place.  This prevents a partial write from corrupting an existing bot
     file if the process is interrupted mid-write.
 
+    After the rename, the file is re-read and re-parsed as a 7th line of
+    defence to confirm the written content is valid JSON and round-trips
+    correctly.
+
     Raises:
         OSError: on any filesystem error; the temp file is removed on failure.
+        ValueError: if the post-write verification round-trip fails.
     """
     tmp = path.with_suffix(".tmp")
     try:
@@ -163,6 +183,17 @@ def save_json(path: pathlib.Path, data: dict) -> None:
     except OSError:
         tmp.unlink(missing_ok=True)  # clean up orphaned temp file
         raise
+
+    # 7th line of defence: verify the saved file is valid, readable JSON.
+    try:
+        saved = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError(f"Post-write verification failed for {path.name}: {exc}") from exc
+    if not isinstance(saved, dict):
+        raise ValueError(
+            f"Post-write verification failed for {path.name}: "
+            f"root is {type(saved).__name__}, expected object"
+        )
 
 
 # ---------------------------------------------------------------------------

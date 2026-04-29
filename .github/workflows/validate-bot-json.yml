@@ -71,7 +71,7 @@ jobs:
                       f"{f.name}: learning_log is {type(log).__name__!r}, expected list"
                   )
 
-              # 4th line of defence: is_learning must be boolean when present
+              # 5th line of defence: is_learning must be boolean when present
               is_learning = data.get("is_learning")
               if is_learning is not None and not isinstance(is_learning, bool):
                   errors.append(
@@ -79,7 +79,7 @@ jobs:
                       "expected boolean"
                   )
 
-              # 5th line of defence: progress_percentage must be within valid range 0–300
+              # 6th line of defence: progress_percentage must be within valid range 0–300
               if pct is not None and isinstance(pct, (int, float)):
                   if pct < 0 or pct > 300:
                       errors.append(

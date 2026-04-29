@@ -39,22 +39,37 @@ jobs:
           python - <<'PYEOF'
           import json, pathlib, sys
           bots_dir = pathlib.Path("bots-learning")
+          standalone = [bots_dir / "nutrigenomics.json"]
+          files = sorted(
+              set(bots_dir.glob("bot_*.json"))
+              | {p for p in standalone if p.exists()}
+          )
           errors = []
-          for f in sorted(bots_dir.glob("bot_*.json")):
+          for f in files:
+              # 1st line of defence: file must be valid JSON
               try:
                   data = json.loads(f.read_text(encoding="utf-8"))
               except json.JSONDecodeError as e:
-                  errors.append(f"{f.name}: {e}")
+                  errors.append(f"{f.name}: invalid JSON — {e}")
                   continue
+              # 2nd line of defence: root value must be a JSON object
               if not isinstance(data, dict):
                   errors.append(f"{f.name}: root is {type(data).__name__}, expected object")
                   continue
-              # 4th line of defence: is_learning must be boolean when present
+              # 3rd line of defence: progress_percentage must be a number when present
+              pct = data.get("progress_percentage")
+              if pct is not None and not isinstance(pct, (int, float)):
+                  errors.append(f"{f.name}: progress_percentage is {type(pct).__name__!r}, expected number")
+                  continue
+              # 4th line of defence: learning_log must be a list when present
+              log = data.get("learning_log")
+              if log is not None and not isinstance(log, list):
+                  errors.append(f"{f.name}: learning_log is {type(log).__name__!r}, expected list")
+              # 5th line of defence: is_learning must be boolean when present
               is_learning = data.get("is_learning")
               if is_learning is not None and not isinstance(is_learning, bool):
                   errors.append(f"{f.name}: is_learning is {type(is_learning).__name__!r}, expected boolean")
-              # 5th line of defence: progress_percentage must be within valid range 0–300
-              pct = data.get("progress_percentage")
+              # 6th line of defence: progress_percentage must be within valid range 0–300
               if pct is not None and isinstance(pct, (int, float)):
                   if pct < 0 or pct > 300:
                       errors.append(f"{f.name}: progress_percentage is {pct}, expected 0–300")
@@ -62,7 +77,7 @@ jobs:
               for err in errors:
                   print(f"ERROR: {err}", file=sys.stderr)
               sys.exit(1)
-          print(f"Validation passed: {len(list(bots_dir.glob('bot_*.json')))} bot files OK")
+          print(f"Validation passed: {len(files)} bot file(s) OK")
           PYEOF
 
       - name: Run daily progress update
