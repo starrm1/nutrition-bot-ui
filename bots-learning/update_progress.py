@@ -27,10 +27,15 @@ Multiple layers of defence against errors
      today (last_reported_date == today) skips the bot.
   4. advance_progress() normalises bad progress values: non-numeric or
      negative values are coerced to 0.0; progress is clamped to [0, cap].
-  5. learning_log is guaranteed to be a list before appending to it.
-  6. Atomic writes via tmp → rename prevent partial-write corruption.
+  5. learning_log is guaranteed to be a list before appending to it; log
+     entry values are coerced to str so they are always JSON-serialisable.
+  6. Atomic writes via tmp → rename prevent partial-write corruption; the
+     cleanup unlink is itself wrapped in a nested try/except so a filesystem
+     error during cleanup can never mask the original write error.
   7. Post-write verification: the saved file is immediately re-read and
      parsed to confirm it is valid JSON and a dict.
+  8. Directory scan is wrapped in a try/except so a missing or unreadable
+     bots directory exits cleanly with an informative message.
 """
 
 from __future__ import annotations
@@ -115,7 +120,7 @@ def advance_progress(bot: dict, today: str) -> dict:
     if current >= cap:
         # Already at or beyond cap — record maintenance only; do not increment.
         log_entry = {
-            "date": today,
+            "date": str(today),
             "entry": (
                 f"Maintaining peak learning at {current:g}% "
                 f"(cap: {cap}%). Daily activity logged."
@@ -126,7 +131,7 @@ def advance_progress(bot: dict, today: str) -> dict:
         new_progress: float = min(current + increment, float(cap))
         bot["progress_percentage"] = new_progress
         log_entry = {
-            "date": today,
+            "date": str(today),
             "entry": (
                 f"Daily learning update. Progress advanced from "
                 f"{current:g}% to {new_progress:g}% (cap: {cap}%)."
@@ -134,9 +139,11 @@ def advance_progress(bot: dict, today: str) -> dict:
         }
 
     # --- Always stamp today's date -------------------------------------------
-    bot["last_reported_date"] = today
+    bot["last_reported_date"] = str(today)
 
     # --- Guarantee learning_log is a list before appending -------------------
+    # 5th line of defence: coerce log values to str so they are always
+    # JSON-serialisable regardless of unexpected type changes.
     if not isinstance(bot.get("learning_log"), list):
         bot["learning_log"] = []
     bot["learning_log"].append(log_entry)
@@ -181,7 +188,13 @@ def save_json(path: pathlib.Path, data: dict) -> None:
         )
         tmp.replace(path)          # atomic rename on POSIX; best-effort on Windows
     except OSError:
-        tmp.unlink(missing_ok=True)  # clean up orphaned temp file
+        # 6th line of defence: clean up the orphaned temp file.
+        # The unlink is itself wrapped so a secondary filesystem error during
+        # cleanup can never mask the original write/rename failure.
+        try:
+            tmp.unlink(missing_ok=True)
+        except OSError:
+            pass
         raise
 
     # 7th line of defence: verify the saved file is valid, readable JSON.
@@ -205,9 +218,18 @@ def main() -> None:
     # Collect all bot_*.json files plus any named standalone bot JSON files
     # (e.g. nutrigenomics.json which does not follow the bot_* naming convention).
     _standalone = [BOTS_DIR / "nutrigenomics.json"]
-    bot_files = sorted(
-        set(BOTS_DIR.glob("bot_*.json")) | {p for p in _standalone if p.exists()}
-    )
+    # 8th line of defence: wrap the directory scan itself so a missing or
+    # unreadable bots directory produces a clear error instead of a traceback.
+    try:
+        bot_files = sorted(
+            set(BOTS_DIR.glob("bot_*.json")) | {p for p in _standalone if p.exists()}
+        )
+    except OSError as exc:
+        print(
+            f"ERROR: Could not scan bot directory {BOTS_DIR}: {exc}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
 
     if not bot_files:
         print(

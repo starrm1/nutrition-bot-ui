@@ -73,6 +73,10 @@ jobs:
               if pct is not None and isinstance(pct, (int, float)):
                   if pct < 0 or pct > 300:
                       errors.append(f"{f.name}: progress_percentage is {pct}, expected 0–300")
+              # 7th line of defence: last_reported_date must be a string when present
+              lrd = data.get("last_reported_date")
+              if lrd is not None and not isinstance(lrd, str):
+                  errors.append(f"{f.name}: last_reported_date is {type(lrd).__name__!r}, expected string")
           if errors:
               for err in errors:
                   print(f"ERROR: {err}", file=sys.stderr)
