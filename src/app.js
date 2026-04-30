@@ -11,26 +11,10 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// Subtle card entrance animation on scroll (Intersection Observer)
+// Cards animate in via CSS (see .card--animate in styles.css).
+// The JS adds a staggered delay per card so they cascade nicely on scroll.
 const cards = document.querySelectorAll('.card');
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.15 }
-  );
-
-  cards.forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(24px)';
-    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(card);
-  });
-}
+cards.forEach((card, i) => {
+  card.style.animationDelay = `${i * 0.1}s`;
+  card.classList.add('card--animate');
+});
