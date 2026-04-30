@@ -10,11 +10,3 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
-
-// Cards animate in via CSS (see .card--animate in styles.css).
-// The JS adds a staggered delay per card so they cascade nicely on scroll.
-const cards = document.querySelectorAll('.card');
-cards.forEach((card, i) => {
-  card.style.animationDelay = `${i * 0.1}s`;
-  card.classList.add('card--animate');
-});
