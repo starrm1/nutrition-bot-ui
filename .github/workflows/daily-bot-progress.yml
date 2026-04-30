@@ -6,32 +6,121 @@ on:
     - cron: "0 6 * * *"
   workflow_dispatch:  # Allow manual trigger
 
+# Prevent two runs from updating bot files at the same time.
+# If a new run starts while one is in progress, the in-progress run is kept
+# and the incoming run is cancelled.
+concurrency:
+  group: daily-bot-progress
+  cancel-in-progress: false
+
 jobs:
   update-progress:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Fetch full history so rebase has something to work with
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
+      - name: Validate bot JSON files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PYEOF'
+          import json, pathlib, sys
+          bots_dir = pathlib.Path("bots-learning")
+          standalone = [bots_dir / "nutrigenomics.json"]
+          files = sorted(
+              set(bots_dir.glob("bot_*.json"))
+              | {p for p in standalone if p.exists()}
+          )
+          errors = []
+          for f in files:
+              # 1st line of defence: file must be valid JSON
+              try:
+                  data = json.loads(f.read_text(encoding="utf-8"))
+              except json.JSONDecodeError as e:
+                  errors.append(f"{f.name}: invalid JSON — {e}")
+                  continue
+              # 2nd line of defence: root value must be a JSON object
+              if not isinstance(data, dict):
+                  errors.append(f"{f.name}: root is {type(data).__name__}, expected object")
+                  continue
+              # 3rd line of defence: progress_percentage must be a number when present
+              pct = data.get("progress_percentage")
+              if pct is not None and not isinstance(pct, (int, float)):
+                  errors.append(f"{f.name}: progress_percentage is {type(pct).__name__!r}, expected number")
+                  continue
+              # 4th line of defence: learning_log must be a list when present
+              log = data.get("learning_log")
+              if log is not None and not isinstance(log, list):
+                  errors.append(f"{f.name}: learning_log is {type(log).__name__!r}, expected list")
+              # 5th line of defence: is_learning must be boolean when present
+              is_learning = data.get("is_learning")
+              if is_learning is not None and not isinstance(is_learning, bool):
+                  errors.append(f"{f.name}: is_learning is {type(is_learning).__name__!r}, expected boolean")
+              # 6th line of defence: progress_percentage must be within valid range 0–300
+              if pct is not None and isinstance(pct, (int, float)):
+                  if pct < 0 or pct > 300:
+                      errors.append(f"{f.name}: progress_percentage is {pct}, expected 0–300")
+              # 7th line of defence: last_reported_date must be a string when present
+              lrd = data.get("last_reported_date")
+              if lrd is not None and not isinstance(lrd, str):
+                  errors.append(f"{f.name}: last_reported_date is {type(lrd).__name__!r}, expected string")
+          if errors:
+              for err in errors:
+                  print(f"ERROR: {err}", file=sys.stderr)
+              sys.exit(1)
+          print(f"Validation passed: {len(files)} bot file(s) OK")
+          PYEOF
+
       - name: Run daily progress update
-        run: python bots-learning/update_progress.py
+        shell: bash
+        run: |
+          set -euo pipefail
+          python bots-learning/update_progress.py
 
       - name: Commit and push updated bot files
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add bots-learning/bot_*.json
+          # Remove any orphaned .tmp files left by a previously interrupted atomic write
+          find bots-learning/ -name "*.tmp" -delete 2>/dev/null || true
+          # Stage only JSON files — never commit stray temp artefacts
+          git add bots-learning/*.json
           if git diff --cached --quiet; then
             echo "No changes to commit — all bots are up to date."
           else
             git commit -m "chore: daily bot learning progress update $(date -u +%Y-%m-%d)"
-            git push
+            # Pull-rebase against the tracking branch to handle any diverged commits.
+            git pull --rebase || {
+              echo "Rebase failed — aborting and retrying with merge"
+              git rebase --abort 2>/dev/null || true
+              git pull --no-rebase || {
+                # Both strategies failed; abort any in-progress merge so the
+                # working tree is left clean, then surface a clear error.
+                git merge --abort 2>/dev/null || true
+                echo "ERROR: Could not sync with remote after rebase and merge attempts." >&2
+                exit 1
+              }
+            }
+            # Push with one retry to handle the TOCTOU window where another
+            # commit may have landed between the pull and push.
+            git push || {
+              echo "Push failed — pulling latest and retrying once"
+              git pull --rebase
+              git push
+            }
           fi

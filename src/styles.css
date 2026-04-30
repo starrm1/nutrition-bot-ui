@@ -1,0 +1,306 @@
+/* ===========================
+   Nutrition Bot UI - Styles
+   =========================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green-dark:   #1a472a;
+  --green-mid:    #2d6a4f;
+  --green-light:  #52b788;
+  --green-pale:   #d8f3dc;
+  --gold:         #f4a261;
+  --white:        #ffffff;
+  --text-dark:    #1b2d1f;
+  --text-muted:   #4a6356;
+  --card-bg:      rgba(255, 255, 255, 0.88);
+  --shadow:       0 4px 24px rgba(27, 45, 31, 0.18);
+  --radius:       16px;
+}
+
+/* ---- Background ---- */
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+
+  /* layered background:
+     1. subtle SVG leaf/circle pattern (inline data URI)
+     2. radial highlight at top-right
+     3. main diagonal gradient */
+  background-color: var(--green-dark);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='20' cy='20' r='3' fill='%2352b788' opacity='0.18'/%3E%3Ccircle cx='60' cy='60' r='5' fill='%2352b788' opacity='0.12'/%3E%3Cellipse cx='60' cy='20' rx='6' ry='3' fill='%23f4a261' opacity='0.10' transform='rotate(-30 60 20)'/%3E%3Cellipse cx='20' cy='60' rx='4' ry='2' fill='%23f4a261' opacity='0.08' transform='rotate(20 20 60)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 80% 10%, rgba(82, 183, 136, 0.35) 0%, transparent 55%),
+    linear-gradient(145deg, #1a472a 0%, #2d6a4f 45%, #1b4332 100%);
+  background-size: 80px 80px, cover, cover;
+  background-attachment: fixed;
+}
+
+/* ---- Layout ---- */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---- Header / Nav ---- */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: rgba(26, 71, 42, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(82, 183, 136, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, var(--green-light), var(--gold));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+.logo-text span {
+  color: var(--green-light);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--green-light);
+}
+
+/* ---- Hero ---- */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px 60px;
+  text-align: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(82, 183, 136, 0.22);
+  border: 1px solid var(--green-light);
+  color: var(--green-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 999px;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.18;
+  max-width: 720px;
+  margin-bottom: 20px;
+}
+
+.hero h1 .accent {
+  background: linear-gradient(90deg, var(--green-light), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.18s, box-shadow 0.18s, opacity 0.18s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--green-light), #40916c);
+  color: var(--white);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+}
+
+.btn-outline:hover {
+  border-color: var(--green-light);
+  color: var(--green-light);
+}
+
+/* ---- Feature Cards ---- */
+.features {
+  padding: 60px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--green-light);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(27, 45, 31, 0.26);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ---- Footer ---- */
+.app-footer {
+  text-align: center;
+  padding: 24px;
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(82, 183, 136, 0.12);
+}
+
+/* ---- Card animation ---- */
+/* CSS-only staggered rise: each card starts hidden (fill backwards) and
+   animates in on page load without any JS class-swap flash. */
+@keyframes cardRise {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.cards .card:nth-child(1) { animation: cardRise 0.5s 0.00s ease both; }
+.cards .card:nth-child(2) { animation: cardRise 0.5s 0.10s ease both; }
+.cards .card:nth-child(3) { animation: cardRise 0.5s 0.20s ease both; }
+.cards .card:nth-child(4) { animation: cardRise 0.5s 0.30s ease both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cards .card { animation: none; }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  .app-header {
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    padding: 60px 20px 40px;
+  }
+}

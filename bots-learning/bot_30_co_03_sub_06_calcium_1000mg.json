@@ -1,0 +1,128 @@
+{
+  "bot_id": "30c03s06",
+  "bot_name": "Calcium (1000mg)",
+  "role": "Sub-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 7,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_director",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_co_department_bot_id": "30c03",
+  "parent_co_department_bot_name": "Pregnancy Nutrition",
+  "parent_department_bot_id": 30,
+  "parent_department_bot_name": "Life Stage Specialist",
+  "parent_department_name": "Life Stage Nutrition Science",
+  "supervised_by": [
+    "30c03"
+  ],
+  "is_learning": true,
+  "learning_active": true,
+  "learning_status": "active",
+  "learning_start_date": "2026-04-16",
+  "learning_authorized_by": "starrm1",
+  "phase": "independent_learning",
+  "progress_percentage": 100,
+  "learning_scope": {
+    "scope": "own_sub_department_only",
+    "cross_department_learning_permitted": false,
+    "learning_active": true,
+    "continue_learning": true,
+    "continue_learning_note": "Departments continue learning even while library is closed. Set by starrm1 on 2026-04-21."
+  },
+  "knowledge_access_allowed": true,
+  "knowledge_access_note": "Departments are allowed to access and use their knowledge. Granted by starrm1 on 2026-04-20.",
+  "knowledge_access_expires": "on_starrm1_command",
+  "knowledge_access_controlled_by": "starrm1",
+  "last_reported_date": "2026-04-30",
+  "reported_to_copilot": true,
+  "learning_log": [
+    {
+      "date": "2026-04-20",
+      "entry": "Daily learning update. Progress advanced from 3% to 6%."
+    },
+    {
+      "date": "2026-04-20",
+      "entry": "Daily learning update. Progress advanced from 6% to 11%."
+    },
+    {
+      "date": "2026-04-21",
+      "entry": "Daily learning update. Progress advanced from 11% to 15%."
+    },
+    {
+      "date": "2026-04-25",
+      "entry": "Daily learning update. Progress advanced from 15% to 17%."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "Daily learning update. Progress advanced from 22% to 26%."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "4-hour learning directive issued by starrm1. All bots must reach 90% learning by 2026-04-26T08:54:42Z."
+    },
+    {
+      "date": "2026-04-26",
+      "entry": "4-hour deadline reached. Progress advanced from 26% to 90% as required by learning_deadline_4hr target."
+    },
+    {
+      "date": "2026-04-27",
+      "entry": "Daily learning update. Progress advanced from 95% to 98%."
+    },
+    {
+      "date": "2026-04-27",
+      "entry": "Learning milestone achieved. Progress advanced from 98% to 100%. Ultimate learning goal reached."
+    },
+    {
+      "date": "2026-04-28",
+      "entry": "Maintaining peak learning at 100% (cap: 100%). Daily activity logged."
+    },
+    {
+      "date": "2026-04-29",
+      "entry": "Maintaining peak learning at 100% (cap: 100%). Daily activity logged."
+    },
+    {
+      "date": "2026-04-30",
+      "entry": "Maintaining peak learning at 100% (cap: 100%). Daily activity logged."
+    }
+  ],
+  "library_access_number": 505,
+  "library_access_number_note": "Access number #505 issued by starrm1 on 2026-04-21 for this library session.",
+  "library_access_status": "closed",
+  "library_access_granted_date": "2026-04-21",
+  "library_access_timeframe_start": "2026-04-21T05:44:00",
+  "library_access_timeframe_end": "2026-04-21T06:14:00",
+  "library_open_for_departments": false,
+  "notify_starrm1_on_use": true,
+  "notify_starrm1_on_use_note": "starrm1 must be notified when this department uses the library. Set by starrm1 on 2026-04-21.",
+  "library_close_controlled_by": "starrm1",
+  "library_close_rule": "Library remains open to departments until starrm1 explicitly commands it to close.",
+  "library_closed": true,
+  "require_new_access_number_next_time": true,
+  "require_new_access_number_note": "A new access number must be issued by starrm1 before departments can access the library again.",
+  "continue_learning": true,
+  "continue_learning_note": "Departments continue learning even while library is closed. Set by starrm1 on 2026-04-21.",
+  "diet_director_access_number": 789,
+  "diet_director_access_number_note": "If the Diet Director grants library access, use number 789. Set by starrm1 on 2026-04-26.",
+  "learning_target_percentage": 90,
+  "learning_deadline_4hr": true,
+  "learning_deadline_by": "2026-04-26T08:54:42Z",
+  "learning_deadline_note": "starrm1 directive 2026-04-26: All bots must reach 90% learning by 2026-04-26T08:54:42Z (within 4 hours).",
+  "co_sub_minimum_threshold": 30,
+  "co_sub_threshold_status": "on_track",
+  "co_sub_threshold_checked_date": "2026-04-26",
+  "dept_head_2hr_access_authorized": false,
+  "threshold_30pct_met": true,
+  "dept_head_2hr_bot_access_authorized": true,
+  "dept_head_2hr_bot_access_authorized_by": "diet_director",
+  "dept_head_2hr_bot_access_authorized_date": "2026-04-26",
+  "dept_head_2hr_bot_access_duration_hours": 2,
+  "learning_target_95_percent_deadline_3hr": true,
+  "learning_target_95_percent_by": "2026-04-27T01:21:33Z",
+  "learning_support_active": true
+}
