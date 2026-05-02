@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import './App.css'
+import { BOTS, routeQuestion, getBotResponse } from './bots'
 
 function TypingIndicator() {
   return (
@@ -19,15 +20,32 @@ function Message({ msg }) {
     )
   }
 
+  const bot = msg.botId ? BOTS[msg.botId] : null
+  const avatarStyle = bot ? { backgroundColor: bot.color + '22', color: bot.color } : {}
+
   return (
-    <div className="msg msg--copilot">
-      <div className="msg__avatar msg__avatar--copilot">🤖</div>
+    <div className="msg msg--bot">
+      <div className="msg__avatar msg__avatar--bot" style={avatarStyle}>
+        {bot ? bot.emoji : '🤖'}
+      </div>
       <div>
-        <div className="msg__label">Nutrition Copilot</div>
+        <div className="msg__label">{bot ? bot.name : 'Nutrition Copilot'}</div>
         {msg.typing
           ? <TypingIndicator />
-          : <div className="msg__bubble msg__bubble--copilot">{msg.text}</div>
+          : <div className="msg__bubble msg__bubble--bot">{msg.text}</div>
         }
+      </div>
+    </div>
+  )
+}
+
+function BotCard({ bot }) {
+  return (
+    <div className="bot-card" style={{ borderLeftColor: bot.color }}>
+      <span className="bot-card__emoji">{bot.emoji}</span>
+      <div>
+        <div className="bot-card__name">{bot.name}</div>
+        <div className="bot-card__desc">{bot.description}</div>
       </div>
     </div>
   )
@@ -37,8 +55,9 @@ export default function App() {
   const [messages, setMessages] = useState([
     {
       id: 0,
-      role: 'copilot',
-      text: "👋 Welcome to the Nutrition Center! I'm your Nutrition Copilot. Ask me a nutrition question and I'll find the right answer for you.",
+      role: 'bot',
+      botId: null,
+      text: "👋 Welcome to the Nutrition Center! Ask me a nutrition question and I'll route it to the right specialist department for you.",
     },
   ])
   const [input, setInput] = useState('')
@@ -64,18 +83,24 @@ export default function App() {
 
     setMessages(prev => [...prev, { id: nextId(), role: 'user', text: question }])
 
-    // Show typing indicator while "thinking"
-    const typingId = nextId()
-    setMessages(prev => [...prev, { id: typingId, role: 'copilot', typing: true }])
+    const botIds = routeQuestion(question)
 
-    await delay(800)
+    // Show a typing indicator for each responding bot
+    const typingEntries = botIds.map(botId => ({ id: nextId(), role: 'bot', botId, typing: true }))
+    setMessages(prev => [...prev, ...typingEntries])
 
-    setMessages(prev =>
-      prev.map(m => m.id === typingId
-        ? { ...m, typing: false, text: "I've received your question. Once the specialist bots are connected, I'll route it to the right one and bring back the answer for you." }
-        : m
+    // Stagger each bot's response slightly
+    for (let i = 0; i < typingEntries.length; i++) {
+      await delay(600 + i * 400)
+      const entry = typingEntries[i]
+      const response = getBotResponse(entry.botId, question)
+      setMessages(prev =>
+        prev.map(m => m.id === entry.id
+          ? { ...m, typing: false, text: response }
+          : m
+        )
       )
-    )
+    }
 
     setLoading(false)
     inputRef.current?.focus()
@@ -99,13 +124,11 @@ export default function App() {
           </div>
         </div>
 
-        <div className="sidebar__section-title">Coming Soon</div>
-        <div className="sidebar__coming-soon">
-          <p>🔥 Calorie Bot</p>
-          <p>🥗 Meal Planner Bot</p>
-          <p>💊 Vitamins &amp; Minerals Bot</p>
-          <p>💧 Hydration Bot</p>
-          <p>🚫 Dietary Needs Bot</p>
+        <div className="sidebar__section-title">Departments</div>
+        <div className="sidebar__bots">
+          {Object.values(BOTS).map(bot => (
+            <BotCard key={bot.id} bot={bot} />
+          ))}
         </div>
       </aside>
 
