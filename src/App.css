@@ -49,6 +49,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text);
+  margin-top: 8px;
 }
 
 .sidebar__bots {

@@ -1,11 +1,13 @@
 // Specialist bots available in the Nutrition Center
 export const BOTS = {
+  // ── Library Bots ────────────────────────────────────────
   calories: {
     id: 'calories',
     name: 'Calorie Bot',
     emoji: '🔥',
     color: '#f97316',
     description: 'Tracks calories & macros',
+    category: 'library',
     keywords: ['calorie', 'calories', 'kcal', 'macro', 'macros', 'protein', 'carb', 'carbs', 'fat', 'fats', 'energy', 'burn', 'intake', 'how many', 'how much'],
   },
   meals: {
@@ -14,6 +16,7 @@ export const BOTS = {
     emoji: '🥗',
     color: '#22c55e',
     description: 'Plans balanced meals',
+    category: 'library',
     keywords: ['meal', 'meals', 'plan', 'planning', 'breakfast', 'lunch', 'dinner', 'snack', 'recipe', 'recipes', 'eat', 'eating', 'food', 'foods', 'diet', 'week', 'daily', 'menu'],
   },
   vitamins: {
@@ -22,6 +25,7 @@ export const BOTS = {
     emoji: '💊',
     color: '#a855f7',
     description: 'Vitamins, minerals & supplements',
+    category: 'library',
     keywords: ['vitamin', 'vitamins', 'mineral', 'minerals', 'supplement', 'supplements', 'iron', 'calcium', 'zinc', 'magnesium', 'potassium', 'omega', 'deficiency', 'nutrient', 'nutrients'],
   },
   hydration: {
@@ -30,6 +34,7 @@ export const BOTS = {
     emoji: '💧',
     color: '#3b82f6',
     description: 'Water intake & hydration',
+    category: 'library',
     keywords: ['water', 'hydration', 'hydrate', 'drink', 'fluid', 'fluids', 'thirsty', 'dehydrate', 'dehydration', 'electrolyte', 'electrolytes'],
   },
   allergies: {
@@ -38,7 +43,46 @@ export const BOTS = {
     emoji: '🚫',
     color: '#ef4444',
     description: 'Allergies, intolerances & restrictions',
+    category: 'library',
     keywords: ['allergy', 'allergies', 'intolerance', 'gluten', 'dairy', 'vegan', 'vegetarian', 'lactose', 'nut', 'nuts', 'restrict', 'avoid', 'free', 'celiac', 'halal', 'kosher'],
+  },
+
+  // ── Departments ─────────────────────────────────────────
+  food_specialist: {
+    id: 'food_specialist',
+    name: 'Food Specialist Dept',
+    emoji: '🍽️',
+    color: '#f59e0b',
+    description: 'Food quality & preparation',
+    category: 'department',
+    keywords: ['cook', 'cooking', 'prepare', 'preparation', 'raw', 'processed', 'organic', 'fresh', 'frozen', 'fermented', 'probiotic', 'prebiotic', 'fiber', 'whole food', 'whole grain', 'ingredient'],
+  },
+  life_stage: {
+    id: 'life_stage',
+    name: 'Life Stage Dept',
+    emoji: '👶',
+    color: '#06b6d4',
+    description: 'Nutrition across life stages',
+    category: 'department',
+    keywords: ['baby', 'infant', 'child', 'children', 'kid', 'kids', 'teen', 'teenage', 'elderly', 'senior', 'pregnant', 'pregnancy', 'breastfeeding', 'aging', 'toddler', 'menopause'],
+  },
+  performance: {
+    id: 'performance',
+    name: 'Performance Dept',
+    emoji: '💪',
+    color: '#10b981',
+    description: 'Sports & performance nutrition',
+    category: 'department',
+    keywords: ['sport', 'sports', 'athlete', 'athletic', 'exercise', 'workout', 'gym', 'muscle', 'endurance', 'recovery', 'pre-workout', 'post-workout', 'strength', 'training', 'run', 'running', 'lift', 'lifting'],
+  },
+  wellness: {
+    id: 'wellness',
+    name: 'Wellness Dept',
+    emoji: '🌿',
+    color: '#84cc16',
+    description: 'Gut health, sleep & immunity',
+    category: 'department',
+    keywords: ['stress', 'sleep', 'mental', 'mood', 'gut', 'gut health', 'inflammation', 'immune', 'immunity', 'antioxidant', 'detox', 'hormone', 'hormones', 'microbiome', 'anti-inflammatory', 'cortisol'],
   },
 };
 
@@ -92,6 +136,53 @@ const RESPONSES = {
     dairy: "Dairy-free alternatives include oat milk, almond milk, soy milk, and coconut yogurt. For calcium, focus on fortified plant milks, leafy greens, and beans.",
     vegan: "A well-planned vegan diet can meet all nutritional needs. Pay special attention to Vitamin B12, Vitamin D, iron, calcium, and omega-3s — these may need supplementation.",
   },
+  food_specialist: {
+    default: [
+      "Whole foods — minimally processed fruits, vegetables, legumes, whole grains, and lean proteins — form the foundation of a nutritious diet. The less processed, the better.",
+      "Cooking method matters. Steaming, baking, and sautéing preserve more nutrients than deep-frying. Boiling can leach water-soluble vitamins — save the cooking water for soups!",
+      "Fermented foods like yogurt, kefir, kimchi, sauerkraut, and miso are rich in probiotics that support a healthy gut microbiome.",
+    ],
+    fermented: "Fermented foods supply beneficial bacteria (probiotics) and improve nutrient absorption. Try adding yogurt, kefir, miso, tempeh, or kombucha to your routine.",
+    organic: "Organic produce reduces pesticide exposure but isn't always necessary across the board. The 'Dirty Dozen' list highlights the highest-pesticide conventional produce worth buying organic.",
+    fiber: "Dietary fiber feeds beneficial gut bacteria and supports digestion. Aim for 25–38g/day from whole grains, legumes, vegetables, and fruit. Both soluble and insoluble fiber are important.",
+    probiotic: "Probiotics (live bacteria) and prebiotics (fiber that feeds them) work together. Probiotics: yogurt, kefir, sauerkraut. Prebiotics: garlic, onions, bananas, oats, asparagus.",
+  },
+  life_stage: {
+    default: [
+      "Nutritional needs change throughout life. Infants need DHA for brain development; teens need calcium and iron; adults focus on heart health; seniors prioritize protein and vitamin D.",
+      "Children need nutrient-dense foods to support rapid growth. Focus on calcium, iron, zinc, and vitamin D. Limit ultra-processed snacks and sugary drinks.",
+      "As we age, calorie needs decrease but nutrient needs stay high or increase. Seniors should prioritize protein, calcium, vitamin D, B12, and omega-3s.",
+    ],
+    pregnant: "During pregnancy, key nutrients include folate (prevents neural tube defects), iron, calcium, DHA, and iodine. Most OB/GYNs recommend a prenatal vitamin to cover gaps.",
+    baby: "Breastmilk or formula meets all an infant's needs for the first 6 months. After that, introduce single-ingredient purées gradually. Avoid honey and whole cow's milk before age 1.",
+    teen: "Teenagers have high calcium and iron needs due to growth spurts and (for girls) menstruation. Encourage dairy or fortified alternatives, lean meats, leafy greens, and legumes.",
+    elderly: "Older adults often under-eat protein, leading to muscle loss (sarcopenia). Aim for 1.0–1.2g of protein per kg body weight and include resistance exercise to maintain muscle.",
+    menopause: "During menopause, focus on calcium and vitamin D for bone health, phytoestrogens (soy, flaxseed) for symptom support, and heart-healthy fats to manage cardiovascular risk.",
+  },
+  performance: {
+    default: [
+      "For active individuals, carbohydrates are the primary fuel. Time them around workouts: a small carb-rich snack 30–60 min before, and a protein + carb meal within 45 min after.",
+      "Protein is critical for muscle repair and growth. Athletes typically need 1.2–2.0g of protein per kg body weight daily, spread across 3–5 meals.",
+      "Don't forget micronutrients: iron (oxygen transport), magnesium (muscle function), and vitamin D (bone and muscle health) are especially important for athletes.",
+    ],
+    muscle: "To build muscle, pair progressive resistance training with adequate protein (1.6–2.2g/kg/day) and a slight calorie surplus (~200–300 kcal above maintenance).",
+    recovery: "Post-workout recovery nutrition: 20–40g of protein to stimulate muscle protein synthesis, plus carbohydrates to replenish glycogen. Chocolate milk is a surprisingly effective recovery drink.",
+    endurance: "Endurance athletes need higher carbohydrate intake (6–10g/kg/day). During events over 90 minutes, consuming 30–60g of carbs per hour sustains performance.",
+    strength: "For strength training, prioritize protein distribution across meals rather than one large dose. Leucine-rich proteins (whey, eggs, chicken) best stimulate muscle protein synthesis.",
+  },
+  wellness: {
+    default: [
+      "A healthy gut microbiome thrives on diversity. Eat a wide variety of plant-based foods — aim for 30+ different plants per week through fruits, vegetables, legumes, nuts, seeds, and whole grains.",
+      "Chronic inflammation is linked to many diseases. An anti-inflammatory diet emphasizes colorful vegetables, fatty fish, olive oil, nuts, and berries while limiting processed foods and refined sugars.",
+      "Nutrition and sleep are deeply connected. Magnesium, tryptophan (turkey, dairy), and complex carbs in the evening can support better sleep quality.",
+    ],
+    sleep: "Nutrition supports sleep quality. Magnesium-rich foods (pumpkin seeds, almonds, spinach) relax muscles. Tryptophan (turkey, eggs, dairy) supports melatonin production. Avoid large meals and caffeine 4–6 hours before bed.",
+    stress: "Chronic stress depletes magnesium, vitamin C, and B vitamins. Combat this with leafy greens, citrus, whole grains, and nuts. Adaptogenic herbs like ashwagandha show some evidence for stress reduction.",
+    immune: "Key nutrients for immune function: Vitamin C (citrus, bell peppers), Vitamin D (fatty fish, sunlight), Zinc (oysters, pumpkin seeds, legumes), and probiotics from fermented foods.",
+    inflammation: "Anti-inflammatory foods: fatty fish (omega-3s), turmeric (curcumin), berries (antioxidants), extra virgin olive oil, and leafy greens. Limit red meat, trans fats, refined carbs, and sugary drinks.",
+    gut: "Gut health is foundational to overall wellness. Support it with prebiotic fiber (onions, garlic, leeks, oats), fermented foods, diverse plant intake, and adequate hydration. Limit artificial sweeteners.",
+    hormone: "Hormonal balance is supported by healthy fats (avocado, olive oil, fatty fish), adequate protein, cruciferous vegetables for estrogen metabolism, and managing blood sugar through whole foods.",
+  },
 };
 
 /**
@@ -134,4 +225,11 @@ export function getBotResponse(botId, question) {
   // Return a random default response for variety
   const defaults = responses.default;
   return defaults[Math.floor(Math.random() * defaults.length)];
+}
+
+/**
+ * Return all bots belonging to a given category ('library' or 'department').
+ */
+export function getBotsByCategory(category) {
+  return Object.values(BOTS).filter(bot => bot.category === category);
 }

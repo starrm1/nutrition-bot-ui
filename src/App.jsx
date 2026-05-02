@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import './App.css'
-import { BOTS, routeQuestion, getBotResponse } from './bots'
+import { BOTS, routeQuestion, getBotResponse, getBotsByCategory } from './bots'
 
 function TypingIndicator() {
   return (
@@ -124,9 +124,16 @@ export default function App() {
           </div>
         </div>
 
+        <div className="sidebar__section-title">Library Bots</div>
+        <div className="sidebar__bots">
+          {getBotsByCategory('library').map(bot => (
+            <BotCard key={bot.id} bot={bot} />
+          ))}
+        </div>
+
         <div className="sidebar__section-title">Departments</div>
         <div className="sidebar__bots">
-          {Object.values(BOTS).map(bot => (
+          {getBotsByCategory('department').map(bot => (
             <BotCard key={bot.id} bot={bot} />
           ))}
         </div>
