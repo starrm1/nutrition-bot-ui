@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import './App.css'
-import { BOTS, routeQuestion, getBotResponse, getBotsByCategory } from './bots'
+import { BOTS, DIET_DIRECTOR, routeQuestion, getBotResponse, getBotsByCategory, getDirectorRoutingMessage } from './bots'
 
 function TypingIndicator() {
   return (
@@ -20,7 +20,7 @@ function Message({ msg }) {
     )
   }
 
-  const bot = msg.botId ? BOTS[msg.botId] : null
+  const bot = msg.botId ? (BOTS[msg.botId] ?? (msg.botId === 'diet_director' ? DIET_DIRECTOR : null)) : null
   const avatarStyle = bot ? { backgroundColor: bot.color + '22', color: bot.color } : {}
 
   return (
@@ -46,6 +46,20 @@ function BotCard({ bot }) {
       <div>
         <div className="bot-card__name">{bot.name}</div>
         <div className="bot-card__desc">{bot.description}</div>
+      </div>
+    </div>
+  )
+}
+
+function DirectorCard() {
+  return (
+    <div className="director-card" style={{ borderColor: DIET_DIRECTOR.color }}>
+      <div className="director-card__avatar" style={{ background: DIET_DIRECTOR.color + '22', color: DIET_DIRECTOR.color }}>
+        {DIET_DIRECTOR.emoji}
+      </div>
+      <div>
+        <div className="director-card__name">{DIET_DIRECTOR.name}</div>
+        <div className="director-card__desc">{DIET_DIRECTOR.description}</div>
       </div>
     </div>
   )
@@ -84,6 +98,18 @@ export default function App() {
     setMessages(prev => [...prev, { id: nextId(), role: 'user', text: question }])
 
     const botIds = routeQuestion(question)
+
+    // Director sends a routing message first
+    const directorTypingId = nextId()
+    setMessages(prev => [...prev, { id: directorTypingId, role: 'bot', botId: 'diet_director', typing: true }])
+    await delay(600)
+    const routingMessage = getDirectorRoutingMessage(botIds)
+    setMessages(prev =>
+      prev.map(m => m.id === directorTypingId
+        ? { ...m, typing: false, text: routingMessage }
+        : m
+      )
+    )
 
     // Show a typing indicator for each responding bot
     const typingEntries = botIds.map(botId => ({ id: nextId(), role: 'bot', botId, typing: true }))
@@ -132,7 +158,8 @@ export default function App() {
         </div>
 
         <div className="sidebar__section-title">Departments</div>
-        <div className="sidebar__bots">
+        <DirectorCard />
+        <div className="sidebar__bots sidebar__bots--indented">
           {getBotsByCategory('department').map(bot => (
             <BotCard key={bot.id} bot={bot} />
           ))}
