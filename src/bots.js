@@ -199,7 +199,7 @@ const DIRECTOR_ROUTING = [
   (names) => `I've reviewed your question and I'm directing it to ${names}. Here's what they have for you:`,
   (names) => `Good question. I'm routing this to ${names} — they're the right specialists for this.`,
   (names) => `I'm coordinating with ${names} on this. Their expert responses are below:`,
-  (names) => `I've authorised ${names} to respond. Stand by for their guidance:`,
+  (names) => `I've authorized ${names} to respond. Stand by for their guidance:`,
 ];
 
 /**
@@ -255,10 +255,10 @@ export function getBotsByCategory(category) {
  * Return a Director routing message listing the given bot names.
  */
 export function getDirectorRoutingMessage(botIds) {
-  const names = botIds.map(id => BOTS[id]?.name ?? id)
+  const names = botIds.map(id => BOTS[id]?.name ?? id);
   const nameList = names.length === 1
     ? names[0]
-    : names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1]
-  const template = DIRECTOR_ROUTING[Math.floor(Math.random() * DIRECTOR_ROUTING.length)]
-  return template(nameList)
+    : names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1];
+  const template = DIRECTOR_ROUTING[Math.floor(Math.random() * DIRECTOR_ROUTING.length)];
+  return template(nameList);
 }
