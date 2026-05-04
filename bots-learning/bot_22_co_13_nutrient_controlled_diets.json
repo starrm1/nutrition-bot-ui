@@ -1,0 +1,32 @@
+{
+  "bot_id": "22c13",
+  "bot_name": "Nutrient-Controlled Diets",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_director",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 22,
+  "parent_department_bot_name": "Food Specialist",
+  "parent_department_name": "Food Science & Clinical Dietetics",
+  "supervised_by": [],
+  "sub_departments": [
+    "Low-Residue",
+    "No Concentrated Sweets",
+    "Low Protein",
+    "High Protein",
+    "Low Fat",
+    "Low Sodium"
+  ],
+  "total_sub_departments": 6,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}

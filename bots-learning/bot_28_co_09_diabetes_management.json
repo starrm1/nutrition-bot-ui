@@ -1,0 +1,40 @@
+{
+  "bot_id": "28c09",
+  "bot_name": "Diabetes Management",
+  "role": "Co-Department Bot",
+  "is_own_bot": true,
+  "chain_of_command_position": 6,
+  "chain_of_command": [
+    "starrm1",
+    "copilot",
+    "diet_director",
+    "department_head_lead",
+    "department_head",
+    "co_department",
+    "sub_department"
+  ],
+  "parent_department_bot_id": 28,
+  "parent_department_bot_name": "Medical Condition Specialist",
+  "parent_department_name": "Medical Condition Diet Science",
+  "supervised_by": [
+    "28a",
+    "28b"
+  ],
+  "sub_departments": [
+    "Sick Day Rules",
+    "Hyperglycemia Management",
+    "Hypoglycemia Treatment (15-15 Rule)",
+    "A1C Targets (<7%)",
+    "Continuous Glucose Monitoring",
+    "Glycemic Index/Load",
+    "Insulin-to-Carb Ratios",
+    "Carb Counting (15g Portions)",
+    "Gestational",
+    "Type 2",
+    "Type 1"
+  ],
+  "total_sub_departments": 11,
+  "is_learning": true,
+  "phase": "independent_learning",
+  "progress_percentage": 0
+}

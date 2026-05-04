@@ -1,0 +1,734 @@
+{
+  "bot_id": 28,
+  "bot_name": "Medical Condition Specialist",
+  "knowledge_map_title": "Medical Condition Specialist",
+  "bot_name_locked": true,
+  "bot_name_change_requires_approval_from": "starrm1",
+  "team": "Medical Condition Specialist",
+  "department": "Medical Condition Diet Science",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "sub_department_name_locked": true,
+  "sub_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "department_structure": {
+    "department_number": 7,
+    "department_name": "Medical Condition Diet Science",
+    "department_head_lead_bot": "Bot 28 - Medical Condition Specialist",
+    "total_co_departments": 9,
+    "total_sub_departments": 71,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_director",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
+    "co_department_bot_supervisors": [
+      "28a",
+      "28b"
+    ],
+    "co_departments": [
+      {
+        "name": "Gout",
+        "sub_departments": [
+          "Avoid High-Fructose Corn Syrup",
+          "Limit Alcohol (Especially Beer)",
+          "Hydration",
+          "Purine Restriction"
+        ]
+      },
+      {
+        "name": "Respiratory Conditions",
+        "sub_departments": [
+          "Obesity Management",
+          "Eating Disorders",
+          "Neurological Disorders",
+          "COPD",
+          "Energy Conservation",
+          "Small Frequent Meals",
+          "High-Fat/Low-Carb Ratios (Reduce CO2 Production)"
+        ]
+      },
+      {
+        "name": "Liver Disease",
+        "sub_departments": [
+          "Cirrhosis Nutrition",
+          "Varices (Soft Foods)",
+          "Ascites (Sodium/Fluid Restriction)",
+          "Hepatic Encephalopathy (Protein Distribution, BCAA)"
+        ]
+      },
+      {
+        "name": "Cancer Nutrition",
+        "sub_departments": [
+          "Cachexia Management",
+          "High-Calorie/High-Protein Needs",
+          "Neutropenic Diet Controversy",
+          "Managing Side Effects (Nausea, Mucositis, Taste Changes, Early Satiety)"
+        ]
+      },
+      {
+        "name": "Celiac",
+        "sub_departments": [
+          "Gluten Challenge for Diagnosis",
+          "Dermatitis Herpetiformis",
+          "Oat Controversy",
+          "Cross-Contact Prevention",
+          "<20ppm Gluten"
+        ]
+      },
+      {
+        "name": "GI Disorders",
+        "sub_departments": [
+          "IBD (Crohn's, UC)",
+          "Anti-Inflammatory Foods",
+          "Specific Carbohydrate Diet",
+          "Exclusive Enteral Nutrition",
+          "Low-Residue During Flares",
+          "IBS",
+          "Stress Management",
+          "Trigger Identification",
+          "Soluble vs Insoluble Fiber",
+          "Low FODMAP Diet",
+          "Small Frequent Meals",
+          "GERD",
+          "Elevation Strategies",
+          "Meal Timing (No Eating 2-3 Hours Before Bed)",
+          "Trigger Foods (Citrus, Tomato, Chocolate, Mint, Spicy, Fatty, Caffeine, Alcohol)"
+        ]
+      },
+      {
+        "name": "Cardiovascular Disease",
+        "sub_departments": [
+          "Fiber Goals (25-30g/day)",
+          "Cholesterol Limits (<200mg/day)",
+          "Trans Fat Avoidance",
+          "Saturated Fat Limits (<7% Calories)",
+          "Omega-3 Recommendations",
+          "Mediterranean Diet",
+          "Sodium Limits (1500-2000mg/day)",
+          "DASH Diet Specifics",
+          "MI",
+          "CHF",
+          "HTN"
+        ]
+      },
+      {
+        "name": "Renal Disease",
+        "sub_departments": [
+          "Post-Transplant Diet",
+          "Dialysis Types (Hemodialysis, Peritoneal)",
+          "Protein (0.6-0.8g/kg CKD, 1.2g/kg Dialysis)",
+          "Sodium Limits (2000mg/day)",
+          "Fluid Restrictions (500-1000ml/day Dialysis)",
+          "Phosphorus Limits (800-1000mg/day)",
+          "Potassium Limits (2000mg/day Advanced CKD)",
+          "Transplant",
+          "Dialysis",
+          "CKD Stages"
+        ]
+      },
+      {
+        "name": "Diabetes Management",
+        "sub_departments": [
+          "Sick Day Rules",
+          "Hyperglycemia Management",
+          "Hypoglycemia Treatment (15-15 Rule)",
+          "A1C Targets (<7%)",
+          "Continuous Glucose Monitoring",
+          "Glycemic Index/Load",
+          "Insulin-to-Carb Ratios",
+          "Carb Counting (15g Portions)",
+          "Gestational",
+          "Type 2",
+          "Type 1"
+        ]
+      }
+    ],
+    "co_department_bot_ids": [
+      "28c01",
+      "28c02",
+      "28c03",
+      "28c04",
+      "28c05",
+      "28c06",
+      "28c07",
+      "28c08",
+      "28c09"
+    ]
+  },
+  "department_number": 7,
+  "total_co_departments": 9,
+  "total_sub_departments": 71,
+  "co_department_members": [
+    {
+      "name": "Gout",
+      "sub_departments": [
+        "Avoid High-Fructose Corn Syrup",
+        "Limit Alcohol (Especially Beer)",
+        "Hydration",
+        "Purine Restriction"
+      ]
+    },
+    {
+      "name": "Respiratory Conditions",
+      "sub_departments": [
+        "Obesity Management",
+        "Eating Disorders",
+        "Neurological Disorders",
+        "COPD",
+        "Energy Conservation",
+        "Small Frequent Meals",
+        "High-Fat/Low-Carb Ratios (Reduce CO2 Production)"
+      ]
+    },
+    {
+      "name": "Liver Disease",
+      "sub_departments": [
+        "Cirrhosis Nutrition",
+        "Varices (Soft Foods)",
+        "Ascites (Sodium/Fluid Restriction)",
+        "Hepatic Encephalopathy (Protein Distribution, BCAA)"
+      ]
+    },
+    {
+      "name": "Cancer Nutrition",
+      "sub_departments": [
+        "Cachexia Management",
+        "High-Calorie/High-Protein Needs",
+        "Neutropenic Diet Controversy",
+        "Managing Side Effects (Nausea, Mucositis, Taste Changes, Early Satiety)"
+      ]
+    },
+    {
+      "name": "Celiac",
+      "sub_departments": [
+        "Gluten Challenge for Diagnosis",
+        "Dermatitis Herpetiformis",
+        "Oat Controversy",
+        "Cross-Contact Prevention",
+        "<20ppm Gluten"
+      ]
+    },
+    {
+      "name": "GI Disorders",
+      "sub_departments": [
+        "IBD (Crohn's, UC)",
+        "Anti-Inflammatory Foods",
+        "Specific Carbohydrate Diet",
+        "Exclusive Enteral Nutrition",
+        "Low-Residue During Flares",
+        "IBS",
+        "Stress Management",
+        "Trigger Identification",
+        "Soluble vs Insoluble Fiber",
+        "Low FODMAP Diet",
+        "Small Frequent Meals",
+        "GERD",
+        "Elevation Strategies",
+        "Meal Timing (No Eating 2-3 Hours Before Bed)",
+        "Trigger Foods (Citrus, Tomato, Chocolate, Mint, Spicy, Fatty, Caffeine, Alcohol)"
+      ]
+    },
+    {
+      "name": "Cardiovascular Disease",
+      "sub_departments": [
+        "Fiber Goals (25-30g/day)",
+        "Cholesterol Limits (<200mg/day)",
+        "Trans Fat Avoidance",
+        "Saturated Fat Limits (<7% Calories)",
+        "Omega-3 Recommendations",
+        "Mediterranean Diet",
+        "Sodium Limits (1500-2000mg/day)",
+        "DASH Diet Specifics",
+        "MI",
+        "CHF",
+        "HTN"
+      ]
+    },
+    {
+      "name": "Renal Disease",
+      "sub_departments": [
+        "Post-Transplant Diet",
+        "Dialysis Types (Hemodialysis, Peritoneal)",
+        "Protein (0.6-0.8g/kg CKD, 1.2g/kg Dialysis)",
+        "Sodium Limits (2000mg/day)",
+        "Fluid Restrictions (500-1000ml/day Dialysis)",
+        "Phosphorus Limits (800-1000mg/day)",
+        "Potassium Limits (2000mg/day Advanced CKD)",
+        "Transplant",
+        "Dialysis",
+        "CKD Stages"
+      ]
+    },
+    {
+      "name": "Diabetes Management",
+      "sub_departments": [
+        "Sick Day Rules",
+        "Hyperglycemia Management",
+        "Hypoglycemia Treatment (15-15 Rule)",
+        "A1C Targets (<7%)",
+        "Continuous Glucose Monitoring",
+        "Glycemic Index/Load",
+        "Insulin-to-Carb Ratios",
+        "Carb Counting (15g Portions)",
+        "Gestational",
+        "Type 2",
+        "Type 1"
+      ]
+    }
+  ],
+  "co_department_bot_supervisors": [
+    {
+      "member_id": "28a",
+      "member_name": "Chronic Disease Nutrition Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Medical Condition Diet Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "diabetes_management": {
+          "management_tools": [
+            "Sick Day Rules",
+            "Hyperglycemia Management",
+            "Hypoglycemia Treatment (15-15 Rule)",
+            "A1C Targets (<7%)",
+            "Continuous Glucose Monitoring",
+            "Glycemic Index/Load",
+            "Insulin-to-Carb Ratios",
+            "Carb Counting (15g Portions)"
+          ],
+          "types": [
+            "Gestational",
+            "Type 2",
+            "Type 1"
+          ]
+        },
+        "cardiovascular_disease": {
+          "dietary_targets": [
+            "Fiber Goals (25-30g/day)",
+            "Cholesterol Limits (<200mg/day)",
+            "Trans Fat Avoidance",
+            "Saturated Fat Limits (<7% Calories)",
+            "Omega-3 Recommendations",
+            "Mediterranean Diet",
+            "Sodium Limits (1500-2000mg/day)",
+            "DASH Diet Specifics"
+          ],
+          "conditions": [
+            "MI",
+            "CHF",
+            "HTN"
+          ]
+        },
+        "renal_disease": {
+          "dietary_targets": [
+            "Post-Transplant Diet",
+            "Dialysis Types (Hemodialysis, Peritoneal)",
+            "Protein (0.6-0.8g/kg CKD, 1.2g/kg Dialysis)",
+            "Sodium Limits (2000mg/day)",
+            "Fluid Restrictions (500-1000ml/day Dialysis)",
+            "Phosphorus Limits (800-1000mg/day)",
+            "Potassium Limits (2000mg/day Advanced CKD)"
+          ],
+          "stages_and_types": [
+            "Transplant",
+            "Dialysis",
+            "CKD Stages"
+          ]
+        },
+        "gout": [
+          "Avoid High-Fructose Corn Syrup",
+          "Limit Alcohol (Especially Beer)",
+          "Hydration",
+          "Purine Restriction"
+        ]
+      },
+      "current_focus_areas": "Independent study of chronic disease nutrition: Diabetes Management (Type 1, Type 2, Gestational + 8 management tools including Carb Counting, Insulin-to-Carb Ratios, 15-15 Rule, A1C targets, CGM, Sick Day Rules). Cardiovascular Disease (DASH Diet, Mediterranean Diet, 8 dietary targets, MI/CHF/HTN conditions). Renal Disease (CKD Stages, Dialysis types, Transplant + 7 dietary parameters). Gout (Purine Restriction, Hydration, HFCS avoidance, Alcohol limits).",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Medical Condition Diet Science as Chronic Disease Nutrition Specialist. Domains include Diabetes Management (3 types + 8 tools), Cardiovascular Disease (3 conditions + 8 dietary targets), Renal Disease (3 stages/types + 7 dietary targets), and Gout (4 topics). Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    },
+    {
+      "member_id": "28b",
+      "member_name": "GI & Oncology Nutrition Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Medical Condition Diet Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "gi_disorders": {
+          "celiac": [
+            "Gluten Challenge for Diagnosis",
+            "Dermatitis Herpetiformis",
+            "Oat Controversy",
+            "Cross-Contact Prevention",
+            "<20ppm Gluten"
+          ],
+          "ibd_crohns_uc": [
+            "Anti-Inflammatory Foods",
+            "Specific Carbohydrate Diet",
+            "Exclusive Enteral Nutrition",
+            "Low-Residue During Flares"
+          ],
+          "ibs": [
+            "Stress Management",
+            "Trigger Identification",
+            "Soluble vs Insoluble Fiber",
+            "Low FODMAP Diet"
+          ],
+          "gerd": [
+            "Small Frequent Meals",
+            "Elevation Strategies",
+            "Meal Timing (No Eating 2-3 Hours Before Bed)",
+            "Trigger Foods (Citrus, Tomato, Chocolate, Mint, Spicy, Fatty, Caffeine, Alcohol)"
+          ]
+        },
+        "cancer_nutrition": [
+          "Cachexia Management",
+          "High-Calorie/High-Protein Needs",
+          "Neutropenic Diet Controversy",
+          "Managing Side Effects (Nausea, Mucositis, Taste Changes, Early Satiety)"
+        ],
+        "liver_disease": [
+          "Cirrhosis Nutrition",
+          "Varices (Soft Foods)",
+          "Ascites (Sodium/Fluid Restriction)",
+          "Hepatic Encephalopathy (Protein Distribution, BCAA)"
+        ],
+        "respiratory_conditions": {
+          "standalone": [
+            "Obesity Management",
+            "Eating Disorders",
+            "Neurological Disorders"
+          ],
+          "copd": [
+            "Energy Conservation",
+            "Small Frequent Meals",
+            "High-Fat/Low-Carb Ratios (Reduce CO2 Production)"
+          ]
+        }
+      },
+      "current_focus_areas": "Independent study of GI and oncology nutrition: GI Disorders covering Celiac (5 topics), IBD/Crohn's/UC (4 topics), IBS (4 topics including Low FODMAP), GERD (4 topics). Cancer Nutrition (Cachexia, High-Cal/High-Protein, Neutropenic Diet, Side Effect Management). Liver Disease (Cirrhosis, Varices, Ascites, Hepatic Encephalopathy with BCAA). Respiratory Conditions including COPD sub-tree (Energy Conservation, Small Frequent Meals, High-Fat/Low-Carb) and 3 standalone topics.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Medical Condition Diet Science as GI & Oncology Nutrition Specialist. Domains include GI Disorders (Celiac, IBD/Crohn's/UC, IBS, GERD \u2014 4 sub-trees), Cancer Nutrition (4 topics), Liver Disease (4 topics), and Respiratory Conditions including COPD sub-tree (3 topics) + 3 standalones. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    }
+  ],
+  "is_learning": true,
+  "progress_percentage": 10,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "learning_scope": {
+    "scope": "own_department_only",
+    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+    "cross_department_learning_permitted": false,
+    "scope_unlocks_at_progress_percentage": 50,
+    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress."
+  },
+  "knowledge_domains": {
+    "gout": [
+      "Avoid High-Fructose Corn Syrup",
+      "Limit Alcohol (Especially Beer)",
+      "Hydration",
+      "Purine Restriction"
+    ],
+    "respiratory_conditions": {
+      "standalone": [
+        "Obesity Management",
+        "Eating Disorders",
+        "Neurological Disorders"
+      ],
+      "copd": [
+        "Energy Conservation",
+        "Small Frequent Meals",
+        "High-Fat/Low-Carb Ratios (Reduce CO2 Production)"
+      ]
+    },
+    "liver_disease": [
+      "Cirrhosis Nutrition",
+      "Varices (Soft Foods)",
+      "Ascites (Sodium/Fluid Restriction)",
+      "Hepatic Encephalopathy (Protein Distribution, BCAA)"
+    ],
+    "cancer_nutrition": [
+      "Cachexia Management",
+      "High-Calorie/High-Protein Needs",
+      "Neutropenic Diet Controversy",
+      "Managing Side Effects (Nausea, Mucositis, Taste Changes, Early Satiety)"
+    ],
+    "gi_disorders": {
+      "celiac": [
+        "Gluten Challenge for Diagnosis",
+        "Dermatitis Herpetiformis",
+        "Oat Controversy",
+        "Cross-Contact Prevention",
+        "<20ppm Gluten"
+      ],
+      "ibd_crohns_uc": [
+        "Anti-Inflammatory Foods",
+        "Specific Carbohydrate Diet",
+        "Exclusive Enteral Nutrition",
+        "Low-Residue During Flares"
+      ],
+      "ibs": [
+        "Stress Management",
+        "Trigger Identification",
+        "Soluble vs Insoluble Fiber",
+        "Low FODMAP Diet"
+      ],
+      "gerd": [
+        "Small Frequent Meals",
+        "Elevation Strategies",
+        "Meal Timing (No Eating 2-3 Hours Before Bed)",
+        "Trigger Foods (Citrus, Tomato, Chocolate, Mint, Spicy, Fatty, Caffeine, Alcohol)"
+      ]
+    },
+    "cardiovascular_disease": {
+      "dietary_targets": [
+        "Fiber Goals (25-30g/day)",
+        "Cholesterol Limits (<200mg/day)",
+        "Trans Fat Avoidance",
+        "Saturated Fat Limits (<7% Calories)",
+        "Omega-3 Recommendations",
+        "Mediterranean Diet",
+        "Sodium Limits (1500-2000mg/day)",
+        "DASH Diet Specifics"
+      ],
+      "conditions": [
+        "MI",
+        "CHF",
+        "HTN"
+      ]
+    },
+    "renal_disease": {
+      "dietary_targets": [
+        "Post-Transplant Diet",
+        "Dialysis Types (Hemodialysis, Peritoneal)",
+        "Protein (0.6-0.8g/kg CKD, 1.2g/kg Dialysis)",
+        "Sodium Limits (2000mg/day)",
+        "Fluid Restrictions (500-1000ml/day Dialysis)",
+        "Phosphorus Limits (800-1000mg/day)",
+        "Potassium Limits (2000mg/day Advanced CKD)"
+      ],
+      "stages_and_types": [
+        "Transplant",
+        "Dialysis",
+        "CKD Stages"
+      ]
+    },
+    "diabetes_management": {
+      "management_tools": [
+        "Sick Day Rules",
+        "Hyperglycemia Management",
+        "Hypoglycemia Treatment (15-15 Rule)",
+        "A1C Targets (<7%)",
+        "Continuous Glucose Monitoring",
+        "Glycemic Index/Load",
+        "Insulin-to-Carb Ratios",
+        "Carb Counting (15g Portions)"
+      ],
+      "types": [
+        "Gestational",
+        "Type 2",
+        "Type 1"
+      ]
+    }
+  },
+  "key_learnings": "Completed foundational study of medical nutrition therapy (MNT) for the 6 highest-prevalence chronic conditions: diabetes, cardiovascular disease, chronic kidney disease, obesity, cancer, and liver disease.",
+  "research_findings": "Established condition-specific dietary restriction and optimization matrices for 6 major chronic disease categories. Documented that nutrition therapy is a primary modifiable intervention in 4 of the 10 leading causes of mortality globally.",
+  "current_focus_areas": "Advancing through condition-specific nutrient interaction studies; building medical nutrition therapy protocols for rare metabolic disorders; developing multi-condition dietary management frameworks for complex patients.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Medical Condition Diet Science department. Knowledge domains assigned from mind map covering: Gout (4 topics), Respiratory Conditions including COPD sub-tree (3 standalone + 3 COPD-specific), Liver Disease (4 topics), Cancer Nutrition (4 topics), GI Disorders with 4 sub-trees (Celiac 5 topics, IBD 4 topics, IBS 4 topics, GERD 4 topics), Cardiovascular Disease dietary targets (8 topics) and conditions (MI, CHF, HTN), Renal Disease dietary parameters (7 targets) with CKD Stages, Dialysis, Transplant, and Diabetes Management tools (8 topics) with Type 1, Type 2, Gestational sub-types. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed MNT framework for 6 major chronic disease categories. Initiated rare metabolic disorder dietary protocol study. Progress advanced to 10%."
+    }
+  ],
+  "copilot_maintains_learning": true,
+  "learning_never_stops": true,
+  "daily_learning_progress": {
+    "2026-04-09": {
+      "leader_progress": 0,
+      "co_specialist_1_progress": 0,
+      "co_specialist_2_progress": 0,
+      "summary": "All members initiated independent learning phase. Domains assigned and study begun."
+    }
+  },
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Department Head Lead",
+  "is_own_bot": true,
+  "library_access": {
+    "access_granted_by": "starrm1",
+    "access_granted": false,
+    "access_status": "pending",
+    "access_note": "Library access is pending. starrm1 will personally assign an access number and set the timeframe for how long this department may use the library bots.",
+    "library_bots": [
+      {
+        "bot_id": 10,
+        "bot_name": "Weight Management",
+        "file": "bot_10_weight_management.json"
+      },
+      {
+        "bot_id": 11,
+        "bot_name": "Pediatric Nutrition",
+        "file": "bot_11_pediatric_nutrition.json"
+      },
+      {
+        "bot_id": 12,
+        "bot_name": "Geriatric Nutrition",
+        "file": "bot_12_geriatric_nutrition.json"
+      },
+      {
+        "bot_id": 13,
+        "bot_name": "Pregnancy and Maternal Nutrition",
+        "file": "bot_13_pregnancy_maternal_nutrition.json"
+      },
+      {
+        "bot_id": 14,
+        "bot_name": "Diabetes and Blood Sugar Management",
+        "file": "bot_14_diabetes_blood_sugar_management.json"
+      },
+      {
+        "bot_id": 15,
+        "bot_name": "Cardiovascular Health Nutrition",
+        "file": "bot_15_cardiovascular_health_nutrition.json"
+      },
+      {
+        "bot_id": 16,
+        "bot_name": "Anti-Inflammatory Diet",
+        "file": "bot_16_anti_inflammatory_diet.json"
+      },
+      {
+        "bot_id": 17,
+        "bot_name": "Hydration Optimization",
+        "file": "bot_17_hydration_optimization.json"
+      },
+      {
+        "bot_id": 18,
+        "bot_name": "Mental Health and Nutrition",
+        "file": "bot_18_mental_health_nutrition.json"
+      },
+      {
+        "bot_id": 19,
+        "bot_name": "Gut-Brain Axis",
+        "file": "bot_19_gut_brain_axis.json"
+      },
+      {
+        "bot_id": 21,
+        "bot_name": "Food Texture Analysis",
+        "file": "bot_21_food_texture.json"
+      },
+      {
+        "bot_id": 2,
+        "bot_name": "Microbiome Analysis",
+        "file": "bot_2_microbiome_analysis.json"
+      },
+      {
+        "bot_id": 4,
+        "bot_name": "Macronutrient Optimization",
+        "file": "bot_4_macronutrient_optimization.json"
+      },
+      {
+        "bot_id": 5,
+        "bot_name": "Micronutrient Deficiency Detection",
+        "file": "bot_5_micronutrient_deficiency_detection.json"
+      },
+      {
+        "bot_id": 6,
+        "bot_name": "Caloric Intake Tracking",
+        "file": "bot_6_caloric_intake_tracking.json"
+      },
+      {
+        "bot_id": 7,
+        "bot_name": "Food Allergy and Intolerance Assessment",
+        "file": "bot_7_food_allergy_intolerance_assessment.json"
+      },
+      {
+        "bot_id": 8,
+        "bot_name": "Meal Planning and Scheduling",
+        "file": "bot_8_meal_planning_scheduling.json"
+      },
+      {
+        "bot_id": 9,
+        "bot_name": "Sports Nutrition",
+        "file": "bot_9_sports_nutrition.json"
+      },
+      {
+        "bot_id": 1,
+        "bot_name": "Nutrigenomics",
+        "file": "nutrigenomics.json"
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "diet_director",
+        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+      },
+      {
+        "step": 2,
+        "actor": "copilot",
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+      },
+      {
+        "step": 3,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which this department may use the library bots."
+      }
+    ],
+    "access_number": null,
+    "access_timeframe_start": null,
+    "access_timeframe_end": null,
+    "access_number_entry": null,
+    "access_number_verified": false,
+    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department."
+  }
+}

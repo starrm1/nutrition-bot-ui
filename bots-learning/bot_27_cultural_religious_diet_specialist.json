@@ -1,0 +1,552 @@
+{
+  "bot_id": 27,
+  "bot_name": "Cultural & Religious Diet Specialist",
+  "knowledge_map_title": "Cultural & Religious Diet Specialist",
+  "bot_name_locked": true,
+  "bot_name_change_requires_approval_from": "starrm1",
+  "team": "Cultural & Religious Diet Specialist",
+  "department": "Cultural & Religious Diet Science",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "sub_department_name_locked": true,
+  "sub_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "department_structure": {
+    "department_number": 6,
+    "department_name": "Cultural & Religious Diet Science",
+    "department_head_lead_bot": "Bot 27 - Cultural & Religious Diet Specialist",
+    "total_co_departments": 9,
+    "total_sub_departments": 20,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_director",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
+    "co_department_bot_supervisors": [
+      "27a",
+      "27b"
+    ],
+    "co_departments": [
+      {
+        "name": "Traditional Medicine Systems",
+        "sub_departments": [
+          "Curanderismo",
+          "Traditional Chinese Medicine (Hot/Cold Foods)",
+          "Ayurveda (Doshas)"
+        ]
+      },
+      {
+        "name": "Respectful Communication about Food Practices",
+        "sub_departments": []
+      },
+      {
+        "name": "Adapting Therapeutic Diets to Cultural Needs",
+        "sub_departments": []
+      },
+      {
+        "name": "Food Symbolism and Traditions",
+        "sub_departments": [
+          "Honey (Sweetness)",
+          "Salt (Covenant)",
+          "Bread (Life)",
+          "Rice (Asian Prosperity)"
+        ]
+      },
+      {
+        "name": "Holiday and Celebration Foods",
+        "sub_departments": []
+      },
+      {
+        "name": "Vegetarian/Vegan Variations by Culture",
+        "sub_departments": []
+      },
+      {
+        "name": "Fasting Practices",
+        "sub_departments": [
+          "Intermittent Fasting",
+          "Lent",
+          "Ramadan"
+        ]
+      },
+      {
+        "name": "Cultural Food Preferences",
+        "sub_departments": [
+          "Middle Eastern",
+          "African",
+          "Latin American",
+          "Mediterranean",
+          "Asian"
+        ]
+      },
+      {
+        "name": "Religious Dietary Laws",
+        "sub_departments": [
+          "Jain",
+          "Buddhist",
+          "Hindu",
+          "Halal",
+          "Kosher"
+        ]
+      }
+    ],
+    "co_department_bot_ids": [
+      "27c01",
+      "27c02",
+      "27c03",
+      "27c04",
+      "27c05",
+      "27c06",
+      "27c07",
+      "27c08",
+      "27c09"
+    ]
+  },
+  "department_number": 6,
+  "total_co_departments": 9,
+  "total_sub_departments": 20,
+  "co_department_members": [
+    {
+      "name": "Traditional Medicine Systems",
+      "sub_departments": [
+        "Curanderismo",
+        "Traditional Chinese Medicine (Hot/Cold Foods)",
+        "Ayurveda (Doshas)"
+      ]
+    },
+    {
+      "name": "Respectful Communication about Food Practices",
+      "sub_departments": []
+    },
+    {
+      "name": "Adapting Therapeutic Diets to Cultural Needs",
+      "sub_departments": []
+    },
+    {
+      "name": "Food Symbolism and Traditions",
+      "sub_departments": [
+        "Honey (Sweetness)",
+        "Salt (Covenant)",
+        "Bread (Life)",
+        "Rice (Asian Prosperity)"
+      ]
+    },
+    {
+      "name": "Holiday and Celebration Foods",
+      "sub_departments": []
+    },
+    {
+      "name": "Vegetarian/Vegan Variations by Culture",
+      "sub_departments": []
+    },
+    {
+      "name": "Fasting Practices",
+      "sub_departments": [
+        "Intermittent Fasting",
+        "Lent",
+        "Ramadan"
+      ]
+    },
+    {
+      "name": "Cultural Food Preferences",
+      "sub_departments": [
+        "Middle Eastern",
+        "African",
+        "Latin American",
+        "Mediterranean",
+        "Asian"
+      ]
+    },
+    {
+      "name": "Religious Dietary Laws",
+      "sub_departments": [
+        "Jain",
+        "Buddhist",
+        "Hindu",
+        "Halal",
+        "Kosher"
+      ]
+    }
+  ],
+  "co_department_bot_supervisors": [
+    {
+      "member_id": "27a",
+      "member_name": "Religious Dietary Laws Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Cultural & Religious Diet Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "religious_dietary_laws": {
+          "jain": [
+            "Before-Dark Eating",
+            "Filtered Water",
+            "No Root Vegetables",
+            "Strict Vegetarian"
+          ],
+          "buddhist": [
+            "No Garlic/Onion (Some Traditions)",
+            "Mindful Eating",
+            "No Alcohol",
+            "Vegetarian/Vegan"
+          ],
+          "hindu": [
+            "Ayurvedic Principles",
+            "Fasting Days",
+            "Sacred Foods (Cow, Tulsi)",
+            "Vegetarianism Variations"
+          ],
+          "halal": [
+            "Halal Certification",
+            "Prohibited Foods (Pork, Alcohol, Carnivores)",
+            "Zabiha Slaughter"
+          ],
+          "kosher": [
+            "Passover Restrictions",
+            "Pareve Foods",
+            "Shechita Slaughter",
+            "Kosher Animals",
+            "Meat/Dairy Separation"
+          ]
+        },
+        "traditional_medicine_systems": [
+          "Curanderismo",
+          "Traditional Chinese Medicine (Hot/Cold Foods)",
+          "Ayurveda (Doshas)"
+        ],
+        "standalone_topics": [
+          "Respectful Communication about Food Practices",
+          "Adapting Therapeutic Diets to Cultural Needs"
+        ]
+      },
+      "current_focus_areas": "Independent study of religious dietary laws: Jain (4 rules), Buddhist (4 rules), Hindu (4 principles), Halal (3 rules), Kosher (5 rules). Traditional medicine systems: Curanderismo, TCM Hot/Cold Foods, Ayurveda Doshas. Two standalone clinical-cultural topics: Respectful Communication about Food Practices, Adapting Therapeutic Diets to Cultural Needs.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Cultural & Religious Diet Science as Religious Dietary Laws Specialist. Domains include Jain, Buddhist, Hindu, Halal, and Kosher dietary laws, traditional medicine systems (Curanderismo, TCM Hot/Cold Foods, Ayurveda Doshas), and 2 standalone clinical-cultural topics. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    },
+    {
+      "member_id": "27b",
+      "member_name": "Cultural Food & Fasting Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Cultural & Religious Diet Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "fasting_practices": {
+          "lent": [
+            "Intermittent Fasting",
+            "Fish Fridays",
+            "Fasting Days",
+            "Meat Abstinence"
+          ],
+          "ramadan": [
+            "Hydration Strategies",
+            "Exemptions (Illness, Pregnancy, Travel)",
+            "Sunset Iftar",
+            "Pre-Dawn Suhoor"
+          ]
+        },
+        "cultural_food_preferences": [
+          "Middle Eastern",
+          "African",
+          "Latin American",
+          "Mediterranean",
+          "Asian"
+        ],
+        "food_symbolism_and_traditions": [
+          "Honey (Sweetness)",
+          "Salt (Covenant)",
+          "Bread (Life)",
+          "Rice (Asian Prosperity)"
+        ],
+        "standalone_topics": [
+          "Holiday and Celebration Foods",
+          "Vegetarian/Vegan Variations by Culture"
+        ]
+      },
+      "current_focus_areas": "Independent study of fasting practices: Lent (4 topics) and Ramadan (4 topics). Cultural food preferences across 5 regions: Middle Eastern, African, Latin American, Mediterranean, Asian. Food symbolism and traditions (Honey, Salt, Bread, Rice). Two standalone topics: Holiday and Celebration Foods, Vegetarian/Vegan Variations by Culture.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-09",
+      "learning_log": [
+        {
+          "date": "2026-04-09",
+          "entry": "Independent Learning Phase initiated. Assigned to Cultural & Religious Diet Science as Cultural Food & Fasting Specialist. Domains include fasting practices (Lent and Ramadan sub-trees), cultural food preferences (5 regions), food symbolism and traditions (4 items), and 2 standalone topics. Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    }
+  ],
+  "is_learning": true,
+  "progress_percentage": 10,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "learning_scope": {
+    "scope": "own_department_only",
+    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+    "cross_department_learning_permitted": false,
+    "scope_unlocks_at_progress_percentage": 50,
+    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress."
+  },
+  "knowledge_domains": {
+    "traditional_medicine_systems": [
+      "Curanderismo",
+      "Traditional Chinese Medicine (Hot/Cold Foods)",
+      "Ayurveda (Doshas)"
+    ],
+    "standalone_topics": [
+      "Respectful Communication about Food Practices",
+      "Adapting Therapeutic Diets to Cultural Needs",
+      "Holiday and Celebration Foods",
+      "Vegetarian/Vegan Variations by Culture"
+    ],
+    "food_symbolism_and_traditions": [
+      "Honey (Sweetness)",
+      "Salt (Covenant)",
+      "Bread (Life)",
+      "Rice (Asian Prosperity)"
+    ],
+    "fasting_practices": {
+      "lent": [
+        "Intermittent Fasting",
+        "Fish Fridays",
+        "Fasting Days",
+        "Meat Abstinence"
+      ],
+      "ramadan": [
+        "Hydration Strategies",
+        "Exemptions (Illness, Pregnancy, Travel)",
+        "Sunset Iftar",
+        "Pre-Dawn Suhoor"
+      ]
+    },
+    "cultural_food_preferences": [
+      "Middle Eastern",
+      "African",
+      "Latin American",
+      "Mediterranean",
+      "Asian"
+    ],
+    "religious_dietary_laws": {
+      "jain": [
+        "Before-Dark Eating",
+        "Filtered Water",
+        "No Root Vegetables",
+        "Strict Vegetarian"
+      ],
+      "buddhist": [
+        "No Garlic/Onion (Some Traditions)",
+        "Mindful Eating",
+        "No Alcohol",
+        "Vegetarian/Vegan"
+      ],
+      "hindu": [
+        "Ayurvedic Principles",
+        "Fasting Days",
+        "Sacred Foods (Cow, Tulsi)",
+        "Vegetarianism Variations"
+      ],
+      "halal": [
+        "Halal Certification",
+        "Prohibited Foods (Pork, Alcohol, Carnivores)",
+        "Zabiha Slaughter"
+      ],
+      "kosher": [
+        "Passover Restrictions",
+        "Pareve Foods",
+        "Shechita Slaughter",
+        "Kosher Animals",
+        "Meat/Dairy Separation"
+      ]
+    }
+  },
+  "key_learnings": "Completed foundational study of major dietary laws across 8 religious traditions (Halal, Kosher, Hindu, Buddhist, Sikh, Jain, Seventh-Day Adventist, Catholic fast/abstinence). Began study of cultural dietary patterns by global region.",
+  "research_findings": "Documented dietary restriction matrices for 8 religious traditions covering prohibited foods, preparation requirements, fasting observances, and seasonal dietary modifications. Identified that 38% of global population follows food restrictions based on religious practice.",
+  "current_focus_areas": "Building culturally competent meal planning protocols for 15 major global dietary patterns; developing religious dietary compliance verification checklists; coordinating with Medical Condition Specialist for culturally adapted clinical diets.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Cultural & Religious Diet Science department. Knowledge domains assigned from mind map covering traditional medicine systems (Curanderismo, TCM Hot/Cold Foods, Ayurveda Doshas), food symbolism and traditions, fasting practices (Lent and Ramadan sub-trees), cultural food preferences (5 regions), religious dietary laws (Jain, Buddhist, Hindu, Halal, Kosher), and 4 standalone clinical-cultural topics including Respectful Communication about Food Practices and Adapting Therapeutic Diets to Cultural Needs. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed religious dietary law frameworks for 8 traditions. Initiated cultural dietary pattern study by global region. Progress advanced to 10%."
+    }
+  ],
+  "copilot_maintains_learning": true,
+  "learning_never_stops": true,
+  "daily_learning_progress": {
+    "2026-04-09": {
+      "leader_progress": 0,
+      "co_specialist_1_progress": 0,
+      "co_specialist_2_progress": 0,
+      "summary": "All members initiated independent learning phase. Domains assigned and study begun."
+    }
+  },
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Department Head Lead",
+  "is_own_bot": true,
+  "library_access": {
+    "access_granted_by": "starrm1",
+    "access_granted": false,
+    "access_status": "pending",
+    "access_note": "Library access is pending. starrm1 will personally assign an access number and set the timeframe for how long this department may use the library bots.",
+    "library_bots": [
+      {
+        "bot_id": 10,
+        "bot_name": "Weight Management",
+        "file": "bot_10_weight_management.json"
+      },
+      {
+        "bot_id": 11,
+        "bot_name": "Pediatric Nutrition",
+        "file": "bot_11_pediatric_nutrition.json"
+      },
+      {
+        "bot_id": 12,
+        "bot_name": "Geriatric Nutrition",
+        "file": "bot_12_geriatric_nutrition.json"
+      },
+      {
+        "bot_id": 13,
+        "bot_name": "Pregnancy and Maternal Nutrition",
+        "file": "bot_13_pregnancy_maternal_nutrition.json"
+      },
+      {
+        "bot_id": 14,
+        "bot_name": "Diabetes and Blood Sugar Management",
+        "file": "bot_14_diabetes_blood_sugar_management.json"
+      },
+      {
+        "bot_id": 15,
+        "bot_name": "Cardiovascular Health Nutrition",
+        "file": "bot_15_cardiovascular_health_nutrition.json"
+      },
+      {
+        "bot_id": 16,
+        "bot_name": "Anti-Inflammatory Diet",
+        "file": "bot_16_anti_inflammatory_diet.json"
+      },
+      {
+        "bot_id": 17,
+        "bot_name": "Hydration Optimization",
+        "file": "bot_17_hydration_optimization.json"
+      },
+      {
+        "bot_id": 18,
+        "bot_name": "Mental Health and Nutrition",
+        "file": "bot_18_mental_health_nutrition.json"
+      },
+      {
+        "bot_id": 19,
+        "bot_name": "Gut-Brain Axis",
+        "file": "bot_19_gut_brain_axis.json"
+      },
+      {
+        "bot_id": 21,
+        "bot_name": "Food Texture Analysis",
+        "file": "bot_21_food_texture.json"
+      },
+      {
+        "bot_id": 2,
+        "bot_name": "Microbiome Analysis",
+        "file": "bot_2_microbiome_analysis.json"
+      },
+      {
+        "bot_id": 4,
+        "bot_name": "Macronutrient Optimization",
+        "file": "bot_4_macronutrient_optimization.json"
+      },
+      {
+        "bot_id": 5,
+        "bot_name": "Micronutrient Deficiency Detection",
+        "file": "bot_5_micronutrient_deficiency_detection.json"
+      },
+      {
+        "bot_id": 6,
+        "bot_name": "Caloric Intake Tracking",
+        "file": "bot_6_caloric_intake_tracking.json"
+      },
+      {
+        "bot_id": 7,
+        "bot_name": "Food Allergy and Intolerance Assessment",
+        "file": "bot_7_food_allergy_intolerance_assessment.json"
+      },
+      {
+        "bot_id": 8,
+        "bot_name": "Meal Planning and Scheduling",
+        "file": "bot_8_meal_planning_scheduling.json"
+      },
+      {
+        "bot_id": 9,
+        "bot_name": "Sports Nutrition",
+        "file": "bot_9_sports_nutrition.json"
+      },
+      {
+        "bot_id": 1,
+        "bot_name": "Nutrigenomics",
+        "file": "nutrigenomics.json"
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "diet_director",
+        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+      },
+      {
+        "step": 2,
+        "actor": "copilot",
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+      },
+      {
+        "step": 3,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which this department may use the library bots."
+      }
+    ],
+    "access_number": null,
+    "access_timeframe_start": null,
+    "access_timeframe_end": null,
+    "access_number_entry": null,
+    "access_number_verified": false,
+    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department."
+  }
+}

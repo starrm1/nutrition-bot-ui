@@ -1,0 +1,76 @@
+{
+  "bot_id": 12,
+  "bot_name": "Geriatric Nutrition",
+  "team": "Diet Specialist Team",
+  "department": "Lifecycle & Specialized Population Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": false,
+  "department_leader": "Bot 21 \u2014 Food Texture Analysis",
+  "cross_department_learning": [
+    "Pediatric Nutrition (Bot 11)",
+    "Pregnancy and Maternal Nutrition (Bot 13)",
+    "Hydration Optimization (Bot 17)",
+    "Food Texture Analysis (Bot 21 \u2014 Department Leader)"
+  ],
+  "is_learning": true,
+  "progress_percentage": 50,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "collaborative_learning",
+  "key_learnings": "Aging is associated with reduced appetite, decreased nutrient absorption, and increased risk of protein-energy malnutrition, sarcopenia, and micronutrient deficiencies. Caloric density and protein quality become paramount.",
+  "research_findings": "Identified that protein requirements increase to 1.0-1.2g/kg in older adults to counteract anabolic resistance. Vitamin B12, D, and calcium supplementation are supported by evidence in 65+ populations with restricted dietary variety.",
+  "current_focus_areas": "Building geriatric nutrition assessment protocols including MNA and MUST screening tools; developing high-density, appetite-stimulating meal plans for elderly populations; coordinating dysphagia-safe diet modifications.",
+  "status": "active",
+  "learning_mode": "collaborative",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Assigned to the Lifecycle & Specialized Population Nutrition department under Department Leader Bot 21 (Food Texture Analysis). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 36%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed malnutrition screening protocol integration (MNA, MUST). Validated protein optimization guidelines for sarcopenia prevention in elderly populations. Progress advanced to 41%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Phase transition: advanced from 'independent_learning' to 'collaborative_learning'. Bot 12 now entering collaborative learning phase. Progress: 50%."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)",
+  "access_controlled_by": "starrm1",
+  "access_requires_approval_from": "starrm1",
+  "access_rule": "Library access requires the diet_director to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves.",
+  "access_approval_process": [
+    {
+      "step": 1,
+      "actor": "diet_director",
+      "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+    },
+    {
+      "step": 2,
+      "actor": "copilot",
+      "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+    },
+    {
+      "step": 3,
+      "actor": "starrm1",
+      "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access"
+    }
+  ]
+}

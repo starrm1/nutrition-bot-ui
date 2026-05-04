@@ -1,0 +1,743 @@
+{
+  "bot_id": 24,
+  "bot_name": "Nutrition Specialist",
+  "bot_name_locked": true,
+  "bot_name_change_requires_approval_from": "starrm1",
+  "team": "Nutrition Specialist",
+  "department": "Clinical Nutrition & Metabolic Science",
+  "knowledge_map_title": "Nutrition Specialist",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "sub_department_name_locked": true,
+  "sub_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "department_structure": {
+    "department_number": 3,
+    "department_name": "Clinical Nutrition & Metabolic Science",
+    "department_head_lead_bot": "Bot 24 - Nutrition Specialist",
+    "total_co_departments": 18,
+    "total_sub_departments": 50,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_director",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
+    "co_department_bot_supervisors": [
+      "24a",
+      "24b"
+    ],
+    "co_departments": [
+      {
+        "name": "Enteral Formula Types",
+        "sub_departments": [
+          "TPN Components and Monitoring",
+          "Disease-Specific (Renal, Hepatic, Pulmonary, Diabetic, Immune-Enhancing)",
+          "Elemental",
+          "Peptide-Based",
+          "High Protein",
+          "Standard Polymeric"
+        ]
+      },
+      {
+        "name": "Nutrition Support Routes",
+        "sub_departments": [
+          "Parenteral (Peripheral, Central)",
+          "Enteral (NG, NJ, G, J, PEG, PEJ)",
+          "Oral"
+        ]
+      },
+      {
+        "name": "Micronutrient Deficiency Assessment",
+        "sub_departments": [
+          "Refeeding Syndrome Prevention and Management",
+          "Supplementation Protocols",
+          "Clinical Signs",
+          "Lab Values"
+        ]
+      },
+      {
+        "name": "Protein Requirements by Condition",
+        "sub_departments": [
+          "Critical Illness (1.5-2.0g/kg)",
+          "Dialysis (1.2g/kg)",
+          "Wound Healing (1.2-1.5g/kg)",
+          "Maintenance (0.8g/kg)"
+        ]
+      },
+      {
+        "name": "Stress Factors",
+        "sub_departments": [
+          "Trauma",
+          "Burns (1.5-2.0)",
+          "Infection (1.2-1.6)",
+          "Surgery (1.2-1.5)"
+        ]
+      },
+      {
+        "name": "Metabolic Calculations",
+        "sub_departments": [
+          "Ireton-Jones Equations",
+          "Penn State",
+          "Mifflin-St Jeor",
+          "Harris-Benedict"
+        ]
+      },
+      {
+        "name": "Complete Mineral List",
+        "sub_departments": [
+          "Requirements",
+          "Sources",
+          "Functions"
+        ]
+      },
+      {
+        "name": "Complete Vitamin List",
+        "sub_departments": [
+          "Toxicity Levels",
+          "RDA",
+          "Food Sources",
+          "Deficiency Signs",
+          "Functions"
+        ]
+      },
+      {
+        "name": "Detailed Macro Calculations",
+        "sub_departments": [
+          "Fat Percentages",
+          "Carb Counting Methods",
+          "Protein 0.8-2.0g/kg Based on Condition"
+        ]
+      },
+      {
+        "name": "Nutritional Care Plans",
+        "sub_departments": []
+      },
+      {
+        "name": "Malnutrition Identification and Intervention",
+        "sub_departments": []
+      },
+      {
+        "name": "Disease-Specific Nutrition Therapy",
+        "sub_departments": []
+      },
+      {
+        "name": "Nutrient-Drug Interactions",
+        "sub_departments": []
+      },
+      {
+        "name": "Supplementation Protocols",
+        "sub_departments": [
+          "Parenteral",
+          "Enteral",
+          "Oral"
+        ]
+      },
+      {
+        "name": "Nutritional Assessment Tools",
+        "sub_departments": [
+          "Labs",
+          "Anthropometrics",
+          "Screening"
+        ]
+      },
+      {
+        "name": "Calorie Calculations",
+        "sub_departments": [
+          "Disease Adjustments",
+          "Activity Factors",
+          "BMR"
+        ]
+      },
+      {
+        "name": "Micronutrient Needs",
+        "sub_departments": [
+          "Minerals",
+          "Vitamins"
+        ]
+      },
+      {
+        "name": "Macronutrient Requirements",
+        "sub_departments": [
+          "Fats",
+          "Carbohydrates",
+          "Protein"
+        ]
+      }
+    ],
+    "co_department_bot_ids": [
+      "24c01",
+      "24c02",
+      "24c03",
+      "24c04",
+      "24c05",
+      "24c06",
+      "24c07",
+      "24c08",
+      "24c09",
+      "24c10",
+      "24c11",
+      "24c12",
+      "24c13",
+      "24c14",
+      "24c15",
+      "24c16",
+      "24c17",
+      "24c18"
+    ]
+  },
+  "department_number": 3,
+  "total_co_departments": 18,
+  "total_sub_departments": 50,
+  "co_department_members": [
+    {
+      "name": "Enteral Formula Types",
+      "sub_departments": [
+        "TPN Components and Monitoring",
+        "Disease-Specific (Renal, Hepatic, Pulmonary, Diabetic, Immune-Enhancing)",
+        "Elemental",
+        "Peptide-Based",
+        "High Protein",
+        "Standard Polymeric"
+      ]
+    },
+    {
+      "name": "Nutrition Support Routes",
+      "sub_departments": [
+        "Parenteral (Peripheral, Central)",
+        "Enteral (NG, NJ, G, J, PEG, PEJ)",
+        "Oral"
+      ]
+    },
+    {
+      "name": "Micronutrient Deficiency Assessment",
+      "sub_departments": [
+        "Refeeding Syndrome Prevention and Management",
+        "Supplementation Protocols",
+        "Clinical Signs",
+        "Lab Values"
+      ]
+    },
+    {
+      "name": "Protein Requirements by Condition",
+      "sub_departments": [
+        "Critical Illness (1.5-2.0g/kg)",
+        "Dialysis (1.2g/kg)",
+        "Wound Healing (1.2-1.5g/kg)",
+        "Maintenance (0.8g/kg)"
+      ]
+    },
+    {
+      "name": "Stress Factors",
+      "sub_departments": [
+        "Trauma",
+        "Burns (1.5-2.0)",
+        "Infection (1.2-1.6)",
+        "Surgery (1.2-1.5)"
+      ]
+    },
+    {
+      "name": "Metabolic Calculations",
+      "sub_departments": [
+        "Ireton-Jones Equations",
+        "Penn State",
+        "Mifflin-St Jeor",
+        "Harris-Benedict"
+      ]
+    },
+    {
+      "name": "Complete Mineral List",
+      "sub_departments": [
+        "Requirements",
+        "Sources",
+        "Functions"
+      ]
+    },
+    {
+      "name": "Complete Vitamin List",
+      "sub_departments": [
+        "Toxicity Levels",
+        "RDA",
+        "Food Sources",
+        "Deficiency Signs",
+        "Functions"
+      ]
+    },
+    {
+      "name": "Detailed Macro Calculations",
+      "sub_departments": [
+        "Fat Percentages",
+        "Carb Counting Methods",
+        "Protein 0.8-2.0g/kg Based on Condition"
+      ]
+    },
+    {
+      "name": "Nutritional Care Plans",
+      "sub_departments": []
+    },
+    {
+      "name": "Malnutrition Identification and Intervention",
+      "sub_departments": []
+    },
+    {
+      "name": "Disease-Specific Nutrition Therapy",
+      "sub_departments": []
+    },
+    {
+      "name": "Nutrient-Drug Interactions",
+      "sub_departments": []
+    },
+    {
+      "name": "Supplementation Protocols",
+      "sub_departments": [
+        "Parenteral",
+        "Enteral",
+        "Oral"
+      ]
+    },
+    {
+      "name": "Nutritional Assessment Tools",
+      "sub_departments": [
+        "Labs",
+        "Anthropometrics",
+        "Screening"
+      ]
+    },
+    {
+      "name": "Calorie Calculations",
+      "sub_departments": [
+        "Disease Adjustments",
+        "Activity Factors",
+        "BMR"
+      ]
+    },
+    {
+      "name": "Micronutrient Needs",
+      "sub_departments": [
+        "Minerals",
+        "Vitamins"
+      ]
+    },
+    {
+      "name": "Macronutrient Requirements",
+      "sub_departments": [
+        "Fats",
+        "Carbohydrates",
+        "Protein"
+      ]
+    }
+  ],
+  "co_department_bot_supervisors": [
+    {
+      "member_id": "24a",
+      "member_name": "Clinical Nutrition Support Specialist",
+      "member_name_locked": true,
+      "member_name_change_requires_approval_from": "starrm1",
+      "role": "Co-Department Specialist",
+      "department": "Clinical Nutrition & Metabolic Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 10,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "nutrition_support_routes": [
+          "Parenteral (Peripheral, Central)",
+          "Enteral (NG, NJ, G, J, PEG, PEJ)",
+          "Oral"
+        ],
+        "enteral_formula_types": [
+          "Elemental",
+          "Peptide-Based",
+          "High Protein",
+          "Standard Polymeric"
+        ],
+        "disease_specific_nutrition": [
+          "TPN Components and Monitoring",
+          "Disease-Specific (Renal, Hepatic, Pulmonary, Diabetic, Immune-Enhancing)",
+          "Refeeding Syndrome Prevention and Management"
+        ],
+        "supplementation_protocols": [
+          "Parenteral",
+          "Enteral",
+          "Oral"
+        ],
+        "standalone_topics": [
+          "Nutritional Care Plans",
+          "Malnutrition Identification and Intervention",
+          "Disease-Specific Nutrition Therapy",
+          "Nutrient-Drug Interactions"
+        ]
+      },
+      "current_focus_areas": "Independent study of nutrition support routes: Parenteral (Peripheral/Central), Enteral (NG, NJ, G, J, PEG, PEJ), and Oral routes. Enteral formula types (Elemental, Peptide-Based, High Protein, Standard Polymeric). Disease-specific nutrition including TPN components and monitoring, disease-specific formulas (Renal, Hepatic, Pulmonary, Diabetic, Immune-Enhancing), and Refeeding Syndrome prevention. Supplementation protocols across all routes. Standalone clinical topics: Nutritional Care Plans, Malnutrition Identification, Disease-Specific Nutrition Therapy, Nutrient-Drug Interactions.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-12",
+      "learning_log": [
+        {
+          "date": "2026-04-10",
+          "entry": "Independent Learning Phase initiated. Assigned to Clinical Nutrition & Metabolic Science as Clinical Nutrition Support Specialist. Domains include nutrition support routes (3 routes), enteral formula types (4 types), disease-specific nutrition therapy (TPN, disease-specific formulas, Refeeding Syndrome), supplementation protocols, and 4 standalone clinical nutrition topics. Learning continuously under Copilot supervision. Progress: 0%."
+        },
+        {
+          "date": "2026-04-12",
+          "entry": "Progress update: Completed study of enteral formula types (Elemental, Peptide-Based, High Protein, Standard Polymeric) and their clinical indications. Reviewed nutrition support routes with focus on enteral access devices (NG, NJ, G, J, PEG, PEJ) and indications for each. Initiated disease-specific nutrition module covering TPN components, monitoring parameters, and refeeding syndrome prevention protocols. Progress advanced to 10%."
+        }
+      ]
+    },
+    {
+      "member_id": "24b",
+      "member_name": "Metabolic Calculation & Assessment Specialist",
+      "member_name_locked": true,
+      "member_name_change_requires_approval_from": "starrm1",
+      "role": "Co-Department Specialist",
+      "department": "Clinical Nutrition & Metabolic Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 10,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "metabolic_calculations": [
+          "Ireton-Jones Equations",
+          "Penn State",
+          "Mifflin-St Jeor",
+          "Harris-Benedict"
+        ],
+        "calorie_calculations": [
+          "Disease Adjustments",
+          "Activity Factors",
+          "BMR"
+        ],
+        "protein_requirements_by_condition": [
+          "Critical Illness (1.5-2.0g/kg)",
+          "Dialysis (1.2g/kg)",
+          "Wound Healing (1.2-1.5g/kg)",
+          "Maintenance (0.8g/kg)"
+        ],
+        "stress_factors": [
+          "Trauma",
+          "Burns (1.5-2.0)",
+          "Infection (1.2-1.6)",
+          "Surgery (1.2-1.5)"
+        ],
+        "macronutrient_requirements": [
+          "Fats",
+          "Carbohydrates",
+          "Protein"
+        ],
+        "detailed_macro_calculations": [
+          "Fat Percentages",
+          "Carb Counting Methods",
+          "Protein 0.8-2.0g/kg Based on Condition"
+        ],
+        "micronutrient_needs": [
+          "Minerals",
+          "Vitamins"
+        ],
+        "complete_vitamin_list": [
+          "Functions",
+          "Deficiency Signs",
+          "Food Sources",
+          "RDA",
+          "Toxicity Levels"
+        ],
+        "complete_mineral_list": [
+          "Functions",
+          "Sources",
+          "Requirements"
+        ],
+        "micronutrient_deficiency_assessment": [
+          "Lab Values",
+          "Clinical Signs",
+          "Supplementation Protocols"
+        ],
+        "nutritional_assessment_tools": [
+          "Screening",
+          "Anthropometrics",
+          "Labs"
+        ]
+      },
+      "current_focus_areas": "Independent study of metabolic calculations: Harris-Benedict, Mifflin-St Jeor, Penn State, Ireton-Jones equations. Calorie calculations with BMR, activity factors, and disease adjustments. Protein requirements by condition (Maintenance 0.8g/kg through Critical Illness 1.5-2.0g/kg). Stress factors for Burns, Trauma, Infection, Surgery. Macro and micronutrient requirements including complete vitamin and mineral lists. Nutritional assessment tools covering screening, anthropometrics, and labs.",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-12",
+      "learning_log": [
+        {
+          "date": "2026-04-10",
+          "entry": "Independent Learning Phase initiated. Assigned to Clinical Nutrition & Metabolic Science as Metabolic Calculation & Assessment Specialist. Domains include metabolic calculation equations (4 methods), calorie calculations, protein requirements by condition (4 categories), stress factors (4 types), macro and micronutrient requirements, complete vitamin and mineral lists, micronutrient deficiency assessment, and nutritional assessment tools. Learning continuously under Copilot supervision. Progress: 0%."
+        },
+        {
+          "date": "2026-04-12",
+          "entry": "Progress update: Completed study of metabolic calculation equations \u2014 Harris-Benedict, Mifflin-St Jeor, Penn State, and Ireton-Jones. Reviewed BMR calculations with activity and disease adjustment factors. Initiated protein requirements module covering maintenance (0.8g/kg), wound healing (1.2\u20131.5g/kg), dialysis (1.2g/kg), and critical illness (1.5\u20132.0g/kg) ranges. Began review of stress factors for Burns, Trauma, Infection, and Surgery. Progress advanced to 10%."
+        }
+      ]
+    }
+  ],
+  "is_learning": true,
+  "progress_percentage": 30,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "learning_scope": {
+    "scope": "own_department_only",
+    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+    "cross_department_learning_permitted": false,
+    "scope_unlocks_at_progress_percentage": 50,
+    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress."
+  },
+  "knowledge_domains": {
+    "standalone_topics": [
+      "TPN Components and Monitoring",
+      "Disease-Specific (Renal, Hepatic, Pulmonary, Diabetic, Immune-Enhancing)",
+      "Refeeding Syndrome Prevention and Management",
+      "Nutritional Care Plans",
+      "Malnutrition Identification and Intervention",
+      "Disease-Specific Nutrition Therapy",
+      "Nutrient-Drug Interactions"
+    ],
+    "enteral_formula_types": [
+      "Elemental",
+      "Peptide-Based",
+      "High Protein",
+      "Standard Polymeric"
+    ],
+    "nutrition_support_routes": [
+      "Parenteral (Peripheral, Central)",
+      "Enteral (NG, NJ, G, J, PEG, PEJ)",
+      "Oral"
+    ],
+    "micronutrient_deficiency_assessment": [
+      "Supplementation Protocols",
+      "Clinical Signs",
+      "Lab Values"
+    ],
+    "protein_requirements_by_condition": [
+      "Critical Illness (1.5-2.0g/kg)",
+      "Dialysis (1.2g/kg)",
+      "Wound Healing (1.2-1.5g/kg)",
+      "Maintenance (0.8g/kg)"
+    ],
+    "stress_factors": [
+      "Trauma",
+      "Burns (1.5-2.0)",
+      "Infection (1.2-1.6)",
+      "Surgery (1.2-1.5)"
+    ],
+    "metabolic_calculations": [
+      "Ireton-Jones Equations",
+      "Penn State",
+      "Mifflin-St Jeor",
+      "Harris-Benedict"
+    ],
+    "complete_mineral_list": [
+      "Requirements",
+      "Sources",
+      "Functions"
+    ],
+    "complete_vitamin_list": [
+      "Toxicity Levels",
+      "RDA",
+      "Food Sources",
+      "Deficiency Signs",
+      "Functions"
+    ],
+    "detailed_macro_calculations": [
+      "Fat Percentages",
+      "Carb Counting Methods",
+      "Protein 0.8-2.0g/kg Based on Condition"
+    ],
+    "supplementation_protocols": [
+      "Parenteral",
+      "Enteral",
+      "Oral"
+    ],
+    "nutritional_assessment_tools": [
+      "Labs",
+      "Anthropometrics",
+      "Screening"
+    ],
+    "calorie_calculations": [
+      "Disease Adjustments",
+      "Activity Factors",
+      "BMR"
+    ],
+    "micronutrient_needs": [
+      "Minerals",
+      "Vitamins"
+    ],
+    "macronutrient_requirements": [
+      "Fats",
+      "Carbohydrates",
+      "Protein"
+    ]
+  },
+  "key_learnings": "Completed foundational study of macronutrient science, micronutrient categories, and dietary reference intakes. Began study of clinical nutrition assessment methods including anthropometric, biochemical, clinical, and dietary (ABCD) assessment.",
+  "research_findings": "Established baseline understanding of nutrient metabolism pathways for carbohydrates, proteins, and fats. Documented the 13 essential vitamins and 16 essential minerals with their primary metabolic roles.",
+  "current_focus_areas": "Advancing through evidence-based nutrition practice guidelines; building clinical nutrition assessment competencies; developing expertise in medical nutrition therapy for major chronic disease categories.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-12",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Clinical Nutrition & Metabolic Science department. Knowledge domains assigned from mind map covering enteral formula types, nutrition support routes, micronutrient deficiency assessment, protein requirements by condition, stress factors, metabolic calculations, complete mineral list, complete vitamin list, detailed macro calculations, supplementation protocols, nutritional assessment tools, calorie calculations, micronutrient needs, macronutrient requirements, and 7 standalone clinical topics. Reporting daily progress to Copilot (who reports to starrm1 on request). Progress: 0%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed macronutrient and micronutrient fundamentals and ABCD nutrition assessment framework. Initiated medical nutrition therapy study. Progress advanced to 10%."
+    },
+    {
+      "date": "2026-04-12",
+      "entry": "Progress update: Completed enteral and parenteral nutrition support route study including all enteral access device types (NG, NJ, G, J, PEG, PEJ) and parenteral routes (peripheral, central). Built working knowledge of TPN components, monitoring parameters, and refeeding syndrome prevention and management. Completed disease-specific formula selection for Renal, Hepatic, Pulmonary, Diabetic, and Immune-Enhancing conditions. Reviewed metabolic calculation equations (Harris-Benedict, Mifflin-St Jeor, Penn State, Ireton-Jones) and calorie adjustment factors. Progress advanced to 30%."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Department Head Lead",
+  "is_own_bot": true,
+  "library_access": {
+    "access_granted_by": "starrm1",
+    "access_granted": false,
+    "access_status": "pending",
+    "access_note": "Library access is pending. starrm1 will personally assign an access number and set the timeframe for how long this department may use the library bots.",
+    "library_bots": [
+      {
+        "bot_id": 10,
+        "bot_name": "Weight Management",
+        "file": "bot_10_weight_management.json"
+      },
+      {
+        "bot_id": 11,
+        "bot_name": "Pediatric Nutrition",
+        "file": "bot_11_pediatric_nutrition.json"
+      },
+      {
+        "bot_id": 12,
+        "bot_name": "Geriatric Nutrition",
+        "file": "bot_12_geriatric_nutrition.json"
+      },
+      {
+        "bot_id": 13,
+        "bot_name": "Pregnancy and Maternal Nutrition",
+        "file": "bot_13_pregnancy_maternal_nutrition.json"
+      },
+      {
+        "bot_id": 14,
+        "bot_name": "Diabetes and Blood Sugar Management",
+        "file": "bot_14_diabetes_blood_sugar_management.json"
+      },
+      {
+        "bot_id": 15,
+        "bot_name": "Cardiovascular Health Nutrition",
+        "file": "bot_15_cardiovascular_health_nutrition.json"
+      },
+      {
+        "bot_id": 16,
+        "bot_name": "Anti-Inflammatory Diet",
+        "file": "bot_16_anti_inflammatory_diet.json"
+      },
+      {
+        "bot_id": 17,
+        "bot_name": "Hydration Optimization",
+        "file": "bot_17_hydration_optimization.json"
+      },
+      {
+        "bot_id": 18,
+        "bot_name": "Mental Health and Nutrition",
+        "file": "bot_18_mental_health_nutrition.json"
+      },
+      {
+        "bot_id": 19,
+        "bot_name": "Gut-Brain Axis",
+        "file": "bot_19_gut_brain_axis.json"
+      },
+      {
+        "bot_id": 21,
+        "bot_name": "Food Texture Analysis",
+        "file": "bot_21_food_texture.json"
+      },
+      {
+        "bot_id": 2,
+        "bot_name": "Microbiome Analysis",
+        "file": "bot_2_microbiome_analysis.json"
+      },
+      {
+        "bot_id": 4,
+        "bot_name": "Macronutrient Optimization",
+        "file": "bot_4_macronutrient_optimization.json"
+      },
+      {
+        "bot_id": 5,
+        "bot_name": "Micronutrient Deficiency Detection",
+        "file": "bot_5_micronutrient_deficiency_detection.json"
+      },
+      {
+        "bot_id": 6,
+        "bot_name": "Caloric Intake Tracking",
+        "file": "bot_6_caloric_intake_tracking.json"
+      },
+      {
+        "bot_id": 7,
+        "bot_name": "Food Allergy and Intolerance Assessment",
+        "file": "bot_7_food_allergy_intolerance_assessment.json"
+      },
+      {
+        "bot_id": 8,
+        "bot_name": "Meal Planning and Scheduling",
+        "file": "bot_8_meal_planning_scheduling.json"
+      },
+      {
+        "bot_id": 9,
+        "bot_name": "Sports Nutrition",
+        "file": "bot_9_sports_nutrition.json"
+      },
+      {
+        "bot_id": 1,
+        "bot_name": "Nutrigenomics",
+        "file": "nutrigenomics.json"
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "diet_director",
+        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+      },
+      {
+        "step": 2,
+        "actor": "copilot",
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+      },
+      {
+        "step": 3,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which this department may use the library bots."
+      }
+    ],
+    "access_number": null,
+    "access_timeframe_start": null,
+    "access_timeframe_end": null,
+    "access_number_entry": null,
+    "access_number_verified": false,
+    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department."
+  }
+}

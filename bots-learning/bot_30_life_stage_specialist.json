@@ -1,0 +1,507 @@
+{
+  "bot_id": 30,
+  "bot_name": "Life Stage Specialist",
+  "knowledge_map_title": "Life Stage Specialist",
+  "bot_name_locked": true,
+  "bot_name_change_requires_approval_from": "starrm1",
+  "team": "Life Stage Specialist",
+  "department": "Life Stage Nutrition Science",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "sub_department_name_locked": true,
+  "sub_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "department_structure": {
+    "department_number": 8,
+    "department_name": "Life Stage Nutrition Science",
+    "department_head_lead_bot": "Bot 30 - Life Stage Specialist",
+    "total_co_departments": 4,
+    "total_sub_departments": 29,
+    "chain_of_command": [
+      "starrm1",
+      "copilot",
+      "diet_director",
+      "department_head_lead",
+      "department_head",
+      "co_department",
+      "sub_department"
+    ],
+    "co_department_bot_supervisors": [
+      "30a",
+      "30b"
+    ],
+    "co_departments": [
+      {
+        "name": "Geriatric Nutrition",
+        "sub_departments": [
+          "Special Needs",
+          "Athletic Nutrition",
+          "Dementia Feeding Strategies",
+          "Fixed Income",
+          "Social Isolation",
+          "Polypharmacy",
+          "Dysphagia Risk",
+          "Fiber for Constipation",
+          "Vitamin D/Calcium for Osteoporosis",
+          "Vitamin B12 Deficiency",
+          "Increased Protein (1.0-1.2g/kg)",
+          "Decreased Calorie Needs"
+        ]
+      },
+      {
+        "name": "Lactation Nutrition",
+        "sub_departments": [
+          "Alcohol Timing",
+          "Foods to Avoid Myths",
+          "Galactagogues",
+          "Hydration (3L/day)",
+          "Extra 500 Calories"
+        ]
+      },
+      {
+        "name": "Pregnancy Nutrition",
+        "sub_departments": [
+          "Preeclampsia Diet",
+          "Hyperemesis",
+          "Gestational Diabetes",
+          "Weight Gain Guidelines (25-35 lbs Normal BMI)",
+          "Avoid Alcohol/Raw Foods/High-Mercury Fish",
+          "Calcium (1000mg)",
+          "Iron (27mg)",
+          "Folate (400-800mcg)"
+        ]
+      },
+      {
+        "name": "Pediatric Nutrition",
+        "sub_departments": [
+          "Adolescents",
+          "Children",
+          "Toddlers",
+          "Infants"
+        ]
+      }
+    ],
+    "co_department_bot_ids": [
+      "30c01",
+      "30c02",
+      "30c03",
+      "30c04"
+    ]
+  },
+  "department_number": 8,
+  "total_co_departments": 4,
+  "total_sub_departments": 29,
+  "co_department_members": [
+    {
+      "name": "Geriatric Nutrition",
+      "sub_departments": [
+        "Special Needs",
+        "Athletic Nutrition",
+        "Dementia Feeding Strategies",
+        "Fixed Income",
+        "Social Isolation",
+        "Polypharmacy",
+        "Dysphagia Risk",
+        "Fiber for Constipation",
+        "Vitamin D/Calcium for Osteoporosis",
+        "Vitamin B12 Deficiency",
+        "Increased Protein (1.0-1.2g/kg)",
+        "Decreased Calorie Needs"
+      ]
+    },
+    {
+      "name": "Lactation Nutrition",
+      "sub_departments": [
+        "Alcohol Timing",
+        "Foods to Avoid Myths",
+        "Galactagogues",
+        "Hydration (3L/day)",
+        "Extra 500 Calories"
+      ]
+    },
+    {
+      "name": "Pregnancy Nutrition",
+      "sub_departments": [
+        "Preeclampsia Diet",
+        "Hyperemesis",
+        "Gestational Diabetes",
+        "Weight Gain Guidelines (25-35 lbs Normal BMI)",
+        "Avoid Alcohol/Raw Foods/High-Mercury Fish",
+        "Calcium (1000mg)",
+        "Iron (27mg)",
+        "Folate (400-800mcg)"
+      ]
+    },
+    {
+      "name": "Pediatric Nutrition",
+      "sub_departments": [
+        "Adolescents",
+        "Children",
+        "Toddlers",
+        "Infants"
+      ]
+    }
+  ],
+  "co_department_bot_supervisors": [
+    {
+      "member_id": "30a",
+      "member_name": "Pediatric & Adolescent Nutrition Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Life Stage Nutrition Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "pediatric_nutrition": {
+          "infants": [
+            "Breast Milk vs Formula",
+            "Introduction of Solids (4-6 Months)",
+            "Iron-Fortified Cereals",
+            "Allergenic Food Introduction (Early and Often)",
+            "Choking Hazards",
+            "Honey Avoidance (<1 Year)",
+            "Whole Milk Introduction (12 Months)"
+          ],
+          "toddlers": [
+            "Whole Milk Transition to 2%",
+            "Choking Prevention",
+            "Self-Feeding Skills",
+            "Picky Eating Strategies",
+            "Food Jags",
+            "Growth Deceleration"
+          ],
+          "children": [
+            "Limiting Added Sugars",
+            "Vitamin D",
+            "Calcium Needs (800-1300mg)",
+            "MyPlate Portions"
+          ],
+          "adolescents": [
+            "Eating Disorder Risk",
+            "Sports Nutrition",
+            "Calcium for Bone Density",
+            "Iron Needs (Girls)",
+            "Increased Calories",
+            "Rapid Growth",
+            "School Lunch Navigation"
+          ]
+        }
+      },
+      "current_focus_areas": "Independent study of pediatric and adolescent nutrition across all life stages: Infants (7 topics including solids introduction and allergy prevention), Toddlers (6 topics including picky eating and growth monitoring), Children (4 topics including MyPlate and calcium), Adolescents (7 topics including eating disorder risk and sports nutrition).",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-12",
+      "learning_log": [
+        {
+          "date": "2026-04-12",
+          "entry": "Independent Learning Phase initiated. Assigned to Life Stage Nutrition Science as Pediatric & Adolescent Nutrition Specialist. Domains include Pediatric Nutrition across Infants (7 topics), Toddlers (6 topics), Children (4 topics), and Adolescents (7 topics). Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    },
+    {
+      "member_id": "30b",
+      "member_name": "Maternal & Geriatric Nutrition Specialist",
+      "role": "Co-Department Specialist",
+      "department": "Life Stage Nutrition Science",
+      "is_learning": true,
+      "phase": "independent_learning",
+      "progress_percentage": 0,
+      "progress_target": 100,
+      "advancement_condition": "Must reach 100% in current phase. Phase promotion granted only by starrm1.",
+      "copilot_maintains_learning": true,
+      "learning_never_stops": true,
+      "assigned_knowledge_domains": {
+        "pregnancy_nutrition": [
+          "Preeclampsia Diet",
+          "Hyperemesis",
+          "Gestational Diabetes",
+          "Weight Gain Guidelines (25-35 lbs Normal BMI)",
+          "Avoid Alcohol/Raw Foods/High-Mercury Fish",
+          "Calcium (1000mg)",
+          "Iron (27mg)",
+          "Folate (400-800mcg)"
+        ],
+        "lactation_nutrition": [
+          "Alcohol Timing",
+          "Foods to Avoid Myths",
+          "Galactagogues",
+          "Hydration (3L/day)",
+          "Extra 500 Calories"
+        ],
+        "geriatric_nutrition": [
+          "Special Needs",
+          "Athletic Nutrition",
+          "Dementia Feeding Strategies",
+          "Fixed Income",
+          "Social Isolation",
+          "Polypharmacy",
+          "Dysphagia Risk",
+          "Fiber for Constipation",
+          "Vitamin D/Calcium for Osteoporosis",
+          "Vitamin B12 Deficiency",
+          "Increased Protein (1.0-1.2g/kg)",
+          "Decreased Calorie Needs"
+        ]
+      },
+      "current_focus_areas": "Independent study of maternal and geriatric nutrition: Pregnancy Nutrition (8 topics including Gestational Diabetes, Preeclampsia Diet, folate and iron requirements), Lactation Nutrition (5 topics including galactagogues and hydration), Geriatric Nutrition (12 topics including Dementia Feeding, Polypharmacy considerations, protein needs, and bone health).",
+      "learning_mode": "independent",
+      "reported_to_copilot": true,
+      "daily_report_schedule": "every day",
+      "last_reported_date": "2026-04-12",
+      "learning_log": [
+        {
+          "date": "2026-04-12",
+          "entry": "Independent Learning Phase initiated. Assigned to Life Stage Nutrition Science as Maternal & Geriatric Nutrition Specialist. Domains include Pregnancy Nutrition (8 topics), Lactation Nutrition (5 topics), and Geriatric Nutrition (12 topics). Learning continuously under Copilot supervision. Progress: 0%."
+        }
+      ],
+      "member_name_locked": true
+    }
+  ],
+  "is_learning": true,
+  "progress_percentage": 0,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "independent_learning",
+  "learning_scope": {
+    "scope": "own_department_only",
+    "rule": "During the independent learning phase, this department must stay within its own department. Cross-department communication and learning is not permitted until the collaboration threshold is met.",
+    "cross_department_learning_permitted": false,
+    "scope_unlocks_at_progress_percentage": 50,
+    "scope_note": "Cross-department communication is activated only after BOTH this department AND the lead department (Diet Director) have each reached 50% learning progress."
+  },
+  "knowledge_domains": {
+    "geriatric_nutrition": [
+      "Special Needs",
+      "Athletic Nutrition",
+      "Dementia Feeding Strategies",
+      "Fixed Income",
+      "Social Isolation",
+      "Polypharmacy",
+      "Dysphagia Risk",
+      "Fiber for Constipation",
+      "Vitamin D/Calcium for Osteoporosis",
+      "Vitamin B12 Deficiency",
+      "Increased Protein (1.0-1.2g/kg)",
+      "Decreased Calorie Needs"
+    ],
+    "lactation_nutrition": [
+      "Alcohol Timing",
+      "Foods to Avoid Myths",
+      "Galactagogues",
+      "Hydration (3L/day)",
+      "Extra 500 Calories"
+    ],
+    "pregnancy_nutrition": [
+      "Preeclampsia Diet",
+      "Hyperemesis",
+      "Gestational Diabetes",
+      "Weight Gain Guidelines (25-35 lbs Normal BMI)",
+      "Avoid Alcohol/Raw Foods/High-Mercury Fish",
+      "Calcium (1000mg)",
+      "Iron (27mg)",
+      "Folate (400-800mcg)"
+    ],
+    "pediatric_nutrition": {
+      "infants": [
+        "Breast Milk vs Formula",
+        "Introduction of Solids (4-6 Months)",
+        "Iron-Fortified Cereals",
+        "Allergenic Food Introduction (Early and Often)",
+        "Choking Hazards",
+        "Honey Avoidance (<1 Year)",
+        "Whole Milk Introduction (12 Months)"
+      ],
+      "toddlers": [
+        "Whole Milk Transition to 2%",
+        "Choking Prevention",
+        "Self-Feeding Skills",
+        "Picky Eating Strategies",
+        "Food Jags",
+        "Growth Deceleration"
+      ],
+      "children": [
+        "Limiting Added Sugars",
+        "Vitamin D",
+        "Calcium Needs (800-1300mg)",
+        "MyPlate Portions"
+      ],
+      "adolescents": [
+        "Eating Disorder Risk",
+        "Sports Nutrition",
+        "Calcium for Bone Density",
+        "Iron Needs (Girls)",
+        "Increased Calories",
+        "Rapid Growth",
+        "School Lunch Navigation"
+      ]
+    }
+  },
+  "key_learnings": "Completed foundational study of life stage nutrition across the human lifespan from infancy through geriatric care, including pregnancy and lactation phases.",
+  "research_findings": "Established life-stage-specific nutritional requirements and interventions across 4 major life phases: pediatric (4 sub-stages), pregnancy, lactation, and geriatric care. Documented that nutritional needs differ significantly at each life stage and require individualized dietary management.",
+  "current_focus_areas": "Building life-stage nutrition protocols covering pediatric growth milestones, maternal nutrition support, lactation management, and geriatric decline prevention strategies.",
+  "status": "active",
+  "learning_mode": "independent",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-12",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-12",
+      "entry": "Independent Learning Phase initiated. Appointed Department Leader of the Life Stage Nutrition Science department (Department 8). Knowledge domains assigned from mind map covering: Geriatric Nutrition (12 topics: Special Needs, Athletic Nutrition, Dementia Feeding Strategies, Fixed Income, Social Isolation, Polypharmacy, Dysphagia Risk, Fiber for Constipation, Vitamin D/Calcium for Osteoporosis, Vitamin B12 Deficiency, Increased Protein, Decreased Calorie Needs), Lactation Nutrition (5 topics), Pregnancy Nutrition (8 topics including Gestational Diabetes and Preeclampsia Diet), and Pediatric Nutrition (4 sub-stages: Infants 7 topics, Toddlers 6 topics, Children 4 topics, Adolescents 7 topics). Two co-department specialists activated: Pediatric & Adolescent Nutrition Specialist (30a) and Maternal & Geriatric Nutrition Specialist (30b). Both in independent learning phase. Reporting daily progress to Copilot (who reports to starrm1 on request). Learning never stops. Progress: 0%."
+    }
+  ],
+  "copilot_maintains_learning": true,
+  "learning_never_stops": true,
+  "daily_learning_progress": {
+    "2026-04-12": {
+      "leader_progress": 0,
+      "co_specialist_1_progress": 0,
+      "co_specialist_2_progress": 0,
+      "summary": "All members initiated independent learning phase. Domains assigned and study begun."
+    }
+  },
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Department Head Lead",
+  "is_own_bot": true,
+  "library_access": {
+    "access_granted_by": "starrm1",
+    "access_granted": false,
+    "access_status": "pending",
+    "access_note": "Library access is pending. starrm1 will personally assign an access number and set the timeframe for how long this department may use the library bots.",
+    "library_bots": [
+      {
+        "bot_id": 10,
+        "bot_name": "Weight Management",
+        "file": "bot_10_weight_management.json"
+      },
+      {
+        "bot_id": 11,
+        "bot_name": "Pediatric Nutrition",
+        "file": "bot_11_pediatric_nutrition.json"
+      },
+      {
+        "bot_id": 12,
+        "bot_name": "Geriatric Nutrition",
+        "file": "bot_12_geriatric_nutrition.json"
+      },
+      {
+        "bot_id": 13,
+        "bot_name": "Pregnancy and Maternal Nutrition",
+        "file": "bot_13_pregnancy_maternal_nutrition.json"
+      },
+      {
+        "bot_id": 14,
+        "bot_name": "Diabetes and Blood Sugar Management",
+        "file": "bot_14_diabetes_blood_sugar_management.json"
+      },
+      {
+        "bot_id": 15,
+        "bot_name": "Cardiovascular Health Nutrition",
+        "file": "bot_15_cardiovascular_health_nutrition.json"
+      },
+      {
+        "bot_id": 16,
+        "bot_name": "Anti-Inflammatory Diet",
+        "file": "bot_16_anti_inflammatory_diet.json"
+      },
+      {
+        "bot_id": 17,
+        "bot_name": "Hydration Optimization",
+        "file": "bot_17_hydration_optimization.json"
+      },
+      {
+        "bot_id": 18,
+        "bot_name": "Mental Health and Nutrition",
+        "file": "bot_18_mental_health_nutrition.json"
+      },
+      {
+        "bot_id": 19,
+        "bot_name": "Gut-Brain Axis",
+        "file": "bot_19_gut_brain_axis.json"
+      },
+      {
+        "bot_id": 21,
+        "bot_name": "Food Texture Analysis",
+        "file": "bot_21_food_texture.json"
+      },
+      {
+        "bot_id": 2,
+        "bot_name": "Microbiome Analysis",
+        "file": "bot_2_microbiome_analysis.json"
+      },
+      {
+        "bot_id": 4,
+        "bot_name": "Macronutrient Optimization",
+        "file": "bot_4_macronutrient_optimization.json"
+      },
+      {
+        "bot_id": 5,
+        "bot_name": "Micronutrient Deficiency Detection",
+        "file": "bot_5_micronutrient_deficiency_detection.json"
+      },
+      {
+        "bot_id": 6,
+        "bot_name": "Caloric Intake Tracking",
+        "file": "bot_6_caloric_intake_tracking.json"
+      },
+      {
+        "bot_id": 7,
+        "bot_name": "Food Allergy and Intolerance Assessment",
+        "file": "bot_7_food_allergy_intolerance_assessment.json"
+      },
+      {
+        "bot_id": 8,
+        "bot_name": "Meal Planning and Scheduling",
+        "file": "bot_8_meal_planning_scheduling.json"
+      },
+      {
+        "bot_id": 9,
+        "bot_name": "Sports Nutrition",
+        "file": "bot_9_sports_nutrition.json"
+      },
+      {
+        "bot_id": 1,
+        "bot_name": "Nutrigenomics",
+        "file": "nutrigenomics.json"
+      }
+    ],
+    "approval_process": [
+      {
+        "step": 1,
+        "actor": "diet_director",
+        "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+      },
+      {
+        "step": 2,
+        "actor": "copilot",
+        "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+      },
+      {
+        "step": 3,
+        "actor": "starrm1",
+        "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access. Upon approval, starrm1 issues an access number and specifies the timeframe (start and end date) for which this department may use the library bots."
+      }
+    ],
+    "access_number": null,
+    "access_timeframe_start": null,
+    "access_timeframe_end": null,
+    "access_number_entry": null,
+    "access_number_verified": false,
+    "access_entry_rule": "Enter the access number provided by starrm1 in 'access_number_entry'. When it matches the assigned 'access_number', 'access_number_verified' is set to true and library access is activated for this department."
+  }
+}

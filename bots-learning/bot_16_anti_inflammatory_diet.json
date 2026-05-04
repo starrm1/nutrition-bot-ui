@@ -1,0 +1,94 @@
+{
+  "bot_id": 16,
+  "bot_name": "Anti-Inflammatory Diet",
+  "department": "Therapeutic & Integrative Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "co_department_members": [
+    "Bot 18 \u2014 Mental Health and Nutrition",
+    "Bot 19 \u2014 Gut-Brain Axis"
+  ],
+  "is_learning": true,
+  "progress_percentage": 68,
+  "phase": "advanced_learning",
+  "key_learnings": "Chronic low-grade inflammation underlies numerous metabolic diseases. Anti-inflammatory dietary patterns emphasize omega-3 fatty acids, polyphenols, fiber, and antioxidant-rich foods while reducing ultra-processed food consumption.",
+  "research_findings": "Documented inverse relationship between dietary inflammatory index (DII) scores and inflammatory biomarkers (CRP, IL-6, TNF-\u03b1). Turmeric (curcumin), ginger, and berries show significant anti-inflammatory effects in clinical studies.",
+  "current_focus_areas": "Building DII-scored dietary plans for inflammatory condition management; researching specific food compounds with clinical anti-inflammatory efficacy; developing anti-inflammatory meal templates for rheumatoid arthritis, IBD, and metabolic syndrome.",
+  "status": "active",
+  "learning_mode": "advanced",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "team": "Diet Specialist Team",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "cross_learning_directive": "Directed all co-department members \u2014 Bot 18 (Mental Health and Nutrition) and Bot 19 (Gut-Brain Axis) \u2014 to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Therapeutic & Integrative Nutrition department.",
+  "learning_start_directive": "Attention co-department members \u2014 Bot 18 (Mental Health and Nutrition) and Bot 19 (Gut-Brain Axis): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Therapeutic & Integrative Nutrition department will begin. \u2014 Department Leader, Bot 16",
+  "co_department_learning_progress": [
+    {
+      "bot_id": 18,
+      "bot_name": "Mental Health and Nutrition",
+      "phase": "independent_learning",
+      "progress_percentage": 38,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Gut-Brain Axis and Anti-Inflammatory Diet domains.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 19,
+      "bot_name": "Gut-Brain Axis",
+      "phase": "independent_learning",
+      "progress_percentage": 31,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Mental Health and Nutrition and Anti-Inflammatory Diet domains.",
+      "last_updated": "2026-04-09"
+    }
+  ],
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Therapeutic & Integrative Nutrition department. Reporting co-department learning progress daily to Copilot as part of the Diet Specialist Team. Copilot reports to starrm1 on request. Issued directive to co-department members: all must reach 100% in their current phase before cross-department learning begins. Progress: 54%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed Dietary Inflammatory Index (DII) scoring framework for 200+ food items. Validated anti-inflammatory dietary protocols for 3 clinical inflammatory conditions. Progress advanced to 59%."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)",
+  "access_controlled_by": "starrm1",
+  "access_requires_approval_from": "starrm1",
+  "access_rule": "Library access requires the diet_director to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves.",
+  "access_approval_process": [
+    {
+      "step": 1,
+      "actor": "diet_director",
+      "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+    },
+    {
+      "step": 2,
+      "actor": "copilot",
+      "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+    },
+    {
+      "step": 3,
+      "actor": "starrm1",
+      "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access"
+    }
+  ]
+}

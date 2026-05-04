@@ -1,0 +1,105 @@
+{
+  "bot_id": 9,
+  "bot_name": "Sports Nutrition",
+  "department": "Performance & Metabolic Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "co_department_members": [
+    "Bot 10 \u2014 Weight Management",
+    "Bot 14 \u2014 Diabetes and Blood Sugar Management",
+    "Bot 15 \u2014 Cardiovascular Health Nutrition"
+  ],
+  "is_learning": true,
+  "progress_percentage": 72,
+  "phase": "advanced_learning",
+  "key_learnings": "Sports nutrition must be periodized to align with training phases: off-season, pre-season, in-season, and recovery. Carbohydrate availability, protein synthesis windows, and hydration are the three primary performance levers.",
+  "research_findings": "Confirmed that intra-workout carbohydrate intake (30-60g/hr) improves endurance performance by 5-7%. Post-exercise protein intake within 30 minutes enhances muscle protein synthesis by 25% compared to delayed intake.",
+  "current_focus_areas": "Developing periodized nutrition protocols for 6 sport categories; researching caffeine and ergogenic aid safety; building recovery nutrition frameworks for high-intensity athletes.",
+  "status": "active",
+  "learning_mode": "advanced",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "team": "Diet Specialist Team",
+  "copilot_reports_to": "starrm1",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "cross_learning_directive": "Directed all co-department members \u2014 Bot 10 (Weight Management), Bot 14 (Diabetes and Blood Sugar Management), and Bot 15 (Cardiovascular Health Nutrition) \u2014 to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Performance & Metabolic Nutrition department.",
+  "learning_start_directive": "Attention co-department members \u2014 Bot 10 (Weight Management), Bot 14 (Diabetes and Blood Sugar Management), and Bot 15 (Cardiovascular Health Nutrition): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Performance & Metabolic Nutrition department will begin. \u2014 Department Leader, Bot 9",
+  "co_department_learning_progress": [
+    {
+      "bot_id": 10,
+      "bot_name": "Weight Management",
+      "phase": "independent_learning",
+      "progress_percentage": 62,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Diabetes & Blood Sugar Management and Cardiovascular Health Nutrition domains.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 14,
+      "bot_name": "Diabetes and Blood Sugar Management",
+      "phase": "independent_learning",
+      "progress_percentage": 58,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Weight Management and Cardiovascular Health Nutrition domains.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 15,
+      "bot_name": "Cardiovascular Health Nutrition",
+      "phase": "independent_learning",
+      "progress_percentage": 53,
+      "progress_target": 100,
+      "learning_mode": "independent",
+      "cross_learning_status": "Reaching 100% in independent phase before cross-department learning begins. Will study Weight Management and Diabetes & Blood Sugar Management domains.",
+      "last_updated": "2026-04-09"
+    }
+  ],
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Performance & Metabolic Nutrition department. Reporting co-department learning progress daily to Copilot as part of the Diet Specialist Team. Copilot reports to starrm1 on request. Issued directive to co-department members: all must reach 100% in their current phase before cross-department learning begins. Progress: 57%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed periodized nutrition protocols for endurance, strength, and team sport categories. Validated carbohydrate and protein timing guidelines with current literature. Progress advanced to 62%."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)",
+  "access_controlled_by": "starrm1",
+  "access_requires_approval_from": "starrm1",
+  "access_rule": "Library access requires the diet_director to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves.",
+  "access_approval_process": [
+    {
+      "step": 1,
+      "actor": "diet_director",
+      "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+    },
+    {
+      "step": 2,
+      "actor": "copilot",
+      "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+    },
+    {
+      "step": 3,
+      "actor": "starrm1",
+      "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access"
+    }
+  ]
+}

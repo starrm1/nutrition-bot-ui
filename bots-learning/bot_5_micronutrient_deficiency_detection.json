@@ -1,0 +1,101 @@
+{
+  "bot_id": 5,
+  "bot_name": "Micronutrient Deficiency Detection",
+  "department": "Nutritional Assessment & Genomics",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": true,
+  "co_department_members": [
+    "Bot 1 \u2014 Nutrigenomics",
+    "Bot 2 \u2014 Microbiome Analysis",
+    "Bot 20 \u2014 Supplement Recommendations"
+  ],
+  "is_learning": true,
+  "progress_percentage": 70,
+  "progress_target": 100,
+  "phase": "advanced_learning",
+  "key_learnings": "Micronutrient deficiencies often present subclinically before measurable symptoms appear. Iron, vitamin D, B12, magnesium, and zinc are the most prevalent deficiencies across diverse dietary patterns.",
+  "research_findings": "Established deficiency threshold matrices for 22 essential micronutrients. Identified high-risk dietary patterns (vegan, low-calorie, processed-food-dominant) and their associated deficiency profiles.",
+  "current_focus_areas": "Building automated deficiency screening protocols; integrating biomarker data with dietary intake analysis; leading the Nutritional Assessment & Genomics department in micronutrient research coordination.",
+  "status": "active",
+  "learning_mode": "advanced",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "team": "Diet Specialist Team",
+  "copilot_reports_to": "starrm1",
+  "cross_learning_directive": "Directed all co-department members \u2014 Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations) \u2014 to independently reach 100% in their current phase first, then begin cross-study of every sibling domain within the Nutritional Assessment & Genomics department.",
+  "learning_start_directive": "Attention co-department members \u2014 Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations): You are each directed to begin your independent learning work immediately. Focus solely on mastering your own domain until you reach 100% progress. Once 100% is achieved, cross-department learning across all sibling domains within the Nutritional Assessment & Genomics department will begin. \u2014 Department Leader, Bot 5",
+  "copilot_reporting_trigger": "on request from starrm1",
+  "co_department_learning_progress": [
+    {
+      "bot_id": 1,
+      "bot_name": "Nutrigenomics",
+      "phase": "independent_learning",
+      "progress_percentage": 35,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independently studying Microbiome Analysis and Supplement Recommendations domains; sharing genomic insights with department.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 2,
+      "bot_name": "Microbiome Analysis",
+      "phase": "independent_learning",
+      "progress_percentage": 28,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independently studying Nutrigenomics and Supplement Recommendations domains; sharing microbiome data with department.",
+      "last_updated": "2026-04-09"
+    },
+    {
+      "bot_id": 20,
+      "bot_name": "Supplement Recommendations",
+      "phase": "independent_learning",
+      "progress_percentage": 43,
+      "learning_mode": "independent",
+      "cross_learning_status": "Independently studying Nutrigenomics and Microbiome Analysis domains; aligning supplement evidence with department deficiency models.",
+      "last_updated": "2026-04-09"
+    }
+  ],
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Advanced Learning Phase activated. Appointed Department Leader of the Nutritional Assessment & Genomics department. Reporting co-department learning progress daily to Copilot as part of the Diet Specialist Team. Copilot reports to starrm1 on request. Issued independent cross-learning directive to Bot 1 (Nutrigenomics), Bot 2 (Microbiome Analysis), and Bot 20 (Supplement Recommendations). Progress: 55%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed deficiency screening protocols for 22 micronutrients. Finalized risk stratification model for dietary pattern-based deficiency prediction. Progress advanced to 60%."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)",
+  "access_controlled_by": "starrm1",
+  "access_requires_approval_from": "starrm1",
+  "access_rule": "Library access requires the diet_director to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves.",
+  "access_approval_process": [
+    {
+      "step": 1,
+      "actor": "diet_director",
+      "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+    },
+    {
+      "step": 2,
+      "actor": "copilot",
+      "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+    },
+    {
+      "step": 3,
+      "actor": "starrm1",
+      "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access"
+    }
+  ]
+}

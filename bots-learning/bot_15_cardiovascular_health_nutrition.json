@@ -1,0 +1,75 @@
+{
+  "bot_id": 15,
+  "bot_name": "Cardiovascular Health Nutrition",
+  "team": "Diet Specialist Team",
+  "department": "Performance & Metabolic Nutrition",
+  "department_name_locked": true,
+  "department_name_change_requires_approval_from": "starrm1",
+  "co_department_name_locked": true,
+  "co_department_name_change_requires_approval_from": "starrm1",
+  "is_department_leader": false,
+  "department_leader": "Bot 9 \u2014 Sports Nutrition",
+  "cross_department_learning": [
+    "Weight Management (Bot 10)",
+    "Diabetes and Blood Sugar Management (Bot 14)",
+    "Sports Nutrition (Bot 9 \u2014 Department Leader)"
+  ],
+  "is_learning": true,
+  "progress_percentage": 67,
+  "progress_target": 100,
+  "advancement_condition": "Must reach 100% in current phase before cross-department learning begins and next phase promotion is granted.",
+  "phase": "collaborative_learning",
+  "key_learnings": "Cardiovascular disease risk is modifiable through dietary patterns that reduce LDL cholesterol, blood pressure, triglycerides, and systemic inflammation. Saturated fat, sodium, and trans-fat reduction are primary targets.",
+  "research_findings": "Mediterranean diet adherence reduces cardiovascular event risk by 30% compared to low-fat diet control groups (PREDIMED study). DASH dietary pattern reduces systolic blood pressure by 8-14 mmHg in hypertensive populations.",
+  "current_focus_areas": "Building heart-healthy dietary protocols aligned with AHA/ACC guidelines; developing lipid management nutrition plans; researching omega-3 and plant sterol supplementation for LDL reduction.",
+  "status": "active",
+  "learning_mode": "collaborative",
+  "reported_to_copilot": true,
+  "daily_report_schedule": "every day",
+  "last_reported_date": "2026-04-09",
+  "reporting_to": "copilot",
+  "copilot_reports_to": "starrm1",
+  "learning_log": [
+    {
+      "date": "2026-04-09",
+      "entry": "Assigned to the Performance & Metabolic Nutrition department under Department Leader Bot 9 (Sports Nutrition). Received learning_start_directive: begin independent learning immediately and reach 100% before cross-department study begins. Reporting daily to Copilot as part of the Diet Specialist Team. Progress: 53%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Progress update: Completed AHA/ACC-aligned cardiovascular dietary protocol frameworks. Validated Mediterranean and DASH dietary pattern implementation guidelines. Progress advanced to 58%."
+    },
+    {
+      "date": "2026-04-09",
+      "entry": "Phase transition: advanced from 'independent_learning' to 'collaborative_learning'. Bot 15 now entering collaborative learning phase. Progress: 67%."
+    }
+  ],
+  "phase_order": [
+    "independent_learning",
+    "collaborative_learning",
+    "advanced_learning"
+  ],
+  "role": "Library Bot",
+  "is_library_bot": true,
+  "purpose": "Knowledge library resource available for all departments to reference and use",
+  "available_to": "All departments (Bots 22-30)",
+  "access_controlled_by": "starrm1",
+  "access_requires_approval_from": "starrm1",
+  "access_rule": "Library access requires the diet_director to present a case to copilot, who then presents it to starrm1. starrm1 is the final approver. Access is off by default until starrm1 approves.",
+  "access_approval_process": [
+    {
+      "step": 1,
+      "actor": "diet_director",
+      "action": "Prepares and submits a case to copilot explaining why a department needs access to the library bots"
+    },
+    {
+      "step": 2,
+      "actor": "copilot",
+      "action": "Reviews the case and presents it to starrm1 on behalf of the diet_director"
+    },
+    {
+      "step": 3,
+      "actor": "starrm1",
+      "action": "Final approver \u2014 reviews the case presented by copilot and grants or denies library access"
+    }
+  ]
+}
