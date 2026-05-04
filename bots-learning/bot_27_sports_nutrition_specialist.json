@@ -1,6 +1,7 @@
 {
   "bot_id": "bot_27",
   "bot_name": "sports_nutrition_specialist",
+  "name": "Sports Nutrition Specialist Department Head",
   "department": "sports_nutrition_specialist",
   "role": "department_head",
   "progress_percentage": 95,

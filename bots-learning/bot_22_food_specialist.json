@@ -1,6 +1,7 @@
 {
   "bot_id": "bot_22",
   "bot_name": "food_specialist",
+  "name": "Food Specialist Department Head",
   "department": "food_specialist",
   "role": "department_head",
   "progress_percentage": 95,

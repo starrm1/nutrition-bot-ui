@@ -1,6 +1,7 @@
 {
   "bot_id": "bot_28",
   "bot_name": "weight_management_specialist",
+  "name": "Weight Management Specialist Department Head",
   "department": "weight_management_specialist",
   "role": "department_head",
   "progress_percentage": 95,

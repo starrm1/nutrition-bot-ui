@@ -1,6 +1,7 @@
 {
   "bot_id": "bot_25",
   "bot_name": "texture_specialist",
+  "name": "Texture Specialist Department Head",
   "department": "texture_specialist",
   "role": "department_head",
   "progress_percentage": 95,
