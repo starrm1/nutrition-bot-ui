@@ -2,6 +2,7 @@
   "bot_id": "bot_29",
   "bot_name": "gut_health_specialist",
   "name": "Gut Health Specialist Department Head",
+  "name_locked": true,
   "department": "gut_health_specialist",
   "role": "department_head",
   "progress_percentage": 95,

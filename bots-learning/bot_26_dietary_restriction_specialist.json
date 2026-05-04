@@ -2,6 +2,7 @@
   "bot_id": "bot_26",
   "bot_name": "dietary_restriction_specialist",
   "name": "Dietary Restriction Specialist Department Head",
+  "name_locked": true,
   "department": "dietary_restriction_specialist",
   "role": "department_head",
   "progress_percentage": 95,

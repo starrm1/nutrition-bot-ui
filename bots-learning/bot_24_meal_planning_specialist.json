@@ -2,6 +2,7 @@
   "bot_id": "bot_24",
   "bot_name": "meal_planning_specialist",
   "name": "Meal Planning Specialist Department Head",
+  "name_locked": true,
   "department": "meal_planning_specialist",
   "role": "department_head",
   "progress_percentage": 95,
