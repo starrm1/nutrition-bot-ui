@@ -1,0 +1,32 @@
+{
+  "bot_id": "bot_29",
+  "bot_name": "gut_health_specialist",
+  "department": "gut_health_specialist",
+  "role": "department_head",
+  "progress_percentage": 95,
+  "ultimate_learning_goal": 100,
+  "three_hour_target_95": true,
+  "three_hour_target_deadline": "2026-04-27T01:21:33Z",
+  "learning_target_percentage": 90,
+  "learning_deadline_4hr": true,
+  "learning_deadline_by": "2026-04-26T08:54:42Z",
+  "is_learning": true,
+  "learning_support_active": true,
+  "support_provided_by": "diet_director_bot_21_and_copilot",
+  "dept_head_2hr_bot_access_authorized": true,
+  "diet_director_access_number": 789,
+  "library_access_number": 505,
+  "library_open_for_departments": false,
+  "library_access_status": "closed",
+  "library_closed": true,
+  "require_new_access_number_next_time": true,
+  "director_granted_library_bots": ["bot_2_microbiome_analysis", "bot_11_sleep_nutrition_correlation"],
+  "key_learnings": "Gut microbiome health, digestive nutrition, and probiotic/prebiotic strategies.",
+  "current_focus_areas": "Microbiome diversity, gut-brain axis, and fiber-based dietary support.",
+  "learning_log": [
+    "2026-04-26: Boosted to 95% with Director and Copilot support to meet 3-hour deadline.",
+    "2026-04-26: Director granted library access (number 789) to assigned library bots.",
+    "2026-04-26: dept_head_2hr_bot_access_authorized set to true — all co/sub bots at 90%+."
+  ],
+  "last_reported_date": "2026-04-26"
+}
