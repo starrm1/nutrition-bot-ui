@@ -3,6 +3,7 @@
   "bot_name": "texture_specialist",
   "name": "Texture Specialist Department Head",
   "name_locked": true,
+  "name_locked_date": "2026-05-04",
   "department": "texture_specialist",
   "role": "department_head",
   "progress_percentage": 95,
@@ -22,13 +23,15 @@
   "library_access_status": "closed",
   "library_closed": true,
   "require_new_access_number_next_time": true,
-  "director_granted_library_bots": ["bot_20_food_texture"],
+  "director_granted_library_bots": [
+    "bot_20_food_texture"
+  ],
   "key_learnings": "Food texture modification, dysphagia-safe diets, and sensory nutrition evaluation.",
   "current_focus_areas": "Texture-modified foods, swallowing safety, and palatability assessment.",
   "learning_log": [
     "2026-04-26: Boosted to 95% with Director and Copilot support to meet 3-hour deadline.",
     "2026-04-26: Director granted library access (number 789) to assigned library bots.",
-    "2026-04-26: dept_head_2hr_bot_access_authorized set to true — all co/sub bots at 90%+."
+    "2026-04-26: dept_head_2hr_bot_access_authorized set to true \u2014 all co/sub bots at 90%+."
   ],
   "last_reported_date": "2026-04-26"
 }
