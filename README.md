@@ -1,6 +1,24 @@
 # nutrition-bot-ui
 
-## How to Ask Questions — Director Routing
+## How to Ask a Question
+
+You have two ways to submit a nutrition question:
+
+### Option 1 — GitHub Issue (easiest)
+1. Click **Issues** at the top of this repository
+2. Click **New Issue**
+3. Choose the **"Nutrition Question"** template
+4. Fill in your question and any optional context
+5. Click **Submit new issue**
+
+The Diet Director will read your question, route it to the right department, and the answer will be posted in the issue thread.
+
+### Option 2 — questions/inbox.json (for direct bot use)
+Open [`questions/inbox.json`](questions/inbox.json) and add an entry to the `questions` array with `"status": "pending"`. The Director will pick it up, route it, and update the entry with the answer.
+
+---
+
+## How Questions Are Routed — Director Routing
 
 All questions go through the **Diet Director (bot_21)** first. The Director reads your question, identifies the topic, and automatically forwards it to the right department head. The department head works with their co and sub bots to answer it, then the answer comes back to you through the Director.
 

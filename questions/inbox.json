@@ -1,0 +1,24 @@
+{
+  "inbox_description": "Nutrition question queue. Each question is submitted here (or via the GitHub Issue template), routed by the Diet Director (bot_21) to the matching department head, answered, and logged below.",
+  "how_to_submit": "Open a GitHub Issue using the 'Nutrition Question' template, or add an entry directly to the 'questions' array below with status set to 'pending'.",
+  "routing_handled_by": "bot_21 (Diet Director)",
+  "questions": [
+    {
+      "question_id": "q_example_001",
+      "question": "What foods are highest in iron and how can I absorb them better?",
+      "submitted_date": "2026-05-06",
+      "topic_hint": "nutrients",
+      "status": "example",
+      "routed_to": "bot_23 (Nutrient Specialist Department Head)",
+      "answer": "Example entry — replace with real questions. Iron-rich foods include red meat, lentils, spinach, and tofu. Pair them with vitamin C (e.g. citrus, bell peppers) to boost absorption. Avoid tea and coffee with iron-rich meals as tannins reduce absorption.",
+      "answered_date": "2026-05-06"
+    }
+  ],
+  "status_values": {
+    "pending": "Question submitted, waiting to be routed",
+    "routed": "Director has forwarded the question to the correct department",
+    "answered": "Department has returned an answer",
+    "example": "Example entry for reference only"
+  },
+  "last_updated": "2026-05-06"
+}
