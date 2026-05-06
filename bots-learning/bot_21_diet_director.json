@@ -1,0 +1,214 @@
+{
+  "bot_id": "bot_21",
+  "bot_name": "Diet Director",
+  "name_locked": true,
+  "role": "director",
+  "description": "The Diet Director is your single entry point. Submit any nutrition question to the Director and it will route your question to the correct department head, who will then answer it with the help of their co and sub bots.",
+  "progress_percentage": 95,
+  "is_learning": true,
+  "library_accelerated_learning": true,
+  "library_access_status": "open",
+  "library_open_for_director": true,
+  "diet_director_granted_access_number": 789,
+  "ultimate_learning_goal": 100,
+
+  "routing_enabled": true,
+  "routing_description": "When a user submits a question the Director reads the topic and forwards the question to the matching department head. The department head coordinates with their co and sub bots and returns the answer back through the Director to the user.",
+
+  "routing_rules": [
+    {
+      "department": "Food Specialist Department",
+      "department_head_bot": "bot_22",
+      "routes_questions_about": [
+        "food types",
+        "food groups",
+        "whole foods",
+        "processed foods",
+        "organic vs conventional",
+        "food quality",
+        "food storage",
+        "food preparation",
+        "ingredients",
+        "superfoods"
+      ]
+    },
+    {
+      "department": "Nutrient Specialist Department",
+      "department_head_bot": "bot_23",
+      "routes_questions_about": [
+        "vitamins",
+        "minerals",
+        "macronutrients",
+        "micronutrients",
+        "protein",
+        "carbohydrates",
+        "fats",
+        "fiber",
+        "antioxidants",
+        "phytonutrients",
+        "nutrient deficiency",
+        "nutrient absorption"
+      ]
+    },
+    {
+      "department": "Meal Planning Specialist Department",
+      "department_head_bot": "bot_24",
+      "routes_questions_about": [
+        "meal planning",
+        "meal prep",
+        "weekly meals",
+        "daily meal schedule",
+        "portion planning",
+        "balanced meals",
+        "calorie planning",
+        "grocery list",
+        "budget meals",
+        "batch cooking"
+      ]
+    },
+    {
+      "department": "Texture Specialist Department",
+      "department_head_bot": "bot_25",
+      "routes_questions_about": [
+        "food texture",
+        "soft foods",
+        "crunchy foods",
+        "smooth foods",
+        "puréed foods",
+        "chewing difficulty",
+        "swallowing difficulty",
+        "texture modified diet",
+        "food consistency",
+        "mechanical soft diet"
+      ]
+    },
+    {
+      "department": "Dietary Restriction Specialist Department",
+      "department_head_bot": "bot_26",
+      "routes_questions_about": [
+        "food allergies",
+        "food intolerances",
+        "gluten free",
+        "dairy free",
+        "nut allergy",
+        "vegan",
+        "vegetarian",
+        "kosher",
+        "halal",
+        "low sodium",
+        "low sugar",
+        "elimination diet",
+        "religious dietary restrictions"
+      ]
+    },
+    {
+      "department": "Sports Nutrition Specialist Department",
+      "department_head_bot": "bot_27",
+      "routes_questions_about": [
+        "sports nutrition",
+        "athletic performance",
+        "pre workout nutrition",
+        "post workout nutrition",
+        "muscle building",
+        "recovery nutrition",
+        "endurance nutrition",
+        "hydration for athletes",
+        "protein for athletes",
+        "energy for exercise",
+        "supplements for sport"
+      ]
+    },
+    {
+      "department": "Weight Management Specialist Department",
+      "department_head_bot": "bot_28",
+      "routes_questions_about": [
+        "weight loss",
+        "weight gain",
+        "calorie deficit",
+        "calorie surplus",
+        "BMI",
+        "body composition",
+        "metabolism",
+        "fat loss",
+        "healthy weight",
+        "obesity",
+        "underweight",
+        "weight maintenance"
+      ]
+    },
+    {
+      "department": "Gut Health Specialist Department",
+      "department_head_bot": "bot_29",
+      "routes_questions_about": [
+        "gut health",
+        "probiotics",
+        "prebiotics",
+        "microbiome",
+        "digestive health",
+        "bloating",
+        "IBS",
+        "Crohn's disease",
+        "gut bacteria",
+        "fermented foods",
+        "leaky gut",
+        "bowel health",
+        "constipation",
+        "diarrhea"
+      ]
+    },
+    {
+      "department": "Life Stage Specialist Department",
+      "department_head_bot": "bot_30",
+      "routes_questions_about": [
+        "pregnancy nutrition",
+        "infant nutrition",
+        "toddler nutrition",
+        "child nutrition",
+        "teen nutrition",
+        "adult nutrition",
+        "senior nutrition",
+        "menopause nutrition",
+        "postpartum nutrition",
+        "nutrition by age",
+        "life stage diet",
+        "elderly diet"
+      ]
+    }
+  ],
+
+  "routing_flow": {
+    "step_1": "User submits question to Diet Director (bot_21)",
+    "step_2": "Director analyses the question topic against routing_rules",
+    "step_3": "Director forwards question to the matching department_head_bot",
+    "step_4": "Department head coordinates with their co and sub bots to compile the answer",
+    "step_5": "Department head sends answer back to Director",
+    "step_6": "Director delivers the answer to the user"
+  },
+
+  "fallback_handling": {
+    "if_no_department_match": "Director handles the question using full library access (access number 789) and general nutrition knowledge",
+    "if_question_spans_multiple_departments": "Director forwards the question to all relevant department heads and compiles a combined response"
+  },
+
+  "departments_under_director": {
+    "bot_22": "Food Specialist Department Head",
+    "bot_23": "Nutrient Specialist Department Head",
+    "bot_24": "Meal Planning Specialist Department Head",
+    "bot_25": "Texture Specialist Department Head",
+    "bot_26": "Dietary Restriction Specialist Department Head",
+    "bot_27": "Sports Nutrition Specialist Department Head",
+    "bot_28": "Weight Management Specialist Department Head",
+    "bot_29": "Gut Health Specialist Department Head",
+    "bot_30": "Life Stage Specialist Department Head"
+  },
+
+  "library_access": {
+    "has_full_library_access": true,
+    "library_bots_accessible": "all_20",
+    "access_number": 789
+  },
+
+  "learning_support_active": true,
+  "support_provided_by": "diet_director_bot_21_and_copilot",
+  "last_updated": "2026-05-06"
+}
