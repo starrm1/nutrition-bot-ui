@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Option B – Dashboard-Heavy (Dark Mode) | Nutrition Bot UI</title>
+  <style>
+    /* ============================================================
+       OPTION B – DASHBOARD-HEAVY / DARK MODE
+       Color palette  : BG #0D1117 · Surface #161B22 · Border #30363D
+                        Text #C9D1D9 · Muted #8B949E · Accent #58A6FF (blue)
+                        Green #3FB950 · Yellow #D29922 · Red #F85149
+       Typography     : JetBrains Mono / monospace for metrics; system sans for labels
+       Design notes   : Data-dense, dark, chart-forward, professional dashboard
+    ============================================================ */
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0D1117;
+      color: #C9D1D9;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* ── TOP NAV ────────────────────────────────────────────── */
+    .nav {
+      background: #161B22;
+      border-bottom: 1px solid #30363D;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      gap: 24px;
+    }
+    .nav-brand {
+      font-size: 15px;
+      font-weight: 700;
+      color: #58A6FF;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 1px;
+    }
+    .nav-tag {
+      background: #21262D;
+      border: 1px solid #30363D;
+      color: #8B949E;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-left: -16px;
+    }
+    .nav-links {
+      display: flex; gap: 4px; list-style: none; margin-left: 8px;
+    }
+    .nav-links a {
+      text-decoration: none; color: #8B949E; font-size: 13px;
+      padding: 6px 12px; border-radius: 6px; transition: background .15s, color .15s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      background: #21262D; color: #C9D1D9;
+    }
+    .nav-links a.active { color: #58A6FF; }
+    .nav-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+    .status-pill {
+      display: flex; align-items: center; gap: 6px;
+      background: #21262D; border: 1px solid #30363D;
+      padding: 4px 12px; border-radius: 20px; font-size: 11px; color: #3FB950;
+    }
+    .pulse {
+      width: 7px; height: 7px; border-radius: 50%; background: #3FB950;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+    .avatar {
+      width: 30px; height: 30px; border-radius: 50%;
+      background: linear-gradient(135deg, #58A6FF, #3FB950);
+      display: flex; align-items: center; justify-content: center;
+      color: #0D1117; font-size: 11px; font-weight: 700;
+    }
+
+    /* ── LAYOUT ─────────────────────────────────────────────── */
+    .layout { display: flex; min-height: calc(100vh - 54px); }
+
+    /* ── SIDEBAR ─────────────────────────────────────────────── */
+    .sidebar {
+      width: 200px; background: #161B22;
+      border-right: 1px solid #30363D; padding: 16px 0; flex-shrink: 0;
+    }
+    .sidebar-section { margin-bottom: 20px; }
+    .sidebar-label {
+      font-size: 10px; font-weight: 600; color: #484F58;
+      text-transform: uppercase; letter-spacing: .8px; padding: 0 16px 6px;
+    }
+    .sidebar-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 8px 16px; cursor: pointer; color: #8B949E; font-size: 12px;
+      transition: background .15s; text-decoration: none;
+    }
+    .sidebar-item:hover { background: #21262D; color: #C9D1D9; }
+    .sidebar-item.active { background: #21262D; color: #58A6FF; }
+    .sidebar-badge {
+      margin-left: auto; background: #58A6FF22; color: #58A6FF;
+      font-size: 10px; padding: 1px 6px; border-radius: 10px; font-weight: 600;
+    }
+    .sidebar-badge.green { background: #3FB95022; color: #3FB950; }
+    .sidebar-badge.red   { background: #F8514922; color: #F85149; }
+
+    /* ── MAIN ───────────────────────────────────────────────── */
+    .main { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; }
+
+    /* ── TOP METRICS ROW ─────────────────────────────────────── */
+    .metrics-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+    .metric {
+      background: #161B22; border: 1px solid #30363D; border-radius: 6px;
+      padding: 14px 16px;
+    }
+    .metric-label { font-size: 10px; color: #8B949E; text-transform: uppercase; letter-spacing: .5px; }
+    .metric-value {
+      font-size: 26px; font-weight: 700; margin: 4px 0 2px;
+      font-family: 'Courier New', monospace; color: #C9D1D9;
+    }
+    .metric-sub { font-size: 10px; }
+    .green { color: #3FB950; }
+    .yellow { color: #D29922; }
+    .red { color: #F85149; }
+    .blue { color: #58A6FF; }
+
+    /* ── CHARTS ROW ─────────────────────────────────────────── */
+    .charts-row { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+    .panel {
+      background: #161B22; border: 1px solid #30363D; border-radius: 8px; padding: 16px 18px;
+    }
+    .panel-header {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;
+    }
+    .panel-title { font-size: 13px; font-weight: 600; color: #C9D1D9; }
+    .panel-meta { font-size: 11px; color: #8B949E; }
+    .btn {
+      padding: 5px 12px; border-radius: 5px; font-size: 11px; cursor: pointer;
+      border: 1px solid #30363D; background: #21262D; color: #C9D1D9; transition: border-color .15s;
+    }
+    .btn:hover { border-color: #58A6FF; color: #58A6FF; }
+    .btn-accent { background: #238636; border-color: #2EA043; color: #fff; }
+    .btn-accent:hover { background: #2EA043; border-color: #3FB950; }
+
+    /* SVG Chart simulation */
+    .chart-container {
+      position: relative; width: 100%; height: 140px;
+      background: #0D1117; border-radius: 6px; overflow: hidden;
+    }
+    .chart-bars { display: flex; align-items: flex-end; height: 100%; gap: 3px; padding: 10px 10px 4px; }
+    .bar {
+      flex: 1; border-radius: 2px 2px 0 0;
+      background: linear-gradient(to top, #58A6FF44, #58A6FF);
+      min-height: 4px; transition: height .3s;
+    }
+    .bar.green-bar { background: linear-gradient(to top, #3FB95044, #3FB950); }
+    .bar.yellow-bar { background: linear-gradient(to top, #D2992244, #D29922); }
+    .bar.red-bar { background: linear-gradient(to top, #F8514944, #F85149); }
+    .chart-labels {
+      display: flex; justify-content: space-between;
+      padding: 4px 10px 0; font-size: 9px; color: #484F58;
+    }
+
+    /* Donut chart mockup */
+    .donut-wrap { display: flex; align-items: center; gap: 16px; }
+    .donut {
+      width: 100px; height: 100px; border-radius: 50%;
+      background: conic-gradient(
+        #3FB950 0% 42%, #58A6FF 42% 63%, #D29922 63% 84%, #F85149 84% 95%, #484F58 95% 100%
+      );
+      flex-shrink: 0;
+      position: relative;
+    }
+    .donut::after {
+      content: '19'; position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      width: 56px; height: 56px; background: #161B22; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 700; color: #C9D1D9;
+      font-family: 'Courier New', monospace;
+    }
+    .legend { font-size: 11px; display: flex; flex-direction: column; gap: 6px; }
+    .legend-item { display: flex; align-items: center; gap: 6px; }
+    .legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ── BOT TABLE ───────────────────────────────────────────── */
+    .bot-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .bot-table th {
+      text-align: left; padding: 8px 10px; border-bottom: 1px solid #30363D;
+      color: #8B949E; font-size: 10px; text-transform: uppercase; letter-spacing: .5px;
+    }
+    .bot-table td { padding: 8px 10px; border-bottom: 1px solid #21262D; }
+    .bot-table tr:hover td { background: #21262D; }
+    .status-dot {
+      display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 6px;
+    }
+    .progress-mini {
+      background: #21262D; border-radius: 3px; height: 4px; width: 80px; overflow: hidden;
+    }
+    .progress-mini-fill {
+      height: 4px; border-radius: 3px; background: #58A6FF;
+    }
+    .mono { font-family: 'Courier New', monospace; }
+
+    /* ── THREE-COL BOTTOM ────────────────────────────────────── */
+    .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+    /* Case list */
+    .case-row {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 0; border-bottom: 1px solid #21262D;
+    }
+    .case-row:last-child { border-bottom: none; }
+    .case-num { font-family: 'Courier New', monospace; font-size: 11px; color: #8B949E; }
+    .case-title { font-size: 12px; margin-bottom: 2px; }
+    .case-pills { display: flex; gap: 4px; }
+    .pill {
+      font-size: 9px; padding: 1px 6px; border-radius: 10px; font-weight: 600;
+    }
+    .pill-open   { background: #3FB95022; color: #3FB950; border: 1px solid #3FB95055; }
+    .pill-review { background: #D2992222; color: #D29922; border: 1px solid #D2992255; }
+    .pill-closed { background: #48495822; color: #8B949E; border: 1px solid #30363D; }
+
+    /* Timeline */
+    .timeline-item {
+      display: flex; gap: 10px; padding: 6px 0; border-left: 1px solid #30363D;
+      margin-left: 6px; padding-left: 12px; position: relative;
+    }
+    .timeline-item::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%; background: #58A6FF;
+      position: absolute; left: -4px; top: 10px;
+    }
+    .tl-time { font-size: 10px; color: #8B949E; white-space: nowrap; }
+    .tl-text { font-size: 11px; }
+
+    /* Control grid */
+    .ctrl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .ctrl-tile {
+      background: #0D1117; border: 1px solid #30363D; border-radius: 6px;
+      padding: 10px 12px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .ctrl-name { font-size: 11px; }
+    .mini-toggle {
+      width: 32px; height: 18px; border-radius: 9px; background: #30363D;
+      position: relative; cursor: pointer; flex-shrink: 0;
+    }
+    .mini-toggle.on { background: #238636; }
+    .mini-toggle::after {
+      content: ''; width: 14px; height: 14px; background: #8B949E; border-radius: 50%;
+      position: absolute; top: 2px; left: 2px; transition: left .2s;
+    }
+    .mini-toggle.on::after { left: 16px; background: #fff; }
+
+    /* Color doc */
+    .palette-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .swatch { width: 36px; height: 36px; border-radius: 6px; }
+    .swatch-label { font-size: 9px; color: #8B949E; text-align: center; margin-top: 2px; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <span class="nav-brand">NutriBot<span class="blue">›</span>OS</span>
+  <span class="nav-tag">v2.1.0</span>
+  <ul class="nav-links">
+    <li><a href="#" class="active">Overview</a></li>
+    <li><a href="#">Bots</a></li>
+    <li><a href="#">Cases</a></li>
+    <li><a href="#">Reports</a></li>
+    <li><a href="#">Logs</a></li>
+    <li><a href="#">Config</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="status-pill"><span class="pulse"></span>Systems Nominal</div>
+    <div class="avatar">SM</div>
+  </div>
+</nav>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-label">Monitor</div>
+      <a class="sidebar-item active" href="#">⊞ Overview <span class="sidebar-badge">Live</span></a>
+      <a class="sidebar-item" href="#">🤖 Bot Fleet <span class="sidebar-badge green">19</span></a>
+      <a class="sidebar-item" href="#">📈 Metrics</a>
+      <a class="sidebar-item" href="#">🔔 Alerts <span class="sidebar-badge red">3</span></a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-label">Operations</div>
+      <a class="sidebar-item" href="#">📁 Cases</a>
+      <a class="sidebar-item" href="#">📊 Reports</a>
+      <a class="sidebar-item" href="#">📅 Schedule</a>
+      <a class="sidebar-item" href="#">🔗 Integrations</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-label">System</div>
+      <a class="sidebar-item" href="#">⚙️ Control</a>
+      <a class="sidebar-item" href="#">🛡️ Security</a>
+      <a class="sidebar-item" href="#">🗄️ Storage</a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- Metrics Row -->
+    <div class="metrics-row">
+      <div class="metric">
+        <div class="metric-label">Active Bots</div>
+        <div class="metric-value blue">14</div>
+        <div class="metric-sub green">↑ +2 today</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Idle Bots</div>
+        <div class="metric-value" style="color:#8B949E">03</div>
+        <div class="metric-sub" style="color:#8B949E">awaiting tasks</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Error Bots</div>
+        <div class="metric-value red">02</div>
+        <div class="metric-sub red">↓ retry queued</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Open Cases</div>
+        <div class="metric-value yellow">38</div>
+        <div class="metric-sub yellow">↑ +5 new</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Reports</div>
+        <div class="metric-value green">127</div>
+        <div class="metric-sub green">↑ +12 wk</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Uptime</div>
+        <div class="metric-value green">99.8%</div>
+        <div class="metric-sub" style="color:#8B949E">30-day avg</div>
+      </div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="charts-row">
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">Bot Activity — Last 14 Days</div>
+            <div class="panel-meta">Tasks processed per day across all bots</div>
+          </div>
+          <button class="btn">7D</button>
+        </div>
+        <div class="chart-container">
+          <div class="chart-bars">
+            <div class="bar" style="height:40%"></div>
+            <div class="bar" style="height:55%"></div>
+            <div class="bar" style="height:48%"></div>
+            <div class="bar" style="height:62%"></div>
+            <div class="bar" style="height:70%"></div>
+            <div class="bar" style="height:58%"></div>
+            <div class="bar yellow-bar" style="height:45%"></div>
+            <div class="bar" style="height:80%"></div>
+            <div class="bar" style="height:76%"></div>
+            <div class="bar green-bar" style="height:90%"></div>
+            <div class="bar" style="height:84%"></div>
+            <div class="bar" style="height:88%"></div>
+            <div class="bar red-bar" style="height:35%"></div>
+            <div class="bar" style="height:72%"></div>
+          </div>
+          <div class="chart-labels">
+            <span>Mar 11</span><span>Mar 13</span><span>Mar 15</span>
+            <span>Mar 17</span><span>Mar 19</span><span>Mar 21</span>
+            <span>Mar 23</span><span>Mar 25</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Bot Status Distribution</div>
+          <div class="panel-meta">19 total bots</div>
+        </div>
+        <div class="donut-wrap" style="justify-content:center;padding-top:8px;">
+          <div class="donut"></div>
+          <div class="legend">
+            <div class="legend-item"><div class="legend-dot" style="background:#3FB950"></div><span>Active <strong class="green">8</strong></span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#58A6FF"></div><span>Busy <strong class="blue">4</strong></span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#D29922"></div><span>Idle <strong class="yellow">4</strong></span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#F85149"></div><span>Error <strong class="red">2</strong></span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#484F58"></div><span>Off <span style="color:#8B949E">1</span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bot Table -->
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Bot Fleet — All 19 Bots</div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn">Filter</button>
+          <button class="btn">Sort</button>
+          <button class="btn btn-accent">+ Deploy Bot</button>
+        </div>
+      </div>
+      <table class="bot-table">
+        <thead>
+          <tr>
+            <th>Bot ID</th><th>Status</th><th>Current Task</th>
+            <th>Load</th><th>Tasks Today</th><th>Last Active</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="mono">NutriBot-01</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Meal plan analysis</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:78%;background:#3FB950"></div></div></td><td class="mono">42</td><td class="mono">0m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-02</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Calorie tracking</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:55%"></div></div></td><td class="mono">38</td><td class="mono">1m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-03</td><td><span class="status-dot" style="background:#D29922"></span><span class="yellow">Busy</span></td><td>Processing intake</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:92%;background:#D29922"></div></div></td><td class="mono">57</td><td class="mono">0m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-04</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Macro analysis</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:61%"></div></div></td><td class="mono">29</td><td class="mono">2m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-05</td><td><span class="status-dot" style="background:#8B949E"></span><span style="color:#8B949E">Idle</span></td><td>—</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:0%"></div></div></td><td class="mono">12</td><td class="mono">18m ago</td><td><button class="btn btn-accent">▶</button></td></tr>
+          <tr><td class="mono">NutriBot-06</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Report gen.</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:44%"></div></div></td><td class="mono">21</td><td class="mono">0m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-07</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Dietary assessment</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:70%"></div></div></td><td class="mono">33</td><td class="mono">1m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-08</td><td><span class="status-dot" style="background:#F85149"></span><span class="red">Error</span></td><td>Retry queue</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:5%;background:#F85149"></div></div></td><td class="mono">3</td><td class="mono">9m ago</td><td><button class="btn" style="color:#F85149;border-color:#F85149">↺</button></td></tr>
+          <tr><td class="mono">NutriBot-09</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Micronutrient scan</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:68%"></div></div></td><td class="mono">45</td><td class="mono">0m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-10</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Allergy mapping</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:52%"></div></div></td><td class="mono">28</td><td class="mono">3m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-11</td><td><span class="status-dot" style="background:#D29922"></span><span class="yellow">Busy</span></td><td>Data ingestion</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:95%;background:#D29922"></div></div></td><td class="mono">61</td><td class="mono">0m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-12</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Trend analysis</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:40%"></div></div></td><td class="mono">19</td><td class="mono">5m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-13</td><td><span class="status-dot" style="background:#8B949E"></span><span style="color:#8B949E">Idle</span></td><td>—</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:0%"></div></div></td><td class="mono">8</td><td class="mono">32m ago</td><td><button class="btn btn-accent">▶</button></td></tr>
+          <tr><td class="mono">NutriBot-14</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Protein analysis</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:74%"></div></div></td><td class="mono">37</td><td class="mono">1m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-15</td><td><span class="status-dot" style="background:#58A6FF"></span><span class="blue">Busy</span></td><td>Hydration tracking</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:88%;background:#58A6FF"></div></div></td><td class="mono">53</td><td class="mono">0m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-16</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Vitamin monitor</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:60%"></div></div></td><td class="mono">31</td><td class="mono">2m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-17</td><td><span class="status-dot" style="background:#D29922"></span><span class="yellow">Busy</span></td><td>Batch processing</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:99%;background:#D29922"></div></div></td><td class="mono">72</td><td class="mono">0m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-18</td><td><span class="status-dot" style="background:#3FB950"></span><span class="green">Active</span></td><td>Supplement review</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:47%"></div></div></td><td class="mono">26</td><td class="mono">4m ago</td><td><button class="btn">⏸</button></td></tr>
+          <tr><td class="mono">NutriBot-19</td><td><span class="status-dot" style="background:#F85149"></span><span class="red">Error</span></td><td>Connection timeout</td><td><div class="progress-mini"><div class="progress-mini-fill" style="width:2%;background:#F85149"></div></div></td><td class="mono">1</td><td class="mono">44m ago</td><td><button class="btn" style="color:#F85149;border-color:#F85149">↺</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bottom 3-col -->
+    <div class="three-col">
+
+      <!-- Cases -->
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Case Management</div>
+          <button class="btn btn-accent" style="font-size:10px;padding:4px 8px">+ New</button>
+        </div>
+        <div class="case-row">
+          <div>
+            <div class="case-title">Patient #4821 – Low iron deficiency</div>
+            <div class="case-pills"><span class="pill pill-open">Open</span><span class="case-num">Bot-03</span></div>
+          </div>
+        </div>
+        <div class="case-row">
+          <div>
+            <div class="case-title">Patient #4735 – Diet plan revision</div>
+            <div class="case-pills"><span class="pill pill-review">Review</span><span class="case-num">Bot-07</span></div>
+          </div>
+        </div>
+        <div class="case-row">
+          <div>
+            <div class="case-title">Patient #4899 – Diabetes type-2</div>
+            <div class="case-pills"><span class="pill pill-open">Open</span><span class="case-num">Bot-01</span></div>
+          </div>
+        </div>
+        <div class="case-row">
+          <div>
+            <div class="case-title">Patient #4612 – Vitamin D deficit</div>
+            <div class="case-pills"><span class="pill pill-review">Review</span><span class="case-num">Bot-09</span></div>
+          </div>
+        </div>
+        <div class="case-row">
+          <div>
+            <div class="case-title">Patient #4501 – Follow-up complete</div>
+            <div class="case-pills"><span class="pill pill-closed">Closed</span><span class="case-num">Bot-12</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity Timeline -->
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Activity Feed</div>
+          <span class="panel-meta">Live</span>
+        </div>
+        <div class="timeline-item"><span class="tl-time">13:17</span><div class="tl-text">NutriBot-11 started batch #88</div></div>
+        <div class="timeline-item"><div class="tl-time">13:14</div><div class="tl-text">Report W12 generated ✓</div></div>
+        <div class="timeline-item"><div class="tl-time">13:10</div><div class="tl-text">Case #4899 assigned to Bot-01</div></div>
+        <div class="timeline-item" style="--dot:#F85149"><div class="tl-time">13:08</div><div class="tl-text red">NutriBot-19 connection timeout</div></div>
+        <div class="timeline-item"><div class="tl-time">13:05</div><div class="tl-text">Backup completed (14.2 GB)</div></div>
+        <div class="timeline-item"><div class="tl-time">13:02</div><div class="tl-text">NutriBot-13 entered idle mode</div></div>
+        <div class="timeline-item"><div class="tl-time">12:58</div><div class="tl-text">Vitamin D report submitted</div></div>
+      </div>
+
+      <!-- Control Panel -->
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">Control Panel</div>
+        </div>
+        <div class="ctrl-grid">
+          <div class="ctrl-tile"><span class="ctrl-name">Auto-assign</span><div class="mini-toggle on"></div></div>
+          <div class="ctrl-tile"><span class="ctrl-name">Scheduled Rpt.</span><div class="mini-toggle on"></div></div>
+          <div class="ctrl-tile"><span class="ctrl-name">Alerts</span><div class="mini-toggle on"></div></div>
+          <div class="ctrl-tile"><span class="ctrl-name">Maintenance</span><div class="mini-toggle"></div></div>
+          <div class="ctrl-tile"><span class="ctrl-name">Auto Backup</span><div class="mini-toggle on"></div></div>
+          <div class="ctrl-tile"><span class="ctrl-name">Beta Mode</span><div class="mini-toggle"></div></div>
+          <div class="ctrl-tile"><span class="ctrl-name">Debug Logs</span><div class="mini-toggle"></div></div>
+          <div class="ctrl-tile"><span class="ctrl-name">Dark Theme</span><div class="mini-toggle on"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design Spec -->
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title">Design Specification – Option B (Dashboard-Heavy / Dark Mode)</div>
+      </div>
+      <div style="font-size:11px;color:#8B949E;margin-bottom:8px;"><strong style="color:#C9D1D9">Typography:</strong> System sans-serif for labels · JetBrains Mono / Courier for metrics and IDs</div>
+      <div style="font-size:11px;color:#8B949E;margin-bottom:8px;"><strong style="color:#C9D1D9">Approach:</strong> Dense data grid, dark GitHub-style theme, chart-forward, color-coded status</div>
+      <div class="palette-row">
+        <div><div class="swatch" style="background:#0D1117;border:1px solid #30363D"></div><div class="swatch-label">#0D1117</div></div>
+        <div><div class="swatch" style="background:#161B22;border:1px solid #30363D"></div><div class="swatch-label">#161B22</div></div>
+        <div><div class="swatch" style="background:#21262D;border:1px solid #30363D"></div><div class="swatch-label">#21262D</div></div>
+        <div><div class="swatch" style="background:#30363D;border:1px solid #484F58"></div><div class="swatch-label">#30363D</div></div>
+        <div><div class="swatch" style="background:#8B949E"></div><div class="swatch-label">#8B949E</div></div>
+        <div><div class="swatch" style="background:#C9D1D9"></div><div class="swatch-label">#C9D1D9</div></div>
+        <div><div class="swatch" style="background:#58A6FF"></div><div class="swatch-label">#58A6FF ✦</div></div>
+        <div><div class="swatch" style="background:#3FB950"></div><div class="swatch-label">#3FB950</div></div>
+        <div><div class="swatch" style="background:#D29922"></div><div class="swatch-label">#D29922</div></div>
+        <div><div class="swatch" style="background:#F85149"></div><div class="swatch-label">#F85149</div></div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>
