@@ -1,6 +1,7 @@
 {
   "bot_name": "Food Texture Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 100,
   "key_learnings": "Food texture properties, texture modification techniques, and their impact on digestion, satiety, and nutritional adequacy.",
   "research_findings": "Texture-modified foods maintain nutritional adequacy when properly formulated; texture perception significantly influences satiety signalling and food intake.",

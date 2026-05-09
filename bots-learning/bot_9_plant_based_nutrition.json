@@ -1,6 +1,7 @@
 {
   "bot_name": "Plant-Based Nutrition Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Nutritional completeness, protein complementarity, and health outcomes associated with plant-based dietary approaches.",
   "research_findings": "Well-planned plant-based diets can meet all nutritional needs; B12, vitamin D, iron, and omega-3 supplementation strategies are critical.",

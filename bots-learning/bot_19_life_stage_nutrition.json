@@ -1,6 +1,7 @@
 {
   "bot_name": "Life Stage Nutrition Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Nutritional requirements and dietary priorities across all life stages from pregnancy through to elderly care.",
   "research_findings": "Critical nutrient windows during early life (pregnancy, infancy, toddler) have lasting effects on long-term health outcomes and cognitive development.",

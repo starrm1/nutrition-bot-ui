@@ -1,6 +1,7 @@
 {
   "bot_name": "Dietary Pattern Recognition Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Identifying and analyzing common dietary patterns and their associated health outcomes.",
   "research_findings": "Mediterranean and DASH diets show the strongest correlations with reduced chronic disease risk across diverse populations.",

@@ -1,6 +1,7 @@
 {
   "bot_name": "Glycemic Index Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Glycemic index and glycemic load values across food groups and their impact on blood sugar regulation.",
   "research_findings": "Glycemic load is a more accurate predictor of postprandial blood sugar response than glycemic index alone; fibre content modifies glycemic impact significantly.",

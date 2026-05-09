@@ -1,6 +1,7 @@
 {
   "bot_name": "Hydration Tracking Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Hydration physiology, individual fluid needs, and the role of hydration in metabolic and cognitive function.",
   "research_findings": "Even mild dehydration of 1–2% body weight impairs cognitive performance and mood; electrolyte balance is critical for sustained hydration.",

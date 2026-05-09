@@ -1,6 +1,7 @@
 {
   "bot_name": "Sleep Nutrition Correlation Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Bidirectional relationship between sleep quality and nutritional status across different life stages.",
   "research_findings": "Magnesium and tryptophan intake strongly correlate with improved sleep quality; high sugar diets are linked to fragmented sleep patterns.",

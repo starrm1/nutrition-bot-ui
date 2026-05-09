@@ -1,6 +1,7 @@
 {
   "bot_name": "Weight Management Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 100,
   "key_learnings": "Comprehensive understanding of weight regulation mechanisms, metabolic adaptation, and sustainable behaviour change.",
   "research_findings": "Sustainable weight management requires individualised approaches beyond simple calorie counting; sleep, stress, and hormonal health are significant modulators.",

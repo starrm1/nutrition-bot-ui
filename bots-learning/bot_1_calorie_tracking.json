@@ -1,6 +1,7 @@
 {
   "bot_name": "Calorie Tracking Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Comprehensive understanding of caloric intake, expenditure, and energy balance principles.",
   "research_findings": "Daily calorie needs vary significantly by age, activity level, and metabolic rate; TDEE calculations improve with body composition data.",

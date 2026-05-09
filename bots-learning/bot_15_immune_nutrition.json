@@ -1,6 +1,7 @@
 {
   "bot_name": "Immune Nutrition Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Nutritional factors that support both innate and adaptive immune system function across life stages.",
   "research_findings": "Zinc, vitamin C, and vitamin D are critical for immune defence; protein malnutrition is the most common cause of secondary immunodeficiency.",

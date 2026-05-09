@@ -1,6 +1,7 @@
 {
   "bot_name": "Meal Planning Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Evidence-based strategies for balanced meal composition, timing, and preparation efficiency.",
   "research_findings": "Structured meal planning reduces unhealthy food choices by up to 28% and improves dietary quality scores significantly.",

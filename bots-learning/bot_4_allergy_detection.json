@@ -1,6 +1,7 @@
 {
   "bot_name": "Allergy Detection Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Comprehensive mapping of food allergen profiles, cross-reactivity patterns, and safe substitution strategies.",
   "research_findings": "Tree nut allergies show the highest cross-reactivity rates; hidden allergens in processed foods are a leading cause of accidental exposures.",

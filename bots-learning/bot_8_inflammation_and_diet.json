@@ -1,6 +1,7 @@
 {
   "bot_name": "Inflammation and Diet Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Mechanisms by which dietary components modulate systemic inflammation and chronic disease risk.",
   "research_findings": "Omega-3 fatty acids significantly reduce inflammatory markers; ultra-processed food consumption is strongly linked to elevated CRP levels.",

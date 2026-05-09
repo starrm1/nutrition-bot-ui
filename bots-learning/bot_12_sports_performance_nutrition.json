@@ -1,6 +1,7 @@
 {
   "bot_name": "Sports Performance Nutrition Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Nutritional strategies for optimising athletic performance, recovery, and body composition across sports disciplines.",
   "research_findings": "Carbohydrate periodisation enhances endurance performance; protein timing within 30–60 minutes post-exercise maximises muscle protein synthesis.",

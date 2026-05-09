@@ -1,6 +1,7 @@
 {
   "bot_name": "Vitamin and Mineral Tracking Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Optimal ranges, interactions, and co-factor relationships between essential vitamins and minerals.",
   "research_findings": "Vitamin D deficiency is linked to over 200 health conditions; magnesium deficiency impairs the function of over 300 enzymatic reactions.",

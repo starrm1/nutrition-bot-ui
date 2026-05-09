@@ -1,6 +1,7 @@
 {
   "bot_name": "Mental Health Nutrition Library Bot",
   "name_locked": true,
+  "bot_locked": true,
   "progress_percentage": 95,
   "key_learnings": "Gut-brain axis, nutritional psychiatry, and dietary factors that support cognitive and emotional wellbeing.",
   "research_findings": "Mediterranean diet is associated with a 33% lower risk of depression; omega-3 fatty acids and B vitamins play key roles in neurotransmitter synthesis.",
