@@ -1,0 +1,43 @@
+{
+  "bot_name": "Anti-Aging Nutrition Library Bot",
+  "name_locked": true,
+  "progress_percentage": 100,
+  "key_learnings": "Nutritional strategies and dietary patterns that support healthy ageing, longevity, and quality of life in later years.",
+  "research_findings": "Caloric restriction and Mediterranean diet patterns show the strongest longevity associations; NAD+ precursors and polyphenols support cellular repair mechanisms.",
+  "current_focus_areas": "Post-graduation: serving as primary reference resource for anti-ageing nutrition queries across all departments.",
+  "learning_log": [
+    "2026-04-07: Graduated — surpassed Phase 3 doctor_learning milestone.",
+    "2026-04-26: Confirmed at 100% with Director support.",
+    "2026-05-09: Status confirmed graduated; available as library reference."
+  ],
+  "status": "graduated",
+  "learning_mode": "collaborative",
+  "phase_2_started": "2026-04-07",
+  "phase_3_started": "2026-04-07",
+  "previous_status": "phase_3_collaborative_learning",
+  "reported_to_copilot": true,
+  "is_learning": true,
+  "ultimate_learning_goal": 100,
+  "master_learning_goal": 200,
+  "doctor_learning_goal": 300,
+  "doctorate_topic": "anti_aging_nutrition",
+  "doctor_learning_deadline_5day": true,
+  "doctor_learning_deadline_by": "2026-05-01T22:43:29Z",
+  "learning_phases": {
+    "phase_1": {"goal_percentage": 100, "label": "mastery", "status": "completed"},
+    "phase_2": {"goal_percentage": 200, "label": "master_learning", "status": "completed"},
+    "phase_3": {"goal_percentage": 300, "label": "doctor_learning", "status": "completed"}
+  },
+  "learning_target_percentage": 90,
+  "learning_deadline_4hr": true,
+  "learning_deadline_by": "2026-04-26T08:54:42Z",
+  "three_hour_target_95": true,
+  "three_hour_target_deadline": "2026-04-27T01:21:33Z",
+  "learning_support_active": false,
+  "support_provided_by": "diet_director_bot_21_and_copilot",
+  "library_open_for_departments": false,
+  "library_access_status": "closed",
+  "library_closed": true,
+  "require_new_access_number_next_time": true,
+  "last_updated": "2026-05-09"
+}

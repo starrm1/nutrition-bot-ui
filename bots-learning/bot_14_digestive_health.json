@@ -1,10 +1,10 @@
 {
-  "bot_name": "Nutrigenomics Library Bot",
+  "bot_name": "Digestive Health Library Bot",
   "name_locked": true,
   "progress_percentage": 95,
-  "key_learnings": "Understanding the role of genes in nutrition management and personalized dietary needs.",
-  "research_findings": "Identified specific gene-nutrient interactions; MTHFR gene variants significantly affect folate metabolism.",
-  "current_focus_areas": "Research on nutrient metabolomics and expanding genetic marker database for personalized nutrition.",
+  "key_learnings": "Gut microbiome composition, digestive enzyme function, and dietary factors that support gastrointestinal wellness.",
+  "research_findings": "Dietary fibre diversity is the strongest predictor of microbiome richness; fermented foods significantly increase gut microbial diversity.",
+  "current_focus_areas": "Mapping diet-microbiome interactions and developing personalised digestive health protocols for common GI conditions.",
   "learning_log": [
     "2026-04-25: Advanced to Phase 3 collaborative learning.",
     "2026-04-26: Progress boosted to 95% with Director and Copilot support.",
@@ -20,7 +20,7 @@
   "ultimate_learning_goal": 100,
   "master_learning_goal": 200,
   "doctor_learning_goal": 300,
-  "doctorate_topic": "nutrigenomics",
+  "doctorate_topic": "digestive_health",
   "doctor_learning_deadline_5day": true,
   "doctor_learning_deadline_by": "2026-05-01T22:43:29Z",
   "learning_phases": {

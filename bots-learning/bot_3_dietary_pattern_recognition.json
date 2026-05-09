@@ -1,10 +1,10 @@
 {
-  "bot_name": "Nutrigenomics Library Bot",
+  "bot_name": "Dietary Pattern Recognition Library Bot",
   "name_locked": true,
   "progress_percentage": 95,
-  "key_learnings": "Understanding the role of genes in nutrition management and personalized dietary needs.",
-  "research_findings": "Identified specific gene-nutrient interactions; MTHFR gene variants significantly affect folate metabolism.",
-  "current_focus_areas": "Research on nutrient metabolomics and expanding genetic marker database for personalized nutrition.",
+  "key_learnings": "Identifying and analyzing common dietary patterns and their associated health outcomes.",
+  "research_findings": "Mediterranean and DASH diets show the strongest correlations with reduced chronic disease risk across diverse populations.",
+  "current_focus_areas": "Developing pattern recognition models to classify individual dietary behaviours and match them to evidence-based recommendations.",
   "learning_log": [
     "2026-04-25: Advanced to Phase 3 collaborative learning.",
     "2026-04-26: Progress boosted to 95% with Director and Copilot support.",
@@ -20,7 +20,7 @@
   "ultimate_learning_goal": 100,
   "master_learning_goal": 200,
   "doctor_learning_goal": 300,
-  "doctorate_topic": "nutrigenomics",
+  "doctorate_topic": "dietary_pattern_recognition",
   "doctor_learning_deadline_5day": true,
   "doctor_learning_deadline_by": "2026-05-01T22:43:29Z",
   "learning_phases": {
