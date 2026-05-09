@@ -22,6 +22,8 @@
   "master_learning_goal": 200,
   "doctor_learning_goal": 300,
   "doctorate_topic": "hormonal_health_nutrition",
+  "doctorate_earned_at_300": true,
+  "doctorate_earned": false,
   "doctor_learning_deadline_5day": true,
   "doctor_learning_deadline_by": "2026-05-01T22:43:29Z",
   "learning_phases": {
