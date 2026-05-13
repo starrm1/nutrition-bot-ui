@@ -738,7 +738,7 @@ textarea.addEventListener("input", () => {
   const ALL_THEMES = ['theme-1','theme-2','theme-3','theme-4','theme-5','theme-6'];
   const params = new URLSearchParams(window.location.search);
   const fromUrl = (params.get('theme') || '').trim().toLowerCase();
-  const normalizedFromUrl = /^\d+$/.test(fromUrl) ? `theme-${fromUrl}` : fromUrl;
+  const normalizedFromUrl = /^[1-6]$/.test(fromUrl) ? `theme-${fromUrl}` : fromUrl;
   const saved = localStorage.getItem('nb-theme');
   const hasValidUrlTheme = ALL_THEMES.includes(normalizedFromUrl);
   const initialTheme = ALL_THEMES.includes(normalizedFromUrl)
@@ -748,7 +748,8 @@ textarea.addEventListener("input", () => {
   document.body.classList.add(initialTheme);
   if (saved !== initialTheme) localStorage.setItem('nb-theme', initialTheme);
 
-  const shouldNormalizeUrl = !hasValidUrlTheme || fromUrl !== normalizedFromUrl;
+  const hasThemeParam = params.has('theme');
+  const shouldNormalizeUrl = hasThemeParam && (!hasValidUrlTheme || fromUrl !== normalizedFromUrl);
   if (shouldNormalizeUrl) {
     params.set('theme', initialTheme);
     const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
