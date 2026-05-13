@@ -14,6 +14,9 @@
       height: 100dvh;
       display: flex;
       flex-direction: column;
+      --food-chip-bg: #f0fdf4;
+      --food-chip-border: #bbf7d0;
+      --food-chip-text: #1a3a28;
     }
 
     /* ── Header ── */
@@ -170,10 +173,10 @@
       gap: 4px;
       padding: 3px 8px;
       border-radius: 999px;
-      border: 1px solid #bbf0cc;
-      background: #f0fdf4;
+      border: 1px solid var(--food-chip-border);
+      background: var(--food-chip-bg);
       font-size: 12px;
-      color: #1a3a28;
+      color: var(--food-chip-text);
       font-weight: 500;
     }
     body.theme-3 .food-preview { display: flex; }
