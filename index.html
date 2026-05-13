@@ -157,6 +157,27 @@
       font-weight: 600;
     }
 
+    /* ── Food preview chips ── */
+    .food-preview {
+      margin-top: 10px;
+      display: none;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .food-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid #bbf0cc;
+      background: #f0fdf4;
+      font-size: 12px;
+      color: #1a3a28;
+      font-weight: 500;
+    }
+    body.theme-3 .food-preview { display: flex; }
+
     /* ── Typing indicator ── */
     .typing { display: flex; align-items: center; gap: 4px; height: 20px; padding: 4px 0; }
     .typing span {
@@ -796,6 +817,13 @@ textarea.addEventListener("input", () => {
     <div class="step-tag">👋 Welcome</div>
     Hello! I'm the <strong>Diet Director</strong>, your single point of contact for all nutrition questions.<br><br>
     Ask me anything — about <em>food, nutrients, meal planning, gut health, weight management, sports nutrition, dietary restrictions, food texture,</em> or <em>nutrition at any life stage</em> — and I'll route your question directly to the right specialist department and bring you back the answer.
+    <div class="food-preview" aria-label="Theme 3 food examples">
+      <span class="food-chip">🥦 Broccoli</span>
+      <span class="food-chip">🍎 Apple</span>
+      <span class="food-chip">🥕 Carrot</span>
+      <span class="food-chip">🍓 Strawberry</span>
+      <span class="food-chip">🥑 Avocado</span>
+    </div>
   `);
 })();
 </script>
