@@ -249,6 +249,76 @@
     #chat::-webkit-scrollbar-track { background: transparent; }
     #chat::-webkit-scrollbar-thumb { background: #2a3f5a; border-radius: 3px; }
 
+    /* ── Theme switcher bar ── */
+    #theme-bar {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #e2e8f0;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+    #theme-bar span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #64748b;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .theme-swatch {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: transform .15s, border-color .15s;
+      position: relative;
+    }
+    .theme-swatch:hover { transform: scale(1.15); }
+    .theme-swatch.active { border-color: #2e7dce; box-shadow: 0 0 0 2px #bfdbfe; }
+    .theme-swatch[title]::after {
+      content: attr(title);
+      position: absolute;
+      bottom: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e293b;
+      color: #f1f5f9;
+      font-size: 10px;
+      white-space: nowrap;
+      padding: 3px 7px;
+      border-radius: 5px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .15s;
+    }
+    .theme-swatch:hover::after { opacity: 1; }
+
+    /* ── Per-theme body backgrounds ── */
+    body.theme-1 { background: linear-gradient(135deg, #f3f9f4, #e8f4ff); color: #0f172a; }
+    body.theme-2 { background: #f8fafc; color: #0f172a; }
+    body.theme-3 { background: #eefaf0; color: #0f172a; }
+    body.theme-4 { background: linear-gradient(135deg, #e0f2fe, #ecfeff); color: #0f172a; }
+    body.theme-5 { background: #f9fafb; color: #0f172a; }
+    body.theme-6 { background: #0f172a; color: #e2e8f0; }
+
+    /* Dark-mode overrides for theme-6 */
+    body.theme-6 header         { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-color: #334155; }
+    body.theme-6 .msg.bot .bubble  { background: #1e293b; border-color: #334155; color: #e2e8f0; }
+    body.theme-6 .msg.user .bubble { background: #1e3a6e; border-color: #2a5090; color: #ddeeff; }
+    body.theme-6 #input-area    { background: #1e293b; border-color: #334155; }
+    body.theme-6 #question      { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+    body.theme-6 #question::placeholder { color: #64748b; }
+    body.theme-6 #theme-bar     { background: rgba(30,41,59,0.9); border-color: #334155; }
+    body.theme-6 #theme-bar span { color: #94a3b8; }
+    body.theme-6 .routing-card  { background: #1e293b; border-color: #334155; border-left-color: #2e7dce; }
+    body.theme-6 .answer-card   { background: #162032; border-color: #334155; }
+    body.theme-6 .chat-divider  { color: #475569; }
+    body.theme-6 .chat-divider::before, body.theme-6 .chat-divider::after { background: #334155; }
+
     /* ── Responsive ── */
     @media (max-width: 600px) {
       .bubble { font-size: 13.5px; }
@@ -265,6 +335,16 @@
     <p>Your nutrition question is routed to the right department specialist</p>
   </div>
 </header>
+
+<div id="theme-bar" role="toolbar" aria-label="Background theme picker">
+  <span>Theme:</span>
+  <button class="theme-swatch active" data-theme="theme-2" title="2 — Light neutral" style="background:#f8fafc;border-color:#cbd5e1;" aria-label="Light neutral"></button>
+  <button class="theme-swatch" data-theme="theme-1" title="1 — Soft gradient" style="background:linear-gradient(135deg,#f3f9f4,#e8f4ff);" aria-label="Soft gradient"></button>
+  <button class="theme-swatch" data-theme="theme-3" title="3 — Green tint" style="background:#eefaf0;" aria-label="Green tint"></button>
+  <button class="theme-swatch" data-theme="theme-4" title="4 — Blue wellness" style="background:linear-gradient(135deg,#e0f2fe,#ecfeff);" aria-label="Blue wellness"></button>
+  <button class="theme-swatch" data-theme="theme-5" title="5 — Card pattern" style="background:#f9fafb;" aria-label="Card pattern"></button>
+  <button class="theme-swatch" data-theme="theme-6" title="6 — Dark mode" style="background:#0f172a;" aria-label="Dark mode"></button>
+</div>
 
 <div id="chat" role="log" aria-live="polite" aria-label="Conversation"></div>
 
@@ -559,6 +639,23 @@ textarea.addEventListener("input", () => {
   textarea.style.height = "auto";
   textarea.style.height = Math.min(textarea.scrollHeight, 160) + "px";
 });
+
+// ── Background theme switcher ────────────────────────────────────────────────
+(function () {
+  const ALL_THEMES = ['theme-1','theme-2','theme-3','theme-4','theme-5','theme-6'];
+  const saved = localStorage.getItem('nb-theme') || 'theme-2';
+  document.body.classList.add(saved);
+  document.querySelectorAll('.theme-swatch').forEach(btn => {
+    if (btn.dataset.theme === saved) btn.classList.add('active');
+    btn.addEventListener('click', () => {
+      document.body.classList.remove(...ALL_THEMES);
+      document.body.classList.add(btn.dataset.theme);
+      document.querySelectorAll('.theme-swatch').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      localStorage.setItem('nb-theme', btn.dataset.theme);
+    });
+  });
+})();
 
 // ── Welcome message ─────────────────────────────────────────────────────────
 (async () => {
