@@ -736,16 +736,35 @@ textarea.addEventListener("input", () => {
 // ── Background theme switcher ────────────────────────────────────────────────
 (function () {
   const ALL_THEMES = ['theme-1','theme-2','theme-3','theme-4','theme-5','theme-6'];
-  const saved = localStorage.getItem('nb-theme') || 'theme-3';
-  document.body.classList.add(saved);
+  const params = new URLSearchParams(window.location.search);
+  const fromUrl = (params.get('theme') || '').trim().toLowerCase();
+  const normalizedFromUrl = /^\d+$/.test(fromUrl) ? `theme-${fromUrl}` : fromUrl;
+  const saved = localStorage.getItem('nb-theme');
+  const initialTheme = ALL_THEMES.includes(normalizedFromUrl)
+    ? normalizedFromUrl
+    : (ALL_THEMES.includes(saved) ? saved : 'theme-3');
+
+  document.body.classList.add(initialTheme);
+  localStorage.setItem('nb-theme', initialTheme);
+
+  if (params.get('theme') !== initialTheme) {
+    params.set('theme', initialTheme);
+    const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+    window.history.replaceState(null, '', newUrl);
+  }
+
   document.querySelectorAll('.theme-swatch').forEach(btn => {
-    if (btn.dataset.theme === saved) btn.classList.add('active');
+    if (btn.dataset.theme === initialTheme) btn.classList.add('active');
     btn.addEventListener('click', () => {
       document.body.classList.remove(...ALL_THEMES);
       document.body.classList.add(btn.dataset.theme);
       document.querySelectorAll('.theme-swatch').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       localStorage.setItem('nb-theme', btn.dataset.theme);
+      const nextParams = new URLSearchParams(window.location.search);
+      nextParams.set('theme', btn.dataset.theme);
+      const nextUrl = `${window.location.pathname}?${nextParams.toString()}${window.location.hash}`;
+      window.history.replaceState(null, '', nextUrl);
     });
   });
 })();
