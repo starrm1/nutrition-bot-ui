@@ -22,12 +22,12 @@ Open [`questions/inbox.json`](questions/inbox.json) and add an entry to the `que
 
 Base app URL: `https://starrm1.github.io/nutrition-bot-ui/`
 
-1. Theme 1 (Soft gradient): `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-1`
-2. Theme 2 (Light neutral): `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-2`
-3. Theme 3 (Green tint + food background, default): `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-3`
-4. Theme 4 (Blue wellness): `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-4`
-5. Theme 5 (Card pattern): `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-5`
-6. Theme 6 (Dark mode): `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-6`
+1. Theme 1 — Fruits 🍊🍋🍇🍌🍒: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-1`
+2. Theme 2 — Vegetables 🥦🥕🥬🌽🥒: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-2`
+3. Theme 3 — Mixed Foods 🥦🍎🥕🍓🥑 (default): `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-3`
+4. Theme 4 — Proteins 🥚🥩🍗🐟🫘: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-4`
+5. Theme 5 — Grains 🌾🍞🥐🫓🥗: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-5`
+6. Theme 6 — Meals 🍲🫕🥘🍱🍜: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-6`
 
 ---
 
