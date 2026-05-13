@@ -305,6 +305,93 @@
     body.theme-5 { background: #f9fafb; color: #0f172a; }
     body.theme-6 { background: #0f172a; color: #e2e8f0; }
 
+    /* ── Theme-3 (Green Tint) full overrides ── */
+    body.theme-3 header {
+      background: linear-gradient(135deg, #1a3a2a 0%, #0d2419 100%);
+      border-bottom: 1px solid #2a5a3a;
+    }
+    body.theme-3 .avatar {
+      background: linear-gradient(135deg, #2e9e6e, #1a7a50);
+      box-shadow: 0 0 0 3px rgba(46,158,110,0.3);
+    }
+    body.theme-3 .header-info h1 { color: #c8f0d8; }
+    body.theme-3 .header-info p  { color: #6aab88; }
+    body.theme-3 .status-dot     { background: #34d399; }
+
+    body.theme-3 .msg.bot  .msg-avatar { background: linear-gradient(135deg, #1a5c38, #0d3a22); }
+    body.theme-3 .msg.user .msg-avatar { background: linear-gradient(135deg, #2a4a3a, #1a3028); }
+
+    body.theme-3 .msg.bot  .bubble {
+      background: #ffffff;
+      border: 1px solid #bbf0cc;
+      border-top-left-radius: 4px;
+      color: #1a3028;
+    }
+    body.theme-3 .msg.user .bubble {
+      background: #d4f5e2;
+      border: 1px solid #86efaa;
+      border-top-right-radius: 4px;
+      color: #0f2a1a;
+    }
+
+    body.theme-3 .routing-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 4px solid #22c55e;
+    }
+    body.theme-3 .routing-card .rc-label  { color: #4a9a68; }
+    body.theme-3 .routing-card .rc-dept   { color: #166534; }
+    body.theme-3 .routing-card .rc-topics { color: #4a7a5a; }
+
+    body.theme-3 .answer-card {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      border-left: 4px solid #16a34a;
+      color: #1a3a28;
+    }
+    body.theme-3 .answer-card .ac-bot { color: #15803d; }
+    body.theme-3 .badge {
+      background: rgba(22,163,74,.12);
+      color: #16a34a;
+      border-color: rgba(22,163,74,.3);
+    }
+
+    body.theme-3 .typing span { background: #22c55e; }
+
+    body.theme-3 .step-tag {
+      background: rgba(22,163,74,.1);
+      border: 1px solid rgba(22,163,74,.25);
+      color: #15803d;
+    }
+
+    body.theme-3 #input-area {
+      background: #f0fdf4;
+      border-top: 1px solid #bbf7d0;
+    }
+    body.theme-3 #question {
+      background: #ffffff;
+      border: 1px solid #86efac;
+      color: #1a3028;
+    }
+    body.theme-3 #question::placeholder { color: #6aab88; }
+    body.theme-3 #question:focus        { border-color: #22c55e; }
+    body.theme-3 #send-btn {
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+    }
+
+    body.theme-3 #theme-bar {
+      background: rgba(240,253,244,0.92);
+      border-bottom: 1px solid #bbf7d0;
+    }
+    body.theme-3 #theme-bar span { color: #4a7a5a; }
+    body.theme-3 .theme-swatch.active { border-color: #22c55e; box-shadow: 0 0 0 2px #bbf7d0; }
+
+    body.theme-3 .chat-divider { color: #6aab88; }
+    body.theme-3 .chat-divider::before,
+    body.theme-3 .chat-divider::after { background: #bbf7d0; }
+
+    body.theme-3 #chat::-webkit-scrollbar-thumb { background: #86efac; }
+
     /* Dark-mode overrides for theme-6 */
     body.theme-6 header         { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-color: #334155; }
     body.theme-6 .msg.bot .bubble  { background: #1e293b; border-color: #334155; color: #e2e8f0; }
@@ -338,9 +425,9 @@
 
 <div id="theme-bar" role="toolbar" aria-label="Background theme picker">
   <span>Theme:</span>
-  <button class="theme-swatch active" data-theme="theme-2" title="2 — Light neutral" style="background:#f8fafc;border-color:#cbd5e1;" aria-label="Light neutral"></button>
+  <button class="theme-swatch" data-theme="theme-2" title="2 — Light neutral" style="background:#f8fafc;border-color:#cbd5e1;" aria-label="Light neutral"></button>
   <button class="theme-swatch" data-theme="theme-1" title="1 — Soft gradient" style="background:linear-gradient(135deg,#f3f9f4,#e8f4ff);" aria-label="Soft gradient"></button>
-  <button class="theme-swatch" data-theme="theme-3" title="3 — Green tint" style="background:#eefaf0;" aria-label="Green tint"></button>
+  <button class="theme-swatch active" data-theme="theme-3" title="3 — Green tint" style="background:#eefaf0;" aria-label="Green tint"></button>
   <button class="theme-swatch" data-theme="theme-4" title="4 — Blue wellness" style="background:linear-gradient(135deg,#e0f2fe,#ecfeff);" aria-label="Blue wellness"></button>
   <button class="theme-swatch" data-theme="theme-5" title="5 — Card pattern" style="background:#f9fafb;" aria-label="Card pattern"></button>
   <button class="theme-swatch" data-theme="theme-6" title="6 — Dark mode" style="background:#0f172a;" aria-label="Dark mode"></button>
@@ -643,7 +730,7 @@ textarea.addEventListener("input", () => {
 // ── Background theme switcher ────────────────────────────────────────────────
 (function () {
   const ALL_THEMES = ['theme-1','theme-2','theme-3','theme-4','theme-5','theme-6'];
-  const saved = localStorage.getItem('nb-theme') || 'theme-2';
+  const saved = localStorage.getItem('nb-theme') || 'theme-3';
   document.body.classList.add(saved);
   document.querySelectorAll('.theme-swatch').forEach(btn => {
     if (btn.dataset.theme === saved) btn.classList.add('active');
