@@ -740,14 +740,16 @@ textarea.addEventListener("input", () => {
   const fromUrl = (params.get('theme') || '').trim().toLowerCase();
   const normalizedFromUrl = /^\d+$/.test(fromUrl) ? `theme-${fromUrl}` : fromUrl;
   const saved = localStorage.getItem('nb-theme');
+  const hasValidUrlTheme = ALL_THEMES.includes(normalizedFromUrl);
   const initialTheme = ALL_THEMES.includes(normalizedFromUrl)
     ? normalizedFromUrl
     : (ALL_THEMES.includes(saved) ? saved : 'theme-3');
 
   document.body.classList.add(initialTheme);
-  localStorage.setItem('nb-theme', initialTheme);
+  if (saved !== initialTheme) localStorage.setItem('nb-theme', initialTheme);
 
-  if (params.get('theme') !== initialTheme) {
+  const shouldNormalizeUrl = !hasValidUrlTheme || fromUrl !== normalizedFromUrl;
+  if (shouldNormalizeUrl) {
     params.set('theme', initialTheme);
     const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
     window.history.replaceState(null, '', newUrl);
