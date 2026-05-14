@@ -704,7 +704,7 @@ function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 function initOpeningScreen() {
   if (!openingScreen) {
-    console.warn("Opening screen element not found.");
+    console.warn("Opening screen element (#opening-screen) not found in DOM. Quick-start options will not be initialized.");
     return;
   }
   openingScreen.querySelectorAll(".opening-option").forEach(btn => {
