@@ -297,6 +297,63 @@
     }
     .theme-swatch:hover::after { opacity: 1; }
 
+    /* ── Opening screen ── */
+    #opening-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(10, 20, 15, 0.68);
+      backdrop-filter: blur(4px);
+    }
+    #opening-screen.hidden { display: none; }
+    .opening-card {
+      width: min(860px, 100%);
+      background: #ffffff;
+      border: 1px solid #bbf7d0;
+      border-radius: 16px;
+      box-shadow: 0 14px 36px rgba(22, 101, 52, 0.2);
+      padding: 18px;
+    }
+    .opening-card h2 {
+      font-size: 20px;
+      color: #166534;
+      margin-bottom: 6px;
+    }
+    .opening-card p {
+      font-size: 13px;
+      color: #3f6b4f;
+      margin-bottom: 14px;
+    }
+    .opening-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .opening-option {
+      border: 1px solid #86efac;
+      background: #f0fdf4;
+      color: #14532d;
+      border-radius: 12px;
+      padding: 12px 11px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform .12s, background .12s, border-color .12s;
+    }
+    .opening-option:hover {
+      transform: translateY(-1px);
+      background: #dcfce7;
+      border-color: #4ade80;
+    }
+    @media (max-width: 720px) {
+      .opening-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
     /* ── Per-theme body backgrounds (all share green theme-3 palette, unique food emoji tiles) ── */
     body.theme-1 {
       background-color: #eefaf0;
@@ -455,6 +512,21 @@
   <button class="theme-swatch" data-theme="theme-6" title="6 — Meals" style="background:#eefaf0;border-color:#86efac;" aria-label="Meals"></button>
 </div>
 
+<div id="opening-screen" role="dialog" aria-modal="true" aria-label="Opening options">
+  <div class="opening-card">
+    <h2>Welcome — choose 1 of 6 quick starts</h2>
+    <p>Select an option to begin. Your backgrounds stay exactly as they are.</p>
+    <div class="opening-grid">
+      <button class="opening-option" data-prompt="Give me a healthy food guide for this week.">🥦 Food Guide</button>
+      <button class="opening-option" data-prompt="Help me with vitamins and minerals I should focus on.">💊 Vitamins & Minerals</button>
+      <button class="opening-option" data-prompt="Create a 7-day meal plan with easy prep.">📋 7-Day Meal Plan</button>
+      <button class="opening-option" data-prompt="I need a plan for dietary restrictions and food swaps.">🚫 Dietary Restrictions</button>
+      <button class="opening-option" data-prompt="Build a sports nutrition plan for workouts and recovery.">🏋️ Sports Nutrition</button>
+      <button class="opening-option" data-prompt="Help me with a weight management nutrition plan.">⚖️ Weight Management</button>
+    </div>
+  </div>
+</div>
+
 <div id="chat" role="log" aria-live="polite" aria-label="Conversation"></div>
 
 <div id="input-area">
@@ -588,6 +660,7 @@ function buildAnswer(dept) {
 const chat     = document.getElementById("chat");
 const textarea = document.getElementById("question");
 const sendBtn  = document.getElementById("send-btn");
+const openingScreen = document.getElementById("opening-screen");
 
 function scrollBottom() {
   chat.scrollTop = chat.scrollHeight;
@@ -627,6 +700,19 @@ function addDivider(text) {
 }
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function initOpeningScreen() {
+  if (!openingScreen) return;
+  openingScreen.querySelectorAll(".opening-option").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const prompt = btn.dataset.prompt || "";
+      textarea.value = prompt;
+      textarea.dispatchEvent(new Event("input"));
+      openingScreen.classList.add("hidden");
+      textarea.focus();
+    });
+  });
+}
 
 // ── Main send flow ──────────────────────────────────────────────────────────
 async function send() {
@@ -789,6 +875,8 @@ textarea.addEventListener("input", () => {
 })();
 
 // ── Welcome message ─────────────────────────────────────────────────────────
+initOpeningScreen();
+
 (async () => {
   await sleep(300);
   addDivider("Conversation started");
