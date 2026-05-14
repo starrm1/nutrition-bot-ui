@@ -22,12 +22,14 @@ Open [`questions/inbox.json`](questions/inbox.json) and add an entry to the `que
 
 Base app URL: `https://starrm1.github.io/nutrition-bot-ui/`
 
-1. Theme 1 — Fruits 🍊🍋🍇🍌🍒: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-1`
-2. Theme 2 — Vegetables 🥦🥕🥬🌽🥒: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-2`
-3. Theme 3 — Mixed Foods 🥦🍎🥕🍓🥑 (default): `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-3`
-4. Theme 4 — Proteins 🥚🥩🍗🐟🫘: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-4`
-5. Theme 5 — Grains 🌾🍞🥐🫓🥗: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-5`
-6. Theme 6 — Meals 🍲🫕🥘🍱🍜: `https://starrm1.github.io/nutrition-bot-ui/?theme=theme-6`
+| Theme | URL | Preview |
+|---|---|---|
+| 1 — Fruits 🍊🍋🍇🍌🍒 | [`?theme=theme-1`](https://starrm1.github.io/nutrition-bot-ui/?theme=theme-1) | ![Theme 1 — Fruits](screenshots/theme_1.png) |
+| 2 — Vegetables 🥦🥕🥬🌽🥒 | [`?theme=theme-2`](https://starrm1.github.io/nutrition-bot-ui/?theme=theme-2) | ![Theme 2 — Vegetables](screenshots/theme_2.png) |
+| 3 — Mixed Foods 🥦🍎🥕🍓🥑 (default) | [`?theme=theme-3`](https://starrm1.github.io/nutrition-bot-ui/?theme=theme-3) | ![Theme 3 — Mixed Foods](screenshots/theme_3.png) |
+| 4 — Proteins 🥚🥩🍗🐟🫘 | [`?theme=theme-4`](https://starrm1.github.io/nutrition-bot-ui/?theme=theme-4) | ![Theme 4 — Proteins](screenshots/theme_4.png) |
+| 5 — Grains 🌾🍞🥐🫓🥗 | [`?theme=theme-5`](https://starrm1.github.io/nutrition-bot-ui/?theme=theme-5) | ![Theme 5 — Grains](screenshots/theme_5.png) |
+| 6 — Meals 🍲🫕🥘🍱🍜 | [`?theme=theme-6`](https://starrm1.github.io/nutrition-bot-ui/?theme=theme-6) | ![Theme 6 — Meals](screenshots/theme_6.png) |
 
 ---
 
