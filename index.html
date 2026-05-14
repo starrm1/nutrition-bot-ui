@@ -8,6 +8,7 @@
     /* ── Reset & base ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
+      --opening-overlay-tint: rgba(13, 36, 25, 0.68);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: #f8fafc;
       color: #0f172a;
@@ -306,7 +307,7 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
-      background: rgba(13, 36, 25, 0.68);
+      background: var(--opening-overlay-tint);
       backdrop-filter: blur(4px);
     }
     #opening-screen.hidden { display: none; }
@@ -515,7 +516,7 @@
 <div id="opening-screen" role="dialog" aria-modal="true" aria-label="Opening options">
   <div class="opening-card">
     <h2>Welcome — choose 1 of 6 quick starts</h2>
-    <p>Select an option to begin. Your backgrounds stay exactly as they are.</p>
+    <p>Select an option to begin. Your selected theme will remain unchanged.</p>
     <div class="opening-grid">
       <button class="opening-option" data-prompt="Give me a healthy food guide for this week.">🥦 Food Guide</button>
       <button class="opening-option" data-prompt="Help me with vitamins and minerals I should focus on.">💊 Vitamins & Minerals</button>
@@ -702,7 +703,10 @@ function addDivider(text) {
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 function initOpeningScreen() {
-  if (!openingScreen) return;
+  if (!openingScreen) {
+    console.warn("Opening screen element not found.");
+    return;
+  }
   openingScreen.querySelectorAll(".opening-option").forEach(btn => {
     btn.addEventListener("click", () => {
       const prompt = btn.dataset.prompt || "";
