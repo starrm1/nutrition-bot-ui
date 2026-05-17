@@ -355,8 +355,51 @@
       background: #dcfce7;
       border-color: #4ade80;
     }
+    .opening-theme-title {
+      margin-top: 14px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #166534;
+      font-weight: 700;
+    }
+    .opening-theme-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .opening-theme-option {
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 6px;
+      cursor: pointer;
+      text-align: left;
+      transition: transform .12s, border-color .12s, box-shadow .12s;
+    }
+    .opening-theme-option:hover {
+      transform: translateY(-1px);
+      border-color: #4ade80;
+      box-shadow: 0 6px 14px rgba(22, 101, 52, 0.12);
+    }
+    .opening-theme-option img {
+      width: 100%;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 6px;
+      border: 1px solid #dcfce7;
+    }
+    .opening-theme-option span {
+      display: block;
+      font-size: 12px;
+      color: #166534;
+      font-weight: 600;
+      padding: 0 2px 2px;
+    }
     @media (max-width: 720px) {
       .opening-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .opening-theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     /* ── Per-theme body backgrounds (all share green theme-3 palette, unique food emoji tiles) ── */
@@ -528,6 +571,33 @@
       <button class="opening-option" data-prompt="I need a plan for dietary restrictions and food swaps.">🚫 Dietary Restrictions</button>
       <button class="opening-option" data-prompt="Build a sports nutrition plan for workouts and recovery.">🏋️ Sports Nutrition</button>
       <button class="opening-option" data-prompt="Help me with a weight management nutrition plan.">⚖️ Weight Management</button>
+    </div>
+    <p class="opening-theme-title">Picture options (choose your theme)</p>
+    <div class="opening-theme-grid" role="group" aria-label="Theme picture options">
+      <button class="opening-theme-option" data-theme="theme-1" aria-label="Theme 1 Fruits">
+        <img src="screenshots/theme_1.png" alt="">
+        <span>1 — Fruits</span>
+      </button>
+      <button class="opening-theme-option" data-theme="theme-2" aria-label="Theme 2 Vegetables">
+        <img src="screenshots/theme_2.png" alt="">
+        <span>2 — Vegetables</span>
+      </button>
+      <button class="opening-theme-option" data-theme="theme-3" aria-label="Theme 3 Mixed Foods">
+        <img src="screenshots/theme_3.png" alt="">
+        <span>3 — Mixed Foods</span>
+      </button>
+      <button class="opening-theme-option" data-theme="theme-4" aria-label="Theme 4 Proteins">
+        <img src="screenshots/theme_4.png" alt="">
+        <span>4 — Proteins</span>
+      </button>
+      <button class="opening-theme-option" data-theme="theme-5" aria-label="Theme 5 Grains">
+        <img src="screenshots/theme_5.png" alt="">
+        <span>5 — Grains</span>
+      </button>
+      <button class="opening-theme-option" data-theme="theme-6" aria-label="Theme 6 Meals">
+        <img src="screenshots/theme_6.png" alt="">
+        <span>6 — Meals</span>
+      </button>
     </div>
   </div>
 </div>
@@ -720,6 +790,13 @@ function initOpeningScreen() {
       openingScreen.classList.add("hidden");
       document.body.classList.remove("opening-active");
       textarea.focus();
+    });
+  });
+  openingScreen.querySelectorAll(".opening-theme-option").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const selectedTheme = btn.dataset.theme;
+      const themeSwatch = document.querySelector(`.theme-swatch[data-theme="${selectedTheme}"]`);
+      if (themeSwatch) themeSwatch.click();
     });
   });
 }
