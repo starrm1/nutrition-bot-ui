@@ -397,6 +397,22 @@
       font-weight: 600;
       padding: 0 2px 2px;
     }
+    .opening-skip {
+      display: block;
+      margin: 14px auto 0;
+      background: none;
+      border: none;
+      color: #166534;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      padding: 4px 0;
+      opacity: 0.75;
+      transition: opacity .12s;
+    }
+    .opening-skip:hover { opacity: 1; }
     @media (max-width: 720px) {
       .opening-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .opening-theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -599,6 +615,7 @@
         <span>6 — Meals</span>
       </button>
     </div>
+    <button id="opening-skip" class="opening-skip" aria-label="Skip and ask your own question">Ask my own question →</button>
   </div>
 </div>
 
@@ -799,6 +816,14 @@ function initOpeningScreen() {
       if (themeSwatch) themeSwatch.click();
     });
   });
+  const skipBtn = document.getElementById("opening-skip");
+  if (skipBtn) {
+    skipBtn.addEventListener("click", () => {
+      openingScreen.classList.add("hidden");
+      document.body.classList.remove("opening-active");
+      textarea.focus();
+    });
+  }
 }
 
 // ── Main send flow ──────────────────────────────────────────────────────────
