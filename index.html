@@ -16,6 +16,10 @@
       display: flex;
       flex-direction: column;
     }
+    body.opening-active #chat,
+    body.opening-active #input-area {
+      display: none;
+    }
 
     /* ── Header ── */
     header {
@@ -493,7 +497,7 @@
     }
   </style>
 </head>
-<body>
+<body class="opening-active">
 
 <header>
   <div class="avatar">🍽️</div>
@@ -705,6 +709,7 @@ function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 function initOpeningScreen() {
   if (!openingScreen) {
     console.warn("Opening screen element (#opening-screen) not found in DOM. Quick-start options will not be initialized.");
+    document.body.classList.remove("opening-active");
     return;
   }
   openingScreen.querySelectorAll(".opening-option").forEach(btn => {
@@ -713,6 +718,7 @@ function initOpeningScreen() {
       textarea.value = prompt;
       textarea.dispatchEvent(new Event("input"));
       openingScreen.classList.add("hidden");
+      document.body.classList.remove("opening-active");
       textarea.focus();
     });
   });
