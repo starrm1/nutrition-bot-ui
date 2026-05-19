@@ -315,8 +315,14 @@
       backdrop-filter: blur(4px);
     }
     #opening-screen.hidden { display: none; }
+    .opening-layout {
+      width: min(1120px, 100%);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 14px;
+      align-items: start;
+    }
     .opening-card {
-      width: min(860px, 100%);
       background: #ffffff;
       border: 1px solid #bbf7d0;
       border-radius: 16px;
@@ -413,9 +419,89 @@
       transition: opacity .12s;
     }
     .opening-skip:hover { opacity: 1; }
+    .title-assistant {
+      background: #ffffff;
+      border: 1px solid #bbf7d0;
+      border-radius: 16px;
+      box-shadow: 0 14px 36px rgba(22, 101, 52, 0.2);
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 540px;
+    }
+    .title-assistant h3 {
+      font-size: 15px;
+      color: #166534;
+    }
+    .title-assistant p {
+      margin: 0;
+      font-size: 12px;
+      color: #3f6b4f;
+    }
+    .title-assistant-log {
+      border: 1px solid #dcfce7;
+      border-radius: 10px;
+      background: #f8fff8;
+      padding: 8px;
+      overflow-y: auto;
+      flex: 1;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .title-assistant-msg {
+      font-size: 12px;
+      line-height: 1.45;
+      padding: 6px 8px;
+      border-radius: 9px;
+      max-width: 100%;
+      word-break: break-word;
+    }
+    .title-assistant-msg.bot {
+      background: #ecfdf3;
+      border: 1px solid #bbf7d0;
+      color: #14532d;
+    }
+    .title-assistant-msg.user {
+      background: #dcfce7;
+      border: 1px solid #86efac;
+      color: #14532d;
+      align-self: flex-end;
+    }
+    .title-assistant-input-row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    #title-assistant-input {
+      flex: 1;
+      border: 1px solid #86efac;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #14532d;
+      font-size: 12px;
+      padding: 7px 9px;
+      outline: none;
+    }
+    #title-assistant-input:focus { border-color: #22c55e; }
+    #title-assistant-send {
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: #fff;
+      font-size: 16px;
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
     @media (max-width: 720px) {
+      .opening-layout { grid-template-columns: 1fr; }
       .opening-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .opening-theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .title-assistant { max-height: 320px; }
     }
 
     /* ── Per-theme body backgrounds (all share green theme-3 palette, unique food emoji tiles) ── */
@@ -577,45 +663,58 @@
 </div>
 
 <div id="opening-screen" role="dialog" aria-modal="true" aria-label="Opening options">
-  <div class="opening-card">
-    <h2>Welcome — choose 1 of 6 quick starts</h2>
-    <p>Select an option to begin. Your selected theme will remain unchanged.</p>
-    <div class="opening-grid">
-      <button class="opening-option" data-prompt="Give me a healthy food guide for this week.">🥦 Food Guide</button>
-      <button class="opening-option" data-prompt="Help me with vitamins and minerals I should focus on.">💊 Vitamins & Minerals</button>
-      <button class="opening-option" data-prompt="Create a 7-day meal plan with easy prep.">📋 7-Day Meal Plan</button>
-      <button class="opening-option" data-prompt="I need a plan for dietary restrictions and food swaps.">🚫 Dietary Restrictions</button>
-      <button class="opening-option" data-prompt="Build a sports nutrition plan for workouts and recovery.">🏋️ Sports Nutrition</button>
-      <button class="opening-option" data-prompt="Help me with a weight management nutrition plan.">⚖️ Weight Management</button>
+  <div class="opening-layout">
+    <div class="opening-card">
+      <h2>Welcome — choose 1 of 6 quick starts</h2>
+      <p>Select an option to begin. Your selected theme will remain unchanged.</p>
+      <div class="opening-grid">
+        <button class="opening-option" data-prompt="Give me a healthy food guide for this week.">🥦 Food Guide</button>
+        <button class="opening-option" data-prompt="Help me with vitamins and minerals I should focus on.">💊 Vitamins & Minerals</button>
+        <button class="opening-option" data-prompt="Create a 7-day meal plan with easy prep.">📋 7-Day Meal Plan</button>
+        <button class="opening-option" data-prompt="I need a plan for dietary restrictions and food swaps.">🚫 Dietary Restrictions</button>
+        <button class="opening-option" data-prompt="Build a sports nutrition plan for workouts and recovery.">🏋️ Sports Nutrition</button>
+        <button class="opening-option" data-prompt="Help me with a weight management nutrition plan.">⚖️ Weight Management</button>
+      </div>
+      <p class="opening-theme-title">Picture options (choose your theme)</p>
+      <div class="opening-theme-grid" role="group" aria-label="Theme picture options">
+        <button class="opening-theme-option" data-theme="theme-1" aria-label="Theme 1 Fruits">
+          <img src="screenshots/theme_1.png" alt="">
+          <span>1 — Fruits</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-2" aria-label="Theme 2 Vegetables">
+          <img src="screenshots/theme_2.png" alt="">
+          <span>2 — Vegetables</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-3" aria-label="Theme 3 Mixed Foods">
+          <img src="screenshots/theme_3.png" alt="">
+          <span>3 — Mixed Foods</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-4" aria-label="Theme 4 Proteins">
+          <img src="screenshots/theme_4.png" alt="">
+          <span>4 — Proteins</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-5" aria-label="Theme 5 Grains">
+          <img src="screenshots/theme_5.png" alt="">
+          <span>5 — Grains</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-6" aria-label="Theme 6 Meals">
+          <img src="screenshots/theme_6.png" alt="">
+          <span>6 — Meals</span>
+        </button>
+      </div>
+      <button id="opening-skip" class="opening-skip" aria-label="Skip and ask your own question">Ask my own question →</button>
     </div>
-    <p class="opening-theme-title">Picture options (choose your theme)</p>
-    <div class="opening-theme-grid" role="group" aria-label="Theme picture options">
-      <button class="opening-theme-option" data-theme="theme-1" aria-label="Theme 1 Fruits">
-        <img src="screenshots/theme_1.png" alt="">
-        <span>1 — Fruits</span>
-      </button>
-      <button class="opening-theme-option" data-theme="theme-2" aria-label="Theme 2 Vegetables">
-        <img src="screenshots/theme_2.png" alt="">
-        <span>2 — Vegetables</span>
-      </button>
-      <button class="opening-theme-option" data-theme="theme-3" aria-label="Theme 3 Mixed Foods">
-        <img src="screenshots/theme_3.png" alt="">
-        <span>3 — Mixed Foods</span>
-      </button>
-      <button class="opening-theme-option" data-theme="theme-4" aria-label="Theme 4 Proteins">
-        <img src="screenshots/theme_4.png" alt="">
-        <span>4 — Proteins</span>
-      </button>
-      <button class="opening-theme-option" data-theme="theme-5" aria-label="Theme 5 Grains">
-        <img src="screenshots/theme_5.png" alt="">
-        <span>5 — Grains</span>
-      </button>
-      <button class="opening-theme-option" data-theme="theme-6" aria-label="Theme 6 Meals">
-        <img src="screenshots/theme_6.png" alt="">
-        <span>6 — Meals</span>
-      </button>
-    </div>
-    <button id="opening-skip" class="opening-skip" aria-label="Skip and ask your own question">Ask my own question →</button>
+    <aside class="title-assistant" aria-label="Side assistant on title page">
+      <h3>🤝 Copilot Side Assistant</h3>
+      <p>Ask a quick setup question before you start.</p>
+      <div id="title-assistant-log" class="title-assistant-log" role="log" aria-live="polite">
+        <div class="title-assistant-msg bot">Hi! I can help with quick title-page guidance like meal plans, themes, and where to start.</div>
+      </div>
+      <div class="title-assistant-input-row">
+        <input id="title-assistant-input" type="text" placeholder="Ask side assistant..." aria-label="Ask side assistant">
+        <button id="title-assistant-send" aria-label="Send side assistant message">➤</button>
+      </div>
+    </aside>
   </div>
 </div>
 
@@ -826,6 +925,46 @@ function initOpeningScreen() {
   }
 }
 
+function initTitleSideAssistant() {
+  const log = document.getElementById("title-assistant-log");
+  const input = document.getElementById("title-assistant-input");
+  const send = document.getElementById("title-assistant-send");
+  if (!log || !input || !send) return;
+
+  function addSideMessage(role, text) {
+    const node = document.createElement("div");
+    node.className = `title-assistant-msg ${role}`;
+    node.innerHTML = escHtml(text);
+    log.appendChild(node);
+    log.scrollTop = log.scrollHeight;
+  }
+
+  function buildSideReply(question) {
+    const q = question.toLowerCase();
+    if (q.includes("theme")) return "You can pick theme pictures on this title page, then start with your prompt.";
+    if (q.includes("meal")) return "Try quick start: “📋 7-Day Meal Plan” for a full weekly setup.";
+    if (q.includes("vitamin") || q.includes("mineral")) return "Use quick start: “💊 Vitamins & Minerals” to route to the nutrient specialist flow.";
+    if (q.includes("start") || q.includes("begin")) return "Pick any quick-start card, or press “Ask my own question →” to open the full copilot chat.";
+    return "I can help with quick starts, theme choice, or where to begin on this title page.";
+  }
+
+  function submitSideAssistant() {
+    const value = input.value.trim();
+    if (!value) return;
+    addSideMessage("user", value);
+    input.value = "";
+    window.setTimeout(() => addSideMessage("bot", buildSideReply(value)), 250);
+  }
+
+  send.addEventListener("click", submitSideAssistant);
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      submitSideAssistant();
+    }
+  });
+}
+
 // ── Main send flow ──────────────────────────────────────────────────────────
 async function send() {
   const text = textarea.value.trim();
@@ -988,6 +1127,7 @@ textarea.addEventListener("input", () => {
 
 // ── Welcome message ─────────────────────────────────────────────────────────
 initOpeningScreen();
+initTitleSideAssistant();
 
 (async () => {
   await sleep(300);
