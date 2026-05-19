@@ -706,9 +706,9 @@
     </div>
     <aside class="title-assistant" aria-label="Side assistant on title page">
       <h3>🤝 Copilot Side Assistant</h3>
-      <p>Ask a quick setup question before you start.</p>
+      <p>Ask here and I’ll send it through Copilot.</p>
       <div id="title-assistant-log" class="title-assistant-log" role="log" aria-live="polite">
-        <div class="title-assistant-msg bot">Hi! I can help with quick title-page guidance like meal plans, themes, and where to start.</div>
+        <div class="title-assistant-msg bot">Hi! I route your message straight into the Copilot chat flow.</div>
       </div>
       <div class="title-assistant-input-row">
         <input id="title-assistant-input" type="text" placeholder="Ask side assistant..." aria-label="Ask side assistant">
@@ -939,21 +939,25 @@ function initTitleSideAssistant() {
     log.scrollTop = log.scrollHeight;
   }
 
-  function buildSideReply(question) {
-    const q = question.toLowerCase();
-    if (q.includes("theme")) return "You can pick theme pictures on this title page, then start with your prompt.";
-    if (q.includes("meal")) return "Try quick start: “📋 7-Day Meal Plan” for a full weekly setup.";
-    if (q.includes("vitamin") || q.includes("mineral")) return "Use quick start: “💊 Vitamins & Minerals” to route to the nutrient specialist flow.";
-    if (q.includes("start") || q.includes("begin")) return "Pick any quick-start card, or press “Ask my own question →” to open the full copilot chat.";
-    return "I can help with quick starts, theme choice, or where to begin on this title page.";
-  }
-
   function submitSideAssistant() {
     const value = input.value.trim();
     if (!value) return;
+    if (sendBtn.disabled) {
+      addSideMessage("bot", "Copilot is still answering. Please wait a moment.");
+      return;
+    }
     addSideMessage("user", value);
     input.value = "";
-    window.setTimeout(() => addSideMessage("bot", buildSideReply(value)), 250);
+    addSideMessage("bot", "Sending to Copilot…");
+
+    if (openingScreen && !openingScreen.classList.contains("hidden")) {
+      openingScreen.classList.add("hidden");
+      document.body.classList.remove("opening-active");
+    }
+
+    textarea.value = value;
+    textarea.dispatchEvent(new Event("input"));
+    send();
   }
 
   send.addEventListener("click", submitSideAssistant);
