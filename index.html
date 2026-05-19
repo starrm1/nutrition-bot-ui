@@ -706,9 +706,9 @@
     </div>
     <aside class="title-assistant" aria-label="Side assistant on title page">
       <h3>🤝 Copilot Side Assistant</h3>
-      <p>Ask here and I’ll send it through Copilot.</p>
+      <p>Peer assistant at the same level as Diet Director (independent).</p>
       <div id="title-assistant-log" class="title-assistant-log" role="log" aria-live="polite">
-        <div class="title-assistant-msg bot">Hi! I route your message straight into the Copilot chat flow.</div>
+        <div class="title-assistant-msg bot">Hi! I’m a separate assistant. I do not use Director departments.</div>
       </div>
       <div class="title-assistant-input-row">
         <input id="title-assistant-input" type="text" placeholder="Ask side assistant..." aria-label="Ask side assistant">
@@ -939,25 +939,21 @@ function initTitleSideAssistant() {
     log.scrollTop = log.scrollHeight;
   }
 
+  function buildSideReply(question) {
+    const q = question.toLowerCase();
+    if (q.includes("theme")) return "Use the picture options to pick a theme, then start with any quick-start card or your own question.";
+    if (q.includes("meal")) return "For planning, start with “📋 7-Day Meal Plan” and I can help you refine it after you open chat.";
+    if (q.includes("vitamin") || q.includes("mineral")) return "A good baseline is vitamin D, B12 (if plant-based), iron, calcium, and magnesium based on your needs.";
+    if (q.includes("weight")) return "For healthy weight change, focus on consistent meals, protein at each meal, hydration, and realistic weekly goals.";
+    return "I can help you choose a theme, pick a quick start, or shape your first question before you enter chat.";
+  }
+
   function submitSideAssistant() {
     const value = input.value.trim();
     if (!value) return;
-    if (sendBtn.disabled) {
-      addSideMessage("bot", "Copilot is still answering. Please wait a moment.");
-      return;
-    }
     addSideMessage("user", value);
     input.value = "";
-    addSideMessage("bot", "Sending to Copilot…");
-
-    if (openingScreen && !openingScreen.classList.contains("hidden")) {
-      openingScreen.classList.add("hidden");
-      document.body.classList.remove("opening-active");
-    }
-
-    textarea.value = value;
-    textarea.dispatchEvent(new Event("input"));
-    send();
+    window.setTimeout(() => addSideMessage("bot", buildSideReply(value)), 220);
   }
 
   send.addEventListener("click", submitSideAssistant);
