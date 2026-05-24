@@ -308,35 +308,77 @@
       inset: 0;
       z-index: 50;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      padding: 20px;
-      background: var(--opening-overlay-tint);
-      backdrop-filter: blur(4px);
+      padding: 22px 20px;
+      background: #fff8f0;
     }
     #opening-screen.hidden { display: none; }
     .opening-layout {
       width: min(1120px, 100%);
       display: grid;
       grid-template-columns: minmax(0, 1fr) 320px;
-      gap: 14px;
+      gap: 16px;
       align-items: start;
     }
-    .opening-card {
-      background: #ffffff;
-      border: 1px solid #bbf7d0;
-      border-radius: 16px;
-      box-shadow: 0 14px 36px rgba(22, 101, 52, 0.2);
-      padding: 18px;
+    .opening-hero {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 8px 10px 0;
+      overflow: hidden;
+      isolation: isolate;
     }
-    .opening-card h2 {
-      font-size: 20px;
-      color: #166534;
-      margin-bottom: 6px;
+    .opening-hero h2 {
+      font-size: clamp(34px, 5.5vw, 56px);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      color: #17492f;
+      text-shadow: 0 3px 14px rgba(255, 248, 240, 0.9);
+      margin: 0 0 14px;
+      opacity: 0;
+      transform: translateY(8px);
+      animation: openingTitleFade 560ms cubic-bezier(.2,.7,.2,1) 120ms forwards;
+      position: relative;
+      z-index: 2;
+    }
+    .opening-burst {
+      position: relative;
+      height: min(44vh, 360px);
+      max-height: 360px;
+      margin-inline: auto;
+      width: min(760px, 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .opening-fruit {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      font-size: clamp(26px, 4vw, 46px);
+      opacity: 0;
+      transform: translate(-50%, 0) scale(0.28) rotate(0deg);
+      filter: drop-shadow(0 8px 14px rgba(23, 73, 47, 0.12));
+      animation: fruitBurst 1880ms cubic-bezier(.18,.77,.2,1) forwards;
+      animation-delay: calc(420ms + var(--stagger, 0ms));
+      will-change: transform, opacity;
+    }
+    .opening-fruit:nth-child(odd) { font-size: clamp(28px, 4.2vw, 50px); }
+    .opening-deferred {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      animation: openingDeferredFade 540ms ease 1880ms forwards;
+    }
+    .opening-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid #f1d8bc;
+      border-radius: 16px;
+      box-shadow: 0 20px 34px rgba(126, 88, 40, 0.14);
+      padding: 18px;
     }
     .opening-card p {
       font-size: 13px;
-      color: #3f6b4f;
+      color: #5f4d38;
       margin-bottom: 14px;
     }
     .opening-grid {
@@ -365,7 +407,7 @@
       margin-top: 14px;
       margin-bottom: 8px;
       font-size: 13px;
-      color: #166534;
+      color: #5f4d38;
       font-weight: 700;
     }
     .opening-theme-grid {
@@ -408,7 +450,7 @@
       margin: 14px auto 0;
       background: none;
       border: none;
-      color: #166534;
+      color: #4b5c3f;
       font-size: 13px;
       font-weight: 600;
       cursor: pointer;
@@ -420,10 +462,10 @@
     }
     .opening-skip:hover { opacity: 1; }
     .title-assistant {
-      background: #ffffff;
-      border: 1px solid #bbf7d0;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid #f1d8bc;
       border-radius: 16px;
-      box-shadow: 0 14px 36px rgba(22, 101, 52, 0.2);
+      box-shadow: 0 20px 34px rgba(126, 88, 40, 0.14);
       padding: 12px;
       display: flex;
       flex-direction: column;
@@ -432,12 +474,12 @@
     }
     .title-assistant h3 {
       font-size: 15px;
-      color: #166534;
+      color: #4b5c3f;
     }
     .title-assistant p {
       margin: 0;
       font-size: 12px;
-      color: #3f6b4f;
+      color: #6f5942;
     }
     .title-assistant-log {
       border: 1px solid #dcfce7;
@@ -499,9 +541,58 @@
     }
     @media (max-width: 720px) {
       .opening-layout { grid-template-columns: 1fr; }
+      .opening-hero h2 { margin-bottom: 8px; }
+      .opening-burst { height: min(40vh, 290px); max-height: 290px; }
       .opening-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .opening-theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .title-assistant { max-height: 320px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .opening-hero h2,
+      .opening-fruit,
+      .opening-deferred {
+        animation: none;
+      }
+      .opening-hero h2,
+      .opening-deferred {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+      }
+      .opening-fruit {
+        opacity: 1;
+      }
+    }
+    @keyframes openingTitleFade {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fruitBurst {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, 0) scale(0.28) rotate(0deg);
+      }
+      12% { opacity: 1; }
+      64% {
+        opacity: 1;
+        transform: translate(calc(-50% + var(--x)), calc(-1 * var(--y))) scale(var(--scale, 1)) rotate(var(--rotate, 0deg));
+      }
+      100% {
+        opacity: 0.94;
+        transform: translate(calc(-50% + var(--x-settle, var(--x))), calc(-1 * var(--y-settle, var(--y)))) scale(calc(var(--scale, 1) * 0.95)) rotate(calc(var(--rotate, 0deg) * 0.72));
+      }
+    }
+    @keyframes openingDeferredFade {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+        visibility: hidden;
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+      }
     }
 
     /* ── Per-theme body backgrounds (all share green theme-3 palette, unique food emoji tiles) ── */
@@ -664,8 +755,22 @@
 
 <div id="opening-screen" role="dialog" aria-modal="true" aria-label="Opening options">
   <div class="opening-layout">
-    <div class="opening-card">
-      <h2>Welcome — choose 1 of 6 quick starts</h2>
+    <section class="opening-hero" aria-label="Welcome animation">
+      <h2>Welcome to Diet Director</h2>
+      <div class="opening-burst" aria-hidden="true">
+        <span class="opening-fruit" style="--x:-242px;--y:235px;--x-settle:-222px;--y-settle:210px;--scale:1.2;--rotate:-24deg;--stagger:0ms;">🍓</span>
+        <span class="opening-fruit" style="--x:-190px;--y:262px;--x-settle:-174px;--y-settle:228px;--scale:1.08;--rotate:18deg;--stagger:70ms;">🫐</span>
+        <span class="opening-fruit" style="--x:-134px;--y:280px;--x-settle:-118px;--y-settle:242px;--scale:1.15;--rotate:-14deg;--stagger:130ms;">🥝</span>
+        <span class="opening-fruit" style="--x:-84px;--y:302px;--x-settle:-70px;--y-settle:258px;--scale:1.05;--rotate:11deg;--stagger:180ms;">🍊</span>
+        <span class="opening-fruit" style="--x:-26px;--y:328px;--x-settle:-22px;--y-settle:274px;--scale:1.02;--rotate:-9deg;--stagger:240ms;">🍇</span>
+        <span class="opening-fruit" style="--x:30px;--y:334px;--x-settle:24px;--y-settle:278px;--scale:1.14;--rotate:12deg;--stagger:290ms;">🍒</span>
+        <span class="opening-fruit" style="--x:88px;--y:304px;--x-settle:72px;--y-settle:260px;--scale:1.08;--rotate:-10deg;--stagger:350ms;">🍎</span>
+        <span class="opening-fruit" style="--x:142px;--y:282px;--x-settle:124px;--y-settle:244px;--scale:1.12;--rotate:16deg;--stagger:410ms;">🍍</span>
+        <span class="opening-fruit" style="--x:194px;--y:264px;--x-settle:176px;--y-settle:228px;--scale:1.04;--rotate:-18deg;--stagger:470ms;">🍐</span>
+        <span class="opening-fruit" style="--x:238px;--y:238px;--x-settle:218px;--y-settle:212px;--scale:1.18;--rotate:22deg;--stagger:530ms;">🌿</span>
+      </div>
+    </section>
+    <div class="opening-card opening-deferred">
       <p>Select an option to begin. Your selected theme will remain unchanged.</p>
       <div class="opening-grid">
         <button class="opening-option" data-prompt="Give me a healthy food guide for this week.">🥦 Food Guide</button>
@@ -704,7 +809,7 @@
       </div>
       <button id="opening-skip" class="opening-skip" aria-label="Skip and ask your own question">Ask my own question →</button>
     </div>
-    <aside class="title-assistant" aria-label="Side assistant on title page">
+    <aside class="title-assistant opening-deferred" aria-label="Side assistant on title page">
       <h3>🤝 Copilot Side Assistant</h3>
       <p>Peer assistant at the same level as Diet Director (independent).</p>
       <div id="title-assistant-log" class="title-assistant-log" role="log" aria-live="polite">
