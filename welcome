@@ -2,4 +2,5 @@
 
 This folder contains welcome screen assets for the onboarding experience.
 
-Add the Fruit Burst welcome screen image here for the canonical welcome reference.
+`index.html` now provides a renderable welcome screen with a Fruit Burst hero placeholder.
+Replace the placeholder with the canonical Fruit Burst image asset when available.
