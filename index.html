@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutrition Bot — Diet Director</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      --opening-overlay-tint: rgba(13, 36, 25, 0.68);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+    body.opening-active #chat,
+    body.opening-active #input-area {
+      display: none;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a2540 0%, #0d1b2a 100%);
+      border-bottom: 1px solid #2a3a50;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+    .avatar {
+      width: 46px; height: 46px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2e7dce, #1a5fa8);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 3px rgba(46,125,206,0.3);
+    }
+    .header-info h1 { font-size: 17px; font-weight: 600; color: #d6eaff; }
+    .header-info p  { font-size: 12px; color: #7a9bbf; margin-top: 2px; }
+    .status-dot {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: #22c55e;
+      display: inline-block;
+      margin-right: 5px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+
+    /* ── Chat area ── */
+    #chat {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      scroll-behavior: smooth;
+    }
+
+    /* ── Message bubbles ── */
+    .msg { display: flex; gap: 10px; max-width: 720px; width: 100%; }
+    .msg.user  { align-self: flex-end; flex-direction: row-reverse; }
+    .msg.bot   { align-self: flex-start; }
+
+    .msg-avatar {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .msg.bot  .msg-avatar { background: linear-gradient(135deg, #1e4d8c, #0f2d5c); }
+    .msg.user .msg-avatar { background: linear-gradient(135deg, #3a3a5c, #22223b); }
+
+    .bubble {
+      padding: 11px 15px;
+      border-radius: 16px;
+      font-size: 14.5px;
+      line-height: 1.55;
+      max-width: calc(100% - 50px);
+      word-break: break-word;
+    }
+    .msg.bot  .bubble {
+      background: #1c2d44;
+      border: 1px solid #2a3f5a;
+      border-top-left-radius: 4px;
+      color: #d6eaff;
+    }
+    .msg.user .bubble {
+      background: #1e3a6e;
+      border: 1px solid #2a5090;
+      border-top-right-radius: 4px;
+      color: #ddeeff;
+    }
+
+    /* ── Routing card ── */
+    .routing-card {
+      background: #0f2230;
+      border: 1px solid #1e4060;
+      border-left: 4px solid #2e7dce;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+    .routing-card .rc-label {
+      text-transform: uppercase;
+      font-size: 10.5px;
+      letter-spacing: .08em;
+      color: #5a8fbf;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .routing-card .rc-dept {
+      font-weight: 600;
+      color: #7ec8ff;
+      font-size: 14.5px;
+    }
+    .routing-card .rc-topics {
+      margin-top: 4px;
+      color: #8aabb8;
+      font-size: 12.5px;
+    }
+
+    /* ── Answer card ── */
+    .answer-card {
+      background: #0a1f15;
+      border: 1px solid #1a4030;
+      border-left: 4px solid #22c55e;
+      border-radius: 10px;
+      padding: 13px 15px;
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #c8e8d0;
+    }
+    .answer-card .ac-header {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 8px;
+    }
+    .answer-card .ac-bot {
+      font-weight: 600;
+      color: #5edb9a;
+      font-size: 13px;
+    }
+    .badge {
+      background: rgba(34,197,94,.15);
+      color: #4ade80;
+      border: 1px solid rgba(34,197,94,.3);
+      border-radius: 20px;
+      font-size: 10.5px;
+      padding: 2px 8px;
+      font-weight: 600;
+    }
+
+    /* ── Typing indicator ── */
+    .typing { display: flex; align-items: center; gap: 4px; height: 20px; padding: 4px 0; }
+    .typing span {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: #3a7fc1;
+      animation: bounce 1.2s infinite;
+    }
+    .typing span:nth-child(2) { animation-delay: .2s; }
+    .typing span:nth-child(3) { animation-delay: .4s; }
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); opacity: .4; }
+      40%            { transform: translateY(-6px); opacity: 1; }
+    }
+
+    /* ── Step tag ── */
+    .step-tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: rgba(46,125,206,.12);
+      border: 1px solid rgba(46,125,206,.25);
+      color: #6aadde;
+      border-radius: 20px;
+      font-size: 11px;
+      padding: 2px 9px;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    /* ── Input area ── */
+    #input-area {
+      background: #131a26;
+      border-top: 1px solid #222d3d;
+      padding: 14px 16px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-end;
+      flex-shrink: 0;
+    }
+    #question {
+      flex: 1;
+      background: #1c2a3a;
+      border: 1px solid #2e4260;
+      border-radius: 12px;
+      color: #d6eaff;
+      font-size: 14.5px;
+      padding: 11px 15px;
+      resize: none;
+      outline: none;
+      min-height: 44px;
+      max-height: 160px;
+      line-height: 1.5;
+      transition: border-color .2s;
+      font-family: inherit;
+    }
+    #question::placeholder { color: #4a6a88; }
+    #question:focus { border-color: #2e7dce; }
+    #send-btn {
+      background: linear-gradient(135deg, #1e5fa8, #2e7dce);
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 20px;
+      width: 44px; height: 44px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: opacity .2s, transform .1s;
+      flex-shrink: 0;
+    }
+    #send-btn:hover:not(:disabled) { opacity: .85; transform: scale(1.05); }
+    #send-btn:disabled { opacity: .35; cursor: not-allowed; }
+
+    /* ── Divider ── */
+    .chat-divider {
+      text-align: center;
+      color: #33506a;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 4px 0;
+    }
+    .chat-divider::before, .chat-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #1e3048;
+    }
+
+    /* ── Scrollbar ── */
+    #chat::-webkit-scrollbar { width: 6px; }
+    #chat::-webkit-scrollbar-track { background: transparent; }
+    #chat::-webkit-scrollbar-thumb { background: #2a3f5a; border-radius: 3px; }
+
+    /* ── Theme switcher bar ── */
+    #theme-bar {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #e2e8f0;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+    #theme-bar span {
+      font-size: 11px;
+      font-weight: 600;
+      color: #64748b;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+    .theme-swatch {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: transform .15s, border-color .15s;
+      position: relative;
+    }
+    .theme-swatch:hover { transform: scale(1.15); }
+    .theme-swatch.active { border-color: #2e7dce; box-shadow: 0 0 0 2px #bfdbfe; }
+    .theme-swatch[title]::after {
+      content: attr(title);
+      position: absolute;
+      bottom: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e293b;
+      color: #f1f5f9;
+      font-size: 10px;
+      white-space: nowrap;
+      padding: 3px 7px;
+      border-radius: 5px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .15s;
+    }
+    .theme-swatch:hover::after { opacity: 1; }
+
+    /* ── Opening screen ── */
+    #opening-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: var(--opening-overlay-tint);
+      backdrop-filter: blur(4px);
+    }
+    #opening-screen.hidden { display: none; }
+    .opening-layout {
+      width: min(1120px, 100%);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 14px;
+      align-items: start;
+    }
+    .opening-card {
+      background: #ffffff;
+      border: 1px solid #bbf7d0;
+      border-radius: 16px;
+      box-shadow: 0 14px 36px rgba(22, 101, 52, 0.2);
+      padding: 18px;
+    }
+    .opening-card h2 {
+      font-size: 20px;
+      color: #166534;
+      margin-bottom: 6px;
+    }
+    .opening-card p {
+      font-size: 13px;
+      color: #3f6b4f;
+      margin-bottom: 14px;
+    }
+    .opening-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .opening-option {
+      border: 1px solid #86efac;
+      background: #f0fdf4;
+      color: #14532d;
+      border-radius: 12px;
+      padding: 12px 11px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform .12s, background .12s, border-color .12s;
+    }
+    .opening-option:hover {
+      transform: translateY(-1px);
+      background: #dcfce7;
+      border-color: #4ade80;
+    }
+    .opening-theme-title {
+      margin-top: 14px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #166534;
+      font-weight: 700;
+    }
+    .opening-theme-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .opening-theme-option {
+      border: 1px solid #bbf7d0;
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 6px;
+      cursor: pointer;
+      text-align: left;
+      transition: transform .12s, border-color .12s, box-shadow .12s;
+    }
+    .opening-theme-option:hover {
+      transform: translateY(-1px);
+      border-color: #4ade80;
+      box-shadow: 0 6px 14px rgba(22, 101, 52, 0.12);
+    }
+    .opening-theme-option img {
+      width: 100%;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 6px;
+      border: 1px solid #dcfce7;
+    }
+    .opening-theme-option span {
+      display: block;
+      font-size: 12px;
+      color: #166534;
+      font-weight: 600;
+      padding: 0 2px 2px;
+    }
+    .opening-skip {
+      display: block;
+      margin: 14px auto 0;
+      background: none;
+      border: none;
+      color: #166534;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      padding: 4px 0;
+      opacity: 0.75;
+      transition: opacity .12s;
+    }
+    .opening-skip:hover { opacity: 1; }
+    .title-assistant {
+      background: #ffffff;
+      border: 1px solid #bbf7d0;
+      border-radius: 16px;
+      box-shadow: 0 14px 36px rgba(22, 101, 52, 0.2);
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 540px;
+    }
+    .title-assistant h3 {
+      font-size: 15px;
+      color: #166534;
+    }
+    .title-assistant p {
+      margin: 0;
+      font-size: 12px;
+      color: #3f6b4f;
+    }
+    .title-assistant-log {
+      border: 1px solid #dcfce7;
+      border-radius: 10px;
+      background: #f8fff8;
+      padding: 8px;
+      overflow-y: auto;
+      flex: 1;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .title-assistant-msg {
+      font-size: 12px;
+      line-height: 1.45;
+      padding: 6px 8px;
+      border-radius: 9px;
+      max-width: 100%;
+      word-break: break-word;
+    }
+    .title-assistant-msg.bot {
+      background: #ecfdf3;
+      border: 1px solid #bbf7d0;
+      color: #14532d;
+    }
+    .title-assistant-msg.user {
+      background: #dcfce7;
+      border: 1px solid #86efac;
+      color: #14532d;
+      align-self: flex-end;
+    }
+    .title-assistant-input-row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    #title-assistant-input {
+      flex: 1;
+      border: 1px solid #86efac;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #14532d;
+      font-size: 12px;
+      padding: 7px 9px;
+      outline: none;
+    }
+    #title-assistant-input:focus { border-color: #22c55e; }
+    #title-assistant-send {
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: #fff;
+      font-size: 16px;
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    @media (max-width: 720px) {
+      .opening-layout { grid-template-columns: 1fr; }
+      .opening-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .opening-theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .title-assistant { max-height: 320px; }
+    }
+
+    /* ── Per-theme body backgrounds (all share green theme-3 palette, unique food emoji tiles) ── */
+    body.theme-1 {
+      background-color: #eefaf0;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg opacity='0.12'%3E%3Ctext x='18' y='58' font-size='28'%3E%F0%9F%8D%8A%3C/text%3E%3Ctext x='122' y='50' font-size='26'%3E%F0%9F%8D%8B%3C/text%3E%3Ctext x='70' y='120' font-size='30'%3E%F0%9F%8D%87%3C/text%3E%3Ctext x='150' y='168' font-size='28'%3E%F0%9F%8D%8C%3C/text%3E%3Ctext x='28' y='188' font-size='28'%3E%F0%9F%8D%92%3C/text%3E%3C/g%3E%3C/svg%3E");
+      background-size: 220px 220px;
+      color: #0f172a;
+    }
+    body.theme-2 {
+      background-color: #eefaf0;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg opacity='0.12'%3E%3Ctext x='18' y='58' font-size='28'%3E%F0%9F%A5%A6%3C/text%3E%3Ctext x='122' y='50' font-size='26'%3E%F0%9F%A5%95%3C/text%3E%3Ctext x='70' y='120' font-size='30'%3E%F0%9F%A5%AC%3C/text%3E%3Ctext x='150' y='168' font-size='28'%3E%F0%9F%8C%BD%3C/text%3E%3Ctext x='28' y='188' font-size='28'%3E%F0%9F%A5%92%3C/text%3E%3C/g%3E%3C/svg%3E");
+      background-size: 220px 220px;
+      color: #0f172a;
+    }
+    body.theme-3 {
+      background-color: #eefaf0;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg opacity='0.12'%3E%3Ctext x='18' y='58' font-size='28'%3E%F0%9F%A5%A6%3C/text%3E%3Ctext x='122' y='50' font-size='26'%3E%F0%9F%8D%8E%3C/text%3E%3Ctext x='70' y='120' font-size='30'%3E%F0%9F%A5%95%3C/text%3E%3Ctext x='150' y='168' font-size='28'%3E%F0%9F%8D%93%3C/text%3E%3Ctext x='28' y='188' font-size='28'%3E%F0%9F%A5%91%3C/text%3E%3C/g%3E%3C/svg%3E");
+      background-size: 220px 220px;
+      color: #0f172a;
+    }
+    body.theme-4 {
+      background-color: #eefaf0;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg opacity='0.12'%3E%3Ctext x='18' y='58' font-size='28'%3E%F0%9F%A5%9A%3C/text%3E%3Ctext x='122' y='50' font-size='26'%3E%F0%9F%A5%A9%3C/text%3E%3Ctext x='70' y='120' font-size='30'%3E%F0%9F%8D%97%3C/text%3E%3Ctext x='150' y='168' font-size='28'%3E%F0%9F%90%9F%3C/text%3E%3Ctext x='28' y='188' font-size='28'%3E%F0%9F%AB%98%3C/text%3E%3C/g%3E%3C/svg%3E");
+      background-size: 220px 220px;
+      color: #0f172a;
+    }
+    body.theme-5 {
+      background-color: #eefaf0;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg opacity='0.12'%3E%3Ctext x='18' y='58' font-size='28'%3E%F0%9F%8C%BE%3C/text%3E%3Ctext x='122' y='50' font-size='26'%3E%F0%9F%8D%9E%3C/text%3E%3Ctext x='70' y='120' font-size='30'%3E%F0%9F%A5%90%3C/text%3E%3Ctext x='150' y='168' font-size='28'%3E%F0%9F%AB%93%3C/text%3E%3Ctext x='28' y='188' font-size='28'%3E%F0%9F%A5%97%3C/text%3E%3C/g%3E%3C/svg%3E");
+      background-size: 220px 220px;
+      color: #0f172a;
+    }
+    body.theme-6 {
+      background-color: #eefaf0;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg opacity='0.12'%3E%3Ctext x='18' y='58' font-size='28'%3E%F0%9F%8D%B2%3C/text%3E%3Ctext x='122' y='50' font-size='26'%3E%F0%9F%AB%95%3C/text%3E%3Ctext x='70' y='120' font-size='30'%3E%F0%9F%A5%98%3C/text%3E%3Ctext x='150' y='168' font-size='28'%3E%F0%9F%8D%B1%3C/text%3E%3Ctext x='28' y='188' font-size='28'%3E%F0%9F%8D%9C%3C/text%3E%3C/g%3E%3C/svg%3E");
+      background-size: 220px 220px;
+      color: #0f172a;
+    }
+
+    /* ── Green food theme — overrides for all 6 themes ── */
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) header {
+      background: linear-gradient(135deg, #1a3a2a 0%, #0d2419 100%);
+      border-bottom: 1px solid #2a5a3a;
+    }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .avatar {
+      background: linear-gradient(135deg, #2e9e6e, #1a7a50);
+      box-shadow: 0 0 0 3px rgba(46,158,110,0.3);
+    }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .header-info h1 { color: #c8f0d8; }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .header-info p  { color: #6aab88; }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .status-dot     { background: #34d399; }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .msg.bot  .msg-avatar { background: linear-gradient(135deg, #1a5c38, #0d3a22); }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .msg.user .msg-avatar { background: linear-gradient(135deg, #2a4a3a, #1a3028); }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .msg.bot  .bubble {
+      background: #ffffff;
+      border: 1px solid #bbf0cc;
+      border-top-left-radius: 4px;
+      color: #1a3028;
+    }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .msg.user .bubble {
+      background: #d4f5e2;
+      border: 1px solid #86efaa;
+      border-top-right-radius: 4px;
+      color: #0f2a1a;
+    }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .routing-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 4px solid #22c55e;
+    }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .routing-card .rc-label  { color: #4a9a68; }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .routing-card .rc-dept   { color: #166534; }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .routing-card .rc-topics { color: #4a7a5a; }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .answer-card {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      border-left: 4px solid #16a34a;
+      color: #1a3a28;
+    }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .answer-card .ac-bot { color: #15803d; }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .badge {
+      background: rgba(22,163,74,.12);
+      color: #16a34a;
+      border-color: rgba(22,163,74,.3);
+    }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .typing span { background: #22c55e; }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .step-tag {
+      background: rgba(22,163,74,.1);
+      border: 1px solid rgba(22,163,74,.25);
+      color: #15803d;
+    }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) #input-area {
+      background: #f0fdf4;
+      border-top: 1px solid #bbf7d0;
+    }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) #question {
+      background: #ffffff;
+      border: 1px solid #86efac;
+      color: #1a3028;
+    }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) #question::placeholder { color: #6aab88; }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) #question:focus        { border-color: #22c55e; }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) #send-btn {
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+    }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) #theme-bar {
+      background: rgba(240,253,244,0.92);
+      border-bottom: 1px solid #bbf7d0;
+    }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) #theme-bar span { color: #4a7a5a; }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .theme-swatch.active { border-color: #22c55e; box-shadow: 0 0 0 2px #bbf7d0; }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .chat-divider { color: #6aab88; }
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .chat-divider::before,
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) .chat-divider::after { background: #bbf7d0; }
+
+    :is(body.theme-1, body.theme-2, body.theme-3, body.theme-4, body.theme-5, body.theme-6) #chat::-webkit-scrollbar-thumb { background: #86efac; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .bubble { font-size: 13.5px; }
+      header  { padding: 10px 14px; }
+    }
+  </style>
+</head>
+<body class="opening-active">
+
+<header>
+  <div class="avatar">🍽️</div>
+  <div class="header-info">
+    <h1><span class="status-dot"></span>Diet Director</h1>
+    <p>Your nutrition question is routed to the right department specialist</p>
+  </div>
+</header>
+
+<div id="theme-bar" role="toolbar" aria-label="Background theme picker">
+  <span>Theme:</span>
+  <button class="theme-swatch" data-theme="theme-2" title="2 — Vegetables" style="background:#eefaf0;border-color:#86efac;" aria-label="Vegetables"></button>
+  <button class="theme-swatch" data-theme="theme-1" title="1 — Fruits" style="background:#eefaf0;border-color:#86efac;" aria-label="Fruits"></button>
+  <button class="theme-swatch active" data-theme="theme-3" title="3 — Mixed Foods" style="background:#eefaf0;border-color:#86efac;" aria-label="Mixed Foods"></button>
+  <button class="theme-swatch" data-theme="theme-4" title="4 — Proteins" style="background:#eefaf0;border-color:#86efac;" aria-label="Proteins"></button>
+  <button class="theme-swatch" data-theme="theme-5" title="5 — Grains" style="background:#eefaf0;border-color:#86efac;" aria-label="Grains"></button>
+  <button class="theme-swatch" data-theme="theme-6" title="6 — Meals" style="background:#eefaf0;border-color:#86efac;" aria-label="Meals"></button>
+</div>
+
+<div id="opening-screen" role="dialog" aria-modal="true" aria-label="Opening options">
+  <div class="opening-layout">
+    <div class="opening-card">
+      <h2>Welcome — choose 1 of 6 quick starts</h2>
+      <p>Select an option to begin. Your selected theme will remain unchanged.</p>
+      <div class="opening-grid">
+        <button class="opening-option" data-prompt="Give me a healthy food guide for this week.">🥦 Food Guide</button>
+        <button class="opening-option" data-prompt="Help me with vitamins and minerals I should focus on.">💊 Vitamins & Minerals</button>
+        <button class="opening-option" data-prompt="Create a 7-day meal plan with easy prep.">📋 7-Day Meal Plan</button>
+        <button class="opening-option" data-prompt="I need a plan for dietary restrictions and food swaps.">🚫 Dietary Restrictions</button>
+        <button class="opening-option" data-prompt="Build a sports nutrition plan for workouts and recovery.">🏋️ Sports Nutrition</button>
+        <button class="opening-option" data-prompt="Help me with a weight management nutrition plan.">⚖️ Weight Management</button>
+      </div>
+      <p class="opening-theme-title">Picture options (choose your theme)</p>
+      <div class="opening-theme-grid" role="group" aria-label="Theme picture options">
+        <button class="opening-theme-option" data-theme="theme-1" aria-label="Theme 1 Fruits">
+          <img src="screenshots/theme_1.png" alt="">
+          <span>1 — Fruits</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-2" aria-label="Theme 2 Vegetables">
+          <img src="screenshots/theme_2.png" alt="">
+          <span>2 — Vegetables</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-3" aria-label="Theme 3 Mixed Foods">
+          <img src="screenshots/theme_3.png" alt="">
+          <span>3 — Mixed Foods</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-4" aria-label="Theme 4 Proteins">
+          <img src="screenshots/theme_4.png" alt="">
+          <span>4 — Proteins</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-5" aria-label="Theme 5 Grains">
+          <img src="screenshots/theme_5.png" alt="">
+          <span>5 — Grains</span>
+        </button>
+        <button class="opening-theme-option" data-theme="theme-6" aria-label="Theme 6 Meals">
+          <img src="screenshots/theme_6.png" alt="">
+          <span>6 — Meals</span>
+        </button>
+      </div>
+      <button id="opening-skip" class="opening-skip" aria-label="Skip and ask your own question">Ask my own question →</button>
+    </div>
+    <aside class="title-assistant" aria-label="Side assistant on title page">
+      <h3>🤝 Copilot Side Assistant</h3>
+      <p>Peer assistant at the same level as Diet Director (independent).</p>
+      <div id="title-assistant-log" class="title-assistant-log" role="log" aria-live="polite">
+        <div class="title-assistant-msg bot">Hi! I’m a separate assistant. I do not use Director departments.</div>
+      </div>
+      <div class="title-assistant-input-row">
+        <input id="title-assistant-input" type="text" placeholder="Ask side assistant..." aria-label="Ask side assistant">
+        <button id="title-assistant-send" aria-label="Send side assistant message">➤</button>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<div id="chat" role="log" aria-live="polite" aria-label="Conversation"></div>
+
+<div id="input-area">
+  <textarea
+    id="question"
+    placeholder="Ask the Diet Director a nutrition question…"
+    rows="1"
+    aria-label="Your question"
+  ></textarea>
+  <button id="send-btn" aria-label="Send question">➤</button>
+</div>
+
+<script>
+// ── Routing rules (mirrored from bot_21_diet_director.json) ──────────────
+const ROUTING_RULES = [
+  {
+    dept: "Food Specialist Department",
+    head: "bot_22 — Food Specialist Department Head",
+    emoji: "🥦",
+    keywords: ["food type","food group","whole food","processed food","organic","conventional","food quality","food storage","food preparation","ingredient","superfood","fresh food","raw food","cooked","ferment","food guide","healthy eating","balanced diet"],
+    topics: "food types, food groups, ingredients, food quality, storage, preparation, superfoods",
+    answers: {
+      default: "Great question for the Food Specialist team! As a general guide: prioritise whole, minimally processed foods — fresh vegetables, fruits, legumes, whole grains, lean proteins, and healthy fats. Look at ingredient labels; fewer, recognisable ingredients usually means a less processed product. Organic produce can reduce pesticide exposure, though conventional produce washed thoroughly is also nutritious. Proper food storage (cool, dry, sealed) preserves nutrients and safety. Feel free to ask about any specific food or food group for a more detailed breakdown."
+    }
+  },
+  {
+    dept: "Nutrient Specialist Department",
+    head: "bot_23 — Nutrient Specialist Department Head",
+    emoji: "💊",
+    keywords: ["vitamin","mineral","protein","carbohydrate","fat","fibre","fiber","antioxidant","phytonutrient","deficiency","absorption","macronutrient","micronutrient","calcium","iron","zinc","magnesium","potassium","sodium","omega","folate","b12","vitamin d","vitamin c","selenium"],
+    topics: "vitamins, minerals, protein, carbs, fats, fibre, deficiencies, nutrient absorption",
+    answers: {
+      default: "The Nutrient Specialist department is on it! Nutrients are broadly split into macronutrients (protein, carbohydrates, fats) and micronutrients (vitamins and minerals). Protein supports muscle repair and immune function — aim for 0.8–1.2 g per kg of body weight (more for active individuals). Carbohydrates are your primary energy source; choose complex carbs (oats, brown rice, legumes) for sustained energy. Healthy fats (avocado, olive oil, nuts, oily fish) support brain health and hormone production. For micronutrients: vitamin D (sunlight + fatty fish), iron (red meat, lentils + vitamin C for absorption), calcium (dairy, fortified plant milks, leafy greens). If you suspect a deficiency, a blood panel with your GP is the best starting point."
+    }
+  },
+  {
+    dept: "Meal Planning Specialist Department",
+    head: "bot_24 — Meal Planning Specialist Department Head",
+    emoji: "📋",
+    keywords: ["meal plan","meal prep","weekly meal","daily meal","portion","balanced meal","calorie plan","grocery","grocery list","batch cook","schedule","recipe","breakfast","lunch","dinner","snack","prep"],
+    topics: "meal planning, meal prep, weekly plans, portion planning, grocery lists, batch cooking",
+    answers: {
+      default: "The Meal Planning team has you covered! A practical approach: plan 4–5 meals per week (leaving flexibility for leftovers and one eating-out day). Build each meal around the plate method — ½ plate vegetables, ¼ protein, ¼ complex carbohydrate, plus a small amount of healthy fat. Batch cook grains (rice, quinoa) and proteins (chicken, chickpeas) on the weekend to assemble quick meals during the week. For grocery lists, group by category (produce, proteins, pantry staples) to reduce time and impulse buys. A consistent meal schedule — even just 3 main meals at roughly the same times — helps regulate appetite hormones and energy levels throughout the day."
+    }
+  },
+  {
+    dept: "Texture Specialist Department",
+    head: "bot_25 — Texture Specialist Department Head",
+    emoji: "🍮",
+    keywords: ["texture","soft food","crunchy","smooth","purée","pureed","chew","swallow","dysphagia","modified","consistency","mechanical soft","minced","mashed","liquid diet","thicken"],
+    topics: "soft/purée/texture-modified diets, chewing or swallowing difficulty, food consistency",
+    answers: {
+      default: "The Texture Specialist department is ready to help! Texture-modified diets are used when chewing or swallowing is difficult (dysphagia), post-surgery, or due to dental issues. The main levels are: Regular → Soft & bite-sized → Minced & moist → Puréed → Liquidised. For a soft diet, good options include mashed potato, soft-cooked fish, scrambled eggs, ripe banana, yoghurt, and well-cooked pasta. Fortified puréed meals can meet full nutritional needs — adding cream, butter, or protein powder boosts calories. Thickening agents (starch or gum-based) can adjust liquid consistency for safer swallowing. If swallowing difficulties are new or worsening, please consult a speech-language pathologist."
+    }
+  },
+  {
+    dept: "Dietary Restriction Specialist Department",
+    head: "bot_26 — Dietary Restriction Specialist Department Head",
+    emoji: "🚫",
+    keywords: ["allergy","intolerance","gluten","dairy","lactose","nut allergy","peanut","vegan","vegetarian","plant-based","kosher","halal","low sodium","low sugar","elimination","restriction","celiac","coeliac","soy","egg allergy","shellfish"],
+    topics: "food allergies, intolerances, vegan/vegetarian, gluten-free, kosher, halal, elimination diets",
+    answers: {
+      default: "The Dietary Restriction Specialist department is here! Managing dietary restrictions requires reading labels carefully and planning substitutions. For gluten-free: replace wheat with rice, quinoa, oats (certified GF), buckwheat, and lentil-based products. For dairy-free: fortified plant milks (oat, soy, almond), tofu, and leafy greens cover calcium needs. Vegan diets should include a reliable B12 source (fortified foods or supplement), iron-rich legumes paired with vitamin C, and consider omega-3 from algae oil. For allergies, always check for cross-contamination warnings. An elimination diet should ideally be guided by a dietitian to avoid missing nutrients during the restriction phase."
+    }
+  },
+  {
+    dept: "Sports Nutrition Specialist Department",
+    head: "bot_27 — Sports Nutrition Specialist Department Head",
+    emoji: "🏋️",
+    keywords: ["sport","athletic","athlete","workout","exercise","pre workout","post workout","muscle","recovery","endurance","hydration athlete","protein athlete","energy exercise","supplement","creatine","performance","training","running","cycling","gym","stamina"],
+    topics: "athletic performance, pre/post workout nutrition, muscle building, recovery, hydration for sport",
+    answers: {
+      default: "The Sports Nutrition department is on the case! Key principles: Pre-workout (1–2 hrs before) — eat a carb-rich, moderate-protein meal (e.g. oats + banana + Greek yoghurt) for sustained energy. During exercise (>60 min) — 30–60 g of easily digestible carbs per hour (gels, sports drink, banana). Post-workout (within 30–60 min) — protein + carbs to repair muscle and replenish glycogen (e.g. chicken + rice, or a protein shake + fruit). Daily protein target for active individuals: 1.4–2.0 g per kg body weight. Hydration: drink to thirst and aim for pale yellow urine; replace electrolytes after heavy sweat sessions. For strength goals, creatine monohydrate (3–5 g/day) is one of the most evidence-backed supplements available."
+    }
+  },
+  {
+    dept: "Weight Management Specialist Department",
+    head: "bot_28 — Weight Management Specialist Department Head",
+    emoji: "⚖️",
+    keywords: ["weight loss","weight gain","lose weight","gain weight","calorie deficit","calorie surplus","bmi","body composition","metabolism","fat loss","healthy weight","obesity","overweight","underweight","weight maintenance","slimming","diet plan","calories","tdee","weight management"],
+    topics: "weight loss/gain, calorie deficit/surplus, metabolism, BMI, body composition",
+    answers: {
+      default: "The Weight Management department is reviewing your question! Sustainable weight management comes down to a few core principles. For weight loss: a moderate calorie deficit of 300–500 kcal/day leads to roughly 0.3–0.5 kg of fat loss per week without sacrificing muscle. Prioritise protein (1.6–2.2 g/kg body weight) to preserve muscle while in deficit. Strength training 2–3×/week protects lean mass. For weight gain: a surplus of 200–400 kcal/day with high protein promotes muscle growth over fat. In both cases, tracking food intake (even briefly) builds awareness of portion sizes. Crash diets and extreme restriction almost always result in muscle loss and rebound weight gain — a gradual, consistent approach wins long-term."
+    }
+  },
+  {
+    dept: "Gut Health Specialist Department",
+    head: "bot_29 — Gut Health Specialist Department Head",
+    emoji: "🦠",
+    keywords: ["gut","probiotic","prebiotic","microbiome","digestive","digestion","bloat","bloating","ibs","crohn","gut bacteria","ferment","leaky gut","bowel","constipation","diarrhea","diarrhoea","stomach","intestine","fibre gut","sibo","acid reflux","heartburn"],
+    topics: "gut health, probiotics/prebiotics, microbiome, IBS, bloating, fermented foods, digestive health",
+    answers: {
+      default: "The Gut Health Specialist department is on your question! The gut microbiome thrives on diversity. Practical tips: eat 30 different plant foods per week (vegetables, fruits, legumes, wholegrains, nuts, seeds, herbs) — variety feeds a wider range of beneficial bacteria. Include fermented foods regularly: live yoghurt, kefir, kimchi, sauerkraut, miso, and tempeh introduce beneficial bacteria. Prebiotic fibre (onions, garlic, leeks, asparagus, oats, bananas) feeds existing good bacteria. For IBS, a low-FODMAP diet guided by a dietitian can identify triggers. Probiotic supplements can help specific conditions (e.g. Lactobacillus rhamnosus GG for antibiotic-associated diarrhoea) but choosing the right strain matters. Hydration and regular meals also support gut motility."
+    }
+  },
+  {
+    dept: "Life Stage Specialist Department",
+    head: "bot_30 — Life Stage Specialist Department Head",
+    emoji: "👶",
+    keywords: ["pregnancy","pregnant","infant","baby","toddler","child","teen","teenager","adult","senior","elderly","menopause","postpartum","breastfeed","life stage","age","older adult","growing","puberty","nutrition age"],
+    topics: "pregnancy, infant, child, teen, adult, senior, menopause nutrition",
+    answers: {
+      default: "The Life Stage Specialist department has great guidance for you! Nutritional needs shift significantly through life. Pregnancy: folate (400–600 mcg/day, ideally pre-conception), iron, iodine, omega-3 DHA, and vitamin D are critical. Infants/toddlers: breast milk or formula for the first 6 months, then iron-rich first foods; diverse textures by 12 months reduce pickiness. Children & teens: calcium and vitamin D for bone development; iron is especially important for menstruating teens. Adults: maintain muscle with adequate protein; monitor vitamin D, B12, and iron. Senior nutrition: protein needs actually increase (1.0–1.2 g/kg) to prevent sarcopenia; calcium + vitamin D for bone health; B12 absorption declines with age so supplementation is often recommended. Menopause: calcium, vitamin D, phytoestrogens (soy, flaxseed) and maintaining a healthy weight reduce symptom severity."
+    }
+  }
+];
+
+// ── Department keyword matching ─────────────────────────────────────────────
+function route(question) {
+  const q = question.toLowerCase();
+  let best = null;
+  let bestScore = 0;
+
+  for (const rule of ROUTING_RULES) {
+    let score = 0;
+    for (const kw of rule.keywords) {
+      if (q.includes(kw)) score++;
+    }
+    if (score > bestScore) { bestScore = score; best = rule; }
+  }
+
+  return best; // null = director answers directly
+}
+
+// ── Simple response generator ───────────────────────────────────────────────
+function buildAnswer(dept) {
+  return dept.answers.default;
+}
+
+// ── DOM helpers ────────────────────────────────────────────────────────────
+const chat     = document.getElementById("chat");
+const textarea = document.getElementById("question");
+const sendBtn  = document.getElementById("send-btn");
+const openingScreen = document.getElementById("opening-screen");
+
+function scrollBottom() {
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function addMessage(role, html, extraClass = "") {
+  const isUser = role === "user";
+  const wrap   = document.createElement("div");
+  wrap.className = `msg ${role} ${extraClass}`;
+  wrap.innerHTML = `
+    <div class="msg-avatar">${isUser ? "🧑" : "🍽️"}</div>
+    <div class="bubble">${html}</div>
+  `;
+  chat.appendChild(wrap);
+  scrollBottom();
+  return wrap;
+}
+
+function addTyping() {
+  const wrap = document.createElement("div");
+  wrap.className = "msg bot typing-wrap";
+  wrap.innerHTML = `
+    <div class="msg-avatar">🍽️</div>
+    <div class="bubble"><div class="typing"><span></span><span></span><span></span></div></div>
+  `;
+  chat.appendChild(wrap);
+  scrollBottom();
+  return wrap;
+}
+
+function addDivider(text) {
+  const d = document.createElement("div");
+  d.className = "chat-divider";
+  d.textContent = text;
+  chat.appendChild(d);
+  scrollBottom();
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function initOpeningScreen() {
+  if (!openingScreen) {
+    console.warn("Opening screen element (#opening-screen) not found in DOM. Quick-start options will not be initialized.");
+    document.body.classList.remove("opening-active");
+    return;
+  }
+  openingScreen.querySelectorAll(".opening-option").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const prompt = btn.dataset.prompt || "";
+      textarea.value = prompt;
+      textarea.dispatchEvent(new Event("input"));
+      openingScreen.classList.add("hidden");
+      document.body.classList.remove("opening-active");
+      textarea.focus();
+    });
+  });
+  openingScreen.querySelectorAll(".opening-theme-option").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const selectedTheme = btn.dataset.theme;
+      const themeSwatch = document.querySelector(`.theme-swatch[data-theme="${selectedTheme}"]`);
+      if (themeSwatch) themeSwatch.click();
+    });
+  });
+  const skipBtn = document.getElementById("opening-skip");
+  if (skipBtn) {
+    skipBtn.addEventListener("click", () => {
+      openingScreen.classList.add("hidden");
+      document.body.classList.remove("opening-active");
+      textarea.focus();
+    });
+  }
+}
+
+function initTitleSideAssistant() {
+  const log = document.getElementById("title-assistant-log");
+  const input = document.getElementById("title-assistant-input");
+  const send = document.getElementById("title-assistant-send");
+  if (!log || !input || !send) return;
+
+  function addSideMessage(role, text) {
+    const node = document.createElement("div");
+    node.className = `title-assistant-msg ${role}`;
+    node.innerHTML = escHtml(text);
+    log.appendChild(node);
+    log.scrollTop = log.scrollHeight;
+  }
+
+  function buildSideReply(question) {
+    const q = question.toLowerCase();
+    if (q.includes("theme")) return "Use the picture options to pick a theme, then start with any quick-start card or your own question.";
+    if (q.includes("meal")) return "For planning, start with “📋 7-Day Meal Plan” and I can help you refine it after you open chat.";
+    if (q.includes("vitamin") || q.includes("mineral")) return "A good baseline is vitamin D, B12 (if plant-based), iron, calcium, and magnesium based on your needs.";
+    if (q.includes("weight")) return "For healthy weight change, focus on consistent meals, protein at each meal, hydration, and realistic weekly goals.";
+    return "I can help you choose a theme, pick a quick start, or shape your first question before you enter chat.";
+  }
+
+  function submitSideAssistant() {
+    const value = input.value.trim();
+    if (!value) return;
+    addSideMessage("user", value);
+    input.value = "";
+    window.setTimeout(() => addSideMessage("bot", buildSideReply(value)), 220);
+  }
+
+  send.addEventListener("click", submitSideAssistant);
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      submitSideAssistant();
+    }
+  });
+}
+
+// ── Main send flow ──────────────────────────────────────────────────────────
+async function send() {
+  const text = textarea.value.trim();
+  if (!text) return;
+
+  textarea.value = "";
+  textarea.style.height = "auto";
+  sendBtn.disabled = true;
+
+  // User bubble
+  addMessage("user", escHtml(text));
+
+  // Step 1 — Director acknowledges
+  await sleep(400);
+  const typing1 = addTyping();
+  await sleep(1100);
+  typing1.remove();
+
+  const dept = route(text);
+
+  if (dept) {
+    // Director confirms routing
+    addMessage("bot", `
+      <div class="step-tag">🔍 Step 1 — Receiving your question</div>
+      Got your question! I'm the Diet Director and I'll make sure it reaches the right specialist team. Let me analyse what you need…
+    `);
+
+    await sleep(600);
+    const typing2 = addTyping();
+    await sleep(1300);
+    typing2.remove();
+
+    // Routing card
+    addMessage("bot", `
+      <div class="step-tag">📡 Step 2 — Routing to department</div>
+      I've identified the best department for this question:
+      <div class="routing-card">
+        <div class="rc-label">Routed to</div>
+        <div class="rc-dept">${dept.emoji} ${dept.dept}</div>
+        <div class="rc-topics">Handles: ${dept.topics}</div>
+      </div>
+      Forwarding now to <strong>${dept.head}</strong> — they'll coordinate with their co and sub bots to prepare your answer.
+    `);
+
+    await sleep(700);
+    const typing3 = addTyping();
+    await sleep(1800);
+    typing3.remove();
+
+    // Answer
+    addMessage("bot", `
+      <div class="step-tag">✅ Step 3 — Answer from department</div>
+      <div class="answer-card">
+        <div class="ac-header">
+          <span class="ac-bot">${dept.emoji} ${dept.head}</span>
+          <span class="badge">Answered</span>
+        </div>
+        ${escHtml(buildAnswer(dept))}
+      </div>
+    `);
+
+  } else {
+    // No department match — Director answers directly
+    addMessage("bot", `
+      <div class="step-tag">🔍 Step 1 — Receiving your question</div>
+      Got your question! Let me check which department is the best fit…
+    `);
+
+    await sleep(600);
+    const typing2 = addTyping();
+    await sleep(1300);
+    typing2.remove();
+
+    addMessage("bot", `
+      <div class="step-tag">📚 Direct response from Diet Director</div>
+      Your question covers a broad nutrition topic, so I'll answer this directly using my full library access (access number 789, all 20 library bots).
+      <div class="answer-card">
+        <div class="ac-header">
+          <span class="ac-bot">🍽️ Diet Director (bot_21)</span>
+          <span class="badge">Direct Answer</span>
+        </div>
+        ${escHtml(getDirectAnswer())}
+      </div>
+      <br>If you'd like a more targeted answer, try including keywords like: <em>vitamins, weight loss, meal plan, gut health, sports nutrition, food allergies, texture diet, life stage,</em> or <em>food types</em> in your question.
+    `);
+  }
+
+  sendBtn.disabled = false;
+  textarea.focus();
+}
+
+function getDirectAnswer() {
+  return "Good nutrition starts with a foundation of variety and balance: eat a wide range of whole foods across all food groups, minimise ultra-processed products, stay hydrated, and align your eating patterns with your personal health goals. If you have a specific topic in mind — such as a particular nutrient, health condition, life stage, or dietary restriction — ask about that and I'll route it to the specialist team best equipped to help you.";
+}
+
+function escHtml(str) {
+  return str
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;")
+    .replace(/\n/g,"<br>");
+}
+
+// ── Event listeners ─────────────────────────────────────────────────────────
+sendBtn.addEventListener("click", send);
+
+textarea.addEventListener("keydown", e => {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault();
+    send();
+  }
+});
+
+// Auto-resize textarea
+textarea.addEventListener("input", () => {
+  textarea.style.height = "auto";
+  textarea.style.height = Math.min(textarea.scrollHeight, 160) + "px";
+});
+
+// ── Background theme switcher ────────────────────────────────────────────────
+(function () {
+  const ALL_THEMES = ['theme-1','theme-2','theme-3','theme-4','theme-5','theme-6'];
+  const params = new URLSearchParams(window.location.search);
+  const fromUrl = (params.get('theme') || '').trim().toLowerCase();
+  const normalizedFromUrl = /^[1-6]$/.test(fromUrl) ? `theme-${fromUrl}` : fromUrl;
+  const saved = localStorage.getItem('nb-theme');
+  const hasValidUrlTheme = ALL_THEMES.includes(normalizedFromUrl);
+  const initialTheme = ALL_THEMES.includes(normalizedFromUrl)
+    ? normalizedFromUrl
+    : (ALL_THEMES.includes(saved) ? saved : 'theme-3');
+
+  document.body.classList.add(initialTheme);
+  if (saved !== initialTheme) localStorage.setItem('nb-theme', initialTheme);
+
+  const hasThemeParam = params.has('theme');
+  const shouldNormalizeUrl = hasThemeParam && (!hasValidUrlTheme || fromUrl !== normalizedFromUrl);
+  if (shouldNormalizeUrl) {
+    params.set('theme', initialTheme);
+    const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+    window.history.replaceState(null, '', newUrl);
+  }
+
+  document.querySelectorAll('.theme-swatch').forEach(btn => {
+    if (btn.dataset.theme === initialTheme) btn.classList.add('active');
+    btn.addEventListener('click', () => {
+      document.body.classList.remove(...ALL_THEMES);
+      document.body.classList.add(btn.dataset.theme);
+      document.querySelectorAll('.theme-swatch').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      localStorage.setItem('nb-theme', btn.dataset.theme);
+      const nextParams = new URLSearchParams(window.location.search);
+      nextParams.set('theme', btn.dataset.theme);
+      const nextUrl = `${window.location.pathname}?${nextParams.toString()}${window.location.hash}`;
+      window.history.replaceState(null, '', nextUrl);
+    });
+  });
+})();
+
+// ── Welcome message ─────────────────────────────────────────────────────────
+initOpeningScreen();
+initTitleSideAssistant();
+
+(async () => {
+  await sleep(300);
+  addDivider("Conversation started");
+  addMessage("bot", `
+    <div class="step-tag">👋 Welcome</div>
+    Hello! I'm the <strong>Diet Director</strong>, your single point of contact for all nutrition questions.<br><br>
+    Ask me anything — about <em>food, nutrients, meal planning, gut health, weight management, sports nutrition, dietary restrictions, food texture,</em> or <em>nutrition at any life stage</em> — and I'll route your question directly to the right specialist department and bring you back the answer.
+  `);
+})();
+</script>
+</body>
+</html>
